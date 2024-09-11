@@ -9624,7 +9624,7 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_WHITEOUT: // Boosts damage of Ice-type moves in hail
-    if ((moveType == TYPE_ICE) && (weather & B_WEATHER_HAIL))
+    if ((moveType == TYPE_ICE) && (IsBattlerWeatherAffected(battlerAtk, B_WEATHER_HAIL)))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
     else if ((moveType == TYPE_ICE) && (weather & B_WEATHER_SNOW))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
