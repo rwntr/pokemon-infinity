@@ -5918,7 +5918,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
     {
         gBattleStruct->dynamicMoveType = TYPE_WATER | F_DYNAMIC_TYPE_SET;
     }
-    else if (gBattleMoves[move].soundMove && attackerAbility == ABILITY_SAND_SONG)
+    else if (gMovesInfo[move].soundMove && attackerAbility == ABILITY_SAND_SONG)
     {
         gBattleStruct->dynamicMoveType = TYPE_GROUND | F_DYNAMIC_TYPE_SET;
     }
