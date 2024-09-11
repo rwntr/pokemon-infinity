@@ -9113,7 +9113,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         break;
     case EFFECT_SOLAR_BEAM:
         if (IsBattlerWeatherAffected(battlerAtk, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG))
-            && GetBattlerAbility[gBattlerAttacker] != ABILITY_CHLOROPLAST)
+            && atkAbility != ABILITY_CHLOROPLAST)
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
         break;
     case EFFECT_STOMPING_TANTRUM:
@@ -9626,7 +9626,7 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
     case ABILITY_WHITEOUT: // Boosts damage of Ice-type moves in hail
     if ((moveType == TYPE_ICE) && (IsBattlerWeatherAffected(battlerAtk, B_WEATHER_HAIL)))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
-    else if ((moveType == TYPE_ICE) && (weather & B_WEATHER_SNOW))
+    else if ((moveType == TYPE_ICE) && (IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SNOW)))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
     break;
     case ABILITY_STAKEOUT:
