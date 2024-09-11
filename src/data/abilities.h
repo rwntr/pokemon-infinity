@@ -2607,4 +2607,67 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    //Custom abilities
+    [ABILITY_CHLOROPLAST] =
+    {
+        .name = _("Chloroplast"),
+        .description = COMPOUND_STRING("Battles as if in sunlight."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_WHITEOUT] =
+    {
+        .name = _("Whiteout"),
+        .description = COMPOUND_STRING("Boosts Ice moves in hail."),
+        .aiRating = 4,
+    },
+
+    [ABILITY_PYROMANCY =
+    {
+        .name = _("Pyromancy"),
+        .description = COMPOUND_STRING("Fire moves burn more often."),
+        .aiRating = 5,
+    },
+
+    [ABILITY_PRISM_SCALES] =
+    {
+        .name = _("Prism Scales"),
+        .description = COMPOUND_STRING("Weakens Special Attacks."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_POWER_FISTS] =
+    {
+        .name = _("Power Fists"),
+        .description = COMPOUND_STRING("Punches do special damage."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_SAND_SONG] =
+    {
+        .name = _("Sand Song"),
+        .description = COMPOUND_STRING("Makes sound moves Ground."),
+        .aiRating = 7,
+
+    [ABILITY_RAMPAGE] =
+    {
+        .name = _("Rampage"),
+        .description = COMPOUND_STRING("No recharge after a KO."),
+        .aiRating = 4,
+    },
+
+    [ABILITY_VENGEANCE] =
+    {
+        .name = _("Vengeance"),
+        .description = COMPOUND_STRING("Ups Ghost moves in a pinch."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_BLITZ_BOXER] =
+    {
+        .name = _("Blitz Boxer"),
+        .description = COMPOUND_STRING("Punching moves go first."),
+        .aiRating = 8,
+    },
 };

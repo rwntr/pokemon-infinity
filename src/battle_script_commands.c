@@ -3882,7 +3882,10 @@ static void Cmd_setadditionaleffects(void)
             // Various checks for if this move effect can be applied this turn
             if (CanApplyAdditionalEffect(additionalEffect))
             {
-                percentChance = CalcSecondaryEffectChance(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), additionalEffect);
+                if (gMovesInfo[gCurrentMove].type == TYPE_FIRE && GetBattlerAbility(gBattlerAttacker) == ABILITY_PYROMANCY)
+                    percentChance = CalcPyromancyEffectChance(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), additionalEffect);
+                else
+                    percentChance = CalcSecondaryEffectChance(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), additionalEffect);
 
                 // Activate effect if it's primary (chance == 0) or if RNGesus says so
                 if ((percentChance == 0) || RandomPercentage(RNG_SECONDARY_EFFECT + gBattleStruct->additionalEffectsCounter, percentChance))
@@ -9584,6 +9587,18 @@ static void Cmd_various(void)
         MarkBattlerForControllerExec(battler);
         break;
     }
+    case VARIOUS_TRY_ACTIVATE_RAMPAGE:
+    {
+        VARIOUS_ARGS();
+        if (GetBattlerAbility(battler) == ABILITY_RAMPAGE
+          && HasAttackerFaintedTarget()
+          && !NoAliveMonsForEitherParty())
+        {
+            gDisableStructs[battler].rechargeTimer = 0;
+            gBattleMons[battler].status2 &= ~(STATUS2_RECHARGE);
+        }
+        break;
+    }
     case VARIOUS_TRY_ACTIVATE_MOXIE:    // and chilling neigh + as one ice rider
     {
         VARIOUS_ARGS();
@@ -13772,9 +13787,10 @@ static void Cmd_recoverbasedonsunlight(void)
         }
         else
         {
-            if (!(gBattleWeather & B_WEATHER_ANY) || !WEATHER_HAS_EFFECT || GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_UTILITY_UMBRELLA)
-                gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 2;
-            else if (gBattleWeather & B_WEATHER_SUN)
+            if ((!(gBattleWeather & B_WEATHER_ANY) || !WEATHER_HAS_EFFECT || GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_UTILITY_UMBRELLA)
+                && GetBattlerAbility(gBattlerAttacker) != ABILITY_CHLOROPLAST)
+                    gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 2;
+            else if ((gBattleWeather & B_WEATHER_SUN) || (GetBattlerAbility(gBattlerAttacker) == ABILITY_CHLOROPLAST))
                 gBattleMoveDamage = 20 * GetNonDynamaxMaxHP(gBattlerAttacker) / 30;
             else // not sunny weather
                 gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 4;

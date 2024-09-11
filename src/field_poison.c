@@ -125,10 +125,15 @@ s32 DoPoisonFieldEffect(void)
     struct Pokemon *pokemon = gPlayerParty;
     u32 numPoisoned = 0;
     u32 numFainted = 0;
+    u32 ability;
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+        ability = GetMonAbility(&gPlayerParty[i]);
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN
+            && ability != ABILITY_POISON_HEAL
+            && ability != ABILITY_TOXIC_BOOST
+            && ability != ABILITY_MAGIC_GUARD)
         {
             // Apply poison damage
             hp = GetMonData(pokemon, MON_DATA_HP);

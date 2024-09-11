@@ -1999,6 +1999,7 @@ BattleScript_GrowthDoMoveAnim::
 	setbyte sSTAT_ANIM_PLAYED, FALSE
 	playstatchangeanimation BS_ATTACKER, BIT_ATK | BIT_SPATK, 0
 	jumpifweatheraffected BS_ATTACKER, B_WEATHER_SUN, BattleScript_GrowthAtk2
+	jumpifability BS_ATTACKER, ABILITY_CHLOROPLAST, BattleScript_GrowthAtk2
 	setstatchanger STAT_ATK, 1, FALSE
 	goto BattleScript_GrowthAtk
 BattleScript_GrowthAtk2:
@@ -2010,6 +2011,7 @@ BattleScript_GrowthAtk:
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_GrowthTrySpAtk::
 	jumpifweatheraffected BS_ATTACKER, B_WEATHER_SUN, BattleScript_GrowthSpAtk2
+	jumpifability BS_ATTACKER, ABILITY_CHLOROPLAST, BattleScript_GrowthSpAtk2
 	setstatchanger STAT_SPATK, 1, FALSE
 	goto BattleScript_GrowthSpAtk
 BattleScript_GrowthSpAtk2:
@@ -3740,6 +3742,24 @@ BattleScript_EffectTwoTurnsAttack::
 	tryfiretwoturnmoveaftercharging BS_ATTACKER, BattleScript_TwoTurnMovesSecondTurn @ e.g. Electro Shot
 	jumpifholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_TwoTurnMovesSecondPowerHerbActivates
 	goto BattleScript_MoveEnd
+
+BattleScript_EffectSolarbeam::
+    jumpifability BS_ATTACKER, ABILITY_CHLOROPLAST, BattleScript_SolarbeamOnFirstTurn
+    jumpifweatheraffected BS_ATTACKER, WEATHER_SUN_ANY, BattleScript_SolarbeamOnFirstTurn
+BattleScript_SolarbeamDecideTurn::
+    jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
+    jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
+    setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SOLAR_BEAM
+    call BattleScriptFirstChargingTurn
+    jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
+    call BattleScript_PowerHerbActivation
+    goto BattleScript_TwoTurnMovesSecondTurn
+BattleScript_SolarbeamOnFirstTurn::
+    	orword gHitMarker, HITMARKER_CHARGING
+    	setmoveeffect MOVE_EFFECT_CHARGING | MOVE_EFFECT_AFFECTS_USER
+    	seteffectprimary
+    	ppreduce
+    	goto BattleScript_TwoTurnMovesSecondTurn
 
 BattleScript_EffectGeomancy::
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_GeomancySecondTurn

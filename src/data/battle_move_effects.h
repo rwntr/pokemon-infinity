@@ -766,7 +766,7 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
 
     [EFFECT_SOLAR_BEAM] =
     {
-        .battleScript = BattleScript_EffectTwoTurnsAttack,
+        .battleScript = BattleScript_EffectSolarbeam,
         .battleTvScore = 1,
         .twoTurnEffect = TRUE,
     },

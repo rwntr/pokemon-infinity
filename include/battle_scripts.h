@@ -662,7 +662,7 @@ extern const u8 BattleScript_EffectMirrorCoat[];
 extern const u8 BattleScript_EffectSkullBash[];
 extern const u8 BattleScript_EffectFutureSight[];
 extern const u8 BattleScript_EffectGust[];
-extern const u8 BattleScript_EffectSolarBeam[];
+extern const u8 BattleScript_EffectSolarbeam[];
 extern const u8 BattleScript_EffectTeleport[];
 extern const u8 BattleScript_EffectBeatUp[];
 extern const u8 BattleScript_EffectSemiInvulnerable[];

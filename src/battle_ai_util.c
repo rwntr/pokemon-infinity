@@ -2150,6 +2150,11 @@ bool32 IsHealingMove(u32 move)
     return gMovesInfo[move].healingMove;
 }
 
+bool32 IsPunchingMove(u32 move)
+{
+    return gMovesInfo[move].punchingMove;
+}
+
 bool32 HasHealingEffect(u32 battlerId)
 {
     s32 i;

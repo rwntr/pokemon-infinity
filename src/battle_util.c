@@ -9112,7 +9112,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
             modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
         break;
     case EFFECT_SOLAR_BEAM:
-        if (IsBattlerWeatherAffected(battlerAtk, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
+        if (IsBattlerWeatherAffected(battlerAtk, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG))
+            && GetBattlerAbility[gBattlerAttacker] != ABILITY_CHLOROPLAST)
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
         break;
     case EFFECT_STOMPING_TANTRUM:
@@ -9177,6 +9178,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_IRON_FIST:
+    case ABILITY_POWER_FISTS:
         if (gMovesInfo[move].punchingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
@@ -9259,6 +9261,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
     case ABILITY_DRAGONS_MAW:
         if (moveType == TYPE_DRAGON)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_LIQUID_VOICE:
+        if (gBattleMoves[move].soundMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_GORILLA_TACTICS:
         if (IS_MOVE_PHYSICAL(move))
@@ -9543,21 +9549,54 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_SWARM:
-        if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_BUG) {
+             if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3)) {
+                 modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+                 }
+             else {
+                 modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.2));
+                 }
+             }
         break;
     case ABILITY_TORRENT:
-        if (moveType == TYPE_WATER && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_WATER) {
+            if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3)) {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            }
+            else {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.2));
+            }
+        }
         break;
     case ABILITY_BLAZE:
-        if (moveType == TYPE_FIRE && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_FIRE) {
+            if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3)) {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            }
+            else {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.2));
+            }
+        }
         break;
     case ABILITY_OVERGROW:
-        if (moveType == TYPE_GRASS && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_GRASS {
+            if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3)) {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            }
+            else {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.2));
+            }
+        }
         break;
+    case ABILITY_VENGEANCE:
+        if (moveType == TYPE_GHOST) {
+            if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3)) {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            }
+            else {
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.2));
+            }
+        }
     case ABILITY_PLUS:
         if (IS_MOVE_SPECIAL(move) && IsBattlerAlive(BATTLE_PARTNER(battlerAtk)))
         {
@@ -9584,6 +9623,12 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         if (IS_MOVE_PHYSICAL(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_WHITEOUT: // Boosts damage of Ice-type moves in hail
+    if ((moveType == TYPE_ICE) && (weather & B_WEATHER_HAIL))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+    else if ((moveType == TYPE_ICE) && (weather & B_WEATHER_SNOW))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
+    break;
     case ABILITY_STAKEOUT:
         if (gDisableStructs[battlerDef].isFirstTurn == 2) // just switched in
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
@@ -9696,7 +9741,14 @@ static inline u32 CalcDefenseStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 
         spDef = gBattleMons[battlerDef].spDefense;
     }
 
-    if (gMovesInfo[move].effect == EFFECT_PSYSHOCK || IS_MOVE_PHYSICAL(move)) // uses defense stat instead of sp.def
+    // Power Fists makes punching moves do special damage
+    if (gBattleMons[battlerAtk].ability == ABILITY_POWER_FISTS && gMovesInfo[move].punchingMove)
+    {
+        defStat = spDef;
+        defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
+        usesDefStat = FALSE;
+    }
+    else if (gMovesInfo[move].effect == EFFECT_PSYSHOCK || IS_MOVE_PHYSICAL(move)) // uses defense stat instead of sp.def
     {
         defStat = def;
         defStage = gBattleMons[battlerDef].statStages[STAT_DEF];
@@ -11554,12 +11606,19 @@ u32 CalcSecondaryEffectChance(u32 battler, u32 battlerAbility, const struct Addi
 
     if (hasRainbow && hasSereneGrace && additionalEffect->moveEffect == MOVE_EFFECT_FLINCH)
         return secondaryEffectChance * 2;
-
     if (hasSereneGrace)
         secondaryEffectChance *= 2;
     if (hasRainbow && additionalEffect->moveEffect != MOVE_EFFECT_SECRET_POWER)
         secondaryEffectChance *= 2;
 
+    return secondaryEffectChance;
+}
+
+u32 CalcPyromancyEffectChance(u32 battler, u32 battlerAbility, const struct AdditionalEffect *additionalEffect)
+{
+    u16 secondaryEffectChance = additionalEffect->chance;
+    if (additionalEffect->moveEffect == MOVE_EFFECT_BURN)
+        secondaryEffectChance *= 5;
     return secondaryEffectChance;
 }
 

@@ -274,6 +274,7 @@ u8 GetBattlerGender(u32 battler);
 bool32 AreBattlersOfOppositeGender(u32 battler1, u32 battler2);
 bool32 AreBattlersOfSameGender(u32 battler1, u32 battler2);
 u32 CalcSecondaryEffectChance(u32 battler, u32 battlerAbility, const struct AdditionalEffect *additionalEffect);
+u32 CalcPyromancyEffectChance(u32 battler, u32 battlerAbility, const struct AdditionalEffect *additionalEffect);
 bool32 MoveEffectIsGuaranteed(u32 battler, u32 battlerAbility, const struct AdditionalEffect *additionalEffect);
 u8 GetBattlerType(u32 battler, u8 typeIndex, bool32 ignoreTera);
 bool8 CanMonParticipateInSkyBattle(struct Pokemon *mon);

@@ -4837,6 +4837,9 @@ s8 GetMovePriority(u32 battler, u16 move)
     else if (ability == ABILITY_TRIAGE && IsHealingMove(move))
         priority += 3;
 
+    else if (ability == ABILITY_BLITZ_BOXER && IsPunchingMove(move))
+        priority++;
+
     if (gProtectStructs[battler].quash)
         priority = -8;
 
@@ -5914,6 +5917,10 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
     else if (gMovesInfo[move].soundMove && attackerAbility == ABILITY_LIQUID_VOICE)
     {
         gBattleStruct->dynamicMoveType = TYPE_WATER | F_DYNAMIC_TYPE_SET;
+    }
+    else if (gBattleMoves[move].soundMove && attackerAbility == ABILITY_SAND_SONG)
+    {
+        gBattleStruct->dynamicMoveType = TYPE_GROUND | F_DYNAMIC_TYPE_SET;
     }
     else if (gMovesInfo[move].effect == EFFECT_AURA_WHEEL && gBattleMons[battlerAtk].species == SPECIES_MORPEKO_HANGRY)
     {
