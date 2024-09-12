@@ -9927,17 +9927,29 @@ static uq4_12_t GetWeatherDamageModifier(u32 battlerAtk, u32 move, u32 moveType,
     if (holdEffectDef == HOLD_EFFECT_UTILITY_UMBRELLA)
         return UQ_4_12(1.0);
 
-    if (weather & B_WEATHER_RAIN)
+    if (weather & B_WEATHER_RAIN_TEMPORARY)
     {
         if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
             return UQ_4_12(1.0);
         return (moveType == TYPE_FIRE) ? UQ_4_12(0.5) : UQ_4_12(1.5);
     }
-    if (weather & B_WEATHER_SUN)
+    else if (weather & (B_WEATHER_RAIN_PERMANENT))
+    {
+        if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
+            return UQ_4_12(1.0);
+        return (moveType == TYPE_FIRE) ? UQ_4_12(0.5) : UQ_4_12(1.2);
+    }
+    else if (weather & B_WEATHER_SUN_TEMPORARY)
     {
         if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
             return UQ_4_12(1.0);
         return (moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.5);
+    }
+    else if (weather & B_WEATHER_SUN_PERMANENT)
+    {
+        if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
+            return UQ_4_12(1.0);
+        return (moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.2);
     }
     return UQ_4_12(1.0);
 }
