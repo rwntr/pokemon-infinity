@@ -2623,7 +2623,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
-    [ABILITY_PYROMANCY =
+    [ABILITY_PYROMANCY] =
     {
         .name = _("Pyromancy"),
         .description = COMPOUND_STRING("Fire moves burn more often."),
@@ -2649,7 +2649,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Sand Song"),
         .description = COMPOUND_STRING("Makes sound moves Ground."),
         .aiRating = 7,
-
+    },
     [ABILITY_RAMPAGE] =
     {
         .name = _("Rampage"),

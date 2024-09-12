@@ -337,21 +337,20 @@
 #define ABILITY_TERAFORM_ZERO 309
 #define ABILITY_POISON_PUPPETEER 310
 
-#define ABILITIES_COUNT_GEN9 321
+#define ABILITIES_COUNT_GEN9 311
 
 // Custom Abilities
+#define ABILITY_CHLOROPLAST 311    // Moves function as if it's sunny, regardless of weather
+#define ABILITY_WHITEOUT 312 // Boosts the power of Ice attacks in Hail by 50%
+#define ABILITY_PYROMANCY 313 // Fire attacks are 5x more likely to inflict a burn
+#define ABILITY_PRISM_SCALES 314 // Reduces special damage taken by 30%
+#define ABILITY_POWER_FISTS 315 // Punching moves do special damage
+#define ABILITY_SAND_SONG 316 // Sound moves become Ground type. No damage boost.
+#define ABILITY_RAMPAGE 317 // If a recharge move KOs the foe, it doesn't need to recharge.
+#define ABILITY_VENGEANCE 318 // Overgrow for Ghost moves.
+#define ABILITY_BLITZ_BOXER 319// Punching moves go first
 
-#define ABILITY_CHLOROPLAST     (ABILITIES_COUNT_GEN9)     // Moves function as if it's sunny, regardless of weather
-#define ABILITY_WHITEOUT        (ABILITIES_COUNT_GEN9 + 1) // Boosts the power of Ice attacks in Hail by 50%
-#define ABILITY_PYROMANCY       (ABILITIES_COUNT_GEN9 + 2) // Fire attacks are 5x more likely to inflict a burn
-#define ABILITY_PRISM_SCALES    (ABILITIES_COUNT_GEN9 + 3) // Reduces special damage taken by 30%
-#define ABILITY_POWER_FISTS     (ABILITIES_COUNT_GEN9 + 4) // Punching moves do special damage
-#define ABILITY_SAND_SONG       (ABILITIES_COUNT_GEN9 + 5) // Sound moves become Ground type. No damage boost.
-#define ABILITY_RAMPAGE         (ABILITIES_COUNT_GEN9 + 6) // If a recharge move KOs the foe, it doesn't need to recharge.
-#define ABILITY_VENGEANCE       (ABILITIES_COUNT_GEN9 + 7) // Overgrow for Ghost moves.
-#define ABILITY_BLITZ_BOXER     (ABILITIES_COUNT_GEN9 + 8) // Punching moves go first
-
-#define ABILITIES_COUNT_CUSTOM (ABILITY_BLITZ_BOXER + 1)
+#define ABILITIES_COUNT_CUSTOM 320
 
 #define ABILITIES_COUNT ABILITIES_COUNT_CUSTOM
 

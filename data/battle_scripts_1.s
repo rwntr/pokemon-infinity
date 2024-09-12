@@ -1838,7 +1838,7 @@ BattleScript_HitSwitchTargetForceRandomSwitchFailed:
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectToxicThread::
-	setstatchanger STAT_SPEED, 2, TRUE
+	setstatchanger STAT_SPEED, 1, TRUE
 	attackcanceler
 	jumpifsubstituteblocks BattleScript_FailedFromAtkString
 	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_SPEED, MIN_STAT_STAGE, BattleScript_ToxicThreadWorks
@@ -3745,12 +3745,12 @@ BattleScript_EffectTwoTurnsAttack::
 
 BattleScript_EffectSolarbeam::
     jumpifability BS_ATTACKER, ABILITY_CHLOROPLAST, BattleScript_SolarbeamOnFirstTurn
-    jumpifweatheraffected BS_ATTACKER, WEATHER_SUN_ANY, BattleScript_SolarbeamOnFirstTurn
+    jumpifweatheraffected BS_ATTACKER, B_WEATHER_SUN, BattleScript_SolarbeamOnFirstTurn
 BattleScript_SolarbeamDecideTurn::
     jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
     jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
-    setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SOLAR_BEAM
-    call BattleScriptFirstChargingTurn
+    printstring STRINGID_PKMNTOOKSUNLIGHT
+    call BattleScript_FirstChargingTurn
     jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
     call BattleScript_PowerHerbActivation
     goto BattleScript_TwoTurnMovesSecondTurn
