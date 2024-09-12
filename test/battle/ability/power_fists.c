@@ -4,7 +4,6 @@
 
 SINGLE_BATTLE_TEST("Power Fists causes 20% increased punching move damage", s16 damage)
 {
-    u32 move1, move2;
     u16 ability;
     PARAMETRIZE { ability = ABILITY_ANTICIPATION; }
     PARAMETRIZE { ability = ABILITY_POWER_FISTS; }
@@ -23,7 +22,6 @@ SINGLE_BATTLE_TEST("Power Fists causes 20% increased punching move damage", s16 
 
 SINGLE_BATTLE_TEST("Power Fists calculates damage based on opponent SpDef", s16 damage)
 {
-    u32 move1, move2;
     u16 ability;
     PARAMETRIZE { ability = ABILITY_ANTICIPATION; }
     PARAMETRIZE { ability = ABILITY_POWER_FISTS; }
@@ -42,7 +40,6 @@ SINGLE_BATTLE_TEST("Power Fists calculates damage based on opponent SpDef", s16 
 
 SINGLE_BATTLE_TEST("Power Fists is unaffected by Ice Scales", s16 damage)
 {
-    u32 move1, move2;
     u16 ability;
     PARAMETRIZE { ability = ABILITY_ANTICIPATION; }
     PARAMETRIZE { ability = ABILITY_ICE_SCALES; }
