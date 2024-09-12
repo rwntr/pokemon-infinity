@@ -3,7 +3,7 @@
 
 SINGLE_BATTLE_TEST("Rampage skips recharge turn if a Pokemon was KO'd on the last turn")
 {
-    u32 species = 0, ability = 0, abilityPopUp = 0;
+    u32 species = 0, ability = 0;
     PARAMETRIZE { ability = ABILITY_BLAZE; }
     PARAMETRIZE { ability = ABILITY_RAMPAGE; }
     GIVEN {
