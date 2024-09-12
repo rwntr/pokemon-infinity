@@ -39,24 +39,15 @@ SINGLE_BATTLE_TEST("Booster Energy will activate Protosynthesis after harsh sunl
 {
     GIVEN {
         PLAYER(SPECIES_RAGING_BOLT) { Attack(100); Defense(100); Speed(100); SpAttack(110); SpDefense(100); Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_TORKOAL) { Speed(100); Ability(ABILITY_DROUGHT); };
+        OPPONENT(SPECIES_TORKOAL) { Speed(100); Ability(ABILITY_DROUGHT); }
     } WHEN {
-        TURN {}
-        TURN {}
-        TURN {}
-        TURN {}
-        TURN {}
+        TURN {MOVE(player, MOVE_RAIN_DANCE);}
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_DROUGHT);
-        NONE_OF {
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Raging Bolt used its Booster Energy to activate Protosynthesis!");
-            MESSAGE("Raging Bolt's Sp. Atk was heightened!");
-        }
         ABILITY_POPUP(player, ABILITY_PROTOSYNTHESIS);
         MESSAGE("The harsh sunlight activated Raging Bolt's Protosynthesis!");
         MESSAGE("Raging Bolt's Sp. Atk was heightened!");
-        MESSAGE("The sunlight faded.");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_RAIN_DANCE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         ABILITY_POPUP(player, ABILITY_PROTOSYNTHESIS);
         MESSAGE("Raging Bolt used its Booster Energy to activate Protosynthesis!");
