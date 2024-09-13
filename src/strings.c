@@ -2181,8 +2181,7 @@ const u8 gText_XsYAnd[] = _("Swapped {STR_VAR_1}'s {STR_VAR_2}\n");
 const u8 gText_XsYWereSwapped[] = _("and {STR_VAR_1}'s {STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
 
 //HGSS_Ui PokedexPlus
-const u8 gText_Stats_Buttons[]  = _("{A_BUTTON}TOGGLE   {DPAD_UPDOWN}MOVES");
-const u8 gText_Stats_Buttons_Decapped[]  = _("{A_BUTTON}Toggle   {DPAD_UPDOWN}Moves");
+const u8 gText_Stats_Buttons[]  = _("{A_BUTTON}Toggle   {DPAD_UPDOWN}Moves");
 const u8 gText_Stats_HP[]       = _("HP");
 const u8 gText_Stats_Attack[]   = _("ATK");
 const u8 gText_Stats_Defense[]  = _("DEF");
@@ -2249,8 +2248,7 @@ const u8 gText_Stats_eggGroup_UNDISCOVERED[]= _("---");
 const u8 gText_Dex_SEEN[]   = _("SEEN");
 const u8 gText_Dex_OWN[]    = _("OWN");
 
-const u8 gText_EVO_Buttons_PE[]                     = _("{A_BUTTON}FORMS");
-const u8 gText_EVO_Buttons_Decapped_PE[]            = _("{A_BUTTON}Forms");
+const u8 gText_EVO_Buttons_PE[]                     = _("{A_BUTTON}Forms");
 const u8 gText_EVO_Name[]                           = _("{STR_VAR_3}:");
 const u8 gText_EVO_FRIENDSHIP[]                     = _("LvlUp, high friendship");
 const u8 gText_EVO_FRIENDSHIP_DAY[]                 = _("LvlUp, high friendship, day");
@@ -2287,6 +2285,5 @@ const u8 gText_EVO_TRADE_SPECIFIC_MON[]             = _("Traded for {STR_VAR_2}"
 const u8 gText_EVO_SPECIFIC_MAP[]                   = _("LvlUp on {STR_VAR_2}");
 const u8 gText_EVO_NONE[]                           = _("{STR_VAR_1} has no evolution.");
 
-const u8 gText_FORMS_Buttons_PE[]                   = _("{A_BUTTON}EVOLUTIONS");
-const u8 gText_FORMS_Buttons_Decapped_PE[]          = _("{A_BUTTON}Evolutions");
+const u8 gText_FORMS_Buttons_PE[]                   = _("{A_BUTTON}Evolutions");
 const u8 gText_FORMS_NONE[]                         = _("{STR_VAR_1} has no alternate forms.");
