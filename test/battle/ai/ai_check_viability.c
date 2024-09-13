@@ -151,21 +151,21 @@ AI_SINGLE_BATTLE_TEST("AI can choose Counter or Mirror Coat if the predicted mov
 {
     u16 playerMove = MOVE_NONE, opponentMove = MOVE_NONE;
 
-    PARAMETRIZE { playerMove = MOVE_STRENGTH; opponentMove = MOVE_COUNTER; }
+    PARAMETRIZE { playerMove = MOVE_BODY_SLAM; opponentMove = MOVE_COUNTER; }
     PARAMETRIZE { playerMove = MOVE_POWER_GEM; opponentMove = MOVE_MIRROR_COAT; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_COUNTER].effect == EFFECT_COUNTER);
         ASSUME(gMovesInfo[MOVE_MIRROR_COAT].effect == EFFECT_MIRROR_COAT);
-        ASSUME(gMovesInfo[MOVE_STRENGTH].category == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(gMovesInfo[MOVE_BODY_SLAM].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_POWER_GEM].category == DAMAGE_CATEGORY_SPECIAL);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(102); Speed(100); Moves(opponentMove, MOVE_STRENGTH); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(102); Speed(100); Moves(opponentMove, MOVE_BODY_SLAM); }
     } WHEN {
-        TURN { MOVE(player, playerMove); EXPECT_MOVE(opponent, MOVE_STRENGTH); }
+        TURN { MOVE(player, playerMove); EXPECT_MOVE(opponent, MOVE_BODY_SLAM); }
         TURN { MOVE(player, playerMove); EXPECT_MOVE(opponent, opponentMove); }
-        TURN { MOVE(player, playerMove); EXPECT_MOVE(opponent, MOVE_STRENGTH); }
+        TURN { MOVE(player, playerMove); EXPECT_MOVE(opponent, MOVE_BODY_SLAM); }
     } SCENE {
         MESSAGE("Foe Wobbuffet fainted!");
     }
@@ -180,15 +180,15 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves with secondary effect that have a 100% c
 
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SHADOW_BALL, MOVE_EFFECT_SP_DEF_MINUS_1, 20));
-        ASSUME(MoveHasAdditionalEffectWithChance(MOVE_OCTAZOOKA, MOVE_EFFECT_ACC_MINUS_1, 50));
+        ASSUME(MoveHasAdditionalEffectWithChance(MOVE_LEAF_TORNADO, MOVE_EFFECT_ACC_MINUS_1, 50));
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_REGICE);
-        OPPONENT(SPECIES_REGIROCK) { Ability(ability); Moves(MOVE_SHADOW_BALL, MOVE_OCTAZOOKA); }
+        OPPONENT(SPECIES_REGIROCK) { Ability(ability); Moves(MOVE_SHADOW_BALL, MOVE_LEAF_TORNADO); }
     } WHEN {
         if (ability == ABILITY_NONE)
             TURN { EXPECT_MOVE(opponent, MOVE_SHADOW_BALL); }
         else
-            TURN { EXPECT_MOVES(opponent, MOVE_OCTAZOOKA); }
+            TURN { EXPECT_MOVES(opponent, MOVE_LEAF_TORNADO); }
     }
 }
 
