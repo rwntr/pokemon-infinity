@@ -11,63 +11,74 @@ u32 GetCurrentLevelCap(u16 levelCapSetting)
 {
 
     u8 currentLevelCap;
-    u16 currentBadge = getHighestBadge();
-
-    static const u8 levelCapsStandard[] = {16, 25, 38, 50, 101, 101, 101, 101, 101, 101};
-    static const u8 levelCapsMore[] =     {16, 25, 38, 50,  54,  70,  85,  92,  95, 101};
-    static const u8 levelCapsStrict[] =   {14, 20, 30, 40,  45,  55,  60,  70,  80, 101};
-
-    switch (levelCapSetting) {
-        case LEVEL_CAPS_DEFAULT:
-            currentLevelCap = levelCapsStandard[currentBadge];
-            break;
-        case LEVEL_CAPS_MORE:
-            currentLevelCap = levelCapsMore[currentBadge];
-            break;
-        case LEVEL_CAPS_STRICT:
-            currentLevelCap = levelCapsStrict[currentBadge];
-            break;
-        default:
-            currentLevelCap = levelCapsStandard[currentBadge];
-            break;
-
-    }
-    /*  Unused from RHH fork
-    static const u32 sLevelCapFlagMap[][2] =
+    u32 i;
+    static const u32 sDefaultCapsFlagMap[][2] =
     {
-        {FLAG_BADGE01_GET, 15},
-        {FLAG_BADGE02_GET, 19},
-        {FLAG_BADGE03_GET, 24},
-        {FLAG_BADGE04_GET, 29},
-        {FLAG_BADGE05_GET, 31},
-        {FLAG_BADGE06_GET, 33},
-        {FLAG_BADGE07_GET, 42},
-        {FLAG_BADGE08_GET, 46},
-        {FLAG_IS_CHAMPION, 58},
+        {FLAG_BADGE01_GET, 16},
+        {FLAG_BADGE02_GET, 25},
+        {FLAG_BADGE03_GET, 38},
+        {FLAG_BADGE04_GET, 50},
+        {FLAG_BADGE05_GET, 101},
+        {FLAG_BADGE06_GET, 101},
+        {FLAG_BADGE07_GET, 101},
+        {FLAG_BADGE08_GET, 101},
+        {FLAG_IS_CHAMPION, 101},
     };
 
-    u32 i;
-
-    if (B_LEVEL_CAP_TYPE == LEVEL_CAP_FLAG_LIST)
+     static const u32 sMoreCapsFlagMap[][2] =
     {
-        for (i = 0; i < ARRAY_COUNT(sLevelCapFlagMap); i++)
-        {
-            if (!FlagGet(sLevelCapFlagMap[i][0]))
-                return sLevelCapFlagMap[i][1];
+        {FLAG_BADGE01_GET, 16},
+        {FLAG_BADGE02_GET, 25},
+        {FLAG_BADGE03_GET, 38},
+        {FLAG_BADGE04_GET, 50},
+        {FLAG_BADGE05_GET, 54},
+        {FLAG_BADGE06_GET, 70},
+        {FLAG_BADGE07_GET, 85},
+        {FLAG_BADGE08_GET, 92},
+        {FLAG_IS_CHAMPION, 95},
+    };
+
+     static const u32 sStrictCapsFlagMap[][2] =
+    {
+        {FLAG_BADGE01_GET, 14},
+        {FLAG_BADGE02_GET, 20},
+        {FLAG_BADGE03_GET, 30},
+        {FLAG_BADGE04_GET, 40},
+        {FLAG_BADGE05_GET, 45},
+        {FLAG_BADGE06_GET, 55},
+        {FLAG_BADGE07_GET, 60},
+        {FLAG_BADGE08_GET, 70},
+        {FLAG_IS_CHAMPION, 80},
+    };
+
+    for (i = 0; i < ARRAY_COUNT(sDefaultCapsFlagMap); i++)
+    {
+        if (!FlagGet(sDefaultCapsFlagMap[i][0])) {
+            break;
         }
     }
-    else if (B_LEVEL_CAP_TYPE == LEVEL_CAP_VARIABLE)
-    {
-        return VarGet(B_LEVEL_CAP_VARIABLE);
-    }
 
-    return MAX_LEVEL;
-    End unused from RHH fork*/
+     switch (levelCapSetting) {
+        case LEVEL_CAPS_DEFAULT:
+            currentLevelCap = sDefaultCapsFlagMap[i][1];
+            break;
+        case LEVEL_CAPS_MORE:
+            currentLevelCap = sMoreCapsFlagMap[i][1];
+            break;
+        case LEVEL_CAPS_STRICT:
+            currentLevelCap = sStrictCapsFlagMap[i][1];
+            break;
+        case LEVEL_CAPS_OFF:
+        default:
+            currentLevelCap = MAX_LEVEL;
+            break;
+            }
     return currentLevelCap;
 }
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
 {
+    static const u32 sExpScalingDown[5] = { 4, 8, 16, 32, 64 };
     static const u32 sExpScalingUp[5]   = { 16, 8, 4, 2, 1 };
 
     u32 levelDifference;
@@ -90,9 +101,21 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
             return expValue;
         }
     }
-    else
+    else if (B_EXP_CAP_TYPE == EXP_CAP_HARD)
     {
         return 0;
+    }
+    else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT)
+    {
+        levelDifference = level - currentLevelCap;
+        if (levelDifference > ARRAY_COUNT(sExpScalingDown))
+            return expValue / sExpScalingDown[ARRAY_COUNT(sExpScalingDown) - 1];
+        else
+            return expValue / sExpScalingDown[levelDifference];
+    }
+    else
+    {
+        return expValue;
     }
     return 0; //default to be safe
 }

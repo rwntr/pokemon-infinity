@@ -891,6 +891,4 @@ const u8 *GetMoveName(u16 moveId);
 const u8 *GetMoveAnimationScript(u16 moveId);
 void UpdateDaysPassedSinceFormChange(u16 days);
 void TrySetDayLimitToFormChange(struct Pokemon *mon);
-u16 getHighestBadge(void);
-u8 GetLevelCap(void);
 #endif // GUARD_POKEMON_H

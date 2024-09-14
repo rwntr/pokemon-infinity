@@ -1963,7 +1963,7 @@ static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
             break;
         default:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_DEFAULT;
+            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_OFF;
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;
