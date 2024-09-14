@@ -4392,6 +4392,12 @@ static void Cmd_getexp(void)
                 if (B_MAX_LEVEL_EV_GAINS >= GEN_5)
                     MonGainEVs(&gPlayerParty[*expMonId], gBattleMons[gBattlerFainted].species);
             }
+            else if (GetMonData(&gPlayerParty[*expMonId], MON_DATA_LEVEL) >= GetLevelCap())
+            {
+                gBattleScripting.getexpState = 5;
+                gBattleMoveDamage = 1; // If mon is above level cap, it gets 1 exp, but still gains EVs
+                MonGainEVs(&gPlayerParty[*expMonId], gBattleMons[gBattlerFainted].species);
+            }
             else
             {
                 // Music change in a wild battle after fainting opposing pokemon.
@@ -4425,7 +4431,7 @@ static void Cmd_getexp(void)
                     {
                         u32 growthRate = gSpeciesInfo[GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPECIES)].growthRate;
                         u32 currentExp = GetMonData(&gPlayerParty[*expMonId], MON_DATA_EXP);
-                        u32 levelCap = GetCurrentLevelCap();
+                        u32 levelCap = GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps);
 
                         if (GetMonData(&gPlayerParty[*expMonId], MON_DATA_LEVEL) >= levelCap)
                             gBattleMoveDamage = 0;

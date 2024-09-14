@@ -513,7 +513,7 @@ struct SaveBlock2
              u16 regionMapZoom:1; // whether the map is zoomed in
             u16 gameDifficulty:4; // Which difficulty the player chose (Normal/Hard/Challenge/Insanity, with Normal being 0)
     /*0x18*/ struct Pokedex pokedex;
-    /*0x90*/ u8 filler_90[0x6];
+    /*0x90*/ u8 expCapType;
              u8 levelCaps; // Various options for level caps
              bool8 autoRun;
     /*0x98*/ struct Time localTimeOffset;

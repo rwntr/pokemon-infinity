@@ -3822,7 +3822,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
                     if (B_RARE_CANDY_CAP && B_EXP_CAP_TYPE == EXP_CAP_HARD)
                     {
-                        u32 currentLevelCap = GetCurrentLevelCap();
+                        u32 currentLevelCap = GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps);
                         if (dataUnsigned > gExperienceTables[gSpeciesInfo[species].growthRate][currentLevelCap])
                             dataUnsigned = gExperienceTables[gSpeciesInfo[species].growthRate][currentLevelCap];
                     }
@@ -5471,7 +5471,7 @@ bool8 TryIncrementMonLevel(struct Pokemon *mon)
         expPoints = gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL];
         SetMonData(mon, MON_DATA_EXP, &expPoints);
     }
-    if (nextLevel > GetCurrentLevelCap() || expPoints < gExperienceTables[gSpeciesInfo[species].growthRate][nextLevel])
+    if (nextLevel > GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps) || expPoints < gExperienceTables[gSpeciesInfo[species].growthRate][nextLevel])
     {
         return FALSE;
     }
@@ -6940,4 +6940,56 @@ void UpdateDaysPassedSinceFormChange(u16 days)
             }
         }
     }
+}
+
+// Get the latest badge the player has earned (unless they skipped Winona)
+// League is counted as badge 9 for simplicity
+u16 getHighestBadge(void)
+{
+    if (FlagGet(FLAG_SYS_GAME_CLEAR))
+        return 9;
+    if (FlagGet(FLAG_BADGE08_GET))
+        return 8;
+    if (FlagGet(FLAG_BADGE07_GET))
+        return 7;
+    if (FlagGet(FLAG_BADGE06_GET))
+        return 6;
+    if (FlagGet(FLAG_BADGE05_GET))
+        return 5;
+    if (FlagGet(FLAG_BADGE04_GET))
+        return 4;
+    if (FlagGet(FLAG_BADGE03_GET))
+        return 3;
+    if (FlagGet(FLAG_BADGE02_GET))
+        return 2;
+    if (FlagGet(FLAG_BADGE01_GET))
+        return 1;
+
+    return 0;
+}
+
+u8 GetLevelCap(void)
+{
+    u8 currentLevelCap;
+    u8 levelCapSetting = gSaveBlock2Ptr->levelCaps;
+    u16 currentBadge = getHighestBadge();
+
+    static const u8 levelCapsStandard[] = {16, 25, 38, 50, 101, 101, 101, 101, 101, 101};
+    static const u8 levelCapsMore[] =     {16, 25, 38, 50,  54,  70,  85,  92,  95, 101};
+    static const u8 levelCapsStrict[] =   {14, 20, 30, 40,  45,  55,  60,  70,  80, 101};
+
+    switch (levelCapSetting)
+    {
+        default:
+        case LEVEL_CAPS_DEFAULT:
+            currentLevelCap = levelCapsStandard[currentBadge];
+            break;
+        case LEVEL_CAPS_MORE:
+            currentLevelCap = levelCapsMore[currentBadge];
+            break;
+        case LEVEL_CAPS_STRICT:
+            currentLevelCap = levelCapsStrict[currentBadge];
+            break;
+    }
+    return currentLevelCap;
 }

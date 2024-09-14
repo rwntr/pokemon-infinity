@@ -1882,6 +1882,12 @@ static void Task_NewGameBirchSpeech_ChooseDifficulty(u8 taskId)
             NewGameBirchSpeech_ClearGenderWindow(4, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
             break;
+        default:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->gameDifficulty = DIFFICULTY_NORMAL;
+            NewGameBirchSpeech_ClearGenderWindow(4, 1);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
+            break;
     }
 }
 
@@ -1891,7 +1897,6 @@ static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
     const u8 *str;
     switch (difficulty)
     {
-        default:
         case DIFFICULTY_NORMAL:
             str = gText_Pie_NormalMode;
             break;
@@ -1900,6 +1905,9 @@ static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
             break;
         case DIFFICULTY_CHALLENGE:
             str = gText_Pie_ChallengeMode;
+            break;
+        default:
+            str = gText_Pie_NormalMode;
             break;
     }
 
@@ -1950,6 +1958,12 @@ static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
         case 2:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_STRICT;
+            NewGameBirchSpeech_ClearGenderWindow(5, 1);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
+            break;
+        default:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_DEFAULT;
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;

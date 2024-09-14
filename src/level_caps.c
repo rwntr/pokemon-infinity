@@ -2,11 +2,37 @@
 #include "battle.h"
 #include "event_data.h"
 #include "level_caps.h"
+#include "strings.h"
 #include "pokemon.h"
 
 
-u32 GetCurrentLevelCap(void)
+
+u32 GetCurrentLevelCap(u16 levelCapSetting)
 {
+
+    u8 currentLevelCap;
+    u16 currentBadge = getHighestBadge();
+
+    static const u8 levelCapsStandard[] = {16, 25, 38, 50, 101, 101, 101, 101, 101, 101};
+    static const u8 levelCapsMore[] =     {16, 25, 38, 50,  54,  70,  85,  92,  95, 101};
+    static const u8 levelCapsStrict[] =   {14, 20, 30, 40,  45,  55,  60,  70,  80, 101};
+
+    switch (levelCapSetting) {
+        case LEVEL_CAPS_DEFAULT:
+            currentLevelCap = levelCapsStandard[currentBadge];
+            break;
+        case LEVEL_CAPS_MORE:
+            currentLevelCap = levelCapsMore[currentBadge];
+            break;
+        case LEVEL_CAPS_STRICT:
+            currentLevelCap = levelCapsStrict[currentBadge];
+            break;
+        default:
+            currentLevelCap = levelCapsStandard[currentBadge];
+            break;
+
+    }
+    /*  Unused from RHH fork
     static const u32 sLevelCapFlagMap[][2] =
     {
         {FLAG_BADGE01_GET, 15},
@@ -36,48 +62,37 @@ u32 GetCurrentLevelCap(void)
     }
 
     return MAX_LEVEL;
+    End unused from RHH fork*/
+    return currentLevelCap;
 }
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
 {
-    static const u32 sExpScalingDown[5] = { 4, 8, 16, 32, 64 };
     static const u32 sExpScalingUp[5]   = { 16, 8, 4, 2, 1 };
 
     u32 levelDifference;
-    u32 currentLevelCap = GetCurrentLevelCap();
-
-    if (B_EXP_CAP_TYPE == EXP_CAP_NONE)
-        return expValue;
+    u32 currentLevelCap = GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps);
 
     if (level < currentLevelCap)
     {
-        if (B_LEVEL_CAP_EXP_UP)
+        if (B_LEVEL_CAP_EXP_UP) //should always be true with default settings
         {
             levelDifference = currentLevelCap - level;
             if (levelDifference > ARRAY_COUNT(sExpScalingUp))
                 return expValue + (expValue / sExpScalingUp[ARRAY_COUNT(sExpScalingUp) - 1]);
             else
                 return expValue + (expValue / sExpScalingUp[levelDifference]);
+
+            //simplified this because I was getting annoyed by the "potential out of bounds" warnings lol
         }
         else
         {
             return expValue;
         }
     }
-    else if (B_EXP_CAP_TYPE == EXP_CAP_HARD)
+    else
     {
         return 0;
     }
-    else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT)
-    {
-        levelDifference = level - currentLevelCap;
-        if (levelDifference > ARRAY_COUNT(sExpScalingDown))
-            return expValue / sExpScalingDown[ARRAY_COUNT(sExpScalingDown) - 1];
-        else
-            return expValue / sExpScalingDown[levelDifference];
-    }
-    else
-    {
-       return expValue;
-    }
+    return 0; //default to be safe
 }
