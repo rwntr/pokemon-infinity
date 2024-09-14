@@ -14,12 +14,12 @@ FortreeCity_House3_Text_MetStevenHadAmazingPokemon:
 	.string "I remembered something.\p"
 	.string "I met this TRAINER, STEVEN, when\n"
 	.string "I was searching for rare stones.\p"
-	.string "Hoo, boy, he had some amazing POKéMON\n"
+	.string "Hoo, boy, he had some amazing Pokémon\n"
 	.string "with him.\p"
 	.string "They weren't just rare, they were\n"
 	.string "trained to terrifying extremes!\p"
 	.string "He might even be stronger than the\n"
-	.string "GYM LEADER in this town…$"
+	.string "Gym Leader in this town…$"
 
 FortreeCity_House3_Text_OhYouHavePokedex:
 	.string "What's that thing you have there?\p"

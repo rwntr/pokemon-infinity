@@ -20,7 +20,7 @@ SootopolisCity_House3_EventScript_Girl::
 	end
 
 SootopolisCity_House3_Text_JuanHasManyFansDoYou:
-	.string "You're a POKéMON TRAINER, aren't you?\p"
+	.string "You're a Pokémon TRAINER, aren't you?\p"
 	.string "SOOTOPOLIS's JUAN has many fans.\n"
 	.string "Even more than his student WALLACE!\p"
 	.string "Do you have any?$"
@@ -36,7 +36,7 @@ SootopolisCity_House3_Text_LonesomeTryWorkingHarder:
 
 SootopolisCity_House3_Text_TrainerFanClubWasWild:
 	.string "Dedicated fans come over from even\n"
-	.string "outside of HOENN.\p"
+	.string "outside of Hoenn.\p"
 	.string "It was really wild when I went to the\n"
 	.string "TRAINER FAN CLUB in LILYCOVE.$"
 
