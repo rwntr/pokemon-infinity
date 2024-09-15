@@ -1981,6 +1981,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 {
     u32 personalityValue;
     s32 i;
+    u16 minEnemyLevel;
     u8 monsCount;
     if (battleTypeFlags & BATTLE_TYPE_TRAINER && !(battleTypeFlags & (BATTLE_TYPE_FRONTIER
                                                                         | BATTLE_TYPE_EREADER_TRAINER
@@ -2000,7 +2001,9 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
         {
             monsCount = trainer->partySize;
         }
-        u16 minEnemyLevel = gDynamicEnemyMinLevel(trainer, firstTrainer, battleTypeFlags);
+
+        minEnemyLevel = gDynamicEnemyMinLevel(trainer, firstTrainer, battleTypeFlags);
+
         for (i = 0; i < monsCount; i++)
         {
             s32 ball = -1;
