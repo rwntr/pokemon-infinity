@@ -18,7 +18,7 @@ const u32 sLevelCapsFlagMap[][4] =
                 {FLAG_IS_CHAMPION, 101,  95, 80},
         };
 
-u16 GetActiveDifficultySetting(void)
+u16 GetActiveDifficultySetting()
 {
     return gSaveBlock2Ptr->gameDifficulty;
 }
@@ -28,7 +28,7 @@ void SetActiveDifficultySetting(u16 diffArg)
     gSaveBlock2Ptr->gameDifficulty = diffArg;
 }
 
-u16 GetActiveLevelCapType(void)
+u16 GetActiveLevelCapType()
 {
     return gSaveBlock2Ptr->gameDifficulty;
 }
@@ -38,7 +38,7 @@ void SetActiveLevelCapType(u16 capArg)
     gSaveBlock2Ptr->levelCaps = capArg;
 }
 
-u16 GetActiveLevelCapIndex(void)
+u16 GetActiveLevelCapIndex()
 {
     u32 index;
 
