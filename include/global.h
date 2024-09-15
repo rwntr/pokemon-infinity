@@ -48,6 +48,8 @@
 // AgbAssert calls.
 #define NELEMS(arr) (sizeof(arr)/sizeof(*(arr)))
 
+
+
 #define SWAP(a, b, temp)    \
 {                           \
     temp = a;               \
@@ -116,6 +118,7 @@
     if(v < 0) f += 65536.0f; \
     f;                       \
 })
+
 
 #define DIV_ROUND_UP(val, roundBy)(((val) / (roundBy)) + (((val) % (roundBy)) ? 1 : 0))
 

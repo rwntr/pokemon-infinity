@@ -78,4 +78,27 @@ static inline u32 uq4_12_multiply_by_int_half_up(uq4_12_t modifier, u32 value)
     return UQ_4_12_TO_INT((modifier * value) + UQ_4_12_ROUND);
 }
 
+//Thanks to IAR for this efficient u16 square root function
+static inline u16 root(u16 square)
+{
+    u16 sq = square;
+    u16 a, b;
+    b = sq;
+    a = sq = 0x3f;
+    sq = b/sq;
+    a = sq = (sq+a)>>1;
+    sq = b/sq;
+    a = sq = (sq+a)>>1;
+    sq = b/sq;
+    sq = (sq+a)>>1;
+
+    return sq;
+}
+
+//Function to find the lower of two u16s
+static inline u16 uMin(u16 a, u16 b)
+{
+    return (a < b) ? a : b;
+}
+
 #endif // FPMATH_H_

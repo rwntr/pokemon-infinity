@@ -348,7 +348,7 @@ static u16 TakeSelectedPokemonFromDaycare(struct DaycareMon *daycareMon)
         species = newSpecies;
     }
 
-    if (GetMonData(&pokemon, MON_DATA_LEVEL) < GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps))
+    if (GetMonData(&pokemon, MON_DATA_LEVEL) < GetActiveLevelCap())
     {
         experience = GetMonData(&pokemon, MON_DATA_EXP) + daycareMon->steps;
         SetMonData(&pokemon, MON_DATA_EXP, &experience);
@@ -397,8 +397,8 @@ static u8 GetNumLevelsGainedFromSteps(struct DaycareMon *daycareMon)
 
     levelBefore = GetLevelFromBoxMonExp(&daycareMon->mon);
     levelAfter = GetLevelAfterDaycareSteps(&daycareMon->mon, daycareMon->steps);
-    if (levelAfter > GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps))
-        levelAfter = GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps);
+    if (levelAfter > GetActiveLevelCap())
+        levelAfter = GetActiveLevelCap();
     return levelAfter - levelBefore;
 }
 

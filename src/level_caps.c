@@ -5,75 +5,100 @@
 #include "strings.h"
 #include "pokemon.h"
 
+const u32 sLevelCapsFlagMap[][4] =
+        {
+                {FLAG_BADGE01_GET, 16,  16, 14},
+                {FLAG_BADGE02_GET, 25,  25, 20},
+                {FLAG_BADGE03_GET, 38,  38, 30},
+                {FLAG_BADGE04_GET, 50,  50, 40},
+                {FLAG_BADGE05_GET, 101, 54, 45},
+                {FLAG_BADGE06_GET, 101, 70, 55},
+                {FLAG_BADGE07_GET, 101, 85, 60},
+                {FLAG_BADGE08_GET, 101, 92, 70},
+                {FLAG_IS_CHAMPION, 101,  95, 80},
+        };
 
-
-u32 GetCurrentLevelCap(u16 levelCapSetting)
+u16 GetActiveDifficultySetting(void)
 {
+    return gSaveBlock2Ptr->gameDifficulty;
+}
 
-    u8 currentLevelCap;
-    u32 i;
-    static const u32 sDefaultCapsFlagMap[][2] =
-    {
-        {FLAG_BADGE01_GET, 16},
-        {FLAG_BADGE02_GET, 25},
-        {FLAG_BADGE03_GET, 38},
-        {FLAG_BADGE04_GET, 50},
-        {FLAG_BADGE05_GET, 101},
-        {FLAG_BADGE06_GET, 101},
-        {FLAG_BADGE07_GET, 101},
-        {FLAG_BADGE08_GET, 101},
-        {FLAG_IS_CHAMPION, 101},
-    };
+void SetActiveDifficultySetting(u16 diffArg)
+{
+    gSaveBlock2Ptr->gameDifficulty = diffArg;
+}
 
-     static const u32 sMoreCapsFlagMap[][2] =
-    {
-        {FLAG_BADGE01_GET, 16},
-        {FLAG_BADGE02_GET, 25},
-        {FLAG_BADGE03_GET, 38},
-        {FLAG_BADGE04_GET, 50},
-        {FLAG_BADGE05_GET, 54},
-        {FLAG_BADGE06_GET, 70},
-        {FLAG_BADGE07_GET, 85},
-        {FLAG_BADGE08_GET, 92},
-        {FLAG_IS_CHAMPION, 95},
-    };
+u16 GetActiveLevelCapType(void)
+{
+    return gSaveBlock2Ptr->gameDifficulty;
+}
 
-     static const u32 sStrictCapsFlagMap[][2] =
-    {
-        {FLAG_BADGE01_GET, 14},
-        {FLAG_BADGE02_GET, 20},
-        {FLAG_BADGE03_GET, 30},
-        {FLAG_BADGE04_GET, 40},
-        {FLAG_BADGE05_GET, 45},
-        {FLAG_BADGE06_GET, 55},
-        {FLAG_BADGE07_GET, 60},
-        {FLAG_BADGE08_GET, 70},
-        {FLAG_IS_CHAMPION, 80},
-    };
+void SetActiveLevelCapType(u16 capArg)
+{
+    gSaveBlock2Ptr->levelCaps = capArg;
+}
 
-    for (i = 0; i < ARRAY_COUNT(sDefaultCapsFlagMap); i++)
+u16 GetActiveLevelCapIndex(void)
+{
+    u32 index;
+
+    for (index = 0; index < ARRAY_COUNT(sLevelCapsFlagMap); index++)
     {
-        if (!FlagGet(sDefaultCapsFlagMap[i][0])) {
-            break;
+        if (!FlagGet(sLevelCapsFlagMap[index][0])) {
+            return index;
         }
     }
+    //If you've beaten the champion
+    return MAX_LEVEL;
+}
 
-     switch (levelCapSetting) {
+
+u32 GetActiveLevelCap()
+{
+    u32 capFlag;
+    u32 capType;
+    capFlag = GetActiveLevelCapIndex();
+    capType = GetActiveLevelCapType();
+
+     if (capFlag == MAX_LEVEL)
+         return MAX_LEVEL;
+
+     switch (capType) {
         case LEVEL_CAPS_DEFAULT:
-            currentLevelCap = sDefaultCapsFlagMap[i][1];
-            break;
+            return sLevelCapsFlagMap[capFlag][1];
         case LEVEL_CAPS_MORE:
-            currentLevelCap = sMoreCapsFlagMap[i][1];
-            break;
+            return sLevelCapsFlagMap[capFlag][2];
         case LEVEL_CAPS_STRICT:
-            currentLevelCap = sStrictCapsFlagMap[i][1];
-            break;
+            return sLevelCapsFlagMap[capFlag][3];
         case LEVEL_CAPS_OFF:
         default:
-            currentLevelCap = MAX_LEVEL;
-            break;
-            }
-    return currentLevelCap;
+            return MAX_LEVEL;
+     }
+
+    //If you somehow miraculously break this, just return no level caps.
+    return MAX_LEVEL;
+}
+
+//This function exists for more intelligent dynamic trainer mon level distribution
+u32 GetLastLevelCap(u16 currCapIdx)
+{
+    u32 capType;
+    capType = GetActiveLevelCapType();
+
+    //If you haven't beaten Roxanne, return level you get your starter at
+    if (currCapIdx <= 0)
+    {
+        return 5;
+    }
+
+    //Otherwise-unhandled logical error, maybe possible
+    //to encounter if you skip Winona then beat T&L.
+    //Just uses your current cap for lastCap calculations
+    if (!FlagGet(sLevelCapsFlagMap[currCapIdx-1][0]))
+        return GetActiveLevelCap();
+
+    return sLevelCapsFlagMap[currCapIdx-1][capType];
+
 }
 
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
@@ -82,11 +107,11 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
     static const u32 sExpScalingUp[5]   = { 16, 8, 4, 2, 1 };
 
     u32 levelDifference;
-    u32 currentLevelCap = GetCurrentLevelCap(gSaveBlock2Ptr->levelCaps);
+    u32 currentLevelCap = GetActiveLevelCap();
 
     if (level < currentLevelCap)
     {
-        if (B_LEVEL_CAP_EXP_UP) //should always be true with default settings
+        if (B_LEVEL_CAP_EXP_UP) //should always be true with default settings but just in case
         {
             levelDifference = currentLevelCap - level;
             if (levelDifference > ARRAY_COUNT(sExpScalingUp))

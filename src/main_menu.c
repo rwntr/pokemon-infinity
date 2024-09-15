@@ -11,6 +11,7 @@
 #include "gpu_regs.h"
 #include "graphics.h"
 #include "international_string_util.h"
+#include "level_caps.h"
 #include "link.h"
 #include "main.h"
 #include "main_menu.h"
@@ -1865,26 +1866,26 @@ static void Task_NewGameBirchSpeech_ChooseDifficulty(u8 taskId)
     {
         case 0:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->gameDifficulty = DIFFICULTY_NORMAL;
+            SetActiveDifficultySetting(DIFFICULTY_NORMAL);
             NewGameBirchSpeech_ClearGenderWindow(4, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
             break;
         case 1:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->gameDifficulty = DIFFICULTY_HARD;
+            SetActiveDifficultySetting(DIFFICULTY_HARD);
             NewGameBirchSpeech_ClearGenderWindow(4, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
             break;
         case 2:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->gameDifficulty = DIFFICULTY_CHALLENGE;
+            SetActiveDifficultySetting(DIFFICULTY_CHALLENGE);
             gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
             NewGameBirchSpeech_ClearGenderWindow(4, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
             break;
         default:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->gameDifficulty = DIFFICULTY_NORMAL;
+            SetActiveDifficultySetting(DIFFICULTY_NORMAL);
             NewGameBirchSpeech_ClearGenderWindow(4, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
             break;
@@ -1893,7 +1894,8 @@ static void Task_NewGameBirchSpeech_ChooseDifficulty(u8 taskId)
 
 static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
 {
-    int difficulty = gSaveBlock2Ptr->gameDifficulty;
+    u16 difficulty;
+    difficulty = GetActiveDifficultySetting();
     const u8 *str;
     switch (difficulty)
     {
@@ -1939,31 +1941,31 @@ static void Task_NewGameBirchSpeech_WaitToShowLevelCapMenu(u8 taskId)
 
 static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
 {
-    int difficulty = NewGameBirchSpeech_ProcessDifficultyMenuInput();
+    s8 difficulty = NewGameBirchSpeech_ProcessDifficultyMenuInput();
 
     switch (difficulty)
     {
         case 0:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_DEFAULT;
+            SetActiveLevelCapType(LEVEL_CAPS_DEFAULT);
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;
         case 1:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_MORE;
+            SetActiveLevelCapType(LEVEL_CAPS_MORE);
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;
         case 2:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_STRICT;
+            SetActiveLevelCapType(LEVEL_CAPS_STRICT);
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;
         default:
             PlaySE(SE_SELECT);
-            gSaveBlock2Ptr->levelCaps = LEVEL_CAPS_OFF;
+            SetActiveLevelCapType(LEVEL_CAPS_OFF);
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;
@@ -1972,7 +1974,8 @@ static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
 
 static void Task_NewGameBirchSpeech_LevelCapsDesc(u8 taskId)
 {
-    int levelCap = gSaveBlock2Ptr->levelCaps;
+    u16 levelCap;
+    levelCap = GetActiveLevelCapType();
     const u8 *str;
     switch (levelCap)
     {
