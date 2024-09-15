@@ -1580,32 +1580,6 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
     }
 }
 
-static void NewGameBirchSpeech_ShowDifficultyMenu(void)
-{
-    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[4], 0xF3);
-    FillWindowPixelBuffer(4, PIXEL_FILL(1));
-    PrintMenuTable(4, ARRAY_COUNT(sMenuActions_Difficulty), sMenuActions_Difficulty);
-    InitMenuInUpperLeftCornerNormal(4, 3, 0);
-    PutWindowTilemap(4);
-    CopyWindowToVram(4, 3);
-}
-
-static void NewGameBirchSpeech_ShowLevelCapMenu(void)
-{
-    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[5], 0xF3);
-    FillWindowPixelBuffer(5, PIXEL_FILL(1));
-    PrintMenuTable(5, ARRAY_COUNT(sMenuActions_LevelCaps), sMenuActions_LevelCaps);
-    InitMenuInUpperLeftCornerNormal(5, 3, 0);
-    PutWindowTilemap(5);
-    CopyWindowToVram(5, 3);
-}
-
-static s8 NewGameBirchSpeech_ProcessDifficultyMenuInput(void)
-{
-    return Menu_ProcessInputNoWrap();
-}
-
-
 static void Task_NewGameBirchSpeech_SlideOutOldGenderSprite(u8 taskId)
 {
     u8 spriteId = gTasks[taskId].tPlayerSpriteId;
@@ -1883,12 +1857,6 @@ static void Task_NewGameBirchSpeech_ChooseDifficulty(u8 taskId)
             NewGameBirchSpeech_ClearGenderWindow(4, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
             break;
-        default:
-            PlaySE(SE_SELECT);
-            SetActiveDifficultySetting(DIFFICULTY_NORMAL);
-            NewGameBirchSpeech_ClearGenderWindow(4, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_DifficultyDesc;
-            break;
     }
 }
 
@@ -1898,6 +1866,7 @@ static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
     const u8 *str;
     switch (difficulty)
     {
+        default:
         case DIFFICULTY_NORMAL:
             str = gText_Pie_NormalMode;
             break;
@@ -1906,9 +1875,6 @@ static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
             break;
         case DIFFICULTY_CHALLENGE:
             str = gText_Pie_ChallengeMode;
-            break;
-        default:
-            str = gText_Pie_NormalMode;
             break;
     }
 
@@ -1959,12 +1925,6 @@ static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
         case 2:
             PlaySE(SE_SELECT);
             SetActiveLevelCapType(LEVEL_CAPS_STRICT);
-            NewGameBirchSpeech_ClearGenderWindow(5, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
-            break;
-        default:
-            PlaySE(SE_SELECT);
-            SetActiveLevelCapType(LEVEL_CAPS_OFF);
             NewGameBirchSpeech_ClearGenderWindow(5, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapsDesc;
             break;
@@ -2378,6 +2338,32 @@ static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void)
 {
     return Menu_ProcessInputNoWrap();
 }
+
+static void NewGameBirchSpeech_ShowDifficultyMenu(void)
+{
+    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[4], 0xF3);
+    FillWindowPixelBuffer(4, PIXEL_FILL(1));
+    PrintMenuTable(4, ARRAY_COUNT(sMenuActions_Difficulty), sMenuActions_Difficulty);
+    InitMenuInUpperLeftCornerNormal(4, 3, 0);
+    PutWindowTilemap(4);
+    CopyWindowToVram(4, 3);
+}
+
+static void NewGameBirchSpeech_ShowLevelCapMenu(void)
+{
+    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[5], 0xF3);
+    FillWindowPixelBuffer(5, PIXEL_FILL(1));
+    PrintMenuTable(5, ARRAY_COUNT(sMenuActions_LevelCaps), sMenuActions_LevelCaps);
+    InitMenuInUpperLeftCornerNormal(5, 3, 0);
+    PutWindowTilemap(5);
+    CopyWindowToVram(5, 3);
+}
+
+static s8 NewGameBirchSpeech_ProcessDifficultyMenuInput(void)
+{
+    return Menu_ProcessInputNoWrap();
+}
+
 
 void NewGameBirchSpeech_SetDefaultPlayerName(u8 nameId)
 {
