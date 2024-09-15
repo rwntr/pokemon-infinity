@@ -2036,13 +2036,15 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            level = GetHighestLevelInPlayerParty();
 
+            level = GetHighestLevelInPlayerParty();
             //New dynamic enemy level calculation, done by taking the lower of
             //the RMS of the enemy's party's levels, and the *previous* level cap.
-            if (level + partyData[i].lvl > 100)
+            if (gTestRunnerEnabled)
+                level = partyData[i].lvl;
+            else if (level + partyData[i].lvl > 100)
                 level = 100;
-            else if (level + partyData[i].lvl < 1)
+            else if (level + partyData[i].lvl < 1 || level )
                 level = minEnemyLevel;
             else
                 level = level + partyData[i].lvl;
