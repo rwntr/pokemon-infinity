@@ -8,6 +8,7 @@
 #include "string_util.h"
 #include "constants/item.h"
 #include "constants/abilities.h"
+#include "constants/spreads.h"
 #include "constants/trainers.h"
 #include "constants/battle.h"
 

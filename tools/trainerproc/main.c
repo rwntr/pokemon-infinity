@@ -46,6 +46,9 @@ struct Pokemon
     struct String item;
     int header_line;
 
+    struct String spread;
+    int spread_line;
+
     struct Stats evs;
     int evs_line;
 
@@ -1276,6 +1279,14 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
                 if (!token_stats(p, &value, &pokemon->evs, false))
                     any_error = !show_parse_error(p);
             }
+
+            else if (is_literal_token(&key, "Spread"))
+            {
+                if (pokemon->spread_line)
+                    any_error = !set_show_parse_error(p, key.location, "duplicate spread");
+                pokemon->spread_line = value.location.line;
+                pokemon->spread = token_string(&value);
+            }
             else if (is_literal_token(&key, "IVs"))
             {
                 if (pokemon->ivs_line)
@@ -1767,6 +1778,14 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
                 fprintf(f, "#line %d\n", pokemon->ivs_line);
                 fprintf(f, "            .iv = ");
                 fprint_stats(f, "TRAINER_PARTY_IVS", pokemon->ivs);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->spread_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->spread_line);
+                fprintf(f, "            .spread = ");
+                fprint_constant(f, "SPREAD", pokemon->spread);
                 fprintf(f, ",\n");
             }
 

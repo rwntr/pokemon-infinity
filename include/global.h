@@ -48,6 +48,8 @@
 // AgbAssert calls.
 #define NELEMS(arr) (sizeof(arr)/sizeof(*(arr)))
 
+
+
 #define SWAP(a, b, temp)    \
 {                           \
     temp = a;               \
@@ -116,6 +118,7 @@
     if(v < 0) f += 65536.0f; \
     f;                       \
 })
+
 
 #define DIV_ROUND_UP(val, roundBy)(((val) / (roundBy)) + (((val) % (roundBy)) ? 1 : 0))
 
@@ -511,10 +514,11 @@ struct SaveBlock2
              u16 optionsBattleStyle:1; // OPTIONS_BATTLE_STYLE_[SHIFT/SET]
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
-             //u16 padding1:4;
-             //u16 padding2;
+            u16 gameDifficulty:4; // Which difficulty the player chose (Normal/Hard/Challenge/Insanity, with Normal being 0)
     /*0x18*/ struct Pokedex pokedex;
-    /*0x90*/ u8 filler_90[0x8];
+    /*0x90*/ u8 expCapType;
+             u8 levelCaps; // Various options for level caps
+             bool8 autoRun;
     /*0x98*/ struct Time localTimeOffset;
     /*0xA0*/ struct Time lastBerryTreeUpdate;
     /*0xA8*/ u32 gcnLinkFlags; // Read by Pokémon Colosseum/XD
@@ -641,6 +645,7 @@ struct DewfordTrend
     u16 rand;
     u16 words[2];
 }; /*size = 0x8*/
+
 
 struct MauvilleManCommon
 {
@@ -1003,6 +1008,9 @@ struct SaveBlock1
     /*0x650*/ struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     /*0x690*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
     /*0x790*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
+    /*0x650*/ struct ItemSlot bagPocket_Medicine[BAG_MEDICINE_COUNT];
+    /*0x690*/ struct ItemSlot bagPocket_Battle[BAG_BATTLE_COUNT];
+    /*0x790*/ struct ItemSlot bagPocket_MegaStones[BAG_MEGASTONES_COUNT];
     /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
 #if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1 == FALSE
     /*0x988*/ u8 filler1[0x34]; // Previously Dex Flags, feel free to remove.

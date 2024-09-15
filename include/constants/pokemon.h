@@ -168,7 +168,7 @@
 #define LEVEL_UP_MOVE_LV   0xFE00
 #define LEVEL_UP_MOVE_END  0xFFFF
 
-#define MAX_LEVEL_UP_MOVES       20
+#define MAX_LEVEL_UP_MOVES       30
 
 #define MON_MALE       0x00
 #define MON_FEMALE     0xFE
@@ -298,6 +298,8 @@
 #define EVO_ITEM_COUNT_999                50     // Pokémon levels up after trainer has collected 999 of a specific item
 #define EVO_DEFEAT_THREE_WITH_ITEM        51     // Pokémon levels up after having defeat 3 Pokémon of the same species holding the specified item
 #define EVO_OVERWORLD_STEPS               52     // Pokémon levels up after having taken a specific amount of steps in the overworld (or as the party lead if OW_FOLLOWERS_ENABLED is FALSE) without switching
+
+#define EVOS_PER_MON 10
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL            0
