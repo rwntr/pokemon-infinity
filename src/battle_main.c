@@ -1885,9 +1885,6 @@ void trySetMonEvIvFromSpread(struct Pokemon *mon, const struct TrainerMon *party
             SetMonData(&mon[idx], MON_DATA_HP_EV + j, &gSets[partyData[idx].spread].EVs[j]);
         }
     }
-
-    CalculateMonStats(&mon[idx]);
-
 }
 void ModifyPersonalityForNature(u32 *personality, u32 newNature)
 {
