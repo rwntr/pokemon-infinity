@@ -748,7 +748,7 @@ Route110_Text_WeCantTalkAboutAquaActivities:
 	.string "We can't talk about them yet.$"
 
 Route110_Text_KickUpARuckus:
-	.string "I want to get going to SLATEPORT and\n"
+	.string "I want to get going to Slateport and\n"
 	.string "kick up a ruckus!$"
 
 Route110_Text_MyFirstJobInAqua:
@@ -897,7 +897,7 @@ Route110_Text_ChallengeReactionWorst:
 Route110_Text_RatedForNumberOfCollisions:
 	.string "This is CYCLING ROAD.\p"
 	.string "If you were to ride from MAUVILLE to\n"
-	.string "SLATEPORT on a MACH BIKE, you would\l"
+	.string "Slateport on a MACH BIKE, you would\l"
 	.string "be rated for the number of collisions\l"
 	.string "and your total time.$"
 
@@ -915,7 +915,7 @@ Route110_Text_AcroBikesDoNotQualify:
 
 Route110_Text_SlateportCitySign:
 	.string "ROUTE 110\n"
-	.string "{DOWN_ARROW} SLATEPORT CITY$"
+	.string "{DOWN_ARROW} Slateport CITY$"
 
 Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"
@@ -939,20 +939,20 @@ Route110_Text_MauvilleCitySign:
 	.string "{UP_ARROW} MAUVILLE CITY$"
 
 Route110_Text_TrainerTipsPrlzSleep:
-	.string "TRAINER TIPS\p"
+	.string "Trainer TIPS\p"
 	.string "The foe can be made helpless by\n"
 	.string "paralyzing it or causing it to sleep.\p"
 	.string "It is an important technique for\n"
 	.string "Pokémon battles.$"
 
 Route110_Text_TrainerTipsRegisterItems:
-	.string "TRAINER TIPS\p"
-	.string "The items in the BAG can be reorganized\n"
+	.string "Trainer TIPS\p"
+	.string "The items in the Bag can be reorganized\n"
 	.string "by pressing SELECT.$"
 
 Route110_Text_TrickHouseSign:
 	.string "“Three steps {RIGHT_ARROW} and two steps {UP_ARROW}\n"
-	.string "to reach the wondrous TRICK HOUSE.”$"
+	.string "to reach the wondrous Trick House.”$"
 
 Route110_Text_BestRecord:
 	.string "THE BEST RECORD TO DATE…\p"
@@ -973,17 +973,17 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
 	.string "You two are running separately.\l"
 	.string "Well, that's fine.\p"
-	.string "Oh, yes, I heard that your POKéNAV\n"
+	.string "Oh, yes, I heard that your Pokénav\n"
 	.string "had the MATCH CALL system installed.\p"
 	.string "Well, then, I should register you in\n"
-	.string "my POKéNAV as well.\p"
+	.string "my Pokénav as well.\p"
 	.string "That way, even when we're apart,\n"
-	.string "I can rate your POKéDEX anytime.\p"
+	.string "I can rate your Pokédex anytime.\p"
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav:
 	.string "Registered PROF. BIRCH\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 Route110_Text_KeepAnEyeOutForRival:
 	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"

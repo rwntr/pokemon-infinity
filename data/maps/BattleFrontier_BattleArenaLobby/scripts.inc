@@ -356,7 +356,7 @@ BattleFrontier_BattleArenaLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena:
-	.string "Where the battling spirit of TRAINERS\n"
+	.string "Where the battling spirit of Trainers\n"
 	.string "is put to the test!\p"
 	.string "I welcome you to the BATTLE ARENA!\p"
 	.string "I am your guide to the Set KO Tourney!$"
@@ -387,7 +387,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
 	.string "If you don't save, you will not be able\n"
 	.string "to continue with your challenge.\p"
 	.string "If you pull off the feat of beating\n"
-	.string "seven TRAINERS in succession,\l"
+	.string "seven Trainers in succession,\l"
 	.string "we will present you with Battle Points.$"
 
 BattleFrontier_BattleArenaLobby_Text_OkayToSave:
@@ -445,7 +445,7 @@ BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown:
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins:
 	.string "We congratulate you for your splendid\n"
-	.string "string of wins over seven TRAINERS!$"
+	.string "string of wins over seven Trainers!$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordAchievement:
 	.string "Your achievement will be recorded.\n"
@@ -464,7 +464,7 @@ BattleFrontier_BattleArenaLobby_Text_ReceivedPrize:
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize:
 	.string "Oh?\n"
-	.string "Your BAG seems to be full.\p"
+	.string "Your Bag seems to be full.\p"
 	.string "I urge you to clear space and\n"
 	.string "return for your prize.$"
 
@@ -537,7 +537,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainMindRules:
 	.string "This factor evaluates how aggressive\l"
 	.string "the battlers were.\p"
 	.string "The judging is based on how often\n"
-	.string "the TRAINERS ordered the use of\l"
+	.string "the Trainers ordered the use of\l"
 	.string "offensive moves.$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:
@@ -569,7 +569,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules:
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon:
 	.string "A victory snatched from the ARENA\n"
-	.string "TYCOON, and a seven-TRAINER sweep!\p"
+	.string "TYCOON, and a seven-Trainer sweep!\p"
 	.string "We congratulate you on your most\n"
 	.string "splendid challenge!$"
 

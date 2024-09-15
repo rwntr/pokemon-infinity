@@ -406,7 +406,7 @@ SlateportCity_OceanicMuseum_2F_Text_HoennModel:
 	.string "“MODEL OF Hoenn REGION”\p"
 	.string "It's a miniature diorama of the\n"
 	.string "HOENN region.\p"
-	.string "Where is LITTLEROOT TOWN on this?$"
+	.string "Where is Littleroot Town on this?$"
 
 SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay:
 	.string "It's a display on the flow of seawater.\p"
@@ -420,22 +420,22 @@ SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay:
 	.string "as currents driven by the winds.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
-	.string "“THE FERRY S.S. TIDAL\p"
+	.string "“The Ferry S.S. Tidal\p"
 	.string "“A scale replica of the ship under\n"
-	.string "construction at STERN'S SHIPYARD.”$"
+	.string "construction at Stern's Shipyard.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
-	.string "“SUBMARINE EXPLORER 1\p"
+	.string "“Submarine Explorer 1\p"
 	.string "“A replica of the high-performance\n"
 	.string "ocean floor exploration submarine.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
-	.string "“SUBMERSIBLE POD\p"
+	.string "“Submersible Pod\p"
 	.string "“A replica of a compact, unmanned\n"
 	.string "pod for seafloor exploration.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
-	.string "“S.S. ANNE\p"
+	.string "“S.S. Anne\p"
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
 

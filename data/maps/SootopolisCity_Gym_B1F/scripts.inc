@@ -79,7 +79,7 @@ SootopolisCity_Gym_B1F_Text_DaphneIntro:
 	.string "The sight of JUAN conducting\n"
 	.string "a battle…\p"
 	.string "The very beauty of it compelled me to\n"
-	.string "become a TRAINER.$"
+	.string "become a Trainer.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneDefeat:
 	.string "You battled with more beauty than\n"
@@ -133,7 +133,7 @@ SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
 	.string "A graceful glide across the ice while\n"
 	.string "crossing no lines…\p"
-	.string "A TRAINER putting on that performance\n"
+	.string "A Trainer putting on that performance\n"
 	.string "would be elegantly beautiful!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
@@ -141,7 +141,7 @@ SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
 
 SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
 	.string "This is really obvious, but how strong\n"
-	.string "you are as a TRAINER has nothing to do\l"
+	.string "you are as a Trainer has nothing to do\l"
 	.string "with how young or old you are.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:

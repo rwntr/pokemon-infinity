@@ -77,7 +77,7 @@ EverGrandeCity_PokemonCenter_1F_Movement_ScottExit:
 	step_end
 
 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad:
-	.string "The Pokémon LEAGUE is only a short\n"
+	.string "The Pokémon League is only a short\n"
 	.string "distance after the VICTORY ROAD.\p"
 	.string "If you've come this far, what choice\n"
 	.string "do you have but to keep going?$"
@@ -91,11 +91,11 @@ EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
 
 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
 	.string "SCOTT: {PLAYER}{KUN}, you've clawed your\n"
-	.string "way up to face the Pokémon LEAGUE!\p"
+	.string "way up to face the Pokémon League!\p"
 	.string "I'm happy for you!\n"
 	.string "You made my cheering worthwhile!\p"
 	.string "{PLAYER}{KUN}, if you were to become\n"
-	.string "the Pokémon LEAGUE CHAMPION…\p"
+	.string "the Pokémon League Champion…\p"
 	.string "I'll get in touch with you then.\p"
 	.string "Okay, {PLAYER}{KUN}.\n"
 	.string "Go for greatness!$"

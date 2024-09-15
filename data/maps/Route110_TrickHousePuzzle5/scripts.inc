@@ -904,7 +904,7 @@ Route110_TrickHousePuzzle5_Movement_MechadollShake:
 Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened:
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
-	.string "“TRICK MASTER is a genius.”\n"
+	.string "“Trick Master is a genius.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
@@ -978,13 +978,13 @@ Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz1:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Sell one GREAT BALL and buy\n"
-	.string "one POTION. How much money remains?$"
+	.string "Sell one Great Ball and buy\n"
+	.string "one Potion. How much money remains?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Do one REPEL and SODA POP cost\n"
-	.string "more than one SUPER POTION?$"
+	.string "Do one Repel and SODA POP cost\n"
+	.string "more than one Super Potion?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Intro:
 	.string "CLICKETY-CLACK…\n"
@@ -993,7 +993,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll4Intro:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz1:
 	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In SEASHORE HOUSE, were there more men\n"
+	.string "In Seashore House, were there more men\n"
 	.string "or women?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2:
@@ -1003,23 +1003,23 @@ Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3:
 	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In the TRAINER'S SCHOOL, how many\n"
+	.string "In the Trainer'S SCHOOL, how many\n"
 	.string "girl students were there?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Intro:
 	.string "CLICKETY-CLACK…\n"
 	.string "MECHADOLL 5 AM I!\p"
-	.string "THE MASTER'S BEST AND PROUDEST\n"
+	.string "THE Master'S BEST AND PROUDEST\n"
 	.string "ACHIEVEMENT AM I.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In SLATEPORT's Pokémon FAN CLUB,\n"
+	.string "In Slateport's Pokémon FAN CLUB,\n"
 	.string "how many Pokémon were there?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In FORTREE CITY, how many\n"
+	.string "In FORTREE City, how many\n"
 	.string "tree houses were there?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3:

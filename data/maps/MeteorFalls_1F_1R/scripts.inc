@@ -240,7 +240,7 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
 	.string "Hehehe!\p"
 	.string "With this METEORITE, that thing in\n"
-	.string "MT. CHIMNEY will…$"
+	.string "Mt. Chimney will…$"
 
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
 	.string "Heh?\p"
@@ -260,13 +260,13 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "you all…\p"
 	.string "Heh, it doesn't matter!\p"
 	.string "We've got the METEORITE, so off to\n"
-	.string "MT. CHIMNEY we go!\p"
+	.string "Mt. Chimney we go!\p"
 	.string "Hehehe! Be seeing you, you TEAM\n"
 	.string "AQUA dingbats!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "ARCHIE: Didn't I see you before?\n"
-	.string "At SLATEPORT's MUSEUM?\p"
+	.string "At Slateport's MUSEUM?\p"
 	.string "Ah, so your name is {PLAYER}.\p"
 	.string "At the time, I thought you were one\n"
 	.string "of TEAM MAGMA's goons.\p"
@@ -287,7 +287,7 @@ MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
 	.string "ARCHIE: Yes, yes, we must!\n"
 	.string "We've got to hurry.\p"
 	.string "There's no telling what TEAM MAGMA\n"
-	.string "will do at MT. CHIMNEY!$"
+	.string "will do at Mt. Chimney!$"
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
 	.string "ARCHIE: {PLAYER}, you should keep\n"
@@ -307,9 +307,9 @@ MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "I don't understand any of it.\p"
 	.string "But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "METEORITE at Mt. Chimney?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 	.string "PROF. COZMO: But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "METEORITE at Mt. Chimney?$"

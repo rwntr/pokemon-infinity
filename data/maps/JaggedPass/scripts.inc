@@ -150,7 +150,7 @@ JaggedPass_EventScript_Autumn::
 	end
 
 JaggedPass_Text_EricIntro:
-	.string "MT. CHIMNEY's JAGGED PASS…\p"
+	.string "Mt. Chimney's JAGGED PASS…\p"
 	.string "Now this is what I've always wanted\n"
 	.string "in a mountain.\p"
 	.string "This jagged bumpiness…\n"
@@ -208,7 +208,7 @@ JaggedPass_Text_EthanPostBattle:
 JaggedPass_Text_EthanRegister:
 	.string "When I get more used to this bumpiness,\n"
 	.string "I'll be sure to win!\p"
-	.string "Can you register me in your POKéNAV?$"
+	.string "Can you register me in your Pokénav?$"
 
 JaggedPass_Text_EthanRematchIntro:
 	.string "I got used to this bumpiness.\n"
@@ -220,7 +220,7 @@ JaggedPass_Text_EthanRematchDefeat:
 
 JaggedPass_Text_EthanPostRematch:
 	.string "I should get an ACRO BIKE from RYDEL\n"
-	.string "in MAUVILLE CITY…$"
+	.string "in MAUVILLE City…$"
 
 JaggedPass_Text_GruntIntro:
 	.string "Wah!\n"

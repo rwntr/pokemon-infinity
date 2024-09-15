@@ -986,7 +986,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_RisingStar:
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship:
-	.string "Will this TRAINER race to\n"
+	.string "Will this Trainer race to\n"
 	.string "the championship?\p"
 	.string "$"
 
@@ -1001,12 +1001,12 @@ BattleFrontier_BattleDomeBattleRoom_Text_CanLossBeAvenged:
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_OnFireForChampionship:
-	.string "The TRAINER is on fire for\n"
+	.string "The Trainer is on fire for\n"
 	.string "the first championship try!\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WinHereAdvancesToFinal:
-	.string "A win here means this TRAINER\n"
+	.string "A win here means this Trainer\n"
 	.string "advances to the final!\p"
 	.string "$"
 
@@ -1021,12 +1021,12 @@ BattleFrontier_BattleDomeBattleRoom_Text_TheInvincibleChampion:
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanAnyoneHopeToBeatTrainer:
 	.string "Can anyone hope to beat this\n"
-	.string "TRAINER?\p"
+	.string "Trainer?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_DoBattlesExistSolelyForTrainer:
 	.string "Do battles exist solely for\n"
-	.string "this TRAINER?\p"
+	.string "this Trainer?\p"
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CurrentChampAimingToRetainTitle:
@@ -1043,7 +1043,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned:
 	.string "$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals:
-	.string "Will this TRAINER do as expected\n"
+	.string "Will this Trainer do as expected\n"
 	.string "and advance to the finals?\p"
 	.string "$"
 
@@ -1056,7 +1056,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_FeelGlowOfTrueMaster:
 	.string "Feel the glow of a true master!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_MakeWayForDomeAceTucker:
-	.string "And now… The TRAINER standing in\n"
+	.string "And now… The Trainer standing in\n"
 	.string "{PLAYER}'s record-setting path…\p"
 	.string "Yes! The one and only!\n"
 	.string "The BATTLE DOME COMMISSIONER!\l"

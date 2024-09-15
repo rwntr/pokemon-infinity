@@ -272,7 +272,7 @@ BattleFrontier_BattlePike_EventScript_CloseCurtain::
 	return
 
 BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike:
-	.string "Where the luck of TRAINERS\n"
+	.string "Where the luck of Trainers\n"
 	.string "is put to the test…\p"
 	.string "Welcome to the BATTLE PIKE…\p"
 	.string "I am your guide to the BATTLE PIKE…$"
@@ -397,7 +397,7 @@ BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal:
 BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer:
 	.string "I've completed the challenge 10 times\n"
 	.string "now, but I've never had to battle\l"
-	.string "a TRAINER once.$"
+	.string "a Trainer once.$"
 
 BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere:
 	.string "Listen! Listen!\p"
@@ -411,7 +411,7 @@ BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose:
 	.string "I can't figure it out at all!\p"
 	.string "I've taken the challenge a bunch\n"
 	.string "of times, but all I ever do is run into\l"
-	.string "TRAINERS whichever path I choose.$"
+	.string "Trainers whichever path I choose.$"
 
 BattleFrontier_BattlePikeLobby_Text_RulesAreListed:
 	.string "The Battle Choice's rules are listed.$"
@@ -420,12 +420,12 @@ BattleFrontier_BattlePikeLobby_Text_ReadWhichHeading:
 	.string "Which heading do you want to read?$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules:
-	.string "The BAG and POKéNAV may not be used\n"
+	.string "The Bag and Pokénav may not be used\n"
 	.string "during a Battle Choice challenge.$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules:
 	.string "During a Battle Choice challenge,\n"
-	.string "any BERRY or HERB held by Pokémon\l"
+	.string "any Berry or HERB held by Pokémon\l"
 	.string "will be effective only once.$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:

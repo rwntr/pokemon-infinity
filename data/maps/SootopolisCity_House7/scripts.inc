@@ -14,7 +14,7 @@ SootopolisCity_House7_Text_CityFromEruptedVolcano:
 	.string "forced itself up from the depths.\p"
 	.string "Its crater emerged from the sea and\n"
 	.string "became filled with rainwater.\p"
-	.string "That's how SOOTOPOLIS CITY came into\n"
+	.string "That's how SOOTOPOLIS City came into\n"
 	.string "being.$"
 
 SootopolisCity_House7_Text_CaveMadeToKeepSomething:

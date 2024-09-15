@@ -156,17 +156,17 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "but this is my home.\p"
 	.string "Thank you for all that you've done.\p"
 	.string "This is my token of appreciation.\n"
-	.string "It's the HIDDEN MACHINE DIVE.\p"
+	.string "It's the Hidden Machine Dive.\p"
 	.string "No need to be shy--you've earned\n"
 	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "STEVEN: While you're using SURF, you\n"
 	.string "should notice dark patches of water.\p"
-	.string "Use DIVE if you come to deep water\n"
+	.string "Use Dive if you come to deep water\n"
 	.string "like it. You'll drop to the seafloor.\p"
 	.string "When you want to come back up, use\n"
-	.string "DIVE again.\p"
+	.string "Dive again.\p"
 	.string "In some places, it won't be possible\n"
 	.string "for you to surface, though.$"
 
@@ -178,10 +178,10 @@ MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "found in his submarine.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "{PLAYER} checked the Poké Ball.\p"
 	.string "It contained the Pokémon\n"
 	.string "BELDUM.\p"
-	.string "Take the POKé BALL?$"
+	.string "Take the Poké Ball?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
 	.string "{PLAYER} obtained a BELDUM.$"
@@ -191,7 +191,7 @@ MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
 	.string "There is no space for another Pokémon.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the POKé BALL where\n"
+	.string "{PLAYER} left the Poké Ball where\n"
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
@@ -203,7 +203,7 @@ MossdeepCity_StevensHouse_Text_LetterFromSteven:
 	.string "I don't plan to return home for some\n"
 	.string "time.\p"
 	.string "I have a favor to ask of you.\p"
-	.string "I want you to take the POKé BALL on\n"
+	.string "I want you to take the Poké Ball on\n"
 	.string "the desk.\p"
 	.string "Inside it is a BELDUM, my favorite\n"
 	.string "Pokémon.\p"

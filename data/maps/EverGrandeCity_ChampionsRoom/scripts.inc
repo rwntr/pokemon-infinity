@@ -225,7 +225,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
-	.string "That incident in SOOTOPOLIS CITY…\n"
+	.string "That incident in SOOTOPOLIS City…\n"
 	.string "That was superb work, putting an end\l"
 	.string "to that crisis all by yourself.\p"
 	.string "Oops!\p"
@@ -233,7 +233,7 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "alone ended the crisis.\p"
 	.string "You overcame that difficult situation\n"
 	.string "by working as one with your Pokémon.\p"
-	.string "We TRAINERS raise Pokémon by giving\n"
+	.string "We Trainers raise Pokémon by giving\n"
 	.string "them items and by teaching them new\l"
 	.string "techniques for battle.\p"
 	.string "But we ourselves also learn many\n"
@@ -247,13 +247,13 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "Show me right here and now!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "I, the CHAMPION, fall in defeat…\p"
+	.string "I, the Champion, fall in defeat…\p"
 	.string "That was wonderful work.\n"
 	.string "You were elegant, infuriatingly so.\l"
 	.string "And yet it was utterly glorious!\p"
 	.string "Kudos to you, {PLAYER}{KUN}!\p"
 	.string "You are a truly noble Pokémon\n"
-	.string "TRAINER!$"
+	.string "Trainer!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "WALLACE: The Pokémon you sent into\n"
@@ -266,14 +266,14 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "Even I felt bedazzled by your\n"
 	.string "masterful performance!\p"
 	.string "You now stand at the glorious peak\n"
-	.string "of the Pokémon LEAGUE.\p"
+	.string "of the Pokémon League.\p"
 	.string "I now proclaim you to be the new\n"
 	.string "HOENN region…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "May: {PLAYER}{KUN}!\p"
 	.string "Here's some advice before you challenge\n"
-	.string "the CHAMPION…$"
+	.string "the Champion…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
 	.string "May: Huh?\n"
@@ -285,12 +285,12 @@ EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
 	.string "Brendan: {PLAYER}!\p"
 	.string "How would you like some advice before\n"
-	.string "you challenge the CHAMPION?…$"
+	.string "you challenge the Champion?…$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 	.string "Brendan: {PLAYER}…\p"
 	.string "Are you trying to tell me…\n"
-	.string "You've beaten the CHAMPION?$"
+	.string "You've beaten the Champion?$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
 	.string "PROF. BIRCH: See?\n"
@@ -303,9 +303,9 @@ EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
 	.string "own father at the PETALBURG,\l"
 	.string "I thought perhaps you had a chance…\p"
 	.string "But to think you've actually become\n"
-	.string "the CHAMPION!\p"
+	.string "the Champion!\p"
 	.string "Ah, yes!\p"
-	.string "What became of your POKéDEX?\n"
+	.string "What became of your Pokédex?\n"
 	.string "Here, let me see.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
@@ -316,12 +316,12 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
 	.string "WALLACE: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
-	.string "The new CHAMPION!\p"
+	.string "The new Champion!\p"
 	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "WALLACE: I'm sorry, but…\p"
-	.string "From here on, only those TRAINERS who\n"
+	.string "From here on, only those Trainers who\n"
 	.string "have become CHAMPIONS may enter.\p"
 	.string "You'll have to wait outside with\n"
 	.string "PROF. BIRCH.$"

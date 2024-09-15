@@ -258,7 +258,7 @@ SSTidalCorridor_Text_ScottBattleFrontierInvite:
 	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
 	.string "Something's come up, so I have to\n"
 	.string "disembark, but am I glad to see you!\p"
-	.string "Congratulations, LEAGUE CHAMPION!\p"
+	.string "Congratulations, League Champion!\p"
 	.string "There's a place I'd like to invite\n"
 	.string "someone like you.\p"
 	.string "It's the…\n"
@@ -284,11 +284,11 @@ SSTidal_Text_HopeYouEnjoyVoyage:
 	.string "our ferry.$"
 
 SSTidal_Text_MadeLandInSlateport:
-	.string "We have made land in SLATEPORT CITY.\n"
+	.string "We have made land in Slateport City.\n"
 	.string "Thank you for sailing with us.$"
 
 SSTidal_Text_MadeLandInLilycove:
-	.string "We have made land in LILYCOVE CITY.\n"
+	.string "We have made land in LILYCOVE City.\n"
 	.string "Thank you for sailing with us.$"
 
 SSTidalCorridor_Text_CanRestInCabin2:
@@ -304,7 +304,7 @@ SSTidalCorridor_Text_WeveArrived:
 
 SSTidalCorridor_Text_VisitOtherCabins:
 	.string "Go visit other cabins.\n"
-	.string "TRAINERS bored of the boat trip will\l"
+	.string "Trainers bored of the boat trip will\l"
 	.string "be itching to battle.$"
 
 SSTidalCorridor_Text_EnjoyYourCruise:

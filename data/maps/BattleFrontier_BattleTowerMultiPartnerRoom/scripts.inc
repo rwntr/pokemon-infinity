@@ -280,7 +280,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_Partner8::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner:
 	.string "Please find a partner from out of\n"
-	.string "the TRAINERS gathered here.$"
+	.string "the Trainers gathered here.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_QuitLookingForPartner:
 	.string "{PLAYER}, you have not found a partner\n"
@@ -290,7 +290,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_QuitLookingForPartner:
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner2:
 	.string "Then, please find a partner from\n"
-	.string "the TRAINERS gathered here.$"
+	.string "the Trainers gathered here.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ThankYouForChoosingPartner::
 	.string "Thank you for choosing a partner.\p"
@@ -816,7 +816,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyIntro::
 	.string "Hello!\n"
-	.string "I'm {STR_VAR_1}, and I'm a BEAUTY!$"
+	.string "I'm {STR_VAR_1}, and I'm a Beauty!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon1::
 	.string "Do you know what I've been raising?\n"
@@ -1203,7 +1203,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMIntro::
 	.string "Hello, I'm {STR_VAR_1},\n"
-	.string "and I'm a POKéFAN.$"
+	.string "and I'm a PokéFAN.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon1::
 	.string "I have with me now one {STR_VAR_2}\n"
@@ -1540,7 +1540,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacIntro::
 	.string "Heyo!\n"
-	.string "I'm {STR_VAR_1}, the POKéMANIAC!$"
+	.string "I'm {STR_VAR_1}, the PokéMANIAC!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon1::
 	.string "What does a guy like me have?\n"
@@ -1706,7 +1706,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFIntro::
 	.string "I'm {STR_VAR_1}, and I'm proud to say\n"
-	.string "that I am a POKéFAN.$"
+	.string "that I am a PokéFAN.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon1::
 	.string "The darling Pokémon I've raised are\n"

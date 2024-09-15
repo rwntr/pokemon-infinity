@@ -257,7 +257,7 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
+	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "WATTSON, the LEADER of MAUVILLE\n"
 	.string "GYM, uses ELECTRIC-type Pokémon.\p"
@@ -317,8 +317,8 @@ MauvilleCity_Gym_Text_VivianDefeat:
 MauvilleCity_Gym_Text_VivianPostBattle:
 	.string "I've heard that MAUVILLE was founded\n"
 	.string "by WATTSON.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
+	.string "He was a Trainer long before we\n"
+	.string "became Trainers.\l"
 	.string "He must know all sorts of things!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
@@ -371,22 +371,22 @@ MauvilleCity_Gym_Text_ExplainShockWave:
 
 MauvilleCity_Gym_Text_RegisteredWattson:
 	.string "Registered Gym Leader WATTSON\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
 	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "young Trainer like you!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "Wahahahah!\n"
 	.string "Go forth and endeavor, youngster!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "MAUVILLE CITY Pokémon$"
+	.string "MAUVILLE City Pokémon$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "MAUVILLE CITY Pokémon\p"
-	.string "WATTSON'S CERTIFIED TRAINERS:\n"
+	.string "MAUVILLE City Pokémon\p"
+	.string "WATTSON'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:

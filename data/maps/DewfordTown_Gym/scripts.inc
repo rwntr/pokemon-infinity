@@ -283,7 +283,7 @@ DewfordTown_Gym_EventScript_GymStatue::
 	end
 
 DewfordTown_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
+	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "DEWFORD's Gym Leader BRAWLY commands\n"
 	.string "FIGHTING-type Pokémon.\p"
@@ -295,7 +295,7 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "What's worse, the is as dark as\n"
 	.string "the ocean floor.\p"
 	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
+	.string "the Trainers in your way.\p"
 	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
@@ -326,8 +326,8 @@ DewfordTown_Gym_Text_JocelynPostBattle:
 	.string "I'm not going to waste this loss.\n"
 	.string "I'll use it to motivate me to train!\p"
 	.string "One day I'll become a Gym Leader…\p"
-	.string "No, I'll become the Pokémon LEAGUE\n"
-	.string "CHAMPION!$"
+	.string "No, I'll become the Pokémon League\n"
+	.string "Champion!$"
 
 DewfordTown_Gym_Text_LauraIntro:
 	.string "Don't you dare brush me off!\n"
@@ -405,8 +405,8 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
 	.string "FLASH outside of battle.\p"
-	.string "If you'd like, use this TECHNICAL\n"
-	.string "MACHINE, too.$"
+	.string "If you'd like, use this Technical\n"
+	.string "Machine, too.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"
@@ -416,19 +416,19 @@ DewfordTown_Gym_Text_ExplainBulkUp:
 
 DewfordTown_Gym_Text_RegisteredBrawly:
 	.string "Registered Gym Leader BRAWLY\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "among Trainers one day!$"
 
 DewfordTown_Gym_Text_GymStatue:
 	.string "DEWFORD TOWN Pokémon$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
 	.string "DEWFORD TOWN Pokémon\p"
-	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
+	.string "Brawly's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:

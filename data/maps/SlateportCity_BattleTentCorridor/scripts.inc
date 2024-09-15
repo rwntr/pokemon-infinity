@@ -168,7 +168,7 @@ SlateportCity_ContestHall_Text_AdviceForContests:
 
 @ Unused
 SlateportCity_ContestHall_Text_MyPapaIsContestJudge:
-	.string "My papa, he's a CONTEST JUDGE.\p"
+	.string "My papa, he's a Contest JUDGE.\p"
 	.string "I wonder what I should be when I\n"
 	.string "grow up, a JUDGE or a Gym Leader?$"
 
@@ -206,11 +206,11 @@ SlateportCity_ContestHall_Text_MCStepUpTakePartInContest:
 @ Unused
 SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest:
 	.string "JUDGE: Well, hello there!\n"
-	.string "I see that you're a TRAINER!\p"
+	.string "I see that you're a Trainer!\p"
 	.string "Then, it just wouldn't do for you\n"
-	.string "to miss a Pokémon CONTEST!\p"
-	.string "Get a CONTEST PASS in VERDANTURF\n"
-	.string "CITY and enter anytime!$"
+	.string "to miss a Pokémon Contest!\p"
+	.string "Get a Contest PASS in VERDANTURF\n"
+	.string "City and enter anytime!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ItsAppealTime:
@@ -245,7 +245,7 @@ SlateportCity_ContestHall_Text_MoreFreakedOutThanMon:
 
 @ Unused
 SlateportCity_ContestHall_Text_BattleAndContestAlike:
-	.string "A battle and a CONTEST aren't the\n"
+	.string "A battle and a Contest aren't the\n"
 	.string "same, but they are alike, too.\p"
 	.string "You need to work hard and believe\n"
 	.string "in the Pokémon you've raised.$"
@@ -273,5 +273,5 @@ SlateportCity_ContestHall_Text_GetUrgeToMoveWithMon:
 @ Unused
 SlateportCity_ContestHall_Text_HyperRankStage:
 	.string "Pokémon CONTESTS\n"
-	.string "HYPER RANK STAGE!$"
+	.string "HYPER Rank Stage!$"
 

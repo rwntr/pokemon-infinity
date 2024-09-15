@@ -10,13 +10,13 @@ gContestRankNormal::
 	.string "NORMAL RANK$"
 
 gContestRankSuper::
-	.string "SUPER RANK$"
+	.string "Super RANK$"
 
 gContestRankHyper::
 	.string "HYPER RANK$"
 
 gContestRankMaster::
-	.string "MASTER RANK$"
+	.string "Master RANK$"
 
 gContestLink::
 	.string "LINK$"

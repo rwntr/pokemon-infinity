@@ -1406,13 +1406,13 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "SOOTOPOLIS CITY Pokémon\n"
+	.string "SOOTOPOLIS City Pokémon\n"
 	.string "LEADER: JUAN\p"
 	.string "“The Gym Leader with the beauty\n"
 	.string "of pure water!”$"
 
 SootopolisCity_Text_CitySign:
-	.string "SOOTOPOLIS CITY\p"
+	.string "SOOTOPOLIS City\p"
 	.string "“The mystical city where history\n"
 	.string "slumbers.”$"
 
@@ -1512,10 +1512,10 @@ SootopolisCity_Text_PrettyMonCameFromSky:
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
 	.string "Oh, no!\n"
-	.string "SOOTOPOLIS CITY will get wrecked!$"
+	.string "SOOTOPOLIS City will get wrecked!$"
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
-	.string "SOOTOPOLIS CITY didn't get wrecked!$"
+	.string "SOOTOPOLIS City didn't get wrecked!$"
 
 SootopolisCity_Text_NoOrdinaryTourist:
 	.string "Hm!\n"
@@ -1537,11 +1537,11 @@ SootopolisCity_Text_CaveOfOriginPleaseLeave:
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "A person with a strong will and\n"
 	.string "superior talent…\p"
-	.string "A TRAINER who has knowledge and\n"
+	.string "A Trainer who has knowledge and\n"
 	.string "experience of many kinds of Pokémon…\p"
 	.string "If such a person were to appear, I was\n"
 	.string "instructed by WALLACE to lead that\l"
-	.string "TRAINER to this CAVE.$"
+	.string "Trainer to this CAVE.$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
 	.string "Oh, my…\p"
@@ -1709,7 +1709,7 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Please accept it.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That HIDDEN MACHINE contains\n"
+	.string "That Hidden Machine contains\n"
 	.string "WATERFALL.\p"
 	.string "If you have the RAIN BADGE, a Pokémon\n"
 	.string "that has learned that HM move can\l"

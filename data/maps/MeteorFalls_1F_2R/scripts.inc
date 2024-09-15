@@ -63,7 +63,7 @@ MeteorFalls_1F_2R_EventScript_RematchJay::
 MeteorFalls_1F_2R_Text_NicolasIntro:
 	.string "This is where we DRAGON users do our\n"
 	.string "training.\p"
-	.string "The CHAMPION even visits.\n"
+	.string "The Champion even visits.\n"
 	.string "Now do you see how special it is here?$"
 
 MeteorFalls_1F_2R_Text_NicolasDefeat:
@@ -77,7 +77,7 @@ MeteorFalls_1F_2R_Text_NicolasPostBattle:
 
 MeteorFalls_1F_2R_Text_NicolasRegister:
 	.string "I want to know more about your power.\n"
-	.string "Let me register you in my POKéNAV.$"
+	.string "Let me register you in my Pokénav.$"
 
 MeteorFalls_1F_2R_Text_NicolasRematchIntro:
 	.string "Since we met, we have trained hard\n"
@@ -111,12 +111,12 @@ MeteorFalls_1F_2R_Text_JohnPostBattle:
 	.string "my dear wife in a battle.$"
 
 MeteorFalls_1F_2R_Text_JohnNotEnoughMons:
-	.string "JOHN: Well, well, what a young TRAINER!\p"
+	.string "JOHN: Well, well, what a young Trainer!\p"
 	.string "Will you battle with us? If so, you'll\n"
 	.string "have to return with more Pokémon.$"
 
 MeteorFalls_1F_2R_Text_JohnRegister:
-	.string "JOHN: Young TRAINER, if the chance\n"
+	.string "JOHN: Young Trainer, if the chance\n"
 	.string "arises, will you battle with us again?$"
 
 MeteorFalls_1F_2R_Text_JayIntro:
@@ -136,7 +136,7 @@ MeteorFalls_1F_2R_Text_JayPostBattle:
 
 MeteorFalls_1F_2R_Text_JayNotEnoughMons:
 	.string "JAY: Well, well, aren't you a young\n"
-	.string "TRAINER?\p"
+	.string "Trainer?\p"
 	.string "If you'd care to battle with us, you'll\n"
 	.string "have to come back with more Pokémon.$"
 
@@ -155,7 +155,7 @@ MeteorFalls_1F_2R_Text_JohnPostRematch:
 	.string "we battled day in and day out…$"
 
 MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons:
-	.string "JOHN: Well, well, what a young TRAINER!\p"
+	.string "JOHN: Well, well, what a young Trainer!\p"
 	.string "Will you battle with us? If so, you'll\n"
 	.string "have to return with more Pokémon.$"
 
@@ -177,7 +177,7 @@ MeteorFalls_1F_2R_Text_JayPostRematch:
 
 MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons:
 	.string "JAY: Well, well, aren't you a young\n"
-	.string "TRAINER?\p"
+	.string "Trainer?\p"
 	.string "If you'd care to battle with us, you'll\n"
 	.string "have to come back with more Pokémon.$"
 

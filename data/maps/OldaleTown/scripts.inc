@@ -356,12 +356,12 @@ OldaleTown_Text_ThisIsAPokemonMart:
 	.string "This is a Pokémon MART.\n"
 	.string "Just look for our blue roof.\p"
 	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching Pokémon.\p"
+	.string "Poké Balls for catching Pokémon.\p"
 	.string "Here, I'd like you to have this as\n"
 	.string "a promotional item.$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
+	.string "A Potion can be used anytime, so it's\n"
 	.string "even more useful than a Pokémon CENTER\l"
 	.string "in certain situations.$"
 

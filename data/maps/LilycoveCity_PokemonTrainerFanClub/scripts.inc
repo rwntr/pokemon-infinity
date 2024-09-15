@@ -575,11 +575,11 @@ LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan:
 	.string "I've heard the news!\n"
 	.string "You're really strong, aren't you?\p"
 	.string "We always argue about who is the\n"
-	.string "strongest of all TRAINERS here.\p"
+	.string "strongest of all Trainers here.\p"
 	.string "So when I heard about you, I decided\n"
 	.string "to be your fan!\p"
 	.string "I hope you'll keep on battling other\n"
-	.string "tough TRAINERS.\p"
+	.string "tough Trainers.\p"
 	.string "That way, we'll be able to see more\n"
 	.string "of your hot, hot battles.\p"
 	.string "That will make the others here see\n"
@@ -598,10 +598,10 @@ LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest:
 	.string "Show them you've got guts!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary:
-	.string "I hate to say this, but the TRAINER\n"
+	.string "I hate to say this, but the Trainer\n"
 	.string "everybody's talking about is\l"
 	.string "{STR_VAR_1}, no question about it!\p"
-	.string "That TRAINER's power…\n"
+	.string "That Trainer's power…\n"
 	.string "It's out of the ordinary.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen:
@@ -611,11 +611,11 @@ LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen:
 
 LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer:
 	.string "I've been hearing things about\n"
-	.string "a tough new TRAINER.\p"
-	.string "This TRAINER's supposed to be beating\n"
+	.string "a tough new Trainer.\p"
+	.string "This Trainer's supposed to be beating\n"
 	.string "Gym LeaderS, even.\p"
 	.string "Do you know anything about this\n"
-	.string "new TRAINER?$"
+	.string "new Trainer?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou:
 	.string "Oh!\n"
@@ -645,7 +645,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly:
 
 LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly:
 	.string "Whatever anyone says, my favorite\n"
-	.string "TRAINER is DEWFORD's Gym Leader\l"
+	.string "Trainer is DEWFORD's Gym Leader\l"
 	.string "BRAWLY!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather:
@@ -681,7 +681,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers:
 	.string "Everyone here, we're all huge fans\n"
 	.string "of Pokémon battles.\p"
 	.string "We discuss who we consider to be\n"
-	.string "the strongest of all TRAINERS.\p"
+	.string "the strongest of all Trainers.\p"
 	.string "If you were to become famous,\n"
 	.string "we might even become your fans!$"
 
@@ -706,14 +706,14 @@ LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe:
 	.string "{STR_VAR_1} really is cool, don't\n"
 	.string "you think so?\p"
 	.string "Even if it's just me, I'm going to keep\n"
-	.string "cheering my favorite TRAINER.$"
+	.string "cheering my favorite Trainer.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat:
-	.string "My favorite TRAINER is…\p"
+	.string "My favorite Trainer is…\p"
 	.string "Cool…\p"
 	.string "Strong…\p"
 	.string "And really nice…\p"
-	.string "I wish there was a TRAINER like that…$"
+	.string "I wish there was a Trainer like that…$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou:
 	.string "Whoa! It's {PLAYER}!\n"
@@ -752,7 +752,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner:
 	.string "out there and battle like always.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne:
-	.string "You're a pretty decent TRAINER,\n"
+	.string "You're a pretty decent Trainer,\n"
 	.string "I think.\p"
 	.string "But I also think that {STR_VAR_1}\n"
 	.string "is number one right now.\p"
@@ -778,7 +778,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation:
 	.string "I can't wait for your next battle!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout:
-	.string "Among the recently hot TRAINERS,\n"
+	.string "Among the recently hot Trainers,\n"
 	.string "{STR_VAR_1} is the standout.\p"
 	.string "That toughness, it's simply not normal.\p"
 	.string "You're doing okay, but you're not in\n"

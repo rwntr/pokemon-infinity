@@ -339,7 +339,7 @@ PetalburgWoods_Text_HandOverThosePapers:
 
 PetalburgWoods_Text_YouHaveToHelpMe:
 	.string "Aiyeeeh!\p"
-	.string "You're a Pokémon TRAINER, aren't you?\n"
+	.string "You're a Pokémon Trainer, aren't you?\n"
 	.string "You've got to help me, please!$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
@@ -367,7 +367,7 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
+	.string "I know, I'll give you a Great Ball as\n"
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
@@ -381,7 +381,7 @@ PetalburgWoods_Text_ICantBeWastingTime:
 
 PetalburgWoods_Text_YoureLoadedWithItems:
 	.string "You're loaded with items.\n"
-	.string "I can't give you this GREAT BALL.$"
+	.string "I can't give you this Great Ball.$"
 
 PetalburgWoods_Text_GoBugPokemonTeam:
 	.string "I caught a whole bunch of Pokémon!\p"
@@ -394,7 +394,7 @@ PetalburgWoods_Text_ICouldntWin:
 
 PetalburgWoods_Text_ImOutOfPokeBalls:
 	.string "I caught a bunch of Pokémon.\n"
-	.string "Now I'm out of POKé BALLS.$"
+	.string "Now I'm out of Poké Balls.$"
 
 PetalburgWoods_Text_InstantlyPopularWithBugPokemon:
 	.string "If you take BUG Pokémon to school,\n"
@@ -410,12 +410,12 @@ PetalburgWoods_Text_PeopleRespectYou:
 PetalburgWoods_Text_IWantRematch1:
 	.string "I want a rematch when my BUG\n"
 	.string "Pokémon grow up!\p"
-	.string "I'm registering you in my POKéNAV!$"
+	.string "I'm registering you in my Pokénav!$"
 
 PetalburgWoods_Text_IWantRematch2:
 	.string "I want a rematch when my BUG \n"
 	.string "Pokémon grow up!\p"
-	.string "I'm registering you in my POKéNAV!$"
+	.string "I'm registering you in my Pokénav!$"
 
 PetalburgWoods_Text_MyPokemonHaveGrown:
 	.string "My BUG Pokémon have grown.\n"
@@ -445,7 +445,7 @@ PetalburgWoods_Text_HiddenItemsExplanation:
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
 	.string "That's the BADGE from RUSTBORO!\p"
-	.string "You must be a TRAINER.\n"
+	.string "You must be a Trainer.\n"
 	.string "You should try using this item.$"
 
 PetalburgWoods_Text_MiracleSeedExplanation:
@@ -457,7 +457,7 @@ PetalburgWoods_Text_MiracleSeedExplanation:
 	.string "to hold.$"
 
 PetalburgWoods_Text_TrainerTipsExperience:
-	.string "TRAINER TIPS\p"
+	.string "Trainer TIPS\p"
 	.string "Any Pokémon that appears even once\n"
 	.string "in a battle is awarded EXP Points.\p"
 	.string "To raise a weak Pokémon, put it at the\n"
@@ -467,7 +467,7 @@ PetalburgWoods_Text_TrainerTipsExperience:
 	.string "being exposed to any harm.$"
 
 PetalburgWoods_Text_TrainerTipsPP:
-	.string "TRAINER TIPS\p"
+	.string "Trainer TIPS\p"
 	.string "In addition to Hit Points (HP), Pokémon\n"
 	.string "have Power Points (PP) that are used to\l"
 	.string "make moves during battle.\p"

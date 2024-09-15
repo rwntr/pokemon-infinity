@@ -429,7 +429,7 @@ LilycoveCity_Text_MayNotRaisingPokemon:
 	.string "May: Oh, why? {PLAYER}{KUN}, haven't you\n"
 	.string "been raising your Pokémon?\p"
 	.string "That's not a very good showing as a\n"
-	.string "TRAINER…$"
+	.string "Trainer…$"
 
 LilycoveCity_Text_MayBattleMe:
 	.string "May: Come on, battle with me, so I can\n"
@@ -450,26 +450,26 @@ LilycoveCity_Text_MayGoingBackToLittleroot:
 	.string "May: I'm thinking of going back to\n"
 	.string "LITTLEROOT soon.\p"
 	.string "I've caught a decent group of Pokémon,\n"
-	.string "and my POKéDEX is coming along, so\l"
+	.string "and my Pokédex is coming along, so\l"
 	.string "I'm going home to show my dad.$"
 
 LilycoveCity_Text_MayYouGoingToCollectBadges:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
 	.string "Collect all the Gym Badges and take\n"
-	.string "the Pokémon LEAGUE challenge?\p"
+	.string "the Pokémon League challenge?\p"
 	.string "Well, while you're collecting BADGES,\n"
 	.string "{PLAYER}{KUN}, I'm going to work on my\l"
-	.string "POKéDEX. I'll complete it before you!\p"
+	.string "Pokédex. I'll complete it before you!\p"
 	.string "See you!$"
 
 LilycoveCity_Text_MayYouGoingToPokemonLeague:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
-	.string "Are you taking the Pokémon LEAGUE\n"
+	.string "Are you taking the Pokémon League\n"
 	.string "challenge?\p"
 	.string "Or, are you going to complete your\n"
-	.string "POKéDEX?\p"
+	.string "Pokédex?\p"
 	.string "I might've lost to you in battling,\n"
-	.string "but I'll finish my POKéDEX before you!\p"
+	.string "but I'll finish my Pokédex before you!\p"
 	.string "See you!$"
 
 LilycoveCity_Text_MayYouGoingToBattleFrontier:
@@ -477,9 +477,9 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "Are you taking the BATTLE FRONTIER\n"
 	.string "challenge?\p"
 	.string "Or, are you going to complete your\n"
-	.string "POKéDEX?\p"
+	.string "Pokédex?\p"
 	.string "I might've lost to you in battling,\n"
-	.string "but I'll finish my POKéDEX before you!\p"
+	.string "but I'll finish my Pokédex before you!\p"
 	.string "See you!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
@@ -506,26 +506,26 @@ LilycoveCity_Text_BrendanDefeat:
 	.string "Humph…\n"
 	.string "You've done a lot of raising.\p"
 	.string "That stings a bit--I had a head start\n"
-	.string "on you as a TRAINER…$"
+	.string "on you as a Trainer…$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
 	.string "Brendan: I…\n"
 	.string "I plan on going home to LITTLEROOT.\p"
 	.string "You know I'm helping out my dad on his\n"
-	.string "POKéDEX. It's coming together pretty\l"
+	.string "Pokédex. It's coming together pretty\l"
 	.string "decently, so I should go show him.$"
 
 LilycoveCity_Text_BrendanYouGoingToCollectBadges:
 	.string "{PLAYER}, what are you going to do?\p"
 	.string "Collect all the Gym Badges and take\n"
-	.string "the Pokémon LEAGUE challenge?\p"
+	.string "the Pokémon League challenge?\p"
 	.string "Maybe I'll do that, too…\p"
 	.string "Well, anyway, hang in there!$"
 
 LilycoveCity_Text_BrendanYouGoingToPokemonLeague:
 	.string "{PLAYER}, what are you going to do?\p"
 	.string "Since you're that strong, are you\n"
-	.string "taking the Pokémon LEAGUE challenge?\p"
+	.string "taking the Pokémon League challenge?\p"
 	.string "Heh, even me--if I trained my Pokémon\n"
 	.string "a bit more, I should be stronger than\l"
 	.string "you, {PLAYER}.\p"
@@ -536,7 +536,7 @@ LilycoveCity_Text_BrendanYouGoingToBattleFrontier:
 	.string "Are you taking the BATTLE FRONTIER\n"
 	.string "challenge?\p"
 	.string "Or, are you going to complete your\n"
-	.string "POKéDEX?\p"
+	.string "Pokédex?\p"
 	.string "Since you're that strong, you should\n"
 	.string "consider the BATTLE FRONTIER.\p"
 	.string "Heh, if I train my Pokémon a bit more,\n"
@@ -581,7 +581,7 @@ LilycoveCity_Text_GetLostMessingUpTraining:
 	.string "so can you, like, get lost?$"
 
 LilycoveCity_Text_ContestHallInTown:
-	.string "There's a Pokémon CONTEST HALL\n"
+	.string "There's a Pokémon Contest HALL\n"
 	.string "right in this here town. \p"
 	.string "That means well-raised Pokémon will\n"
 	.string "come from all over the country.\p"
@@ -593,7 +593,7 @@ LilycoveCity_Text_StrangeCaveInCove:
 
 LilycoveCity_Text_GoingToMoveDeleterForHMs:
 	.string "I'm going to teach my Pokémon some new\n"
-	.string "moves for entering a CONTEST.\p"
+	.string "moves for entering a Contest.\p"
 	.string "So, I'm going to see the MOVE DELETER\n"
 	.string "and make it forget HM moves.$"
 
@@ -667,13 +667,13 @@ LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "have gone away for good.$"
 
 LilycoveCity_Text_CitySign:
-	.string "LILYCOVE CITY\p"
+	.string "LILYCOVE City\p"
 	.string "“Where the land ends and the\n"
 	.string "sea begins.”$"
 
 LilycoveCity_Text_ContestHallSign:
-	.string "Pokémon CONTEST HALL\n"
-	.string "“The gathering place for TRAINERS!”$"
+	.string "Pokémon Contest HALL\n"
+	.string "“The gathering place for Trainers!”$"
 
 LilycoveCity_Text_MotelSign:
 	.string "COVE LILY MOTEL\p"
@@ -691,20 +691,20 @@ LilycoveCity_Text_MuseumSignPlayersExhibit:
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_HarborSignUnderConstruction:
-	.string "LILYCOVE CITY HARBOR\p"
+	.string "LILYCOVE City HARBOR\p"
 	.string "“The ferry S.S. TIDAL is under\n"
-	.string "construction in SLATEPORT CITY.\p"
+	.string "construction in Slateport City.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
 
 LilycoveCity_Text_HarborSign:
-	.string "LILYCOVE CITY HARBOR\p"
+	.string "LILYCOVE City HARBOR\p"
 	.string "“Enjoy a delightful cruise on\n"
 	.string "the ferry S.S. TIDAL.”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
-	.string "Pokémon TRAINER FAN CLUB\p"
-	.string "The names of TRAINERS are scribbled\n"
+	.string "Pokémon Trainer FAN CLUB\p"
+	.string "The names of Trainers are scribbled\n"
 	.string "all over the sign…$"
 
 LilycoveCity_Text_DepartmentStoreSign:
@@ -715,12 +715,12 @@ LilycoveCity_Text_DepartmentStoreSign:
 	.string "you need!”$"
 
 LilycoveCity_Text_MoveDeletersHouseSign:
-	.string "MOVE DELETER'S HOUSE\p"
+	.string "MOVE DELETER'S House\p"
 	.string "“Unwanted Pokémon moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:
 	.string "Do you know about the machine\n"
-	.string "BERRY BLENDER?$"
+	.string "Berry Blender?$"
 
 LilycoveCity_Text_FasterSpinBetterPokeblocks:
 	.string "People have to work together to get it\n"

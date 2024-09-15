@@ -337,7 +337,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_CongratsReadyForFinals:
 
 BattleFrontier_BattleDomePreBattleRoom_Text_PlayersNextOpponentIsTrainer:
 	.string "{PLAYER}'s next opponent\n"
-	.string "is this TRAINER.$"
+	.string "is this Trainer.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_TourneyInRound1:
 	.string "The tournament is in the 1st round.$"

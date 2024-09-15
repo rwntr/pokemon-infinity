@@ -355,7 +355,7 @@ PlayersHouse_1F_Text_DontPushYourselfTooHard:
 	.string "Go for it, honey!$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "MOM: What is that, honey? A POKéNAV?\n"
+	.string "MOM: What is that, honey? A Pokénav?\n"
 	.string "Someone from DEVON gave it to you?\p"
 	.string "Well, honey, how about registering\n"
 	.string "your mom?\p"
@@ -363,7 +363,7 @@ PlayersHouse_1F_Text_IsThatAPokenav:
 
 PlayersHouse_1F_Text_RegisteredMom:
 	.string "Registered MOM\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 PlayersHouse_1F_Text_Vigoroth1:
 	.string "Fugiiiiih!$"
@@ -403,7 +403,7 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
 	.string "DAD: Hm, a TICKET for a ferry?\p"
 	.string "If I recall, there are ferry ports in\n"
-	.string "SLATEPORT and LILYCOVE.$"
+	.string "Slateport and LILYCOVE.$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
 	.string "I'd better get back to PETALBURG.\p"

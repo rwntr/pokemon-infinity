@@ -64,7 +64,7 @@ LilycoveCity_DepartmentStore_1F_Text_AllFiveDigitsMatched:
 LilycoveCity_DepartmentStore_1F_Text_NoRoomForThis:
 	.string "Oh?\n"
 	.string "You seem to have no room for this.\p"
-	.string "Please make room in your BAG and\n"
+	.string "Please make room in your Bag and\n"
 	.string "let me know.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding:

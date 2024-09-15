@@ -460,7 +460,7 @@ MtPyre_Summit_Text_Grunt2PostBattle:
 
 MtPyre_Summit_Text_Grunt3Intro:
 	.string "You…\n"
-	.string "We saw you at MT. CHIMNEY.\p"
+	.string "We saw you at Mt. Chimney.\p"
 	.string "You don't belong to either TEAM,\n"
 	.string "so why would you be here?$"
 

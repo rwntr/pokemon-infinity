@@ -224,7 +224,7 @@ BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal:
 	.string "On reflection, it was a terribly long\n"
 	.string "journey…\p"
 	.string "I left home alone on a quest to find\n"
-	.string "strong TRAINERS.\p"
+	.string "strong Trainers.\p"
 	.string "No one can imagine how much effort\n"
 	.string "or time it took to make this real.$"
 
@@ -254,7 +254,7 @@ BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
 	.string "I'm expecting great things from you!$"
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
-	.string "SCOTT: Every TRAINER is an individual.\n"
+	.string "SCOTT: Every Trainer is an individual.\n"
 	.string "They all lead lives of their own.\p"
 	.string "But when they're in a battle,\n"
 	.string "it doesn't matter who they are.\p"
@@ -262,7 +262,7 @@ BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
 	.string "I love the purity of battle,\n"
 	.string "where everyone is equal.\p"
 	.string "That's why I go everywhere seeking\n"
-	.string "TRAINERS who are serious about\l"
+	.string "Trainers who are serious about\l"
 	.string "battling, and invite them here.$"
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
@@ -271,7 +271,7 @@ BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
 	.string "Better yet, have you obtained any\n"
 	.string "symbols from them?\p"
 	.string "I handpicked the FRONTIER BRAINS\n"
-	.string "as the toughest TRAINERS anywhere.\p"
+	.string "as the toughest Trainers anywhere.\p"
 	.string "But I'm sure that seeing how tough\n"
 	.string "you are will startle even them!$"
 
@@ -279,7 +279,7 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "SCOTT: You don't just train for battle,\n"
 	.string "right?\p"
 	.string "I think I remember you working on\n"
-	.string "a POKéDEX as well.\p"
+	.string "a Pokédex as well.\p"
 	.string "Well, guess what?\p"
 	.string "You may run into wild Pokémon in\n"
 	.string "the BATTLE FRONTIER somewhere…\l"
@@ -317,25 +317,25 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 
 BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
 	.string "I must say I have the gift of knowing\n"
-	.string "a good TRAINER when I see one.\p"
+	.string "a good Trainer when I see one.\p"
 	.string "I'm so glad I had the foresight to\n"
 	.string "bring you here!$"
 
 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
-	.string "Your BERRY POCKET seems to\n"
+	.string "Your Berry POCKET seems to\n"
 	.string "be stuffed.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
 	.string "SCOTT: Oh, I heard about you!\n"
 	.string "How you ruled the BATTLE TOWER!\l"
-	.string "You beat over 50 TRAINERS in a row?\p"
+	.string "You beat over 50 Trainers in a row?\p"
 	.string "That's fantastic!\n"
 	.string "I want you to have this!$"
 
 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
 	.string "SCOTT: Oh, my! I heard about you!\n"
 	.string "How you overwhelmed the BATTLE TOWER!\l"
-	.string "You beat over 100 TRAINERS in a row?\p"
+	.string "You beat over 100 Trainers in a row?\p"
 	.string "That's ridiculously spectacular!\n"
 	.string "You've got to have this!$"
 

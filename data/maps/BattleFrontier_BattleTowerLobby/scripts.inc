@@ -941,12 +941,12 @@ BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting:
 
 BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven:
 	.string "Congratulations!\n"
-	.string "You've beaten all seven TRAINERS!\p"
+	.string "You've beaten all seven Trainers!\p"
 	.string "$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize:
-	.string "For beating seven TRAINERS in a row,\n"
+	.string "For beating seven Trainers in a row,\n"
 	.string "you have earned this fabulous prize!\p"
 	.string "$"
 
@@ -956,8 +956,8 @@ BattleFrontier_BattleTowerLobby_Text_ReceivedPrize:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom:
-	.string "Oh, your BAG appears to be full.\p"
-	.string "Please make room in your BAG, then come\n"
+	.string "Oh, your Bag appears to be full.\p"
+	.string "Please make room in your Bag, then come\n"
 	.string "see me.$"
 
 BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying:
@@ -978,19 +978,19 @@ BattleFrontier_BattleTowerLobby_Text_ProgressWillBeSaved:
 
 BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer:
 	.string "You're finally about to face the\n"
-	.string "50th TRAINER.\p"
+	.string "50th Trainer.\p"
 	.string "From here on, every time you beat seven\n"
-	.string "TRAINERS in a row, your Pokémon will\l"
-	.string "receive a commemorative RIBBON.\p"
+	.string "Trainers in a row, your Pokémon will\l"
+	.string "receive a commemorative Ribbon.\p"
 	.string "Good luck!$"
 
 BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons:
-	.string "Here are some RIBBONS for beating\n"
-	.string "seven tough TRAINERS in a row.\p"
-	.string "{PLAYER} received some RIBBONS!$"
+	.string "Here are some Ribbons for beating\n"
+	.string "seven tough Trainers in a row.\p"
+	.string "{PLAYER} received some Ribbons!$"
 
 BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons:
-	.string "{PLAYER} put the RIBBONS on\n"
+	.string "{PLAYER} put the Ribbons on\n"
 	.string "the challenger Pokémon.$"
 
 BattleFrontier_BattleTowerLobby_Text_DescribeFeelingsAboutBattleTower:
@@ -1034,7 +1034,7 @@ BattleFrontier_BattleTowerLobby_Text_WinsInRowRecorded:
 BattleFrontier_BattleTowerLobby_Text_CanLeaveUntilLossOrSevenWins:
 	.string "Once you've entered the BATTLE TOWER,\n"
 	.string "you can't leave until you either lose\l"
-	.string "or you beat seven TRAINERS in a row.\p"
+	.string "or you beat seven Trainers in a row.\p"
 	.string "You'd best be certain that you're up\n"
 	.string "to the challenge.$"
 
@@ -1165,7 +1165,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis:
 	.string "Please come see me when you are ready.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle:
-	.string "Where the talents of TRAINERS\n"
+	.string "Where the talents of Trainers\n"
 	.string "are put to the test!\p"
 	.string "Welcome to the BATTLE TOWER!\p"
 	.string "I am your guide to the SINGLE\n"
@@ -1182,7 +1182,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge:
 	.string "There are many SINGLE BATTLE ROOMS\n"
 	.string "in the BATTLE TOWER for team battles.\p"
 	.string "In each of the SINGLE BATTLE ROOMS,\n"
-	.string "seven TRAINERS await your challenge.\p"
+	.string "seven Trainers await your challenge.\p"
 	.string "If you manage to defeat all seven,\n"
 	.string "you will earn Battle Points.\p"
 	.string "If you want to interrupt your\n"
@@ -1195,7 +1195,7 @@ BattleFrontier_BattleTowerLobby_Text_SelectThreeMons:
 	.string "that are to be entered.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle:
-	.string "Where the talents of TRAINERS\n"
+	.string "Where the talents of Trainers\n"
 	.string "are put to the test!\p"
 	.string "Welcome to the BATTLE TOWER!\p"
 	.string "I am your guide to the DOUBLE\n"
@@ -1212,7 +1212,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainDoublesChallenge:
 	.string "There are many DOUBLE BATTLE ROOMS\n"
 	.string "in the BATTLE TOWER for team battles.\p"
 	.string "In each of the DOUBLE BATTLE ROOMS,\n"
-	.string "seven TRAINERS await your challenge.\p"
+	.string "seven Trainers await your challenge.\p"
 	.string "If you manage to defeat all seven,\n"
 	.string "you will earn Battle Points.\p"
 	.string "If you want to interrupt your\n"
@@ -1225,7 +1225,7 @@ BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons:
 	.string "that are to be entered.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle:
-	.string "Where the talents of TRAINERS\n"
+	.string "Where the talents of Trainers\n"
 	.string "are put to the test!\p"
 	.string "Welcome to the BATTLE TOWER!\p"
 	.string "I am your guide to the MULTI\n"
@@ -1240,12 +1240,12 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge:
 	.string "ROOMS are facilities for conducting\l"
 	.string "MULTI BATTLES.\p"
 	.string "For MULTI BATTLES, you must partner\n"
-	.string "with a TRAINER in the TOWER and enter\l"
+	.string "with a Trainer in the TOWER and enter\l"
 	.string "with two Pokémon each.\p"
 	.string "Inside the TOWER is a room named\n"
 	.string "the BATTLE SALON where you may meet\l"
-	.string "other TRAINERS.\p"
-	.string "There, you must find a TRAINER to act\n"
+	.string "other Trainers.\p"
+	.string "There, you must find a Trainer to act\n"
 	.string "as your partner in MULTI BATTLES.\p"
 	.string "Once you have partnered up, you will\n"
 	.string "be shown to a MULTI BATTLE ROOM.\p"
@@ -1263,7 +1263,7 @@ BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons:
 	.string "that are to be entered.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle:
-	.string "Where the talents of TRAINERS\n"
+	.string "Where the talents of Trainers\n"
 	.string "are put to the test!\p"
 	.string "Welcome to the BATTLE TOWER!\p"
 	.string "I am your guide to the LINK MULTI\n"
@@ -1348,7 +1348,7 @@ BattleFrontier_BattleTowerLobby_Text_SaveGameBeforeShowingIn:
 BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden:
 	.string "Congratulations!\n"
 	.string "You have defeated the SALON MAIDEN\l"
-	.string "and swept seven TRAINERS!$"
+	.string "and swept seven Trainers!$"
 
 BattleFrontier_BattleTowerLobby_Text_AwardYouTheseBattlePoints:
 	.string "In recognition of your infinite talent,\n"
@@ -1387,7 +1387,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules:
 	.string "find a partner to form a tag team for\l"
 	.string "the MULTI BATTLE ROOM challenge.\p"
 	.string "Choose the best partner for you by\n"
-	.string "examining other TRAINERS'\l"
+	.string "examining other Trainers'\l"
 	.string "Pokémon and their moves.\p"
 	.string "You may choose a new tag partner\n"
 	.string "after winning seven straight matches.$"

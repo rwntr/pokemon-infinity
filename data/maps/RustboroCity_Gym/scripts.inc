@@ -106,12 +106,12 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going?\p"
 	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
+	.string "Would you like to become the Champion?\p"
+	.string "I'm no Trainer, not me, but I can\n"
 	.string "sure give you winning advice.\p"
 	.string "That's settled, then! We'll aim for the\n"
 	.string "Pokémon CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
+	.string "It's your job as a Trainer to collect\n"
 	.string "Gym Badges, am I right?\p"
 	.string "But Gym LeaderS aren't pushovers!\p"
 	.string "And that's where I come in!\n"
@@ -129,7 +129,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa! What a breathtaking victory!\n"
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
+	.string "Check your Trainer CARD.\p"
 	.string "The STONE BADGE you got should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
@@ -138,7 +138,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us TRAINERS lightly!\n"
+	.string "Don't take us Trainers lightly!\n"
 	.string "I'll show you why we're better!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
@@ -180,7 +180,7 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Pokémon Gym Leader.\p"
 	.string "I became a Gym Leader so that I might\n"
 	.string "apply what I learned at the Pokémon\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
+	.string "Trainer'S SCHOOL in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which Pokémon?$"
 
@@ -190,11 +190,11 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "It seems that I still have much more\n"
 	.string "to learn…\p"
 	.string "I understand.\p"
-	.string "The Pokémon LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
+	.string "The Pokémon League's rules state\n"
+	.string "that Trainers are to be given this\l"
 	.string "if they defeat a Gym Leader.\p"
 	.string "Please accept the official Pokémon\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "League STONE BADGE.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
 	.string "{PLAYER} received the STONE BADGE\n"
@@ -208,7 +208,7 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That TECHNICAL MACHINE, TM39,\n"
+	.string "That Technical Machine, TM39,\n"
 	.string "contains ROCK TOMB.\p"
 	.string "It not only inflicts damage by dropping\n"
 	.string "rocks, it also lowers SPEED.\p"
@@ -220,25 +220,25 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "Since you are so strong, you should\n"
 	.string "challenge other Gym LeaderS.\p"
-	.string "By battling many TRAINERS, you should\n"
+	.string "By battling many Trainers, you should\n"
 	.string "learn many things.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY Pokémon$"
+	.string "RUSTBORO City Pokémon$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "RUSTBORO CITY Pokémon\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
+	.string "RUSTBORO City Pokémon\p"
+	.string "ROXANNE'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of RUSTBORO CITY.\p"
+	.string "This is ROXANNE of RUSTBORO City.\p"
 	.string "I heard from BRAWLY that you're\n"
 	.string "moving up through the ranks of\l"
-	.string "TRAINERS at an incredible clip.\p"
+	.string "Trainers at an incredible clip.\p"
 	.string "Well, I'd rather not think that\n"
 	.string "I can't beat you.\p"
 	.string "I promise, I will shape up my\n"
@@ -250,7 +250,7 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
 	.string "Registered Gym Leader ROXANNE\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
 	.string "ROXANNE: I'm so glad to see you again.\n"

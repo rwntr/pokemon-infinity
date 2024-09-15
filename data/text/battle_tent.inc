@@ -29,7 +29,7 @@ FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
 	.string "If you don't save, you will not be able\n"
 	.string "to continue with your challenge.\p"
 	.string "If you pull off the feat of beating\n"
-	.string "three TRAINERS in succession,\l"
+	.string "three Trainers in succession,\l"
 	.string "we will present you with a fine prize.$"
 
 FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
@@ -84,7 +84,7 @@ FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting:
 
 FallarborTown_BattleTentLobby_Text_BeatThreeTrainers:
 	.string "How splendid! You have beaten\n"
-	.string "three TRAINERS in succession!$"
+	.string "three Trainers in succession!$"
 
 FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame:
 	.string "Please wait while I save the game.$"
@@ -99,7 +99,7 @@ FallarborTown_BattleTentLobby_Text_ReceivedPrize:
 
 FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize:
 	.string "Oh?\n"
-	.string "Your BAG seems to be full.\p"
+	.string "Your Bag seems to be full.\p"
 	.string "I urge you to clear space and\n"
 	.string "return for your prize.$"
 
@@ -120,7 +120,7 @@ FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the BATTLE TENT\n"
 	.string "VERDANTURF SITE!\p"
-	.string "Here, the TRAINER's trust toward\n"
+	.string "Here, the Trainer's trust toward\n"
 	.string "Pokémon is tested.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
@@ -131,16 +131,16 @@ VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
 	.string "In the VERDANTURF BATTLE TENT,\n"
 	.string "there is one crucial rule that must\l"
 	.string "be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
+	.string "Trainers are permitted only to switch\n"
 	.string "their Pokémon in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
+	.string "Trainers are otherwise forbidden to\n"
 	.string "command their Pokémon.\p"
 	.string "The Pokémon are to behave according\n"
 	.string "to their nature and battle on their own.\p"
 	.string "You must put your trust in your\n"
 	.string "Pokémon and watch over them.\p"
 	.string "If you achieve the honor of beating\n"
-	.string "three TRAINERS in succession,\l"
+	.string "three Trainers in succession,\l"
 	.string "we will present you with a prize.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, please save the game.\p"
@@ -214,7 +214,7 @@ VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize:
 
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "Welcome to the BATTLE TENT\n"
-	.string "SLATEPORT SITE!\p"
+	.string "Slateport SITE!\p"
 	.string "I am your guide to the Battle Swap\n"
 	.string "Tournament.$"
 
@@ -223,7 +223,7 @@ SlateportCity_BattleTentLobby_Text_TakeChallenge:
 	.string "Swap challenge?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSlateportTent:
-	.string "Here at the SLATEPORT BATTLE TENT,\n"
+	.string "Here at the Slateport BATTLE TENT,\n"
 	.string "we hold Battle Swap events\l"
 	.string "using rental Pokémon.\p"
 	.string "First, you will be loaned three\n"
@@ -287,7 +287,7 @@ SlateportCity_BattleTentLobby_Text_AwardYouThisPrize:
 SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom:
 	.string "Oh?\n"
 	.string "You seem to have no room for this.\p"
-	.string "Please make room in your BAG and\n"
+	.string "Please make room in your Bag and\n"
 	.string "let me know.$"
 
 SlateportCity_BattleTentLobby_Text_BeenWaitingForYou:
@@ -327,16 +327,16 @@ SlateportCity_BattleTentLobby_Text_ExplainBasicRules:
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules:
 	.string "You may swap Pokémon only with\n"
-	.string "the TRAINER you have just defeated.\p"
+	.string "the Trainer you have just defeated.\p"
 	.string "You may swap for only those Pokémon\n"
-	.string "used by the beaten TRAINER.$"
+	.string "used by the beaten Trainer.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules:
 	.string "After every battle you win, you may\n"
 	.string "swap for one of your defeated\l"
 	.string "opponent's Pokémon.\p"
 	.string "You will not be able to swap Pokémon\n"
-	.string "with the third TRAINER in the event.$"
+	.string "with the third Trainer in the event.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNotes:
 	.string "There are two key points to be aware\n"
@@ -351,7 +351,7 @@ SlateportCity_BattleTentLobby_Text_ExplainSwapNotes:
 	.string "even when swaps are made.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainMonRules:
-	.string "The Pokémon of the SLATEPORT\n"
+	.string "The Pokémon of the Slateport\n"
 	.string "BATTLE TENT are all rentals.\p"
 	.string "All rental Pokémon are kept at\n"
 	.string "Level 30.$"
@@ -404,7 +404,7 @@ VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules:
-	.string "When not under command by its TRAINER,\n"
+	.string "When not under command by its Trainer,\n"
 	.string "a Pokémon may be unable to effectively\l"
 	.string "use certain moves.\p"
 	.string "A Pokémon is not good at using any\n"
@@ -425,7 +425,7 @@ BattleTentLobby_Text_ExplainLevelRules:
 	.string "At this BATTLE TENT, the levels of\n"
 	.string "your opponents will be adjusted to\l"
 	.string "match the levels of your Pokémon.\p"
-	.string "However, no TRAINER you face will\n"
+	.string "However, no Trainer you face will\n"
 	.string "have any Pokémon below Level 30.$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:

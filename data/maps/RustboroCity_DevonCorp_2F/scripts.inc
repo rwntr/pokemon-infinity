@@ -277,35 +277,35 @@ RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon:
 
 RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls:
 	.string "I'm developing new kinds of\n"
-	.string "POKé BALLS…\p"
+	.string "Poké Balls…\p"
 	.string "But I haven't made much headway…$"
 
 RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 	.string "We finally made new kinds of\n"
-	.string "POKé BALLS!\p"
-	.string "The REPEAT BALL makes it easier to\n"
+	.string "Poké Balls!\p"
+	.string "The REPEAT Ball makes it easier to\n"
 	.string "catch Pokémon you've caught before.\p"
-	.string "The TIMER BALL gets better at catching\n"
+	.string "The TIMER Ball gets better at catching\n"
 	.string "Pokémon the longer a battle runs.\p"
 	.string "Both are proudly developed by\n"
 	.string "the DEVON CORPORATION.\p"
 	.string "Please give them a try!$"
 
 RustboroCity_DevonCorp_2F_Text_IMadePokenav:
-	.string "I made the POKéNAV!\p"
+	.string "I made the Pokénav!\p"
 	.string "As an engineer, I feel blessed to have\n"
 	.string "made something so great!$"
 
 RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "Oh, wow!\n"
-	.string "That's a POKéNAV!\p"
+	.string "That's a Pokénav!\p"
 	.string "It came about as a result of our\n"
 	.string "PRESIDENT's desire to learn about\l"
 	.string "the feelings of Pokémon.\p"
 	.string "Would you like me to describe its\n"
 	.string "features in detail?\p"
 	.string "No, no. I think you'll find out just by\n"
-	.string "trying the POKéNAV out.$"
+	.string "trying the Pokénav out.$"
 
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
 	.string "I'm trying to develop a device that\n"
@@ -371,7 +371,7 @@ RustboroCity_DevonCorp_2F_Text_TooManyPokemon:
 
 RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature:
 	.string "I'm trying to develop a new feature\n"
-	.string "for the POKéNAV…\p"
+	.string "for the Pokénav…\p"
 	.string "But it's not going well.$"
 
 RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:

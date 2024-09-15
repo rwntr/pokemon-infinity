@@ -39,7 +39,7 @@ ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell:
 	.string "I wanted to make a SHELL BELL…$"
 
 ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag:
-	.string "You don't have space in your BAG\n"
+	.string "You don't have space in your Bag\n"
 	.string "if I were to make it for you.\p"
 	.string "You should make room and come back\n"
 	.string "for a SHELL BELL.$"

@@ -370,7 +370,7 @@ MossdeepCity_Gym_EventScript_RedFloorSwitch::
 	end
 
 MossdeepCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-bound\n"
+	.string "Yo, how's it going, Champion-bound\n"
 	.string "{PLAYER}?\p"
 	.string "The Gym LeaderS here use\n"
 	.string "PSYCHIC-type Pokémon.\p"
@@ -385,7 +385,7 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"
-	.string "You're one great TRAINER!$"
+	.string "You're one great Trainer!$"
 
 MossdeepCity_Gym_Text_PrestonIntro:
 	.string "Battles hinge on the strength of your\n"
@@ -412,8 +412,8 @@ MossdeepCity_Gym_Text_VirgilPostBattle:
 	.string "than them…$"
 
 MossdeepCity_Gym_Text_BlakeIntro:
-	.string "Fufufufu… Watch me levitate a POKé\n"
-	.string "BALL telekinetically!\p"
+	.string "Fufufufu… Watch me levitate a Poké\n"
+	.string "Ball telekinetically!\p"
 	.string "Wrooooooooaaaar!\n"
 	.string "… … … … … … …\p"
 	.string "Sometimes, I'm out of sync…$"
@@ -423,7 +423,7 @@ MossdeepCity_Gym_Text_BlakeDefeat:
 	.string "of sync, too!$"
 
 MossdeepCity_Gym_Text_BlakePostBattle:
-	.string "A POKé BALL was too heavy to lift\n"
+	.string "A Poké Ball was too heavy to lift\n"
 	.string "psychically. But this dust bunny…\p"
 	.string "Whoooooooooooooooh!\n"
 	.string "… … … … … …\p"
@@ -578,7 +578,7 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "TATE: The MIND BADGE enhances the\n"
 	.string "SP. ATK and SP. DEF of Pokémon.\p"
 	.string "LIZA: It also lets you use the HM move\n"
-	.string "DIVE outside of battle.\p"
+	.string "Dive outside of battle.\p"
 	.string "TATE: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
@@ -592,7 +592,7 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 	.string "Registered Gym LeaderS TATE & LIZA\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "TATE: Looks like the bond between you\n"
@@ -611,11 +611,11 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "bring some more Pokémon.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "MOSSDEEP CITY Pokémon$"
+	.string "MOSSDEEP City Pokémon$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "MOSSDEEP CITY Pokémon\p"
-	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
+	.string "MOSSDEEP City Pokémon\p"
+	.string "LIZA AND TATE'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:

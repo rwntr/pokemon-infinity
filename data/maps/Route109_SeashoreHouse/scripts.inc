@@ -97,17 +97,17 @@ Route109_SeashoreHouse_EventScript_TrainersNotCompleted::
 	end
 
 Route109_SeashoreHouse_Text_SeashoreHouseIntro:
-	.string "I'm the owner of the SEASHORE HOUSE.\n"
+	.string "I'm the owner of the Seashore House.\n"
 	.string "But you can call me MR. SEA!\p"
 	.string "What I love above all is to see hot\n"
 	.string "Pokémon battles.\p"
 	.string "Let me see that your heart burns hot!\p"
-	.string "If you can defeat all the TRAINERS\n"
+	.string "If you can defeat all the Trainers\n"
 	.string "here, I'll reward your efforts.$"
 
 Route109_SeashoreHouse_Text_ShowMeSomeHotMatches:
 	.string "Show me some hot matches!\p"
-	.string "I run this SEASHORE HOUSE just for\n"
+	.string "I run this Seashore House just for\n"
 	.string "that reason alone!$"
 
 Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles:
@@ -119,7 +119,7 @@ Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles:
 	.string "It's half a dozen bottles of SODA POP!$"
 
 Route109_SeashoreHouse_Text_BagFull:
-	.string "Oh, but hey, your BAG's jammed full.\n"
+	.string "Oh, but hey, your Bag's jammed full.\n"
 	.string "I'll hang on to these for you.$"
 
 Route109_SeashoreHouse_Text_WantToBuySodaPop:
@@ -140,21 +140,21 @@ Route109_SeashoreHouse_Text_ThatsTooBad:
 
 Route109_SeashoreHouse_Text_DwayneIntro:
 	.string "If you're looking for a battle in the\n"
-	.string "SEASHORE HOUSE, you'll find no\l"
-	.string "hotter TRAINER than me, matey!$"
+	.string "Seashore House, you'll find no\l"
+	.string "hotter Trainer than me, matey!$"
 
 Route109_SeashoreHouse_Text_DwayneDefeated:
 	.string "That was a hot battle!\n"
 	.string "I can accept that loss, matey!$"
 
 Route109_SeashoreHouse_Text_DwaynePostBattle:
-	.string "Whenever I'm in SLATEPORT, I enjoy\n"
+	.string "Whenever I'm in Slateport, I enjoy\n"
 	.string "hot battles and ice-cold SODA POP!$"
 
 Route109_SeashoreHouse_Text_JohannaIntro:
 	.string "Boring battles aren't worth the effort.\p"
 	.string "Fiery hot battles are what toughen up\n"
-	.string "TRAINERS and Pokémon!$"
+	.string "Trainers and Pokémon!$"
 
 Route109_SeashoreHouse_Text_JohannaDefeated:
 	.string "That's hot!$"

@@ -157,7 +157,7 @@ BattleFrontier_Lounge1_Text_PokemonBreederIntro:
 	.string "If you ever become as seasoned as me,\n"
 	.string "you'll see the abilities of Pokémon\l"
 	.string "at a glance.\p"
-	.string "You're a TRAINER. Doesn't it interest\n"
+	.string "You're a Trainer. Doesn't it interest\n"
 	.string "you to know your own Pokémon's\l"
 	.string "abilities?\p"
 	.string "Here!\n"

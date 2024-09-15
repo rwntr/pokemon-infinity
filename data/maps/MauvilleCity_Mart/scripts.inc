@@ -48,6 +48,6 @@ MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats:
 MauvilleCity_Mart_Text_DecisionsDetermineBattle:
 	.string "Use a certain move, or use an item\n"
 	.string "instead…\p"
-	.string "The TRAINER's decisions determine how\n"
+	.string "The Trainer's decisions determine how\n"
 	.string "battles turn out, I think.$"
 

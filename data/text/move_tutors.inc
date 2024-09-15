@@ -116,7 +116,7 @@ MoveTutor_Text_MetronomeTaught:
 	.string "use it, too?$"
 
 MoveTutor_Text_SleepTalkTeach:
-	.string "Humph! My wife relies on HIDDEN\n"
+	.string "Humph! My wife relies on Hidden\n"
 	.string "POWER to stay awake.\p"
 	.string "She should just take a nap like I do,\n"
 	.string "and SLEEP TALK.\p"
@@ -125,7 +125,7 @@ MoveTutor_Text_SleepTalkTeach:
 
 MoveTutor_Text_SleepTalkDeclined:
 	.string "Oh, fine, fine. You want to stay awake\n"
-	.string "with HIDDEN POWER, too…$"
+	.string "with Hidden POWER, too…$"
 
 MoveTutor_Text_SleepTalkWhichMon:
 	.string "Ah, an appreciative child!\n"
@@ -166,7 +166,7 @@ MoveTutor_Text_SubstituteTaught:
 MoveTutor_Text_DynamicPunchTeach:
 	.string "I can't do this anymore!\p"
 	.string "It's utterly hopeless!\p"
-	.string "I'm a FIGHTING-type TRAINER,\n"
+	.string "I'm a FIGHTING-type Trainer,\n"
 	.string "so I can't win at the MOSSDEEP\l"
 	.string "no matter how hard I try!\p"
 	.string "Argh! Punch! Punch! Punch!\n"
