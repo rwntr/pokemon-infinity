@@ -79,7 +79,7 @@ AI_SINGLE_BATTLE_TEST("AI will not use Throat Chop if opposing mon has a better 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_PSYCHIC_FANGS].power == 85);
         ASSUME(gMovesInfo[MOVE_THROAT_CHOP].power == 80);
-        ASSUME(gMovesInfo[MOVE_DISARMING_VOICE].power == 40);
+        ASSUME(gMovesInfo[MOVE_DISARMING_VOICE].power == 60);
         ASSUME(gMovesInfo[MOVE_FLAME_BURST].power == 70);
         ASSUME(MoveHasAdditionalEffect(MOVE_THROAT_CHOP, MOVE_EFFECT_THROAT_CHOP) == TRUE);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);

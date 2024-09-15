@@ -58,16 +58,16 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves with better accuracy, but only if they b
     expectedMove2 = MOVE_NONE;
 
     // Here it's a simple test, both Slam and Strength deal the same damage, but Strength always hits, whereas Slam often misses.
-    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_STRENGTH; move3 = MOVE_TACKLE; hp = 490; expectedMove = MOVE_STRENGTH; turns = 4; }
-    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_STRENGTH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 365; expectedMove = MOVE_STRENGTH; turns = 3; }
-    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_STRENGTH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 245; expectedMove = MOVE_STRENGTH; turns = 2; }
-    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_STRENGTH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 125; expectedMove = MOVE_STRENGTH; turns = 1; }
+    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_TACKLE; hp = 490; expectedMove = MOVE_MEGA_PUNCH; turns = 4; }
+    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 365; expectedMove = MOVE_MEGA_PUNCH; turns = 3; }
+    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 245; expectedMove = MOVE_MEGA_PUNCH; turns = 2; }
+    PARAMETRIZE { move1 = MOVE_SLAM; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 125; expectedMove = MOVE_MEGA_PUNCH; turns = 1; }
     // Mega Kick deals more damage, but can miss more often. Here, AI should choose Mega Kick if it can faint target in less number of turns than Strength. Otherwise, it should use Strength.
-    PARAMETRIZE { move1 = MOVE_MEGA_KICK; move2 = MOVE_STRENGTH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 170; expectedMove = MOVE_MEGA_KICK; turns = 1; }
-    PARAMETRIZE { move1 = MOVE_MEGA_KICK; move2 = MOVE_STRENGTH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 245; expectedMove = MOVE_STRENGTH; turns = 2; }
+    PARAMETRIZE { move1 = MOVE_MEGA_KICK; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 170; expectedMove = MOVE_MEGA_KICK; turns = 1; }
+    PARAMETRIZE { move1 = MOVE_MEGA_KICK; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 245; expectedMove = MOVE_MEGA_PUNCH; turns = 2; }
     // Swift always hits and Guts has accuracy of 100%. Hustle lowers accuracy of all physical moves.
-    PARAMETRIZE { abilityAtk = ABILITY_HUSTLE; move1 = MOVE_MEGA_KICK; move2 = MOVE_STRENGTH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 5; expectedMove = MOVE_SWIFT; turns = 1; }
-    PARAMETRIZE { abilityAtk = ABILITY_HUSTLE; move1 = MOVE_MEGA_KICK; move2 = MOVE_STRENGTH; move3 = MOVE_GUST; move4 = MOVE_TACKLE; hp = 5; expectedMove = MOVE_GUST; turns = 1; }
+    PARAMETRIZE { abilityAtk = ABILITY_HUSTLE; move1 = MOVE_MEGA_KICK; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_SWIFT; move4 = MOVE_TACKLE; hp = 5; expectedMove = MOVE_SWIFT; turns = 1; }
+    PARAMETRIZE { abilityAtk = ABILITY_HUSTLE; move1 = MOVE_MEGA_KICK; move2 = MOVE_MEGA_PUNCH; move3 = MOVE_GUST; move4 = MOVE_TACKLE; hp = 5; expectedMove = MOVE_GUST; turns = 1; }
     // Mega Kick and Slam both have lower accuracy. Gust and Tackle both have 100, so AI can choose either of them.
     PARAMETRIZE { move1 = MOVE_MEGA_KICK; move2 = MOVE_SLAM; move3 = MOVE_TACKLE; move4 = MOVE_GUST; hp = 5; expectedMove = MOVE_GUST; expectedMove2 = MOVE_TACKLE; turns = 1; }
     // All moves hit with No guard ability
@@ -81,17 +81,17 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves with better accuracy, but only if they b
         PLAYER(SPECIES_WOBBUFFET) { HP(hp); }
         PLAYER(SPECIES_WOBBUFFET);
         ASSUME(gMovesInfo[MOVE_SWIFT].accuracy == 0);
-        ASSUME(gMovesInfo[MOVE_SLAM].power == gMovesInfo[MOVE_STRENGTH].power);
-        ASSUME(gMovesInfo[MOVE_MEGA_KICK].power > gMovesInfo[MOVE_STRENGTH].power);
-        ASSUME(gMovesInfo[MOVE_SLAM].accuracy < gMovesInfo[MOVE_STRENGTH].accuracy);
-        ASSUME(gMovesInfo[MOVE_MEGA_KICK].accuracy < gMovesInfo[MOVE_STRENGTH].accuracy);
+        ASSUME(gMovesInfo[MOVE_SLAM].power == gMovesInfo[MOVE_MEGA_PUNCH].power);
+        ASSUME(gMovesInfo[MOVE_MEGA_KICK].power > gMovesInfo[MOVE_MEGA_PUNCH].power);
+        ASSUME(gMovesInfo[MOVE_SLAM].accuracy < gMovesInfo[MOVE_MEGA_PUNCH].accuracy);
+        ASSUME(gMovesInfo[MOVE_MEGA_KICK].accuracy < gMovesInfo[MOVE_MEGA_PUNCH].accuracy);
         ASSUME(gMovesInfo[MOVE_TACKLE].accuracy == 100);
         ASSUME(gMovesInfo[MOVE_GUST].accuracy == 100);
         ASSUME(gMovesInfo[MOVE_SHOCK_WAVE].accuracy == 0);
         ASSUME(gMovesInfo[MOVE_THUNDERBOLT].accuracy == 100);
         ASSUME(gMovesInfo[MOVE_ICY_WIND].accuracy != 100);
         ASSUME(gMovesInfo[MOVE_SLAM].category == DAMAGE_CATEGORY_PHYSICAL);
-        ASSUME(gMovesInfo[MOVE_STRENGTH].category == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(gMovesInfo[MOVE_MEGA_PUNCH].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_MEGA_KICK].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
@@ -786,16 +786,16 @@ AI_SINGLE_BATTLE_TEST("AI uses a guaranteed KO move instead of the move with the
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SLASH].criticalHitStage == 1);
         ASSUME(gMovesInfo[MOVE_SLASH].power == 70);
-        ASSUME(gMovesInfo[MOVE_STRENGTH].power == 80);
-        ASSUME(gMovesInfo[MOVE_SLASH].type == gMovesInfo[MOVE_STRENGTH].type);
-        ASSUME(gMovesInfo[MOVE_SLASH].category == gMovesInfo[MOVE_STRENGTH].category);
+        ASSUME(gMovesInfo[MOVE_MEGA_PUNCH].power == 80);
+        ASSUME(gMovesInfo[MOVE_SLASH].type == gMovesInfo[MOVE_MEGA_PUNCH].type);
+        ASSUME(gMovesInfo[MOVE_SLASH].category == gMovesInfo[MOVE_MEGA_PUNCH].category);
         AI_FLAGS(flags);
         PLAYER(SPECIES_WOBBUFFET) { HP(225); }
-        OPPONENT(SPECIES_ABSOL) { Ability(ABILITY_SUPER_LUCK); Moves(MOVE_SLASH, MOVE_STRENGTH); }
+        OPPONENT(SPECIES_ABSOL) { Ability(ABILITY_SUPER_LUCK); Moves(MOVE_SLASH, MOVE_MEGA_PUNCH); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_SLASH); }
         if (flags & AI_FLAG_TRY_TO_FAINT)
-            TURN { EXPECT_MOVE(opponent, MOVE_STRENGTH); }
+            TURN { EXPECT_MOVE(opponent, MOVE_MEGA_PUNCH); }
         else
             TURN { EXPECT_MOVE(opponent, MOVE_SLASH); }
     } SCENE {
