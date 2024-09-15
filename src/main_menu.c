@@ -1894,8 +1894,7 @@ static void Task_NewGameBirchSpeech_ChooseDifficulty(u8 taskId)
 
 static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
 {
-    u16 difficulty;
-    difficulty = GetActiveDifficultySetting();
+    int difficulty = gSaveBlock2Ptr->gameDifficulty;
     const u8 *str;
     switch (difficulty)
     {
@@ -1941,7 +1940,7 @@ static void Task_NewGameBirchSpeech_WaitToShowLevelCapMenu(u8 taskId)
 
 static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
 {
-    s8 difficulty = NewGameBirchSpeech_ProcessDifficultyMenuInput();
+    int difficulty = NewGameBirchSpeech_ProcessDifficultyMenuInput();
 
     switch (difficulty)
     {
@@ -1974,8 +1973,7 @@ static void Task_NewGameBirchSpeech_ChooseLevelCaps(u8 taskId)
 
 static void Task_NewGameBirchSpeech_LevelCapsDesc(u8 taskId)
 {
-    u16 levelCap;
-    levelCap = GetActiveLevelCapType();
+    int levelCap = gSaveBlock2Ptr->levelCaps;
     const u8 *str;
     switch (levelCap)
     {

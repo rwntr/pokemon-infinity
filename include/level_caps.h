@@ -18,12 +18,12 @@
 #define B_NUM_CAP_SETTINGS 3
 
 extern const u32 sLevelCapsFlagMap[][4];
-u16 GetActiveDifficultySetting();
+u16 GetActiveDifficultySetting(void);
 void SetActiveDifficultySetting(u16 diffArg);
-u16 GetActiveLevelCapType();
+u16 GetActiveLevelCapType(void);
 void SetActiveLevelCapType(u16 capArg);
-u16 GetActiveLevelCapIndex();
-u32 GetActiveLevelCap();
+u16 GetActiveLevelCapIndex(void);
+u32 GetActiveLevelCap(void);
 u32 GetLastLevelCap(u16 currCapIdx);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);
 
