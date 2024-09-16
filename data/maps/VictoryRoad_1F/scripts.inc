@@ -192,7 +192,7 @@ VictoryRoad_1F_Text_HopePostBattle:
 	.string "becoming the CHAMPION.$"
 
 VictoryRoad_1F_Text_QuincyIntro:
-	.string "What is the VICTORY ROAD?\n"
+	.string "What is the VICTORY Road?\n"
 	.string "I'll tell you if you win!$"
 
 VictoryRoad_1F_Text_QuincyDefeat:
@@ -204,7 +204,7 @@ VictoryRoad_1F_Text_QuincyPostBattle:
 	.string "the final test for any TRAINER aiming\l"
 	.string "to become the POKéMON CHAMPION.\p"
 	.string "That's why it's called the VICTORY\n"
-	.string "ROAD.$"
+	.string "Road.$"
 
 VictoryRoad_1F_Text_KatelynnIntro:
 	.string "I have nothing to say to anyone\n"

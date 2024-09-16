@@ -227,7 +227,7 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
 	.string "A Poison-type Fang SNAKE Pokémon,\n"
-	.string "a Bug & ROCK Mold Pokémon,\l"
+	.string "a Bug & Rock Mold Pokémon,\l"
 	.string "and a WATER-type TENDER Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
@@ -303,7 +303,7 @@ BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
 	.string "before?\p"
 	.string "When he's checking the foe's power,\n"
 	.string "he apparently uses these Pokémon:\p"
-	.string "A ROCK-type ROCK Peak Pokémon,\n"
+	.string "A Rock-type Rock Peak Pokémon,\n"
 	.string "an Ice-type Iceberg Pokémon,\l"
 	.string "and a STEEL-type Iron Pokémon.$"
 
@@ -320,7 +320,7 @@ BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
 	.string "Sure, there are several places where\n"
 	.string "you can enter Double Battles.\p"
-	.string "But the Double Battle ROOMS of\n"
+	.string "But the Double Battle Rooms of\n"
 	.string "the Battle Tower are, like, basic!\p"
 	.string "They're where you should learn about\n"
 	.string "how Double Battles are played here\l"

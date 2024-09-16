@@ -62,8 +62,8 @@ gBirchDexRatingText_LessThan110::
 	.string "This is an impressive POKéDEX!$"
 
 gBirchDexRatingText_LessThan120::
-	.string "There might be POKéMON that can be\n"
-	.string "found using ROCK SMASH.$"
+	.string "There might be Pokémon that can be\n"
+	.string "found using Rock SMASH.$"
 
 gBirchDexRatingText_LessThan130::
 	.string "You should get some more POKéMON\n"

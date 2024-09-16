@@ -280,11 +280,11 @@ RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls:
 
 RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 	.string "We finally made new kinds of\n"
-	.string "POKé BALLS!\p"
-	.string "The REPEAT BALL makes it easier to\n"
-	.string "catch POKéMON you've caught before.\p"
-	.string "The TIMER BALL gets better at catching\n"
-	.string "POKéMON the longer a battle runs.\p"
+	.string "Poké Balls!\p"
+	.string "The Repeat Ball makes it easier to\n"
+	.string "catch Pokémon you've caught before.\p"
+	.string "The TIMER Ball gets better at catching\n"
+	.string "Pokémon the longer a battle runs.\p"
 	.string "Both are proudly developed by\n"
 	.string "the Devon Corporation.\p"
 	.string "Please give them a try!$"
@@ -322,7 +322,7 @@ RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife:
 	.string "Would you like to bring that POKéMON\n"
 	.string "back to life?\p"
 	.string "I can with my newly developed\n"
-	.string "Fossil REGENERATOR.$"
+	.string "Fossil Regenerator.$"
 
 RustboroCity_DevonCorp_2F_Text_OhIsThatSo:
 	.string "Oh, is that so?\p"
@@ -341,10 +341,10 @@ RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher:
 	.string "Excellent!\n"
 	.string "Let's do this right away.\p"
 	.string "{PLAYER} handed the {STR_VAR_1} to\n"
-	.string "the DEVON RESEARCHER.$"
+	.string "the Devon Researcher.$"
 
 RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime:
-	.string "The Fossil REGENERATOR, which I made,\n"
+	.string "The Fossil Regenerator, which I made,\n"
 	.string "is incredible.\p"
 	.string "But it has one drawback--it takes\n"
 	.string "a long time to work.\p"
@@ -360,7 +360,7 @@ RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife:
 
 RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher:
 	.string "{PLAYER} received {STR_VAR_2} from\n"
-	.string "the DEVON RESEARCHER.$"
+	.string "the Devon Researcher.$"
 
 @ Unused
 RustboroCity_DevonCorp_2F_Text_TooManyPokemon:

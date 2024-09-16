@@ -74,13 +74,13 @@ EverGrandeCity_PokemonCenter_1F_Movement_ScottExit:
 	step_end
 
 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad:
-	.string "The POKéMON LEAGUE is only a short\n"
-	.string "distance after the VICTORY ROAD.\p"
+	.string "The Pokémon League is only a short\n"
+	.string "distance after the VICTORY Road.\p"
 	.string "If you've come this far, what choice\n"
 	.string "do you have but to keep going?$"
 
 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
-	.string "The long and harrowing VICTORY ROAD…\p"
+	.string "The long and harrowing VICTORY Road…\p"
 	.string "It's like reliving the path one has\n"
 	.string "traveled in life…\p"
 	.string "Believe in your POKéMON and give it\n"
