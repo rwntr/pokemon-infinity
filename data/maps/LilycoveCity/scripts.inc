@@ -594,7 +594,7 @@ LilycoveCity_Text_StrangeCaveInCove:
 LilycoveCity_Text_GoingToMoveDeleterForHMs:
 	.string "I'm going to teach my Pokémon some new\n"
 	.string "moves for entering a Contest.\p"
-	.string "So, I'm going to see the MOVE Deleter\n"
+	.string "So, I'm going to see the Move Deleter\n"
 	.string "and make it forget HM moves.$"
 
 LilycoveCity_Text_ImFromKanto:
@@ -633,7 +633,7 @@ LilycoveCity_Text_ImArtDealer:
 	.string "I'm an Art Dealer.\p"
 	.string "I am a buyer and seller of fine art,\n"
 	.string "especially paintings.\p"
-	.string "I've heard that the MUSEUM here has\n"
+	.string "I've heard that the Museum here has\n"
 	.string "magnificent works on exhibit…$"
 
 LilycoveCity_Text_SeaRemainsForeverYoung:
@@ -676,17 +676,17 @@ LilycoveCity_Text_ContestHallSign:
 	.string "“The gathering place for Trainers!”$"
 
 LilycoveCity_Text_MotelSign:
-	.string "Cove Lily MOTEL\p"
+	.string "Cove Lily Motel\p"
 	.string "“Remember us as Cove Lily of\n"
 	.string "Lilycove.”$"
 
 LilycoveCity_Text_MuseumSign:
-	.string "Lilycove MUSEUM\p"
+	.string "Lilycove Museum\p"
 	.string "“Pokémon Masterpiece Collection\n"
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_MuseumSignPlayersExhibit:
-	.string "Lilycove MUSEUM\p"
+	.string "Lilycove Museum\p"
 	.string "“{PLAYER}'s Pokémon Collection\n"
 	.string "on exhibit!”$"
 
@@ -715,7 +715,7 @@ LilycoveCity_Text_DepartmentStoreSign:
 	.string "you need!”$"
 
 LilycoveCity_Text_MoveDeletersHouseSign:
-	.string "MOVE Deleter'S House\p"
+	.string "Move Deleter'S House\p"
 	.string "“Unwanted Pokémon moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:

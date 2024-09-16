@@ -116,7 +116,7 @@ BattleFrontier_Lounge2_Text_FrontierManiacIntro::
 	.string "Howdy! When it comes to news about\n"
 	.string "the Battle Frontier, I'm no. 1.\p"
 	.string "You can think of me as\n"
-	.string "the Frontier MANIAC.\p"
+	.string "the Frontier Maniac.\p"
 	.string "Just checking, but you are a Trainer,\n"
 	.string "isn't that right?\p"
 	.string "I'll happily share the hottest news\n"
@@ -147,24 +147,24 @@ BattleFrontier_Lounge2_Text_SalonMaidenIsThere::
 	.string "One of those top Trainers that SCOTT\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this mysterious Trainer called\n"
-	.string "the SALON MAIDEN that runs the place.$"
+	.string "the SALON Maiden that runs the place.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenSilverMons::
-	.string "Have you battled the SALON MAIDEN?\p"
+	.string "Have you battled the SALON Maiden?\p"
 	.string "When she's measuring up her opponent,\n"
 	.string "she apparently uses these Pokémon:\p"
 	.string "A PSYCHIC-type PSI Pokémon,\n"
 	.string "a Fire-type VOLCANO Pokémon,\l"
-	.string "and a NORMAL-type SLEEPING Pokémon.$"
+	.string "and a Normal-type SLEEPING Pokémon.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
-	.string "Have you battled the SALON MAIDEN\n"
+	.string "Have you battled the SALON Maiden\n"
 	.string "when she's serious?\p"
 	.string "When she's battling flat out,\n"
 	.string "she apparently uses these Pokémon:\p"
 	.string "A Dragon & PSYCHIC Eon Pokémon,\n"
 	.string "an Electric-type THUNDER Pokémon,\l"
-	.string "and a NORMAL-type SLEEPING Pokémon.$"
+	.string "and a Normal-type SLEEPING Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
 	.string "Bet you didn't know this!\p"
@@ -178,7 +178,7 @@ BattleFrontier_Lounge2_Text_DomeAceSilverMons::
 	.string "When he's treating the opponent\n"
 	.string "lightly, he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Dragon Pokémon,\n"
-	.string "a WATER & Ground MUD Fish Pokémon,\l"
+	.string "a WATER & Ground Mud Fish Pokémon,\l"
 	.string "and a Fire & Flying Flame Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DomeAceGoldMons::
@@ -187,7 +187,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "When he's demonstrating his strategy,\n"
 	.string "he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Eon Pokémon,\n"
-	.string "a WATER & Ground MUD Fish Pokémon,\l"
+	.string "a WATER & Ground Mud Fish Pokémon,\l"
 	.string "and a STEEL- & PSYCHIC-type Iron Leg\l"
 	.string "Pokémon.$"
 
@@ -227,7 +227,7 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
 	.string "A POISON-type Fang SNAKE Pokémon,\n"
-	.string "a Bug & ROCK MOLD Pokémon,\l"
+	.string "a Bug & ROCK Mold Pokémon,\l"
 	.string "and a WATER-type TENDER Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
@@ -253,7 +253,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Bug & Fighting SINGLE HORN Pokémon,\n"
-	.string "a Dark-type MOONLIGHT Pokémon,\l"
+	.string "a Dark-type Moonlight Pokémon,\l"
 	.string "and a Bug & Ghost SHED Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
@@ -261,34 +261,34 @@ BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "when she's serious?\p"
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
-	.string "A Dark-type MOONLIGHT Pokémon,\n"
+	.string "A Dark-type Moonlight Pokémon,\n"
 	.string "a Ghost & POISON SHADOW Pokémon\l"
 	.string "and a Grass- & Fighting-type\l"
-	.string "MUSHROOM Pokémon.$"
+	.string "Mushroom Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
 	.string "Bet you didn't know this!\p"
 	.string "One of those top Trainers that SCOTT\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this sinister Trainer called\n"
-	.string "the PALACE MAVEN that runs the place.$"
+	.string "the PALACE Maven that runs the place.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
-	.string "Have you battled the PALACE MAVEN\n"
+	.string "Have you battled the PALACE Maven\n"
 	.string "before?\p"
 	.string "When he's testing the opponent's\n"
 	.string "spirit, he's said to use these Pokémon:\p"
 	.string "A POISON & Flying-type Bat Pokémon,\n"
-	.string "a NORMAL-type LAZY Pokémon, and a\l"
+	.string "a Normal-type LAZY Pokémon, and a\l"
 	.string "WATER- & Ice-type TRANSPORT Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
-	.string "Have you battled the PALACE MAVEN\n"
+	.string "Have you battled the PALACE Maven\n"
 	.string "when he's serious?\p"
 	.string "When he throws his entire might into\n"
 	.string "battle, he's said to use these Pokémon:\p"
 	.string "A Fire-type Legendary Pokémon,\n"
-	.string "a NORMAL-type LAZY Pokémon,\l"
+	.string "a Normal-type LAZY Pokémon,\l"
 	.string "and a WATER-type Aurora Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::

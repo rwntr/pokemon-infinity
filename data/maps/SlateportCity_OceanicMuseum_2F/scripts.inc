@@ -373,7 +373,7 @@ SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip:
 
 SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum:
 	.string "Don't you dare run around inside\n"
-	.string "the MUSEUM!$"
+	.string "the Museum!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine:
 	.string "Wow, the submarine's awesome!\n"
@@ -403,7 +403,7 @@ SlateportCity_OceanicMuseum_2F_Text_PressureExperiment:
 	.string "thousands of tons on a small area.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_HoennModel:
-	.string "“MODEL OF Hoenn REGION”\p"
+	.string "“Model OF Hoenn REGION”\p"
 	.string "It's a miniature diorama of the\n"
 	.string "Hoenn region.\p"
 	.string "Where is Littleroot Town on this?$"

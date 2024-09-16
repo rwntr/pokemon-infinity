@@ -449,10 +449,10 @@ PetalburgWoods_Text_TryUsingThisItem:
 	.string "You should try using this item.$"
 
 PetalburgWoods_Text_MiracleSeedExplanation:
-	.string "It's a MIRACLE SEED.\n"
+	.string "It's a Miracle SEED.\n"
 	.string "If a Pokémon holds that item, its\l"
 	.string "Grass-type moves become stronger.\p"
-	.string "Besides MIRACLE SEED, I think there are\n"
+	.string "Besides Miracle SEED, I think there are\n"
 	.string "other convenient items for Pokémon\l"
 	.string "to hold.$"
 

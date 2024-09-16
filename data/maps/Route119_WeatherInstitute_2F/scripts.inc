@@ -275,12 +275,12 @@ Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "A Team Magma mob just passed\n"
 	.string "the WEATHER Institute.\p"
 	.string "They appear to be headed for\n"
-	.string "MT. PYRE!$"
+	.string "Mt. PYRE!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
 	.string "What?!\p"
 	.string "We can't waste any more time here!\n"
-	.string "We have to hurry to MT. PYRE, too!\p"
+	.string "We have to hurry to Mt. PYRE, too!\p"
 	.string "Ahahahaha!\n"
 	.string "Team Magma, just you wait!$"
 

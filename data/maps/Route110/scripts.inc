@@ -897,7 +897,7 @@ Route110_Text_ChallengeReactionWorst:
 Route110_Text_RatedForNumberOfCollisions:
 	.string "This is Cycling ROAD.\p"
 	.string "If you were to ride from Mauville to\n"
-	.string "Slateport on a MACH Bike, you would\l"
+	.string "Slateport on a Mach Bike, you would\l"
 	.string "be rated for the number of collisions\l"
 	.string "and your total time.$"
 
@@ -908,7 +908,7 @@ Route110_Text_AlwaysAimHigher:
 
 Route110_Text_AcroBikesDoNotQualify:
 	.string "On this Cycling ROAD, those riding\n"
-	.string "MACH Bikes are rated for their number\l"
+	.string "Mach Bikes are rated for their number\l"
 	.string "of collisions and their total times.\p"
 	.string "Acro Bikes do not qualify for rating.\n"
 	.string "They are easy to turn, so it's not fair.$"
@@ -974,7 +974,7 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "You two are running separately.\l"
 	.string "Well, that's fine.\p"
 	.string "Oh, yes, I heard that your Pokénav\n"
-	.string "had the MATCH Call system installed.\p"
+	.string "had the Match Call system installed.\p"
 	.string "Well, then, I should register you in\n"
 	.string "my Pokénav as well.\p"
 	.string "That way, even when we're apart,\n"

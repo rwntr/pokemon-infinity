@@ -1010,7 +1010,7 @@ gText_ApprenticeWhatHeldItem10::
 	.string "{PLAYER}{KUN}, something unbelievable\n"
 	.string "has happened!\p"
 	.string "I woke up this morning, and my Pokémon\n"
-	.string "had 10 NUGGETS!\p"
+	.string "had 10 Nuggets!\p"
 	.string "Of course I'm lying!\n"
 	.string "Wahahaha!\p"
 	.string "This is no lie, though.\n"

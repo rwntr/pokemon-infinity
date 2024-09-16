@@ -206,9 +206,9 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
 	.string "Oh, wait a second!\p"
 	.string "I forgot to tell you that there are\n"
 	.string "two kinds of Bikes!\p"
-	.string "They are the MACH Bike and\n"
+	.string "They are the Mach Bike and\n"
 	.string "the Acro Bike!\p"
-	.string "The MACH Bike is for cyclists who want\n"
+	.string "The Mach Bike is for cyclists who want\n"
 	.string "to feel the wind with their bodies!\p"
 	.string "And an Acro Bike is for those who\n"
 	.string "prefer technical rides!\p"
@@ -217,7 +217,7 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
 	.string "Which one will you choose?$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
-	.string "{PLAYER} chose the MACH Bike.$"
+	.string "{PLAYER} chose the Mach Bike.$"
 
 MauvilleCity_BikeShop_Text_ChoseAcroBike:
 	.string "{PLAYER} chose the Acro Bike.$"
@@ -235,12 +235,12 @@ MauvilleCity_BikeShop_Text_IllSwitchBikes:
 	.string "I'll switch Bikes for you!$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro:
-	.string "{PLAYER} got the MACH Bike exchanged\n"
+	.string "{PLAYER} got the Mach Bike exchanged\n"
 	.string "for an Acro Bike.$"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach:
 	.string "{PLAYER} got the Acro Bike exchanged\n"
-	.string "for a MACH Bike.$"
+	.string "for a Mach Bike.$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt:
 	.string "RYDEL: Good, good!\n"
@@ -263,7 +263,7 @@ MauvilleCity_BikeShop_Text_HandbooksAreInBack:
 	.string "the back.$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage:
-	.string "It's a handbook on the MACH Bike.\p"
+	.string "It's a handbook on the Mach Bike.\p"
 	.string "Which page do you want to read?$"
 
 MauvilleCity_BikeShop_Text_HowToRideMachBike:
@@ -275,7 +275,7 @@ MauvilleCity_BikeShop_Text_HowToRideMachBike:
 	.string "Want to read a different page?$"
 
 MauvilleCity_BikeShop_Text_HowToTurnMachBike:
-	.string "A MACH Bike is speedy, but it can't\n"
+	.string "A Mach Bike is speedy, but it can't\n"
 	.string "stop very quickly.\p"
 	.string "It gets a little tricky to get around\n"
 	.string "a corner.\p"
@@ -288,7 +288,7 @@ MauvilleCity_BikeShop_Text_SandySlopes:
 	.string "throughout the Hoenn region.\p"
 	.string "The loose, crumbly sand makes it\n"
 	.string "impossible to climb normally.\p"
-	.string "But if you have a MACH Bike, you can\n"
+	.string "But if you have a Mach Bike, you can\n"
 	.string "zip up a sandy slope.\p"
 	.string "Want to read a different page?$"
 

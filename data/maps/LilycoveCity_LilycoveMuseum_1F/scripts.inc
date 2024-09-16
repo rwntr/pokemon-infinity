@@ -162,16 +162,16 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_FatMan::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum:
-	.string "Welcome to Lilycove MUSEUM.\p"
+	.string "Welcome to Lilycove Museum.\p"
 	.string "Please take the time to enjoy our\n"
 	.string "collection of fantastic artwork\l"
 	.string "featuring Pokémon.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings:
-	.string "I'm the Curator of this MUSEUM of\n"
+	.string "I'm the Curator of this Museum of\n"
 	.string "fine arts.\p"
 	.string "It's heartening to see someone so\n"
-	.string "young as you in our MUSEUM.\p"
+	.string "young as you in our Museum.\p"
 	.string "Have you viewed our collection of\n"
 	.string "paintings already?$"
 
@@ -251,10 +251,10 @@ LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts:
 	.string "the fine arts.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration:
-	.string "This Art MUSEUM… Well, you could\n"
+	.string "This Art Museum… Well, you could\n"
 	.string "see many fantastic paintings.\p"
 	.string "And the Curator is a wonderful person.\p"
-	.string "Among artists like myself, this MUSEUM\n"
+	.string "Among artists like myself, this Museum\n"
 	.string "is an inspiration.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty:
@@ -266,7 +266,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable:
 	.string "Just like our little boy!$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings:
-	.string "I'd heard that this Art MUSEUM got\n"
+	.string "I'd heard that this Art Museum got\n"
 	.string "in some new paintings.\p"
 	.string "So, naturally I hurried over.\p"
 	.string "Are the new paintings up on\n"
@@ -285,7 +285,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings:
 	.string "my artwork exhibited here.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination:
-	.string "The Art MUSEUM has become a favorite\n"
+	.string "The Art Museum has become a favorite\n"
 	.string "tourist destination.\p"
 	.string "It's great for Lilycove…\n"
 	.string "No, great for the Hoenn region!\p"

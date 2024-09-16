@@ -162,7 +162,7 @@ LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon:
 	.string "so I'm getting a cute Doll instead.$"
 
 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:
-	.string "They sell many cute MATS here.\p"
+	.string "They sell many cute mats here.\p"
 	.string "I wonder which one I should get?\n"
 	.string "Maybe I'll buy them all…$"
 

@@ -726,7 +726,7 @@ MatchCall_PersonalizedText9::
 	.string "Right now, behind you…\l"
 	.string "Wasn't there something…?\p"
 	.string "The power of the Pokémon that\n"
-	.string "sleep here at MT. PYRE…\p"
+	.string "sleep here at Mt. PYRE…\p"
 	.string "It's telling me about you…\p"
 	.string "You should walk away quickly and\n"
 	.string "never once look back…\p"
@@ -928,19 +928,19 @@ MatchCall_PersonalizedText26::
 
 MatchCall_PersonalizedText27::
 	.string "Hi, it's Anna! I'm with my junior\n"
-	.string "partner MEG again today.\p"
-	.string "I really love caring for MEG and\n"
+	.string "partner Meg again today.\p"
+	.string "I really love caring for Meg and\n"
 	.string "Pokémon. They're so cute!\p"
 	.string "I wish I could look after them\n"
 	.string "as if they were my siblings!\p"
-	.string "Oh, hi, MEG!\n"
+	.string "Oh, hi, Meg!\n"
 	.string "Did you get the buns?\p"
 	.string "Huh? No, no, I'm not treating you\n"
 	.string "like my personal slave!\p"
 	.string "You lost the match, so you have\n"
 	.string "to go buy the bread as punishment!\p"
 	.string "I wouldn't treat you like a slave,\n"
-	.string "MEG! You're too special to me!\p"
+	.string "Meg! You're too special to me!\p"
 	.string "I have to go now.\n"
 	.string "It's time for our snack!$"
 
@@ -2015,7 +2015,7 @@ MatchCall_BattlePyramidText14::
 	.string "See you again!$"
 
 MatchCall_Text_Mom1::
-	.string "MOM: Your father and you…\n"
+	.string "Mom: Your father and you…\n"
 	.string "Everyone is captivated by Pokémon.\p"
 	.string "What is the charm of Pokémon?\p"
 	.string "Me?\n"
@@ -2023,7 +2023,7 @@ MatchCall_Text_Mom1::
 	.string "my everyday chores.$"
 
 MatchCall_Text_Mom2::
-	.string "MOM: Hi, {PLAYER}!\n"
+	.string "Mom: Hi, {PLAYER}!\n"
 	.string "Your father keeps himself locked\l"
 	.string "away in the PETALBURG.\p"
 	.string "He comes home every so often.\n"
@@ -2033,7 +2033,7 @@ MatchCall_Text_Mom2::
 	.string "was a big blow to his pride!$"
 
 MatchCall_Text_Mom3::
-	.string "MOM: {PLAYER}…\n"
+	.string "Mom: {PLAYER}…\n"
 	.string "Don't worry about me or the house.\p"
 	.string "Wear those RUNNING SHOES until\n"
 	.string "they fall apart, honey!$"
@@ -2150,7 +2150,7 @@ MatchCall_Text_Flannery2::
 	.string "well here.\p"
 	.string "When the's ready, a mark will\n"
 	.string "appear beside my name in the\l"
-	.string "MATCH Call list.$"
+	.string "Match Call list.$"
 
 MatchCall_Text_Flannery3::
 	.string "Flannery: Oh, {PLAYER}?\n"
@@ -2197,7 +2197,7 @@ MatchCall_Text_TateLiza1::
 	.string "Tate: When our is ready…\n"
 	.string "Liza: When our is ready…\p"
 	.string "Tate: A mark'll appear by our name…\n"
-	.string "Liza: On the MATCH Call list.$"
+	.string "Liza: On the Match Call list.$"
 
 MatchCall_Text_TateLiza2::
 	.string "Tate: {PLAYER}, congratulations!\n"
@@ -2207,7 +2207,7 @@ MatchCall_Text_TateLiza2::
 	.string "Tate: We need some more time, but…\n"
 	.string "Liza: When our is ready…\p"
 	.string "Tate: A mark'll appear by our name…\n"
-	.string "Liza: On the MATCH Call list.$"
+	.string "Liza: On the Match Call list.$"
 
 MatchCall_Text_TateLiza3::
 	.string "Tate: {PLAYER}!\n"
@@ -2215,7 +2215,7 @@ MatchCall_Text_TateLiza3::
 	.string "Tate: Our is ready!\n"
 	.string "Liza: Our is ready!\p"
 	.string "Tate: Please come visit…\n"
-	.string "Liza: MOSSDEEP anytime!$"
+	.string "Liza: Mossdeep anytime!$"
 
 MatchCall_Text_TateLiza4::
 	.string "Tate: {PLAYER}, the battle we had…\n"
@@ -2304,7 +2304,7 @@ MatchCall_Text_Wallace::
 	.string "I'm sure he's digging in a cave or\n"
 	.string "a craggy mountain somewhere.\p"
 	.string "But what is a rare stone exactly?\n"
-	.string "All I can think of is a METEORITE…$"
+	.string "All I can think of is a Meteorite…$"
 
 MatchCall_Text_MayRayquazaCall:
 	.string "… … … … … …\n"
@@ -2379,7 +2379,7 @@ MatchCall_Text_May5::
 
 MatchCall_Text_May6::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
-	.string "Did you know about the MIRAGE\n"
+	.string "Did you know about the Mirage\n"
 	.string "TOWER in the desert?\p"
 	.string "They say, like a mirage, it seems\n"
 	.string "to mysteriously come and go.\p"
@@ -2394,7 +2394,7 @@ MatchCall_Text_May7::
 
 MatchCall_Text_May8::
 	.string "May: {PLAYER}{KUN}, hi.\p"
-	.string "MT. PYRE is a memorial to Pokémon\n"
+	.string "Mt. PYRE is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "Maybe as a result, it's infested\n"
 	.string "with many Ghost-type Pokémon!$"
@@ -2506,7 +2506,7 @@ MatchCall_Text_Brendan5::
 
 MatchCall_Text_Brendan6::
 	.string "Brendan: Hey, {PLAYER}!\p"
-	.string "Did you know about the MIRAGE\n"
+	.string "Did you know about the Mirage\n"
 	.string "TOWER in the desert?\p"
 	.string "They say, like a mirage, it can be\n"
 	.string "seen only sometimes.\p"
@@ -2521,7 +2521,7 @@ MatchCall_Text_Brendan7::
 
 MatchCall_Text_Brendan8::
 	.string "Brendan: {PLAYER}!\p"
-	.string "MT. PYRE is a memorial to Pokémon\n"
+	.string "Mt. PYRE is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "That's probably why it's infested\n"
 	.string "with many Ghost-type Pokémon!$"
@@ -2662,7 +2662,7 @@ MatchCall_Text_Scott2::
 MatchCall_Text_Scott3::
 	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "Have you had the chance to climb\n"
-	.string "MT. PYRE?\p"
+	.string "Mt. PYRE?\p"
 	.string "The place is a memorial to Pokémon\n"
 	.string "that have passed away.\p"
 	.string "It's somewhere every Trainer\n"
@@ -2778,7 +2778,7 @@ MatchCall_Text_Steven1::
 	.string "Have you been to Mauville\n"
 	.string "already?\p"
 	.string "You should visit the Bike SHOP\n"
-	.string "and get a MACH Bike.\p"
+	.string "and get a Mach Bike.\p"
 	.string "Then, try exploring the Granite\n"
 	.string "Cave thoroughly.\p"
 	.string "You may make a new discovery\n"
@@ -2835,7 +2835,7 @@ MatchCall_Text_BirchRegisterCall:
 	.string "Prof. Birch: Oh, {PLAYER}{KUN}!\n"
 	.string "I've already heard about you!\p"
 	.string "It seems your Pokénav's been\n"
-	.string "upgraded with MATCH Call.\p"
+	.string "upgraded with Match Call.\p"
 	.string "Well, I should register, too!\p"
 	.string "That way, I'd be able to examine\n"
 	.string "your Pokédex even while you're\l"
@@ -2900,7 +2900,7 @@ MatchCall_Text_MrStone4::
 MatchCall_Text_MrStone5::
 	.string "Mr. Stone: Hello, hello, {PLAYER}{KUN}!\p"
 	.string "I heard from someone in PETALBURG\n"
-	.string "that you're NORMAN's child!\p"
+	.string "that you're Norman's child!\p"
 	.string "No wonder you're such a capable\n"
 	.string "being!$"
 

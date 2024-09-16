@@ -278,7 +278,7 @@ Route110_TrickHouseEnd_Text_AllNightToShoveBoulders:
 	.string "one, two, three places!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
-	.string "It took me all night to make MECHADOLLS\n"
+	.string "It took me all night to make the dolls\n"
 	.string "and another to think up the quiz…\p"
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two places!$"

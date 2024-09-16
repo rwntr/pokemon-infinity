@@ -1084,12 +1084,12 @@ Route104_Text_TrainerTipsDoubleBattles:
 Route104_Text_MayWeShouldRegister:
 	.string "May: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "Devon upgraded your Pokénav with\n"
-	.string "the MATCH Call system, huh?\p"
+	.string "the Match Call system, huh?\p"
 	.string "We should register each other so we\n"
 	.string "can get in contact anytime.$"
 
 Route104_Text_RegisteredMay:
-	.string "{PLAYER} registered MAY\n"
+	.string "{PLAYER} registered May\n"
 	.string "in the Pokénav.$"
 
 Route104_Text_MayHowsYourPokedex:
@@ -1129,7 +1129,7 @@ Route104_Text_MayPostBattle:
 
 Route104_Text_BrendanWeShouldRegister:
 	.string "Brendan: Oh, hey, {PLAYER}!\p"
-	.string "Cool, you had Devon install the MATCH\n"
+	.string "Cool, you had Devon install the Match\n"
 	.string "Call system on your Pokénav!\p"
 	.string "Let's register each other in our\n"
 	.string "PokénavS so we can keep in touch.$"

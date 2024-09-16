@@ -60,7 +60,7 @@ FallarborTown_Text_ShadyCharactersCozmosHome:
 FallarborTown_Text_RegionKnownForMeteors:
 	.string "This region's been known for meteors\n"
 	.string "since the olden days.\p"
-	.string "They say METEOR FALLS was gouged out\n"
+	.string "They say Meteor Falls was gouged out\n"
 	.string "by a falling meteorite long ago.$"
 
 FallarborTown_Text_MyPreciousAzurill:
@@ -90,6 +90,6 @@ FallarborTown_Text_TownSign:
 	.string "“A farm community with small gardens.”$"
 
 FallarborTown_Text_MoveTutorSign:
-	.string "MOVE TUTOR'S House\n"
+	.string "Move TUTOR'S House\n"
 	.string "“New moves taught to Pokémon.”$"
 

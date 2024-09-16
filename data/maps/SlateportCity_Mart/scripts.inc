@@ -35,10 +35,10 @@ SlateportCity_Mart_EventScript_Man::
 	end
 
 SlateportCity_Mart_Text_SomeItemsOnlyAtMart:
-	.string "The MARKET does have some interesting\n"
+	.string "The Market does have some interesting\n"
 	.string "merchandise.\p"
 	.string "But there are some items you can only\n"
-	.string "get at a Pokémon MART.$"
+	.string "get at a Pokémon Mart.$"
 
 SlateportCity_Mart_Text_GreatBallIsBetter:
 	.string "A Great Ball is better than a Poké Ball\n"

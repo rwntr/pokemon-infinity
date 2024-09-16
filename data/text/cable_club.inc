@@ -207,7 +207,7 @@ CableClub_Text_GuideToVariousServices:
 	.string "various services.$"
 
 CableClub_Text_CancelSelectedItem::
-	.string "Cancels the selected MENU item.$"
+	.string "Cancels the selected Menu item.$"
 
 @ Unused
 CableClub_Text_WhichBattleMode:

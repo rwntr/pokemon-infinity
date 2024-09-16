@@ -403,7 +403,7 @@ Route116_Text_ThankYouTokenOfAppreciation:
 
 Route116_Text_NewBallAvailableAtMart:
 	.string "Our new Poké Ball will be available\n"
-	.string "at the Pokémon MART in Rustboro.\p"
+	.string "at the Pokémon Mart in Rustboro.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
 

@@ -73,10 +73,10 @@ MoveTutor_MimicTeach:
 	.string "folks of this town.\p"
 	.string "What do you say, young one?\n"
 	.string "Would you agree to it if I were to\l"
-	.string "offer to teach the move MIMIC?$"
+	.string "offer to teach the move Mimic?$"
 
 MoveTutor_MimicDeclined:
-	.string "Oh, boo! I wanted to teach MIMIC\n"
+	.string "Oh, boo! I wanted to teach Mimic\n"
 	.string "to your Pokémon!$"
 
 MoveTutor_Text_MimicWhichMon:
@@ -85,7 +85,7 @@ MoveTutor_Text_MimicWhichMon:
 	.string "you wish me to teach.$"
 
 MoveTutor_Text_MimicTaught:
-	.string "MIMIC is a move of great depth.\p"
+	.string "Mimic is a move of great depth.\p"
 	.string "Could you execute it to perfection\n"
 	.string "as well as me…?$"
 
@@ -96,7 +96,7 @@ MoveTutor_Text_MetronomeTeach:
 	.string "a spell that made money appear when\l"
 	.string "you waggle a finger?\p"
 	.string "If you want, I can teach your Pokémon\n"
-	.string "the move METRONOME.\p"
+	.string "the move Metronome.\p"
 	.string "Money won't appear, but your Pokémon\n"
 	.string "will waggle a finger. Yes?$"
 
@@ -110,7 +110,7 @@ MoveTutor_Text_MetronomeWhichMon:
 
 MoveTutor_Text_MetronomeTaught:
 	.string "When a Pokémon waggles its finger\n"
-	.string "like a METRONOME, all sorts of nice\l"
+	.string "like a Metronome, all sorts of nice\l"
 	.string "things happen.\p"
 	.string "Wouldn't it be nice if we could\n"
 	.string "use it, too?$"
@@ -167,7 +167,7 @@ MoveTutor_Text_DynamicPunchTeach:
 	.string "I can't do this anymore!\p"
 	.string "It's utterly hopeless!\p"
 	.string "I'm a Fighting-type Trainer,\n"
-	.string "so I can't win at the MOSSDEEP\l"
+	.string "so I can't win at the Mossdeep\l"
 	.string "no matter how hard I try!\p"
 	.string "Argh! Punch! Punch! Punch!\n"
 	.string "Punch! Punch! Punch!\p"
@@ -185,7 +185,7 @@ MoveTutor_Text_DynamicPunchWhichMon:
 	.string "Which Pokémon should I teach?$"
 
 MoveTutor_Text_DynamicPunchTaught:
-	.string "I want you to win at the MOSSDEEP\n"
+	.string "I want you to win at the Mossdeep\n"
 	.string "using that Dynamic Punch!$"
 
 MoveTutor_Text_DoubleEdgeTeach:

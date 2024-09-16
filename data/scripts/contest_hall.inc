@@ -1755,9 +1755,9 @@ LilycoveCity_ContestLobby_Text_ExplainGMode:
 
 LilycoveCity_ContestLobby_Text_NoWirelessAdapterInGMode:
 	.string "I'm terribly sorry.\p"
-	.string "G-MODE does not function\n"
+	.string "G-Mode does not function\n"
 	.string "with Wireless Adapters.\p"
-	.string "Please select E-MODE or try\n"
+	.string "Please select E-Mode or try\n"
 	.string "again using a GBA Game Link cable.$"
 
 LilycoveCity_ContestLobby_Text_WhichContestMode:

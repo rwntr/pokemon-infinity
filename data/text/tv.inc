@@ -559,7 +559,7 @@ gTVRecentHappeningsText05::
 
 gTVMassOutbreakText00::
 	.string "Greetings!\n"
-	.string "It's time for Pokémon NEWS.\p"
+	.string "It's time for Pokémon News.\p"
 	.string "We've just received word of a very\n"
 	.string "rare occurrence.\p"
 	.string "There have been reports of a mass\n"
@@ -571,7 +571,7 @@ gTVMassOutbreakText00::
 	.string "It sounds like a rare opportunity to\n"
 	.string "see the mystifying outbreak of\l"
 	.string "{STR_VAR_2} in the wild.\p"
-	.string "That's the news on Pokémon NEWS.$"
+	.string "That's the news on Pokémon News.$"
 
 gTV3CheersForPokeblocksText00::
 	.string "MC: We hope you're in good cheer,\n"
@@ -707,7 +707,7 @@ gTVTrainerFanClubSpecialText05::
 
 gTVNameRaterText00::
 	.string "And now, it's time for…\n"
-	.string "THE NAME RATER SHOW.\p"
+	.string "THE Name RATER SHOW.\p"
 	.string "I tell your Pokémon's fortune from\n"
 	.string "the nickname you've bestowed.\p"
 	.string "Advice is what I have to give, and it is\n"
@@ -1230,7 +1230,7 @@ gTVTodaysRivalTrainerText06::
 	.string "and ahead of our rivals!$"
 
 TrendWatcher_Text_Intro::
-	.string "Dewford TREND-WATCHER NETWORK!\p"
+	.string "Dewford TREND-WATCHER Network!\p"
 	.string "MC: Wassup?\n"
 	.string "We'll keep it real with the latest on\l"
 	.string "what's hip and happening in Dewford.\p"
@@ -1881,7 +1881,7 @@ TVSpotTheCuties_Text_Outro::
 
 gTVPokemonNewsBattleFrontierText00::
 	.string "Greetings!\n"
-	.string "It's time for Pokémon NEWS.\p"
+	.string "It's time for Pokémon News.\p"
 	.string "We've got some uplifting news from\n"
 	.string "the Battle Frontier.$"
 
@@ -2002,10 +2002,10 @@ gTVPokemonNewsBattleFrontierText18::
 	.string "Let's hope for more record-setting\n"
 	.string "feats from {STR_VAR_1} and the loyal\l"
 	.string "Pokémon!\p"
-	.string "That's the news on Pokémon NEWS!$"
+	.string "That's the news on Pokémon News!$"
 
 gTVWhatsNo1InHoennTodayText00::
-	.string "WHAT'S NO. 1 IN Hoenn TODAY?\n"
+	.string "WHAT'S No. 1 IN Hoenn TODAY?\n"
 	.string "Yes, it's that time again!\p"
 	.string "Hello, viewers! Are you giving your\n"
 	.string "best at whatever you do?\p"
@@ -2186,7 +2186,7 @@ TVSecretBaseSecrets_Text_UsedTV::
 	.string "Looks like we have a big fan of TV!$"
 
 TVSecretBaseSecrets_Text_UsedMudBall::
-	.string "The visitor stomped on a MUD Ball!\p"
+	.string "The visitor stomped on a Mud Ball!\p"
 	.string "The visitor looks delighted!$"
 
 TVSecretBaseSecrets_Text_UsedBag::
@@ -2252,7 +2252,7 @@ TVSecretBaseSecrets_Text_UsedPoster::
 	.string "about the visitor's stares.$"
 
 TVSecretBaseSecrets_Text_UsedNoteMat::
-	.string "The visitor stepped on a NOTE MAT!\p"
+	.string "The visitor stepped on a Note Mat!\p"
 	.string "…Hmm…\n"
 	.string "The visitor composed a funny tune!$"
 
@@ -2269,7 +2269,7 @@ TVSecretBaseSecrets_Text_BattledDraw::
 
 TVSecretBaseSecrets_Text_UsedSpinMat::
 	.string "The visitor stepped on\n"
-	.string "a SPIN MAT!\p"
+	.string "a SPIN Mat!\p"
 	.string "It looks like the visitor is dizzy!\p"
 	.string "The visitor is tottering about!\n"
 	.string "Look out!$"
@@ -2311,7 +2311,7 @@ TVSecretBaseSecrets_Text_UsedFence::
 
 TVSecretBaseSecrets_Text_UsedGlitterMat::
 	.string "The visitor stepped on\n"
-	.string "a Glitter MAT!\p"
+	.string "a Glitter Mat!\p"
 	.string "The visitor is striking a variety\n"
 	.string "of poses!\p"
 	.string "The visitor appears to be fantasizing\n"
@@ -2358,7 +2358,7 @@ TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown::
 
 TVSecretBaseSecrets_Text_UsedJumpMat::
 	.string "The visitor stepped on\n"
-	.string "a Jump MAT!\p"
+	.string "a Jump Mat!\p"
 	.string "The visitor jumped once!\p"
 	.string "Jumped twice!\p"
 	.string "And a successful landing!\p"
