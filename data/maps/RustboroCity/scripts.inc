@@ -1253,7 +1253,7 @@ RustboroCity_Text_TrainersSchoolSign:
 	.string "Pokémon!”$"
 
 RustboroCity_Text_CuttersHouse:
-	.string "Cutter'S House$"
+	.string "Cutter's House$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "I've been developing an added feature\n"

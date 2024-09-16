@@ -297,9 +297,9 @@ RustboroCity_PokemonSchool_Text_StudentsNotes:
 	.string "A TRAINER is someone who catches\n"
 	.string "Pokémon, raises them, and battles\l"
 	.string "with them.\p"
-	.string "A TRAINER's mission is to defeat\n"
-	.string "the strong TRAINERS who await\l"
-	.string "challengers in Pokémon GYMS.$"
+	.string "A Trainer's mission is to defeat\n"
+	.string "the strong Trainers who await\l"
+	.string "challengers in Pokémon.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "Hello? Didn't we meet before?\n"

@@ -622,7 +622,7 @@ MauvilleCity_Text_AllSortsOfPeopleComeThrough:
 	.string "people coming through.$"
 
 MauvilleCity_Text_RydelVeryGenerous:
-	.string "Have you been to Rydel'S Cycles yet?\p"
+	.string "Have you been to Rydel's Cycles yet?\p"
 	.string "Rydel, the owner, is a very generous\n"
 	.string "man.$"
 
