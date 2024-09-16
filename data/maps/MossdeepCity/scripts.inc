@@ -338,13 +338,13 @@ MossdeepCity_Text_WailmerWatching:
 	.string "WAILMER watching!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
-	.string "The island's SPACE CENTER has been\n"
+	.string "The island's SPACE Center has been\n"
 	.string "launching huge rockets.\p"
 	.string "There's been some kind of an uproar\n"
 	.string "over a letter they received recently.$"
 
 MossdeepCity_Text_SpaceCenterLaunchingRockets:
-	.string "The island's SPACE CENTER has been\n"
+	.string "The island's SPACE Center has been\n"
 	.string "launching huge rockets.$"
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
@@ -355,7 +355,7 @@ MossdeepCity_Text_MossdeepTargetedByMagma:
 	.string "But MOSSDEEP here's been targeted\n"
 	.string "by that Team Magma.\p"
 	.string "If you want to know what they're up to,\n"
-	.string "go visit the SPACE CENTER.$"
+	.string "go visit the SPACE Center.$"
 
 MossdeepCity_Text_FeelReliefOnLand:
 	.string "I'm a SAILOR, so the sea's obviously\n"
@@ -386,7 +386,7 @@ MossdeepCity_Text_SurfExhilarating:
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
 	.string "This rock has a special meaning to\n"
-	.string "the people at the SPACE CENTER.\p"
+	.string "the people at the SPACE Center.\p"
 	.string "They put it here as their wish for\n"
 	.string "their rockets to fly safely.\p"
 	.string "When you make a wish, what do you use?\n"
@@ -407,7 +407,7 @@ MossdeepCity_Text_CitySign:
 	.string "“Our slogan: Cherish Pokémon!”$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "MOSSDEEP SPACE CENTER\n"
+	.string "MOSSDEEP SPACE Center\n"
 	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
@@ -419,7 +419,7 @@ MossdeepCity_Text_ScottSomethingWrongWithTown:
 	.string "But there's something wrong about\n"
 	.string "this town.\p"
 	.string "People are going on about a warning\n"
-	.string "letter and the SPACE CENTER…\p"
+	.string "letter and the SPACE Center…\p"
 	.string "I don't think it concerns me in any\n"
 	.string "way, though.$"
 

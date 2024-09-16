@@ -1067,7 +1067,7 @@ Route110_Text_AbigailPostBattle:
 
 Route110_Text_AbigailRegister:
 	.string "You know, I like you!\n"
-	.string "Let's have a rematch on CYCLING ROAD.$"
+	.string "Let's have a rematch on Cycling ROAD.$"
 
 Route110_Text_AbigailRematchIntro:
 	.string "Isn't it neat to hold a battle while\n"
@@ -1129,7 +1129,7 @@ Route110_Text_EdwinPostBattle:
 	.string "my passion as a collector is ignited!$"
 
 Route110_Text_EdwinRegister:
-	.string "I like collecting MATCH CALL\n"
+	.string "I like collecting MATCH Call\n"
 	.string "registrations, too…$"
 
 Route110_Text_EdwinRematchIntro:
@@ -1166,7 +1166,7 @@ Route110_Text_IsabelDefeated:
 
 Route110_Text_IsabelPostBattle:
 	.string "Rather than battling, perhaps I should\n"
-	.string "show off my Pokémon at the FAN CLUB.$"
+	.string "show off my Pokémon at the FAN Club.$"
 
 Route110_Text_IsabelRegister:
 	.string "That wasn't close to what I could\n"
@@ -1198,7 +1198,7 @@ Route110_Text_TimmyPostBattle:
 	.string "just caught.$"
 
 Route110_Text_AlyssaIntro:
-	.string "I fell off CYCLING ROAD…\p"
+	.string "I fell off Cycling ROAD…\p"
 	.string "I'll get over my embarrassment by\n"
 	.string "battling with you!$"
 
@@ -2361,11 +2361,11 @@ Route117_Text_IsaacRematchIntro:
 
 Route117_Text_IsaacRematchDefeat:
 	.string "You know how to raise them properly.\n"
-	.string "You might have DAY CARE skills…$"
+	.string "You might have DAY Care skills…$"
 
 Route117_Text_IsaacPostRematch:
 	.string "Your Pokémon are growing good!\n"
-	.string "You should enter them in CONTESTS.$"
+	.string "You should enter them in Contests.$"
 
 Route117_Text_LydiaIntro:
 	.string "Please, allow me to evaluate if you\n"
@@ -2454,7 +2454,7 @@ Route117_Text_MariaPostRematch:
 	.string "Let's battle again sometime!$"
 
 Route117_Text_DerekIntro:
-	.string "Once a Bug CATCHER!\n"
+	.string "Once a Bug Catcher!\n"
 	.string "And now a Bug MANIAC!\p"
 	.string "But my love for Pokémon remains\n"
 	.string "unchanged!$"
@@ -2694,7 +2694,7 @@ Route118_Text_DeandrePostBattle:
 	.string "You can copy me--I don't mind!$"
 
 Route119_Text_BrentIntro:
-	.string "We're the MIMIC CIRCLE!\n"
+	.string "We're the MIMIC Circle!\n"
 	.string "We MIMIC what you do!$"
 
 Route119_Text_BrentDefeat:
@@ -2737,7 +2737,7 @@ Route119_Text_DougDefeat:
 	.string "Whoop, that was a great match!$"
 
 Route119_Text_DougPostBattle:
-	.string "We're the MIMIC CIRCLE!\n"
+	.string "We're the MIMIC Circle!\n"
 	.string "I hope you enjoyed our performance.$"
 
 Route119_Text_GregIntro:
@@ -2753,7 +2753,7 @@ Route119_Text_GregPostBattle:
 	.string "keep on mimicking your every move.$"
 
 Route119_Text_KentIntro:
-	.string "The MIMIC CIRCLE was formed by people\n"
+	.string "The MIMIC Circle was formed by people\n"
 	.string "who like to MIMIC.\p"
 	.string "A battle starts the instant we meet!$"
 
@@ -2761,7 +2761,7 @@ Route119_Text_KentDefeat:
 	.string "I give up!$"
 
 Route119_Text_KentPostBattle:
-	.string "Won't you join our MIMIC CIRCLE?$"
+	.string "Won't you join our MIMIC Circle?$"
 
 Route119_Text_JacksonIntro:
 	.string "Who has the knowledge and\n"
@@ -3328,7 +3328,7 @@ Route121_Text_PatPostBattle:
 Route121_Text_MarcelIntro:
 	.string "My Pokémon have never tasted defeat!\n"
 	.string "On their next win, I'm entering them\l"
-	.string "in CONTESTS.$"
+	.string "in Contests.$"
 
 Route121_Text_MarcelDefeat:
 	.string "Oh, now what happened here?$"
@@ -3835,7 +3835,7 @@ Route125_Text_ErnestDefeat:
 
 Route125_Text_ErnestPostBattle:
 	.string "The tide ebbs and flows inside the\n"
-	.string "SHOAL CAVE.\p"
+	.string "SHOAL Cave.\p"
 	.string "By the way, it's about six hours from\n"
 	.string "high tide to low tide. Did you know?$"
 
@@ -3852,7 +3852,7 @@ Route125_Text_ErnestRematchDefeat:
 	.string "I flat out couldn't win!$"
 
 Route125_Text_ErnestRematchPostBattle:
-	.string "The SHOAL CAVE…\p"
+	.string "The SHOAL Cave…\p"
 	.string "There are places you can and can't\n"
 	.string "get to depending on the rise and fall\l"
 	.string "of the tide.\p"
@@ -3861,7 +3861,7 @@ Route125_Text_ErnestRematchPostBattle:
 
 Route125_Text_KimIntro:
 	.string "KIM: A funny old man lives in the\n"
-	.string "SHOAL CAVE. Someone told me.\l"
+	.string "SHOAL Cave. Someone told me.\l"
 	.string "Are you going to see him, too?$"
 
 Route125_Text_KimDefeat:
@@ -3869,7 +3869,7 @@ Route125_Text_KimDefeat:
 
 Route125_Text_KimPostBattle:
 	.string "KIM: A funny old man lives in the\n"
-	.string "SHOAL CAVE, doesn't he?\p"
+	.string "SHOAL Cave, doesn't he?\p"
 	.string "Let's go see him, IRIS!$"
 
 Route125_Text_KimNotEnoughMons:
@@ -3885,7 +3885,7 @@ Route125_Text_IrisDefeat:
 
 Route125_Text_IrisPostBattle:
 	.string "IRIS: KIM, are we really going into\n"
-	.string "the SHOAL CAVE?\l"
+	.string "the SHOAL Cave?\l"
 	.string "We'll get all wet.$"
 
 Route125_Text_IrisNotEnoughMons:

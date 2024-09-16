@@ -91,7 +91,7 @@ CaveOfOrigin_B1F_Text_WhereIsRayquaza:
 	.string "If you do, please tell me.$"
 
 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
-	.string "WALLACE: The CAVE OF ORIGIN?\p"
+	.string "WALLACE: The Cave OF ORIGIN?\p"
 	.string "But that's right here!\n"
 	.string "I need you to do better than that!\p"
 	.string "Please, I need you to think about\n"

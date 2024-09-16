@@ -670,9 +670,9 @@ Route111_Text_OldLadysRestStopSign:
 Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "Trainer TIPS\p"
 	.string "One of the indicators of a Pokémon's\n"
-	.string "powerfulness is SP. Atk. It stands for\l"
+	.string "powerfulness is Sp. Atk. It stands for\l"
 	.string "“SPECIAL Attack.”\p"
-	.string "Likewise, SP. DEF stands for “SPECIAL\n"
+	.string "Likewise, Sp. DEF stands for “SPECIAL\n"
 	.string "DEFENSE.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
@@ -707,7 +707,7 @@ Route111_Text_MirageTowerHasntBeenSeenSince:
 	.string "the MIRAGE TOWER…$"
 
 Route111_Text_ClawFossilDisappeared:
-	.string "The CLAW FOSSIL disappeared into\n"
+	.string "The Claw FOSSIL disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_RootFossilDisappeared:

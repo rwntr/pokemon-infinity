@@ -82,7 +82,7 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
 	.string "Hello and welcome to the Devon\n"
-	.string "CORPORATION.\p"
+	.string "Corporation.\p"
 	.string "We're proud producers of items and\n"
 	.string "medicine that enhance your life.$"
 
@@ -124,7 +124,7 @@ RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
 	.string "displayed in the glass case.\p"
 	.string "There's a panel with some writing\n"
 	.string "on it…\p"
-	.string "“Devon CORPORATION got its start as\n"
+	.string "“Devon Corporation got its start as\n"
 	.string "a producer of stones from quarries.\p"
 	.string "“The company also produced iron from\n"
 	.string "filings in the sand.\p"

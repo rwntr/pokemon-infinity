@@ -30,12 +30,12 @@ PacifidlogTown_PokemonCenter_1F_EventScript_OldMan::
 	end
 
 PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard:
-	.string "What color is your Trainer CARD?\n"
+	.string "What color is your Trainer Card?\n"
 	.string "Mine's copper!$"
 
 PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola:
 	.string "PACIFIDLOG Town floats on top of\n"
-	.string "a colony of CORSOLA.\p"
+	.string "a colony of Corsola.\p"
 	.string "If I told you that, would you believe\n"
 	.string "me?$"
 

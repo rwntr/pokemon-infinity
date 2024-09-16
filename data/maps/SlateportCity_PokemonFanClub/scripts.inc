@@ -253,14 +253,14 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 	end
 
 SlateportCity_PokemonFanClub_Text_MeetChairman:
-	.string "Er-hem! I am the CHAIRMAN of the\n"
-	.string "Pokémon FAN CLUB!\p"
-	.string "Being the CHAIRMAN, I am naturally\n"
+	.string "Er-hem! I am the Chairman of the\n"
+	.string "Pokémon FAN Club!\p"
+	.string "Being the Chairman, I am naturally\n"
 	.string "the most important!\p"
 	.string "No one can best me when it comes\n"
 	.string "to raising Pokémon. No one!\p"
 	.string "Well, let me tell you about\n"
-	.string "Pokémon CONTESTS.\p"
+	.string "Pokémon Contests.\p"
 	.string "They're events where one can show off\n"
 	.string "Pokémon for the world to see!\p"
 	.string "However, they're held in far-off towns,\n"
@@ -367,7 +367,7 @@ SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou:
 SlateportCity_PokemonFanClub_Text_PokemonAdoresYou:
 	.string "Your Pokémon really adores you.\p"
 	.string "For you, a most compassionate\n"
-	.string "Trainer, a gift from the FAN CLUB!$"
+	.string "Trainer, a gift from the FAN Club!$"
 
 SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove:
 	.string "Pokémon are very sensitive to\n"

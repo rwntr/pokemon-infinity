@@ -472,5 +472,5 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "have Power Points (PP) that are used to\l"
 	.string "make moves during battle.\p"
 	.string "If a Pokémon runs out of PP, it must be\n"
-	.string "taken to a Pokémon CENTER.$"
+	.string "taken to a Pokémon Center.$"
 

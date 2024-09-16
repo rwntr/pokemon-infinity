@@ -1014,7 +1014,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll5Intro:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz1:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "In Slateport's Pokémon FAN CLUB,\n"
+	.string "In Slateport's Pokémon FAN Club,\n"
 	.string "how many Pokémon were there?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
@@ -1024,5 +1024,5 @@ Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "On the CYCLING ROAD, how many\n"
+	.string "On the Cycling ROAD, how many\n"
 	.string "TRIATHLETES were there?$"

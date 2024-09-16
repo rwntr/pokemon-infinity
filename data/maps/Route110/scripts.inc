@@ -813,7 +813,7 @@ Route110_Text_BrendanExplainItemfinder:
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a Bike\n"
-	.string "at full speed on CYCLING ROAD?$"
+	.string "at full speed on Cycling ROAD?$"
 
 Route110_Text_HairStreamsBehindMe:
 	.string "How do you like the way my raven-\n"
@@ -855,7 +855,7 @@ Route110_Text_BikeTechniques:
 Route110_Text_WhichShouldIChoose:
 	.string "Which should I choose?\p"
 	.string "Make a beeline for Mauville on\n"
-	.string "CYCLING ROAD, or take the low road\l"
+	.string "Cycling ROAD, or take the low road\l"
 	.string "and look for Pokémon?$"
 
 Route110_Text_CyclingChallengeResultSummary:
@@ -895,7 +895,7 @@ Route110_Text_ChallengeReactionWorst:
 	.string "returning that Bike to RYDEL.$"
 
 Route110_Text_RatedForNumberOfCollisions:
-	.string "This is CYCLING ROAD.\p"
+	.string "This is Cycling ROAD.\p"
 	.string "If you were to ride from Mauville to\n"
 	.string "Slateport on a MACH Bike, you would\l"
 	.string "be rated for the number of collisions\l"
@@ -907,7 +907,7 @@ Route110_Text_AlwaysAimHigher:
 	.string "Always aim higher!$"
 
 Route110_Text_AcroBikesDoNotQualify:
-	.string "On this CYCLING ROAD, those riding\n"
+	.string "On this Cycling ROAD, those riding\n"
 	.string "MACH Bikes are rated for their number\l"
 	.string "of collisions and their total times.\p"
 	.string "Acro Bikes do not qualify for rating.\n"
@@ -974,7 +974,7 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "You two are running separately.\l"
 	.string "Well, that's fine.\p"
 	.string "Oh, yes, I heard that your Pokénav\n"
-	.string "had the MATCH CALL system installed.\p"
+	.string "had the MATCH Call system installed.\p"
 	.string "Well, then, I should register you in\n"
 	.string "my Pokénav as well.\p"
 	.string "That way, even when we're apart,\n"

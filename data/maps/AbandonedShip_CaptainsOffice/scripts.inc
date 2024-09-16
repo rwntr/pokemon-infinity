@@ -36,6 +36,6 @@ AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner:
 	.string "little more.$"
 
 AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus:
-	.string "This ship is called S.S. CACTUS.\n"
+	.string "This ship is called S.S. Cactus.\n"
 	.string "It seems to be from an earlier era.$"
 

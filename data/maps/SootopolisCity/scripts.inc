@@ -1529,7 +1529,7 @@ SootopolisCity_Text_CityRegainedCalm:
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
 	.string "Who might you be?\p"
-	.string "This is the CAVE OF ORIGIN.\p"
+	.string "This is the Cave OF ORIGIN.\p"
 	.string "The spirits of Pokémon, becalmed at\n"
 	.string "MT. PYRE, are said to be revived here.\p"
 	.string "Please leave.$"
@@ -1541,7 +1541,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "experience of many kinds of Pokémon…\p"
 	.string "If such a person were to appear, I was\n"
 	.string "instructed by WALLACE to lead that\l"
-	.string "Trainer to this CAVE.$"
+	.string "Trainer to this Cave.$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
 	.string "Oh, my…\p"
@@ -1550,7 +1550,7 @@ SootopolisCity_Text_AwakenedPokemonClash:
 	.string "of a third Pokémon…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
-	.string "This is the CAVE OF ORIGIN…\p"
+	.string "This is the Cave OF ORIGIN…\p"
 	.string "With the passing of the crisis,\n"
 	.string "the cave, too, shall sleep…$"
 

@@ -110,7 +110,7 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "I'm no Trainer, not me, but I can\n"
 	.string "sure give you winning advice.\p"
 	.string "That's settled, then! We'll aim for the\n"
-	.string "Pokémon CHAMPIONSHIP together!\p"
+	.string "Pokémon Championship together!\p"
 	.string "It's your job as a Trainer to collect\n"
 	.string "Gym Badges, am I right?\p"
 	.string "But Gym LeaderS aren't pushovers!\p"
@@ -129,12 +129,12 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa! What a breathtaking victory!\n"
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
-	.string "Check your Trainer CARD.\p"
+	.string "Check your Trainer Card.\p"
 	.string "The STONE Badge you got should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
 	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
+	.string "the stairs to the Championship!\p"
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
@@ -204,7 +204,7 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "The STONE Badge heightens the Attack\n"
 	.string "power of your Pokémon.\p"
 	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
+	.string "Cut outside of battle.\p"
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:

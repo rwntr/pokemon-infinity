@@ -946,7 +946,7 @@ MatchCall_PersonalizedText27::
 
 MatchCall_PersonalizedText28::
 	.string "I love Pokémon!\n"
-	.string "It's {STR_VAR_1} from the FAN CLUB!\p"
+	.string "It's {STR_VAR_1} from the FAN Club!\p"
 	.string "You have to hear this!\n"
 	.string "My sweet Pokémon…\p"
 	.string "Snort! Wahaha!\n"
@@ -1055,7 +1055,7 @@ MatchCall_PersonalizedText35::
 	.string "It exhilarates me as if I were\n"
 	.string "flying!\p"
 	.string "Okay! Today, I'm going to set a new\n"
-	.string "CYCLING ROAD record!\p"
+	.string "Cycling ROAD record!\p"
 	.string "You should make the challenge, too!\n"
 	.string "See you!$"
 
@@ -2150,7 +2150,7 @@ MatchCall_Text_Flannery2::
 	.string "well here.\p"
 	.string "When the's ready, a mark will\n"
 	.string "appear beside my name in the\l"
-	.string "MATCH CALL list.$"
+	.string "MATCH Call list.$"
 
 MatchCall_Text_Flannery3::
 	.string "FLANNERY: Oh, {PLAYER}?\n"
@@ -2197,7 +2197,7 @@ MatchCall_Text_TateLiza1::
 	.string "Tate: When our is ready…\n"
 	.string "LIZA: When our is ready…\p"
 	.string "Tate: A mark'll appear by our name…\n"
-	.string "LIZA: On the MATCH CALL list.$"
+	.string "LIZA: On the MATCH Call list.$"
 
 MatchCall_Text_TateLiza2::
 	.string "Tate: {PLAYER}, congratulations!\n"
@@ -2207,7 +2207,7 @@ MatchCall_Text_TateLiza2::
 	.string "Tate: We need some more time, but…\n"
 	.string "LIZA: When our is ready…\p"
 	.string "Tate: A mark'll appear by our name…\n"
-	.string "LIZA: On the MATCH CALL list.$"
+	.string "LIZA: On the MATCH Call list.$"
 
 MatchCall_Text_TateLiza3::
 	.string "Tate: {PLAYER}!\n"
@@ -2354,7 +2354,7 @@ MatchCall_Text_May2::
 MatchCall_Text_May3::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
 	.string "Do you remember a man named\n"
-	.string "the CUTTER in Rustboro?\l"
+	.string "the Cutter in Rustboro?\l"
 	.string "He had a house there, remember?\p"
 	.string "Well, I found out his younger\n"
 	.string "brother lives in Mauville.\p"
@@ -2480,7 +2480,7 @@ MatchCall_Text_Brendan2::
 MatchCall_Text_Brendan3::
 	.string "Brendan: Yo, {PLAYER}!\p"
 	.string "Do you remember a guy named\n"
-	.string "the CUTTER in Rustboro?\l"
+	.string "the Cutter in Rustboro?\l"
 	.string "He had a house there, right?\p"
 	.string "Well, it turns out his little\n"
 	.string "brother lives in Mauville.\p"
@@ -2712,7 +2712,7 @@ MatchCall_Text_Scott7::
 MatchCall_Text_Norman1::
 	.string "DAD: In Rustboro, there's a man\n"
 	.string "that goes by the odd name of\l"
-	.string "the CUTTER.\p"
+	.string "the Cutter.\p"
 	.string "If you're in the area, you should\n"
 	.string "pay him a visit.$"
 
@@ -2780,7 +2780,7 @@ MatchCall_Text_Steven1::
 	.string "You should visit the Bike SHOP\n"
 	.string "and get a MACH Bike.\p"
 	.string "Then, try exploring the GRANITE\n"
-	.string "CAVE thoroughly.\p"
+	.string "Cave thoroughly.\p"
 	.string "You may make a new discovery\n"
 	.string "there.$"
 
@@ -2806,7 +2806,7 @@ MatchCall_Text_Steven4::
 	.string "Steven: Hello?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "I'm involved in a spot of trouble\n"
-	.string "at the SPACE CENTER.\p"
+	.string "at the SPACE Center.\p"
 	.string "I'm sorry, but I can't talk now.\n"
 	.string "Bye!$"
 
@@ -2835,7 +2835,7 @@ MatchCall_Text_BirchRegisterCall:
 	.string "Prof. Birch: Oh, {PLAYER}{KUN}!\n"
 	.string "I've already heard about you!\p"
 	.string "It seems your Pokénav's been\n"
-	.string "upgraded with MATCH CALL.\p"
+	.string "upgraded with MATCH Call.\p"
 	.string "Well, I should register, too!\p"
 	.string "That way, I'd be able to examine\n"
 	.string "your Pokédex even while you're\l"
@@ -2914,7 +2914,7 @@ MatchCall_Text_MrStone6::
 
 MatchCall_Text_MrStone7::
 	.string "Hello!\n"
-	.string "This is Devon CORPORATI…\l"
+	.string "This is Devon Corporati…\l"
 	.string "Oh, hello, {PLAYER}!\p"
 	.string "Our PRESIDENT was here a little\n"
 	.string "while ago, but he's gone out.\p"

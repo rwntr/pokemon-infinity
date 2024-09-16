@@ -54,13 +54,13 @@ BerryBlender_Text_DontHaveAnyBerriesToSpare:
 	.string "We'll have to do this another time.$"
 
 BerryBlender_Text_PokeblockCaseIsFull:
-	.string "But your {POKEBLOCK} CASE is full.\p"
+	.string "But your {POKEBLOCK} Case is full.\p"
 	.string "You should use some {POKEBLOCK}s before\n"
 	.string "you come see me again.$"
 
 BerryBlender_Text_DontHavePokeblockCase:
-	.string "But you don't have a {POKEBLOCK} CASE.\p"
-	.string "You should get a {POKEBLOCK} CASE and then\n"
+	.string "But you don't have a {POKEBLOCK} Case.\p"
+	.string "You should get a {POKEBLOCK} Case and then\n"
 	.string "come see me.$"
 
 BerryBlender_Text_LetsGetBlendingAlready:
@@ -109,14 +109,14 @@ BerryBlender_Text_DontHaveAnyBerries2:
 
 BerryBlender_Text_PokeblockCaseIsFull2:
 	.string "Oh, but wait a second here…\n"
-	.string "Your {POKEBLOCK} CASE is full.\p"
+	.string "Your {POKEBLOCK} Case is full.\p"
 	.string "You should use some {POKEBLOCK}s and\n"
 	.string "then come back.$"
 
 BerryBlender_Text_DontHavePokeblockCase2:
 	.string "Oh, but wait a second here…\n"
-	.string "You don't have a {POKEBLOCK} CASE.\p"
-	.string "You should get a {POKEBLOCK} CASE and\n"
+	.string "You don't have a {POKEBLOCK} Case.\p"
+	.string "You should get a {POKEBLOCK} Case and\n"
 	.string "then come back.$"
 
 @ Unused
@@ -158,15 +158,15 @@ BerryBlender_Text_DontHaveAnyBerries3:
 	.string "you get a Berry or two.$"
 
 BerryBlender_Text_PokeblockCaseIsFull3:
-	.string "Your {POKEBLOCK} CASE is full,\n"
+	.string "Your {POKEBLOCK} Case is full,\n"
 	.string "it looks like.\p"
 	.string "You should use some {POKEBLOCK}s up\n"
 	.string "and then come back.$"
 
 BerryBlender_Text_DontHavePokeblockCase3:
-	.string "You haven't gotten a {POKEBLOCK} CASE\n"
+	.string "You haven't gotten a {POKEBLOCK} Case\n"
 	.string "yet, it looks like.\p"
-	.string "You need to get a {POKEBLOCK} CASE before\n"
+	.string "You need to get a {POKEBLOCK} Case before\n"
 	.string "you come back.$"
 
 BerryBlender_Text_SetNewBlenderRecord:
@@ -207,11 +207,11 @@ BerryBlender_Text_NoBerriesLink:
 	.string "The Berry Blender can't be used.$"
 
 BerryBlender_Text_PokeblockCaseIsFullLink:
-	.string "Your {POKEBLOCK} CASE is full.\n"
+	.string "Your {POKEBLOCK} Case is full.\n"
 	.string "The Berry Blender can't be used.$"
 
 BerryBlender_Text_DontHavePokeblockCaseLink:
-	.string "You don't have a {POKEBLOCK} CASE.\n"
+	.string "You don't have a {POKEBLOCK} Case.\n"
 	.string "The Berry Blender can't be used.$"
 
 BerryBlender_Text_LoveMakingPokeblocks:

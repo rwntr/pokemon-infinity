@@ -436,7 +436,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
 
 BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
 	.string "Hello, this is the EXCHANGE SERVICE\n"
-	.string "CORNER.\p"
+	.string "Corner.\p"
 	.string "We exchange the Battle Points you\n"
 	.string "have collected for lovely prizes.\p"
 	.string "Please choose a prize from this list.$"
@@ -466,7 +466,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll:
-	.string "You've chosen the CLEFAIRY DOLL.\n"
+	.string "You've chosen the Clefairy DOLL.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
@@ -474,11 +474,11 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll:
-	.string "You've chosen the CYNDAQUIL DOLL.\n"
+	.string "You've chosen the Cyndaquil DOLL.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll:
-	.string "You've chosen the CHIKORITA DOLL.\n"
+	.string "You've chosen the Chikorita DOLL.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll:
@@ -498,7 +498,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
-	.string "You've chosen the CHARIZARD DOLL.\n"
+	.string "You've chosen the Charizard DOLL.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
@@ -510,7 +510,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium:
-	.string "You've chosen the CALCIUM.\n"
+	.string "You've chosen the Calcium.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron:
@@ -522,7 +522,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:
-	.string "You've chosen the CARBOS.\n"
+	.string "You've chosen the Carbos.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
@@ -538,7 +538,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
-	.string "You've chosen the QUICK CLAW.\n"
+	.string "You've chosen the QUICK Claw.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
@@ -546,7 +546,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
-	.string "You've chosen the CHOICE Band.\n"
+	.string "You've chosen the Choice Band.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
@@ -642,7 +642,7 @@ BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
 	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
-	.string "A CLEFAIRY DOLL.\n"
+	.string "A Clefairy DOLL.\n"
 	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
@@ -650,11 +650,11 @@ BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
 	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
-	.string "A CYNDAQUIL DOLL.\n"
+	.string "A Cyndaquil DOLL.\n"
 	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
-	.string "A CHIKORITA DOLL.\n"
+	.string "A Chikorita DOLL.\n"
 	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
@@ -670,7 +670,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
 	.string "Pokémon.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc::
-	.string "Raises the stat SP. Atk of one\n"
+	.string "Raises the stat Sp. Atk of one\n"
 	.string "Pokémon.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
@@ -678,7 +678,7 @@ BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
 	.string "Pokémon.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc::
-	.string "Raises the stat SP. DEF of one\n"
+	.string "Raises the stat Sp. DEF of one\n"
 	.string "Pokémon.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc::

@@ -168,7 +168,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum:
 	.string "featuring Pokémon.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings:
-	.string "I'm the CURATOR of this MUSEUM of\n"
+	.string "I'm the Curator of this MUSEUM of\n"
 	.string "fine arts.\p"
 	.string "It's heartening to see someone so\n"
 	.string "young as you in our MUSEUM.\p"
@@ -253,7 +253,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts:
 LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration:
 	.string "This Art MUSEUM… Well, you could\n"
 	.string "see many fantastic paintings.\p"
-	.string "And the CURATOR is a wonderful person.\p"
+	.string "And the Curator is a wonderful person.\p"
 	.string "Among artists like myself, this MUSEUM\n"
 	.string "is an inspiration.$"
 
@@ -273,7 +273,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings:
 	.string "the second floor?$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful:
-	.string "Lately, the CURATOR has been\n"
+	.string "Lately, the Curator has been\n"
 	.string "unusually cheerful.\p"
 	.string "I bet something good happened for him.\n"
 	.string "Definitely.$"

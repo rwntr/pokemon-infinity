@@ -281,7 +281,7 @@ FortreeCity_Gym_Text_GymStatue:
 
 FortreeCity_Gym_Text_GymStatueCertified:
 	.string "FORTREE City Pokémon\p"
-	.string "WINONA'S CERTIFIED Trainers:\n"
+	.string "WINONA'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:

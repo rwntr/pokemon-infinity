@@ -902,7 +902,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherIntro::
 	.string "Hiya!\n"
-	.string "I'm Bug CATCHER {STR_VAR_1}!$"
+	.string "I'm Bug Catcher {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon1::
 	.string "Check out what I have!\n"
@@ -1392,7 +1392,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorIntro::
 	.string "Hi, I'm {STR_VAR_1}.\n"
-	.string "I'm a COLLECTOR.$"
+	.string "I'm a Collector.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon1::
 	.string "The jewels in my collection are\n"
@@ -1582,7 +1582,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerReject::
 	.string "the next time we run into each other.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperIntro::
-	.string "I'm {STR_VAR_1}, and I'm a CAMPER!$"
+	.string "I'm {STR_VAR_1}, and I'm a Camper!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon1::
 	.string "I've been raising one {STR_VAR_1}-\n"

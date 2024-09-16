@@ -1047,7 +1047,7 @@ LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs:
 	.string "Well, be seeing you.$"
 
 LilycoveCity_ContestLobby_Text_MasterRankHereICome:
-	.string "Hoo, boy… Master Rank CONTESTS,\n"
+	.string "Hoo, boy… Master Rank Contests,\n"
 	.string "here I come.\p"
 	.string "The world will know that my dearest\n"
 	.string "Pokémon is the cutest being in all\l"

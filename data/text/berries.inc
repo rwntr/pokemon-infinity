@@ -35,12 +35,12 @@ Route111_Text_WhatColorBerriesToLookForToday:
 	.string "for today?$"
 
 Route114_Text_LoveUsingBerryCrushShareBerry:
-	.string "I love using the Berry CRUSH machine,\n"
+	.string "I love using the Berry Crush machine,\n"
 	.string "so I'm collecting Berries.\p"
 	.string "I'll share one with you, if you'd like.$"
 
 Route114_Text_TryBerryCrushWithFriends:
-	.string "You should try the Berry CRUSH\n"
+	.string "You should try the Berry Crush\n"
 	.string "machine with your friends.$"
 
 Route114_Text_FunToThinkAboutBerries:

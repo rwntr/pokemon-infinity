@@ -1059,7 +1059,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_MakeWayForDomeAceTucker:
 	.string "And now… The Trainer standing in\n"
 	.string "{PLAYER}'s record-setting path…\p"
 	.string "Yes! The one and only!\n"
-	.string "The Battle Dome COMMISSIONER!\l"
+	.string "The Battle Dome Commissioner!\l"
 	.string "Our very own Dome Ace!\l"
 	.string "Make way for TUCKER!$"
 

@@ -799,7 +799,7 @@ Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward:
 Route110_TrickHouseEntrance_Text_MechadollWhichTent:
 	.string "MECHADOLL 5 I AM!\n"
 	.string "IF REWARD IS NOT TAKEN BY YOU,\l"
-	.string "THEN Trick Master YOU CANNOT FOLLOW.\p"
+	.string "THEN TRICK MASTER YOU CANNOT FOLLOW.\p"
 	.string "Red TENT OR Blue TENT,\n"
 	.string "WHICH DO YOU PREFER?$"
 

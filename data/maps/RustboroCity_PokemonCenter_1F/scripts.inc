@@ -45,5 +45,5 @@ RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
 	.string "The man next door gave me an HM!\p"
 	.string "I used it to teach my Pokémon how to\n"
-	.string "CUT down skinny trees.$"
+	.string "Cut down skinny trees.$"
 

@@ -906,9 +906,9 @@ LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
 	.string "Prof. Birch: The FIRE Pokémon\n"
-	.string "CYNDAQUIL caught your eye!\p"
+	.string "Cyndaquil caught your eye!\p"
 	.string "You're as sharp as ever!\p"
-	.string "So the CYNDAQUIL is your choice?$"
+	.string "So the Cyndaquil is your choice?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
 	.string "Prof. Birch: The WATER Pokémon\n"
@@ -918,9 +918,9 @@ LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
 	.string "Prof. Birch: The GRASS Pokémon\n"
-	.string "CHIKORITA is your choice!\p"
+	.string "Chikorita is your choice!\p"
 	.string "You sure know what you're doing.\p"
-	.string "So, you'll take the CHIKORITA?$"
+	.string "So, you'll take the Chikorita?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
 	.string "Prof. Birch: Take your time before\n"

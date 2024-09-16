@@ -245,13 +245,13 @@ RustboroCity_PokemonSchool_Text_ExplainFreeze:
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "Students who don't study get a little\n"
-	.string "taste of my QUICK CLAW.\p"
+	.string "taste of my QUICK Claw.\p"
 	.string "Whether or not you are a good student \n"
 	.string "will be evident from the way you use\l"
 	.string "this item.$"
 
 RustboroCity_PokemonSchool_Text_ExplainQuickClaw:
-	.string "A Pokémon holding the QUICK CLAW will\n"
+	.string "A Pokémon holding the QUICK Claw will\n"
 	.string "occasionally speed up and get to move\l"
 	.string "before its opponent.\p"
 	.string "There are many other items that are\n"
@@ -313,9 +313,9 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "So, what brings you to this SCHOOL?\n"
 	.string "Are you a Trainer, too?\p"
 	.string "The first thing you should do is to\n"
-	.string "have a Pokémon learn the move CUT.\p"
+	.string "have a Pokémon learn the move Cut.\p"
 	.string "If I remember correctly, someone in\n"
-	.string "this town has CUT.$"
+	.string "this town has Cut.$"
 
 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
 	.string "SCOTT: Hmm…\p"

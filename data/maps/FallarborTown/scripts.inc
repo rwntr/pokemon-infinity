@@ -55,7 +55,7 @@ FallarborTown_Text_ShadyCharactersCozmosHome:
 	.string "Something's happening,\n"
 	.string "and I don't like it!\p"
 	.string "I've seen shady characters wandering\n"
-	.string "in and out of PROF. COZMO's home…$"
+	.string "in and out of PROF. Cozmo's home…$"
 
 FallarborTown_Text_RegionKnownForMeteors:
 	.string "This region's been known for meteors\n"

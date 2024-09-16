@@ -6,7 +6,7 @@ MoveTutor_Text_SwaggerTeach:
 	.string "Heh! My Pokémon totally rules!\n"
 	.string "It's cooler than any Pokémon!\p"
 	.string "I was lipping off with a swagger in\n"
-	.string "my step like that when the CHAIRMAN\l"
+	.string "my step like that when the Chairman\l"
 	.string "chewed me out.\p"
 	.string "That took the swagger out of my step.\p"
 	.string "If you'd like, I'll teach the move\n"
@@ -52,7 +52,7 @@ MoveTutor_Text_FuryCutterTeach:
 	.string "when you keep using it in a row.\p"
 	.string "It's a Bug-type move, and it is\n"
 	.string "wickedly cool.\p"
-	.string "It's called FURY CUTTER.\n"
+	.string "It's called FURY Cutter.\n"
 	.string "Want me to teach it to a Pokémon?$"
 
 MoveTutor_Text_FuryCutterDeclined:

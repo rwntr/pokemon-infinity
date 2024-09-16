@@ -1250,7 +1250,7 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "HARBOR.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
-	.string "Pokémon FAN CLUB\n"
+	.string "Pokémon FAN Club\n"
 	.string "“Calling all fans of Pokémon!”$"
 
 SlateportCity_Text_OceanicMuseumSign:
@@ -1300,9 +1300,9 @@ SlateportCity_Text_ExplainBerries:
 
 SlateportCity_Text_ExplainBerryPowder:
 	.string "I recently had machines installed at\n"
-	.string "Pokémon CENTERS for crushing Berries.\p"
-	.string "The Berry CRUSH machines are at\n"
-	.string "the DIRECT CORNER upstairs.\p"
+	.string "Pokémon Centers for crushing Berries.\p"
+	.string "The Berry Crush machines are at\n"
+	.string "the DIRECT Corner upstairs.\p"
 	.string "Did you know?\p"
 	.string "Could you make Berry POWDER for\n"
 	.string "me using those machines?\p"

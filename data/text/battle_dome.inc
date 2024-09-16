@@ -155,10 +155,10 @@ BattleDome_Text_EmphasizesHPAndSpeed::
 	.string "Emphasizes HP and SPEED.$"
 
 BattleDome_Text_EmphasizesHPAndSpAtk::
-	.string "Emphasizes HP and SP. Attack.$"
+	.string "Emphasizes HP and Sp. Attack.$"
 
 BattleDome_Text_EmphasizesHPAndSpDef::
-	.string "Emphasizes HP and SP. DEFENSE.$"
+	.string "Emphasizes HP and Sp. DEFENSE.$"
 
 BattleDome_Text_EmphasizesAtkAndDef::
 	.string "Emphasizes Attack and DEFENSE.$"
@@ -167,28 +167,28 @@ BattleDome_Text_EmphasizesAtkAndSpeed::
 	.string "Emphasizes Attack and SPEED.$"
 
 BattleDome_Text_EmphasizesAtkAndSpAtk::
-	.string "Emphasizes Attack and SP. Attack.$"
+	.string "Emphasizes Attack and Sp. Attack.$"
 
 BattleDome_Text_EmphasizesAtkAndSpDef::
-	.string "Emphasizes Attack and SP. DEFENSE.$"
+	.string "Emphasizes Attack and Sp. DEFENSE.$"
 
 BattleDome_Text_EmphasizesDefAndSpeed::
 	.string "Emphasizes DEFENSE and SPEED.$"
 
 BattleDome_Text_EmphasizesDefAndSpAtk::
-	.string "Emphasizes DEFENSE and SP. Attack.$"
+	.string "Emphasizes DEFENSE and Sp. Attack.$"
 
 BattleDome_Text_EmphasizesDefAndSpDef::
-	.string "Emphasizes DEFENSE and SP. DEFENSE.$"
+	.string "Emphasizes DEFENSE and Sp. DEFENSE.$"
 
 BattleDome_Text_EmphasizesSpeedAndSpAtk::
-	.string "Emphasizes SPEED and SP. Attack.$"
+	.string "Emphasizes SPEED and Sp. Attack.$"
 
 BattleDome_Text_EmphasizesSpeedAndSpDef::
-	.string "Emphasizes SPEED and SP. DEFENSE.$"
+	.string "Emphasizes SPEED and Sp. DEFENSE.$"
 
 BattleDome_Text_EmphasizesSpAtkAndSpDef::
-	.string "Emphasizes SP. Attack and SP. DEFENSE.$"
+	.string "Emphasizes Sp. Attack and Sp. DEFENSE.$"
 
 BattleDome_Text_EmphasizesHP::
 	.string "Emphasizes HP.$"
@@ -203,10 +203,10 @@ BattleDome_Text_EmphasizesSpeed::
 	.string "Emphasizes SPEED.$"
 
 BattleDome_Text_EmphasizesSpAtk::
-	.string "Emphasizes SP. Attack.$"
+	.string "Emphasizes Sp. Attack.$"
 
 BattleDome_Text_EmphasizesSpDef::
-	.string "Emphasizes SP. DEFENSE.$"
+	.string "Emphasizes Sp. DEFENSE.$"
 
 BattleDome_Text_NeglectsHPAndAtk::
 	.string "Neglects HP and Attack.$"
@@ -218,10 +218,10 @@ BattleDome_Text_NeglectsHPAndSpeed::
 	.string "Neglects HP and SPEED.$"
 
 BattleDome_Text_NeglectsHPAndSpAtk::
-	.string "Neglects HP and SP. Attack.$"
+	.string "Neglects HP and Sp. Attack.$"
 
 BattleDome_Text_NeglectsHPAndSpDef::
-	.string "Neglects HP and SP. DEFENSE.$"
+	.string "Neglects HP and Sp. DEFENSE.$"
 
 BattleDome_Text_NeglectsAtkAndDef::
 	.string "Neglects Attack and DEFENSE.$"
@@ -230,28 +230,28 @@ BattleDome_Text_NeglectsAtkAndSpeed::
 	.string "Neglects Attack and SPEED.$"
 
 BattleDome_Text_NeglectsAtkAndSpAtk::
-	.string "Neglects Attack and SP. Attack.$"
+	.string "Neglects Attack and Sp. Attack.$"
 
 BattleDome_Text_NeglectsAtkAndSpDef::
-	.string "Neglects Attack and SP. DEFENSE.$"
+	.string "Neglects Attack and Sp. DEFENSE.$"
 
 BattleDome_Text_NeglectsDefAndSpeed::
 	.string "Neglects DEFENSE and SPEED.$"
 
 BattleDome_Text_NeglectsDefAndSpAtk::
-	.string "Neglects DEFENSE and SP. Attack.$"
+	.string "Neglects DEFENSE and Sp. Attack.$"
 
 BattleDome_Text_NeglectsDefAndSpDef::
-	.string "Neglects DEFENSE and SP. DEFENSE.$"
+	.string "Neglects DEFENSE and Sp. DEFENSE.$"
 
 BattleDome_Text_NeglectsSpeedAndSpAtk::
-	.string "Neglects SPEED and SP. Attack.$"
+	.string "Neglects SPEED and Sp. Attack.$"
 
 BattleDome_Text_NeglectsSpeedAndSpDef::
-	.string "Neglects SPEED and SP. DEFENSE.$"
+	.string "Neglects SPEED and Sp. DEFENSE.$"
 
 BattleDome_Text_NeglectsSpAtkAndSpDef::
-	.string "Neglects SP. Attack and SP. DEFENSE.$"
+	.string "Neglects Sp. Attack and Sp. DEFENSE.$"
 
 BattleDome_Text_NeglectsHP::
 	.string "Neglects HP.$"
@@ -266,10 +266,10 @@ BattleDome_Text_NeglectsSpeed::
 	.string "Neglects SPEED.$"
 
 BattleDome_Text_NeglectsSpAtk::
-	.string "Neglects SP. Attack.$"
+	.string "Neglects Sp. Attack.$"
 
 BattleDome_Text_NeglectsSpDef::
-	.string "Neglects SP. DEFENSE.$"
+	.string "Neglects Sp. DEFENSE.$"
 
 BattleDome_Text_RaisesMonsWellBalanced::
 	.string "Raises Pokémon in a well-balanced way.$"
