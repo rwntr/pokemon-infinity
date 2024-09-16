@@ -774,7 +774,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterIntro::
 	.string "Hello!\p"
-	.string "I'm YOUNGSTER {STR_VAR_1}!$"
+	.string "I'm Youngster {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon1::
 	.string "Want to know what I have?\n"

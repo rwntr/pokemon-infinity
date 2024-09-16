@@ -2370,7 +2370,7 @@ gTVSafariFanClubText00::
 	.string "Reporter: All right, mates!\n"
 	.string "Tossing them Safari Balls, are you?\p"
 	.string "You can bet I am here in the Safari\n"
-	.string "ZONE chock-full of amazing Pokémon!\p"
+	.string "Zone chock-full of amazing Pokémon!\p"
 	.string "Let's get with it and have a chat with\n"
 	.string "this good fellow of a Safari guide!\p"
 	.string "All right, mate, how are the visiting\n"

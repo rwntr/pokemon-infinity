@@ -300,13 +300,13 @@ BattleFrontier_OutsideEast_Text_DidScottBringYouHere:
 	.string "ever.$"
 
 BattleFrontier_OutsideEast_Text_BelieveInYouBuddy:
-	.string "ZIGG!\n"
+	.string "Zigg!\n"
 	.string "I believe in you, little buddy!\p"
-	.string "I'll make my little ZIGG any favorite\n"
+	.string "I'll make my little Zigg any favorite\n"
 	.string "tasty treats you like if you win!$"
 
 BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant:
-	.string "ZIGZAGOON looks vacant…$"
+	.string "Zigzagoon looks vacant…$"
 
 BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody:
 	.string "People call me a busybody,\n"

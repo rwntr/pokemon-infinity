@@ -74,7 +74,7 @@ SafariZone_EventScript_PokeblockPresent::
 
 SafariZone_Text_WouldYouLikeToExit:
 	.string "Would you like to exit the Safari\n"
-	.string "ZONE right now?$"
+	.string "Zone right now?$"
 
 SafariZone_Text_TimesUp:
 	.string "Ding-dong! Time's up!\n"

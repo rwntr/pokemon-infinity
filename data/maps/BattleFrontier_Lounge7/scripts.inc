@@ -383,7 +383,7 @@ BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong:
 	.string "stay out here together, would they?$"
 
 BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful:
-	.string "When I was just a wee YOUNGSTER,\n"
+	.string "When I was just a wee Youngster,\n"
 	.string "those ladies were strong and beautiful.\p"
 	.string "They were idols among us Trainers.\p"
 	.string "Even now, age hasn't dulled their\n"
