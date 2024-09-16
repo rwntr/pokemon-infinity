@@ -3,7 +3,7 @@
 .set SPECIAL_\ptr, __special__
 .set __special__, __special__ + 1
 	.4byte \ptr
-	.end
+	.endm
 
 .set __special__, 0
 		.align 2
