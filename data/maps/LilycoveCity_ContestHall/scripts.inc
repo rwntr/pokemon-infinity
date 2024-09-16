@@ -343,7 +343,7 @@ LilycoveCity_ContestHall_Text_GiveItBestSmartAppeal:
 	.string "Let's appeal!$"
 
 LilycoveCity_ContestHall_Text_AreYouEnjoyingThisContest:
-	.string "JUDGE: Are you enjoying this CONTEST?\p"
+	.string "Judge: Are you enjoying this Contest?\p"
 	.string "Come back with three friends, and\n"
 	.string "all of you may enter a CONTEST!$"
 
@@ -400,7 +400,7 @@ LilycoveCity_ContestHall_Text_AreYouEnteringBeautyContest:
 	.string "CONTEST, too? Good luck!$"
 
 LilycoveCity_ContestHall_Text_EveryPokemonPristineBeauty:
-	.string "JUDGE: Ah, every POKéMON here is\n"
+	.string "Judge: Ah, every Pokémon here is\n"
 	.string "a model of pristine beauty!\p"
 	.string "Why, I almost forgot to score them!$"
 
@@ -420,7 +420,7 @@ LilycoveCity_ContestHall_Text_OverdidGrooming:
 
 LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam:
 	.string "This Aurora Beam is so dazzling,\n"
-	.string "the JUDGE won't be able to see it.\p"
+	.string "the Judge won't be able to see it.\p"
 	.string "Uh, wait a second…\n"
 	.string "That'll be meaningless, then!$"
 
@@ -455,7 +455,7 @@ LilycoveCity_ContestHall_Text_InTheMiddleOfContest:
 	.string "counter and come out, okay?$"
 
 LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals:
-	.string "JUDGE: Oh, such charming and cute\n"
+	.string "Judge: Oh, such charming and cute\n"
 	.string "appeals!\p"
 	.string "Oh, my goodness! What a perfectly\n"
 	.string "adorable WATER SPORT appeal!$"

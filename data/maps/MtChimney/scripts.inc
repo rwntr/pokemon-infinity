@@ -750,8 +750,8 @@ MtChimney_Text_MachineMakesNoResponse:
 	.string "It makes no response whatsoever.$"
 
 MtChimney_Text_RouteSign:
-	.string "{DOWN_ARROW} JAGGED PATH\n"
-	.string "LAVARIDGE TOWN AHEAD$"
+	.string "{DOWN_ARROW} Jagged Pass\n"
+	.string "Lavaridge Town Ahead$"
 
 MtChimney_Text_ShelbyIntro:
 	.string "I've been to the hot springs and\n"
