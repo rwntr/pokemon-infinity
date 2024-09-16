@@ -419,7 +419,7 @@ LilycoveCity_ContestHall_Text_OverdidGrooming:
 	.string "What should I do?$"
 
 LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam:
-	.string "This AURORA BEAM is so dazzling,\n"
+	.string "This Aurora BEAM is so dazzling,\n"
 	.string "the JUDGE won't be able to see it.\p"
 	.string "Uh, wait a second…\n"
 	.string "That'll be meaningless, then!$"
@@ -461,8 +461,8 @@ LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals:
 	.string "adorable WATER SPORT appeal!$"
 
 LilycoveCity_ContestHall_Text_MyAzurillWasDistracted:
-	.string "Oh, no… My sweet AZURILL was\n"
-	.string "distracted by another POKéMON.$"
+	.string "Oh, no… My sweet Azurill was\n"
+	.string "distracted by another Pokémon.$"
 
 LilycoveCity_ContestHall_Text_NeverWonBattleButContest:
 	.string "My POKéMON has never won in a battle,\n"

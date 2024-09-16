@@ -57,8 +57,8 @@ LilycoveCity_DepartmentStore_3F_EventScript_Woman::
 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:
 	.string "For quickly toughening up POKéMON,\n"
 	.string "items are the best.\p"
-	.string "PROTEIN boosts ATTACK,\n"
-	.string "and CALCIUM raises SP. ATK.$"
+	.string "PROTEIN boosts Attack,\n"
+	.string "and CALCIUM raises SP. Atk.$"
 
 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance:
 	.string "I want my POKéMON to have more\n"
