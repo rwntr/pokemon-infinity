@@ -130,7 +130,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
 	.string "Check your Trainer Card.\p"
-	.string "The STONE Badge you got should be\n"
+	.string "The Stone Badge you got should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
 	.string "You've climbed the first step on\n"
@@ -180,9 +180,9 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Pokémon Gym Leader.\p"
 	.string "I became a Gym Leader so that I might\n"
 	.string "apply what I learned at the Pokémon\l"
-	.string "Trainer'S SCHOOL in battle.\p"
+	.string "Trainer'S School in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "battle, and with which Pokémon?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
@@ -194,14 +194,14 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "that Trainers are to be given this\l"
 	.string "if they defeat a Gym Leader.\p"
 	.string "Please accept the official Pokémon\n"
-	.string "League STONE Badge.$"
+	.string "League Stone Badge.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the STONE Badge\n"
+	.string "{PLAYER} received the Stone Badge\n"
 	.string "from Roxanne.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The STONE Badge heightens the Attack\n"
+	.string "The Stone Badge heightens the Attack\n"
 	.string "power of your Pokémon.\p"
 	.string "It also enables them to use the HM move\n"
 	.string "Cut outside of battle.\p"
@@ -211,9 +211,9 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That Technical Machine, TM39,\n"
 	.string "contains Rock TOMB.\p"
 	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
+	.string "rocks, it also lowers Speed.\p"
 	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
+	.string "the move to a Pokémon.\p"
 	.string "Remember, a TM can be used only once,\n"
 	.string "so think before you use it.$"
 
@@ -224,7 +224,7 @@ RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "learn many things.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY POKéMON GYM$"
+	.string "RUSTBORO CITY Pokémon GYM$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "Rustboro City Pokémon\p"
@@ -278,6 +278,6 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "I would like to see how much better\n"
 	.string "we've become…\p"
 	.string "Oh, no…\n"
-	.string "You only have one POKéMON with you?\p"
+	.string "You only have one Pokémon with you?\p"
 	.string "Please return with at least one more\n"
-	.string "POKéMON.$"
+	.string "Pokémon.$"

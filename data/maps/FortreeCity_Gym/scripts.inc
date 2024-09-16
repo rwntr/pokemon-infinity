@@ -244,7 +244,7 @@ FortreeCity_Gym_Text_WinonaIntro:
 
 FortreeCity_Gym_Text_WinonaDefeat:
 	.string "Never before have I seen a TRAINER\n"
-	.string "command POKéMON with more grace\l"
+	.string "command Pokémon with more grace\l"
 	.string "than I…\p"
 	.string "In recognition of your prowess,\n"
 	.string "I present to you this Badge.$"
@@ -265,12 +265,12 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "TM40 contains Aerial Ace.\p"
 	.string "Its speed…\n"
-	.string "No POKéMON should be able to avoid it.\p"
+	.string "No Pokémon should be able to avoid it.\p"
 	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
 	.string "Registered GYM LEADER WINONA\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
 	.string "Though I fell to you, I will remain\n"
@@ -314,6 +314,6 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
 	.string "Please, allow me to see your power\n"
 	.string "at full flight!\p"
 	.string "Oh, no… Do you have but one\n"
-	.string "POKéMON with you?\p"
-	.string "Please return with two POKéMON\n"
+	.string "Pokémon with you?\p"
+	.string "Please return with two Pokémon\n"
 	.string "at the very least.$"

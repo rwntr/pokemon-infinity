@@ -108,7 +108,7 @@ VerdanturfTown_WandasHouse_Text_WallysNextDoor:
 	.string "This natural environment is doing\n"
 	.string "wonders for WALLY's health.\p"
 	.string "Maybe it's not just the environment.\n"
-	.string "It could be POKéMON that are giving\l"
+	.string "It could be Pokémon that are giving\l"
 	.string "the boy hope.$"
 
 VerdanturfTown_WandasHouse_Text_WallySlippedOff:
@@ -136,7 +136,7 @@ VerdanturfTown_WandasHouse_Text_DontWorryAboutWally:
 	.string "WANDA: Don't worry about WALLY.\n"
 	.string "He'll be just fine.\p"
 	.string "I know my little cousin, and he has\n"
-	.string "POKéMON with him, too.$"
+	.string "Pokémon with him, too.$"
 
 VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay:
 	.string "Thanks to you, I can see my girlfriend\n"

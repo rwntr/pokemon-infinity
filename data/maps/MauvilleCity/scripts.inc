@@ -460,7 +460,7 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	end
 
 MauvilleCity_Text_UncleHesTooPeppy:
-	.string "UNCLE: It's because of POKéMON that\n"
+	.string "UNCLE: It's because of Pokémon that\n"
 	.string "this boy's got more pep, I suppose…\l"
 	.string "But he's become a bit too peppy…$"
 
@@ -472,7 +472,7 @@ MauvilleCity_Text_WallyWantToChallengeGym:
 
 MauvilleCity_Text_UncleYourePushingIt:
 	.string "UNCLE: Now hold on, WALLY.\p"
-	.string "Since you started living with POKéMON,\n"
+	.string "Since you started living with Pokémon,\n"
 	.string "you have grown quite a lot stronger.\p"
 	.string "But don't you think you're pushing it\n"
 	.string "to suddenly challenge a GYM?$"
@@ -523,7 +523,7 @@ MauvilleCity_Text_WallyIllGoBackToVerdanturf:
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "{PLAYER}, thank you.\n"
 	.string "Being a TRAINER is tough, isn't it?\p"
-	.string "It's not enough just to have POKéMON\n"
+	.string "It's not enough just to have Pokémon\n"
 	.string "and make them battle. That isn't what\l"
 	.string "being a real TRAINER is about.$"
 
@@ -539,7 +539,7 @@ MauvilleCity_Text_UncleVisitUsSometime:
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
 	.string "that you must be the TRAINER who kept\l"
 	.string "an eye out for WALLY when he caught\l"
-	.string "his POKéMON.\p"
+	.string "his Pokémon.\p"
 	.string "Why don't you visit us in VERDANTURF\n"
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
@@ -550,7 +550,7 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "… … … … … Beep!\p"
 	.string "WALLY: Oh, hello, {PLAYER}!\p"
 	.string "I just wanted to tell you that\n"
-	.string "my uncle bought me a POKéNAV!\p"
+	.string "my uncle bought me a Pokénav!\p"
 	.string "Now I can get in touch with you\n"
 	.string "anytime, {PLAYER}!\p"
 	.string "… … … … … …\n"
@@ -558,16 +558,16 @@ MauvilleCity_Text_WallyPokenavCall:
 
 MauvilleCity_Text_RegisteredWally:
 	.string "Registered WALLY\n"
-	.string "in the POKéNAV.$"
+	.string "in the Pokénav.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "SCOTT: Hehe…\n"
+	.string "Scott: Hehe…\n"
 	.string "I was watching that match!\p"
 	.string "You're friends with that boy WALLY,\n"
 	.string "aren't you?\p"
 	.string "But you didn't hold anything back\n"
 	.string "and beat him impressively.\p"
-	.string "Yeah! That's what a real POKéMON\n"
+	.string "Yeah! That's what a real Pokémon\n"
 	.string "battle is all about!\p"
 	.string "I idolize TRAINERS like that!\p"
 	.string "… … … … … …\n"
@@ -591,8 +591,8 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "WATTSON: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
-	.string "The entrance to NEW MAUVILLE is just\n"
-	.string "a short SURF away from ROUTE 110.\p"
+	.string "The entrance to New Mauville is just\n"
+	.string "a short Surf away from Route 110.\p"
 	.string "That's it, then, you have my trust!\n"
 	.string "Wahahahaha!$"
 
@@ -610,9 +610,9 @@ MauvilleCity_Text_WattsonYoungTakeCharge:
 	.string "the young step up and take charge!$"
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
-	.string "You know, it's cool to have POKéMON\n"
+	.string "You know, it's cool to have Pokémon\n"
 	.string "battles and stuff…\p"
-	.string "But if your POKéMON gets hurt,\n"
+	.string "But if your Pokémon gets hurt,\n"
 	.string "you have to nurse it back to health.$"
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:

@@ -480,7 +480,7 @@ Route119_Text_MayIntro:
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
-	.string "Ready with your POKéMON?\n"
+	.string "Ready with your Pokémon?\n"
 	.string "Of course you are! Go!$"
 
 Route119_Text_MayDefeat:
@@ -509,7 +509,7 @@ Route119_Text_MayExplainFly:
 
 Route119_Text_BrendanIntro:
 	.string "BRENDAN: {PLAYER}! So this is where\n"
-	.string "you've been looking for POKéMON?\p"
+	.string "you've been looking for Pokémon?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
@@ -521,7 +521,7 @@ Route119_Text_BrendanDefeat:
 
 Route119_Text_BrendanIllGiveYouThis:
 	.string "BRENDAN: I'd say you're good enough\n"
-	.string "to search for POKéMON anywhere.\p"
+	.string "to search for Pokémon anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
 
@@ -534,7 +534,7 @@ Route119_Text_BrendanExplainFly:
 	.string "Anyway, I have to move along.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
-	.string "SCOTT: Hahahah!\n"
+	.string "Scott: Hahahah!\n"
 	.string "Way to go, {PLAYER}{KUN}!\p"
 	.string "I just passed by a Trainer riding\n"
 	.string "a Bike.\p"
@@ -551,7 +551,7 @@ Route119_Text_ScottWayToGoBeSeeingYou:
 Route119_Text_ScottYouWonAtFortreeGym:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
+	.string "Scott: Hiya, {PLAYER}{KUN}, it's me!\p"
 	.string "Just as I thought, you won at\n"
 	.string "the Fortree.\p"
 	.string "Your strength…\n"
@@ -589,9 +589,9 @@ Route119_Text_TallGrassSnaresBikeTires:
 	.string "There's no way you can cycle here.$"
 
 Route119_Text_CanYourMonMakeSecretBase:
-	.string "Can your Pokémon use its SECRET Power\n"
+	.string "Can your Pokémon use its Secret Power\n"
 	.string "on a big pile of grass and make a\l"
-	.string "SECRET Base?$"
+	.string "Secret Base?$"
 
 Route119_Text_RouteSignFortree:
 	.string "Route 119\n"
@@ -604,7 +604,7 @@ Route119_Text_TrainerTipsDecoration:
 	.string "TRAINER TIPS\p"
 	.string "Up to sixteen decorations and\n"
 	.string "furniture items can be placed in\l"
-	.string "a SECRET Base.\p"
+	.string "a Secret Base.\p"
 	.string "Pick your favorite items and create\n"
-	.string "your very own SECRET Base exactly the\l"
+	.string "your very own Secret Base exactly the\l"
 	.string "way you want.$"

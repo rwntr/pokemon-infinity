@@ -381,7 +381,7 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "outstanding combination attacks.\p"
 	.string "If you want to win, you'll need to show\n"
 	.string "them how tight you are with your\l"
-	.string "POKéMON. Go for it!$"
+	.string "Pokémon. Go for it!$"
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"
@@ -412,18 +412,18 @@ MossdeepCity_Gym_Text_VirgilPostBattle:
 	.string "than them…$"
 
 MossdeepCity_Gym_Text_BlakeIntro:
-	.string "Fufufufu… Watch me levitate a POKé\n"
-	.string "BALL telekinetically!\p"
+	.string "Fufufufu… Watch me levitate a Poké\n"
+	.string "Ball telekinetically!\p"
 	.string "Wrooooooooaaaar!\n"
 	.string "… … … … … … …\p"
 	.string "Sometimes, I'm out of sync…$"
 
 MossdeepCity_Gym_Text_BlakeDefeat:
-	.string "My POKéMON battling skills are out\n"
+	.string "My Pokémon battling skills are out\n"
 	.string "of sync, too!$"
 
 MossdeepCity_Gym_Text_BlakePostBattle:
-	.string "A POKé BALL was too heavy to lift\n"
+	.string "A Poké Ball was too heavy to lift\n"
 	.string "psychically. But this dust bunny…\p"
 	.string "Whoooooooooooooooh!\n"
 	.string "… … … … … …\p"
@@ -540,7 +540,7 @@ MossdeepCity_Gym_Text_MaceyPostBattle:
 
 MossdeepCity_Gym_Text_NicholasIntro:
 	.string "Wroooar! Have a taste of my super\n"
-	.string "POKéMON hard-battling power!$"
+	.string "Pokémon hard-battling power!$"
 
 MossdeepCity_Gym_Text_NicholasDefeat:
 	.string "Oh!\n"
@@ -548,7 +548,7 @@ MossdeepCity_Gym_Text_NicholasDefeat:
 
 MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "All right! I think I'll develop a special\n"
-	.string "invincible POKéMON power next.$"
+	.string "invincible Pokémon power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "Tate: Hehehe… Were you surprised?\p"
@@ -596,7 +596,7 @@ MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "TATE: Looks like the bond between you\n"
-	.string "and your POKéMON is far stronger than\l"
+	.string "and your Pokémon is far stronger than\l"
 	.string "the bond that we share as twins.\p"
 	.string "Liza: You will become even stronger!\n"
 	.string "We've battled you, so we know.$"

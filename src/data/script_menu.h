@@ -506,7 +506,7 @@ static const struct MenuAction MultichoiceList_LinkServicesNoRecordBerry[] =
 
 static const struct MenuAction MultichoiceList_WirelessMinigame[] =
 {
-    {COMPOUND_STRING("POKéMON JUMP")},
+    {COMPOUND_STRING("Pokémon JUMP")},
     {COMPOUND_STRING("DODRIO BERRY-PICKING")},
     {gText_Exit},
 };
@@ -677,7 +677,7 @@ static const struct MenuAction MultichoiceList_BattlePalaceRules[] =
 
 static const struct MenuAction MultichoiceList_BattlePyramidRules[] =
 {
-    {COMPOUND_STRING("PYRAMID: POKéMON")},
+    {COMPOUND_STRING("PYRAMID: Pokémon")},
     {COMPOUND_STRING("PYRAMID: TRAINERS")},
     {COMPOUND_STRING("PYRAMID: MAZE")},
     {COMPOUND_STRING("BATTLE BAG")},
@@ -686,9 +686,9 @@ static const struct MenuAction MultichoiceList_BattlePyramidRules[] =
 
 static const struct MenuAction MultichoiceList_BattlePikeRules[] =
 {
-    {COMPOUND_STRING("POKéNAV AND BAG")},
+    {COMPOUND_STRING("Pokénav AND BAG")},
     {COMPOUND_STRING("HELD ITEMS")},
-    {COMPOUND_STRING("POKéMON ORDER")},
+    {COMPOUND_STRING("Pokémon ORDER")},
     {gText_Exit},
 };
 

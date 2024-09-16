@@ -24,7 +24,7 @@ RustboroCity_CuttersHouse_EventScript_Lass::
 RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:
 	.string "That determined expression…\n"
 	.string "That limber way you move…\l"
-	.string "And your well-trained POKéMON…\p"
+	.string "And your well-trained Pokémon…\p"
 	.string "You're obviously a skilled TRAINER!\p"
 	.string "No, wait, don't say a word.\n"
 	.string "I can tell just by looking at you.\p"
@@ -40,7 +40,7 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "by Pokémon outside of battle.\p"
 	.string "Any Pokémon that's learned Cut can\n"
 	.string "chop down thin trees if the Trainer\l"
-	.string "has earned the STONE Badge.\p"
+	.string "has earned the Stone Badge.\p"
 	.string "And, unlike a TM, an HM can be used\n"
 	.string "more than once.$"
 

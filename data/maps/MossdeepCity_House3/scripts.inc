@@ -29,7 +29,7 @@ MossdeepCity_House3_Text_YouWantSuperRod:
 	.string "Hey there, Trainer!\n"
 	.string "A Super Rod really is super!\p"
 	.string "Say all you want, but this baby can\n"
-	.string "catch POKéMON off the seafloor!\p"
+	.string "catch Pokémon off the seafloor!\p"
 	.string "What do you think?\n"
 	.string "You want it, don't you?$"
 

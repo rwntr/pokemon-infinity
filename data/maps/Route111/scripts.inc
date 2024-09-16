@@ -569,7 +569,7 @@ Route111_Text_BattleOurFamily:
 	.string "Hello! I take it you're a traveler.\p"
 	.string "How's this? What do you say to taking\n"
 	.string "on our family of four in a series of\l"
-	.string "POKéMON battles?$"
+	.string "Pokémon battles?$"
 
 Route111_Text_IsThatSo:
 	.string "Is that so?\n"
@@ -627,7 +627,7 @@ Route111_Text_VickyPostBattle:
 	.string "visit with us awhile.$"
 
 Route111_Text_ToughToKeepWinningUpTheRanks:
-	.string "If you don't raise your POKéMON some\n"
+	.string "If you don't raise your Pokémon some\n"
 	.string "more, it could be tough to keep winning\l"
 	.string "up through the ranks.\p"
 	.string "I've heard the Pokémon League's\n"
@@ -663,8 +663,8 @@ Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "Trainer TIPS\p"
 	.string "One of the indicators of a Pokémon's\n"
 	.string "powerfulness is Sp. Atk. It stands for\l"
-	.string "“SPECIAL Attack.”\p"
-	.string "Likewise, Sp. Def stands for “SPECIAL\n"
+	.string "“Special Attack.”\p"
+	.string "Likewise, Sp. Def stands for “Special\n"
 	.string "Defense.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
@@ -709,7 +709,7 @@ Route111_Text_RootFossilDisappeared:
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Oh, no!\p"
 	.string "My uncle in Mauville told me to take\n"
-	.string "Rock SMASH with me if I was going to\l"
+	.string "Rock Smash with me if I was going to\l"
 	.string "Route 111!\p"
 	.string "My uncle? He lives across from\n"
 	.string "the bike shop in MAUVILLE.$"

@@ -9,7 +9,7 @@ CableClub_Text_WhichService:
 	.string "to use?$"
 
 CableClub_Text_TradeUsingLinkCable::
-	.string "Trade POKéMON with another player\n"
+	.string "Trade Pokémon with another player\n"
 	.string "using a GBA Game Link cable.$"
 
 CableClub_Text_BattleUsingLinkCable::
@@ -26,14 +26,14 @@ CableClub_Text_CloseThisMenu:
 
 CableClub_Text_NeedTwoMonsForDoubleBattle:
 	.string "For a DOUBLE BATTLE, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "have at least two Pokémon.$"
 
 CableClub_Text_NeedTwoMonsToTrade:
 	.string "For trading, you must have at\n"
-	.string "least two POKéMON with you.$"
+	.string "least two Pokémon with you.$"
 
 CableClub_Text_CantTradeEnigmaBerry:
-	.string "A POKéMON holding the {STR_VAR_1}\n"
+	.string "A Pokémon holding the {STR_VAR_1}\n"
 	.string "BERRY can't be traded.$"
 
 gText_PleaseWaitForLink::
@@ -151,7 +151,7 @@ CableClub_Text_OtherTrainerNotReady:
 	.string "The other TRAINER is not ready.$"
 
 CableClub_Text_YouHaveAMonThatCantBeTaken:
-	.string "You have at least one POKéMON\n"
+	.string "You have at least one Pokémon\n"
 	.string "that can't be taken.$"
 
 RecordCorner_Text_TakeSeatAndWait:
@@ -186,7 +186,7 @@ CableClub_Text_PleaseWait:
 	.string "Please wait.$"
 
 CableClub_Text_YouMayTradeHere::
-	.string "You may trade your POKéMON here\n"
+	.string "You may trade your Pokémon here\n"
 	.string "with another TRAINER.$"
 
 CableClub_Text_YouMayBattleHere::
@@ -255,11 +255,11 @@ MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo:
 	.string "“Pokémon Jump”\p"
 	.string "Make your Pokémon skip the VINE WHIP\n"
 	.string "rope with the A Button.\p"
-	.string "Only mini POKéMON around 28 inches\n"
+	.string "Only mini Pokémon around 28 inches\n"
 	.string "or less may participate.\p"
-	.string "POKéMON that only swim, burrow,\n"
+	.string "Pokémon that only swim, burrow,\n"
 	.string "or fly are not good at jumping.\p"
-	.string "As a result, those POKéMON may not\n"
+	.string "As a result, those Pokémon may not\n"
 	.string "participate.\p"
 	.string "Good things happen if everyone\n"
 	.string "jumps in time.$"
@@ -295,7 +295,7 @@ MossdeepCity_GameCorner_1F_Text_PlayWhichGame:
 	.string "to play?$"
 
 MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon:
-	.string "Which POKéMON would you like to\n"
+	.string "Which Pokémon would you like to\n"
 	.string "enter?$"
 
 MossdeepCity_GameCorner_1F_Text_AllGoodToGo:
@@ -309,16 +309,16 @@ MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain:
 
 MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon:
 	.string "It doesn't look like you have any\n"
-	.string "POKéMON that you can enter…\p"
+	.string "Pokémon that you can enter…\p"
 	.string "Would you like me to explain what\n"
-	.string "kinds of POKéMON can enter?$"
+	.string "kinds of Pokémon can enter?$"
 
 MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed:
 	.string "“Pokémon Jump” is open to Pokémon\n"
 	.string "around 28 inches or less.\p"
 	.string "What you can't enter are those\n"
-	.string "POKéMON that can't jump.\p"
-	.string "You know, like POKéMON that only\n"
+	.string "Pokémon that can't jump.\p"
+	.string "You know, like Pokémon that only\n"
 	.string "swim, burrow, or fly.\p"
 	.string "That's all you need to know.$"
 
@@ -340,7 +340,7 @@ CableClub_Text_WelcomeWhichDirectCornerRoom:
 	.string "enter?$"
 
 CableClub_Text_TradePokemon:
-	.string "Would you like to trade POKéMON?$"
+	.string "Would you like to trade Pokémon?$"
 
 CableClub_Text_PlayWhichBattleMode:
 	.string "Which Battle Mode would you like\n"
@@ -357,16 +357,16 @@ CableClub_Text_UseBerryCrush:
 CableClub_Text_ExplainBattleModes:
 	.string "There are three Battle Modes.\p"
 	.string "SINGLE BATTLE is for two TRAINERS\n"
-	.string "with one or more POKéMON each.\p"
-	.string "Each TRAINER can have one POKéMON\n"
+	.string "with one or more Pokémon each.\p"
+	.string "Each TRAINER can have one Pokémon\n"
 	.string "in battle at a time.\p"
 	.string "DOUBLE BATTLE is for two TRAINERS\n"
-	.string "with two or more POKéMON each.\p"
+	.string "with two or more Pokémon each.\p"
 	.string "Each TRAINER will send out two\n"
-	.string "POKéMON in battle at a time.\p"
+	.string "Pokémon in battle at a time.\p"
 	.string "MULTI BATTLE is for four TRAINERS\n"
-	.string "with one or more POKéMON each.\p"
-	.string "Each TRAINER can have one POKéMON\n"
+	.string "with one or more Pokémon each.\p"
+	.string "Each TRAINER can have one Pokémon\n"
 	.string "in battle at a time.$"
 
 CableClub_Text_ChooseGroupLeaderOfTwo:
@@ -401,11 +401,11 @@ CableClub_Text_UnionRoomInfo:
 	.string "who have also entered the Room.\p"
 	.string "You may do all sorts of things\n"
 	.string "here, such as exchanging greetings.\p"
-	.string "You may enter two POKéMON up to\n"
+	.string "You may enter two Pokémon up to\n"
 	.string "Lv. 30 for a one-on-one battle.\p"
 	.string "You may take part in a chat with\n"
 	.string "two to five people.\p"
-	.string "Or, you may register a POKéMON for\n"
+	.string "Or, you may register a Pokémon for\n"
 	.string "trade.\p"
 	.string "Would you like to enter the Room?$"
 

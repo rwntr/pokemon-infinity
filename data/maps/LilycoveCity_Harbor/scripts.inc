@@ -577,11 +577,11 @@ LilycoveCity_Harbor_Text_SailorFerryUnavailable:
 	.string "Until they finish making the ferry,\n"
 	.string "we sailors have nothing to do…\p"
 	.string "I wish they'd get a move on, the folks\n"
-	.string "at the SHIPYARD in SLATEPORT.$"
+	.string "at the Shipyard in Slateport.$"
 
 LilycoveCity_Harbor_Text_SailorFerryAvailable:
 	.string "The ferry S.S. TIDAL is finally in\n"
 	.string "operation.\p"
-	.string "The folks at the SHIPYARD in SLATEPORT\n"
+	.string "The folks at the Shipyard in Slateport\n"
 	.string "must've worked extra hard.\p"
 	.string "Well, it's my turn to get busy now!$"

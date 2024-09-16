@@ -274,7 +274,7 @@ SlateportCity_BattleTentLobby_EventScript_ExitRules::
 
 SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 	.string "So, like, I couldn't find myself any\n"
-	.string "POKéMON that were, like, for me.\p"
+	.string "Pokémon that were, like, for me.\p"
 	.string "So, I figured, like, hey, I should file\n"
 	.string "a complaint to the guy there?\p"
 	.string "And he wouldn't hear me out, like, hey!\n"
@@ -299,7 +299,7 @@ SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
 
 SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons:
 	.string "You can battle all you want here even\n"
-	.string "if you don't have any tough POKéMON.$"
+	.string "if you don't have any tough Pokémon.$"
 
 SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection:
 	.string "Wouldn't it be nice if they had more of\n"

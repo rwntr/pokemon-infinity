@@ -1,6 +1,6 @@
 LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
 	.string "This is the Pokémon Lottery Corner.\p"
-	.string "All shoppers at our Department STORE\n"
+	.string "All shoppers at our Department Store\n"
 	.string "get to draw a Pokémon Loto TICKET.\p"
 	.string "If the Loto TICKET's number matches\n"
 	.string "the ID number of any of your Pokémon,\l"
@@ -22,7 +22,7 @@ LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait:
 	.string "The Loto TICKET number is {STR_VAR_1}.\p"
 	.string "I need to run a check on this number\n"
 	.string "to see if it matches any of your\l"
-	.string "POKéMON's ID numbers. Please wait.$"
+	.string "Pokémon's ID numbers. Please wait.$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon:
 	.string "Congratulations!\p"

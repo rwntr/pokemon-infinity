@@ -249,13 +249,13 @@ Route118_Text_StevenQuestions:
 	.string "We met in the cave near Dewford.\p"
 	.string "Have you met many kinds of Pokémon\n"
 	.string "since I last saw you?\p"
-	.string "There are many, many kinds of POKéMON\n"
+	.string "There are many, many kinds of Pokémon\n"
 	.string "in this wide world of ours.\p"
 	.string "If you wanted to raise only your\n"
 	.string "favorites, that's fine.\p"
 	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of POKéMON.\p"
-	.string "As a TRAINER of POKéMON,\n"
+	.string "all sorts of Pokémon.\p"
+	.string "As a TRAINER of Pokémon,\n"
 	.string "what do you think?\p"
 	.string "Of course, it's not any of my business.\p"
 	.string "It would be nice if we were to meet\n"
@@ -286,8 +286,8 @@ Route118_Text_TryCatchingMonWithGoodRod:
 Route118_Text_CanCrossRiversWithSurf:
 	.string "Even if there isn't a boat, you can\n"
 	.string "cross rivers and the sea if you have\l"
-	.string "a POKéMON that knows SURF.\p"
-	.string "POKéMON can be counted on to do so\n"
+	.string "a Pokémon that knows Surf.\p"
+	.string "Pokémon can be counted on to do so\n"
 	.string "much!$"
 
 Route118_Text_RouteSignMauville:

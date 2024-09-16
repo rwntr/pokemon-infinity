@@ -162,7 +162,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum:
 	.string "Welcome to Lilycove Museum.\p"
 	.string "Please take the time to enjoy our\n"
 	.string "collection of fantastic artwork\l"
-	.string "featuring POKéMON.$"
+	.string "featuring Pokémon.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings:
 	.string "I'm the Curator of this Museum of\n"
@@ -178,7 +178,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime:
 
 LilycoveCity_LilycoveMuseum_1F_Text_HaveYouAnInterestInPaintings:
 	.string "Oh? I do believe that you seem to\n"
-	.string "be a POKéMON TRAINER.\p"
+	.string "be a Pokémon TRAINER.\p"
 	.string "Have you an interest in paintings,\n"
 	.string "too?$"
 
@@ -202,10 +202,10 @@ LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery:
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBeautifulWoman:
 	.string "It's a painting of a beautiful, smiling\n"
-	.string "woman with a POKéMON on her lap.$"
+	.string "woman with a Pokémon on her lap.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfLegendaryPokemon:
-	.string "It's a painting of a legendary POKéMON\n"
+	.string "It's a painting of a legendary Pokémon\n"
 	.string "from long ago.\p"
 	.string "The artist painted this from\n"
 	.string "imagination.$"
@@ -226,14 +226,14 @@ LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica:
 	.string "It depicts an ancient Bird Pokémon.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone:
-	.string "It's a big POKé BALL carved from\n"
+	.string "It's a big Poké Ball carved from\n"
 	.string "a black stone.\p"
 	.string "It was apparently used in festivals\n"
 	.string "in the olden days.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText:
 	.string "It's a huge stone tablet inscribed\n"
-	.string "with POKéMON and dense text in the\l"
+	.string "with Pokémon and dense text in the\l"
 	.string "small characters of an ancient,\l"
 	.string "unreadable language.$"
 
@@ -242,7 +242,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_WorksOfMagnificence:
 	.string "What works of great magnificence…$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts:
-	.string "Battling with POKéMON is fun,\n"
+	.string "Battling with Pokémon is fun,\n"
 	.string "I'll grant you that.\p"
 	.string "But one mustn't forget our love for\n"
 	.string "the fine arts.$"
@@ -259,7 +259,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty:
 	.string "She's like Mommy!$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable:
-	.string "This POKéMON is adorable!\n"
+	.string "This Pokémon is adorable!\n"
 	.string "Just like our little boy!$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings:

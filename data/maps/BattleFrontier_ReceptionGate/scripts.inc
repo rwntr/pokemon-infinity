@@ -299,7 +299,7 @@ BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 	.string "Please step this way!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "The front lines of POKéMON battling!\n"
+	.string "The front lines of Pokémon battling!\n"
 	.string "Welcome to the BATTLE FRONTIER!$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
@@ -326,11 +326,11 @@ BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
 	.string "You came out here!$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "Guide: Oh! MR. SCOTT, sir!\n"
+	.string "Guide: Oh! MR. Scott, sir!\n"
 	.string "Good day to you, sir!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "SCOTT: It's great to see you here,\n"
+	.string "Scott: It's great to see you here,\n"
 	.string "it really is!\p"
 	.string "I hope you'll take your time and\n"
 	.string "explore everywhere.\p"
@@ -350,7 +350,7 @@ BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
 	.string "It is the gigantic tower considered\n"
 	.string "to be the Battle Frontier's symbol.\p"
 	.string "There are four kinds of Battle Rooms\n"
-	.string "in the tower for SINGLE, Double, Multi,\l"
+	.string "in the tower for Single, Double, Multi,\l"
 	.string "and Link Multi Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
@@ -359,14 +359,14 @@ BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 	.string "Events named Battle Tourneys are held\n"
 	.string "in this facility.\p"
 	.string "The Battle Tourneys are offered in\n"
-	.string "two courses--for SINGLE and Double\l"
+	.string "two courses--for Single and Double\l"
 	.string "Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
 	.string "The Battle Palace is the red building\n"
 	.string "on the right of the Battle Frontier.\p"
 	.string "There are two kinds of Battle Halls\n"
-	.string "for SINGLE and Double Battles.$"
+	.string "for Single and Double Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
 	.string "The BATTLE ARENA is the dojo-like\n"
@@ -381,12 +381,12 @@ BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 	.string "An event called the Battle Swap\n"
 	.string "is conducted there.\p"
 	.string "The Battle Swap event is offered in\n"
-	.string "two courses for SINGLE and Double\l"
+	.string "two courses for Single and Double\l"
 	.string "Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
 	.string "The BATTLE PIKE is the building shaped\n"
-	.string "like a POKéMON at the center-left of\l"
+	.string "like a Pokémon at the center-left of\l"
 	.string "the BATTLE FRONTIER.\p"
 	.string "An event called the Battle Choice\n"
 	.string "is conducted there.$"
@@ -406,7 +406,7 @@ BattleFrontier_ReceptionGate_Text_RankingHallInfo:
 	.string "the BATTLE FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The Exchange SERVICE Corner is near\n"
+	.string "The Exchange Service Corner is near\n"
 	.string "the Battle Tower.\p"
 	.string "The Battle Points you have earned in\n"
 	.string "the BATTLE FRONTIER may be exchanged\l"
@@ -427,11 +427,11 @@ BattleFrontier_ReceptionGate_Text_LevelModeInfo:
 	.string "two courses--Level 50 and Open Level.$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
-	.string "The Level 50 course is open to POKéMON\n"
+	.string "The Level 50 course is open to Pokémon\n"
 	.string "up to and including Level 50.\p"
 	.string "Please keep in mind, however, that\n"
 	.string "no TRAINER you face will have any\l"
-	.string "POKéMON below Level 50.\p"
+	.string "Pokémon below Level 50.\p"
 	.string "This course is the entry level for\n"
 	.string "battles at the BATTLE FRONTIER.\p"
 	.string "To begin, we hope you will challenge\n"
@@ -439,30 +439,30 @@ BattleFrontier_ReceptionGate_Text_Level50Info:
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
 	.string "The Open Level course places no limit\n"
-	.string "on the levels of POKéMON entering\l"
+	.string "on the levels of Pokémon entering\l"
 	.string "challenges.\p"
 	.string "The levels of your opponents will\n"
 	.string "be adjusted to match the levels of\l"
-	.string "your POKéMON.\p"
+	.string "your Pokémon.\p"
 	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 60.$"
+	.string "have any Pokémon below Level 60.$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Virtually any kind of POKéMON may take\n"
+	.string "Virtually any kind of Pokémon may take\n"
 	.string "on the challenges at all facilities.\p"
 	.string "Eggs and certain kinds of Pokémon,\n"
 	.string "however, are not permitted.\p"
-	.string "The numbers of POKéMON required for\n"
+	.string "The numbers of Pokémon required for\n"
 	.string "challenges will depend on the facility.\p"
 	.string "At all facilities, however, two or more\n"
-	.string "of the same kind of POKéMON are not\l"
+	.string "of the same kind of Pokémon are not\l"
 	.string "permitted.$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "When entering a challenge at a Battle\n"
 	.string "Frontier facility, Pokémon may not\l"
 	.string "be holding the same kind of item.\p"
-	.string "Please make sure that all POKéMON\n"
+	.string "Please make sure that all Pokémon\n"
 	.string "entering a challenge are holding\l"
 	.string "different items.$"
 
@@ -501,6 +501,6 @@ BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "TRAINERS who battled outstandingly\l"
 	.string "at the BATTLE FRONTIER.\p"
 	.string "You may trade in your Battle Points\n"
-	.string "for prizes at the Exchange SERVICE\l"
+	.string "for prizes at the Exchange Service\l"
 	.string "Corner.$"
 

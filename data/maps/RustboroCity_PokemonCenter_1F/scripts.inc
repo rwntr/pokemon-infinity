@@ -36,7 +36,7 @@ RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
 
 RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
 	.string "Just like people, there are male and\n"
-	.string "female POKéMON.\p"
+	.string "female Pokémon.\p"
 	.string "But no one seems to have any idea how\n"
 	.string "they're different.$"
 

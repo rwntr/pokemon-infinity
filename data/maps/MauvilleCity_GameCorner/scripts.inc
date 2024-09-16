@@ -752,7 +752,7 @@ MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
 
 MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed:
 	.string "Up to three Coins can be used to play\n"
-	.string "the SLOTS.$"
+	.string "the Slots.$"
 
 MauvilleCity_GameCorner_Text_DifficultToStopOn7:
 	.string "It's very difficult to make it stop\n"
@@ -762,7 +762,7 @@ MauvilleCity_GameCorner_Text_DifficultToStopOn7:
 
 MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
 	.string "Here's some information for you\n"
-	.string "about the SLOTS.\p"
+	.string "about the Slots.\p"
 	.string "The more lightning bolts you stock,\n"
 	.string "the more Reel TIME chances you get.\p"
 	.string "In a game with the maximum five\n"

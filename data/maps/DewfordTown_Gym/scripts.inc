@@ -326,7 +326,7 @@ DewfordTown_Gym_Text_JocelynPostBattle:
 	.string "I'm not going to waste this loss.\n"
 	.string "I'll use it to motivate me to train!\p"
 	.string "One day I'll become a GYM LEADER…\p"
-	.string "No, I'll become the POKéMON LEAGUE\n"
+	.string "No, I'll become the Pokémon LEAGUE\n"
 	.string "CHAMPION!$"
 
 DewfordTown_Gym_Text_LauraIntro:
@@ -453,7 +453,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
 	.string "I knew you would return!\p"
-	.string "Oh? You only have one POKéMON\n"
+	.string "Oh? You only have one Pokémon\n"
 	.string "that can battle.\p"
 	.string "I'm sorry, but I'd like you to come back\n"
-	.string "with at least two POKéMON.$"
+	.string "with at least two Pokémon.$"

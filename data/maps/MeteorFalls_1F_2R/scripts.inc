@@ -72,12 +72,12 @@ MeteorFalls_1F_2R_Text_NicolasDefeat:
 
 MeteorFalls_1F_2R_Text_NicolasPostBattle:
 	.string "The road ahead remains long and harsh.\p"
-	.string "When will my POKéMON and I become\n"
+	.string "When will my Pokémon and I become\n"
 	.string "the best?$"
 
 MeteorFalls_1F_2R_Text_NicolasRegister:
 	.string "I want to know more about your power.\n"
-	.string "Let me register you in my POKéNAV.$"
+	.string "Let me register you in my Pokénav.$"
 
 MeteorFalls_1F_2R_Text_NicolasRematchIntro:
 	.string "Since we met, we have trained hard\n"
@@ -91,7 +91,7 @@ MeteorFalls_1F_2R_Text_NicolasRematchDefeat:
 
 MeteorFalls_1F_2R_Text_NicolasPostRematch:
 	.string "You've obviously kept up your\n"
-	.string "POKéMON training.\p"
+	.string "Pokémon training.\p"
 	.string "So long as you remain strong, I, too,\n"
 	.string "can become stronger!$"
 
@@ -113,7 +113,7 @@ MeteorFalls_1F_2R_Text_JohnPostBattle:
 MeteorFalls_1F_2R_Text_JohnNotEnoughMons:
 	.string "John: Well, well, what a young Trainer!\p"
 	.string "Will you battle with us? If so, you'll\n"
-	.string "have to return with more POKéMON.$"
+	.string "have to return with more Pokémon.$"
 
 MeteorFalls_1F_2R_Text_JohnRegister:
 	.string "John: Young Trainer, if the chance\n"
@@ -132,13 +132,13 @@ MeteorFalls_1F_2R_Text_JayDefeat:
 MeteorFalls_1F_2R_Text_JayPostBattle:
 	.string "Jay: Fifty years of marriage…\p"
 	.string "If we ever argued, we always settled\n"
-	.string "it with a POKéMON battle…$"
+	.string "it with a Pokémon battle…$"
 
 MeteorFalls_1F_2R_Text_JayNotEnoughMons:
 	.string "Jay: Well, well, aren't you a young\n"
 	.string "Trainer?\p"
 	.string "If you'd care to battle with us, you'll\n"
-	.string "have to come back with more POKéMON.$"
+	.string "have to come back with more Pokémon.$"
 
 MeteorFalls_1F_2R_Text_JohnRematchIntro:
 	.string "John: We've always battled Pokémon\n"
@@ -157,7 +157,7 @@ MeteorFalls_1F_2R_Text_JohnPostRematch:
 MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons:
 	.string "John: Well, well, what a young Trainer!\p"
 	.string "Will you battle with us? If so, you'll\n"
-	.string "have to return with more POKéMON.$"
+	.string "have to return with more Pokémon.$"
 
 MeteorFalls_1F_2R_Text_JayRematchIntro:
 	.string "Jay: We've been married for\n"
@@ -179,5 +179,5 @@ MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons:
 	.string "Jay: Well, well, aren't you a young\n"
 	.string "Trainer?\p"
 	.string "If you'd care to battle with us, you'll\n"
-	.string "have to come back with more POKéMON.$"
+	.string "have to come back with more Pokémon.$"
 

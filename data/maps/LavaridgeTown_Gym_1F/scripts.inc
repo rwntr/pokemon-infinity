@@ -237,7 +237,7 @@ LavaridgeTown_Gym_B1F_Text_KeeganPostBattle:
 	.string "burned seriously.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldIntro:
-	.string "Can your POKéMON withstand\n"
+	.string "Can your Pokémon withstand\n"
 	.string "392-degree heat?$"
 
 LavaridgeTown_Gym_1F_Text_GeraldDefeat:
@@ -246,7 +246,7 @@ LavaridgeTown_Gym_1F_Text_GeraldDefeat:
 LavaridgeTown_Gym_1F_Text_GeraldPostBattle:
 	.string "The temperature of magma is\n"
 	.string "392 degrees.\p"
-	.string "Your POKéMON beat me, so they should\n"
+	.string "Your Pokémon beat me, so they should\n"
 	.string "easily survive in magma.$"
 
 LavaridgeTown_Gym_1F_Text_DanielleIntro:
@@ -321,7 +321,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
 	.string "I tried too hard to be someone\n"
 	.string "I'm not.\p"
 	.string "I have to do things my natural way. If\n"
-	.string "I don't, my POKéMON will be confused.\p"
+	.string "I don't, my Pokémon will be confused.\p"
 	.string "Thanks for teaching me that.\n"
 	.string "For that, you deserve this.$"
 
@@ -334,8 +334,8 @@ LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
 	.string "up to Level 50, even those you get in\l"
 	.string "trades from other people, will obey\l"
 	.string "you completely.\p"
-	.string "And, it lets POKéMON use the HM move\n"
-	.string "STRENGTH outside of battle.\p"
+	.string "And, it lets Pokémon use the HM move\n"
+	.string "Strength outside of battle.\p"
 	.string "This is a token of my appreciation.\n"
 	.string "Don't be shy about taking it!$"
 
@@ -357,7 +357,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "the Gym Leader of Petalburg.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
-	.string "LAVARIDGE TOWN POKéMON GYM$"
+	.string "LAVARIDGE TOWN Pokémon GYM$"
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "Lavaridge Town Pokémon\p"
@@ -367,7 +367,7 @@ LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
 	.string "Flannery: Losing a battle isn't going\n"
 	.string "to deflate me.\p"
-	.string "I love POKéMON.\n"
+	.string "I love Pokémon.\n"
 	.string "I love to battle.\l"
 	.string "And… I love this GYM!\p"
 	.string "Let's exchange superhot moves\n"
@@ -388,12 +388,12 @@ LavaridgeTown_Gym_1F_Text_FlanneryPostRematch:
 LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 	.string "Flannery: Losing a battle isn't going\n"
 	.string "to deflate me.\p"
-	.string "I love POKéMON.\n"
+	.string "I love Pokémon.\n"
 	.string "I love to battle.\l"
 	.string "And… I love this GYM!\p"
 	.string "Let's exchange superhot moves\n"
 	.string "in another battle!\p"
-	.string "Oh, wait. Do you only have one POKéMON\n"
+	.string "Oh, wait. Do you only have one Pokémon\n"
 	.string "that can battle?\p"
 	.string "I hate to say this, but when you come\n"
-	.string "see me, bring at least two POKéMON.$"
+	.string "see me, bring at least two Pokémon.$"

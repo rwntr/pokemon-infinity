@@ -89,7 +89,7 @@ SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
 	.string "The grace you bring to battle is\n"
 	.string "fabulous.\p"
 	.string "Oh… I'm so fortunate to have found\n"
-	.string "POKéMON.$"
+	.string "Pokémon.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
 	.string "I should teach you how harsh battles\n"
@@ -105,16 +105,16 @@ SootopolisCity_Gym_B1F_Text_ConniePostBattle:
 	.string "need to walk on each floor tile once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
-	.string "The POKéMON GYM of the highest level\n"
-	.string "in the HOENN region…\p"
-	.string "That's the SOOTOPOLIS GYM.$"
+	.string "The Pokémon Gym of the highest level\n"
+	.string "in the Hoenn region…\p"
+	.string "That's the Sootopolis Gym.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
 	.string "What a high level you are!$"
 
 SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
 	.string "Rather than being satisfied by being\n"
-	.string "in a strong GYM, I imagine training in\l"
+	.string "in a strong Gym, I imagine training in\l"
 	.string "other places will make you stronger.\l"
 	.string "But above all, it looks more fun.$"
 
@@ -145,7 +145,7 @@ SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
 	.string "with how young or old you are.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-	.string "When I'm with my POKéMON, the time\n"
+	.string "When I'm with my Pokémon, the time\n"
 	.string "flies by before you can say, “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
@@ -156,12 +156,12 @@ SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
 	.string "before I can manage an “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "I can battle with really rare POKéMON\n"
+	.string "I can battle with really rare Pokémon\n"
 	.string "if you'd like.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
 	.string "Oh, there now! Did you have a good look\n"
-	.string "at my POKéMON?$"
+	.string "at my Pokémon?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
 	.string "I came to this because Juan\n"

@@ -76,7 +76,7 @@ SSTidalRooms_Text_ColtonDefeat:
 
 SSTidalRooms_Text_ColtonPostBattle:
 	.string "I get so excited imagining what kinds\n"
-	.string "of POKéMON I'll get to see in the next\l"
+	.string "of Pokémon I'll get to see in the next\l"
 	.string "CONTEST. The anticipation of it thrills!$"
 
 SSTidalRooms_Text_MicahIntro:
@@ -87,7 +87,7 @@ SSTidalRooms_Text_MicahDefeat:
 
 SSTidalRooms_Text_MicahPostBattle:
 	.string "Friends need not be human.\n"
-	.string "For me, POKéMON are treasured friends!$"
+	.string "For me, Pokémon are treasured friends!$"
 
 SSTidalRooms_Text_ThomasIntro:
 	.string "Child…\n"
@@ -144,7 +144,7 @@ SSTidalRooms_Text_GarretDefeat:
 SSTidalRooms_Text_GarretPostBattle:
 	.string "Perhaps I shall get Father to acquire\n"
 	.string "a yacht for me.\l"
-	.string "A yacht for me and POKéMON!$"
+	.string "A yacht for me and Pokémon!$"
 
 SSTidalRooms_Text_NaomiIntro:
 	.string "Oh, you're such an adorable TRAINER.\n"
@@ -164,12 +164,12 @@ SSTidalRooms_Text_NaomiPostBattle:
 SSTidalRooms_Text_NotSuspiciousTakeThis:
 	.string "Uh… Hi! I… I'm not acting suspicious!\n"
 	.string "Uh… You can have this! For free!\p"
-	.string "It… Honestly, I didn't SNATCH it from\n"
+	.string "It… Honestly, I didn't Snatch it from\n"
 	.string "someone! I'd never do such a thing!\l"
 	.string "It's clean! You can use it!$"
 
 SSTidalRooms_Text_ExplainSnatch:
-	.string "SNATCH steals the beneficial effects\n"
+	.string "Snatch steals the beneficial effects\n"
 	.string "of certain moves before they can be\l"
 	.string "used by a foe or ally.$"
 

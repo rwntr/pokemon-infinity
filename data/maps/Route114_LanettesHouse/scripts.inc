@@ -54,7 +54,7 @@ Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
 	.string "this a secret in exchange for this.$"
 
 Route114_LanettesHouse_Text_OrganizeYourBoxes:
-	.string "May I offer advice about my POKéMON\n"
+	.string "May I offer advice about my Pokémon\n"
 	.string "Storage System?\p"
 	.string "You should organize your Boxes so you\n"
 	.string "can tell which Pokémon are in them.$"
@@ -69,7 +69,7 @@ Route114_LanettesHouse_Text_ResearchNotesPage1:
 
 Route114_LanettesHouse_Text_ResearchNotesPage2:
 	.string "A marking system should be added to\n"
-	.string "make POKéMON easier to organize.\p"
+	.string "make Pokémon easier to organize.\p"
 	.string "The name and wallpaper design of each\n"
 	.string "Box will be made changeable to please\l"
 	.string "the stored Pokémon.\p"

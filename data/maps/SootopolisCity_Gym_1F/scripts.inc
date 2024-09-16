@@ -178,7 +178,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "SOOTOPOLIS's Gym Leader Juan is\n"
+	.string "Sootopolis's Gym Leader Juan is\n"
 	.string "a master of WATER-type Pokémon.\p"
 	.string "And, to get to Juan, an icy floor\n"
 	.string "will hamper your progress…\p"
@@ -199,7 +199,7 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
 	.string "It was I who taught WALLACE everything\n"
-	.string "there is to know about POKéMON.\p"
+	.string "there is to know about Pokémon.\p"
 	.string "Once, I had given up my position as\n"
 	.string "the GYM LEADER.\p"
 	.string "In my place, I had entrusted WALLACE\n"
@@ -211,7 +211,7 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Please, you shall bear witness to\n"
 	.string "our artistry.\p"
 	.string "A grand illusion of water sculpted\n"
-	.string "by POKéMON and myself!$"
+	.string "by Pokémon and myself!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
@@ -261,7 +261,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "The TRAINERS who have gathered all\n"
 	.string "the GYM BADGES of HOENN should make\l"
 	.string "way to the ultimate destination.\p"
-	.string "The POKéMON LEAGUE.\p"
+	.string "The Pokémon LEAGUE.\p"
 	.string "Travel to the easternmost reaches\n"
 	.string "of Hoenn, to the island Ever Grande.\p"
 	.string "There, you shall find the Pokémon\n"
@@ -275,10 +275,11 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "Badge from the Gym in Fortree.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "SOOTOPOLIS CITY POKéMON GYM$"
+	.string "Sootopolis City Pokémon$"
+	.string "SOOTOPOLIS CITY Pokémon GYM$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
-	.string "SOOTOPOLIS City Pokémon\p"
+	.string "Sootopolis City Pokémon\p"
 	.string "Juan'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
@@ -313,7 +314,7 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "Well, my friend, most certainly!\n"
 	.string "I shall be delighted to dance with you…\p"
 	.string "Ah, no, no, no.\n"
-	.string "You have with you but one POKéMON.\p"
+	.string "You have with you but one Pokémon.\p"
 	.string "I wish that you would return with\n"
-	.string "two, perhaps more, POKéMON, please.$"
+	.string "two, perhaps more, Pokémon, please.$"
 

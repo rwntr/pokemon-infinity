@@ -68,7 +68,7 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "wild living things. They are free.\p"
 	.string "At times, they hinder us.\n"
 	.string "At times, they help us.\p"
-	.string "For us to battle with POKéMON as\n"
+	.string "For us to battle with Pokémon as\n"
 	.string "partners, do you know what it takes?\p"
 	.string "Do you know what is needed?\p"
 	.string "If you don't, then you will never\n"
@@ -79,11 +79,11 @@ EverGrandeCity_DrakesRoom_Text_Defeat:
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "You deserve every credit for coming\n"
-	.string "this far as a TRAINER of POKéMON.\p"
+	.string "this far as a TRAINER of Pokémon.\p"
 	.string "You do seem to know what is needed.\p"
 	.string "Yes, what a TRAINER needs is a\n"
 	.string "virtuous heart.\p"
-	.string "POKéMON touch the good hearts of\n"
+	.string "Pokémon touch the good hearts of\n"
 	.string "TRAINERS and learn good from wrong.\p"
 	.string "They touch the good hearts of\n"
 	.string "TRAINERS and grow strong.\p"

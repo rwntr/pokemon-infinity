@@ -89,7 +89,7 @@ AbandonedShip_Rooms2_1F_Text_KiraRegister:
 AbandonedShip_Rooms2_1F_Text_DanRematchIntro:
 	.string "Dan: We've been searching for\n"
 	.string "treasures all this time.\p"
-	.string "Our POKéMON have grown stronger, too.\n"
+	.string "Our Pokémon have grown stronger, too.\n"
 	.string "Let us show you, okay?$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchDefeat:

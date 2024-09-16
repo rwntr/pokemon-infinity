@@ -158,7 +158,7 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "STEVEN: While you're using SURF, you\n"
+	.string "Steven: While you're using Surf, you\n"
 	.string "should notice dark patches of water.\p"
 	.string "Use DIVE if you come to deep water\n"
 	.string "like it. You'll drop to the seafloor.\p"
@@ -170,7 +170,7 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "STEVEN: Apparently, there's an\n"
 	.string "underwater cavern between\l"
-	.string "Mossdeep and SOOTOPOLIS.\p"
+	.string "Mossdeep and Sootopolis.\p"
 	.string "You know, the one that Capt. Stern\n"
 	.string "found in his submarine.$"
 
@@ -185,10 +185,10 @@ MossdeepCity_StevensHouse_Text_ObtainedBeldum:
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
-	.string "There is no space for another POKéMON.$"
+	.string "There is no space for another Pokémon.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the POKé BALL where\n"
+	.string "{PLAYER} left the Poké Ball where\n"
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
@@ -200,7 +200,7 @@ MossdeepCity_StevensHouse_Text_LetterFromSteven:
 	.string "I don't plan to return home for some\n"
 	.string "time.\p"
 	.string "I have a favor to ask of you.\p"
-	.string "I want you to take the POKé BALL on\n"
+	.string "I want you to take the Poké Ball on\n"
 	.string "the desk.\p"
 	.string "Inside it is a Beldum, my favorite\n"
 	.string "Pokémon.\p"

@@ -301,7 +301,7 @@ Route113_GlassWorkshop_Text_GoCollectAshWithThis:
 	.string "Go collect ashes with this, huff-puff.$"
 
 Route113_GlassWorkshop_Text_ExplainSootSack:
-	.string "Just take that SOOT SACK and walk\n"
+	.string "Just take that Soot Sack and walk\n"
 	.string "through piles of ash, huff-puff.\p"
 	.string "And it will fill up with the volcanic ash,\n"
 	.string "huff-puff.\p"
@@ -369,7 +369,7 @@ Route113_GlassWorkshop_Text_NoRoomInPC:
 	.string "huff-puff.$"
 
 Route113_GlassWorkshop_Text_HaventGotYourSootSack:
-	.string "Hah? You haven't got your SOOT SACK\n"
+	.string "Hah? You haven't got your Soot Sack\n"
 	.string "with you, huff-puff.\p"
 	.string "You have to keep it with you to collect\n"
 	.string "volcanic ash, huff-puff.$"

@@ -73,7 +73,7 @@ LilycoveCity_MoveDeletersHouse_Text_ICanMakeMonForgetMove:
 	.string "Would you like me to do that?$"
 
 LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget:
-	.string "Which POKéMON should forget a move?$"
+	.string "Which Pokémon should forget a move?$"
 
 LilycoveCity_MoveDeletersHouse_Text_WhichMoveShouldBeForgotten:
 	.string "Which move should be forgotten?$"
@@ -102,5 +102,5 @@ LilycoveCity_MoveDeletersHouse_Text_EggCantForgetMoves:
 LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf:
 	.string "Hm!\p"
 	.string "Your {STR_VAR_1} doesn't seem willing\n"
-	.string "to forget SURF.$"
+	.string "to forget Surf.$"
 

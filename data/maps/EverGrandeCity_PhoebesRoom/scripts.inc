@@ -67,7 +67,7 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "Yes, the bond I developed with Pokémon\n"
 	.string "is extremely tight.\p"
 	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "even inflict damage on my Pokémon!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
 	.string "Oh, darn.\n"
@@ -75,7 +75,7 @@ EverGrandeCity_PhoebesRoom_Text_Defeat:
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
+	.string "and your Pokémon, too.\p"
 	.string "I didn't recognize it, so it's only\n"
 	.string "natural that I lost.\p"
 	.string "Yup, I'd like to see how far your bond\n"

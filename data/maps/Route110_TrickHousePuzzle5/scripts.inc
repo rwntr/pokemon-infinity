@@ -898,7 +898,7 @@ Route110_TrickHousePuzzle5_Movement_MechadollShake:
 Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened:
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
-	.string "“TRICK MASTER is a genius.”\n"
+	.string "“Trick Master is a genius.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
@@ -907,17 +907,17 @@ Route110_TrickHousePuzzle5_Text_Mechadoll1Intro:
 	.string "MECHADOLL 1 AM I!\p"
 	.string "IF YOU ANSWER QUIZZES CORRECTLY,\n"
 	.string "THEN YOU WILL GO TO MECHADOLL 5.\l"
-	.string "THEN YOU CAN OBTAIN THE SECRET CODE.$"
+	.string "THEN YOU CAN OBTAIN THE Secret CODE.$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz1:
 	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON is not found\n"
-	.string "on ROUTE 110. Which one is it?$"
+	.string "One of these Pokémon is not found\n"
+	.string "on Route 110. Which one is it?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz2:
 	.string "MECHADOLL 1 QUIZ.\p"
-	.string "One of these POKéMON is not of the\n"
-	.string "WATER type. Which one is it?$"
+	.string "One of these Pokémon is not of the\n"
+	.string "Water type. Which one is it?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Quiz3:
 	.string "MECHADOLL 1 QUIZ.\p"
@@ -947,13 +947,13 @@ Route110_TrickHousePuzzle5_Text_Mechadoll2Intro:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1:
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON did WALLY\n"
+	.string "Which of these Pokémon did WALLY\n"
 	.string "borrow from your father?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON was chasing\n"
-	.string "PROF. BIRCH?$"
+	.string "Which of these Pokémon was chasing\n"
+	.string "Prof. Birch?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz3:
 	.string "MECHADOLL 2 QUIZ.\p"
@@ -977,7 +977,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Do one Repel and SODA Pop cost\n"
+	.string "Do one Repel and Soda Pop cost\n"
 	.string "more than one Super Potion?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Intro:
@@ -997,7 +997,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Quiz3:
 	.string "MECHADOLL 4 QUIZ.\p"
-	.string "In the TRAINER'S SCHOOL, how many\n"
+	.string "In the Trainer's School, how many\n"
 	.string "girl students were there?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Intro:
