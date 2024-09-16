@@ -384,7 +384,7 @@ BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll:
 	.string "Yes!\n"
 	.string "I've finally got enough Battle Points!\p"
 	.string "I guess I'll trade for another giant\n"
-	.string "plush DOLL!$"
+	.string "plush Doll!$"
 
 BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere:
 	.string "Oh, yeah, okay!\n"

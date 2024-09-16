@@ -1190,18 +1190,18 @@ BattleFrontier_BattleTowerLobby_Text_SelectThreeMons:
 BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle:
 	.string "Where the talents of TRAINERS\n"
 	.string "are put to the test!\p"
-	.string "Welcome to the BATTLE TOWER!\p"
-	.string "I am your guide to the DOUBLE\n"
-	.string "BATTLE ROOMS.$"
+	.string "Welcome to the Battle Tower!\p"
+	.string "I am your guide to the Double\n"
+	.string "Battle ROOMS.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeDoublesChallenge:
-	.string "Would you like to take the DOUBLE\n"
-	.string "BATTLE ROOM challenge?$"
+	.string "Would you like to take the Double\n"
+	.string "Battle Room challenge?$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainDoublesChallenge:
 	.string "The BATTLE TOWER's DOUBLE BATTLE\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "DOUBLE Battles with four Pokémon.\p"
+	.string "Double Battles with four Pokémon.\p"
 	.string "There are many Double Battle ROOMS\n"
 	.string "in the Battle Tower for team battles.\p"
 	.string "In each of the Double Battle ROOMS,\n"

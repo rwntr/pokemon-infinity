@@ -46,7 +46,7 @@ MeteorFalls_StevensCave_Text_StevenDefeat:
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "STEVEN: Come to think of it, ever since\n"
 	.string "our paths first crossed in GRANITE\l"
-	.string "Cave in DEWFORD, I had this feeling.\p"
+	.string "Cave in Dewford, I had this feeling.\p"
 	.string "I thought that you would eventually\n"
 	.string "become the CHAMPION.\p"
 	.string "My predictions usually come true.\p"

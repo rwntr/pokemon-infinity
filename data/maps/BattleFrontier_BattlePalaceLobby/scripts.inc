@@ -547,9 +547,9 @@ BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway:
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle:
 	.string "Where the hearts of TRAINERS\n"
 	.string "are put to the test.\p"
-	.string "I welcome you to the BATTLE PALACE.\p"
-	.string "I accept challenges to the DOUBLE\n"
-	.string "BATTLE HALLS.$"
+	.string "I welcome you to the Battle Palace.\p"
+	.string "I accept challenges to the Double\n"
+	.string "Battle Halls.$"
 
 BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
 	.string "Do you wish to take\n"
@@ -557,9 +557,9 @@ BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
 	.string "In the Battle Palace, there are\n"
-	.string "several auditoriums for DOUBLE Battles\l"
+	.string "several auditoriums for Double Battles\l"
 	.string "that are named Double Battle HALLS.\p"
-	.string "The DOUBLE Battles are conducted in\n"
+	.string "The Double Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
 	.string "TRAINERS are permitted only to switch\n"

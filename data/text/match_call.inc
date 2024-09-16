@@ -1119,8 +1119,8 @@ MatchCall_PersonalizedText40::
 MatchCall_PersonalizedText41::
 	.string "Hello, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} here.\p"
-	.string "How are your POKéMON doing?\p"
-	.string "My DRAGON POKéMON appear to be\n"
+	.string "How are your Pokémon doing?\p"
+	.string "My Dragon Pokémon appear to be\n"
 	.string "in peak form. Bye for now.$"
 
 MatchCall_PersonalizedText42::
@@ -1300,7 +1300,7 @@ MatchCall_PersonalizedText58::
 
 MatchCall_PersonalizedText59::
 	.string "This is {STR_VAR_1}!\p"
-	.string "I went to DEWFORD's GYM again\n"
+	.string "I went to Dewford's again\n"
 	.string "for training.\p"
 	.string "Brawly, the Gym Leader, seems\n"
 	.string "to be tougher now.\p"
@@ -2093,7 +2093,7 @@ MatchCall_Text_Brawly2::
 MatchCall_Text_Brawly3::
 	.string "Brawly: Hey, {PLAYER}{KUN}!\n"
 	.string "My's ready for action!\p"
-	.string "Come back to DEWFORD anytime\n"
+	.string "Come back to Dewford anytime\n"
 	.string "for another challenge!$"
 
 MatchCall_Text_Brawly4::
@@ -2281,7 +2281,7 @@ MatchCall_Text_Glacia::
 	.string "to the POKéMON LEAGUE…$"
 
 MatchCall_Text_Drake::
-	.string "DRAKE: That voice… {PLAYER}, is it?\n"
+	.string "Drake: That voice… {PLAYER}, is it?\n"
 	.string "You sound well…\p"
 	.string "I understand that there is now\n"
 	.string "a facility called the BATTLE\l"
@@ -2345,7 +2345,7 @@ MatchCall_Text_May1::
 MatchCall_Text_May2::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "You know how little towns like\n"
-	.string "PETALBURG and DEWFORD have GYMS?\p"
+	.string "PETALBURG and Dewford haveS?\p"
 	.string "For some reason, the big port of\n"
 	.string "SLATEPORT doesn't have a GYM.\p"
 	.string "When they finally build a GYM there,\n"
@@ -2471,7 +2471,7 @@ MatchCall_Text_Brendan1::
 MatchCall_Text_Brendan2::
 	.string "BRENDAN: Hey, {PLAYER}!\p"
 	.string "I don't get how little towns like\n"
-	.string "PETALBURG and DEWFORD have GYMS.\p"
+	.string "PETALBURG and Dewford haveS.\p"
 	.string "I mean, not when the big port of\n"
 	.string "SLATEPORT doesn't have a GYM.\p"
 	.string "When they finally build a GYM there,\n"
@@ -2710,14 +2710,14 @@ MatchCall_Text_Scott7::
 	.string "the POKéNAV's service area…$"
 
 MatchCall_Text_Norman1::
-	.string "DAD: In RUSTBORO, there's a man\n"
+	.string "Dad: In Rustboro, there's a man\n"
 	.string "that goes by the odd name of\l"
 	.string "the Cutter.\p"
 	.string "If you're in the area, you should\n"
 	.string "pay him a visit.$"
 
 MatchCall_Text_Norman2::
-	.string "DAD: Hm… Little by little, but also\n"
+	.string "Dad: Hm… Little by little, but also\n"
 	.string "very surely, you're getting\l"
 	.string "tougher, {PLAYER}.\p"
 	.string "The stronger you get, the farther\n"
@@ -2726,15 +2726,15 @@ MatchCall_Text_Norman2::
 	.string "This feeling is hard to explain.$"
 
 MatchCall_Text_Norman3::
-	.string "DAD: I see…\n"
-	.string "You've collected four GYM BADGES…\p"
+	.string "Dad: I see…\n"
+	.string "You've collected four Gym Badges…\p"
 	.string "There's no avoiding it now.\n"
 	.string "We will battle like I promised.\p"
 	.string "Come anytime.\n"
 	.string "We'll all be waiting for you!$"
 
 MatchCall_Text_Norman4::
-	.string "DAD: {PLAYER}! You'd better go visit\n"
+	.string "Dad: {PLAYER}! You'd better go visit\n"
 	.string "Mother every so often.\p"
 	.string "I'm going to remain here and\n"
 	.string "redouble my training.\p"
@@ -2742,27 +2742,27 @@ MatchCall_Text_Norman4::
 	.string "and unforgiving!$"
 
 MatchCall_Text_Norman5::
-	.string "DAD: Oh, hi, {PLAYER}!\p"
-	.string "What's that? MAGMA EMBLEM?\n"
+	.string "Dad: Oh, hi, {PLAYER}!\p"
+	.string "What's that? Magma Emblem?\n"
 	.string "I don't know what that's about.\p"
 	.string "But with a name like that, it may\n"
 	.string "be somehow linked to a volcano!$"
 
 MatchCall_Text_Norman6::
-	.string "DAD: Hiyah! Haah! Dwah!\p"
+	.string "Dad: Hiyah! Haah! Dwah!\p"
 	.string "…Oh? {PLAYER}!\p"
 	.string "You caught me right in the middle\n"
 	.string "of a POKéMON training session!$"
 
 MatchCall_Text_Norman7::
-	.string "DAD: {PLAYER}!\p"
+	.string "Dad: {PLAYER}!\p"
 	.string "Who would've thought you'd become\n"
 	.string "the POKéMON LEAGUE CHAMPION…\p"
 	.string "Okay!\n"
 	.string "I won't be left behind!$"
 
 MatchCall_Text_Norman8::
-	.string "DAD: Hm? {PLAYER}?\n"
+	.string "Dad: Hm? {PLAYER}?\n"
 	.string "What good timing!\p"
 	.string "This time, I'm going to challenge\n"
 	.string "you to battle.\p"
@@ -2770,7 +2770,7 @@ MatchCall_Text_Norman8::
 	.string "Accept my challenge anytime!$"
 
 MatchCall_Text_Norman9::
-	.string "DAD: …You amaze me, {PLAYER}.\n"
+	.string "Dad: …You amaze me, {PLAYER}.\n"
 	.string "How much higher will you soar?$"
 
 MatchCall_Text_Steven1::
@@ -2871,7 +2871,7 @@ MatchCall_Text_MrStone2::
 	.string "What's wrong? Have you forgotten\n"
 	.string "about that little errand of mine?\p"
 	.string "I need you to deliver my letter\n"
-	.string "to STEVEN in DEWFORD.\p"
+	.string "to Steven in Dewford.\p"
 	.string "After that, deliver our parcel to\n"
 	.string "CAPT. STERN in SLATEPORT.\p"
 	.string "You remember, don't you?\p"
@@ -2923,7 +2923,7 @@ MatchCall_Text_MrStone7::
 
 MatchCall_Text_MrStone8::
 	.string "…Huh? …What's that?\p"
-	.string "GROU… Yes? …DON?\p"
+	.string "GROU… Yes? …don?\p"
 	.string "You're breaking up…\n"
 	.string "…can't hear…\p"
 	.string "BZZZZ…$"

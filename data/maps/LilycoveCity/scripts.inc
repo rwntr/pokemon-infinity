@@ -412,7 +412,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "MAY: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
-	.string "I bought a whole bunch of DOLLS and\n"
+	.string "I bought a whole bunch of Dolls and\n"
 	.string "POSTERS.\p"
 	.string "Of course, I've also caught a lot of\n"
 	.string "POKéMON, and I'm raising them\l"
@@ -482,7 +482,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
 	.string "I'm running an errand for my dad.\n"
-	.string "No, I'm not buying any DOLLS.\p"
+	.string "No, I'm not buying any Dolls.\p"
 	.string "Anyways, it's been a while.\p"
 	.string "Want to have a battle to see who's been\n"
 	.string "raising POKéMON better?$"
@@ -589,9 +589,9 @@ LilycoveCity_Text_StrangeCaveInCove:
 	.string "the cove at the edge of town?$"
 
 LilycoveCity_Text_GoingToMoveDeleterForHMs:
-	.string "I'm going to teach my POKéMON some new\n"
-	.string "moves for entering a CONTEST.\p"
-	.string "So, I'm going to see the MOVE DELETER\n"
+	.string "I'm going to teach my Pokémon some new\n"
+	.string "moves for entering a Contest.\p"
+	.string "So, I'm going to see the MOVE Deleter\n"
 	.string "and make it forget HM moves.$"
 
 LilycoveCity_Text_ImFromKanto:
@@ -627,7 +627,7 @@ LilycoveCity_Text_MissingPokemonCameBack:
 	.string "It came back without me noticing!$"
 
 LilycoveCity_Text_ImArtDealer:
-	.string "I'm an Art DEALER.\p"
+	.string "I'm an Art Dealer.\p"
 	.string "I am a buyer and seller of fine art,\n"
 	.string "especially paintings.\p"
 	.string "I've heard that the MUSEUM here has\n"
@@ -705,15 +705,15 @@ LilycoveCity_Text_TrainerFanClubSign:
 	.string "all over the sign…$"
 
 LilycoveCity_Text_DepartmentStoreSign:
-	.string "LILYCOVE DEPARTMENT STORE\p"
+	.string "LILYCOVE Department STORE\p"
 	.string "“Overflowing with great merchandise\n"
 	.string "and excitement!\p"
 	.string "“A great place to find that something\n"
 	.string "you need!”$"
 
 LilycoveCity_Text_MoveDeletersHouseSign:
-	.string "MOVE DELETER'S HOUSE\p"
-	.string "“Unwanted POKéMON moves deleted.”$"
+	.string "MOVE Deleter'S House\p"
+	.string "“Unwanted Pokémon moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:
 	.string "Do you know about the machine\n"
@@ -744,10 +744,10 @@ LilycoveCity_Text_SawTallTowerOnRoute131:
 LilycoveCity_Text_JustArrivedAndSawRarePokemon:
 	.string "We just arrived here on our\n"
 	.string "honeymoon vacation.\p"
-	.string "We happened to see a DRAGON-type\n"
-	.string "POKéMON flying way up in the sky.\p"
-	.string "Do cool POKéMON like that live in\n"
-	.string "the HOENN region?$"
+	.string "We happened to see a Dragon-type\n"
+	.string "Pokémon flying way up in the sky.\p"
+	.string "Do cool Pokémon like that live in\n"
+	.string "the Hoenn region?$"
 
 LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "On our honeymoon, we vowed to see as\n"

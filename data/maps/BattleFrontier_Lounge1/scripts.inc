@@ -193,7 +193,7 @@ BattleFrontier_Lounge1_Text_BestAspectAtk:
 
 BattleFrontier_Lounge1_Text_BestAspectDef:
 	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its DEFENSE…$"
+	.string "I would say, is its Defense…$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpAtk:
 	.string "Incidentally, the best aspect of it,\n"
@@ -201,7 +201,7 @@ BattleFrontier_Lounge1_Text_BestAspectSpAtk:
 
 BattleFrontier_Lounge1_Text_BestAspectSpDef:
 	.string "Incidentally, the best aspect of it,\n"
-	.string "I would say, is its SPECIAL DEFENSE…$"
+	.string "I would say, is its SPECIAL Defense…$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpeed:
 	.string "Incidentally, the best aspect of it,\n"

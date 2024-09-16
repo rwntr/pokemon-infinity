@@ -469,7 +469,7 @@ LilycoveCity_ContestHall_Text_NeverWonBattleButContest:
 	.string "but put it in a CONTEST and look out!$"
 
 LilycoveCity_ContestHall_Text_PetalDanceIsMarvel:
-	.string "My POKéMON's PETAL DANCE is a marvel\n"
+	.string "My Pokémon's PETAL Dance is a marvel\n"
 	.string "of elegance.\p"
 	.string "I won't let anyone disturb its\n"
 	.string "performance.$"

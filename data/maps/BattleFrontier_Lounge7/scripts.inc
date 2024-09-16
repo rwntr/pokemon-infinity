@@ -447,7 +447,7 @@ BattleFrontier_Lounge7_Text_SwordsDanceDesc::
 BattleFrontier_Lounge7_Text_DefenseCurlDesc::
 	.string "Curls up to con-\n"
 	.string "ceal weak spots\n"
-	.string "and raise DEFENSE.$"
+	.string "and raise Defense.$"
 
 BattleFrontier_Lounge7_Text_SnoreDesc::
 	.string "A loud attack\n"

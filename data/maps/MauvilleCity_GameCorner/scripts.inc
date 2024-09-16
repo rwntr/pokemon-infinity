@@ -697,7 +697,7 @@ MauvilleCity_GameCorner_Text_CantCarryAnyMore:
 
 MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne:
 	.string "I made a mistake and got two of\n"
-	.string "the same DOLLS.\p"
+	.string "the same Dolls.\p"
 	.string "Would you like one of them?$"
 
 MauvilleCity_GameCorner_Text_HereYouGo2:
