@@ -213,7 +213,7 @@ RustboroCity_PokemonSchool_Text_ExplainPoison:
 	.string "a battle.\p"
 	.string "A poisoned Pokémon's HP will drop\n"
 	.string "while it is traveling.\p"
-	.string "Heal a poisoning using an ANTIDOTE.$"
+	.string "Heal a poisoning using an Antidote.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "If a Pokémon becomes paralyzed,\n"
@@ -229,10 +229,10 @@ RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "A Pokémon may wake up on its own,\n"
 	.string "but if a battle ends while it is\l"
 	.string "sleeping, it will stay asleep.\p"
-	.string "Wake it up using an AWAKENING.$"
+	.string "Wake it up using an Awakening.$"
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
-	.string "A burn reduces ATTACK power, and it\n"
+	.string "A burn reduces Attack power, and it\n"
 	.string "steadily reduces the victim's HP.\p"
 	.string "A burn lingers after battle.\n"
 	.string "Cure a burn using a BURN HEAL.$"
@@ -270,7 +270,7 @@ RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
 	.string "Pokémon can hold items, but they\n"
 	.string "don't know what to do with man-made\l"
-	.string "items like Potion and ANTIDOTE.$"
+	.string "items like Potion and Antidote.$"
 
 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
 	.string "You know how some Pokémon moves can\n"

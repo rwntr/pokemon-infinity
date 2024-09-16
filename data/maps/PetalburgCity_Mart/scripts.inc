@@ -78,9 +78,9 @@ PetalburgCity_Mart_Text_RepelIsUseful:
 	.string "useful when you're in a hurry.$"
 
 PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
-	.string "Do you have any ANTIDOTES with\n"
+	.string "Do you have any Antidotes with\n"
 	.string "you?\p"
 	.string "If you walk around with a poisoned\n"
 	.string "Pokémon, it will lose HP until it faints.\l"
-	.string "Take some ANTIDOTES with you.$"
+	.string "Take some Antidotes with you.$"
 

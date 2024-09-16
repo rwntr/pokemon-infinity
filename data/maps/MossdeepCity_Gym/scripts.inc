@@ -576,7 +576,7 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "Tate: The MIND BADGE enhances the\n"
-	.string "SP. ATK and SP. DEF of Pokémon.\p"
+	.string "SP. Atk and SP. DEF of Pokémon.\p"
 	.string "LIZA: It also lets you use the HM move\n"
 	.string "Dive outside of battle.\p"
 	.string "Tate: You should also take this, too.$"
@@ -584,7 +584,7 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "Tate: That TM04 contains…\n"
 	.string "LIZA: CALM MIND!\p"
-	.string "Tate: It raises SP. ATK and…\n"
+	.string "Tate: It raises SP. Atk and…\n"
 	.string "LIZA: It raises SP. DEF!\p"
 	.string "Tate: It's a move that's perfect…\n"
 	.string "LIZA: For PSYCHIC Pokémon!\p"
@@ -615,7 +615,7 @@ MossdeepCity_Gym_Text_GymStatue:
 
 MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "MOSSDEEP City Pokémon\p"
-	.string "LIZA AND Tate'S Certified Trainers:\n"
+	.string "LIZA And Tate'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:

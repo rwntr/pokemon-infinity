@@ -251,7 +251,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts:
 	.string "the fine arts.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration:
-	.string "This ART MUSEUM… Well, you could\n"
+	.string "This Art MUSEUM… Well, you could\n"
 	.string "see many fantastic paintings.\p"
 	.string "And the CURATOR is a wonderful person.\p"
 	.string "Among artists like myself, this MUSEUM\n"
@@ -266,7 +266,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable:
 	.string "Just like our little boy!$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings:
-	.string "I'd heard that this ART MUSEUM got\n"
+	.string "I'd heard that this Art MUSEUM got\n"
 	.string "in some new paintings.\p"
 	.string "So, naturally I hurried over.\p"
 	.string "Are the new paintings up on\n"
@@ -285,7 +285,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings:
 	.string "my artwork exhibited here.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination:
-	.string "The ART MUSEUM has become a favorite\n"
+	.string "The Art MUSEUM has become a favorite\n"
 	.string "tourist destination.\p"
 	.string "It's great for LILYCOVE…\n"
 	.string "No, great for the Hoenn region!\p"

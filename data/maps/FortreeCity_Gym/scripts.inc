@@ -263,7 +263,7 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 	.string "This is a gift from me.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
-	.string "TM40 contains AERIAL Ace.\p"
+	.string "TM40 contains Aerial Ace.\p"
 	.string "Its speed…\n"
 	.string "No Pokémon should be able to avoid it.\p"
 	.string "… … … … … …$"

@@ -824,7 +824,7 @@ gTVNameRaterText18::
 	.string "May we meet again.$"
 
 gTVPokemonAnglerText00::
-	.string "{STR_VAR_2} ANGLER\p"
+	.string "{STR_VAR_2} Angler\p"
 	.string "ANNOUNCER: Hello! Today, we'll get tips\n"
 	.string "on fishing for {STR_VAR_2}.\p"
 	.string "GURU, what advice can you give for\n"
@@ -851,7 +851,7 @@ gTVPokemonAnglerText00::
 	.string "good fishing to you all!$"
 
 gTVPokemonAnglerText01::
-	.string "{STR_VAR_2} ANGLER\p"
+	.string "{STR_VAR_2} Angler\p"
 	.string "ANNOUNCER: Hello! Today, we'll get tips\n"
 	.string "on fishing for {STR_VAR_2}.\p"
 	.string "GURU, what advice can you give for\n"
@@ -1853,13 +1853,13 @@ TVSpotTheCuties_Text_RibbonVictory::
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonArtist::
-	.string "The ARTIST Ribbon is especially\n"
+	.string "The Artist Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it for being\n"
 	.string "the model for an artist.\p"
 	.string "It verily draws out the pop-star charm\n"
 	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the ARTIST Ribbon!\n"
+	.string "{STR_VAR_2} and the Artist Ribbon!\n"
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonEffort::

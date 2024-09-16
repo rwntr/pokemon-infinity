@@ -288,7 +288,7 @@ BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble::
 BattleFrontier_Lounge3_Text_ChallengeBattleArena::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be entering the Battle\l"
-	.string "ARENA's Set KO Tourney.\p"
+	.string "Arena's Set KO Tourney.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 

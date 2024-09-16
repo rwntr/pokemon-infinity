@@ -127,7 +127,7 @@ Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
 	.string "Hello!\n"
 	.string "We've been saved by your actions!\p"
 	.string "What I don't understand is what on\n"
-	.string "earth the AQUAS were up to.$"
+	.string "earth the Aquas were up to.$"
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
 	.string "There's a bed…\n"

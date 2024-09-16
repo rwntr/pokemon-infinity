@@ -237,7 +237,7 @@ BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "she uses these three Pokémon:\p"
 	.string "A POISON-type FANG SNAKE Pokémon,\n"
 	.string "a STEEL & GROUND IRON SNAKE Pokémon,\l"
-	.string "and a WATER- & FLYING-type ATROCIOUS\l"
+	.string "and a WATER- & FLYING-type Atrocious\l"
 	.string "Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
@@ -245,10 +245,10 @@ BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
 	.string "One of those top Trainers that SCOTT\n"
 	.string "calls the FRONTIER BRAINS is there.\p"
 	.string "It's this cute Trainer called\n"
-	.string "the ARENA TYCOON that runs the place.$"
+	.string "the Arena TYCOON that runs the place.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
-	.string "Have you battled the ARENA TYCOON\n"
+	.string "Have you battled the Arena TYCOON\n"
 	.string "before?\p"
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
@@ -257,7 +257,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "and a BUG & GHOST SHED Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
-	.string "Have you battled the ARENA TYCOON\n"
+	.string "Have you battled the Arena TYCOON\n"
 	.string "when she's serious?\p"
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
@@ -289,7 +289,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "battle, he's said to use these Pokémon:\p"
 	.string "A FIRE-type LEGENDARY Pokémon,\n"
 	.string "a NORMAL-type LAZY Pokémon,\l"
-	.string "and a WATER-type AURORA Pokémon.$"
+	.string "and a WATER-type Aurora Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::
 	.string "Bet you didn't know this!\p"

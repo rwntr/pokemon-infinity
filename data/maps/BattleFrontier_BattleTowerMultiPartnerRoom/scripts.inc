@@ -1456,7 +1456,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyIntro::
 	.string "Pleased to meet you. I'm {STR_VAR_1}.\n"
-	.string "I consider myself an AROMA LADY.$"
+	.string "I consider myself an Aroma LADY.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon1::
 	.string "I travel with one {STR_VAR_2}\n"

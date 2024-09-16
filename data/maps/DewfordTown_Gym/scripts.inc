@@ -410,7 +410,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"
-	.string "It's a move that raises both ATTACK\n"
+	.string "It's a move that raises both Attack\n"
 	.string "and DEFENSE stats.\p"
 	.string "… … … … … …$"
 

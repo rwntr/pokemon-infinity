@@ -392,7 +392,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
 
 BattleFrontier_BattleArenaLobby_Text_OkayToSave:
 	.string "Before showing you to the Battle\n"
-	.string "ARENA, you must save. Is that okay?$"
+	.string "Arena, you must save. Is that okay?$"
 
 BattleFrontier_BattleArenaLobby_Text_WhichLevelMode:
 	.string "The Battle Arena offers two levels\n"
@@ -480,7 +480,7 @@ BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
 	.string "We have been looking forward to\n"
 	.string "your arrival.\p"
 	.string "Before I show you to the Battle\n"
-	.string "ARENA, I must save the game.\l"
+	.string "Arena, I must save the game.\l"
 	.string "Please wait.$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
@@ -568,7 +568,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules:
 	.string "battle, and what remained at the end.$"
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon:
-	.string "A victory snatched from the ARENA\n"
+	.string "A victory snatched from the Arena\n"
 	.string "TYCOON, and a seven-Trainer sweep!\p"
 	.string "We congratulate you on your most\n"
 	.string "splendid challenge!$"

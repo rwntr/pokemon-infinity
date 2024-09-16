@@ -630,7 +630,7 @@ LilycoveCity_Text_MissingPokemonCameBack:
 	.string "It came back without me noticing!$"
 
 LilycoveCity_Text_ImArtDealer:
-	.string "I'm an ART DEALER.\p"
+	.string "I'm an Art DEALER.\p"
 	.string "I am a buyer and seller of fine art,\n"
 	.string "especially paintings.\p"
 	.string "I've heard that the MUSEUM here has\n"

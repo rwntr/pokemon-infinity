@@ -1340,7 +1340,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "The door at the left leads to\n"
 	.string "the SPEED ROOM.\p"
 	.string "The door at the right leads to\n"
-	.string "the ACCURACY ROOM.\p"
+	.string "the Accuracy ROOM.\p"
 	.string "The room's name will be on\n"
 	.string "the door, so choose carefully.\p"
 	.string "Once you've chosen the door…\n"
@@ -1402,7 +1402,7 @@ PetalburgCity_Gym_Text_GeorgeIntro:
 
 PetalburgCity_Gym_Text_GeorgeDefeat:
 	.string "I couldn't restore HP enough…\n"
-	.string "What ATTACK power…$"
+	.string "What Attack power…$"
 
 PetalburgCity_Gym_Text_GeorgePostBattle:
 	.string "I should have expected no less from\n"
@@ -1442,7 +1442,7 @@ PetalburgCity_Gym_Text_BerkePostBadge:
 
 PetalburgCity_Gym_Text_MaryIntro:
 	.string "Giggle…\n"
-	.string "This is the ACCURACY ROOM.\p"
+	.string "This is the Accuracy ROOM.\p"
 	.string "It's pretty nasty when every attack\n"
 	.string "lands without fail.$"
 
@@ -1454,7 +1454,7 @@ PetalburgCity_Gym_Text_MaryPostBattle:
 	.string "Trainers waiting for you.\p"
 	.string "The left is the DEFENSE ROOM, and\n"
 	.string "the right is the RECOVERY ROOM.\p"
-	.string "Your Pokémon's ATTACK power will be\n"
+	.string "Your Pokémon's Attack power will be\n"
 	.string "on trial either way.$"
 
 PetalburgCity_Gym_Text_MaryPostBadge:
@@ -1519,7 +1519,7 @@ PetalburgCity_Gym_Text_DoorAppearsLocked2:
 	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterAccuracyRoom:
-	.string "“ACCURACY ROOM,” the sign says.\p"
+	.string "“Accuracy ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:

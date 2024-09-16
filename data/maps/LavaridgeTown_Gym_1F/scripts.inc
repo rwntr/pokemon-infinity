@@ -348,7 +348,7 @@ LavaridgeTown_Gym_1F_Text_ExplainOverheat:
 	.string "That TM50 contains OVERHEAT.\p"
 	.string "That move inflicts serious damage on\n"
 	.string "the opponent.\p"
-	.string "But it also sharply cuts the SP. ATK\n"
+	.string "But it also sharply cuts the SP. Atk\n"
 	.string "of the Pokémon using it. It might not\l"
 	.string "be suitable for longer battles.$"
 

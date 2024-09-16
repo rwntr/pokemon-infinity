@@ -666,11 +666,11 @@ BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
 	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
-	.string "Raises the stat ATTACK of one\n"
+	.string "Raises the stat Attack of one\n"
 	.string "Pokémon.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc::
-	.string "Raises the stat SP. ATK of one\n"
+	.string "Raises the stat SP. Atk of one\n"
 	.string "Pokémon.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
