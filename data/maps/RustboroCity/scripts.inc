@@ -1129,15 +1129,15 @@ RustboroCity_Text_PleaseComeWithMe:
 
 RustboroCity_Text_MayHiLetsRegister:
 	.string "May: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "You had a MATCH Call feature put\n"
+	.string "You had a Match Call feature put\n"
 	.string "on your Pokénav!\p"
 	.string "Let's register each other so we can\n"
 	.string "contact one another anytime!\p"
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "Registered MAY\n"
-	.string "in the POKéNAV.$"
+	.string "Registered May\n"
+	.string "in the Pokénav.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "MAY: Oh, by the way, I passed\n"
@@ -1176,7 +1176,7 @@ RustboroCity_Text_MayMrBrineyHint:
 
 RustboroCity_Text_BrendanHiLetsRegister:
 	.string "Brendan: Oh, hey, {PLAYER}!\p"
-	.string "You had a MATCH Call feature put\n"
+	.string "You had a Match Call feature put\n"
 	.string "on your Pokénav! Cool!\p"
 	.string "Let's register each other so we can\n"
 	.string "get in touch anytime!\p"
@@ -1265,8 +1265,8 @@ RustboroCity_Text_DevelopedNewPokenavFeature:
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 	.string "There you go, {PLAYER}!\p"
 	.string "I added a new feature named\n"
-	.string "MATCH Call to your Pokénav.\p"
-	.string "Using the MATCH Call feature,\n"
+	.string "Match Call to your Pokénav.\p"
+	.string "Using the Match Call feature,\n"
 	.string "you can chat with people who have\l"
 	.string "been registered in your POKéNAV.\p"
 	.string "{PLAYER}, our PRESIDENT STONE should\n"

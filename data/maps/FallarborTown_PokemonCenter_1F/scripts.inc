@@ -101,7 +101,7 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
 	.string "I wonder what POKéMON looked like\n"
 	.string "long, long ago?\p"
-	.string "Maybe the Fossil MANIAC at the edge\n"
+	.string "Maybe the Fossil Maniac at the edge\n"
 	.string "of town will know.$"
 
 FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees:

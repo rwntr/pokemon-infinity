@@ -27,7 +27,7 @@ MtPyre_1F_EventScript_Man::
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
 	.string "All sorts of beings wander the slopes\n"
-	.string "of MT. PYRE…\p"
+	.string "of Mt. PYRE…\p"
 	.string "There is no telling what may happen.\n"
 	.string "Take this. It's for your own good.$"
 

@@ -7,7 +7,7 @@ gContestPaintingContest::
 	.string "CONTEST$"
 
 gContestRankNormal::
-	.string "NORMAL RANK$"
+	.string "Normal Rank$"
 
 gContestRankSuper::
 	.string "SUPER RANK$"

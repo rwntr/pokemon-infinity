@@ -399,8 +399,8 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "is our gift to our wonderful TRAINER!$"
 
 Route116_Text_NewBallAvailableAtMart:
-	.string "Our new POKé BALL will be available\n"
-	.string "at the POKéMON MART in RUSTBORO.\p"
+	.string "Our new Poké Ball will be available\n"
+	.string "at the Pokémon Mart in Rustboro.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
 

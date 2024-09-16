@@ -45,7 +45,7 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "Oh, wow, you have a POKéNAV!\n"
 	.string "And it's just like mine!\p"
 	.string "Do you know about Pokénav's\n"
-	.string "MATCH Call system?\p"
+	.string "Match Call system?\p"
 	.string "Access it, and you can chat with\n"
 	.string "registered TRAINERS anytime.\p"
 	.string "It also shows you which TRAINERS\n"

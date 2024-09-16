@@ -994,8 +994,8 @@ SlateportCity_Text_BushedHikingFromMauville:
 	.string "my Bike here.$"
 
 SlateportCity_Text_EveryoneCallsHimCaptStern:
-	.string "STERN, the fellow who built the\n"
-	.string "MUSEUM, also happens to be the leader\l"
+	.string "Stern, the fellow who built the\n"
+	.string "Museum, also happens to be the leader\l"
 	.string "of an undersea exploration team.\p"
 	.string "So, everyone calls him CAPT. STERN.$"
 
@@ -1005,7 +1005,7 @@ SlateportCity_Text_WhatsLongLineOverThere:
 
 SlateportCity_Text_VisitedMuseumOften:
 	.string "When I was a child, I visited\n"
-	.string "the MUSEUM often.\p"
+	.string "the Museum often.\p"
 	.string "I used to dream about the mysteries of\n"
 	.string "the sea after seeing the exhibits.$"
 
@@ -1021,7 +1021,7 @@ SlateportCity_Text_AquaHasPolicy:
 SlateportCity_Text_BossIsBrilliant:
 	.string "Our Boss is brilliant.\p"
 	.string "What would he want to do with\n"
-	.string "a MUSEUM now?$"
+	.string "a Museum now?$"
 
 SlateportCity_Text_WhatsNewSchemeIWonder:
 	.string "What's the new scheme, I wonder?\p"
@@ -1030,7 +1030,7 @@ SlateportCity_Text_WhatsNewSchemeIWonder:
 
 SlateportCity_Text_ShouldTakeItAll:
 	.string "If there's something we need in\n"
-	.string "the MUSEUM, we should take it all!$"
+	.string "the Museum, we should take it all!$"
 
 SlateportCity_Text_DontButtIn:
 	.string "Hey, you there!\n"
@@ -1088,8 +1088,8 @@ SlateportCity_Text_BuyTooMuch:
 	.string "away and buy too much.$"
 
 SlateportCity_Text_GetNameRaterToHelpYou:
-	.string "If you want to change your POKéMON's\n"
-	.string "nickname, you'll have to get the NAME\l"
+	.string "If you want to change your Pokémon's\n"
+	.string "nickname, you'll have to get the Name\l"
 	.string "RATER to help you.$"
 
 SlateportCity_Text_CantChangeTradeMonName:
@@ -1233,7 +1233,7 @@ SlateportCity_Text_CitySign:
 	.string "cross paths.”$"
 
 SlateportCity_Text_MarketSign:
-	.string "SLATEPORT MARKET\n"
+	.string "Slateport Market\n"
 	.string "“Unique items found nowhere else!”$"
 
 SlateportCity_Text_HarborFerryUnderConstruction:
@@ -1249,8 +1249,8 @@ SlateportCity_Text_HarborSign:
 	.string "the ferry S.S. TIDAL.”$"
 
 SlateportCity_Text_NameRatersHouseSign:
-	.string "NAME RATER'S HOUSE\n"
-	.string "“POKéMON nicknames rated.”$"
+	.string "Name RATER'S House\n"
+	.string "“Pokémon nicknames rated.”$"
 
 SlateportCity_Text_ExplainBerries:
 	.string "If a wild POKéMON gets hurt, it heals\n"

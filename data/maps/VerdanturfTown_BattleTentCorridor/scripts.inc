@@ -70,5 +70,5 @@ VerdanturfTown_ContestHall_Text_MyMonRules:
 @ Unused
 VerdanturfTown_ContestHall_Text_NormalRankStage:
 	.string "Pokémon Contests\n"
-	.string "NORMAL Rank Stage!$"
+	.string "Normal Rank Stage!$"
 

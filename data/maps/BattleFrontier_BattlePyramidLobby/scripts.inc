@@ -827,8 +827,8 @@ BattleFrontier_BattlePyramidLobby_Text_HintStoneEvolve:
 	.string "from those three powers…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintNormal:
-	.string "I see NORMAL-type POKéMON…\p"
-	.string "…And, I see your POKéMON suffering\n"
+	.string "I see Normal-type Pokémon…\p"
+	.string "…And, I see your Pokémon suffering\n"
 	.string "from enormously powerful moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_BelieveMyFortunesOrNot:

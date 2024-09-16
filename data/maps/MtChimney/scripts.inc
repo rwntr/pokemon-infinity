@@ -542,7 +542,7 @@ MtChimney_EventScript_SawyerRematch::
 	end
 
 MtChimney_Text_MeteoriteWillActivateVolcano:
-	.string "The power contained in the METEORITE…\p"
+	.string "The power contained in the Meteorite…\p"
 	.string "By amplifying its power with this\n"
 	.string "machine, MT. CHIMNEY's volcanic\l"
 	.string "activity will instantly intensify…\p"
@@ -588,15 +588,15 @@ MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
 	.string "But don't think that this is the last\n"
 	.string "you've seen of TEAM MAGMA.\p"
 	.string "Fufufu…\p"
-	.string "Even without the METEORITE, if we\n"
-	.string "obtain that ORB… Fufufu…$"
+	.string "Even without the Meteorite, if we\n"
+	.string "obtain that Orb… Fufufu…$"
 
 MtChimney_Text_TabithaIntro:
 	.string "Hehehe!\p"
 	.string "So you've come all the way here!\p"
 	.string "But you're too late!\n"
-	.string "I've already delivered the METEORITE\l"
-	.string "from METEOR FALLS to the Boss!$"
+	.string "I've already delivered the Meteorite\l"
+	.string "from Meteor Falls to the Boss!$"
 
 MtChimney_Text_TabithaDefeat:
 	.string "Hehehe…\p"
@@ -605,7 +605,7 @@ MtChimney_Text_TabithaDefeat:
 
 MtChimney_Text_TabithaPostBattle:
 	.string "Boss, hurry!\n"
-	.string "Give it the METEORITE's energy!\p"
+	.string "Give it the Meteorite's energy!\p"
 	.string "Hehehe…$"
 
 MtChimney_Text_Grunt2Intro:
@@ -642,7 +642,7 @@ MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
 	.string "They always mess with our plans!$"
 
 MtChimney_Text_MeteoritesPackAmazingPower:
-	.string "METEORITES pack amazing power!$"
+	.string "Meteorites pack amazing power!$"
 
 MtChimney_Text_YouBetterNotMessWithUs:
 	.string "You'd better not mess with us!\p"
@@ -671,7 +671,7 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "See for yourself what the fanatics\n"
 	.string "of TEAM MAGMA are up to!\p"
 	.string "They're trying to inject the stolen\n"
-	.string "METEORITE's power into the volcano!\p"
+	.string "Meteorite's power into the volcano!\p"
 	.string "Doing something like that will cause\n"
 	.string "the volcano's eruption!$"
 
@@ -727,22 +727,22 @@ MtChimney_Text_OhFineThen:
 	.string "Oh, fine then.$"
 
 MtChimney_Text_MetoriteFittedOnMachine:
-	.string "A METEORITE is fitted on a mysterious\n"
+	.string "A Meteorite is fitted on a mysterious\n"
 	.string "machine…\p"
 	.string "The machine seems to be storing\n"
-	.string "energy in the METEORITE.$"
+	.string "energy in the Meteorite.$"
 
 MtChimney_Text_RemoveTheMeteorite:
-	.string "A METEORITE is fitted on a mysterious\n"
+	.string "A Meteorite is fitted on a mysterious\n"
 	.string "machine…\p"
-	.string "Do you want to remove the METEORITE?$"
+	.string "Do you want to remove the Meteorite?$"
 
 MtChimney_Text_PlayerRemovedMeteorite:
-	.string "{PLAYER} removed the METEORITE from\n"
+	.string "{PLAYER} removed the Meteorite from\n"
 	.string "the mysterious machine.$"
 
 MtChimney_Text_PlayerLeftMeteorite:
-	.string "{PLAYER} left the METEORITE where\n"
+	.string "{PLAYER} left the Meteorite where\n"
 	.string "it was.$"
 
 MtChimney_Text_MachineMakesNoResponse:
