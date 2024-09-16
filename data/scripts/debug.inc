@@ -254,13 +254,13 @@ DebugScript_DaycareMonsNotCompatible::
 	end
 
 DebugText_DaycareNoPokemon:
-	.string "You have no Pokémon at Daycare.$"
+	.string "You have no Pokémon at Day Care.$"
 
 DebugText_DaycareOnePokemon:
-	.string "You have only one Pokémon at Daycare.$"
+	.string "You have only one Pokémon at Day Care.$"
 
 DebugText_DaycarePokemonNotCompatible:
-	.string "Your Pokémon at Daycare can't\nhave babies together!$"
+	.string "Your Pokémon at Day Care can't\nhave babies together!$"
 
 Debug_ShowExpansionVersion::
 	callnative BufferExpansionVersion

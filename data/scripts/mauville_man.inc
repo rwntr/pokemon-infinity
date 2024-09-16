@@ -747,7 +747,7 @@ MauvilleCity_PokemonCenter_1F_Text_WonLotteryStory::
 	.string "to trade Pokémon with!$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle::
-	.string "The Daycare-Using Trainer$"
+	.string "The Day Care-Using Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedDaycareAction::
 	.string "Left Pokémon at the Daycare$"
@@ -756,7 +756,7 @@ MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory::
 	.string "This is a tale of a Trainer\n"
 	.string "named {STR_VAR_3}.\p"
 	.string "This Trainer left Pokémon with the\n"
-	.string "Daycare {STR_VAR_1} times!\p"
+	.string "Day Care {STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must be a real go-getter\n"
 	.string "who raises Pokémon aggressively!$"
 
