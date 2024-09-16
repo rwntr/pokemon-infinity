@@ -708,13 +708,13 @@ BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop:
 	.string "Dusclops, stop that!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic:
-	.string "Kirlia used TOXIC!$"
+	.string "Kirlia used Toxic!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis:
 	.string "Kirlia used Hypnosis!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave:
-	.string "Kirlia used THUNDER WAVE!$"
+	.string "Kirlia used Thunder WAVE!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp:
 	.string "Kirlia used WILL-O-WISP!$"
@@ -731,11 +731,11 @@ BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia:
 	.string "I must apologize to you…\p"
-	.string "My Kirlia has a TIMID nature…$"
+	.string "My Kirlia has a Timid nature…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops:
 	.string "I must apologize to you…\p"
-	.string "My Dusclops has a TIMID nature…$"
+	.string "My Dusclops has a Timid nature…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled:
 	.string "It attacks without warning if it is\n"

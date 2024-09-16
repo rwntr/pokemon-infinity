@@ -293,7 +293,7 @@ SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
 	.string "What are you doing here?\p"
 	.string "Me? I'm the Team Aqua member\n"
 	.string "you thumped before, remember?\l"
-	.string "Back in Rusturf TUNNEL?\p"
+	.string "Back in Rusturf Tunnel?\p"
 	.string "Here, take this!\n"
 	.string "You have to forgive me!$"
 

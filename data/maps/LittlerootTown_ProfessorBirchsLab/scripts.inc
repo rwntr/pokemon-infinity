@@ -912,9 +912,9 @@ LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
 	.string "Prof. Birch: The WATER Pokémon\n"
-	.string "TOTODILE is your choice!\p"
+	.string "Totodile is your choice!\p"
 	.string "You know how to pick a good one.\p"
-	.string "So, you'll take the TOTODILE?$"
+	.string "So, you'll take the Totodile?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
 	.string "Prof. Birch: The Grass Pokémon\n"
@@ -988,7 +988,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Beep!\p"
 	.string "Scott: Hi, hi, {PLAYER}!\n"
 	.string "It's me, Scott.\p"
-	.string "I'm aboard the S.S. TIDAL now.\n"
+	.string "I'm aboard the S.S. Tidal now.\n"
 	.string "It feels great to be on the sea!\p"
 	.string "By the way…\p"
 	.string "There's this place that I'd like to\n"

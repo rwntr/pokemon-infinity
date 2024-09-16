@@ -377,7 +377,7 @@ BattleFrontier_OutsideEast_Text_GotWipedOut:
 BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower:
 	.string "This guy ran into a horribly tough\n"
 	.string "Trainer while he was on the Battle\l"
-	.string "TOWER challenge.\p"
+	.string "Tower challenge.\p"
 	.string "Now look at him…\p"
 	.string "You need to be cautious if you ever\n"
 	.string "decide to go to the Battle Tower.$"

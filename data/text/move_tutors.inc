@@ -119,9 +119,9 @@ MoveTutor_Text_SleepTalkTeach:
 	.string "Humph! My wife relies on Hidden\n"
 	.string "Power to stay awake.\p"
 	.string "She should just take a nap like I do,\n"
-	.string "and Sleep TALK.\p"
+	.string "and Sleep Talk.\p"
 	.string "I can teach your Pokémon how to\n"
-	.string "Sleep TALK instead. Interested?$"
+	.string "Sleep Talk instead. Interested?$"
 
 MoveTutor_Text_SleepTalkDeclined:
 	.string "Oh, fine, fine. You want to stay awake\n"
@@ -135,7 +135,7 @@ MoveTutor_Text_SleepTalkTaught:
 	.string "I've never once gotten my wife's\n"
 	.string "coin trick right.\p"
 	.string "I would be happy if I got it right\n"
-	.string "even as I Sleep TALK…$"
+	.string "even as I Sleep Talk…$"
 
 MoveTutor_Text_SubstituteTeach:
 	.string "When I see the wide world from up\n"

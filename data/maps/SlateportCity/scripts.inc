@@ -1239,14 +1239,14 @@ SlateportCity_Text_SternsShipyardWantedSign:
 
 SlateportCity_Text_SternsShipyardNearsCompletion:
 	.string "Stern's Shipyard\p"
-	.string "“The ferry S.S. TIDAL nears\n"
+	.string "“The ferry S.S. Tidal nears\n"
 	.string "completion for serving the ports of\l"
 	.string "Slateport and Lilycove.”$"
 
 SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "Stern's Shipyard\p"
 	.string "“Boarding of the Slateport-Lilycove\n"
-	.string "ferry S.S. TIDAL is handled at the\l"
+	.string "ferry S.S. Tidal is handled at the\l"
 	.string "Harbor.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
@@ -1269,7 +1269,7 @@ SlateportCity_Text_MarketSign:
 
 SlateportCity_Text_HarborFerryUnderConstruction:
 	.string "Slateport Harbor\p"
-	.string "“The ferry S.S. TIDAL is under\n"
+	.string "“The ferry S.S. Tidal is under\n"
 	.string "construction in the Shipyard.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
@@ -1277,7 +1277,7 @@ SlateportCity_Text_HarborFerryUnderConstruction:
 SlateportCity_Text_HarborSign:
 	.string "Slateport Harbor\p"
 	.string "“Enjoy a delightful cruise on\n"
-	.string "the ferry S.S. TIDAL.”$"
+	.string "the ferry S.S. Tidal.”$"
 
 SlateportCity_Text_NameRatersHouseSign:
 	.string "Name Rater'S House\n"

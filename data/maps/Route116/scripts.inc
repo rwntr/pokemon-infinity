@@ -447,16 +447,16 @@ Route116_Text_RouteSignRustboro:
 	.string "{LEFT_ARROW} Rustboro City$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "Rusturf TUNNEL\n"
+	.string "Rusturf Tunnel\n"
 	.string "“Linking Rustboro and VERDANTURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 
 Route116_Text_TunnelersRestHouse:
-	.string "TUNNELER'S Rest House$"
+	.string "Tunneler'S Rest House$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "If you want to stop a Pokémon from\n"
 	.string "evolving, press the B Button while it\l"
 	.string "is trying to evolve.\l"
@@ -464,7 +464,7 @@ Route116_Text_TrainerTipsBToStopEvolution:
 	.string "This is called an evolution cancel.$"
 
 Route116_Text_TrainerTipsBagHasPockets:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "Your Bag has several Pockets.\p"
 	.string "Items you obtain are automatically\n"
 	.string "placed in the appropriate Pockets.\p"

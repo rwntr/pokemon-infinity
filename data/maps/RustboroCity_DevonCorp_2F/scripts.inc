@@ -285,7 +285,7 @@ RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 	.string "Poké Balls!\p"
 	.string "The Repeat Ball makes it easier to\n"
 	.string "catch Pokémon you've caught before.\p"
-	.string "The TIMER Ball gets better at catching\n"
+	.string "The Timer Ball gets better at catching\n"
 	.string "Pokémon the longer a battle runs.\p"
 	.string "Both are proudly developed by\n"
 	.string "the Devon Corporation.\p"

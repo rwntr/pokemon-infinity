@@ -668,7 +668,7 @@ Route111_Text_OldLadysRestStopSign:
 	.string "“Come in and rest your tired bones.”$"
 
 Route111_Text_TrainerTipsSpAtkSpDef:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "One of the indicators of a Pokémon's\n"
 	.string "powerfulness is Sp. Atk. It stands for\l"
 	.string "“Special Attack.”\p"
@@ -680,7 +680,7 @@ Route111_Text_ShouldBeMirageTowerAroundHere:
 	.string "around here somewhere.\p"
 	.string "But for some reason, it can be seen\n"
 	.string "sometimes, and sometimes not.\p"
-	.string "That's why I call it the Mirage TOWER.$"
+	.string "That's why I call it the Mirage Tower.$"
 
 Route111_Text_MirageTowerClearlyVisible:
 	.string "I see it!\n"
@@ -704,7 +704,7 @@ Route111_Text_MirageTowerHasntBeenSeenSince:
 	.string "Since I spoke to you, the tower of sand\n"
 	.string "hasn't been seen.\p"
 	.string "Perhaps it really was\n"
-	.string "the Mirage TOWER…$"
+	.string "the Mirage Tower…$"
 
 Route111_Text_ClawFossilDisappeared:
 	.string "The Claw Fossil disappeared into\n"

@@ -163,7 +163,7 @@ BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
 	.string "When she's battling flat out,\n"
 	.string "she apparently uses these Pokémon:\p"
 	.string "A Dragon & Psychic Eon Pokémon,\n"
-	.string "an Electric-type THUNDER Pokémon,\l"
+	.string "an Electric-type Thunder Pokémon,\l"
 	.string "and a Normal-type Sleeping Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
@@ -228,7 +228,7 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "she uses these three Pokémon:\p"
 	.string "A Poison-type Fang Snake Pokémon,\n"
 	.string "a Bug & Rock Mold Pokémon,\l"
-	.string "and a WATER-type TENDER Pokémon.$"
+	.string "and a WATER-type Tender Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "Have you battled the Pike Queen\n"
@@ -245,10 +245,10 @@ BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
 	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this cute Trainer called\n"
-	.string "the Arena TYCOON that runs the place.$"
+	.string "the Arena Tycoon that runs the place.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
-	.string "Have you battled the Arena TYCOON\n"
+	.string "Have you battled the Arena Tycoon\n"
 	.string "before?\p"
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
@@ -257,7 +257,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "and a Bug & Ghost Shed Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
-	.string "Have you battled the Arena TYCOON\n"
+	.string "Have you battled the Arena Tycoon\n"
 	.string "when she's serious?\p"
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
@@ -280,7 +280,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
 	.string "spirit, he's said to use these Pokémon:\p"
 	.string "A Poison & Flying-type Bat Pokémon,\n"
 	.string "a Normal-type LAZY Pokémon, and a\l"
-	.string "WATER- & Ice-type TRANSPORT Pokémon.$"
+	.string "WATER- & Ice-type Transport Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "Have you battled the Palace Maven\n"

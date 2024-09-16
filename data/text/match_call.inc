@@ -1035,7 +1035,7 @@ MatchCall_PersonalizedText34::
 	.string "I never was much for getting all\n"
 	.string "stressed or rushing things.\p"
 	.string "But wouldn't you know it,\n"
-	.string "I'm now a TRIATHLETE.\p"
+	.string "I'm now a Triathlete.\p"
 	.string "You just can't tell where life will\n"
 	.string "take you, if you get my drift.\p"
 	.string "You're a Trainer now, but who\n"
@@ -2365,7 +2365,7 @@ MatchCall_Text_May3::
 
 MatchCall_Text_May4::
 	.string "May: {PLAYER}{KUN}?\p"
-	.string "Rusturf TUNNEL…\n"
+	.string "Rusturf Tunnel…\n"
 	.string "They named it that because it\l"
 	.string "joins Rustboro and VERDANTURF.$"
 
@@ -2380,7 +2380,7 @@ MatchCall_Text_May5::
 MatchCall_Text_May6::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
 	.string "Did you know about the Mirage\n"
-	.string "TOWER in the desert?\p"
+	.string "Tower in the desert?\p"
 	.string "They say, like a mirage, it seems\n"
 	.string "to mysteriously come and go.\p"
 	.string "I wish I could see it.$"
@@ -2491,7 +2491,7 @@ MatchCall_Text_Brendan3::
 
 MatchCall_Text_Brendan4::
 	.string "Brendan: This voice… {PLAYER}?\p"
-	.string "They gave Rusturf TUNNEL its name\n"
+	.string "They gave Rusturf Tunnel its name\n"
 	.string "because it joins Rustboro and\l"
 	.string "VERDANTURF.\p"
 	.string "Did you know that?$"
@@ -2507,7 +2507,7 @@ MatchCall_Text_Brendan5::
 MatchCall_Text_Brendan6::
 	.string "Brendan: Hey, {PLAYER}!\p"
 	.string "Did you know about the Mirage\n"
-	.string "TOWER in the desert?\p"
+	.string "Tower in the desert?\p"
 	.string "They say, like a mirage, it can be\n"
 	.string "seen only sometimes.\p"
 	.string "I'd like to see that!$"
@@ -2595,7 +2595,7 @@ MatchCall_Text_Wally1::
 
 MatchCall_Text_Wally2::
 	.string "WALLY: {PLAYER}, hello!\p"
-	.string "After Rusturf TUNNEL went\n"
+	.string "After Rusturf Tunnel went\n"
 	.string "through, WANDA's been very happy!$"
 
 MatchCall_Text_Wally3::
@@ -2889,7 +2889,7 @@ MatchCall_Text_MrStone3::
 MatchCall_Text_MrStone4::
 	.string "Mr. Stone: Oh! {PLAYER}{KUN}!\p"
 	.string "Did you know that Devon was\n"
-	.string "digging the Rusturf TUNNEL?\p"
+	.string "digging the Rusturf Tunnel?\p"
 	.string "But we shut down the operation to\n"
 	.string "protect the Pokémon in the area.\p"
 	.string "It's a no-brainer, really.\p"

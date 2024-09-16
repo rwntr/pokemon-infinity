@@ -310,10 +310,10 @@ FallarborTown_BattleTentLobby_Text_MakeThinkImJustKid:
 	.string "the title!$"
 
 FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
-	.string "You know how Battle TENTS offer\n"
+	.string "You know how Battle Tents offer\n"
 	.string "different events in different towns?\p"
 	.string "My favorite is definitely the Battle\n"
-	.string "TENT in Fallarbor Town.\p"
+	.string "Tent in Fallarbor Town.\p"
 	.string "I think it's fantastic how Trainers\n"
 	.string "try to win with all their faith in\l"
 	.string "their Pokémon.$"

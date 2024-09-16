@@ -401,7 +401,7 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 	.string "Mr. Briney.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
-	.string "Dad: Hm, a TICKET for a ferry?\p"
+	.string "Dad: Hm, a Ticket for a ferry?\p"
 	.string "If I recall, there are ferry ports in\n"
 	.string "Slateport and Lilycove.$"
 

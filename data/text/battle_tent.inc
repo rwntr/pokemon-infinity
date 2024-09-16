@@ -34,7 +34,7 @@ FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
 
 FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
 	.string "Before showing you to the Battle\n"
-	.string "TENT, I must save. Is that okay?$"
+	.string "Tent, I must save. Is that okay?$"
 
 @ Unused
 FallarborTown_BattleTentLobby_Text_WhichLevelMode:

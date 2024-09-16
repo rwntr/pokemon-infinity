@@ -605,7 +605,7 @@ Route119_Text_WeatherInstitute:
 	.string "Weather Institute$"
 
 Route119_Text_TrainerTipsDecoration:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "Up to sixteen decorations and\n"
 	.string "furniture items can be placed in\l"
 	.string "a Secret Base.\p"

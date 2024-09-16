@@ -939,14 +939,14 @@ Route110_Text_MauvilleCitySign:
 	.string "{UP_ARROW} Mauville City$"
 
 Route110_Text_TrainerTipsPrlzSleep:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "The foe can be made helpless by\n"
 	.string "paralyzing it or causing it to sleep.\p"
 	.string "It is an important technique for\n"
 	.string "Pokémon battles.$"
 
 Route110_Text_TrainerTipsRegisterItems:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "The items in the Bag can be reorganized\n"
 	.string "by pressing Select.$"
 
@@ -955,12 +955,12 @@ Route110_Text_TrickHouseSign:
 	.string "to reach the wondrous Trick House.”$"
 
 Route110_Text_BestRecord:
-	.string "THE BEST Record TO DATE…\p"
+	.string "THE BEST RECORD TO DATE…\p"
 	.string "No. of collisions: {STR_VAR_1}\p"
 	.string "Elapsed time: {STR_VAR_2}$"
 
 Route110_Text_ThereIsNoRecord:
-	.string "THE BEST Record TO DATE…\p"
+	.string "THE BEST RECORD TO DATE…\p"
 	.string "No one seems to have taken the\n"
 	.string "challenge. There is no record…$"
 

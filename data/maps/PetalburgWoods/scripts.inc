@@ -457,7 +457,7 @@ PetalburgWoods_Text_MiracleSeedExplanation:
 	.string "to hold.$"
 
 PetalburgWoods_Text_TrainerTipsExperience:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "Any Pokémon that appears even once\n"
 	.string "in a battle is awarded Exp Points.\p"
 	.string "To raise a weak Pokémon, put it at the\n"
@@ -467,7 +467,7 @@ PetalburgWoods_Text_TrainerTipsExperience:
 	.string "being exposed to any harm.$"
 
 PetalburgWoods_Text_TrainerTipsPP:
-	.string "Trainer TIPS\p"
+	.string "Trainer Tips\p"
 	.string "In addition to Hit Points (HP), Pokémon\n"
 	.string "have Power Points (PP) that are used to\l"
 	.string "make moves during battle.\p"
