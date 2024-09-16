@@ -447,8 +447,8 @@ BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo:
 	.string "I'll bring my mother out to see this.$"
 
 BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier:
-	.string "I've finally arrived at the BATTLE\n"
-	.string "FRONTIER!\p"
+	.string "I've finally arrived at the Battle\n"
+	.string "Frontier!\p"
 	.string "I'm sure to grab attention with\n"
 	.string "my looks and ability!$"
 

@@ -72,13 +72,13 @@ FallarborTown_Text_Azurill:
 	.string "Azurill: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
-	.string "Have you already challenged FLANNERY,\n"
-	.string "the LEADER of LAVARIDGE GYM?\p"
+	.string "Have you already challenged Flannery,\n"
+	.string "the LEADER of Lavaridge?\p"
 	.string "The girl's grandfather was famous.\n"
-	.string "He was one of the Elite FOUR in the\l"
+	.string "He was one of the Elite Four in the\l"
 	.string "Pokémon League at one point.\p"
-	.string "It wouldn't surprise me to see FLANNERY\n"
-	.string "become a great TRAINER in her own\l"
+	.string "It wouldn't surprise me to see Flannery\n"
+	.string "become a great Trainer in her own\l"
 	.string "right.$"
 
 FallarborTown_Text_BattleTentSign:

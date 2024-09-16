@@ -1072,8 +1072,8 @@ BattleFrontier_BattleTowerLobby_Text_ShowYouToBattleRoom:
 	.string "{STR_VAR_1} BATTLE ROOM.$"
 
 BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
-	.string "Shall I record your last BATTLE TOWER\n"
-	.string "match on your FRONTIER PASS?$"
+	.string "Shall I record your last Battle Tower\n"
+	.string "match on your Frontier PASS?$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:

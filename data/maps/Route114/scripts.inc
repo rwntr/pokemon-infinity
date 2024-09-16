@@ -194,7 +194,7 @@ Route114_Text_MeteorFallsSign:
 	.string "RUSTBORO CITY THROUGH HERE$"
 
 Route114_Text_FossilManiacsHouseSign:
-	.string "FOSSIL MANIAC'S HOUSE\n"
+	.string "Fossil MANIAC'S House\n"
 	.string "“Fossils gratefully accepted!”$"
 
 Route114_Text_LanettesHouse:

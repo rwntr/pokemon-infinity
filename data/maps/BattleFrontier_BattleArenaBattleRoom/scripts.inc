@@ -545,7 +545,7 @@ BattleFrontier_BattleArenaBattleRoom_Text_SavingPleaseWait:
 
 BattleFrontier_BattleArenaBattleRoom_Text_RecordLastBattle:
 	.string "Would you like to record your last\n"
-	.string "battle on your FRONTIER PASS?$"
+	.string "battle on your Frontier PASS?$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_NowFaceTycoon:
 	.string "My dear challenger!\p"
@@ -586,11 +586,11 @@ BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureToughAfterAll:
 	.string "GRETA: Ow, wait a second!\n"
 	.string "You are tough after all!\p"
 	.string "I like you!\n"
-	.string "Let's see your FRONTIER PASS.$"
+	.string "Let's see your Frontier PASS.$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol:
 	.string "The Guts Symbol was embossed on\n"
-	.string "the FRONTIER PASS!$"
+	.string "the Frontier PASS!$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime:
 	.string "Hmm…\p"
@@ -618,7 +618,7 @@ BattleFrontier_BattleArenaBattleRoom_Text_LetsGetThisStarted:
 
 BattleFrontier_BattleArenaBattleRoom_Text_GretaBlownAway:
 	.string "GRETA: Gaaah! Blown away!\n"
-	.string "Let's see your FRONTIER PASS!$"
+	.string "Let's see your Frontier PASS!$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GutsSymbolTookGoldenShine:
 	.string "The Guts Symbol took on\n"

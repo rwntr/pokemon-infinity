@@ -53,8 +53,8 @@ LavaridgeTown_HerbShop_Text_ExplainCharcoal:
 	.string "That Charcoal I gave you, it's used\n"
 	.string "for making herbal medicine.\p"
 	.string "It also does wonders when held by\n"
-	.string "a POKéMON.\p"
-	.string "It intensifies the power of FIRE-type\n"
+	.string "a Pokémon.\p"
+	.string "It intensifies the power of Fire-type\n"
 	.string "moves.$"
 
 LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:

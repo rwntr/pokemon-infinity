@@ -31,8 +31,8 @@ Route114_FossilManiacsHouse_EventScript_Bookshelf::
 	end
 
 Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother:
-	.string "My big brother's the FOSSIL MANIAC…\n"
-	.string "He's a nice guy who loves FOSSILS…\p"
+	.string "My big brother's the Fossil MANIAC…\n"
+	.string "He's a nice guy who loves Fossils…\p"
 	.string "He loves digging holes, too…\n"
 	.string "He dug this hole by himself…\p"
 	.string "You can have this, so you can Dig\n"
