@@ -615,7 +615,7 @@ MossdeepCity_Gym_Text_GymStatue:
 
 MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "Mossdeep City Pokémon\p"
-	.string "Liza And Tate'S Certified Trainers:\n"
+	.string "Liza And Tate's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:

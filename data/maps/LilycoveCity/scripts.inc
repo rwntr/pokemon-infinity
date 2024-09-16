@@ -715,7 +715,7 @@ LilycoveCity_Text_DepartmentStoreSign:
 	.string "you need!”$"
 
 LilycoveCity_Text_MoveDeletersHouseSign:
-	.string "Move Deleter'S House\p"
+	.string "Move Deleter's House\p"
 	.string "“Unwanted Pokémon moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:

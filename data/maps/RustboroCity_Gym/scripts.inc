@@ -180,7 +180,7 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Pokémon Gym Leader.\p"
 	.string "I became a Gym Leader so that I might\n"
 	.string "apply what I learned at the Pokémon\l"
-	.string "Trainer'S School in battle.\p"
+	.string "Trainer's School in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which Pokémon?$"
 
@@ -209,7 +209,7 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 
 RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That Technical Machine, TM39,\n"
-	.string "contains Rock TOMB.\p"
+	.string "contains Rock Tomb.\p"
 	.string "It not only inflicts damage by dropping\n"
 	.string "rocks, it also lowers Speed.\p"
 	.string "If you use a TM, it instantly teaches\n"
@@ -219,7 +219,7 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 
 RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "Since you are so strong, you should\n"
-	.string "challenge other Gym LeaderS.\p"
+	.string "challenge other Gym Leaders.\p"
 	.string "By battling many Trainers, you should\n"
 	.string "learn many things.$"
 
@@ -228,7 +228,7 @@ RustboroCity_Gym_Text_GymStatue:
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "Rustboro City Pokémon\p"
-	.string "Roxanne'S Certified Trainers:\n"
+	.string "Roxanne's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:

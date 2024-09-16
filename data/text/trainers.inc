@@ -2219,7 +2219,7 @@ Route116_Text_JanicePostBattle:
 
 Route116_Text_JerryIntro:
 	.string "We learn all sorts of things at the\n"
-	.string "Trainer'S School.\p"
+	.string "Trainer's School.\p"
 	.string "I want to test things out for real!$"
 
 Route116_Text_JerryDefeat:
@@ -2228,24 +2228,24 @@ Route116_Text_JerryDefeat:
 
 Route116_Text_JerryPostBattle:
 	.string "I'll have to redo some courses at\n"
-	.string "the Trainer'S School.\l"
+	.string "the Trainer's School.\l"
 	.string "If I don't, Roxanne will be steamed.$"
 
 Route116_Text_JerryRegister1:
-	.string "I learned at the Trainer'S School\n"
+	.string "I learned at the Trainer's School\n"
 	.string "that a Pokénav can register Trainers.\p"
 	.string "I don't really get what that means,\n"
 	.string "so can I just try it?$"
 
 Route116_Text_JerryRegister2:
-	.string "I learned at the Trainer'S School\n"
+	.string "I learned at the Trainer's School\n"
 	.string "that a Pokénav can register Trainers.\p"
 	.string "I don't really get what that means,\n"
 	.string "so can I just try it?$"
 
 Route116_Text_JerryRematchIntro:
 	.string "I've been studying seriously at the\n"
-	.string "Trainer'S School.\l"
+	.string "Trainer's School.\l"
 	.string "I won't lose like I did last time.$"
 
 Route116_Text_JerryRematchDefeat:
@@ -2254,7 +2254,7 @@ Route116_Text_JerryRematchDefeat:
 
 Route116_Text_JerryPostRematch:
 	.string "I'll have to redo some courses at\n"
-	.string "the Trainer'S School.\l"
+	.string "the Trainer's School.\l"
 	.string "If I don't, Roxanne will be steamed.$"
 
 Route116_Text_KarenIntro:

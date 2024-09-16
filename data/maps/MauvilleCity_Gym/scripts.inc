@@ -386,7 +386,7 @@ MauvilleCity_Gym_Text_GymStatue:
 
 MauvilleCity_Gym_Text_GymStatueCertified:
 	.string "Mauville City Pokémon\p"
-	.string "Wattson'S Certified Trainers:\n"
+	.string "Wattson's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:

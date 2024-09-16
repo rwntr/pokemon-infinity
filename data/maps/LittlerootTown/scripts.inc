@@ -1000,13 +1000,13 @@ LittlerootTown_Text_TownSign:
 	.string "“A town that can't be shaded any hue.”$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "Prof. Birch'S Pokémon Lab$"
+	.string "Prof. Birch's Pokémon Lab$"
 
 LittlerootTown_Text_PlayersHouse:
 	.string "{PLAYER}'s House$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "Prof. Birch'S House$"
+	.string "Prof. Birch's House$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Prof. Birch: Well, well, {PLAYER}{KUN}!\n"

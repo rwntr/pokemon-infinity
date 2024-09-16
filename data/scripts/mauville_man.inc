@@ -87,7 +87,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_TeachWord::
 
 @ Trader
 MauvilleCity_PokemonCenter_1F_Text_WantToTradeDecor:
-	.string "Hi, I'm the TRADER.\n"
+	.string "Hi, I'm the Trader.\n"
 	.string "Want to trade decorations with me?$"
 
 MauvilleCity_PokemonCenter_1F_Text_TraderFeelingTheBlues:
@@ -919,7 +919,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_ToldEnoughTales::
 	end
 
 MauvilleCity_PokemonCenter_1F_Text_WouldYouLikeToHearMySong:
-	.string "Hi, I'm the BARD.\n"
+	.string "Hi, I'm the Bard.\n"
 	.string "Would you like to hear my song?$"
 
 MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues1:

@@ -1029,7 +1029,7 @@ gTVPokemonTodaySuccessfulText11::
 
 SmartShopper_Text_Intro::
 	.string "Hello!\p"
-	.string "It's time for Today'S Smart SHOPPER.\p"
+	.string "It's time for Today's Smart Shopper.\p"
 	.string "Interviewer: How are you, viewers?\p"
 	.string "Today we're visiting a shop\n"
 	.string "in {STR_VAR_2}.\p"
@@ -1740,7 +1740,7 @@ gTVTrainerFanClubText11::
 
 TVSpotTheCuties_Text_Intro::
 	.string "SPOT THE CUTIES!\n"
-	.string "Pokémon IN Ribbons!\p"
+	.string "Pokémon in Ribbons!\p"
 	.string "Hello, my sweet viewers!\p"
 	.string "I just know you'll agree, but a Pokémon\n"
 	.string "wearing Ribbons is simply divine!\p"
@@ -2005,7 +2005,7 @@ gTVPokemonNewsBattleFrontierText18::
 	.string "That's the news on Pokémon News!$"
 
 gTVWhatsNo1InHoennTodayText00::
-	.string "What'S No. 1 IN Hoenn Today?\n"
+	.string "What's No. 1 in Hoenn Today?\n"
 	.string "Yes, it's that time again!\p"
 	.string "Hello, viewers! Are you giving your\n"
 	.string "best at whatever you do?\p"

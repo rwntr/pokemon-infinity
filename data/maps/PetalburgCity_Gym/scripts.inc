@@ -1414,7 +1414,7 @@ PetalburgCity_Gym_Text_GeorgePostBattle:
 	.string "Go on! The One-Hit KO Room is next.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
-	.string "I'm going to keep training atS.\n"
+	.string "I'm going to keep training at Gyms.\n"
 	.string "One day, I'll become a Leader.$"
 
 PetalburgCity_Gym_Text_BerkeIntro:
@@ -1543,7 +1543,7 @@ PetalburgCity_Gym_Text_EnterOHKORoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
-	.string "“Gym Leader'S Room\p"
+	.string "“Gym Leader's Room\p"
 	.string "“See for yourself what Pokémon await\n"
 	.string "you!” the sign says.\p"
 	.string "Do you want to go through?$"
@@ -1553,7 +1553,7 @@ PetalburgCity_Gym_Text_GymStatue:
 
 PetalburgCity_Gym_Text_GymStatueCertified:
 	.string "Petalburg City Pokémon\p"
-	.string "Norman'S Certified Trainers:\n"
+	.string "Norman's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:

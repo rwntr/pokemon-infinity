@@ -910,7 +910,7 @@ MatchCall_PersonalizedText25::
 	.string "Roxanne tells me exactly what\n"
 	.string "I did wrong so I can learn from it.\p"
 	.string "You bet I'll be going to\n"
-	.string "the Trainer'S School tomorrow!\p"
+	.string "the Trainer's School tomorrow!\p"
 	.string "See you later!$"
 
 MatchCall_PersonalizedText26::
@@ -2345,7 +2345,7 @@ MatchCall_Text_May1::
 MatchCall_Text_May2::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
 	.string "You know how little towns like\n"
-	.string "Petalburg and Dewford haveS?\p"
+	.string "Petalburg and Dewford have Gyms?\p"
 	.string "For some reason, the big port of\n"
 	.string "Slateport doesn't have a.\p"
 	.string "When they finally build a there,\n"
@@ -2471,7 +2471,7 @@ MatchCall_Text_Brendan1::
 MatchCall_Text_Brendan2::
 	.string "Brendan: Hey, {PLAYER}!\p"
 	.string "I don't get how little towns like\n"
-	.string "Petalburg and Dewford haveS.\p"
+	.string "Petalburg and Dewford have Gyms.\p"
 	.string "I mean, not when the big port of\n"
 	.string "Slateport doesn't have a.\p"
 	.string "When they finally build a there,\n"

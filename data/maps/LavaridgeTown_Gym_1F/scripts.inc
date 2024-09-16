@@ -366,7 +366,7 @@ LavaridgeTown_Gym_1F_Text_GymStatue:
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "Lavaridge Town Pokémon\p"
-	.string "Flannery'S Certified Trainers:\n"
+	.string "Flannery's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:

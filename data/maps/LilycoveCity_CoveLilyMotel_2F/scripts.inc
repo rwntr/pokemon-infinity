@@ -125,7 +125,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "battles and tough Trainers.\p"
 	.string "But that's just me.\p"
 	.string "{PLAYER}{KUN}, I hope you'll enjoy everything\n"
-	.string "like theS, Contests, Battle Tent,\l"
+	.string "like the Gyms, Contests, Battle Tent,\l"
 	.string "the whole works!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
