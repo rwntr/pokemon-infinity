@@ -1250,7 +1250,7 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "HARBOR.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
-	.string "Pokémon FAN Club\n"
+	.string "Pokémon Fan Club\n"
 	.string "“Calling all fans of Pokémon!”$"
 
 SlateportCity_Text_OceanicMuseumSign:

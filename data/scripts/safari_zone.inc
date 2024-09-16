@@ -86,7 +86,7 @@ SafariZone_Text_OutOfBalls:
 
 SafariZone_Text_PlacePokeblockOnFeeder:
 	.string "Would you like to place a {POKEBLOCK}\n"
-	.string "on the {POKEBLOCK} FEEDER?$"
+	.string "on the {POKEBLOCK} Feeder?$"
 
 SafariZone_Text_PokeblockStillHere:
 	.string "The {STR_VAR_1} you left\n"
@@ -94,7 +94,7 @@ SafariZone_Text_PokeblockStillHere:
 
 SafariZone_Text_PokeblockWasPlaced:
 	.string "The {STR_VAR_1} was placed\n"
-	.string "on the {POKEBLOCK} FEEDER.$"
+	.string "on the {POKEBLOCK} Feeder.$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
 	.string "Welcome to the Safari Zone!\p"
@@ -218,7 +218,7 @@ SafariZone_North_Text_Man:
 	.string "here and trade them with my friends!$"
 
 SafariZone_South_Text_Youngster:
-	.string "I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\n"
+	.string "I put a {POKEBLOCK} on the {POKEBLOCK} Feeder.\n"
 	.string "But it seems to have disappeared.\p"
 	.string "I guess Pokémon must have eaten it\n"
 	.string "without me noticing.$"

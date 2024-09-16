@@ -254,7 +254,7 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 
 SlateportCity_PokemonFanClub_Text_MeetChairman:
 	.string "Er-hem! I am the Chairman of the\n"
-	.string "Pokémon FAN Club!\p"
+	.string "Pokémon Fan Club!\p"
 	.string "Being the Chairman, I am naturally\n"
 	.string "the most important!\p"
 	.string "No one can best me when it comes\n"
@@ -367,7 +367,7 @@ SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou:
 SlateportCity_PokemonFanClub_Text_PokemonAdoresYou:
 	.string "Your Pokémon really adores you.\p"
 	.string "For you, a most compassionate\n"
-	.string "Trainer, a gift from the FAN Club!$"
+	.string "Trainer, a gift from the Fan Club!$"
 
 SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove:
 	.string "Pokémon are very sensitive to\n"

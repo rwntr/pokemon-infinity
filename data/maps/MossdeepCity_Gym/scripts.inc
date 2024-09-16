@@ -375,7 +375,7 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "The Gym LeaderS here use\n"
 	.string "PSYCHIC-type Pokémon.\p"
 	.string "If you go up against them with\n"
-	.string "FIGHTING- or POISON-type Pokémon,\l"
+	.string "Fighting- or POISON-type Pokémon,\l"
 	.string "they'll inflict horrible damage!\p"
 	.string "Plus, they'll come at you with\n"
 	.string "outstanding combination attacks.\p"

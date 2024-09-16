@@ -554,7 +554,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
-	.string "You've chosen the FOCUS Band.\n"
+	.string "You've chosen the Focus Band.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:

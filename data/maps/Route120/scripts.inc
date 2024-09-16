@@ -425,7 +425,7 @@ Kecleon_Text_UseDevonScopeMonAttacked:
 
 Route120_Text_RouteSignFortree:
 	.string "Route 120\n"
-	.string "{LEFT_ARROW} FORTREE City$"
+	.string "{LEFT_ARROW} Fortree City$"
 
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} Route 121\n"

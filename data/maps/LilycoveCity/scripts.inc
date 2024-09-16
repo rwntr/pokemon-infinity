@@ -542,7 +542,7 @@ LilycoveCity_Text_BrendanYouGoingToBattleFrontier:
 	.string "Heh, if I train my Pokémon a bit more,\n"
 	.string "I'll get stronger than you, {PLAYER}.\p"
 	.string "Maybe I should go to the Battle\n"
-	.string "FRONTIER.\p"
+	.string "Frontier.\p"
 	.string "Well, anyway, hang in there!$"
 
 LilycoveCity_Text_MovedLootIntoHideoutToday:
@@ -703,7 +703,7 @@ LilycoveCity_Text_HarborSign:
 	.string "the ferry S.S. TIDAL.”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
-	.string "Pokémon Trainer FAN Club\p"
+	.string "Pokémon Trainer Fan Club\p"
 	.string "The names of Trainers are scribbled\n"
 	.string "all over the sign…$"
 

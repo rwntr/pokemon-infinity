@@ -308,22 +308,22 @@ BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
 	.string "For a first-time visitor, we issue\n"
-	.string "the FRONTIER PASS.\p"
+	.string "the Frontier PASS.\p"
 	.string "It's for use at all the facilities\n"
 	.string "in the Battle Frontier.\p"
 	.string "Here you are!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
 	.string "{PLAYER} obtained\n"
-	.string "the FRONTIER PASS.$"
+	.string "the Frontier PASS.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
 	.string "{PLAYER} placed the Trainer Card\n"
-	.string "in the FRONTIER PASS.$"
+	.string "in the Frontier PASS.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
 	.string "We hope you enjoy all that the Battle\n"
-	.string "FRONTIER has to offer!$"
+	.string "Frontier has to offer!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
 	.string "???: Well, if it isn't {PLAYER}{KUN}!\n"
@@ -420,14 +420,14 @@ BattleFrontier_ReceptionGate_Text_YourGuideToRules:
 	.string "I'm your guide to the basic rules that\n"
 	.string "are common to all the challenges\l"
 	.string "offered by the facilities in the Battle\l"
-	.string "FRONTIER.$"
+	.string "Frontier.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
 	.string "What would you like to learn about?$"
 
 BattleFrontier_ReceptionGate_Text_LevelModeInfo:
 	.string "All the challenges at the Battle\n"
-	.string "FRONTIER's facilities come in\l"
+	.string "Frontier's facilities come in\l"
 	.string "two courses--Level 50 and Open Level.$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
@@ -464,14 +464,14 @@ BattleFrontier_ReceptionGate_Text_MonEntryInfo:
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "When entering a challenge at a Battle\n"
-	.string "FRONTIER facility, Pokémon may not\l"
+	.string "Frontier facility, Pokémon may not\l"
 	.string "be holding the same kind of item.\p"
 	.string "Please make sure that all Pokémon\n"
 	.string "entering a challenge are holding\l"
 	.string "different items.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "I'm your guide to the FRONTIER PASS.$"
+	.string "I'm your guide to the Frontier PASS.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
 	.string "Which would you like to learn about?$"
@@ -490,7 +490,7 @@ BattleFrontier_ReceptionGate_Text_SymbolsInfo:
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
 	.string "It is possible to record one battle\n"
-	.string "on your FRONTIER PASS.\p"
+	.string "on your Frontier PASS.\p"
 	.string "You may record a battle you had with\n"
 	.string "a friend or friends.\p"
 	.string "Or you may record a battle conducted\n"

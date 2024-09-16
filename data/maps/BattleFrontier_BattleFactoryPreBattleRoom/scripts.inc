@@ -506,7 +506,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the FIRE type.$"
+	.string "in the handling of the Fire type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
 	.string "The Trainer is apparently skilled\n"
@@ -526,7 +526,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the FIGHTING type.$"
+	.string "in the handling of the Fighting type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
 	.string "The Trainer is apparently skilled\n"
@@ -538,7 +538,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the FLYING type.$"
+	.string "in the handling of the Flying type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
 	.string "The Trainer is apparently skilled\n"
@@ -566,7 +566,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the FAIRY type.$"
+	.string "in the handling of the Fairy type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
 	.string "The Trainer is apparently skilled\n"
@@ -629,7 +629,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle:
 	.string "Would you like to record your latest\n"
-	.string "battle on your FRONTIER PASS?$"
+	.string "battle on your Frontier PASS?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
 	.string "Excuse me! Excuse me, please!\n"

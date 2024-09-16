@@ -324,7 +324,7 @@ RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife:
 	.string "Would you like to bring that Pokémon\n"
 	.string "back to life?\p"
 	.string "I can with my newly developed\n"
-	.string "FOSSIL REGENERATOR.$"
+	.string "Fossil REGENERATOR.$"
 
 RustboroCity_DevonCorp_2F_Text_OhIsThatSo:
 	.string "Oh, is that so?\p"
@@ -346,7 +346,7 @@ RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher:
 	.string "the Devon RESEARCHER.$"
 
 RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime:
-	.string "The FOSSIL REGENERATOR, which I made,\n"
+	.string "The Fossil REGENERATOR, which I made,\n"
 	.string "is incredible.\p"
 	.string "But it has one drawback--it takes\n"
 	.string "a long time to work.\p"

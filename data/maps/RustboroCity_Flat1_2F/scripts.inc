@@ -169,7 +169,7 @@ RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 	.string "patterns for the Boxes in the PC\l"
 	.string "Pokémon Storage System.\p"
 	.string "In the wallpaper pattern menu,\n"
-	.string "select “FRIENDS.”\p"
+	.string "select “Friends.”\p"
 	.string "That will give you access to the new\n"
 	.string "wallpaper patterns.$"
 

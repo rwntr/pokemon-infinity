@@ -485,7 +485,7 @@ BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
 	.string "Shall I record your last Battle Arena\n"
-	.string "match on your FRONTIER PASS?$"
+	.string "match on your Frontier PASS?$"
 
 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
 	.string "I lost on the REFEREE's decision…\p"

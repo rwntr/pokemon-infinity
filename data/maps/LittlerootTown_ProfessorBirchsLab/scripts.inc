@@ -905,7 +905,7 @@ LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
 	.string "three Pokémon!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
-	.string "Prof. Birch: The FIRE Pokémon\n"
+	.string "Prof. Birch: The Fire Pokémon\n"
 	.string "Cyndaquil caught your eye!\p"
 	.string "You're as sharp as ever!\p"
 	.string "So the Cyndaquil is your choice?$"

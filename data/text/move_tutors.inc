@@ -52,7 +52,7 @@ MoveTutor_Text_FuryCutterTeach:
 	.string "when you keep using it in a row.\p"
 	.string "It's a Bug-type move, and it is\n"
 	.string "wickedly cool.\p"
-	.string "It's called FURY Cutter.\n"
+	.string "It's called Fury Cutter.\n"
 	.string "Want me to teach it to a Pokémon?$"
 
 MoveTutor_Text_FuryCutterDeclined:
@@ -166,7 +166,7 @@ MoveTutor_Text_SubstituteTaught:
 MoveTutor_Text_DynamicPunchTeach:
 	.string "I can't do this anymore!\p"
 	.string "It's utterly hopeless!\p"
-	.string "I'm a FIGHTING-type Trainer,\n"
+	.string "I'm a Fighting-type Trainer,\n"
 	.string "so I can't win at the MOSSDEEP\l"
 	.string "no matter how hard I try!\p"
 	.string "Argh! Punch! Punch! Punch!\n"

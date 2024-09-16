@@ -457,7 +457,7 @@ BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo:
 
 BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier:
 	.string "I've finally arrived at the Battle\n"
-	.string "FRONTIER!\p"
+	.string "Frontier!\p"
 	.string "I'm sure to grab attention with\n"
 	.string "my looks and ability!$"
 

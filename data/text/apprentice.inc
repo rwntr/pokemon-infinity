@@ -450,7 +450,7 @@ gText_ApprenticeRejectTeaching10::
 	.string "I'll show you what I'll do!\p"
 	.string "Waaah! Waaah! Waaah!\n"
 	.string "Hiccup!\p"
-	.string "Hahaha, that was my FAKE TEARS!\p"
+	.string "Hahaha, that was my Fake TEARS!\p"
 	.string "Come on, will you please be\n"
 	.string "my Pokémon master?$"
 

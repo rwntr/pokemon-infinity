@@ -366,7 +366,7 @@ gTVFanClubOpinionsText00::
 	.string "Isn't it a fantastic program concept?\p"
 	.string "Today, we bring you this report from\n"
 	.string "our reporter, who we sent out to the\l"
-	.string "Pokémon FAN Club.\p"
+	.string "Pokémon Fan Club.\p"
 	.string "So, just who is today's featured\n"
 	.string "Pokémon fan?\p"
 	.string "… … … … … … … …\p"
@@ -575,7 +575,7 @@ gTVMassOutbreakText00::
 
 gTV3CheersForPokeblocksText00::
 	.string "MC: We hope you're in good cheer,\n"
-	.string "“3 Circle FOR {POKEBLOCK}s” is here!\p"
+	.string "“3 Cheers for {POKEBLOCK}s” is here!\p"
 	.string "Today, we examine the {POKEBLOCK} blended\n"
 	.string "by {STR_VAR_1} and associates.\p"
 	.string "Without any delay, let me feed it\n"
@@ -610,7 +610,7 @@ gTV3CheersForPokeblocksText04::
 
 gTV3CheersForPokeblocksText05::
 	.string "Tune in next time!\n"
-	.string "Our slogan is “3 Circle FOR {POKEBLOCK}s!”$"
+	.string "Our slogan is “3 Cheers for {POKEBLOCK}s!”$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer::
 	.string "Hi, there!\p"
@@ -655,7 +655,7 @@ LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial::
 	.string "I hope you catch it!$"
 
 gTVTrainerFanClubSpecialText00::
-	.string "Trainer FAN Club\n"
+	.string "Trainer Fan Club\n"
 	.string "{STR_VAR_1} SPECIAL!\p"
 	.string "This is a special presentation for\n"
 	.string "the fans of {STR_VAR_1} all over Hoenn!\p"
@@ -1653,90 +1653,90 @@ gTVThePokemonBattleSeminarText06::
 
 gTVTrainerFanClubText00::
 	.string "All together now!\n"
-	.string "Trainer FAN Club!\p"
+	.string "Trainer Fan Club!\p"
 	.string "MC: How's everyone groovin'?\n"
 	.string "Today, we've rounded up the fans of\l"
 	.string "the hyper-popular Trainer {STR_VAR_1}!\p"
-	.string "FANS: Wrooooooaaaaah!\p"
-	.string "FANS: {STR_VAR_1}!\p"
+	.string "Fans: Wrooooooaaaaah!\p"
+	.string "Fans: {STR_VAR_1}!\p"
 	.string "MC: Everyone!\n"
 	.string "How do you like {STR_VAR_1}?!\p"
-	.string "FANS: We love {STR_VAR_1}!\p"
+	.string "Fans: We love {STR_VAR_1}!\p"
 	.string "MC: What do you love about\n"
 	.string "{STR_VAR_1}?!$"
 
 gTVTrainerFanClubText01::
-	.string "FANS: Their cool way of throwing\n"
+	.string "Fans: Their cool way of throwing\n"
 	.string "Poké Balls!$"
 
 gTVTrainerFanClubText02::
-	.string "FANS: Their adorable way of running!$"
+	.string "Fans: Their adorable way of running!$"
 
 gTVTrainerFanClubText03::
-	.string "FANS: How the Trainer turns tough\n"
+	.string "Fans: How the Trainer turns tough\n"
 	.string "when the going gets tough!$"
 
 gTVTrainerFanClubText04::
-	.string "FANS: The Trainer's knowledge of\n"
+	.string "Fans: The Trainer's knowledge of\n"
 	.string "Pokémon!$"
 
 gTVTrainerFanClubText05::
-	.string "FANS: The Trainer's kindness toward\n"
+	.string "Fans: The Trainer's kindness toward\n"
 	.string "all Pokémon!$"
 
 gTVTrainerFanClubText06::
-	.string "FANS: The Trainer's amazing\n"
+	.string "Fans: The Trainer's amazing\n"
 	.string "Bike-riding techniques!$"
 
 gTVTrainerFanClubText07::
-	.string "FANS: The Trainer's impressive\n"
+	.string "Fans: The Trainer's impressive\n"
 	.string "item-buying style!$"
 
 gTVTrainerFanClubText08::
-	.string "FANS: The Trainer's charming way\n"
+	.string "Fans: The Trainer's charming way\n"
 	.string "of nicknaming Pokémon!$"
 
 gTVTrainerFanClubText09::
-	.string "FANS: The Trainer's nifty style of\n"
+	.string "Fans: The Trainer's nifty style of\n"
 	.string "decorating a SECRET Base!$"
 
 gTVTrainerFanClubText10::
-	.string "FANS: The Trainer's bold ways of\n"
+	.string "Fans: The Trainer's bold ways of\n"
 	.string "using TMs!$"
 
 gTVTrainerFanClubText11::
 	.string "MC: As you've just seen, {STR_VAR_1}\n"
 	.string "is hot! Like, too hot to touch, yow!\p"
-	.string "Among {STR_VAR_1}'s FANS\n"
+	.string "Among {STR_VAR_1}'s fans\n"
 	.string "there's a special slogan!\p"
 	.string "MC: When I say {STR_VAR_1},\n"
 	.string "you say…\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
+	.string "Fans: {STR_VAR_2}!\p"
+	.string "Fans: {STR_VAR_3}!\p"
+	.string "Fans: {STR_VAR_2}!\p"
+	.string "Fans: {STR_VAR_3}!\p"
 	.string "MC: That's right, when someone says,\n"
 	.string "“{STR_VAR_1}”…\p"
 	.string "Come back with, “{STR_VAR_2}\n"
 	.string "{STR_VAR_3}!”\p"
 	.string "That has such a unique ring to it!\n"
-	.string "I can see why people become FANS\l"
+	.string "I can see why people become fans\l"
 	.string "of {STR_VAR_1}!\p"
 	.string "Okay, you, in front of the TV, join us!\n"
 	.string "All together now!\p"
 	.string "MC: When I say {STR_VAR_1},\n"
 	.string "you say…\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!\p"
+	.string "Fans: {STR_VAR_2}!\p"
+	.string "Fans: {STR_VAR_3}!\p"
+	.string "Fans: {STR_VAR_2}!\p"
+	.string "Fans: {STR_VAR_3}!\p"
 	.string "MC: Thanks for joining us, all you\n"
-	.string "wild FANS of {STR_VAR_1}!\l"
+	.string "wild fans of {STR_VAR_1}!\l"
 	.string "That's the show! See you again!\p"
 	.string "MC: When I say {STR_VAR_1},\n"
 	.string "you say…\p"
-	.string "FANS: {STR_VAR_2}!\p"
-	.string "FANS: {STR_VAR_3}!$"
+	.string "Fans: {STR_VAR_2}!\p"
+	.string "Fans: {STR_VAR_3}!$"
 
 TVSpotTheCuties_Text_Intro::
 	.string "SPOT THE CUTIES!\n"
@@ -1776,7 +1776,7 @@ TVSpotTheCuties_Text_RibbonChampion::
 	.string "The Champion Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it upon entering\n"
-	.string "the HALL OF FAME.\p"
+	.string "the HALL OF Fame.\p"
 	.string "It verily draws out the bravery\n"
 	.string "of {STR_VAR_2}.\p"
 	.string "{STR_VAR_2} and the Champ Ribbon!\n"
@@ -2305,7 +2305,7 @@ TVSecretBaseSecrets_Text_UsedSolidBoard::
 
 TVSecretBaseSecrets_Text_UsedFence::
 	.string "The visitor is looking intently\n"
-	.string "at a FENCE!\p"
+	.string "at a Fence!\p"
 	.string "Has a new idea for a trap popped\n"
 	.string "into the visitor's head?$"
 
@@ -2366,7 +2366,7 @@ TVSecretBaseSecrets_Text_UsedJumpMat::
 	.string "What a solo performance!$"
 
 gTVSafariFanClubText00::
-	.string "SAFARI FAN Club!\p"
+	.string "SAFARI Fan Club!\p"
 	.string "REPORTER: All right, mates!\n"
 	.string "Tossing them SAFARI Balls, are you?\p"
 	.string "You can bet I am here in the SAFARI\n"

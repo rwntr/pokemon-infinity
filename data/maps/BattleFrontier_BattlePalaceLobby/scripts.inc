@@ -593,7 +593,7 @@ BattleFrontier_BattlePalaceLobby_Text_PresentYouWithBattlePoints:
 BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch:
 	.string "Would you like to record your latest\n"
 	.string "Battle Palace match on your\l"
-	.string "FRONTIER PASS?$"
+	.string "Frontier PASS?$"
 
 BattleFrontier_BattlePalaceLobby_Text_RulesAreListed:
 	.string "The Battle Hall rules are listed.$"

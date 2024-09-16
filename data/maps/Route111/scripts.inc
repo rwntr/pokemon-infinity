@@ -639,7 +639,7 @@ Route111_Text_ToughToKeepWinningUpTheRanks:
 	.string "more, it could be tough to keep winning\l"
 	.string "up through the ranks.\p"
 	.string "I've heard the Pokémon League's\n"
-	.string "Elite FOUR are far stronger than\l"
+	.string "Elite Four are far stronger than\l"
 	.string "any Gym Leader.$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
@@ -707,11 +707,11 @@ Route111_Text_MirageTowerHasntBeenSeenSince:
 	.string "the MIRAGE TOWER…$"
 
 Route111_Text_ClawFossilDisappeared:
-	.string "The Claw FOSSIL disappeared into\n"
+	.string "The Claw Fossil disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_RootFossilDisappeared:
-	.string "The ROOT FOSSIL disappeared into\n"
+	.string "The ROOT Fossil disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:

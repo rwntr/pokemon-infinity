@@ -839,7 +839,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyReject::
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanIntro::
 	.string "Yo!\p"
 	.string "You know who I am?\n"
-	.string "I'm {STR_VAR_1} the FISHERMAN!$"
+	.string "I'm {STR_VAR_1} the Fisherman!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon1::
 	.string "I've got with me a team of one\n"

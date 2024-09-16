@@ -946,7 +946,7 @@ MatchCall_PersonalizedText27::
 
 MatchCall_PersonalizedText28::
 	.string "I love Pokémon!\n"
-	.string "It's {STR_VAR_1} from the FAN Club!\p"
+	.string "It's {STR_VAR_1} from the Fan Club!\p"
 	.string "You have to hear this!\n"
 	.string "My sweet Pokémon…\p"
 	.string "Snort! Wahaha!\n"
@@ -2132,7 +2132,7 @@ MatchCall_Text_Wattson4::
 	.string "with shocking power!$"
 
 MatchCall_Text_Flannery1::
-	.string "FLANNERY: {PLAYER}…\p"
+	.string "Flannery: {PLAYER}…\p"
 	.string "When we battled, I learned exactly\n"
 	.string "how immature I was.\p"
 	.string "But I'm not done yet!\p"
@@ -2142,7 +2142,7 @@ MatchCall_Text_Flannery1::
 	.string "please challenge us again.$"
 
 MatchCall_Text_Flannery2::
-	.string "FLANNERY: Hello, {PLAYER}?\n"
+	.string "Flannery: Hello, {PLAYER}?\n"
 	.string "Congratulations!\p"
 	.string "Word of your success has reached\n"
 	.string "us like the heat of a volcano!\p"
@@ -2153,13 +2153,13 @@ MatchCall_Text_Flannery2::
 	.string "MATCH Call list.$"
 
 MatchCall_Text_Flannery3::
-	.string "FLANNERY: Oh, {PLAYER}?\n"
+	.string "Flannery: Oh, {PLAYER}?\n"
 	.string "Our's ready!\p"
 	.string "Come to Lavaridge for a soak\n"
 	.string "in the hot spring and a challenge!$"
 
 MatchCall_Text_Flannery4::
-	.string "FLANNERY: {PLAYER}…\n"
+	.string "Flannery: {PLAYER}…\n"
 	.string "I'm positive that you keep getting\l"
 	.string "better at training every time.$"
 
@@ -2173,14 +2173,14 @@ MatchCall_Text_Winona1::
 MatchCall_Text_Winona2::
 	.string "WINONA: You've done it, {PLAYER}!\p"
 	.string "News about the new Champion\n"
-	.string "has reached us in FORTREE!\p"
+	.string "has reached us in Fortree!\p"
 	.string "But… The next time we battle,\n"
 	.string "it's not going to end the same way.$"
 
 MatchCall_Text_Winona3::
 	.string "WINONA: Is this {PLAYER}?\n"
 	.string "Our is back in operation!\p"
-	.string "We're waiting for you in FORTREE!$"
+	.string "We're waiting for you in Fortree!$"
 
 MatchCall_Text_Winona4::
 	.string "WINONA: {PLAYER}…\n"
@@ -2285,7 +2285,7 @@ MatchCall_Text_Drake::
 	.string "You sound well…\p"
 	.string "I understand that there is now\n"
 	.string "a facility called the Battle\l"
-	.string "FRONTIER that tests the skills of\l"
+	.string "Frontier that tests the skills of\l"
 	.string "Trainers.\p"
 	.string "However, if you wish to have real\n"
 	.string "battles, there is no substitute for\l"
@@ -2701,7 +2701,7 @@ MatchCall_Text_Scott6::
 	.string "forward to.\p"
 	.string "When you've won your way through\n"
 	.string "the Pokémon League into the HALL\l"
-	.string "OF FAME!$"
+	.string "OF Fame!$"
 
 MatchCall_Text_Scott7::
 	.string "… … … … … …\n"
@@ -2825,7 +2825,7 @@ MatchCall_Text_Steven6::
 
 MatchCall_Text_Steven7::
 	.string "Steven: {PLAYER}{KUN}… Congratulations\n"
-	.string "for entering the HALL OF FAME.\p"
+	.string "for entering the HALL OF Fame.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I hope we can meet again\n"

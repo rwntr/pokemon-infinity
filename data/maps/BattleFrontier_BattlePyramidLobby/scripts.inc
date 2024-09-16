@@ -779,9 +779,9 @@ BattleFrontier_BattlePyramidLobby_Text_HintRock:
 	.string "from ROCK moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintFighting:
-	.string "I see FIGHTING-type Pokémon…\p"
+	.string "I see Fighting-type Pokémon…\p"
 	.string "…And, I see your Pokémon pummeled\n"
-	.string "by FIGHTING moves…$"
+	.string "by Fighting moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintWeather:
 	.string "RAIN Dance… SUNNY Day…\n"

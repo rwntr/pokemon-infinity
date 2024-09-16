@@ -1166,7 +1166,7 @@ Route110_Text_IsabelDefeated:
 
 Route110_Text_IsabelPostBattle:
 	.string "Rather than battling, perhaps I should\n"
-	.string "show off my Pokémon at the FAN Club.$"
+	.string "show off my Pokémon at the Fan Club.$"
 
 Route110_Text_IsabelRegister:
 	.string "That wasn't close to what I could\n"
@@ -1585,7 +1585,7 @@ Route112_Text_CarolPostBattle:
 	.string "If you have the most fun, you win!$"
 
 Route112_Text_BryantIntro:
-	.string "I caught hot Pokémon in FIERY PATH!\n"
+	.string "I caught hot Pokémon in Fiery PATH!\n"
 	.string "Take a look!$"
 
 Route112_Text_BryantDefeat:
@@ -1715,7 +1715,7 @@ Route113_Text_ToriDefeat:
 
 Route113_Text_ToriPostBattle:
 	.string "TORI: How much ash do we have?\n"
-	.string "Enough for a WHITE FLUTE, I hope.$"
+	.string "Enough for a WHITE Flute, I hope.$"
 
 Route113_Text_ToriNotEnoughMons:
 	.string "TORI: We want to battle 2-on-2.\n"
@@ -1731,7 +1731,7 @@ Route113_Text_TiaDefeat:
 
 Route113_Text_TiaPostBattle:
 	.string "TIA: We have a lot of ashes!\n"
-	.string "I think enough for a WHITE FLUTE!$"
+	.string "I think enough for a WHITE Flute!$"
 
 Route113_Text_TiaNotEnoughMons:
 	.string "TIA: We want to battle 2-on-2.\n"
@@ -2606,7 +2606,7 @@ Route118_Text_RosePostRematch:
 	.string "Pokémon will be attracted by it.$"
 
 Route118_Text_PerryIntro:
-	.string "Bird Pokémon that FLY elegantly in\n"
+	.string "Bird Pokémon that Fly elegantly in\n"
 	.string "the sky… They're the best!$"
 
 Route118_Text_PerryDefeat:
@@ -2629,7 +2629,7 @@ Route118_Text_ChesterPostBattle:
 	.string "to fly more freely…$"
 
 Route118_Text_BarnyIntro:
-	.string "I'm a FISHERMAN, but also a Trainer.\n"
+	.string "I'm a Fisherman, but also a Trainer.\n"
 	.string "I'm raising the Pokémon I caught.$"
 
 Route118_Text_BarnyDefeat:
@@ -2642,7 +2642,7 @@ Route118_Text_BarnyPostBattle:
 	.string "Was I doing things in half measures?$"
 
 Route118_Text_WadeIntro:
-	.string "For FISHERMEN, equipment is the key.\p"
+	.string "For Fishermen, equipment is the key.\p"
 	.string "But for Trainers, the key ingredients\n"
 	.string "are Pokémon and heart, of course!$"
 
@@ -2651,7 +2651,7 @@ Route118_Text_WadeDefeat:
 
 Route118_Text_WadePostBattle:
 	.string "Come to think of it, fishing is a battle\n"
-	.string "between a FISHERMAN and a Pokémon.$"
+	.string "between a Fisherman and a Pokémon.$"
 
 Route118_Text_DaltonIntro:
 	.string "Let my melody rock your soul!$"
@@ -2949,7 +2949,7 @@ Route120_Text_ColinDefeat:
 	.string "You soared above me!$"
 
 Route120_Text_ColinPostBattle:
-	.string "The move FLY is convenient,\n"
+	.string "The move Fly is convenient,\n"
 	.string "don't you think?\p"
 	.string "While the Pokémon is flying,\n"
 	.string "almost no moves can strike it.$"
@@ -4644,7 +4644,7 @@ Route133_Text_BeckDefeat:
 	.string "You're stunningly cool!$"
 
 Route133_Text_BeckPostBattle:
-	.string "I'd like to go back to FORTREE,\n"
+	.string "I'd like to go back to Fortree,\n"
 	.string "but I've grown to like this place, too.$"
 
 Route133_Text_MollieIntro:

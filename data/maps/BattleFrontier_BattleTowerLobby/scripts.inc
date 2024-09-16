@@ -1080,7 +1080,7 @@ BattleFrontier_BattleTowerLobby_Text_ShowYouToBattleRoom:
 
 BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
 	.string "Shall I record your last Battle Tower\n"
-	.string "match on your FRONTIER PASS?$"
+	.string "match on your Frontier PASS?$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:

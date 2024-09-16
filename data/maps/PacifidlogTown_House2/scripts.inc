@@ -92,7 +92,7 @@ PacifidlogTown_House2_EventScript_UnhappyAzurill::
 
 PacifidlogTown_House2_Text_ChairmansYoungerBrotherOnVacation:
 	.string "Er-hem!\p"
-	.string "I am the Pokémon FAN Club's most\n"
+	.string "I am the Pokémon Fan Club's most\n"
 	.string "important person, the Chairman's\l"
 	.string "younger brother.\p"
 	.string "I'm here enjoying my vacation with\n"
@@ -121,7 +121,7 @@ PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
 	.string "If a Pokémon likes you a lot, RETURN's\n"
 	.string "power is enhanced.\p"
-	.string "If it doesn't like you, FRUSTRATION's\n"
+	.string "If it doesn't like you, Frustration's\n"
 	.string "power goes up.$"
 
 PacifidlogTown_House2_Text_GetGoodTMInXDays:

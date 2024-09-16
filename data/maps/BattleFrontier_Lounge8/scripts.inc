@@ -28,7 +28,7 @@ BattleFrontier_Lounge8_Text_WhatATrainerNeeds:
 	.string "What's that?$"
 
 BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains:
-	.string "Do you know about the FRONTIER\n"
+	.string "Do you know about the Frontier\n"
 	.string "BRAINS?\p"
 	.string "That's what SCOTT calls the seven\n"
 	.string "special Trainers that run the seven\l"
