@@ -518,7 +518,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc:
-	.string "You've chosen the ZINC.\n"
+	.string "You've chosen the Zinc.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:

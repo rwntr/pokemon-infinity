@@ -747,13 +747,13 @@ MatchCall_PersonalizedText10::
 MatchCall_PersonalizedText11::
 	.string "It's {STR_VAR_1}!\n"
 	.string "Will you listen to this?\p"
-	.string "I like the Safari ZONE a lot,\n"
+	.string "I like the Safari Zone a lot,\n"
 	.string "but whenever I go, I get lost!\p"
 	.string "All that tall grass!\n"
 	.string "And it's much too spread out!\p"
 	.string "I feel better getting that off\n"
 	.string "my chest!\p"
-	.string "I'm off to the Safari ZONE again!\n"
+	.string "I'm off to the Safari Zone again!\n"
 	.string "Catch you!$"
 
 MatchCall_PersonalizedText12::
