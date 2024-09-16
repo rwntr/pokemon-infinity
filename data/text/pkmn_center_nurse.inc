@@ -26,13 +26,13 @@ gText_WelcomeCutShort::
 
 gText_NoticesGoldCard::
 	.string "Th-that card…\n"
-	.string "Could it be… The GOLD Card?!\p"
+	.string "Could it be… The Gold Card?!\p"
 	.string "Oh, the gold color is brilliant!\n"
 	.string "The four stars seem to sparkle!\p"
 	.string "I've seen several Trainers with\n"
 	.string "a SILVER Card before, but, {PLAYER},\l"
 	.string "you're the first Trainer I've ever\l"
-	.string "seen with a GOLD Card!\p"
+	.string "seen with a Gold Card!\p"
 	.string "Okay, {PLAYER}, please allow me\n"
 	.string "the honor of resting your Pokémon!$"
 

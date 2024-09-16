@@ -171,18 +171,18 @@ Route123_EventScript_RematchFernando::
 	end
 
 Route123_Text_LoveGrassMonsHaveAny:
-	.string "I love GRASS-type Pokémon!\p"
-	.string "Do you have any GRASS-type Pokémon?$"
+	.string "I love Grass-type Pokémon!\p"
+	.string "Do you have any Grass-type Pokémon?$"
 
 Route123_Text_YouLikeGrassMonsTooHaveThis:
 	.string "Oh?\p"
-	.string "You like GRASS-type Pokémon, too,\n"
+	.string "You like Grass-type Pokémon, too,\n"
 	.string "don't you?\p"
 	.string "I'm so happy, you can have this!\n"
 	.string "It's a token of our friendship.$"
 
 Route123_Text_CheckTreesWithMyGrassMon:
-	.string "I check trees with my GRASS-type\n"
+	.string "I check trees with my Grass-type\n"
 	.string "Pokémon. I'm like a tree doctor.$"
 
 Route123_Text_RouteSign:

@@ -917,7 +917,7 @@ LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
 	.string "So, you'll take the TOTODILE?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
-	.string "Prof. Birch: The GRASS Pokémon\n"
+	.string "Prof. Birch: The Grass Pokémon\n"
 	.string "Chikorita is your choice!\p"
 	.string "You sure know what you're doing.\p"
 	.string "So, you'll take the Chikorita?$"

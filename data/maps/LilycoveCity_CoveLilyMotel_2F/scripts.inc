@@ -67,7 +67,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex:
-	.string "I'm the GAME Designer.\p"
+	.string "I'm the Game Designer.\p"
 	.string "Oh, is that right?\n"
 	.string "You're working on a Pokédex?\p"
 	.string "It's tough trying to complete it,\n"
@@ -91,7 +91,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer:
 	.string "like here.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist:
-	.string "I'm the GRAPHIC Artist! Aren't the\n"
+	.string "I'm the Graphic Artist! Aren't the\n"
 	.string "Pokémon of Hoenn interesting?$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute:
@@ -110,7 +110,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
 	.string "You never know when and where\n"
 	.string "people will challenge you.\p"
 	.string "That's why I never leave home without\n"
-	.string "my GAME Boy Advance.$"
+	.string "my Game Boy Advance.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "SCOTT: … … … … …\n"

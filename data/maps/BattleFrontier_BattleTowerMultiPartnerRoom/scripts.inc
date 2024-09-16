@@ -1095,7 +1095,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMReject::
 	.string "tag-team partner…$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlIntro::
-	.string "I'm Battle GIRL {STR_VAR_1}!$"
+	.string "I'm Battle Girl {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon1::
 	.string "I've been toughening up one\n"
@@ -1160,7 +1160,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristIntro::
 	.string "Yay-hey!\n"
-	.string "Call me GUITARIST {STR_VAR_1}!$"
+	.string "Call me Guitarist {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon1::
 	.string "Check out my entourage!\n"
@@ -1181,7 +1181,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanIntro::
 	.string "Pleased to meet you.\n"
-	.string "I am {STR_VAR_1}, a GENTLEMAN.$"
+	.string "I am {STR_VAR_1}, a Gentleman.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon1::
 	.string "I am accompanied by my trusted\n"

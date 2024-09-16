@@ -1085,7 +1085,7 @@ MatchCall_PersonalizedText37::
 MatchCall_PersonalizedText38::
 	.string "Oh, it's {STR_VAR_1}, hello.\p"
 	.string "I've been swimming a lot but I still\n"
-	.string "can't seem to reach Ever GRANDE.\p"
+	.string "can't seem to reach Ever Grande.\p"
 	.string "Maybe I'm just going in circles.\p"
 	.string "No, no, that can't be possible.\n"
 	.string "Wahahaha.\l"
@@ -2273,7 +2273,7 @@ MatchCall_Text_Phoebe::
 	.string "Pokémon.$"
 
 MatchCall_Text_Glacia::
-	.string "GLACIA: Hello, {PLAYER}.\p"
+	.string "Glacia: Hello, {PLAYER}.\p"
 	.string "I trust you haven't become\n"
 	.string "complacent with your power?\p"
 	.string "If you feel the need to cool your\n"
@@ -2361,7 +2361,7 @@ MatchCall_Text_May3::
 	.string "Can you guess his name?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "The ROCK SMASH GUY!$"
+	.string "The ROCK SMASH guy!$"
 
 MatchCall_Text_May4::
 	.string "May: {PLAYER}{KUN}?\p"
@@ -2397,7 +2397,7 @@ MatchCall_Text_May8::
 	.string "MT. PYRE is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "Maybe as a result, it's infested\n"
-	.string "with many GHOST-type Pokémon!$"
+	.string "with many Ghost-type Pokémon!$"
 
 MatchCall_Text_May9::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
@@ -2487,7 +2487,7 @@ MatchCall_Text_Brendan3::
 	.string "Can you guess his name?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "The ROCK SMASH GUY!$"
+	.string "The ROCK SMASH guy!$"
 
 MatchCall_Text_Brendan4::
 	.string "Brendan: This voice… {PLAYER}?\p"
@@ -2524,7 +2524,7 @@ MatchCall_Text_Brendan8::
 	.string "MT. PYRE is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "That's probably why it's infested\n"
-	.string "with many GHOST-type Pokémon!$"
+	.string "with many Ghost-type Pokémon!$"
 
 MatchCall_Text_Brendan9::
 	.string "Brendan: Hey there, {PLAYER}.\p"
@@ -2779,7 +2779,7 @@ MatchCall_Text_Steven1::
 	.string "already?\p"
 	.string "You should visit the Bike SHOP\n"
 	.string "and get a MACH Bike.\p"
-	.string "Then, try exploring the GRANITE\n"
+	.string "Then, try exploring the Granite\n"
 	.string "Cave thoroughly.\p"
 	.string "You may make a new discovery\n"
 	.string "there.$"
@@ -2923,7 +2923,7 @@ MatchCall_Text_MrStone7::
 
 MatchCall_Text_MrStone8::
 	.string "…Huh? …What's that?\p"
-	.string "GROU… Yes? …don?\p"
+	.string "Grou… Yes? …don?\p"
 	.string "You're breaking up…\n"
 	.string "…can't hear…\p"
 	.string "BZZZZ…$"

@@ -263,7 +263,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "way to the ultimate destination.\p"
 	.string "The Pokémon League.\p"
 	.string "Travel to the easternmost reaches\n"
-	.string "of HOENN, to the island Ever GRANDE.\p"
+	.string "of HOENN, to the island Ever Grande.\p"
 	.string "There, you shall find the Pokémon\n"
 	.string "League.$"
 

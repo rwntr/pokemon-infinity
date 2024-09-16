@@ -82,7 +82,7 @@ Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 	.string "Our Boss knows everything.\p"
-	.string "But I'm just a GRUNT. What would I know\n"
+	.string "But I'm just a Grunt. What would I know\n"
 	.string "about what he's thinking?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:

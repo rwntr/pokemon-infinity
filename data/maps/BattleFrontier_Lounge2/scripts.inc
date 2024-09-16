@@ -178,7 +178,7 @@ BattleFrontier_Lounge2_Text_DomeAceSilverMons::
 	.string "When he's treating the opponent\n"
 	.string "lightly, he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Dragon Pokémon,\n"
-	.string "a WATER & GROUND MUD Fish Pokémon,\l"
+	.string "a WATER & Ground MUD Fish Pokémon,\l"
 	.string "and a Fire & Flying Flame Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DomeAceGoldMons::
@@ -187,7 +187,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "When he's demonstrating his strategy,\n"
 	.string "he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Eon Pokémon,\n"
-	.string "a WATER & GROUND MUD Fish Pokémon,\l"
+	.string "a WATER & Ground MUD Fish Pokémon,\l"
 	.string "and a STEEL- & PSYCHIC-type IRON LEG\l"
 	.string "Pokémon.$"
 
@@ -236,7 +236,7 @@ BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "When she's seriously annoyed, they say\n"
 	.string "she uses these three Pokémon:\p"
 	.string "A POISON-type Fang SNAKE Pokémon,\n"
-	.string "a STEEL & GROUND IRON SNAKE Pokémon,\l"
+	.string "a STEEL & Ground IRON SNAKE Pokémon,\l"
 	.string "and a WATER- & Flying-type Atrocious\l"
 	.string "Pokémon.$"
 
@@ -254,7 +254,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Bug & Fighting SINGLE HORN Pokémon,\n"
 	.string "a Dark-type MOONLIGHT Pokémon,\l"
-	.string "and a Bug & GHOST SHED Pokémon.$"
+	.string "and a Bug & Ghost SHED Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "Have you battled the Arena TYCOON\n"
@@ -262,8 +262,8 @@ BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Dark-type MOONLIGHT Pokémon,\n"
-	.string "a GHOST & POISON SHADOW Pokémon\l"
-	.string "and a GRASS- & Fighting-type\l"
+	.string "a Ghost & POISON SHADOW Pokémon\l"
+	.string "and a Grass- & Fighting-type\l"
 	.string "MUSHROOM Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::

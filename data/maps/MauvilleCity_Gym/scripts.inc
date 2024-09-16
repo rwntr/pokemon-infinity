@@ -260,7 +260,7 @@ MauvilleCity_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "WATTSON, the LEADER of Mauville\n"
-	.string "GYM, uses Electric-type Pokémon.\p"
+	.string "Gym, uses Electric-type Pokémon.\p"
 	.string "If you challenge him with WATER-type\n"
 	.string "Pokémon, he'll zap them! Bzzt!\p"
 	.string "And, he's put in switch-controlled\n"

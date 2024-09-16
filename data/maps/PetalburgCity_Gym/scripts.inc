@@ -1223,7 +1223,7 @@ PetalburgCity_Gym_Text_DadGoCollectBadges:
 	.string "There, you should challenge\n"
 	.string "the Gym Leader, ROXANNE.\p"
 	.string "After her, go on to other Pokémon\n"
-	.string "GYMS and defeat their LEADERS.\p"
+	.string "Gyms and defeat their LEADERS.\p"
 	.string "Collect Badges from them,\n"
 	.string "understood?\p"
 	.string "Of course, I'm a Gym Leader, too.\n"

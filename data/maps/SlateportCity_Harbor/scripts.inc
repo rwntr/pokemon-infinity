@@ -449,7 +449,7 @@ SlateportCity_Harbor_Text_SubTooSmallForMe:
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "Capt. Stern: Those thugs…\p"
 	.string "They're the same lot who tried to rob\n"
-	.string "the Devon GOODS at the MUSEUM.$"
+	.string "the Devon Goods at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 	.string "Archie: Oh?\n"
