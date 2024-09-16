@@ -117,7 +117,7 @@ MoveTutor_Text_MetronomeTaught:
 
 MoveTutor_Text_SleepTalkTeach:
 	.string "Humph! My wife relies on Hidden\n"
-	.string "POWER to stay awake.\p"
+	.string "Power to stay awake.\p"
 	.string "She should just take a nap like I do,\n"
 	.string "and SLEEP TALK.\p"
 	.string "I can teach your Pokémon how to\n"
@@ -125,7 +125,7 @@ MoveTutor_Text_SleepTalkTeach:
 
 MoveTutor_Text_SleepTalkDeclined:
 	.string "Oh, fine, fine. You want to stay awake\n"
-	.string "with Hidden POWER, too…$"
+	.string "with Hidden Power, too…$"
 
 MoveTutor_Text_SleepTalkWhichMon:
 	.string "Ah, an appreciative child!\n"

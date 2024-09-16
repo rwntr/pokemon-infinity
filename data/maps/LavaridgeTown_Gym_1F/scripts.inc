@@ -345,7 +345,7 @@ LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
 	.string "Don't be shy about taking it!$"
 
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
-	.string "That TM50 contains OVERHEAT.\p"
+	.string "That TM50 contains Overheat.\p"
 	.string "That move inflicts serious damage on\n"
 	.string "the opponent.\p"
 	.string "But it also sharply cuts the Sp. Atk\n"
@@ -359,7 +359,7 @@ LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "Your power reminds me of someone…\p"
 	.string "Oh! I know! You battle like Norman,\n"
-	.string "the Gym Leader of PETALBURG.$"
+	.string "the Gym Leader of Petalburg.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
 	.string "Lavaridge Town Pokémon$"

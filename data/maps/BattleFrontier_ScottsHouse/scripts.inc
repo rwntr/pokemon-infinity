@@ -243,7 +243,7 @@ BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
 	.string "SCOTT: You can check your Battle\n"
-	.string "Points on your Frontier PASS.\p"
+	.string "Points on your Frontier Pass.\p"
 	.string "The more success you have here at\n"
 	.string "the Battle Frontier, the more Battle\l"
 	.string "Points you will collect.\p"
@@ -290,7 +290,7 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
 	.string "the Battle Frontier?\p"
 	.string "…Wait a second…\n"
 	.string "Oh!\p"
-	.string "Your Frontier PASS!\n"
+	.string "Your Frontier Pass!\n"
 	.string "You've collected the full set\l"
 	.string "of silver symbols!\p"
 	.string "That's more than impressive!\n"
@@ -305,7 +305,7 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 	.string "everything in the Battle Frontier.\p"
 	.string "…Wait a second…\n"
 	.string "Oh, my disbelieving eyes!\p"
-	.string "Your Frontier PASS!\n"
+	.string "Your Frontier Pass!\n"
 	.string "You've gathered up the full set\l"
 	.string "of gold symbols!\p"
 	.string "That's more than stupendous!\n"
@@ -322,7 +322,7 @@ BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
 	.string "bring you here!$"
 
 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
-	.string "Your Berry POCKET seems to\n"
+	.string "Your Berry Pocket seems to\n"
 	.string "be stuffed.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:

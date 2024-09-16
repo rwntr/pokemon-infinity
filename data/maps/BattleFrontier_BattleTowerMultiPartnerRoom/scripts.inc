@@ -1325,7 +1325,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyIntro::
 	.string "Hello!\n"
-	.string "I'm PARASOL Lady {STR_VAR_1}!$"
+	.string "I'm Parasol Lady {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon1::
 	.string "Escorting me now are my {STR_VAR_2}\n"
@@ -1603,7 +1603,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerIntro::
 	.string "Hello!\n"
-	.string "I'm {STR_VAR_1}, and I'm a PICNICKER!$"
+	.string "I'm {STR_VAR_1}, and I'm a Picnicker!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon1::
 	.string "The Pokémon I've been taking are\n"
@@ -1623,7 +1623,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerReject::
 	.string "some other time.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMIntro::
-	.string "I'm PSYCHIC {STR_VAR_1}!$"
+	.string "I'm Psychic {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon1::
 	.string "The twosome I've been raising are\n"
@@ -1644,7 +1644,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFIntro::
 	.string "I'm {STR_VAR_1}.\n"
-	.string "I'm a PSYCHIC.$"
+	.string "I'm a Psychic.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon1::
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"

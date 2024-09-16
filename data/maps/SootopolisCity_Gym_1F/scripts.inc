@@ -248,7 +248,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The Technical Machine I handed you\n"
-	.string "contains WATER PULSE.\p"
+	.string "contains WATER Pulse.\p"
 	.string "In use, it will occasionally confuse\n"
 	.string "the target with ultrasonic waves.\p"
 	.string "… … … … … …$"

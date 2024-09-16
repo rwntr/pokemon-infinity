@@ -221,7 +221,7 @@ RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "It may also not be able to move while\n"
 	.string "it is in battle.\p"
 	.string "Paralysis remains after battle.\n"
-	.string "Cure it using a PARLYZ Heal.$"
+	.string "Cure it using a Parlyz Heal.$"
 
 RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "If a Pokémon falls asleep, it will be\n"
@@ -245,13 +245,13 @@ RustboroCity_PokemonSchool_Text_ExplainFreeze:
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "Students who don't study get a little\n"
-	.string "taste of my QUICK Claw.\p"
+	.string "taste of my Quick Claw.\p"
 	.string "Whether or not you are a good student \n"
 	.string "will be evident from the way you use\l"
 	.string "this item.$"
 
 RustboroCity_PokemonSchool_Text_ExplainQuickClaw:
-	.string "A Pokémon holding the QUICK Claw will\n"
+	.string "A Pokémon holding the Quick Claw will\n"
 	.string "occasionally speed up and get to move\l"
 	.string "before its opponent.\p"
 	.string "There are many other items that are\n"
@@ -303,7 +303,7 @@ RustboroCity_PokemonSchool_Text_StudentsNotes:
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "Hello? Didn't we meet before?\n"
-	.string "I think back in PETALBURG City.\p"
+	.string "I think back in Petalburg City.\p"
 	.string "Let me introduce myself.\n"
 	.string "My name's SCOTT.\p"
 	.string "I've been traveling everywhere in\n"
@@ -333,7 +333,7 @@ RustboroCity_PokemonSchool_Text_ScottStoneBadge:
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "Hello? Didn't we meet before?\n"
-	.string "I think back in PETALBURG City.\p"
+	.string "I think back in Petalburg City.\p"
 	.string "Let me introduce myself.\n"
 	.string "My name's SCOTT.\p"
 	.string "I've been traveling everywhere in\n"

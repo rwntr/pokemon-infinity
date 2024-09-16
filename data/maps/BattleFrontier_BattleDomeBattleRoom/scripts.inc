@@ -1094,11 +1094,11 @@ BattleFrontier_BattleDomeBattleRoom_Text_WinnerIsTucker:
 
 BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass:
 	.string "TUCKER: Rules are rules!\n"
-	.string "Let me see your Frontier PASS.$"
+	.string "Let me see your Frontier Pass.$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol:
 	.string "The Tactics Symbol was embossed on\n"
-	.string "the Frontier PASS!$"
+	.string "the Frontier Pass!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime:
 	.string "… … … … … …\p"
@@ -1139,7 +1139,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed:
 	.string "Never before! I haven't ever lost in the\n"
 	.string "times I've had to unleash my power.\p"
 	.string "Yes, quite fantastic!\n"
-	.string "Your Frontier PASS, please?$"
+	.string "Your Frontier Pass, please?$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine:
 	.string "The Tactics Symbol took on\n"

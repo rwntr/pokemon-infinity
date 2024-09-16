@@ -106,4 +106,4 @@ Route102_Text_RouteSignOldale:
 
 Route102_Text_RouteSignPetalburg:
 	.string "Route 102\n"
-	.string "{LEFT_ARROW} PETALBURG City$"
+	.string "{LEFT_ARROW} Petalburg City$"

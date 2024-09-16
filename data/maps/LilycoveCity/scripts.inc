@@ -415,8 +415,8 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "May: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
-	.string "I bought a whole bunch of Dolls and\n"
-	.string "POSTERS.\p"
+	.string "I bought a whole bunch of dolls and\n"
+	.string "posters.\p"
 	.string "Of course, I've also caught a lot of\n"
 	.string "Pokémon, and I'm raising them\l"
 	.string "properly, too.\p"
@@ -737,7 +737,7 @@ LilycoveCity_Text_ExplainBerryBlender:
 LilycoveCity_Text_HeardTowerCalledSkyPillar:
 	.string "I heard there's a tower somewhere out\n"
 	.string "on the sea routes.\p"
-	.string "It's called the SKY PILLAR, I hear.$"
+	.string "It's called the SKY Pillar, I hear.$"
 
 LilycoveCity_Text_SawTallTowerOnRoute131:
 	.string "I saw this tall tower somewhere\n"

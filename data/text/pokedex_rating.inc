@@ -92,7 +92,7 @@ gBirchDexRatingText_LessThan170::
 
 gBirchDexRatingText_LessThan180::
 	.string "I would say you already qualify as\n"
-	.string "a Pokémon PROFESSOR, and a good\l"
+	.string "a Pokémon Professor, and a good\l"
 	.string "one, too!$"
 
 gBirchDexRatingText_LessThan190::

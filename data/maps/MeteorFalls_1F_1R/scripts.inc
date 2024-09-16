@@ -296,7 +296,7 @@ MeteorFalls_1F_1R_Text_ArchieFarewell:
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "I… I'm Cozmo…\n"
-	.string "I'm a PROFESSOR…\p"
+	.string "I'm a Professor…\p"
 	.string "Team Magma asked me to guide them\n"
 	.string "to Meteor Falls…\p"
 	.string "But they tricked me.\n"
@@ -310,6 +310,6 @@ MeteorFalls_1F_1R_Text_MeetProfCozmo:
 	.string "Meteorite at Mt. Chimney?$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "PROF. Cozmo: But that Team Magma…\p"
+	.string "Prof. Cozmo: But that Team Magma…\p"
 	.string "What are they going to do with that\n"
 	.string "Meteorite at Mt. Chimney?$"

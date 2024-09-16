@@ -99,11 +99,11 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
 	.string "Mr. Briney: Hold on, lass!\n"
-	.string "Wait up, PEEKO!$"
+	.string "Wait up, Peeko!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "Hm? You're {PLAYER}{KUN}!\n"
-	.string "You saved my darling PEEKO!\l"
+	.string "You saved my darling Peeko!\l"
 	.string "We owe so much to you!\p"
 	.string "What's that?\n"
 	.string "You want to sail with me?\p"
@@ -119,7 +119,7 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 Route104_MrBrineysHouse_Text_SetSailForDewford:
 	.string "Mr. Briney: Dewford it is, then!\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Peeko, we're setting sail, my darling!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
 	.string "Mr. Briney: Is that so?\n"
@@ -152,10 +152,10 @@ Route104_MrBrineysHouse_Text_WhereAreWeBound:
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
 	.string "Mr. Briney: Is that so?\n"
-	.string "Well, PEEKO owes her life to you.\p"
+	.string "Well, Peeko owes her life to you.\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
-	.string "PEEKO: Pii piihyoro!$"
+	.string "Peeko: Pii piihyoro!$"
 

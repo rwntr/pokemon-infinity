@@ -488,21 +488,21 @@ BattleFrontier_BattlePalaceBattleRoom_Text_SavingData:
 
 BattleFrontier_BattlePalaceBattleRoom_Text_RecordLastMatch:
 	.string "Do you wish to record your latest\n"
-	.string "match on your Frontier PASS?$"
+	.string "match on your Frontier Pass?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ChallengingPalaceMaven:
 	.string "And now…\p"
 	.string "By winning consistently, you have\n"
 	.string "earned the privilege of challenging\l"
-	.string "our master, the PALACE Maven…$"
+	.string "our master, the Palace Maven…$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven:
-	.string "I shall send for the PALACE Maven.\n"
+	.string "I shall send for the Palace Maven.\n"
 	.string "Are you ready?$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_AnnounceArrivalOfSpenser:
 	.string "Let great fanfare announce the arrival\n"
-	.string "of the PALACE Maven, SPENSER!$"
+	.string "of the Palace Maven, SPENSER!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserFirstIntro:
 	.string "SPENSER: My physical being is with\n"
@@ -531,11 +531,11 @@ BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass:
 	.string "My, my, if only you could maintain that\n"
 	.string "facade of distinguished authority…\p"
 	.string "Here!\n"
-	.string "Let's see your Frontier PASS!$"
+	.string "Let's see your Frontier Pass!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol:
 	.string "The Spirits Symbol was embossed on\n"
-	.string "the Frontier PASS!$"
+	.string "the Frontier Pass!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime:
 	.string "SPENSER: Your Pokémon's eyes are \n"
@@ -569,7 +569,7 @@ BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass:
 	.string "My, my, if only you could maintain\n"
 	.string "a certain level of decorum…\p"
 	.string "Gaaah, here!\n"
-	.string "Hurry with that Frontier PASS, you!$"
+	.string "Hurry with that Frontier Pass, you!$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine:
 	.string "The Spirits Symbol took on\n"

@@ -530,7 +530,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the POISON type.$"
+	.string "in the handling of the Poison type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
 	.string "The Trainer is apparently skilled\n"
@@ -542,7 +542,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the PSYCHIC type.$"
+	.string "in the handling of the Psychic type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
 	.string "The Trainer is apparently skilled\n"
@@ -629,7 +629,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle:
 	.string "Would you like to record your latest\n"
-	.string "battle on your Frontier PASS?$"
+	.string "battle on your Frontier Pass?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
 	.string "Excuse me! Excuse me, please!\n"

@@ -353,11 +353,11 @@ Route116_EventScript_Johnson::
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
 	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
+	.string "We were on our walk, Peeko and I, when\n"
 	.string "we were jumped by an odd thug…\p"
 	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "darling Peeko!\p"
+	.string "Wrrrooooooaaaar! Peeko!$"
 
 Route116_Text_WantToDigTunnel:
 	.string "Nnn… Roar!\p"
@@ -385,7 +385,7 @@ Route116_Text_GoonHightailedItOutOfTunnel:
 Route116_Text_ThankYouTokenOfAppreciation:
 	.string "Oh! It's you!\p"
 	.string "You're that person who not only helped\n"
-	.string "me in PETALBURG WOODS, but also got\l"
+	.string "me in Petalburg WOODS, but also got\l"
 	.string "back my stolen package and then even\l"
 	.string "graciously delivered it to Slateport!\p"
 	.string "Capt. Stern informed us that the\n"
@@ -465,9 +465,9 @@ Route116_Text_TrainerTipsBToStopEvolution:
 
 Route116_Text_TrainerTipsBagHasPockets:
 	.string "Trainer TIPS\p"
-	.string "Your Bag has several POCKETS.\p"
+	.string "Your Bag has several Pockets.\p"
 	.string "Items you obtain are automatically\n"
-	.string "placed in the appropriate POCKETS.\p"
+	.string "placed in the appropriate Pockets.\p"
 	.string "No Trainer can afford to be without\n"
 	.string "a Bag of their own.$"
 

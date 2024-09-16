@@ -308,18 +308,18 @@ BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
 	.string "For a first-time visitor, we issue\n"
-	.string "the Frontier PASS.\p"
+	.string "the Frontier Pass.\p"
 	.string "It's for use at all the facilities\n"
 	.string "in the Battle Frontier.\p"
 	.string "Here you are!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
 	.string "{PLAYER} obtained\n"
-	.string "the Frontier PASS.$"
+	.string "the Frontier Pass.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
 	.string "{PLAYER} placed the Trainer Card\n"
-	.string "in the Frontier PASS.$"
+	.string "in the Frontier Pass.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
 	.string "We hope you enjoy all that the Battle\n"
@@ -471,7 +471,7 @@ BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "different items.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "I'm your guide to the Frontier PASS.$"
+	.string "I'm your guide to the Frontier Pass.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
 	.string "Which would you like to learn about?$"
@@ -490,7 +490,7 @@ BattleFrontier_ReceptionGate_Text_SymbolsInfo:
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
 	.string "It is possible to record one battle\n"
-	.string "on your Frontier PASS.\p"
+	.string "on your Frontier Pass.\p"
 	.string "You may record a battle you had with\n"
 	.string "a friend or friends.\p"
 	.string "Or you may record a battle conducted\n"

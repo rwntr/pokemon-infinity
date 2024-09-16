@@ -446,7 +446,7 @@ BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
 	.string "Please choose a prize from this list.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster:
-	.string "You've chosen the Kiss POSTER.\n"
+	.string "You've chosen the Kiss Poster.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion:
@@ -506,7 +506,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
-	.string "You've chosen the PROTEIN.\n"
+	.string "You've chosen the Protein.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium:
@@ -538,7 +538,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
-	.string "You've chosen the QUICK Claw.\n"
+	.string "You've chosen the Quick Claw.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:

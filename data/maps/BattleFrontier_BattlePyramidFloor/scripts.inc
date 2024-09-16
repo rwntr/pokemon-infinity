@@ -135,7 +135,7 @@ gText_BattlePyramidConfirmRest::
 
 gText_BattlePyramidConfirmRetire::
 	.string "Are you sure you want to quit your\n"
-	.string "PYRAMID quest?$"
+	.string "Pyramid quest?$"
 
 BattlePyramid_Text_ExitHintUp1::
 	.string "This floor's exit is in\n"
@@ -433,39 +433,39 @@ BattlePyramid_Text_ZeroItemsRemaining4::
 	.string "items on the ground.$"
 
 BattlePyramid_Text_EightItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are eight items…$"
 
 BattlePyramid_Text_SevenItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are seven items…$"
 
 BattlePyramid_Text_SixItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are six items…$"
 
 BattlePyramid_Text_FiveItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are five items…$"
 
 BattlePyramid_Text_FourItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are four items…$"
 
 BattlePyramid_Text_ThreeItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are three items…$"
 
 BattlePyramid_Text_TwoItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are two items…$"
 
 BattlePyramid_Text_OneItemRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there is one item…$"
 
 BattlePyramid_Text_ZeroItemsRemaining5::
-	.string "On this floor of the PYRAMID,\n"
+	.string "On this floor of the Pyramid,\n"
 	.string "I hear there are no items…$"
 
 BattlePyramid_Text_EightItemsRemaining6::

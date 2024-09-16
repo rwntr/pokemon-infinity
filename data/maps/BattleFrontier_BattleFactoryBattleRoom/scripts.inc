@@ -277,11 +277,11 @@ BattleFrontier_BattleFactoryBattleRoom_Text_ShakeOutKnowledgeBringItOn:
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass:
 	.string "Noland: Smart going!\n"
-	.string "Let's see your Frontier PASS.$"
+	.string "Let's see your Frontier Pass.$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol:
 	.string "The Knowledge Symbol was embossed\n"
-	.string "on the Frontier PASS!$"
+	.string "on the Frontier Pass!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred:
 	.string "Heh…\n"
@@ -307,7 +307,7 @@ BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass:
 	.string "Noland: What the…\n"
 	.string "You're getting out of my league!\p"
 	.string "Sheesh!\n"
-	.string "Let's see that Frontier PASS!$"
+	.string "Let's see that Frontier Pass!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine:
 	.string "The Knowledge Symbol took on\n"

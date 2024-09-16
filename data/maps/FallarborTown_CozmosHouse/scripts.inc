@@ -65,7 +65,7 @@ FallarborTown_CozmosHouse_EventScript_CozmoIsHappy::
 	end
 
 FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow:
-	.string "PROF. Cozmo: Oh…\n"
+	.string "Prof. Cozmo: Oh…\n"
 	.string "I never should have let myself be\l"
 	.string "conned into telling Team Magma where\l"
 	.string "you can find Meteorites…\p"
@@ -84,35 +84,35 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "How about in exchange for this TM?$"
 
 FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
-	.string "PROF. Cozmo: This TM, it represents\n"
+	.string "Prof. Cozmo: This TM, it represents\n"
 	.string "my feeling of gratitude.\l"
 	.string "Please use it!$"
 
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
-	.string "PROF. Cozmo: Oh, I can't believe it.\n"
+	.string "Prof. Cozmo: Oh, I can't believe it.\n"
 	.string "This is really, really great!\p"
 	.string "This is really going to help my research!$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
-	.string "PROF. Cozmo: Oh, but…\n"
+	.string "Prof. Cozmo: Oh, but…\n"
 	.string "I'm crushed with disappointment…$"
 
 FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
-	.string "PROF. Cozmo: Please, may I have that\n"
+	.string "Prof. Cozmo: Please, may I have that\n"
 	.string "Meteorite?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
-	.string "PROF. Cozmo went off to Meteor Falls\n"
+	.string "Prof. Cozmo went off to Meteor Falls\n"
 	.string "on Route 114 with some people from\l"
 	.string "Team Magma.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
-	.string "Poor PROF. Cozmo…\n"
+	.string "Poor Prof. Cozmo…\n"
 	.string "He's so depressed… I feel sorry for him.$"
 
 FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
-	.string "Look at PROF. Cozmo…\n"
+	.string "Look at Prof. Cozmo…\n"
 	.string "He's so happy! I think it's cute.$"
 

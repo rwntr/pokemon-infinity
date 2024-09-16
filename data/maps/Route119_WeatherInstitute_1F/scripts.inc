@@ -108,11 +108,11 @@ Route119_WeatherInstitute_1F_Text_WowYoureStrong:
 	.string "like you!$"
 
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
-	.string "The PROFESSOR loves rain.\n"
+	.string "The Professor loves rain.\n"
 	.string "That's a fact.\p"
 	.string "But if it keeps raining, people will be in\n"
 	.string "trouble. That's another fact.\p"
-	.string "And thus, the PROFESSOR is studying\n"
+	.string "And thus, the Professor is studying\n"
 	.string "if the rain can be put to good use.$"
 
 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:

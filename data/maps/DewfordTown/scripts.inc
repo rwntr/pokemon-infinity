@@ -667,12 +667,12 @@ DewfordTown_Text_SetSailBackToPetalburg:
 	.string "Mr. Briney: Have you delivered your\n"
 	.string "Letter?\p"
 	.string "Or were you meaning to sail back to\n"
-	.string "PETALBURG?$"
+	.string "Petalburg?$"
 
 DewfordTown_Text_PetalburgWereSettingSail2:
-	.string "Mr. Briney: PETALBURG it is, then!\p"
+	.string "Mr. Briney: Petalburg it is, then!\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
 	.string "Mr. Briney: Then you go on and deliver\n"
@@ -690,14 +690,14 @@ DewfordTown_Text_WhereAreWeBound:
 	.string "Now, my friend, where are we bound?$"
 
 DewfordTown_Text_PetalburgWereSettingSail:
-	.string "Mr. Briney: PETALBURG, is it?\p"
+	.string "Mr. Briney: Petalburg, is it?\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_SlateportWereSettingSail:
 	.string "Mr. Briney: Slateport, is it?\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
 	.string "Mr. Briney: You just tell me whenever\n"

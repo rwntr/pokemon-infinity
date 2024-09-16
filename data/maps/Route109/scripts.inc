@@ -491,7 +491,7 @@ Route109_Text_BrineySailToDewfordQuestion:
 Route109_Text_BrineyDewfordItIs:
 	.string "Mr. Briney: Dewford it is, then!\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Peeko, we're setting sail, my darling!$"
 
 Route109_Text_BrineyDeliverDevonGoods:
 	.string "Mr. Briney: Then you go on and deliver\n"

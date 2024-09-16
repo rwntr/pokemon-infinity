@@ -86,7 +86,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis:
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer:
 	.string "Me? You're talking to me?\n"
-	.string "I'm the PROGRAMMER.\p"
+	.string "I'm the Programmer.\p"
 	.string "I wonder what the SLOTS are\n"
 	.string "like here.$"
 

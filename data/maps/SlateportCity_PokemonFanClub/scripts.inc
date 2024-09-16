@@ -387,7 +387,7 @@ SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein:
 	.string "Do Pokémon enjoy having items used\n"
 	.string "on them?\p"
 	.string "Mine acted really happy when I gave\n"
-	.string "it some PROTEIN.$"
+	.string "it some Protein.$"
 
 SlateportCity_PokemonFanClub_Text_Skitty:
 	.string "SKITTY: Fffnyaaaah…$"

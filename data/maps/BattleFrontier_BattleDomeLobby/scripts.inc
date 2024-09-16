@@ -651,7 +651,7 @@ BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints:
 BattleFrontier_BattleDomeLobby_Text_RecordLastMatch:
 	.string "Would you like to record your\n"
 	.string "last Battle Dome match on your\l"
-	.string "Frontier PASS?$"
+	.string "Frontier Pass?$"
 
 BattleFrontier_BattleDomeLobby_Text_RulesAreListed:
 	.string "The Battle Tournament rules\n"

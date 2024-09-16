@@ -726,7 +726,7 @@ MatchCall_PersonalizedText9::
 	.string "Right now, behind you…\l"
 	.string "Wasn't there something…?\p"
 	.string "The power of the Pokémon that\n"
-	.string "sleep here at Mt. PYRE…\p"
+	.string "sleep here at Mt. Pyre…\p"
 	.string "It's telling me about you…\p"
 	.string "You should walk away quickly and\n"
 	.string "never once look back…\p"
@@ -2025,7 +2025,7 @@ MatchCall_Text_Mom1::
 MatchCall_Text_Mom2::
 	.string "Mom: Hi, {PLAYER}!\n"
 	.string "Your father keeps himself locked\l"
-	.string "away in the PETALBURG.\p"
+	.string "away in the Petalburg.\p"
 	.string "He comes home every so often.\n"
 	.string "But he goes back to the when\l"
 	.string "he's eaten everything he can.\p"
@@ -2265,7 +2265,7 @@ MatchCall_Text_Sidney::
 	.string "I'll be waiting!$"
 
 MatchCall_Text_Phoebe::
-	.string "PHOEBE: Hi, {PLAYER}!\p"
+	.string "Phoebe: Hi, {PLAYER}!\p"
 	.string "How about coming back here again\n"
 	.string "sometime?\p"
 	.string "I'd like to see how much tighter\n"
@@ -2310,7 +2310,7 @@ MatchCall_Text_MayRayquazaCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "May: Hi, {PLAYER}{KUN}!\p"
-	.string "I was just in PACIFIDLOG a little\n"
+	.string "I was just in Pacifidlog a little\n"
 	.string "while ago.\p"
 	.string "I saw a giant green Pokémon\n"
 	.string "flying high in the sky.\p"
@@ -2325,7 +2325,7 @@ MatchCall_Text_BrendanRayquazaCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "Brendan: Hey, {PLAYER}!\n"
-	.string "I was in PACIFIDLOG just now.\p"
+	.string "I was in Pacifidlog just now.\p"
 	.string "I saw this huge green Pokémon\n"
 	.string "flying across the sky.\p"
 	.string "I've never seen anything that\n"
@@ -2339,13 +2339,13 @@ MatchCall_Text_May1::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
 	.string "Mr. Briney retired as a SAILOR,\n"
 	.string "but I still see him out on the sea\l"
-	.string "with his pet PEEKO sometimes.\p"
+	.string "with his pet Peeko sometimes.\p"
 	.string "He must love the sea still.$"
 
 MatchCall_Text_May2::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
 	.string "You know how little towns like\n"
-	.string "PETALBURG and Dewford haveS?\p"
+	.string "Petalburg and Dewford haveS?\p"
 	.string "For some reason, the big port of\n"
 	.string "Slateport doesn't have a.\p"
 	.string "When they finally build a there,\n"
@@ -2394,7 +2394,7 @@ MatchCall_Text_May7::
 
 MatchCall_Text_May8::
 	.string "May: {PLAYER}{KUN}, hi.\p"
-	.string "Mt. PYRE is a memorial to Pokémon\n"
+	.string "Mt. Pyre is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "Maybe as a result, it's infested\n"
 	.string "with many Ghost-type Pokémon!$"
@@ -2404,7 +2404,7 @@ MatchCall_Text_May9::
 	.string "I was thinking of going to the hot\n"
 	.string "spring in Lavaridge.\p"
 	.string "But on the way, around Jagged\n"
-	.string "PASS, I ran into some bad-looking\l"
+	.string "Pass, I ran into some bad-looking\l"
 	.string "characters. The mood was ugly!$"
 
 MatchCall_Text_May10::
@@ -2464,14 +2464,14 @@ MatchCall_Text_Brendan1::
 	.string "Brendan: Hey, {PLAYER}!\p"
 	.string "Mr. Briney retired as a SAILOR,\n"
 	.string "but I still see him out on the sea\l"
-	.string "with his pet PEEKO sometimes.\p"
+	.string "with his pet Peeko sometimes.\p"
 	.string "I guess he must love\n"
 	.string "the sea still.$"
 
 MatchCall_Text_Brendan2::
 	.string "Brendan: Hey, {PLAYER}!\p"
 	.string "I don't get how little towns like\n"
-	.string "PETALBURG and Dewford haveS.\p"
+	.string "Petalburg and Dewford haveS.\p"
 	.string "I mean, not when the big port of\n"
 	.string "Slateport doesn't have a.\p"
 	.string "When they finally build a there,\n"
@@ -2521,7 +2521,7 @@ MatchCall_Text_Brendan7::
 
 MatchCall_Text_Brendan8::
 	.string "Brendan: {PLAYER}!\p"
-	.string "Mt. PYRE is a memorial to Pokémon\n"
+	.string "Mt. Pyre is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "That's probably why it's infested\n"
 	.string "with many Ghost-type Pokémon!$"
@@ -2530,7 +2530,7 @@ MatchCall_Text_Brendan9::
 	.string "Brendan: Hey there, {PLAYER}.\p"
 	.string "I was on my way back to the hot\n"
 	.string "spring in Lavaridge.\p"
-	.string "But around Jagged PASS, I ran into\n"
+	.string "But around Jagged Pass, I ran into\n"
 	.string "some nasty-looking characters.\p"
 	.string "Those creeps…\n"
 	.string "I think they were Team Magma.$"
@@ -2662,7 +2662,7 @@ MatchCall_Text_Scott2::
 MatchCall_Text_Scott3::
 	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "Have you had the chance to climb\n"
-	.string "Mt. PYRE?\p"
+	.string "Mt. Pyre?\p"
 	.string "The place is a memorial to Pokémon\n"
 	.string "that have passed away.\p"
 	.string "It's somewhere every Trainer\n"
@@ -2701,7 +2701,7 @@ MatchCall_Text_Scott6::
 	.string "forward to.\p"
 	.string "When you've won your way through\n"
 	.string "the Pokémon League into the Hall\l"
-	.string "OF Fame!$"
+	.string "of Fame!$"
 
 MatchCall_Text_Scott7::
 	.string "… … … … … …\n"
@@ -2766,7 +2766,7 @@ MatchCall_Text_Norman8::
 	.string "What good timing!\p"
 	.string "This time, I'm going to challenge\n"
 	.string "you to battle.\p"
-	.string "I'm waiting in the PETALBURG.\n"
+	.string "I'm waiting in the Petalburg.\n"
 	.string "Accept my challenge anytime!$"
 
 MatchCall_Text_Norman9::
@@ -2825,7 +2825,7 @@ MatchCall_Text_Steven6::
 
 MatchCall_Text_Steven7::
 	.string "Steven: {PLAYER}{KUN}… Congratulations\n"
-	.string "for entering the Hall OF Fame.\p"
+	.string "for entering the Hall of Fame.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I hope we can meet again\n"
@@ -2875,7 +2875,7 @@ MatchCall_Text_MrStone2::
 	.string "After that, deliver our parcel to\n"
 	.string "Capt. Stern in Slateport.\p"
 	.string "You remember, don't you?\p"
-	.string "Now, since I am a busy PRESIDENT,\n"
+	.string "Now, since I am a busy President,\n"
 	.string "I have to go! Bye-bye!$"
 
 MatchCall_Text_MrStone3::
@@ -2899,7 +2899,7 @@ MatchCall_Text_MrStone4::
 
 MatchCall_Text_MrStone5::
 	.string "Mr. Stone: Hello, hello, {PLAYER}{KUN}!\p"
-	.string "I heard from someone in PETALBURG\n"
+	.string "I heard from someone in Petalburg\n"
 	.string "that you're Norman's child!\p"
 	.string "No wonder you're such a capable\n"
 	.string "being!$"
@@ -2916,9 +2916,9 @@ MatchCall_Text_MrStone7::
 	.string "Hello!\n"
 	.string "This is Devon Corporati…\l"
 	.string "Oh, hello, {PLAYER}!\p"
-	.string "Our PRESIDENT was here a little\n"
+	.string "Our President was here a little\n"
 	.string "while ago, but he's gone out.\p"
-	.string "Our PRESIDENT is busy, but you\n"
+	.string "Our President is busy, but you\n"
 	.string "seem to be just as busy, {PLAYER}.$"
 
 MatchCall_Text_MrStone8::

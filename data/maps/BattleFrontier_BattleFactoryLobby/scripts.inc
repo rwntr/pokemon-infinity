@@ -469,7 +469,7 @@ BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave:
 BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch:
 	.string "Would you like to record your last\n"
 	.string "Battle Factory match on your\l"
-	.string "Frontier PASS?$"
+	.string "Frontier Pass?$"
 
 BattleFrontier_BattleFactoryLobby_Text_NeedKnowledgeOfMonsMoves:
 	.string "Hi!\n"

@@ -89,7 +89,7 @@ RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard:
 
 RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
 	.string "Oh, hello!\n"
-	.string "Welcome to the PEPPER household.\p"
+	.string "Welcome to the Pepper household.\p"
 	.string "I have a question for you.\n"
 	.string "Have you ever baby-sat?\p"
 	.string "You see, I'm a new father, so raising\n"

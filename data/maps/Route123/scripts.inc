@@ -190,7 +190,7 @@ Route123_Text_RouteSign:
 	.string "{LEFT_ARROW} Route 118$"
 
 Route123_Text_RouteSignMtPyre:
-	.string "{UP_ARROW} Mt. PYRE\n"
+	.string "{UP_ARROW} Mt. Pyre\n"
 	.string "“Forbidden to the faint of heart.”$"
 
 Route123_Text_BerryMastersHouse:

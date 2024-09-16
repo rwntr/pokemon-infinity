@@ -373,9 +373,9 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, Champion-bound\n"
 	.string "{PLAYER}?\p"
 	.string "The Gym LeaderS here use\n"
-	.string "PSYCHIC-type Pokémon.\p"
+	.string "Psychic-type Pokémon.\p"
 	.string "If you go up against them with\n"
-	.string "Fighting- or POISON-type Pokémon,\l"
+	.string "Fighting- or Poison-type Pokémon,\l"
 	.string "they'll inflict horrible damage!\p"
 	.string "Plus, they'll come at you with\n"
 	.string "outstanding combination attacks.\p"
@@ -492,7 +492,7 @@ MossdeepCity_Gym_Text_SylviaPostBattle:
 MossdeepCity_Gym_Text_NateIntro:
 	.string "Hohoho.\p"
 	.string "You need me to show you how tenacious\n"
-	.string "the PSYCHIC type can be.$"
+	.string "the Psychic type can be.$"
 
 MossdeepCity_Gym_Text_NateDefeat:
 	.string "Oh! My, my!\n"
@@ -535,7 +535,7 @@ MossdeepCity_Gym_Text_MaceyDefeat:
 
 MossdeepCity_Gym_Text_MaceyPostBattle:
 	.string "Humph! You may be strong, but you're\n"
-	.string "not suitable for the PSYCHIC type!\p"
+	.string "not suitable for the Psychic type!\p"
 	.string "The way you battle is somehow brutal!$"
 
 MossdeepCity_Gym_Text_NicholasIntro:
@@ -587,7 +587,7 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "Tate: It raises Sp. Atk and…\n"
 	.string "Liza: It raises Sp. Def!\p"
 	.string "Tate: It's a move that's perfect…\n"
-	.string "Liza: For PSYCHIC Pokémon!\p"
+	.string "Liza: For Psychic Pokémon!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:

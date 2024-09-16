@@ -1335,7 +1335,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "beat the awaiting Trainers.\p"
 	.string "Whoops! The doors in this room are\n"
 	.string "already open, so don't attack me!\p"
-	.string "The Trainers of PETALBURG\n"
+	.string "The Trainers of Petalburg\n"
 	.string "use all kinds of items.\p"
 	.string "The door at the left leads to\n"
 	.string "the SPEED ROOM.\p"
@@ -1411,7 +1411,7 @@ PetalburgCity_Gym_Text_GeorgePostBattle:
 	.string "earned only through effort.\p"
 	.string "I lost because my own efforts\n"
 	.string "weren't enough.\p"
-	.string "Go on! The ONE-Hit KO ROOM is next.$"
+	.string "Go on! The One-Hit KO ROOM is next.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
 	.string "I'm going to keep training atS.\n"
@@ -1437,7 +1437,7 @@ PetalburgCity_Gym_Text_BerkePostBattle:
 
 PetalburgCity_Gym_Text_BerkePostBadge:
 	.string "Since your dad became the Leader,\n"
-	.string "the Trainers of PETALBURG City have\l"
+	.string "the Trainers of Petalburg City have\l"
 	.string "become a lot tougher.$"
 
 PetalburgCity_Gym_Text_MaryIntro:
@@ -1476,7 +1476,7 @@ PetalburgCity_Gym_Text_AlexiaPostBattle:
 	.string "Now, go on! The left door goes to\n"
 	.string "the STRENGTH ROOM.\p"
 	.string "The right door opens to\n"
-	.string "the ONE-Hit KO ROOM.\p"
+	.string "the One-Hit KO ROOM.\p"
 	.string "Both of them have Trainers who are\n"
 	.string "skilled at offense.$"
 
@@ -1539,7 +1539,7 @@ PetalburgCity_Gym_Text_EnterStrengthRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:
-	.string "“ONE-Hit KO ROOM,” the sign says.\p"
+	.string "“One-Hit KO ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
@@ -1549,10 +1549,10 @@ PetalburgCity_Gym_Text_EnterGymLeadersRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_GymStatue:
-	.string "PETALBURG City Pokémon$"
+	.string "Petalburg City Pokémon$"
 
 PetalburgCity_Gym_Text_GymStatueCertified:
-	.string "PETALBURG City Pokémon\p"
+	.string "Petalburg City Pokémon\p"
 	.string "Norman'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 

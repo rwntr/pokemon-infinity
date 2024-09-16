@@ -153,7 +153,7 @@ BattleFrontier_Lounge2_Text_SalonMaidenSilverMons::
 	.string "Have you battled the SALON Maiden?\p"
 	.string "When she's measuring up her opponent,\n"
 	.string "she apparently uses these Pokémon:\p"
-	.string "A PSYCHIC-type PSI Pokémon,\n"
+	.string "A Psychic-type PSI Pokémon,\n"
 	.string "a Fire-type VOLCANO Pokémon,\l"
 	.string "and a Normal-type SLEEPING Pokémon.$"
 
@@ -162,7 +162,7 @@ BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
 	.string "when she's serious?\p"
 	.string "When she's battling flat out,\n"
 	.string "she apparently uses these Pokémon:\p"
-	.string "A Dragon & PSYCHIC Eon Pokémon,\n"
+	.string "A Dragon & Psychic Eon Pokémon,\n"
 	.string "an Electric-type THUNDER Pokémon,\l"
 	.string "and a Normal-type SLEEPING Pokémon.$"
 
@@ -188,7 +188,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Eon Pokémon,\n"
 	.string "a WATER & Ground Mud Fish Pokémon,\l"
-	.string "and a STEEL- & PSYCHIC-type Iron Leg\l"
+	.string "and a STEEL- & Psychic-type Iron Leg\l"
 	.string "Pokémon.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
@@ -226,7 +226,7 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "before?\p"
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A POISON-type Fang SNAKE Pokémon,\n"
+	.string "A Poison-type Fang SNAKE Pokémon,\n"
 	.string "a Bug & ROCK Mold Pokémon,\l"
 	.string "and a WATER-type TENDER Pokémon.$"
 
@@ -235,7 +235,7 @@ BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "when she's serious?\p"
 	.string "When she's seriously annoyed, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A POISON-type Fang SNAKE Pokémon,\n"
+	.string "A Poison-type Fang SNAKE Pokémon,\n"
 	.string "a STEEL & Ground Iron SNAKE Pokémon,\l"
 	.string "and a WATER- & Flying-type Atrocious\l"
 	.string "Pokémon.$"
@@ -262,7 +262,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Dark-type Moonlight Pokémon,\n"
-	.string "a Ghost & POISON SHADOW Pokémon\l"
+	.string "a Ghost & Poison SHADOW Pokémon\l"
 	.string "and a Grass- & Fighting-type\l"
 	.string "Mushroom Pokémon.$"
 
@@ -271,19 +271,19 @@ BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
 	.string "One of those top Trainers that SCOTT\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this sinister Trainer called\n"
-	.string "the PALACE Maven that runs the place.$"
+	.string "the Palace Maven that runs the place.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
-	.string "Have you battled the PALACE Maven\n"
+	.string "Have you battled the Palace Maven\n"
 	.string "before?\p"
 	.string "When he's testing the opponent's\n"
 	.string "spirit, he's said to use these Pokémon:\p"
-	.string "A POISON & Flying-type Bat Pokémon,\n"
+	.string "A Poison & Flying-type Bat Pokémon,\n"
 	.string "a Normal-type LAZY Pokémon, and a\l"
 	.string "WATER- & Ice-type TRANSPORT Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
-	.string "Have you battled the PALACE Maven\n"
+	.string "Have you battled the Palace Maven\n"
 	.string "when he's serious?\p"
 	.string "When he throws his entire might into\n"
 	.string "battle, he's said to use these Pokémon:\p"
@@ -296,19 +296,19 @@ BattleFrontier_Lounge2_Text_PyramidKingIsThere::
 	.string "One of those top Trainers that SCOTT\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this fiery-hot Trainer called\n"
-	.string "the PYRAMID King that runs the place.$"
+	.string "the Pyramid King that runs the place.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
-	.string "Have you battled the PYRAMID King\n"
+	.string "Have you battled the Pyramid King\n"
 	.string "before?\p"
 	.string "When he's checking the foe's power,\n"
 	.string "he apparently uses these Pokémon:\p"
-	.string "A ROCK-type ROCK PEAK Pokémon,\n"
+	.string "A ROCK-type ROCK Peak Pokémon,\n"
 	.string "an Ice-type Iceberg Pokémon,\l"
 	.string "and a STEEL-type Iron Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
-	.string "Have you battled the PYRAMID King\n"
+	.string "Have you battled the Pyramid King\n"
 	.string "when he's serious?\p"
 	.string "When he's pumped with hot power,\n"
 	.string "he apparently uses these Pokémon:\p"

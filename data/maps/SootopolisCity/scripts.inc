@@ -1529,9 +1529,9 @@ SootopolisCity_Text_CityRegainedCalm:
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
 	.string "Who might you be?\p"
-	.string "This is the Cave OF ORIGIN.\p"
+	.string "This is the Cave of Origin.\p"
 	.string "The spirits of Pokémon, becalmed at\n"
-	.string "Mt. PYRE, are said to be revived here.\p"
+	.string "Mt. Pyre, are said to be revived here.\p"
 	.string "Please leave.$"
 
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
@@ -1550,7 +1550,7 @@ SootopolisCity_Text_AwakenedPokemonClash:
 	.string "of a third Pokémon…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
-	.string "This is the Cave OF ORIGIN…\p"
+	.string "This is the Cave of Origin…\p"
 	.string "With the passing of the crisis,\n"
 	.string "the cave, too, shall sleep…$"
 
@@ -1669,7 +1669,7 @@ SootopolisCity_Text_KnowWhatsNeededToHelpHim:
 	.string "needed to help him…$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "Steven: The SKY PILLAR…\p"
+	.string "Steven: The SKY Pillar…\p"
 	.string "I've never been there.\n"
 	.string "I wonder where it could be?$"
 
@@ -1681,16 +1681,16 @@ SootopolisCity_Text_SoThatsRayquaza:
 SootopolisCity_Text_MaxieArchieLeft:
 	.string "Steven: It looks like both Maxie and\n"
 	.string "Archie have gone away somewhere.\p"
-	.string "Perhaps they've gone to Mt. PYRE to\n"
-	.string "return those ORBS…$"
+	.string "Perhaps they've gone to Mt. Pyre to\n"
+	.string "return those Orbs…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "WALLACE: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
-	.string "Haven't you scaled the SKY PILLAR\n"
+	.string "Haven't you scaled the SKY Pillar\n"
 	.string "yet?\p"
 	.string "I'm sure that you can make it to\n"
-	.string "the top of the SKY PILLAR…$"
+	.string "the top of the SKY Pillar…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "WALLACE: {PLAYER}{KUN}…\p"

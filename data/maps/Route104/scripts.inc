@@ -1061,7 +1061,7 @@ Route104_Text_MrBrineysCottage:
 
 Route104_Text_RouteSignPetalburg:
 	.string "Route 1O4\n"
-	.string "{RIGHT_ARROW} PETALBURG City$"
+	.string "{RIGHT_ARROW} Petalburg City$"
 
 Route104_Text_RouteSignRustboro:
 	.string "Route 1O4\n"

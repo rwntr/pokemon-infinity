@@ -222,15 +222,15 @@ BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo:
 	.string "It is a delight to see you here!\n"
 	.string "You have reached the summit of\l"
 	.string "the Battle Pyramid!\p"
-	.string "Above here is the PYRAMID's\n"
+	.string "Above here is the Pyramid's\n"
 	.string "lookout point.\p"
 	.string "It is a place open only to those\n"
-	.string "who have conquered the PYRAMID.\p"
+	.string "who have conquered the Pyramid.\p"
 	.string "Now, please!\n"
 	.string "Up you go!$"
 
 BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid:
-	.string "The PYRAMID's new conqueror!\n"
+	.string "The Pyramid's new conqueror!\n"
 	.string "Let the name {PLAYER} be known!$"
 
 BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
@@ -238,7 +238,7 @@ BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
 	.string "Unfortunately, you were second by\n"
 	.string "a mere fraction of time!\p"
 	.string "Our chief has already conquered\n"
-	.string "the PYRAMID ahead of you.\p"
+	.string "the Pyramid ahead of you.\p"
 	.string "However, my young explorer…\n"
 	.string "You are a Trainer!\p"
 	.string "Assert your power and take the glory\n"
@@ -260,7 +260,7 @@ BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon:
 	.string "Aah, yes, indeed this life is grand!\n"
 	.string "Grand, it is! Eh?\p"
 	.string "I'm Brandon!\p"
-	.string "I'm the PYRAMID King, which means\n"
+	.string "I'm the Pyramid King, which means\n"
 	.string "I'm in charge here.\p"
 	.string "Most people call me the chief!\p"
 	.string "You coming here means you have\n"
@@ -277,11 +277,11 @@ BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease:
 	.string "Brandon: Hahahah! Grand it was!\n"
 	.string "Grand, yes, indeed!\p"
 	.string "Well done! You've earned recognition!\n"
-	.string "Your Frontier PASS, please!$"
+	.string "Your Frontier Pass, please!$"
 
 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol:
 	.string "The Brave Symbol was embossed on\n"
-	.string "the Frontier PASS!$"
+	.string "the Frontier Pass!$"
 
 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting:
 	.string "Young explorer!\n"

@@ -485,7 +485,7 @@ BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
 	.string "Shall I record your last Battle Arena\n"
-	.string "match on your Frontier PASS?$"
+	.string "match on your Frontier Pass?$"
 
 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
 	.string "I lost on the REFEREE's decision…\p"
@@ -553,8 +553,8 @@ BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:
 	.string "effective” and goes down if it was\l"
 	.string "“not very effective.”\p"
 	.string "The Skill rating will not go up for\n"
-	.string "moves such as PROTECT and Detect.\p"
-	.string "If the opponent used PROTECT or\n"
+	.string "moves such as Protect and Detect.\p"
+	.string "If the opponent used Protect or\n"
 	.string "Detect, and your Pokémon failed to\l"
 	.string "hit with a move, its Skill rating will not\l"
 	.string "go down.$"

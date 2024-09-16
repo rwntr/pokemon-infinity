@@ -1776,7 +1776,7 @@ TVSpotTheCuties_Text_RibbonChampion::
 	.string "The Champion Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it upon entering\n"
-	.string "the Hall OF Fame.\p"
+	.string "the Hall of Fame.\p"
 	.string "It verily draws out the bravery\n"
 	.string "of {STR_VAR_2}.\p"
 	.string "{STR_VAR_2} and the Champ Ribbon!\n"
@@ -2175,7 +2175,7 @@ TVSecretBaseSecrets_Text_UsedSilverShield::
 
 TVSecretBaseSecrets_Text_UsedGlassOrnament::
 	.string "The visitor is examining\n"
-	.string "a glass ORNAMENT!\p"
+	.string "a glass Ornament!\p"
 	.string "Oh, no!\p"
 	.string "The visitor is touching it!\p"
 	.string "It's getting covered with\n"
@@ -2276,7 +2276,7 @@ TVSecretBaseSecrets_Text_UsedSpinMat::
 
 TVSecretBaseSecrets_Text_UsedSandOrnament::
 	.string "The visitor is reaching for\n"
-	.string "a SAND ORNAMENT!\p"
+	.string "a SAND Ornament!\p"
 	.string "Oh!\p"
 	.string "It crumbled!\n"
 	.string "It's fallen apart!\p"
@@ -2833,7 +2833,7 @@ GabbyAndTy_Text_TyDefeat:
 	.string "That whole battle's on camera.$"
 
 gTVInSearchOfTrainersText00::
-	.string "IN SEARCH OF Trainers…\p"
+	.string "IN SEARCH OF TRAINERS…\p"
 	.string "Gabby: Hi! Today I'm visiting an area\n"
 	.string "near {STR_VAR_1}.\p"
 	.string "We're trying to spot some up-and-\n"

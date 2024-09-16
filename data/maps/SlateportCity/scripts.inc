@@ -1304,14 +1304,14 @@ SlateportCity_Text_ExplainBerryPowder:
 	.string "The Berry Crush machines are at\n"
 	.string "the Direct Corner upstairs.\p"
 	.string "Did you know?\p"
-	.string "Could you make Berry POWDER for\n"
+	.string "Could you make Berry Powder for\n"
 	.string "me using those machines?\p"
 	.string "I can make you all sorts of medicine\n"
-	.string "if you bring me lots of Berry POWDER.$"
+	.string "if you bring me lots of Berry Powder.$"
 
 SlateportCity_Text_BroughtMeSomeBerryPowder:
 	.string "Have you brought me some\n"
-	.string "Berry POWDER?$"
+	.string "Berry Powder?$"
 
 SlateportCity_Text_ExchangeWhatWithIt:
 	.string "What would you like to exchange\n"
@@ -1319,25 +1319,25 @@ SlateportCity_Text_ExchangeWhatWithIt:
 
 SlateportCity_Text_ExchangeBerryPowderForItem:
 	.string "Okay, you want to exchange your\n"
-	.string "Berry POWDER for one {STR_VAR_1}?$"
+	.string "Berry Powder for one {STR_VAR_1}?$"
 
 SlateportCity_Text_DontHaveEnoughBerryPowder:
 	.string "Oh, dear. You don't have enough\n"
-	.string "Berry POWDER.$"
+	.string "Berry Powder.$"
 
 SlateportCity_Text_FineBerryPowderTradeSomethingElse:
-	.string "This is fine Berry POWDER.\n"
+	.string "This is fine Berry Powder.\n"
 	.string "It will make excellent medicine.\p"
 	.string "Would you like to trade more of your\n"
-	.string "Berry POWDER for something else?$"
+	.string "Berry Powder for something else?$"
 
 SlateportCity_Text_WhenYouGetMoreBringItToMe:
 	.string "Okay! When you get some more\n"
-	.string "Berry POWDER, bring it to me, please!$"
+	.string "Berry Powder, bring it to me, please!$"
 
 SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "Come back if you'd like to trade your\n"
-	.string "Berry POWDER for some medicine.\p"
+	.string "Berry Powder for some medicine.\p"
 	.string "I'm always running a bazaar here.\p"
 	.string "Did you know?$"
 

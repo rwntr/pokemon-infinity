@@ -300,7 +300,7 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "Oh, wow!\n"
 	.string "That's a Pokénav!\p"
 	.string "It came about as a result of our\n"
-	.string "PRESIDENT's desire to learn about\l"
+	.string "President's desire to learn about\l"
 	.string "the feelings of Pokémon.\p"
 	.string "Would you like me to describe its\n"
 	.string "features in detail?\p"
