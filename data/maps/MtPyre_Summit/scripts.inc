@@ -560,7 +560,7 @@ MtPyre_Summit_Text_WillYouHearOutMyTale:
 	.string "MT. PYRE is where we calm the spirits\n"
 	.string "of Pokémon that have passed on…\p"
 	.string "This is a high place where one can\n"
-	.string "see all of HOENN…\p"
+	.string "see all of Hoenn…\p"
 	.string "The disembodied spirits of Pokémon\n"
 	.string "must find solace here…\p"
 	.string "Is it coincidence that you are here…\p"

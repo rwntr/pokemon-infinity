@@ -581,7 +581,7 @@ LilycoveCity_Text_GetLostMessingUpTraining:
 	.string "so can you, like, get lost?$"
 
 LilycoveCity_Text_ContestHallInTown:
-	.string "There's a Pokémon Contest HALL\n"
+	.string "There's a Pokémon Contest Hall\n"
 	.string "right in this here town. \p"
 	.string "That means well-raised Pokémon will\n"
 	.string "come from all over the country.\p"
@@ -672,7 +672,7 @@ LilycoveCity_Text_CitySign:
 	.string "sea begins.”$"
 
 LilycoveCity_Text_ContestHallSign:
-	.string "Pokémon Contest HALL\n"
+	.string "Pokémon Contest Hall\n"
 	.string "“The gathering place for Trainers!”$"
 
 LilycoveCity_Text_MotelSign:
@@ -691,14 +691,14 @@ LilycoveCity_Text_MuseumSignPlayersExhibit:
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_HarborSignUnderConstruction:
-	.string "LILYCOVE City HARBOR\p"
+	.string "LILYCOVE City Harbor\p"
 	.string "“The ferry S.S. TIDAL is under\n"
 	.string "construction in Slateport City.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
 
 LilycoveCity_Text_HarborSign:
-	.string "LILYCOVE City HARBOR\p"
+	.string "LILYCOVE City Harbor\p"
 	.string "“Enjoy a delightful cruise on\n"
 	.string "the ferry S.S. TIDAL.”$"
 

@@ -83,7 +83,7 @@ FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "Welcome back, WINGULL!\p"
 	.string "Huh? What is this?\n"
 	.string "What is it holding?\p"
-	.string "A MENTAL HERB?\n"
+	.string "A MENTAL Herb?\n"
 	.string "It must have picked it up somewhere.\p"
 	.string "But I'm not a Trainer, so you can\n"
 	.string "have it.$"

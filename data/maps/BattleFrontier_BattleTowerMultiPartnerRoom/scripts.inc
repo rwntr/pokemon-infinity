@@ -795,7 +795,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerIntro::
 	.string "Yahoo!\n"
-	.string "I'm HIKER {STR_VAR_1}!$"
+	.string "I'm Hiker {STR_VAR_1}!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon1::
 	.string "Know what I have with me?\n"
@@ -1011,7 +1011,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacIntro::
 	.string "Greetings…\n"
-	.string "I am HEX MANIAC {STR_VAR_1}…$"
+	.string "I am Hex MANIAC {STR_VAR_1}…$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon1::
 	.string "I bear with me one {STR_VAR_1}-using\n"

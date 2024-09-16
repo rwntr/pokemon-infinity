@@ -723,7 +723,7 @@ Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "the bike shop in Mauville.$"
 
 Route111_Text_TrainerHillSign:
-	.string "{RIGHT_ARROW} Trainer HILL Entrance\p"
+	.string "{RIGHT_ARROW} Trainer Hill Entrance\p"
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "Trainers!”$"
 

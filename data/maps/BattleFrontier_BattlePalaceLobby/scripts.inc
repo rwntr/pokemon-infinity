@@ -386,12 +386,12 @@ BattleFrontier_BattlePalaceLobby_Text_WelcomeForSingleBattle:
 
 BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
 	.string "Do you wish to take\n"
-	.string "the Single Battle HALL challenge?$"
+	.string "the Single Battle Hall challenge?$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
 	.string "In the Battle Palace, there are\n"
 	.string "several auditoriums for SINGLE Battles\l"
-	.string "that are named Single Battle HALLS.\p"
+	.string "that are named Single Battle Halls.\p"
 	.string "The SINGLE Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
@@ -556,12 +556,12 @@ BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle:
 
 BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
 	.string "Do you wish to take\n"
-	.string "the Double Battle HALL challenge?$"
+	.string "the Double Battle Hall challenge?$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
 	.string "In the Battle Palace, there are\n"
 	.string "several auditoriums for Double Battles\l"
-	.string "that are named Double Battle HALLS.\p"
+	.string "that are named Double Battle Halls.\p"
 	.string "The Double Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"

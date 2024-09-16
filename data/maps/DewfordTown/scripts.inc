@@ -654,7 +654,7 @@ DewfordTown_Text_GymSign:
 	.string "“A big wave in fighting!”$"
 
 DewfordTown_Text_HallSign:
-	.string "Dewford HALL\n"
+	.string "Dewford Hall\n"
 	.string "“Everyone's information exchange!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter:

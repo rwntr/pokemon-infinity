@@ -1293,7 +1293,7 @@ TrendWatcher_Text_Outro::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}!$"
 
 gTVHoennTreasureInvestigatorsText00::
-	.string "HOENN TREASURE INVESTIGATORS!\p"
+	.string "Hoenn TREASURE INVESTIGATORS!\p"
 	.string "Hi, gang!\n"
 	.string "Score any secret items lately?\p"
 	.string "As always, we'll examine eyewitness\n"
@@ -1776,7 +1776,7 @@ TVSpotTheCuties_Text_RibbonChampion::
 	.string "The Champion Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it upon entering\n"
-	.string "the HALL OF Fame.\p"
+	.string "the Hall OF Fame.\p"
 	.string "It verily draws out the bravery\n"
 	.string "of {STR_VAR_2}.\p"
 	.string "{STR_VAR_2} and the Champ Ribbon!\n"
@@ -1959,14 +1959,14 @@ gTVPokemonNewsBattleFrontierText11::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
 	.string "the Battle Palace's Single Battle\l"
-	.string "HALL challenge.\p"
+	.string "Hall challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText12::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
 	.string "the Battle Palace's Double Battle\l"
-	.string "HALL challenge.\p"
+	.string "Hall challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText13::

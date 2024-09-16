@@ -402,7 +402,7 @@ BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
 	.string "is conducted there.$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "The RANKING HALL is located near\n"
+	.string "The RANKING Hall is located near\n"
 	.string "the Battle Tower.\p"
 	.string "There, you may see the most fantastic\n"
 	.string "records left by the Trainers that\l"

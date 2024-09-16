@@ -142,7 +142,7 @@ gPokeNewsTextBlendMaster_Ongoing::
 	.string "finally appeared!\p"
 	.string "The Blend Master is spinning\n"
 	.string "the Berry Blender at the LILYCOVE\l"
-	.string "Contest HALL.\p"
+	.string "Contest Hall.\p"
 	.string "Those people who want to make great\n"
 	.string "{POKEBLOCK}s or see the Master in action\l"
 	.string "should hurry to LILYCOVE.\p"

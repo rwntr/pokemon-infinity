@@ -653,7 +653,7 @@ Route107_Text_DeniseDefeated:
 
 Route107_Text_DenisePostBattle:
 	.string "A weird saying is getting really\n"
-	.string "trendy at Dewford HALL.$"
+	.string "trendy at Dewford Hall.$"
 
 Route107_Text_BethIntro:
 	.string "Did you want to battle me?\n"
@@ -2180,7 +2180,7 @@ Route116_Text_ClarkDefeat:
 
 Route116_Text_ClarkPostBattle:
 	.string "It's no big deal if there's no tunnel.\n"
-	.string "To a HIKER, mountains are roads!$"
+	.string "To a Hiker, mountains are roads!$"
 
 Route116_Text_JoeyIntro:
 	.string "My Pokémon rule!\n"
@@ -3800,7 +3800,7 @@ Route125_Text_StanDefeat:
 	.string "I floundered…$"
 
 Route125_Text_StanPostBattle:
-	.string "I was blown away by HORSEA's charm,\n"
+	.string "I was blown away by Horsea's charm,\n"
 	.string "so I started swimming, too.$"
 
 Route125_Text_TanyaIntro:

@@ -827,7 +827,7 @@ MtChimney_Text_SawyerDefeat:
 
 MtChimney_Text_SawyerPostBattle:
 	.string "I think I need a dip in Lavaridge\n"
-	.string "HOT SPRING with the locals!$"
+	.string "Hot SPRING with the locals!$"
 
 MtChimney_Text_SawyerRegister:
 	.string "I like little fireballs like you.\n"

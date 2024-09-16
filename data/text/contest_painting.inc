@@ -13,7 +13,7 @@ gContestRankSuper::
 	.string "Super Rank$"
 
 gContestRankHyper::
-	.string "HYPER Rank$"
+	.string "Hyper Rank$"
 
 gContestRankMaster::
 	.string "Master Rank$"

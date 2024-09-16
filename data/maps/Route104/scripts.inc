@@ -1047,7 +1047,7 @@ Route104_Text_DontNeedThisTakeIt:
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping.\p"
-	.string "I don't need this WHITE HERB anymore.\n"
+	.string "I don't need this WHITE Herb anymore.\n"
 	.string "Would you take it, please?$"
 
 Route104_Text_FlowerShopSellingSaplings:

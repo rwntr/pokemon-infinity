@@ -832,7 +832,7 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "there are also Pokémon from other\l"
 	.string "regions.\p"
 	.string "It goes to show how rich and varied\n"
-	.string "the natural environments of HOENN\l"
+	.string "the natural environments of Hoenn\l"
 	.string "happen to be.\p"
 	.string "That's why I think it's necessary for\n"
 	.string "me to upgrade your Pokédex to\l"
@@ -847,7 +847,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
 	.string "so many Pokémon, {PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "Brendan: I went out all over HOENN\n"
+	.string "Brendan: I went out all over Hoenn\n"
 	.string "and checked out Pokémon.\p"
 	.string "You can thank me for getting\n"
 	.string "the NATIONAL Mode Pokédex.\p"
@@ -887,7 +887,7 @@ LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Yes, there's no doubt about it.\p"
-	.string "You really have completed the HOENN\n"
+	.string "You really have completed the Hoenn\n"
 	.string "region's Pokédex.\p"
 	.string "That's more than just impressive.\p"
 	.string "I have a gift for you.\p"

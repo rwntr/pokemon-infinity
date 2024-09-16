@@ -1600,7 +1600,7 @@ SootopolisCity_Text_GroudonPleaseStop:
 	.string "Maxie: G… Groudon…\n"
 	.string "Please! Stop what you're doing!\p"
 	.string "I know the extent of your power now!\p"
-	.string "If you keep going, all HOENN, not just\n"
+	.string "If you keep going, all Hoenn, not just\n"
 	.string "SOOTOPOLIS, will be utterly ruined!$"
 
 SootopolisCity_Text_AfterAllOurScheming:

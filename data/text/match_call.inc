@@ -2700,7 +2700,7 @@ MatchCall_Text_Scott6::
 	.string "It's something you can look\n"
 	.string "forward to.\p"
 	.string "When you've won your way through\n"
-	.string "the Pokémon League into the HALL\l"
+	.string "the Pokémon League into the Hall\l"
 	.string "OF Fame!$"
 
 MatchCall_Text_Scott7::
@@ -2825,7 +2825,7 @@ MatchCall_Text_Steven6::
 
 MatchCall_Text_Steven7::
 	.string "Steven: {PLAYER}{KUN}… Congratulations\n"
-	.string "for entering the HALL OF Fame.\p"
+	.string "for entering the Hall OF Fame.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I hope we can meet again\n"

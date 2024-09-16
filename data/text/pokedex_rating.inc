@@ -76,7 +76,7 @@ gBirchDexRatingText_LessThan140::
 
 gBirchDexRatingText_LessThan150::
 	.string "I had no idea that there were so\n"
-	.string "many Pokémon species in the HOENN\l"
+	.string "many Pokémon species in the Hoenn\l"
 	.string "region.$"
 
 gBirchDexRatingText_LessThan160::

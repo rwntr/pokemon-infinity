@@ -101,7 +101,7 @@ BattleFrontier_RankingHall_EventScript_Boy::
 	end
 
 BattleFrontier_RankingHall_Text_ExplainRankingHall:
-	.string "This is the RANKING HALL.\p"
+	.string "This is the RANKING Hall.\p"
 	.string "This is where we recognize the immortal\n"
 	.string "Trainers who left great records in\l"
 	.string "Battle Frontier events.$"

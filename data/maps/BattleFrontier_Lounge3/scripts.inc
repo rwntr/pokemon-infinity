@@ -274,14 +274,14 @@ BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble::
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "PALACE's Single Battle HALLS.\p"
+	.string "PALACE's Single Battle Halls.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "PALACE's Double Battle HALLS.\p"
+	.string "PALACE's Double Battle Halls.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
@@ -383,14 +383,14 @@ BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble::
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle::
 	.string "Get to the Battle Palace's\n"
-	.string "Single Battle HALLS pronto!\p"
+	.string "Single Battle Halls pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble::
 	.string "Get to the Battle Palace's\n"
-	.string "Double Battle HALLS pronto!\p"
+	.string "Double Battle Halls pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"

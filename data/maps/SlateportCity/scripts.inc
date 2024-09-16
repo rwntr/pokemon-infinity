@@ -1220,7 +1220,7 @@ SlateportCity_Text_SternWhatWasAllThat:
 	.string "Where did it come from?$"
 
 SlateportCity_Text_FromHarborTryingToTakeSub:
-	.string "It's from the HARBOR!\p"
+	.string "It's from the Harbor!\p"
 	.string "The submarine!\n"
 	.string "They're trying to take it!$"
 
@@ -1247,7 +1247,7 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "Stern's Shipyard\p"
 	.string "“Boarding of the Slateport-LILYCOVE\n"
 	.string "ferry S.S. TIDAL is handled at the\l"
-	.string "HARBOR.”$"
+	.string "Harbor.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
 	.string "Pokémon Fan Club\n"
@@ -1268,14 +1268,14 @@ SlateportCity_Text_MarketSign:
 	.string "“Unique items found nowhere else!”$"
 
 SlateportCity_Text_HarborFerryUnderConstruction:
-	.string "Slateport HARBOR\p"
+	.string "Slateport Harbor\p"
 	.string "“The ferry S.S. TIDAL is under\n"
 	.string "construction in the SHIPYARD.\p"
 	.string "“Service is scheduled to begin\n"
 	.string "shortly.”$"
 
 SlateportCity_Text_HarborSign:
-	.string "Slateport HARBOR\p"
+	.string "Slateport Harbor\p"
 	.string "“Enjoy a delightful cruise on\n"
 	.string "the ferry S.S. TIDAL.”$"
 
