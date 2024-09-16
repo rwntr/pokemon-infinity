@@ -579,7 +579,7 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
 	.string "you will be disqualified.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ToDefeatMavenAnd7Trainers:
-	.string "To defeat the PALACE Maven\n"
+	.string "To defeat the Palace Maven\n"
 	.string "and seven Trainers in a row…$"
 
 BattleFrontier_BattlePalaceLobby_Text_PresentYouWithBattlePoints:
@@ -590,7 +590,7 @@ BattleFrontier_BattlePalaceLobby_Text_PresentYouWithBattlePoints:
 BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch:
 	.string "Would you like to record your latest\n"
 	.string "Battle Palace match on your\l"
-	.string "Frontier PASS?$"
+	.string "Frontier Pass?$"
 
 BattleFrontier_BattlePalaceLobby_Text_RulesAreListed:
 	.string "The BATTLE HALL rules are listed.$"

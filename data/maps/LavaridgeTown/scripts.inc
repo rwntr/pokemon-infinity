@@ -292,7 +292,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "You're trying hard because you don't\n"
 	.string "want to lose to me, I bet!\p"
 	.string "{PLAYER}{KUN}, I think I should challenge\n"
-	.string "your dad in PETALBURG GYM.\p"
+	.string "your dad in Petalburg.\p"
 	.string "See you again!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
@@ -312,7 +312,7 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "You might look around for those.\p"
 	.string "As for me…\n"
 	.string "I'm considering challenging Norman,\l"
-	.string "the Gym Leader of PETALBURG.\p"
+	.string "the Gym Leader of Petalburg.\p"
 	.string "Unlike you, {PLAYER}, your dad looks like\n"
 	.string "he really is tough.\p"
 	.string "See you around!$"

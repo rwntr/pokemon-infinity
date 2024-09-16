@@ -194,8 +194,8 @@ CableClub_Text_YouMayBattleHere::
 	.string "here.$"
 
 CableClub_Text_CanMakeBerryPowder::
-	.string "Two to five TRAINERS can make\n"
-	.string "BERRY POWDER together.$"
+	.string "Two to five Trainers can make\n"
+	.string "Berry Powder together.$"
 
 CableClub_Text_CanMixRecords::
 	.string "The records of two to four players\n"

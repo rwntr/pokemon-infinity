@@ -958,7 +958,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz3:
 	.string "MECHADOLL 2 QUIZ.\p"
 	.string "Which of these Pokémon did Team Aqua\n"
-	.string "use in PETALBURG Woods?$"
+	.string "use in Petalburg Woods?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Intro:
 	.string "CLICKETY-CLACK…\n"
@@ -977,8 +977,8 @@ Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Quiz3:
 	.string "MECHADOLL 3 QUIZ.\p"
-	.string "Do one REPEL and SODA POP cost\n"
-	.string "more than one SUPER POTION?$"
+	.string "Do one Repel and SODA Pop cost\n"
+	.string "more than one Super Potion?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll4Intro:
 	.string "CLICKETY-CLACK…\n"

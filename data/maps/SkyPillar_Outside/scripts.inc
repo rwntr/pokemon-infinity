@@ -145,7 +145,7 @@ SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
 	.string "In my haste, I didn't notice that\n"
 	.string "I'd left you behind!\p"
 	.string "I've opened the locked door of\n"
-	.string "the SKY PILLAR.\p"
+	.string "the SKY Pillar.\p"
 	.string "{PLAYER}{KUN}, let's be on our way!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:

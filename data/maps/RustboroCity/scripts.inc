@@ -1060,9 +1060,9 @@ RustboroCity_Text_MrBrineyLovesPeeko:
 	.string "The old sailor MR. BRINEY lives in\n"
 	.string "a cottage by the sea.\p"
 	.string "He said he was going shopping in\n"
-	.string "SLATEPORT for his pet, PEEKO.\p"
+	.string "Slateport for his pet, Peeko.\p"
 	.string "That old sea dog, he must really love\n"
-	.string "that PEEKO.$"
+	.string "that Peeko.$"
 
 RustboroCity_Text_WowYouHavePokemon:
 	.string "Wow, you have POKéMON with you, too.\p"
@@ -1099,8 +1099,8 @@ RustboroCity_Text_WaitDontTakeMyGoods:
 
 RustboroCity_Text_HelpMeIWasRobbed:
 	.string "Oh, it's you!\p"
-	.string "You're that fantastic TRAINER who\n"
-	.string "helped me in PETALBURG WOODS!\p"
+	.string "You're that fantastic Trainer who\n"
+	.string "helped me in Petalburg WOODS!\p"
 	.string "Help me! I was robbed by Team Aqua!\n"
 	.string "I have to get the Devon Goods back!\p"
 	.string "If I don't…\n"
@@ -1140,8 +1140,8 @@ RustboroCity_Text_RegisteredMay:
 	.string "in the Pokénav.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "MAY: Oh, by the way, I passed\n"
-	.string "MR. BRINEY in PETALBURG WOODS.\p"
+	.string "May: Oh, by the way, I passed\n"
+	.string "Mr. Briney in Petalburg WOODS.\p"
 	.string "I guess he's on his way home to his\n"
 	.string "cottage by the sea.\p"
 	.string "How's your POKéDEX coming along,\n"
@@ -1187,8 +1187,8 @@ RustboroCity_Text_RegisteredBrendan:
 	.string "in the Pokénav.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "BRENDAN: By the way, {PLAYER}, I walked\n"
-	.string "by MR. BRINEY in PETALBURG WOODS.\p"
+	.string "Brendan: By the way, {PLAYER}, I walked\n"
+	.string "by Mr. Briney in Petalburg WOODS.\p"
 	.string "I bet he was on his way home to his\n"
 	.string "cottage by the sea.\p"
 	.string "{PLAYER}, how's your POKéDEX?\n"
@@ -1238,7 +1238,7 @@ RustboroCity_Text_GymSign:
 	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "Devon Corp. Branch OFFICE\p"
+	.string "Devon Corp. Branch Office\p"
 	.string "“Access limited to Devon employees\n"
 	.string "and authorized personnel.”$"
 
@@ -1259,8 +1259,8 @@ RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "I've been developing an added feature\n"
 	.string "for the POKéNAV…\p"
 	.string "And it turned out great!\p"
-	.string "{PLAYER}, may I see that POKéNAV?\n"
-	.string "The one our PRESIDENT gave you?$"
+	.string "{PLAYER}, may I see that Pokénav?\n"
+	.string "The one our President gave you?$"
 
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 	.string "There you go, {PLAYER}!\p"
@@ -1268,11 +1268,11 @@ RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 	.string "Match Call to your Pokénav.\p"
 	.string "Using the Match Call feature,\n"
 	.string "you can chat with people who have\l"
-	.string "been registered in your POKéNAV.\p"
-	.string "{PLAYER}, our PRESIDENT STONE should\n"
-	.string "be registered in your POKéNAV.\p"
+	.string "been registered in your Pokénav.\p"
+	.string "{PLAYER}, our President STONE should\n"
+	.string "be registered in your Pokénav.\p"
 	.string "Test it out.\n"
-	.string "Please give our PRESIDENT a call.$"
+	.string "Please give our President a call.$"
 
 RustboroCity_Text_PleaseSelectPokenav:
 	.string "Please select the POKéNAV.$"

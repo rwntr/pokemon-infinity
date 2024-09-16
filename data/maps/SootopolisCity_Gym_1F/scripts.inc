@@ -247,8 +247,8 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "battle we shared, take this…$"
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
-	.string "The TECHNICAL MACHINE I handed you\n"
-	.string "contains WATER PULSE.\p"
+	.string "The Technical Machine I handed you\n"
+	.string "contains WATER Pulse.\p"
 	.string "In use, it will occasionally confuse\n"
 	.string "the target with ultrasonic waves.\p"
 	.string "… … … … … …$"

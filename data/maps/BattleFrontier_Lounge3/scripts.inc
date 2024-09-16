@@ -274,14 +274,14 @@ BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble::
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "PALACE's Single Battle Halls.\p"
+	.string "Palace's Single Battle Halls.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "PALACE's Double Battle Halls.\p"
+	.string "Palace's Double Battle Halls.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
@@ -300,10 +300,10 @@ BattleFrontier_Lounge3_Text_ChallengeBattlePike::
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePyramid::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be entering the BATTLE\l"
-	.string "PYRAMID's Battle Quest.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
+	.string "What I'm looking for is a Trainer who's\n"
+	.string "going to be entering the Battle\l"
+	.string "Pyramid's Battle Quest.\p"
+	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe::

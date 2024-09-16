@@ -589,7 +589,7 @@ Route119_Text_TallGrassSnaresBikeTires:
 	.string "There's no way you can cycle here.$"
 
 Route119_Text_CanYourMonMakeSecretBase:
-	.string "Can your POKéMON use its SECRET POWER\n"
+	.string "Can your Pokémon use its SECRET Power\n"
 	.string "on a big pile of grass and make a\l"
 	.string "SECRET Base?$"
 

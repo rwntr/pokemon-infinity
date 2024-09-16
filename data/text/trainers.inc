@@ -847,8 +847,8 @@ Route109_Text_EdmondPostBattle:
 	.string "I'm a SAILOR, but…$"
 
 Route109_Text_RickyIntro:
-	.string "I'm thirsty… I could go for a SODA POP\n"
-	.string "at the SEASHORE HOUSE…$"
+	.string "I'm thirsty… I could go for a SODA Pop\n"
+	.string "at the Seashore House…$"
 
 Route109_Text_RickyDefeated:
 	.string "Groan…$"
@@ -933,21 +933,21 @@ Route109_Text_CarterPostBattle:
 	.string "No, you're a big-one-to-be!$"
 
 Route109_Text_PaulIntro:
-	.string "PAUL: Well, this is a mood-breaker.\p"
+	.string "Paul: Well, this is a mood-breaker.\p"
 	.string "I wish you wouldn't disturb our\n"
 	.string "precious time together.$"
 
 Route109_Text_PaulDefeated:
-	.string "PAUL: Well, I give up.$"
+	.string "Paul: Well, I give up.$"
 
 Route109_Text_PaulPostBattle:
-	.string "PAUL: Well, don't tell anyone that\n"
+	.string "Paul: Well, don't tell anyone that\n"
 	.string "we're here.\l"
 	.string "This is just our private world of two!$"
 
 Route109_Text_PaulNotEnoughPokemon:
-	.string "PAUL: We're totally, deeply in love.\n"
-	.string "That's why we make our POKéMON battle\l"
+	.string "Paul: We're totally, deeply in love.\n"
+	.string "That's why we make our Pokémon battle\l"
 	.string "together.$"
 
 Route109_Text_MelIntro:
@@ -956,10 +956,10 @@ Route109_Text_MelIntro:
 
 Route109_Text_MelDefeated:
 	.string "Mel: We lost, and it's my fault!\n"
-	.string "PAUL will hate me!$"
+	.string "Paul will hate me!$"
 
 Route109_Text_MelPostBattle:
-	.string "Mel: Um, PAUL, are you angry with me?\n"
+	.string "Mel: Um, Paul, are you angry with me?\n"
 	.string "Please don't be angry.$"
 
 Route109_Text_MelNotEnoughPokemon:
@@ -1585,7 +1585,7 @@ Route112_Text_CarolPostBattle:
 	.string "If you have the most fun, you win!$"
 
 Route112_Text_BryantIntro:
-	.string "I caught hot Pokémon in Fiery PATH!\n"
+	.string "I caught hot Pokémon in Fiery Path!\n"
 	.string "Take a look!$"
 
 Route112_Text_BryantDefeat:
@@ -2554,13 +2554,13 @@ Route117_Text_MelinaPostBattle:
 
 Route117_Text_BrandiIntro:
 	.string "Let me demonstrate the power\n"
-	.string "hidden within a PSYCHIC POKéMON!$"
+	.string "hidden within a Psychic Pokémon!$"
 
 Route117_Text_BrandiDefeat:
 	.string "Astonishing!$"
 
 Route117_Text_BrandiPostBattle:
-	.string "PSYCHIC POKéMON are complex.\n"
+	.string "Psychic Pokémon are complex.\n"
 	.string "You should try catching some.$"
 
 Route117_Text_AishaIntro:
@@ -3189,7 +3189,7 @@ Route121_Text_TammyDefeat:
 	.string "I have lost…$"
 
 Route121_Text_TammyPostBattle:
-	.string "Mt. PYRE…\n"
+	.string "Mt. Pyre…\n"
 	.string "There is a mysterious power\l"
 	.string "at work there…$"
 
@@ -3399,7 +3399,7 @@ Route123_Text_CameronRematchDefeat:
 	.string "I feel sad…$"
 
 Route123_Text_CameronPostRematch:
-	.string "I should train at Mt. PYRE…\n"
+	.string "I should train at Mt. Pyre…\n"
 	.string "I'll never beat you this way…$"
 
 Route123_Text_JackiIntro:
@@ -3461,7 +3461,7 @@ Route123_Text_YukiNotEnoughMons:
 	.string "don't have two POKéMON.$"
 
 Route123_Text_KindraIntro:
-	.string "Mt. PYRE…\n"
+	.string "Mt. Pyre…\n"
 	.string "Where the spirits of Pokémon sleep…\l"
 	.string "Will your Pokémon sleep?$"
 
@@ -3469,7 +3469,7 @@ Route123_Text_KindraDefeat:
 	.string "Overflowing with vitality…$"
 
 Route123_Text_KindraPostBattle:
-	.string "Mt. PYRE…\n"
+	.string "Mt. Pyre…\n"
 	.string "Where the spirits of Pokémon sleep…\p"
 	.string "It must overflow with a power that\n"
 	.string "soothes spirits…$"
@@ -4431,8 +4431,8 @@ Route131_Text_ReliDefeat:
 	.string "worked together…$"
 
 Route131_Text_ReliPostBattle:
-	.string "RELI: The people of PACIFIDLOG are\n"
-	.string "together with the sea and POKéMON from\l"
+	.string "RELI: The people of Pacifidlog are\n"
+	.string "together with the sea and Pokémon from\l"
 	.string "the time they are born.$"
 
 Route131_Text_ReliNotEnoughMons:
@@ -4448,10 +4448,10 @@ Route131_Text_IanDefeat:
 	.string "but we still couldn't win…$"
 
 Route131_Text_IanPostBattle:
-	.string "Ian: You know how PACIFIDLOG is\n"
+	.string "Ian: You know how Pacifidlog is\n"
 	.string "a floating town?\p"
 	.string "So, wherever there is the sea,\n"
-	.string "that's a part of PACIFIDLOG!$"
+	.string "that's a part of Pacifidlog!$"
 
 Route131_Text_IanNotEnoughMons:
 	.string "Ian: If you have two Pokémon,\n"
@@ -4471,7 +4471,7 @@ Route131_Text_TaliaPostBattle:
 	.string "Why don't you go take a look?$"
 
 Route131_Text_KevinIntro:
-	.string "The people of PACIFIDLOG are\n"
+	.string "The people of Pacifidlog are\n"
 	.string "a peaceful bunch.\p"
 	.string "They never get angry.\n"
 	.string "That goes for me, too.$"

@@ -59,8 +59,8 @@ PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
 	.string "of a scientific wizard!$"
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
-	.string "When my POKéMON ate an\n"
-	.string "ORAN BERRY, it regained HP!$"
+	.string "When my Pokémon ate an\n"
+	.string "Oran Berry, it regained HP!$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "There are many types of POKéMON.\p"

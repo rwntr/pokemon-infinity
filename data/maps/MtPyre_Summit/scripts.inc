@@ -484,7 +484,7 @@ MtPyre_Summit_Text_Grunt4PostBattle:
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
 	.string "of us, but we also got what we wanted.\p"
-	.string "The Red Orb preserved at Mt. PYRE…\n"
+	.string "The Red Orb preserved at Mt. Pyre…\n"
 	.string "I, Archie, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
@@ -499,7 +499,7 @@ MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "The BLUE ORB and RED ORB must never\n"
 	.string "be separated. They belong together.\p"
 	.string "What are those men trying to do with\n"
-	.string "the two ORBS?\p"
+	.string "the two Orbs?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Oh, yes. Was it TEAM MAGMA who came\n"
@@ -525,14 +525,14 @@ MtPyre_Summit_Text_GroudonKyogreAwakened:
 	.string "the RED ORB quelled the rage of\l"
 	.string "the two POKéMON…\p"
 	.string "It is also said that the true owner\n"
-	.string "of the ORBS still exists.\p"
+	.string "of the Orbs still exists.\p"
 	.string "However, no one knows who, or what\n"
-	.string "exactly, the ORBS belong to.\p"
+	.string "exactly, the Orbs belong to.\p"
 	.string "It could be a human, or perhaps\n"
 	.string "a POKéMON, but no one knows.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "The two men who took the ORBS came\n"
+	.string "The two men who took the Orbs came\n"
 	.string "back to return them on their own.\p"
 	.string "Those men…\n"
 	.string "Perhaps they are not so evil after all…$"
@@ -549,7 +549,7 @@ MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
 	.string "taught us that…$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "Mt. PYRE is where we calm the spirits\n"
+	.string "Mt. Pyre is where we calm the spirits\n"
 	.string "of Pokémon that have passed on…\p"
 	.string "This is a high place where one can\n"
 	.string "see all of Hoenn…\p"
@@ -573,7 +573,7 @@ MtPyre_Summit_Text_GroudonKyogreTale:
 	.string "infernos and vicious storms.\p"
 	.string "The BLUE ORB and the RED ORB brought\n"
 	.string "an end to the calamity.\p"
-	.string "Light poured from the two ORBS and\n"
+	.string "Light poured from the two Orbs and\n"
 	.string "becalmed the enraged adversaries.\p"
 	.string "The pair, made docile, dove deep into\n"
 	.string "the sea where eventually they\l"
