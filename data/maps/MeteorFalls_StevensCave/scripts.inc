@@ -44,8 +44,8 @@ MeteorFalls_StevensCave_Text_StevenDefeat:
 	.string "I had no idea you'd become so strong…$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
-	.string "STEVEN: Come to think of it, ever since\n"
-	.string "our paths first crossed in GRANITE\l"
+	.string "Steven: Come to think of it, ever since\n"
+	.string "our paths first crossed in Granite\l"
 	.string "Cave in Dewford, I had this feeling.\p"
 	.string "I thought that you would eventually\n"
 	.string "become the CHAMPION.\p"

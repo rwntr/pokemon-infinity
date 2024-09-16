@@ -373,19 +373,19 @@ CableClub_Text_ChooseGroupLeaderOfTwo:
 	.string "Please decide which of you two\n"
 	.string "will become the LEADER.\p"
 	.string "The other player must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "“JOIN Group.”$"
 
 CableClub_Text_ChooseGroupLeaderOfFour:
 	.string "Please decide which of you four\n"
-	.string "will become the GROUP LEADER.\p"
+	.string "will become the Group LEADER.\p"
 	.string "The other players must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "“JOIN Group.”$"
 
 CableClub_Text_ChooseGroupLeader:
 	.string "Please decide which of you will\n"
-	.string "become the GROUP LEADER.\p"
+	.string "become the Group LEADER.\p"
 	.string "The other players must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "“JOIN Group.”$"
 
 CableClub_Text_WelcomeUnionRoomEnter:
 	.string "Welcome to the Pokémon WIRELESS\n"

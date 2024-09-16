@@ -744,9 +744,9 @@ BattleFrontier_BattlePyramidLobby_Text_HintPPWaste:
 	.string "but to use STRUGGLE…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintLevitate:
-	.string "I see POKéMON loftily airborne…\p"
-	.string "…And, I see your POKéMON frustrated\n"
-	.string "by powerless GROUND-type moves…$"
+	.string "I see Pokémon loftily airborne…\p"
+	.string "…And, I see your Pokémon frustrated\n"
+	.string "by powerless Ground-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility:
 	.string "I sense terrific energy rising from\n"
@@ -804,9 +804,9 @@ BattleFrontier_BattlePyramidLobby_Text_HintWater:
 	.string "from WATER-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintGhost:
-	.string "I see GHOST-type POKéMON…\p"
-	.string "…And, I see your POKéMON suffering\n"
-	.string "from GHOST-type moves…$"
+	.string "I see Ghost-type Pokémon…\p"
+	.string "…And, I see your Pokémon suffering\n"
+	.string "from Ghost-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintSteel:
 	.string "I see STEEL-type POKéMON…\p"

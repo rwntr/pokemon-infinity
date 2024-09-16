@@ -447,8 +447,8 @@ PetalburgWoods_Text_TryUsingThisItem:
 
 PetalburgWoods_Text_MiracleSeedExplanation:
 	.string "It's a MIRACLE SEED.\n"
-	.string "If a POKéMON holds that item, its\l"
-	.string "GRASS-type moves become stronger.\p"
+	.string "If a Pokémon holds that item, its\l"
+	.string "Grass-type moves become stronger.\p"
 	.string "Besides MIRACLE SEED, I think there are\n"
 	.string "other convenient items for POKéMON\l"
 	.string "to hold.$"

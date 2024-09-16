@@ -515,8 +515,8 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
 	.string "in the handling of the Electric type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the GRASS type.$"
+	.string "The Trainer is apparently skilled\n"
+	.string "in the handling of the Grass type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
 	.string "The TRAINER is apparently skilled\n"
@@ -531,8 +531,8 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
 	.string "in the handling of the POISON type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the GROUND type.$"
+	.string "The Trainer is apparently skilled\n"
+	.string "in the handling of the Ground type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
 	.string "The Trainer is apparently skilled\n"
@@ -551,8 +551,8 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
 	.string "in the handling of the ROCK type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
-	.string "The TRAINER is apparently skilled\n"
-	.string "in the handling of the GHOST type.$"
+	.string "The Trainer is apparently skilled\n"
+	.string "in the handling of the Ghost type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
 	.string "The Trainer is apparently skilled\n"

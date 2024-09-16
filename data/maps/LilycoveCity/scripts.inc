@@ -550,7 +550,7 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 	.string "I was just talking to myself!$"
 
 LilycoveCity_Text_ChanceToDoBigThings:
-	.string "I'm just a GRUNT, so I don't know what\n"
+	.string "I'm just a Grunt, so I don't know what\n"
 	.string "the Boss is thinking…\p"
 	.string "But being on Team Aqua, I know I'll get\n"
 	.string "the chance to do big things!\p"

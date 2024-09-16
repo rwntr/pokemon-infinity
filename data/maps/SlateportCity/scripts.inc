@@ -920,7 +920,7 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	end
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
-	.string "I'm the Energy GURU! I'll go for it and\n"
+	.string "I'm the Energy Guru! I'll go for it and\n"
 	.string "sell you what you need!$"
 
 SlateportCity_Text_OhYourPokemon:
@@ -1099,9 +1099,9 @@ SlateportCity_Text_CantChangeTradeMonName:
 	.string "POKéMON is in the nickname.$"
 
 SlateportCity_Text_BattleTentBuiltRecently:
-	.string "Recently, a BATTLE TENT was built\n"
-	.string "in SLATEPORT.\p"
-	.string "GYMS are fun, but the BATTLE TENT's\n"
+	.string "Recently, a Battle Tent was built\n"
+	.string "in Slateport.\p"
+	.string "Gyms are fun, but the Battle Tent's\n"
 	.string "awesome in its own way.\p"
 	.string "You should go find tough POKéMON\n"
 	.string "for the BATTLE TENT!$"
@@ -1142,7 +1142,7 @@ SlateportCity_Text_BigSmileForCamera:
 	.string "for the camera!$"
 
 SlateportCity_Text_MostInvaluableExperience:
-	.string "GABBY: I see, I see. You've had a most\n"
+	.string "Gabby: I see, I see. You've had a most\n"
 	.string "invaluable experience…$"
 
 SlateportCity_Text_SternMoveAheadWithExploration:
@@ -1150,7 +1150,7 @@ SlateportCity_Text_SternMoveAheadWithExploration:
 	.string "move ahead with our exploration.$"
 
 SlateportCity_Text_GabbyWonderfulThanksForInterview:
-	.string "GABBY: That's wonderful, CAPT. STERN!\n"
+	.string "Gabby: That's wonderful, Capt. Stern!\n"
 	.string "Thank you for taking the time from\l"
 	.string "your busy schedule to talk to us.\p"
 	.string "We hope we can interview you again\n"

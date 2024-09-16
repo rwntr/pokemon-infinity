@@ -21,7 +21,7 @@ MauvilleCity_House1_EventScript_ReceivedRockSmash::
 MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "Woohoo!\p"
 	.string "I hear people call me the ROCK SMASH\n"
-	.string "GUY, but I find that sort of degrading.\p"
+	.string "guy, but I find that sort of degrading.\p"
 	.string "I think I deserve a bit more respect,\n"
 	.string "like maybe the ROCK SMASH Dude.\p"
 	.string "Woohoo!\p"
