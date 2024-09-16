@@ -194,10 +194,10 @@ MoveTutor_Text_DoubleEdgeTeach:
 	.string "lovably admirable.\p"
 	.string "But that also means I have many\n"
 	.string "rivals for his attention.\p"
-	.string "He's got appeal with a Double-EDGE.\n"
+	.string "He's got appeal with a Double-Edge.\n"
 	.string "I couldn't even catch his eye.\p"
 	.string "Please, let me teach your Pokémon\n"
-	.string "the move Double-EDGE!$"
+	.string "the move Double-Edge!$"
 
 MoveTutor_Text_DoubleEdgeDeclined:
 	.string "Oh…\n"
@@ -205,7 +205,7 @@ MoveTutor_Text_DoubleEdgeDeclined:
 
 MoveTutor_Text_DoubleEdgeWhichMon:
 	.string "Okay, which Pokémon should I teach\n"
-	.string "Double-EDGE?$"
+	.string "Double-Edge?$"
 
 MoveTutor_Text_DoubleEdgeTaught:
 	.string "I won't live for love anymore!\n"
@@ -217,21 +217,21 @@ MoveTutor_Text_ExplosionTeach:
 	.string "You watch me, I'll get out to the city\n"
 	.string "and become a huge hit.\p"
 	.string "Seriously, I'm going to cause\n"
-	.string "a huge EXPLOSION of popularity!\p"
+	.string "a huge Explosion of popularity!\p"
 	.string "If you overheard that, I'll happily\n"
-	.string "teach EXPLOSION to your Pokémon!$"
+	.string "teach Explosion to your Pokémon!$"
 
 MoveTutor_Text_ExplosionDeclined:
 	.string "Gaah! You're turning me down because\n"
 	.string "I live in the country?$"
 
 MoveTutor_Text_ExplosionWhichMon:
-	.string "Fine! An EXPLOSION it is!\n"
+	.string "Fine! An Explosion it is!\n"
 	.string "Which Pokémon wants to blow up?$"
 
 MoveTutor_Text_ExplosionTaught:
 	.string "For a long time, I've taught Pokémon\n"
-	.string "how to use EXPLOSION, but I've yet\l"
-	.string "to ignite my own EXPLOSION…\p"
+	.string "how to use Explosion, but I've yet\l"
+	.string "to ignite my own Explosion…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"

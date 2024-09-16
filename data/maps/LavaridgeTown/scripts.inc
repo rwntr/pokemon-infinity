@@ -321,7 +321,7 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "See you around!$"
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
-	.string "I have here an EGG.\p"
+	.string "I have here an Egg.\p"
 	.string "I'd hoped to hatch it by covering it in\n"
 	.string "hot sand by the hot springs.\l"
 	.string "But that doesn't seem to be enough…\p"
@@ -331,26 +331,26 @@ LavaridgeTown_Text_HaveEggWillYouTakeIt:
 	.string "You are a Trainer, yes?\n"
 	.string "And your Pokémon radiate vitality.\p"
 	.string "So, what say you?\n"
-	.string "Will you take this EGG to hatch?$"
+	.string "Will you take this Egg to hatch?$"
 
 LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg:
 	.string "Good! I hope you'll walk plenty with\n"
-	.string "this here EGG!$"
+	.string "this here Egg!$"
 
 LavaridgeTown_Text_ReceivedTheEgg:
-	.string "{PLAYER} received the EGG.$"
+	.string "{PLAYER} received the Egg.$"
 
 LavaridgeTown_Text_NoRoomForThisEgg:
 	.string "Oh? You've too many Pokémon.\n"
-	.string "There's no room for this EGG…$"
+	.string "There's no room for this Egg…$"
 
 LavaridgeTown_Text_AsYouWishThen:
 	.string "As you wish, then…\p"
 	.string "If you have a change of heart about\n"
-	.string "hatching this EGG, I will be here.$"
+	.string "hatching this Egg, I will be here.$"
 
 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare:
-	.string "Every so often, an EGG will be found at\n"
+	.string "Every so often, an Egg will be found at\n"
 	.string "the Pokémon Day Care.\p"
 	.string "Or at least that's how the rumor goes.$"
 

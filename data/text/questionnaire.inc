@@ -24,15 +24,15 @@ Questionnaire_Text_YouKnowThoseWordsEvent::
 	.string "Oh, hello!\n"
 	.string "You know those words?\p"
 	.string "That means you must know about\n"
-	.string "the MYSTERY EVENT.$"
+	.string "the MYSTERY Event.$"
 
 Questionnaire_Text_YouCanAccessMysteryEvent::
 	.string "Once you save your game, you can\n"
-	.string "access the MYSTERY EVENT.$"
+	.string "access the MYSTERY Event.$"
 
 MysteryGift_Text_TheresATicketForYou::
 	.string "Thank you for using the MYSTERY\n"
-	.string "EVENT System.\p"
+	.string "Event System.\p"
 	.string "You must be {PLAYER}.\n"
 	.string "There is a ticket here for you.$"
 

@@ -1224,7 +1224,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMIntro::
 	.string "Hm!\n"
-	.string "I am {STR_VAR_1}, and an EXPERT am I!$"
+	.string "I am {STR_VAR_1}, and an Expert am I!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon1::
 	.string "The Pokémon that I've toughened up are\n"
@@ -1245,7 +1245,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFIntro::
 	.string "Hello, hello.\n"
-	.string "I'm {STR_VAR_1}, and I'm an EXPERT.$"
+	.string "I'm {STR_VAR_1}, and I'm an Expert.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon1::
 	.string "I've raised my Pokémon thoroughly.\n"

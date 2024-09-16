@@ -410,7 +410,7 @@ BattleFrontier_ReceptionGate_Text_RankingHallInfo:
 	.string "the Battle Frontier.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The EXCHANGE SERVICE Corner is near\n"
+	.string "The Exchange SERVICE Corner is near\n"
 	.string "the Battle Tower.\p"
 	.string "The Battle Points you have earned in\n"
 	.string "the Battle Frontier may be exchanged\l"
@@ -454,7 +454,7 @@ BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
 	.string "Virtually any kind of Pokémon may take\n"
 	.string "on the challenges at all facilities.\p"
-	.string "EGGS and certain kinds of Pokémon,\n"
+	.string "Eggs and certain kinds of Pokémon,\n"
 	.string "however, are not permitted.\p"
 	.string "The numbers of Pokémon required for\n"
 	.string "challenges will depend on the facility.\p"
@@ -505,6 +505,6 @@ BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "Trainers who battled outstandingly\l"
 	.string "at the Battle Frontier.\p"
 	.string "You may trade in your Battle Points\n"
-	.string "for prizes at the EXCHANGE SERVICE\l"
+	.string "for prizes at the Exchange SERVICE\l"
 	.string "Corner.$"
 

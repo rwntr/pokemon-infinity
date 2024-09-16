@@ -99,7 +99,7 @@ LilycoveCity_MoveDeletersHouse_Text_ComeAgain:
 
 LilycoveCity_MoveDeletersHouse_Text_EggCantForgetMoves:
 	.string "What?\n"
-	.string "No EGG should know any moves.$"
+	.string "No Egg should know any moves.$"
 
 LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf:
 	.string "Hm!\p"

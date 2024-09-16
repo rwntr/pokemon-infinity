@@ -162,8 +162,8 @@ BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
 	.string "when she's serious?\p"
 	.string "When she's battling flat out,\n"
 	.string "she apparently uses these Pokémon:\p"
-	.string "A Dragon & PSYCHIC EON Pokémon,\n"
-	.string "an ELECTRIC-type THUNDER Pokémon,\l"
+	.string "A Dragon & PSYCHIC Eon Pokémon,\n"
+	.string "an Electric-type THUNDER Pokémon,\l"
 	.string "and a NORMAL-type SLEEPING Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
@@ -186,7 +186,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "when he's serious?\p"
 	.string "When he's demonstrating his strategy,\n"
 	.string "he uses these three Pokémon:\p"
-	.string "A Dragon & FLYING EON Pokémon,\n"
+	.string "A Dragon & FLYING Eon Pokémon,\n"
 	.string "a WATER & GROUND MUD FISH Pokémon,\l"
 	.string "and a STEEL- & PSYCHIC-type IRON LEG\l"
 	.string "Pokémon.$"
@@ -313,7 +313,7 @@ BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 	.string "When he's pumped with hot power,\n"
 	.string "he apparently uses these Pokémon:\p"
 	.string "An ICE & FLYING FREEZE Pokémon, an\n"
-	.string "ELECTRIC & FLYING ELECTRIC Pokémon,\l"
+	.string "Electric & FLYING Electric Pokémon,\l"
 	.string "and a FIRE- & FLYING-type FLAME\l"
 	.string "Pokémon.$"
 

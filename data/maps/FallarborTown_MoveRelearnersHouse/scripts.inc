@@ -95,5 +95,5 @@ FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale:
 
 FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
 	.string "Hunh? There isn't a single move that\n"
-	.string "I can teach an EGG.$"
+	.string "I can teach an Egg.$"
 
