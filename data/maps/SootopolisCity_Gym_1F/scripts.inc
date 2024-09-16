@@ -190,7 +190,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! You've beaten even JUAN, who\n"
 	.string "was supposedly the best in all Hoenn!\p"
-	.string "Okay! Check out your Trainer CARD.\p"
+	.string "Okay! Check out your Trainer Card.\p"
 	.string "If you've gotten all the Badges, you're\n"
 	.string "set for the Pokémon League challenge!$"
 

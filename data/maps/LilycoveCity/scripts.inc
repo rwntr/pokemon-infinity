@@ -673,8 +673,8 @@ LilycoveCity_Text_ContestHallSign:
 	.string "“The gathering place for TRAINERS!”$"
 
 LilycoveCity_Text_MotelSign:
-	.string "COVE LILY MOTEL\p"
-	.string "“Remember us as COVE LILY of\n"
+	.string "Cove LILY MOTEL\p"
+	.string "“Remember us as Cove LILY of\n"
 	.string "LILYCOVE.”$"
 
 LilycoveCity_Text_MuseumSign:
@@ -700,8 +700,8 @@ LilycoveCity_Text_HarborSign:
 	.string "the ferry S.S. TIDAL.”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
-	.string "POKéMON TRAINER FAN CLUB\p"
-	.string "The names of TRAINERS are scribbled\n"
+	.string "Pokémon Trainer FAN Club\p"
+	.string "The names of Trainers are scribbled\n"
 	.string "all over the sign…$"
 
 LilycoveCity_Text_DepartmentStoreSign:

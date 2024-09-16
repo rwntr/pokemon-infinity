@@ -59,10 +59,10 @@ SurfPichu_Slot5:
 	return
 
 sText_MysteryGiftEgg:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "From the POKéMON CENTER we\n"
-	.string "have a gift--a POKéMON EGG!\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
+	.string "From the Pokémon Center we\n"
+	.string "have a gift--a Pokémon EGG!\p"
 	.string "Please raise it with love and\n"
 	.string "kindness.$"
 

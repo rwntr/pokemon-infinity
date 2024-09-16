@@ -38,5 +38,5 @@ SootopolisCity_House3_Text_TrainerFanClubWasWild:
 	.string "Dedicated fans come over from even\n"
 	.string "outside of HOENN.\p"
 	.string "It was really wild when I went to the\n"
-	.string "TRAINER FAN CLUB in LILYCOVE.$"
+	.string "Trainer FAN Club in LILYCOVE.$"
 

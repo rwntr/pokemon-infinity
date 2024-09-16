@@ -712,7 +712,7 @@ MtChimney_Text_Bushaa:
 	.string "Bushaa!$"
 
 MtChimney_Text_LavaCookiesJust200:
-	.string "LAVA COOKIES are MT. CHIMNEY's local\n"
+	.string "LAVA Cookies are Mt. Chimney's local\n"
 	.string "specialty.\p"
 	.string "Try one. It's just ¥200.$"
 
@@ -809,7 +809,7 @@ MtChimney_Text_SheilaPostBattle:
 	.string "MT. CHIMNEY. It would be a shame if\l"
 	.string "I only do a little sightseeing…\p"
 	.string "I want to get in some battles and buy\n"
-	.string "COOKIES as souvenirs.$"
+	.string "Cookies as souvenirs.$"
 
 MtChimney_Text_ShirleyIntro:
 	.string "Since I bathed in the hot springs,\n"

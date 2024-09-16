@@ -318,9 +318,9 @@ LilycoveCity_ContestHall_Text_TodayWonSmartnessContest:
 	.string "My abilities scare even me…$"
 
 LilycoveCity_ContestHall_Text_EnteredBunchOfContests:
-	.string "I've entered a bunch of CONTESTS,\n"
+	.string "I've entered a bunch of Contests,\n"
 	.string "so I'm seeing how things work.\p"
-	.string "If you're in a COOLNESS CONTEST,\n"
+	.string "If you're in a Coolness Contest,\n"
 	.string "cool moves go over as appeals.\p"
 	.string "But smart moves and cute moves\n"
 	.string "don't go over well, for instance.$"
@@ -391,7 +391,7 @@ LilycoveCity_ContestHall_Text_PokemonSmarterThanTrainers:
 
 LilycoveCity_ContestHall_Text_StillLoveSmartnessContests:
 	.string "When all's said and done, I still love\n"
-	.string "SMARTNESS CONTESTS.\p"
+	.string "SMARTNESS Contests.\p"
 	.string "That intellectual green color…\n"
 	.string "It's so… So… Cool.$"
 
@@ -500,14 +500,14 @@ LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn:
 	.string "I'm going to go catch some!$"
 
 LilycoveCity_ContestHall_Text_BeautyContestStage:
-	.string "BEAUTY CONTEST STAGE\n"
+	.string "Beauty Contest Stage\n"
 	.string "BE ALLURED BY BEAUTIFUL POKéMON!$"
 
 LilycoveCity_ContestHall_Text_CuteContestStage:
-	.string "CUTENESS CONTEST STAGE\n"
+	.string "Cuteness Contest Stage\n"
 	.string "BE CHARMED BY CUTE POKéMON!$"
 
 LilycoveCity_ContestHall_Text_SmartContestStage:
-	.string "SMARTNESS CONTEST STAGE\n"
+	.string "SMARTNESS Contest Stage\n"
 	.string "BE IMPRESSED BY SMART POKéMON!$"
 

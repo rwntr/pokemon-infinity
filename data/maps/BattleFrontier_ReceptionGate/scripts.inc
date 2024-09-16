@@ -314,7 +314,7 @@ BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
 	.string "the FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
-	.string "{PLAYER} placed the TRAINER CARD\n"
+	.string "{PLAYER} placed the Trainer Card\n"
 	.string "in the FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
@@ -406,8 +406,8 @@ BattleFrontier_ReceptionGate_Text_RankingHallInfo:
 	.string "the BATTLE FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The EXCHANGE SERVICE CORNER is near\n"
-	.string "the BATTLE TOWER.\p"
+	.string "The EXCHANGE SERVICE Corner is near\n"
+	.string "the Battle Tower.\p"
 	.string "The Battle Points you have earned in\n"
 	.string "the BATTLE FRONTIER may be exchanged\l"
 	.string "for fabulous prizes there.$"
@@ -502,5 +502,5 @@ BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "at the BATTLE FRONTIER.\p"
 	.string "You may trade in your Battle Points\n"
 	.string "for prizes at the EXCHANGE SERVICE\l"
-	.string "CORNER.$"
+	.string "Corner.$"
 

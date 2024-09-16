@@ -35,7 +35,7 @@ FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
 
 FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:
 	.string "Have you done anything at\n"
-	.string "the RECORD CORNER?\p"
+	.string "the RECORD Corner?\p"
 	.string "It's pretty neat. It mixes and matches\n"
 	.string "the records of TRAINERS.\p"
 	.string "I don't know quite how it works,\n"
@@ -44,8 +44,8 @@ FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:
 FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "Oh, wow, you have a POKéNAV!\n"
 	.string "And it's just like mine!\p"
-	.string "Do you know about POKéNAV's\n"
-	.string "MATCH CALL system?\p"
+	.string "Do you know about Pokénav's\n"
+	.string "MATCH Call system?\p"
 	.string "Access it, and you can chat with\n"
 	.string "registered TRAINERS anytime.\p"
 	.string "It also shows you which TRAINERS\n"

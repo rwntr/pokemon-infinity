@@ -1015,8 +1015,8 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "The DEVON CORPORATION…\n"
-	.string "We all just shorten it to DEVON.\p"
+	.string "The Devon Corporation…\n"
+	.string "We all just shorten it to Devon.\p"
 	.string "That company makes all sorts of\n"
 	.string "convenient products.$"
 
@@ -1128,9 +1128,9 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV!\p"
+	.string "May: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "You had a MATCH Call feature put\n"
+	.string "on your Pokénav!\p"
 	.string "Let's register each other so we can\n"
 	.string "contact one another anytime!\p"
 	.string "… … … … … …$"
@@ -1175,9 +1175,9 @@ RustboroCity_Text_MayMrBrineyHint:
 	.string "was once a revered seafarer.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV! Cool!\p"
+	.string "Brendan: Oh, hey, {PLAYER}!\p"
+	.string "You had a MATCH Call feature put\n"
+	.string "on your Pokénav! Cool!\p"
 	.string "Let's register each other so we can\n"
 	.string "get in touch anytime!\p"
 	.string "… … … … … …$"
@@ -1228,7 +1228,7 @@ RustboroCity_Text_TunnelNearingCompletion:
 	.string "across it in red paint…$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "DEVON CORPORATION\p"
+	.string "Devon Corporation\p"
 	.string "“For all your living needs, we make\n"
 	.string "it all.”$"
 
@@ -1238,7 +1238,7 @@ RustboroCity_Text_GymSign:
 	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "Devon CORP. Branch OFFICE\p"
+	.string "Devon Corp. Branch OFFICE\p"
 	.string "“Access limited to Devon employees\n"
 	.string "and authorized personnel.”$"
 
@@ -1253,7 +1253,7 @@ RustboroCity_Text_TrainersSchoolSign:
 	.string "POKéMON!”$"
 
 RustboroCity_Text_CuttersHouse:
-	.string "CUTTER'S HOUSE$"
+	.string "Cutter'S House$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "I've been developing an added feature\n"
@@ -1265,8 +1265,8 @@ RustboroCity_Text_DevelopedNewPokenavFeature:
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 	.string "There you go, {PLAYER}!\p"
 	.string "I added a new feature named\n"
-	.string "MATCH CALL to your POKéNAV.\p"
-	.string "Using the MATCH CALL feature,\n"
+	.string "MATCH Call to your Pokénav.\p"
+	.string "Using the MATCH Call feature,\n"
 	.string "you can chat with people who have\l"
 	.string "been registered in your POKéNAV.\p"
 	.string "{PLAYER}, our PRESIDENT STONE should\n"

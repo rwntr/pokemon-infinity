@@ -1846,7 +1846,7 @@
 	.endm
 
 	@ Buffers the name of the contest category to the buffer.
-	@ For example a category of CONTEST_CATEGORY_COOL will buffer the string "COOLNESS CONTEST".
+	@ For example a category of CONTEST_CATEGORY_COOL will buffer the string "Coolness Contest".
 	.macro buffercontestname stringVarId:req, category:req
 	.byte SCR_OP_BUFFERCONTESTNAME
 	stringvar \stringVarId
