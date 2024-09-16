@@ -291,7 +291,7 @@ SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
 	.string "We're Team Aqua!\p"
-	.string "Our BOSS wants those parts!\n"
+	.string "Our Boss wants those parts!\n"
 	.string "Shut your yap and fork them over!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
@@ -300,7 +300,7 @@ SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
 	.string "Oh, man, what a disaster…\n"
-	.string "The BOSS is going to be furious…$"
+	.string "The Boss is going to be furious…$"
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 	.string "Humph, sniveling wimp!\n"

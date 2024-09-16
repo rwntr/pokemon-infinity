@@ -50,7 +50,7 @@ MoveTutor_Text_RolloutTaught:
 MoveTutor_Text_FuryCutterTeach:
 	.string "There's a move that gets stronger\n"
 	.string "when you keep using it in a row.\p"
-	.string "It's a BUG-type move, and it is\n"
+	.string "It's a Bug-type move, and it is\n"
 	.string "wickedly cool.\p"
 	.string "It's called FURY CUTTER.\n"
 	.string "Want me to teach it to a Pokémon?$"

@@ -227,7 +227,7 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
 	.string "A POISON-type FANG SNAKE Pokémon,\n"
-	.string "a BUG & ROCK MOLD Pokémon,\l"
+	.string "a Bug & ROCK MOLD Pokémon,\l"
 	.string "and a WATER-type TENDER Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
@@ -252,9 +252,9 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "before?\p"
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
-	.string "A BUG & FIGHTING SINGLE HORN Pokémon,\n"
+	.string "A Bug & FIGHTING SINGLE HORN Pokémon,\n"
 	.string "a DARK-type MOONLIGHT Pokémon,\l"
-	.string "and a BUG & GHOST SHED Pokémon.$"
+	.string "and a Bug & GHOST SHED Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "Have you battled the Arena TYCOON\n"
@@ -278,7 +278,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
 	.string "before?\p"
 	.string "When he's testing the opponent's\n"
 	.string "spirit, he's said to use these Pokémon:\p"
-	.string "A POISON & FLYING-type BAT Pokémon,\n"
+	.string "A POISON & FLYING-type Bat Pokémon,\n"
 	.string "a NORMAL-type LAZY Pokémon, and a\l"
 	.string "WATER- & ICE-type TRANSPORT Pokémon.$"
 
@@ -319,24 +319,24 @@ BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
 	.string "Sure, there are several places where\n"
-	.string "you can enter DOUBLE BATTLES.\p"
+	.string "you can enter DOUBLE Battles.\p"
 	.string "But the Double Battle ROOMS of\n"
 	.string "the Battle Tower are, like, basic!\p"
 	.string "They're where you should learn about\n"
-	.string "how DOUBLE BATTLES are played here\l"
+	.string "how DOUBLE Battles are played here\l"
 	.string "in the Battle Frontier.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice2::
 	.string "Watch yourself in the battles here.\p"
 	.string "I hear there are Trainers that have\n"
 	.string "strategies they developed just for\l"
-	.string "DOUBLE BATTLES.$"
+	.string "DOUBLE Battles.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice3::
 	.string "Once you're confident and comfortable\n"
-	.string "with DOUBLE BATTLES here, you should\l"
+	.string "with DOUBLE Battles here, you should\l"
 	.string "think about challenging other places\l"
-	.string "offering DOUBLE BATTLES.$"
+	.string "offering DOUBLE Battles.$"
 
 BattleFrontier_Lounge2_Text_MultiBattleAdvice::
 	.string "All sorts of Trainers gather in\n"

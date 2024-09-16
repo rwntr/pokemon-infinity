@@ -1075,7 +1075,7 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "In the Hoenn region there are pairs\n"
 	.string "of Trainers who challenge others\l"
 	.string "for 2-on-2 Pokémon battles called\l"
-	.string "DOUBLE BATTLES.\p"
+	.string "DOUBLE Battles.\p"
 	.string "In a Double Battle, the Trainer must\n"
 	.string "send out two Pokémon, the one at the\l"
 	.string "left of the list and the top one.\l"
@@ -1135,7 +1135,7 @@ Route104_Text_BrendanWeShouldRegister:
 	.string "PokénavS so we can keep in touch.$"
 
 Route104_Text_RegisteredBrendan:
-	.string "{PLAYER} registered BRENDAN\n"
+	.string "{PLAYER} registered Brendan\n"
 	.string "in the Pokénav.$"
 
 Route104_Text_BrendanHowsYourPokedex:

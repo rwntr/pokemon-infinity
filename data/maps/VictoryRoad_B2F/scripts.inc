@@ -78,7 +78,7 @@ VictoryRoad_B2F_Text_JulieDefeat:
 	.string "You're better than me!$"
 
 VictoryRoad_B2F_Text_JuliePostBattle:
-	.string "Gaze on your collected BADGES and\n"
+	.string "Gaze on your collected Badges and\n"
 	.string "remember the Trainers you've faced.$"
 
 VictoryRoad_B2F_Text_FelixIntro:

@@ -71,7 +71,7 @@ Route119_WeatherInstitute_1F_EventScript_Grunt4::
 	end
 
 Route119_WeatherInstitute_1F_Text_Grunt1Intro:
-	.string "The BOSS got interested in\n"
+	.string "The Boss got interested in\n"
 	.string "the research they have going here,\l"
 	.string "so he sent us out.\p"
 	.string "You quit meddling!$"
@@ -81,7 +81,7 @@ Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
 	.string "Blasted by a kid…$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
-	.string "Our BOSS knows everything.\p"
+	.string "Our Boss knows everything.\p"
 	.string "But I'm just a GRUNT. What would I know\n"
 	.string "about what he's thinking?$"
 

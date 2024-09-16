@@ -280,7 +280,7 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "the sea-loving Team Aqua!$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
-	.string "BOSS, we should give chase to\n"
+	.string "Boss, we should give chase to\n"
 	.string "Team Magma…$"
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:

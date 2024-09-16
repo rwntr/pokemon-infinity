@@ -390,9 +390,9 @@ BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
 	.string "In the Battle Palace, there are\n"
-	.string "several auditoriums for SINGLE BATTLES\l"
+	.string "several auditoriums for SINGLE Battles\l"
 	.string "that are named Single Battle HALLS.\p"
-	.string "The SINGLE BATTLES are conducted in\n"
+	.string "The SINGLE Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
 	.string "Trainers are permitted only to switch\n"
@@ -560,9 +560,9 @@ BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
 	.string "In the Battle Palace, there are\n"
-	.string "several auditoriums for DOUBLE BATTLES\l"
+	.string "several auditoriums for DOUBLE Battles\l"
 	.string "that are named Double Battle HALLS.\p"
-	.string "The DOUBLE BATTLES are conducted in\n"
+	.string "The DOUBLE Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
 	.string "Trainers are permitted only to switch\n"

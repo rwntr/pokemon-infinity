@@ -34,6 +34,6 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "a Pokémon and use it.\p"
 	.string "It lights up even the inky darkness\n"
 	.string "of caves.\p"
-	.string "But, to use it, you need the BADGE\n"
+	.string "But, to use it, you need the Badge\n"
 	.string "from DEWFORD's Pokémon.$"
 

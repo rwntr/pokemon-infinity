@@ -355,7 +355,7 @@ BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
 	.string "to be the Battle Frontier's symbol.\p"
 	.string "There are four kinds of Battle ROOMS\n"
 	.string "in the tower for SINGLE, DOUBLE, Multi,\l"
-	.string "and LINK Multi BATTLES.$"
+	.string "and LINK Multi Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 	.string "The Battle Dome is the large building\n"
@@ -364,13 +364,13 @@ BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 	.string "in this facility.\p"
 	.string "The Battle Tourneys are offered in\n"
 	.string "two courses--for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+	.string "Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
 	.string "The Battle Palace is the red building\n"
 	.string "on the right of the Battle Frontier.\p"
 	.string "There are two kinds of Battle Halls\n"
-	.string "for SINGLE and DOUBLE BATTLES.$"
+	.string "for SINGLE and DOUBLE Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
 	.string "The Battle Arena is the dojo-like\n"
@@ -386,7 +386,7 @@ BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 	.string "is conducted there.\p"
 	.string "The Battle Swap event is offered in\n"
 	.string "two courses for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+	.string "Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
 	.string "The Battle Pike is the building shaped\n"

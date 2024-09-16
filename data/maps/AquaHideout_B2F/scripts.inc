@@ -105,12 +105,12 @@ AquaHideout_B2F_Text_MattDefeat:
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
 	.string "Hehehe!\p"
-	.string "While I was toying with you, our BOSS\n"
+	.string "While I was toying with you, our Boss\n"
 	.string "got through his preparations!$"
 
 AquaHideout_B2F_Text_MattPostBattle:
 	.string "Hehehe!\p"
-	.string "Our BOSS has already gone on his way to\n"
+	.string "Our Boss has already gone on his way to\n"
 	.string "some cave under the sea!\p"
 	.string "If you're going to give chase, you'd\n"
 	.string "better search the big, wide sea beyond\l"
@@ -127,7 +127,7 @@ AquaHideout_B2F_Text_Grunt4Defeat:
 	.string "Lost and dazed…$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "BOSS…\n"
+	.string "Boss…\n"
 	.string "Is this good enough?$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
@@ -145,7 +145,7 @@ AquaHideout_B2F_Text_Grunt6Defeat:
 AquaHideout_B2F_Text_Grunt6PostBattle:
 	.string "That reminds me… I can't remember\n"
 	.string "where I put the Master Ball.\p"
-	.string "If I fail to guard it, our BOSS will\n"
+	.string "If I fail to guard it, our Boss will\n"
 	.string "chew me out…$"
 
 AquaHideout_B2F_Text_Grunt8Intro:

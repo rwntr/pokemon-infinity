@@ -1178,7 +1178,7 @@ BattleFrontier_BattleTowerLobby_Text_TakeSinglesChallenge:
 BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge:
 	.string "The Battle Tower's Single Battle\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "SINGLE BATTLES with three Pokémon.\p"
+	.string "SINGLE Battles with three Pokémon.\p"
 	.string "There are many Single Battle ROOMS\n"
 	.string "in the Battle Tower for team battles.\p"
 	.string "In each of the Single Battle ROOMS,\n"
@@ -1208,7 +1208,7 @@ BattleFrontier_BattleTowerLobby_Text_TakeDoublesChallenge:
 BattleFrontier_BattleTowerLobby_Text_ExplainDoublesChallenge:
 	.string "The Battle Tower's Double Battle\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "DOUBLE BATTLES with four Pokémon.\p"
+	.string "DOUBLE Battles with four Pokémon.\p"
 	.string "There are many Double Battle ROOMS\n"
 	.string "in the Battle Tower for team battles.\p"
 	.string "In each of the Double Battle ROOMS,\n"
@@ -1238,15 +1238,15 @@ BattleFrontier_BattleTowerLobby_Text_TakeMultisChallenge:
 BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge:
 	.string "The Battle Tower's Multi Battle\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "Multi BATTLES.\p"
-	.string "For Multi BATTLES, you must partner\n"
+	.string "Multi Battles.\p"
+	.string "For Multi Battles, you must partner\n"
 	.string "with a Trainer in the TOWER and enter\l"
 	.string "with two Pokémon each.\p"
 	.string "Inside the TOWER is a room named\n"
 	.string "the Battle SALON where you may meet\l"
 	.string "other Trainers.\p"
 	.string "There, you must find a Trainer to act\n"
-	.string "as your partner in Multi BATTLES.\p"
+	.string "as your partner in Multi Battles.\p"
 	.string "Once you have partnered up, you will\n"
 	.string "be shown to a Multi Battle Room.\p"
 	.string "In the Multi Battle Room, seven\n"
@@ -1276,7 +1276,7 @@ BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge:
 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge:
 	.string "The Battle Tower's Multi Battle\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "Multi BATTLES with a friend.\p"
+	.string "Multi Battles with a friend.\p"
 	.string "You must link with your friend using\n"
 	.string "Wireless Adapters or a Game Boy\l"
 	.string "Advance Game Link cable.\p"
@@ -1292,7 +1292,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge:
 	.string "Please beware that unlike other ROOMS,\n"
 	.string "you may not interrupt your challenge.\p"
 	.string "Once you start, you must battle seven\n"
-	.string "Multi BATTLES in a row nonstop.$"
+	.string "Multi Battles in a row nonstop.$"
 
 BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons2:
 	.string "Now please select the two Pokémon\n"

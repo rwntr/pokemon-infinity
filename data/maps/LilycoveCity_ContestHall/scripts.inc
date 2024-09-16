@@ -444,7 +444,7 @@ LilycoveCity_ContestHall_Text_OverdidGrooming:
 	.string "What should I do?$"
 
 LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam:
-	.string "This Aurora BEAM is so dazzling,\n"
+	.string "This Aurora Beam is so dazzling,\n"
 	.string "the JUDGE won't be able to see it.\p"
 	.string "Uh, wait a second…\n"
 	.string "That'll be meaningless, then!$"

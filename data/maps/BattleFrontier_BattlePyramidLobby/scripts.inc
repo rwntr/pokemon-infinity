@@ -792,7 +792,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintWeather:
 	.string "by different types of moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintBug:
-	.string "I see BUG-type Pokémon…\p"
+	.string "I see Bug-type Pokémon…\p"
 	.string "…And, I see your Pokémon suffering\n"
 	.string "from different kinds of attacks…$"
 
@@ -897,7 +897,7 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainMazeRules:
 BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules:
 	.string "The Battle Bag serves as your Bag\n"
 	.string "while in the PYRAMID.\p"
-	.string "There are two separate Battle BAGS--\n"
+	.string "There are two separate Battle Bags--\n"
 	.string "one each for the Level 50 and\l"
 	.string "Open Level adventures.\p"
 	.string "They each can hold up to 99 pieces\n"

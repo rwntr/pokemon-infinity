@@ -503,7 +503,7 @@ Route119_Text_MayExplainFly:
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
 	.string "But, to use FLY, you have to get\n"
-	.string "the BADGE from FORTREE City.\l"
+	.string "the Badge from FORTREE City.\l"
 	.string "That's important, so don't forget.\p"
 	.string "You should FLY home and visit\n"
 	.string "LITTLEROOT for a change.\p"
@@ -533,7 +533,7 @@ Route119_Text_BrendanExplainFly:
 	.string "Brendan: Use FLY, and your Pokémon\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
-	.string "But you need the FORTREE BADGE \n"
+	.string "But you need the FORTREE Badge \n"
 	.string "to do that.\p"
 	.string "Anyway, I have to move along.$"
 
@@ -541,7 +541,7 @@ Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "SCOTT: Hahahah!\n"
 	.string "Way to go, {PLAYER}{KUN}!\p"
 	.string "I just passed by a Trainer riding\n"
-	.string "a BIKE.\p"
+	.string "a Bike.\p"
 	.string "You just beat that Trainer, didn't you?\n"
 	.string "It was pretty obvious that you did.\p"
 	.string "The kid looked really upset with\n"
@@ -579,7 +579,7 @@ Route119_Text_DontGoNearWeatherInstitute:
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "I thought you FLY by catching a whole\n"
-	.string "flock of BIRD Pokémon, and then\l"
+	.string "flock of Bird Pokémon, and then\l"
 	.string "hanging on to them somehow.\p"
 	.string "But it turns out there's an HM move\n"
 	.string "called FLY!\p"
@@ -589,13 +589,13 @@ Route119_Text_ThoughtFlyByCatchingBirdMons:
 Route119_Text_TallGrassSnaresBikeTires:
 	.string "Tch…\n"
 	.string "It's a no-go…\p"
-	.string "The tall grass snares BIKE tires.\n"
+	.string "The tall grass snares Bike tires.\n"
 	.string "There's no way you can cycle here.$"
 
 Route119_Text_CanYourMonMakeSecretBase:
 	.string "Can your Pokémon use its SECRET POWER\n"
 	.string "on a big pile of grass and make a\l"
-	.string "SECRET BASE?$"
+	.string "SECRET Base?$"
 
 Route119_Text_RouteSignFortree:
 	.string "Route 119\n"
@@ -608,7 +608,7 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Trainer TIPS\p"
 	.string "Up to sixteen decorations and\n"
 	.string "furniture items can be placed in\l"
-	.string "a SECRET BASE.\p"
+	.string "a SECRET Base.\p"
 	.string "Pick your favorite items and create\n"
-	.string "your very own SECRET BASE exactly the\l"
+	.string "your very own SECRET Base exactly the\l"
 	.string "way you want.$"

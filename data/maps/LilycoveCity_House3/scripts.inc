@@ -149,7 +149,7 @@ LilycoveCity_House3_Text_HappyToHaveQuadruplets:
 	.string "it makes me happy.$"
 
 LilycoveCity_House3_Text_GoingToWinMultiBattles:
-	.string "We're having Multi BATTLES, but I know\n"
+	.string "We're having Multi Battles, but I know\n"
 	.string "I'm going to win.$"
 
 LilycoveCity_House3_Text_LikeMixingAtRecordCorner:

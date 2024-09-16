@@ -324,12 +324,12 @@ RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
 	.string "SCOTT: Oh, what's that?\p"
-	.string "It's a STONE BADGE, isn't it?\n"
+	.string "It's a STONE Badge, isn't it?\n"
 	.string "That's pretty impressive, I'd say.\p"
 	.string "But, you know, I would've loved to see\n"
 	.string "you in battle.\p"
 	.string "It's hard to tell what you're like as\n"
-	.string "a Trainer from a League BADGE.$"
+	.string "a Trainer from a League Badge.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "Hello? Didn't we meet before?\n"
@@ -341,11 +341,11 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "More specifically, I'm looking for\n"
 	.string "Pokémon battle experts.\p"
 	.string "Oh, what's that?\n"
-	.string "It's a STONE BADGE, isn't it?\p"
+	.string "It's a STONE Badge, isn't it?\p"
 	.string "That's pretty impressive, I'd say, for\n"
 	.string "a starting Trainer like yourself.\p"
 	.string "But, you know, I would've loved to see\n"
 	.string "you in battle.\p"
 	.string "It's hard to tell what you're like as\n"
-	.string "a Trainer from a League BADGE.$"
+	.string "a Trainer from a League Badge.$"
 

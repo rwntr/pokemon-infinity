@@ -40,7 +40,7 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "by Pokémon outside of battle.\p"
 	.string "Any Pokémon that's learned CUT can\n"
 	.string "chop down thin trees if the Trainer\l"
-	.string "has earned the STONE BADGE.\p"
+	.string "has earned the STONE Badge.\p"
 	.string "And, unlike a TM, an HM can be used\n"
 	.string "more than once.$"
 

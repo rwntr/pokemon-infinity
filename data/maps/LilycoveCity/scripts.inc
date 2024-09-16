@@ -457,7 +457,7 @@ LilycoveCity_Text_MayYouGoingToCollectBadges:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
 	.string "Collect all the Gym Badges and take\n"
 	.string "the Pokémon League challenge?\p"
-	.string "Well, while you're collecting BADGES,\n"
+	.string "Well, while you're collecting Badges,\n"
 	.string "{PLAYER}{KUN}, I'm going to work on my\l"
 	.string "Pokédex. I'll complete it before you!\p"
 	.string "See you!$"
@@ -554,7 +554,7 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 
 LilycoveCity_Text_ChanceToDoBigThings:
 	.string "I'm just a GRUNT, so I don't know what\n"
-	.string "the BOSS is thinking…\p"
+	.string "the Boss is thinking…\p"
 	.string "But being on Team Aqua, I know I'll get\n"
 	.string "the chance to do big things!\p"
 	.string "Wh-who are you?!\n"

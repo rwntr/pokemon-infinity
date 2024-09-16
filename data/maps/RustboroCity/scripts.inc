@@ -1035,12 +1035,12 @@ RustboroCity_Text_SneakyLookingManWentAroundCorner:
 RustboroCity_Text_HaveYouChallengedGym:
 	.string "Have you taken the Pokémon\n"
 	.string "challenge?\p"
-	.string "When you get that shiny BADGE\n"
+	.string "When you get that shiny Badge\n"
 	.string "in hand, I guess Trainers begin to\l"
 	.string "realize what is required of them.$"
 
 RustboroCity_Text_HeyThatsRustborosGymBadge:
-	.string "Hey, that's Rustboro's BADGE!\p"
+	.string "Hey, that's Rustboro's Badge!\p"
 	.string "Out of all the Pokémon Gym Badges,\n"
 	.string "Rustboro's is the coolest, I'd say.$"
 
@@ -1094,7 +1094,7 @@ RustboroCity_Text_TradePokemonGrowFast:
 	.string "A Pokémon you get in a trade from\n"
 	.string "someone grows fast.\p"
 	.string "But if you don't have certain\n"
-	.string "BADGES, it may not obey you…$"
+	.string "Badges, it may not obey you…$"
 
 RustboroCity_Text_OutOfTheWay:
 	.string "Get out!\n"
@@ -1190,7 +1190,7 @@ RustboroCity_Text_BrendanHiLetsRegister:
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "Registered BRENDAN\n"
+	.string "Registered Brendan\n"
 	.string "in the Pokénav.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
@@ -1245,7 +1245,7 @@ RustboroCity_Text_GymSign:
 	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "Devon CORP. BRANCH OFFICE\p"
+	.string "Devon CORP. Branch OFFICE\p"
 	.string "“Access limited to Devon employees\n"
 	.string "and authorized personnel.”$"
 

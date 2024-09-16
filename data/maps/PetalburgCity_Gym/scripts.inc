@@ -1224,7 +1224,7 @@ PetalburgCity_Gym_Text_DadGoCollectBadges:
 	.string "the Gym Leader, ROXANNE.\p"
 	.string "After her, go on to other Pokémon\n"
 	.string "GYMS and defeat their LEADERS.\p"
-	.string "Collect BADGES from them,\n"
+	.string "Collect Badges from them,\n"
 	.string "understood?\p"
 	.string "Of course, I'm a Gym Leader, too.\n"
 	.string "We'll battle one day, {PLAYER}.\p"
@@ -1247,13 +1247,13 @@ PetalburgCity_Gym_Text_NormanGoToDewford:
 	.string "But there are many more Trainers\n"
 	.string "who are stronger than you, {PLAYER}.\p"
 	.string "Across the sea in DEWFORD Town is a\n"
-	.string "Gym Leader named BRAWLY.\p"
+	.string "Gym Leader named Brawly.\p"
 	.string "You should go challenge him.$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger:
 	.string "DAD: Hm… {PLAYER}, you have gotten\n"
 	.string "stronger.\p"
-	.string "I can tell by the number of BADGES\n"
+	.string "I can tell by the number of Badges\n"
 	.string "that you've earned.$"
 
 PetalburgCity_Gym_Text_NormanIntro:
@@ -1279,11 +1279,11 @@ PetalburgCity_Gym_Text_NormanDefeat:
 	.string "Here, take this.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
-	.string "{PLAYER} received the BALANCE BADGE\n"
+	.string "{PLAYER} received the Balance Badge\n"
 	.string "from DAD!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "DAD: With that BADGE, the DEFENSE\n"
+	.string "DAD: With that Badge, the DEFENSE\n"
 	.string "of all your Pokémon will increase.\p"
 	.string "Pokémon that know the HM move SURF\n"
 	.string "will be able to travel over water.\p"

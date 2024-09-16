@@ -122,7 +122,7 @@ FortreeCity_Text_EveryoneHealthyAndLively:
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
 	.string "Living on top of trees is okay.\p"
-	.string "But sometimes BUG Pokémon come in\n"
+	.string "But sometimes Bug Pokémon come in\n"
 	.string "through windows.\l"
 	.string "It can be really startling.$"
 
