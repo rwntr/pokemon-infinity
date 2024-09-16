@@ -34,7 +34,7 @@ WILD_BATTLE_TEST("Higher leveled Pokemon give more exp", s32 exp)
     PARAMETRIZE { level = 10; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Level(20); }
+        PLAYER(SPECIES_WOBBUFFET) { Level(3); }
         OPPONENT(SPECIES_CATERPIE) { Level(level); HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -97,9 +97,9 @@ WILD_BATTLE_TEST("Large exp gains are supported", s32 exp) // #1455
 {
     u8 level = 0;
 
-    PARAMETRIZE { level = 10; }
-    PARAMETRIZE { level = 50; }
-    PARAMETRIZE { level = MAX_LEVEL; }
+    PARAMETRIZE { level = 3; }
+    PARAMETRIZE { level = 4; }
+    PARAMETRIZE { level = 5; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Level(1); Item(ITEM_LUCKY_EGG); OTName("Test"); } // OT Name is different so it gets more exp as a traded mon

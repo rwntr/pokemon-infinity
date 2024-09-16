@@ -38,23 +38,25 @@
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
 #line 13
             .iv = TRAINER_PARTY_IVS(25, 26, 27, 28, 29, 30),
+#line 15
+            .spread = SPREAD_TEST_TRAINER_CTL_BUBBLES,
 #line 12
             .ability = ABILITY_TELEPATHY,
 #line 11
             .lvl = 67,
-#line 17
+#line 18
             .ball = ITEM_MASTER_BALL,
-#line 15
+#line 16
             .friendship = 42,
 #line 10
             .nature = NATURE_HASTY,
-#line 16
+#line 17
             .isShiny = TRUE,
-#line 18
+#line 19
             .dynamaxLevel = 5,
             .shouldUseDynamax = TRUE,
             .moves = {
-#line 19
+#line 20
                 MOVE_AIR_SLASH,
                 MOVE_BARRIER,
                 MOVE_SOLAR_BEAM,
@@ -62,25 +64,29 @@
             },
             },
             {
-#line 24
+#line 25
             .species = SPECIES_WOBBUFFET,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27
+#line 28
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26
+#line 29
+            .spread = SPREAD_TEST_TRAINER_CTL_WOB,
+#line 27
             .ability = ABILITY_SHADOW_TAG,
-#line 25
+#line 26
             .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 29
+#line 31
             .species = SPECIES_WYNAUT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 31
+#line 33
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30
+#line 34
+            .spread = SPREAD_TEST_TRAINER_CTL_WY,
+#line 32
             .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,

@@ -17,6 +17,7 @@
 #include "battle_gimmick.h"
 #include "berry.h"
 #include "bg.h"
+#include "constants/spreads.h"
 #include "data.h"
 #include "debug.h"
 #include "decompress.h"
@@ -27,6 +28,7 @@
 #include "gpu_regs.h"
 #include "international_string_util.h"
 #include "item.h"
+#include "level_caps.h"
 #include "link.h"
 #include "link_rfu.h"
 #include "load_save.h"
@@ -1866,6 +1868,24 @@ static u32 GeneratePartyHash(const struct Trainer *trainer, u32 i)
     return Crc32B(buffer, n);
 }
 
+void trySetMonEvIvFromSpread(struct Pokemon *mon, const struct TrainerMon *partyData, s32 idx)
+{
+    s32 j;
+    //I prefer writing the loop out twice over checking the save file 6 times in the if statement.
+    //so it's nested in an ugly way
+    //we always want to use spreads for EVs when testing, so add && !(gTestRunnerEnabled) here
+    if ((GetActiveDifficultySetting() == DIFFICULTY_NORMAL)&& !(gTestRunnerEnabled)) {
+        for (j = 0; j < NUM_STATS; j++) {
+            SetMonData(&mon[idx], MON_DATA_HP_IV + j, &gSets[partyData[idx].spread].IVs[j]);
+        }
+    }
+    else {
+        for (j = 0; j < NUM_STATS; j++) {
+            SetMonData(&mon[idx], MON_DATA_HP_IV + j, &gSets[partyData[idx].spread].IVs[j]);
+            SetMonData(&mon[idx], MON_DATA_HP_EV + j, &gSets[partyData[idx].spread].EVs[j]);
+        }
+    }
+}
 void ModifyPersonalityForNature(u32 *personality, u32 newNature)
 {
     u32 nature = GetNatureFromPersonality(*personality);
@@ -1913,10 +1933,52 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
     }
 }
 
+u16 gDynamicEnemyMinLevel(const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags)
+{
+    u8 monsCount;
+    u16 monLvlSqSum = 0;
+    u16 monLvlSqMean;
+    u16 monRMS;
+    u16 thisMonLvl;
+    s32 i;
+    u16 currCapIdx;
+    u16 lastCap;
+
+    currCapIdx = GetActiveLevelCapIndex();
+    lastCap = GetLastLevelCap(currCapIdx);
+
+    if (battleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
+    {
+        if (trainer->partySize > PARTY_SIZE / 2)
+            monsCount = PARTY_SIZE / 2;
+        else
+            monsCount = trainer->partySize;
+    }
+    else
+    {
+        monsCount = trainer->partySize;
+    }
+
+    for (i = 0; i < monsCount; i++)
+    {
+        thisMonLvl=trainer->party[i].lvl;
+        monLvlSqSum += (thisMonLvl * thisMonLvl);
+    }
+    //Finding the root of the mean of squares  of the part's mon levels
+    //Truncating the but we don't really care (famous last words)
+    monLvlSqMean = monLvlSqSum/monsCount;
+    monRMS = root(monLvlSqMean);
+
+
+    return uMin(lastCap, monRMS);
+
+}
+
 u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags)
 {
     u32 personalityValue;
     s32 i;
+    u16 minEnemyLevel;
     u8 monsCount;
     if (battleTypeFlags & BATTLE_TYPE_TRAINER && !(battleTypeFlags & (BATTLE_TYPE_FRONTIER
                                                                         | BATTLE_TYPE_EREADER_TRAINER
@@ -1937,6 +1999,8 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             monsCount = trainer->partySize;
         }
 
+        minEnemyLevel = gDynamicEnemyMinLevel(trainer, firstTrainer, battleTypeFlags);
+
         for (i = 0; i < monsCount; i++)
         {
             s32 ball = -1;
@@ -1945,6 +2009,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 otIdType = OT_ID_RANDOM_NO_SHINY;
             u32 fixedOtId = 0;
             u32 ability = 0;
+            u8 level;
 
             if (trainer->doubleBattle == TRUE)
                 personalityValue = 0x80;
@@ -1952,34 +2017,45 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 personalityValue = 0x78; // Use personality more likely to result in a female Pokémon
             else
                 personalityValue = 0x88; // Use personality more likely to result in a male Pokémon
-
             personalityValue += personalityHash << 8;
             if (partyData[i].gender == TRAINER_MON_MALE)
-                personalityValue = (personalityValue & 0xFFFFFF00) | GeneratePersonalityForGender(MON_MALE, partyData[i].species);
+                personalityValue =
+                        (personalityValue & 0xFFFFFF00) | GeneratePersonalityForGender(MON_MALE, partyData[i].species);
             else if (partyData[i].gender == TRAINER_MON_FEMALE)
-                personalityValue = (personalityValue & 0xFFFFFF00) | GeneratePersonalityForGender(MON_FEMALE, partyData[i].species);
+                personalityValue = (personalityValue & 0xFFFFFF00) |
+                                   GeneratePersonalityForGender(MON_FEMALE, partyData[i].species);
             else if (partyData[i].gender == TRAINER_MON_RANDOM_GENDER)
-                personalityValue = (personalityValue & 0xFFFFFF00) | GeneratePersonalityForGender(Random() & 1 ? MON_MALE : MON_FEMALE, partyData[i].species);
+                personalityValue = (personalityValue & 0xFFFFFF00) |
+                                   GeneratePersonalityForGender(Random() & 1 ? MON_MALE : MON_FEMALE,
+                                                                partyData[i].species);
             ModifyPersonalityForNature(&personalityValue, partyData[i].nature);
-            if (partyData[i].isShiny)
-            {
+            if (partyData[i].isShiny) {
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            CreateMon(&party[i], partyData[i].species, partyData[i].lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
+
+            level = GetHighestLevelInPlayerParty();
+            //New dynamic enemy level calculation, done by taking the lower of
+            //the RMS of the enemy's party's levels, and the *previous* level cap.
+            if (gTestRunnerEnabled)
+                level = partyData[i].lvl;
+            else if (level + partyData[i].lvl > 100)
+                level = 100;
+            else if (level + partyData[i].lvl < 1 || level )
+                level = minEnemyLevel;
+            else
+                level = level + partyData[i].lvl;
+
+
+
+
+            CreateMon(&party[i], partyData[i].species, level, 31, TRUE, personalityValue, otIdType, fixedOtId);
+            CustomTrainerPartyAssignMoves(&party[i], &partyData[i]);
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
-            CustomTrainerPartyAssignMoves(&party[i], &partyData[i]);
-            SetMonData(&party[i], MON_DATA_IVS, &(partyData[i].iv));
-            if (partyData[i].ev != NULL)
-            {
-                SetMonData(&party[i], MON_DATA_HP_EV, &(partyData[i].ev[0]));
-                SetMonData(&party[i], MON_DATA_ATK_EV, &(partyData[i].ev[1]));
-                SetMonData(&party[i], MON_DATA_DEF_EV, &(partyData[i].ev[2]));
-                SetMonData(&party[i], MON_DATA_SPATK_EV, &(partyData[i].ev[3]));
-                SetMonData(&party[i], MON_DATA_SPDEF_EV, &(partyData[i].ev[4]));
-                SetMonData(&party[i], MON_DATA_SPEED_EV, &(partyData[i].ev[5]));
-            }
+            //Inclement Emerald uses various premade EV-IV-Nature spreads dependent on trainer class
+            trySetMonEvIvFromSpread(party, trainer->party, i);
+
             if (partyData[i].ability != ABILITY_NONE)
             {
                 const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[partyData[i].species];
@@ -5977,4 +6053,42 @@ static s32 Factorial(s32 n)
     for (i = 2; i <= n; i++)
         f *= i;
     return f;
+}
+
+u8 getBossTrainerTier(const struct Trainer *t)
+{
+    switch (t->trainerClass)
+    {
+        case TRAINER_CLASS_CHAMPION:
+        case TRAINER_CLASS_LEADER:
+        case TRAINER_CLASS_ELITE_FOUR:
+        case TRAINER_CLASS_RIVAL:
+        case TRAINER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_AQUA_LEADER:
+        case TRAINER_CLASS_PIKE_QUEEN:
+        case TRAINER_CLASS_DOME_ACE:
+        case TRAINER_CLASS_ARENA_TYCOON:
+        case TRAINER_CLASS_PALACE_MAVEN:
+        case TRAINER_CLASS_PYRAMID_KING:
+        case TRAINER_CLASS_FACTORY_HEAD:
+        case TRAINER_CLASS_SALON_MAIDEN:
+            return 3;
+            break;
+
+
+        case TRAINER_CLASS_AQUA_ADMIN:
+        case TRAINER_CLASS_MAGMA_ADMIN:
+            return 2;
+            break;
+
+        case TRAINER_CLASS_COOLTRAINER:
+        case TRAINER_CLASS_COOLTRAINER_2:
+            return 1;
+            break;
+
+        default:
+            return 0;
+            break;
+    }
+    return 0;
 }

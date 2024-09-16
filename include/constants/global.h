@@ -168,10 +168,10 @@
 #define DIFFICULTY_CHALLENGE   2
 #define DIFFICULTY_INSANITY    3
 
-#define LEVEL_CAPS_DEFAULT     0
-#define LEVEL_CAPS_MORE        1
-#define LEVEL_CAPS_STRICT      2
-#define LEVEL_CAPS_OFF         3
+#define LEVEL_CAPS_OFF          0
+#define LEVEL_CAPS_DEFAULT      1
+#define LEVEL_CAPS_MORE         2
+#define LEVEL_CAPS_STRICT       3
 
 #define AXIS_X     0
 #define AXIS_Y     1

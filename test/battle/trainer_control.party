@@ -12,6 +12,7 @@ Level: 67
 Ability: Telepathy
 IVs: 25 HP / 26 Atk / 27 Def / 29 SpA / 30 SpD / 28 Spe
 EVs: 252 HP / 4 SpA / 252 Spe
+Spread: TEST_TRAINER_CTL_BUBBLES
 Happiness: 42
 Shiny: Yes
 Ball: Master Ball
@@ -25,7 +26,9 @@ Wobbuffet
 Level: 5
 Ability: Shadow Tag
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Spread: TEST_TRAINER_CTL_WOB
 
 Wynaut
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Spread: TEST_TRAINER_CTL_WY
