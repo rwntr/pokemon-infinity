@@ -502,7 +502,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
-	.string "You've chosen the BLASTOISE DOLL.\n"
+	.string "You've chosen the Blastoise DOLL.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
@@ -530,7 +530,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
-	.string "You've chosen the BRIGHTPOWDER.\n"
+	.string "You've chosen the Brightpowder.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
@@ -546,7 +546,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
-	.string "You've chosen the CHOICE BAND.\n"
+	.string "You've chosen the CHOICE Band.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
@@ -554,7 +554,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
-	.string "You've chosen the FOCUS BAND.\n"
+	.string "You've chosen the FOCUS Band.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:

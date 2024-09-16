@@ -223,7 +223,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries:
 
 LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica:
 	.string "It's a replica of a famous sculpture.\p"
-	.string "It depicts an ancient BIRD POKéMON.$"
+	.string "It depicts an ancient Bird Pokémon.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_BigPokeBallCarvedFromStone:
 	.string "It's a big POKé BALL carved from\n"

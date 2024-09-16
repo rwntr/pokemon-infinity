@@ -627,8 +627,8 @@ MauvilleCity_Text_RydelVeryGenerous:
 	.string "man.$"
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
-	.string "Even if you're riding a BIKE,\n"
-	.string "wild POKéMON could jump you.$"
+	.string "Even if you're riding a Bike,\n"
+	.string "wild Pokémon could jump you.$"
 
 MauvilleCity_Text_CitySign:
 	.string "MAUVILLE CITY\n"

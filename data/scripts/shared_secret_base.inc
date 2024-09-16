@@ -212,4 +212,4 @@ SecretBase_Text_DiscoveredSmallCavern::
 	.string "Discovered a small cavern!$"
 
 SecretBase_Text_WantToMakeYourSecretBaseHere:
-	.string "Want to make your SECRET BASE here?$"
+	.string "Want to make your SECRET Base here?$"
