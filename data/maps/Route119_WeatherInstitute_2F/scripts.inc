@@ -204,8 +204,8 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "The INSTITUTE created a type of\n"
-	.string "POKéMON that has something to do with\l"
+	.string "The Institute created a type of\n"
+	.string "Pokémon that has something to do with\l"
 	.string "the weather. We're here to take them!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
@@ -265,8 +265,8 @@ Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "We have a situation here!\p"
-	.string "A TEAM MAGMA mob just passed\n"
-	.string "the WEATHER INSTITUTE.\p"
+	.string "A Team Magma mob just passed\n"
+	.string "the WEATHER Institute.\p"
 	.string "They appear to be headed for\n"
 	.string "MT. PYRE!$"
 
@@ -295,7 +295,7 @@ Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
 	.string "That POKéMON changes shape according\n"
 	.string "to the weather conditions.\p"
 	.string "There're plenty of them in the\n"
-	.string "INSTITUTE--go ahead and take it.$"
+	.string "Institute--go ahead and take it.$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
 	.string "I've been researching rain for many\n"
