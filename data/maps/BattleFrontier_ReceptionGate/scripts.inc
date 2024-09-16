@@ -351,7 +351,7 @@ BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
 	.string "to be the Battle Frontier's symbol.\p"
 	.string "There are four kinds of Battle ROOMS\n"
 	.string "in the tower for SINGLE, Double, Multi,\l"
-	.string "and LINK Multi Battles.$"
+	.string "and Link Multi Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 	.string "The BATTLE DOME is the large building\n"

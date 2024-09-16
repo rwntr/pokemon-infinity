@@ -53,7 +53,7 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
 	.string "I'll show you the sublime techniques\n"
-	.string "I learned from our LEADER Juan!$"
+	.string "I learned from our Leader Juan!$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
 	.string "Please forgive me, Juan…$"

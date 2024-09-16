@@ -1258,13 +1258,13 @@ BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons:
 BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle:
 	.string "Where the talents of TRAINERS\n"
 	.string "are put to the test!\p"
-	.string "Welcome to the BATTLE TOWER!\p"
-	.string "I am your guide to the LINK MULTI\n"
-	.string "BATTLE ROOMS.$"
+	.string "Welcome to the Battle Tower!\p"
+	.string "I am your guide to the Link Multi\n"
+	.string "Battle ROOMS.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge:
-	.string "Would you like to take the LINK MULTI\n"
-	.string "BATTLE ROOM challenge?$"
+	.string "Would you like to take the Link Multi\n"
+	.string "Battle Room challenge?$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge:
 	.string "The BATTLE TOWER's MULTI BATTLE\n"
@@ -1300,7 +1300,7 @@ BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend:
 	.string "you wish to enter, and register again.$"
 
 BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers:
-	.string "The LINK MULTI BATTLE ROOM challenge\n"
+	.string "The Link Multi Battle Room challenge\n"
 	.string "is only for two linked players.$"
 
 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMon:
@@ -1359,8 +1359,8 @@ BattleFrontier_BattleTowerLobby_Text_ReadWhichHeading:
 BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules:
 	.string "The BATTLE TOWER is a facility where\n"
 	.string "four types of battles are waged--\l"
-	.string "SINGLE BATTLE, DOUBLE BATTLE, MULTI\l"
-	.string "BATTLE, and LINK MULTI BATTLE.\p"
+	.string "Single Battle, Double Battle, Multi\l"
+	.string "Battle, and Link Multi Battle.\p"
 	.string "For each of these types, there are\n"
 	.string "separate BATTLE ROOMS.\p"
 	.string "Please speak with a guide offering\n"
@@ -1386,7 +1386,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules:
 	.string "after winning seven straight matches.$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules:
-	.string "The LINK MULTI BATTLE Mode is for two\n"
+	.string "The Link Multi Battle Mode is for two\n"
 	.string "friends to mount a challenge together.\p"
 	.string "You and your friend must be linked with\n"
 	.string "Wireless Adapters or a GBA Game Link\l"

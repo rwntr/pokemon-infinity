@@ -84,7 +84,7 @@ GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
 	.string "I'm interested in rare stones,\n"
 	.string "so I travel here and there.\p"
 	.string "Oh?\n"
-	.string "A LETTER for me?$"
+	.string "A Letter for me?$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
 	.string "STEVEN: Okay, thank you.\p"

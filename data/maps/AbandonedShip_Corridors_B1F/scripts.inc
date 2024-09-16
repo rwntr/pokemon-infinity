@@ -77,8 +77,8 @@ AbandonedShip_Corridors_B1F_Text_DoorIsLocked:
 
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
 	.string "{PLAYER} inserted and turned the\n"
-	.string "STORAGE KEY.\p"
-	.string "The inserted KEY stuck fast,\n"
+	.string "STORAGE Key.\p"
+	.string "The inserted Key stuck fast,\n"
 	.string "but the door opened.$"
 
 AbandonedShip_Text_TheDoorIsOpen:
