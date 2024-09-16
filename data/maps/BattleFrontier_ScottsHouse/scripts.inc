@@ -212,7 +212,7 @@ BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
 	return
 
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
-	.string "SCOTT: Well, hello and welcome!\n"
+	.string "Scott: Well, hello and welcome!\n"
 	.string "Heheh… Sorry about the cramped space.\p"
 	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
 	.string "welcome you to the Battle Frontier.\p"
@@ -242,7 +242,7 @@ BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
 	.string "{STR_VAR_1} Battle Point(s).$"
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
-	.string "SCOTT: You can check your Battle\n"
+	.string "Scott: You can check your Battle\n"
 	.string "Points on your Frontier Pass.\p"
 	.string "The more success you have here at\n"
 	.string "the Battle Frontier, the more Battle\l"
@@ -254,7 +254,7 @@ BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
 	.string "I'm expecting great things from you!$"
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
-	.string "SCOTT: Every Trainer is an individual.\n"
+	.string "Scott: Every Trainer is an individual.\n"
 	.string "They all lead lives of their own.\p"
 	.string "But when they're in a battle,\n"
 	.string "it doesn't matter who they are.\p"
@@ -266,7 +266,7 @@ BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
 	.string "battling, and invite them here.$"
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
-	.string "SCOTT: Have you met any of\n"
+	.string "Scott: Have you met any of\n"
 	.string "the Frontier BRAINS?\p"
 	.string "Better yet, have you obtained any\n"
 	.string "symbols from them?\p"
@@ -276,7 +276,7 @@ BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
 	.string "you are will startle even them!$"
 
 BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
-	.string "SCOTT: You don't just train for battle,\n"
+	.string "Scott: You don't just train for battle,\n"
 	.string "right?\p"
 	.string "I think I remember you working on\n"
 	.string "a Pokédex as well.\p"
@@ -286,7 +286,7 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "Fufufu!$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
-	.string "SCOTT: Are you enjoying things in\n"
+	.string "Scott: Are you enjoying things in\n"
 	.string "the Battle Frontier?\p"
 	.string "…Wait a second…\n"
 	.string "Oh!\p"
@@ -301,7 +301,7 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
 	.string "I'm sure you can put it to proper use.$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
-	.string "SCOTT: I hope you're enjoying\n"
+	.string "Scott: I hope you're enjoying\n"
 	.string "everything in the Battle Frontier.\p"
 	.string "…Wait a second…\n"
 	.string "Oh, my disbelieving eyes!\p"
@@ -326,14 +326,14 @@ BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
 	.string "be stuffed.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
-	.string "SCOTT: Oh, I heard about you!\n"
+	.string "Scott: Oh, I heard about you!\n"
 	.string "How you ruled the Battle Tower!\l"
 	.string "You beat over 50 Trainers in a row?\p"
 	.string "That's fantastic!\n"
 	.string "I want you to have this!$"
 
 BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
-	.string "SCOTT: Oh, my! I heard about you!\n"
+	.string "Scott: Oh, my! I heard about you!\n"
 	.string "How you overwhelmed the Battle Tower!\l"
 	.string "You beat over 100 Trainers in a row?\p"
 	.string "That's ridiculously spectacular!\n"

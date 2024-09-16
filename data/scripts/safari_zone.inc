@@ -73,7 +73,7 @@ SafariZone_EventScript_PokeblockPresent::
 	end
 
 SafariZone_Text_WouldYouLikeToExit:
-	.string "Would you like to exit the SAFARI\n"
+	.string "Would you like to exit the Safari\n"
 	.string "ZONE right now?$"
 
 SafariZone_Text_TimesUp:
@@ -175,7 +175,7 @@ SafariZone_South_Text_EnjoyTheRestOfYourAdventure:
 
 SafariZone_South_Text_ExitEarlyThankYouForPlaying:
 	.string "Okay.\p"
-	.string "I'll take back your remaining SAFARI\n"
+	.string "I'll take back your remaining Safari\n"
 	.string "Balls.\p"
 	.string "Thank you for playing.\n"
 	.string "We hope to see you again.$"

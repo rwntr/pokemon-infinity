@@ -288,7 +288,7 @@ Route118_Text_TryCatchingMonWithGoodRod:
 Route118_Text_CanCrossRiversWithSurf:
 	.string "Even if there isn't a boat, you can\n"
 	.string "cross rivers and the sea if you have\l"
-	.string "a Pokémon that knows SURF.\p"
+	.string "a Pokémon that knows Surf.\p"
 	.string "Pokémon can be counted on to do so\n"
 	.string "much!$"
 

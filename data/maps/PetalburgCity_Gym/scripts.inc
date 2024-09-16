@@ -1285,7 +1285,7 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 	.string "Dad: With that Badge, the Defense\n"
 	.string "of all your Pokémon will increase.\p"
-	.string "Pokémon that know the HM move SURF\n"
+	.string "Pokémon that know the HM move Surf\n"
 	.string "will be able to travel over water.\p"
 	.string "This is my gift to you. {PLAYER}, I'm\n"
 	.string "sure you can use it correctly.$"
@@ -1338,7 +1338,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "The Trainers of Petalburg\n"
 	.string "use all kinds of items.\p"
 	.string "The door at the left leads to\n"
-	.string "the SPEED Room.\p"
+	.string "the Speed Room.\p"
 	.string "The door at the right leads to\n"
 	.string "the Accuracy Room.\p"
 	.string "The room's name will be on\n"
@@ -1364,7 +1364,7 @@ PetalburgCity_Gym_Text_RandallDefeat:
 PetalburgCity_Gym_Text_RandallPostBattle:
 	.string "Go on to the next room where a new\n"
 	.string "challenge awaits you.\p"
-	.string "At the left is the CONFUSION Room.\p"
+	.string "At the left is the Confusion Room.\p"
 	.string "The right door leads to the Defense\n"
 	.string "Room.$"
 
@@ -1376,7 +1376,7 @@ PetalburgCity_Gym_Text_RandallPostBadge:
 	.string "Gym Leader is all about.$"
 
 PetalburgCity_Gym_Text_ParkerIntro:
-	.string "This is the CONFUSION Room.\p"
+	.string "This is the Confusion Room.\p"
 	.string "Let me see how well bonded you are\n"
 	.string "with your Pokémon!$"
 
@@ -1385,7 +1385,7 @@ PetalburgCity_Gym_Text_ParkerDefeat:
 	.string "You share a strong bond together.$"
 
 PetalburgCity_Gym_Text_ParkerPostBattle:
-	.string "The next room is the STRENGTH Room.\n"
+	.string "The next room is the Strength Room.\n"
 	.string "Can you withstand brute force?$"
 
 PetalburgCity_Gym_Text_ParkerPostBadge:
@@ -1474,14 +1474,14 @@ PetalburgCity_Gym_Text_AlexiaPostBattle:
 	.string "I think you've taught me a valuable\n"
 	.string "lesson here.\p"
 	.string "Now, go on! The left door goes to\n"
-	.string "the STRENGTH Room.\p"
+	.string "the Strength Room.\p"
 	.string "The right door opens to\n"
 	.string "the One-Hit KO Room.\p"
 	.string "Both of them have Trainers who are\n"
 	.string "skilled at offense.$"
 
 PetalburgCity_Gym_Text_AlexiaPostBadge:
-	.string "Hi! Have you tried using SURF?$"
+	.string "Hi! Have you tried using Surf?$"
 
 PetalburgCity_Gym_Text_JodyIntro:
 	.string "Our Gym Leader told us to go all out\n"
@@ -1510,7 +1510,7 @@ PetalburgCity_Gym_Text_DoorAppearsLocked:
 	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterSpeedRoom:
-	.string "“SPEED Room,” the sign says.\p"
+	.string "“Speed Room,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 @ Unused
@@ -1523,7 +1523,7 @@ PetalburgCity_Gym_Text_EnterAccuracyRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:
-	.string "“CONFUSION Room,” the sign says.\p"
+	.string "“Confusion Room,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterDefenseRoom:
@@ -1535,7 +1535,7 @@ PetalburgCity_Gym_Text_EnterRecoveryRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterStrengthRoom:
-	.string "“STRENGTH Room,” the sign says.\p"
+	.string "“Strength Room,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:

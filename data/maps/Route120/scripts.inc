@@ -388,7 +388,7 @@ Route120_Text_StevenShowMeYourPower:
 	.string "power as a Trainer!$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "Steven used the Devon SCOPE.\p"
+	.string "Steven used the Devon Scope.\p"
 	.string "An invisible Pokémon became completely\n"
 	.string "visible!\p"
 	.string "The startled Pokémon attacked!$"
@@ -399,7 +399,7 @@ Route120_Text_StevenGiveDevonScope:
 	.string "Your Pokémon have obviously grown\n"
 	.string "since I first met you in Dewford.\p"
 	.string "I'd like you to have this\n"
-	.string "Devon SCOPE.\p"
+	.string "Devon Scope.\p"
 	.string "Who knows, there may be other\n"
 	.string "concealed Pokémon.$"
 
@@ -415,10 +415,10 @@ Kecleon_Text_SomethingUnseeable:
 
 Kecleon_Text_WantToUseDevonScope:
 	.string "Something unseeable is in the way.\p"
-	.string "Want to use the Devon SCOPE?$"
+	.string "Want to use the Devon Scope?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked:
-	.string "{PLAYER} used the Devon SCOPE.\p"
+	.string "{PLAYER} used the Devon Scope.\p"
 	.string "An invisible Pokémon became completely\n"
 	.string "visible!\p"
 	.string "The startled Pokémon attacked!$"

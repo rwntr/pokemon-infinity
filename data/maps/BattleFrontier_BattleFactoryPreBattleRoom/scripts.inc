@@ -570,7 +570,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the STEEL type.$"
+	.string "in the handling of the Steel type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
 	.string "The Trainer appears to have no clear\n"

@@ -538,7 +538,7 @@ MauvilleCity_PokemonCenter_1F_Text_UsedStruggleStory::
 	.string "who never gives in to adversity!$"
 
 MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsTitle::
-	.string "The SLOT Champ$"
+	.string "The Slot Champ$"
 
 MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsAction::
 	.string "Won the jackpot on the slots$"
@@ -547,9 +547,9 @@ MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsStory::
 	.string "This is a tale of a Trainer\n"
 	.string "named {STR_VAR_3}.\p"
 	.string "This Trainer won the jackpot on\n"
-	.string "the SLOTS {STR_VAR_1} times.\p"
+	.string "the Slots {STR_VAR_1} times.\p"
 	.string "{STR_VAR_3} is a Trainer who was lucky\n"
-	.string "on the SLOTS!$"
+	.string "on the Slots!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RouletteWinsTitle::
 	.string "The Roulette Champ$"

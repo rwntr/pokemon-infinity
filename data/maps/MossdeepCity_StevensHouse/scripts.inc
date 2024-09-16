@@ -161,7 +161,7 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "Steven: While you're using SURF, you\n"
+	.string "Steven: While you're using Surf, you\n"
 	.string "should notice dark patches of water.\p"
 	.string "Use Dive if you come to deep water\n"
 	.string "like it. You'll drop to the seafloor.\p"
@@ -173,7 +173,7 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "Steven: Apparently, there's an\n"
 	.string "underwater cavern between\l"
-	.string "Mossdeep and SOOTOPOLIS.\p"
+	.string "Mossdeep and Sootopolis.\p"
 	.string "You know, the one that Capt. Stern\n"
 	.string "found in his submarine.$"
 

@@ -340,7 +340,7 @@ LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
 	.string "trades from other people, will obey\l"
 	.string "you completely.\p"
 	.string "And, it lets Pokémon use the HM move\n"
-	.string "STRENGTH outside of battle.\p"
+	.string "Strength outside of battle.\p"
 	.string "This is a token of my appreciation.\n"
 	.string "Don't be shy about taking it!$"
 

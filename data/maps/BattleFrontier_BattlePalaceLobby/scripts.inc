@@ -381,7 +381,7 @@ BattleFrontier_BattlePalaceLobby_Text_WelcomeForSingleBattle:
 	.string "Where the hearts of Trainers\n"
 	.string "are put to the test.\p"
 	.string "I welcome you to the Battle Palace.\p"
-	.string "I accept challenges to the SINGLE\n"
+	.string "I accept challenges to the Single\n"
 	.string "Battle Halls.$"
 
 BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
@@ -390,9 +390,9 @@ BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
 	.string "In the Battle Palace, there are\n"
-	.string "several auditoriums for SINGLE Battles\l"
+	.string "several auditoriums for Single Battles\l"
 	.string "that are named Single Battle Halls.\p"
-	.string "The SINGLE Battles are conducted in\n"
+	.string "The Single Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
 	.string "Trainers are permitted only to switch\n"

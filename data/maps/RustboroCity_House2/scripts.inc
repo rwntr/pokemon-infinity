@@ -10,7 +10,7 @@ RustboroCity_House2_EventScript_LittleGirl::
 	end
 
 RustboroCity_House2_Text_TrainerSchoolExcellent:
-	.string "The Trainer'S SCHOOL is excellent.\p"
+	.string "The Trainer'S School is excellent.\p"
 	.string "If you study there, you could even\n"
 	.string "become a Gym Leader.$"
 

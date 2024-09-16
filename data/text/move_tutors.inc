@@ -10,7 +10,7 @@ MoveTutor_Text_SwaggerTeach:
 	.string "chewed me out.\p"
 	.string "That took the swagger out of my step.\p"
 	.string "If you'd like, I'll teach the move\n"
-	.string "SWAGGER to a Pokémon of yours.$"
+	.string "Swagger to a Pokémon of yours.$"
 
 MoveTutor_Text_SwaggerDeclined:
 	.string "What, no? Can't you get into\n"
@@ -18,7 +18,7 @@ MoveTutor_Text_SwaggerDeclined:
 
 MoveTutor_Text_SwaggerWhichMon:
 	.string "All right, which Pokémon wants to\n"
-	.string "learn how to SWAGGER?$"
+	.string "learn how to Swagger?$"
 
 MoveTutor_Text_SwaggerTaught:
 	.string "I'll just praise my Pokémon from now\n"
@@ -119,9 +119,9 @@ MoveTutor_Text_SleepTalkTeach:
 	.string "Humph! My wife relies on Hidden\n"
 	.string "Power to stay awake.\p"
 	.string "She should just take a nap like I do,\n"
-	.string "and SLEEP TALK.\p"
+	.string "and Sleep TALK.\p"
 	.string "I can teach your Pokémon how to\n"
-	.string "SLEEP TALK instead. Interested?$"
+	.string "Sleep TALK instead. Interested?$"
 
 MoveTutor_Text_SleepTalkDeclined:
 	.string "Oh, fine, fine. You want to stay awake\n"
@@ -135,7 +135,7 @@ MoveTutor_Text_SleepTalkTaught:
 	.string "I've never once gotten my wife's\n"
 	.string "coin trick right.\p"
 	.string "I would be happy if I got it right\n"
-	.string "even as I SLEEP TALK…$"
+	.string "even as I Sleep TALK…$"
 
 MoveTutor_Text_SubstituteTeach:
 	.string "When I see the wide world from up\n"
@@ -146,7 +146,7 @@ MoveTutor_Text_SubstituteTeach:
 	.string "Of course it's not possible.\n"
 	.string "Giggle…\p"
 	.string "I know! Would you be interested in\n"
-	.string "having a Pokémon learn SUBSTITUTE?$"
+	.string "having a Pokémon learn Substitute?$"
 
 MoveTutor_Text_SubstituteDeclined:
 	.string "Oh, no?\p"
@@ -156,7 +156,7 @@ MoveTutor_Text_SubstituteDeclined:
 MoveTutor_Text_SubstituteWhichMon:
 	.string "Giggle…\n"
 	.string "Which Pokémon do you want me to\l"
-	.string "teach SUBSTITUTE?$"
+	.string "teach Substitute?$"
 
 MoveTutor_Text_SubstituteTaught:
 	.string "We human beings should enjoy our\n"
@@ -190,7 +190,7 @@ MoveTutor_Text_DynamicPunchTaught:
 
 MoveTutor_Text_DoubleEdgeTeach:
 	.string "Sigh…\p"
-	.string "SOOTOPOLIS's Gym Leader is really\n"
+	.string "Sootopolis's Gym Leader is really\n"
 	.string "lovably admirable.\p"
 	.string "But that also means I have many\n"
 	.string "rivals for his attention.\p"

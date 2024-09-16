@@ -453,7 +453,7 @@ BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain:
 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
 	.string "The Single Battle Tournament\n"
 	.string "is exactly as the name suggests--\l"
-	.string "a tournament of SINGLE Battles.\p"
+	.string "a tournament of Single Battles.\p"
 	.string "All participating Trainers must\n"
 	.string "enter three Pokémon each.\p"
 	.string "In each battle, one of the three\n"

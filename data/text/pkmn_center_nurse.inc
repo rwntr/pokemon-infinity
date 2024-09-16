@@ -30,7 +30,7 @@ gText_NoticesGoldCard::
 	.string "Oh, the gold color is brilliant!\n"
 	.string "The four stars seem to sparkle!\p"
 	.string "I've seen several Trainers with\n"
-	.string "a SILVER Card before, but, {PLAYER},\l"
+	.string "a Silver Card before, but, {PLAYER},\l"
 	.string "you're the first Trainer I've ever\l"
 	.string "seen with a Gold Card!\p"
 	.string "Okay, {PLAYER}, please allow me\n"

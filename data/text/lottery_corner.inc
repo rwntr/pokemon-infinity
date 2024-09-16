@@ -1,6 +1,6 @@
 LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
 	.string "This is the Pokémon Lottery Corner.\p"
-	.string "All shoppers at our Department STORE\n"
+	.string "All shoppers at our Department Store\n"
 	.string "get to draw a Pokémon Loto TICKET.\p"
 	.string "If the Loto TICKET's number matches\n"
 	.string "the ID number of any of your Pokémon,\l"

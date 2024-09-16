@@ -144,31 +144,31 @@ BattleFrontier_Lounge2_Text_BattleTowerIsHottest::
 
 BattleFrontier_Lounge2_Text_SalonMaidenIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this mysterious Trainer called\n"
-	.string "the SALON Maiden that runs the place.$"
+	.string "the Salon Maiden that runs the place.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenSilverMons::
-	.string "Have you battled the SALON Maiden?\p"
+	.string "Have you battled the Salon Maiden?\p"
 	.string "When she's measuring up her opponent,\n"
 	.string "she apparently uses these Pokémon:\p"
 	.string "A Psychic-type PSI Pokémon,\n"
 	.string "a Fire-type VOLCANO Pokémon,\l"
-	.string "and a Normal-type SLEEPING Pokémon.$"
+	.string "and a Normal-type Sleeping Pokémon.$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
-	.string "Have you battled the SALON Maiden\n"
+	.string "Have you battled the Salon Maiden\n"
 	.string "when she's serious?\p"
 	.string "When she's battling flat out,\n"
 	.string "she apparently uses these Pokémon:\p"
 	.string "A Dragon & Psychic Eon Pokémon,\n"
 	.string "an Electric-type THUNDER Pokémon,\l"
-	.string "and a Normal-type SLEEPING Pokémon.$"
+	.string "and a Normal-type Sleeping Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this flamboyant Trainer called\n"
 	.string "the Dome Ace that runs the place.$"
@@ -188,12 +188,12 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Eon Pokémon,\n"
 	.string "a WATER & Ground Mud Fish Pokémon,\l"
-	.string "and a STEEL- & Psychic-type Iron Leg\l"
+	.string "and a Steel- & Psychic-type Iron Leg\l"
 	.string "Pokémon.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this freaky Trainer called\n"
 	.string "the Factory Head that runs the place.$"
@@ -216,7 +216,7 @@ BattleFrontier_Lounge2_Text_FactoryHeadGoldMons::
 
 BattleFrontier_Lounge2_Text_PikeQueenIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this scary Trainer called\n"
 	.string "the Pike Queen that runs the place.$"
@@ -226,7 +226,7 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "before?\p"
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A Poison-type Fang SNAKE Pokémon,\n"
+	.string "A Poison-type Fang Snake Pokémon,\n"
 	.string "a Bug & Rock Mold Pokémon,\l"
 	.string "and a WATER-type TENDER Pokémon.$"
 
@@ -235,14 +235,14 @@ BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "when she's serious?\p"
 	.string "When she's seriously annoyed, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A Poison-type Fang SNAKE Pokémon,\n"
-	.string "a STEEL & Ground Iron SNAKE Pokémon,\l"
+	.string "A Poison-type Fang Snake Pokémon,\n"
+	.string "a Steel & Ground Iron Snake Pokémon,\l"
 	.string "and a WATER- & Flying-type Atrocious\l"
 	.string "Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this cute Trainer called\n"
 	.string "the Arena TYCOON that runs the place.$"
@@ -252,9 +252,9 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "before?\p"
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
-	.string "A Bug & Fighting SINGLE HORN Pokémon,\n"
+	.string "A Bug & Fighting Single HORN Pokémon,\n"
 	.string "a Dark-type Moonlight Pokémon,\l"
-	.string "and a Bug & Ghost SHED Pokémon.$"
+	.string "and a Bug & Ghost Shed Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "Have you battled the Arena TYCOON\n"
@@ -262,13 +262,13 @@ BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Dark-type Moonlight Pokémon,\n"
-	.string "a Ghost & Poison SHADOW Pokémon\l"
+	.string "a Ghost & Poison Shadow Pokémon\l"
 	.string "and a Grass- & Fighting-type\l"
 	.string "Mushroom Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this sinister Trainer called\n"
 	.string "the Palace Maven that runs the place.$"
@@ -293,7 +293,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top Trainers that SCOTT\n"
+	.string "One of those top Trainers that Scott\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this fiery-hot Trainer called\n"
 	.string "the Pyramid King that runs the place.$"
@@ -305,7 +305,7 @@ BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
 	.string "he apparently uses these Pokémon:\p"
 	.string "A Rock-type Rock Peak Pokémon,\n"
 	.string "an Ice-type Iceberg Pokémon,\l"
-	.string "and a STEEL-type Iron Pokémon.$"
+	.string "and a Steel-type Iron Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 	.string "Have you battled the Pyramid King\n"
@@ -340,7 +340,7 @@ BattleFrontier_Lounge2_Text_DoubleBattleAdvice3::
 
 BattleFrontier_Lounge2_Text_MultiBattleAdvice::
 	.string "All sorts of Trainers gather in\n"
-	.string "the Battle SALON.\p"
+	.string "the Battle Salon.\p"
 	.string "Just think--you may run into your\n"
 	.string "friends or followers!\l"
 	.string "You should look carefully!$"

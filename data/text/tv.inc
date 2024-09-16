@@ -431,7 +431,7 @@ gTVFanClubText00::
 	.string "WE ARE THE POKéMON FAN CLUB!\p"
 	.string "We're on the air!\p"
 	.string "Today, we'll get rolling with the\n"
-	.string "Pokémon SURVEY Corner.\p"
+	.string "Pokémon Survey Corner.\p"
 	.string "Out of all the tales woven by Pokémon\n"
 	.string "and Trainers, what startling new drama\l"
 	.string "will grab our attention today?\p"
@@ -656,7 +656,7 @@ LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial::
 
 gTVTrainerFanClubSpecialText00::
 	.string "Trainer Fan Club\n"
-	.string "{STR_VAR_1} SPECIAL!\p"
+	.string "{STR_VAR_1} Special!\p"
 	.string "This is a special presentation for\n"
 	.string "the fans of {STR_VAR_1} all over Hoenn!\p"
 	.string "Today, we ask the question, “What do\n"
@@ -707,7 +707,7 @@ gTVTrainerFanClubSpecialText05::
 
 gTVNameRaterText00::
 	.string "And now, it's time for…\n"
-	.string "THE Name Rater SHOW.\p"
+	.string "THE Name Rater Show.\p"
 	.string "I tell your Pokémon's fortune from\n"
 	.string "the nickname you've bestowed.\p"
 	.string "Advice is what I have to give, and it is\n"
@@ -875,7 +875,7 @@ gTVPokemonAnglerText01::
 gTVPokemonTodayFailedText00::
 	.string "Hello!\p"
 	.string "It's time for Pokémon TODAY!\p"
-	.string "Big SIS: Hi! Is everyone peachy and\n"
+	.string "Big Sis: Hi! Is everyone peachy and\n"
 	.string "perky today?\p"
 	.string "Today, we're going to look at {STR_VAR_1}'s\n"
 	.string "Pokémon {STR_VAR_2}!\p"
@@ -885,9 +885,9 @@ gTVPokemonTodayFailedText00::
 gTVPokemonTodayFailedText01::
 	.string "Oh!\n"
 	.string "Speaking of {STR_VAR_1}…\p"
-	.string "Big SIS, I saw the Trainer with my very\n"
+	.string "Big Sis, I saw the Trainer with my very\n"
 	.string "own eyes!\p"
-	.string "Big SIS: Oh, what did you see?\p"
+	.string "Big Sis: Oh, what did you see?\p"
 	.string "Big Bro: Well, I had to go on a trip to\n"
 	.string "{STR_VAR_2}.\p"
 	.string "That's when I happened to come across\n"
@@ -912,7 +912,7 @@ gTVPokemonTodayFailedText03::
 	.string "when the Pokémon fainted!$"
 
 gTVPokemonTodayFailedText04::
-	.string "Big SIS: Hey, there!\n"
+	.string "Big Sis: Hey, there!\n"
 	.string "That's not nice!\p"
 	.string "You shouldn't be laughing at other\n"
 	.string "people's misfortune!\p"
@@ -922,10 +922,10 @@ gTVPokemonTodayFailedText04::
 	.string "Sorry for laughing.$"
 
 gTVPokemonTodayFailedText05::
-	.string "Big SIS: Bufufu…\p"
+	.string "Big Sis: Bufufu…\p"
 	.string "Big Bro: Hey!\n"
 	.string "You just laughed, too!\p"
-	.string "Big SIS: Huh?!\p"
+	.string "Big Sis: Huh?!\p"
 	.string "I didn't laugh!\n"
 	.string "Honestly, I didn't!\p"
 	.string "Oh, poor {STR_VAR_1}.\n"
@@ -933,20 +933,20 @@ gTVPokemonTodayFailedText05::
 	.string "Big Bro: …$"
 
 gTVPokemonTodayFailedText06::
-	.string "Big SIS: That's enough silliness!\n"
+	.string "Big Sis: That's enough silliness!\n"
 	.string "Let's look at today's Pokémon…\p"
 	.string "Huh?\n"
 	.string "We're out of time already?\p"
 	.string "Aww!\n"
 	.string "We couldn't profile a Pokémon today!\p"
 	.string "Big Bro: See you again next time!\p"
-	.string "Big SIS: Hey, don't end the show\n"
+	.string "Big Sis: Hey, don't end the show\n"
 	.string "without me!$"
 
 gTVPokemonTodaySuccessfulText00::
 	.string "Hello!\p"
 	.string "It's time for Pokémon TODAY!\p"
-	.string "Big SIS: Hi! Is everyone peachy and\n"
+	.string "Big Sis: Hi! Is everyone peachy and\n"
 	.string "perky today?\p"
 	.string "Today, we're going to look at {STR_VAR_1}'s\n"
 	.string "Pokémon {STR_VAR_2}!\p"
@@ -954,7 +954,7 @@ gTVPokemonTodaySuccessfulText00::
 	.string "to do!$"
 
 gTVPokemonTodaySuccessfulText01::
-	.string "Big SIS: {STR_VAR_1} gave the nickname\n"
+	.string "Big Sis: {STR_VAR_1} gave the nickname\n"
 	.string "{STR_VAR_3} to the {STR_VAR_2}!\p"
 	.string "It sounds like {STR_VAR_3} is getting\n"
 	.string "good, loving care!$"
@@ -966,22 +966,22 @@ gTVPokemonTodaySuccessfulText02::
 	.string "to catch it!$"
 
 gTVPokemonTodaySuccessfulText03::
-	.string "Big SIS: If it was that easy to catch,\n"
+	.string "Big Sis: If it was that easy to catch,\n"
 	.string "it must have been destiny that brought\l"
 	.string "{STR_VAR_1} and the {STR_VAR_2} together!$"
 
 gTVPokemonTodaySuccessfulText04::
-	.string "Big SIS: Wow! That's so neat!\p"
+	.string "Big Sis: Wow! That's so neat!\p"
 	.string "But you know what they say, a Pokémon\n"
 	.string "that takes a lot of effort to catch\l"
 	.string "earns the love of its Trainer!$"
 
 gTVPokemonTodaySuccessfulText05::
-	.string "Big SIS: {STR_VAR_1}'s {STR_VAR_2} is a\n"
+	.string "Big Sis: {STR_VAR_1}'s {STR_VAR_2} is a\n"
 	.string "memorable Pokémon because it took an\l"
 	.string "invaluable Master Ball to catch!\p"
 	.string "Big Bro: Wow! That's mega-awesome!\p"
-	.string "Big SIS: {STR_VAR_1} must have really\n"
+	.string "Big Sis: {STR_VAR_1} must have really\n"
 	.string "wanted that {STR_VAR_2}, for sure!$"
 
 gTVPokemonTodaySuccessfulText06::
@@ -989,7 +989,7 @@ gTVPokemonTodaySuccessfulText06::
 	.string "{STR_VAR_3} to that {STR_VAR_2}…\p"
 	.string "You really get a good idea about\n"
 	.string "{STR_VAR_1}'s Trainer sense.\p"
-	.string "Big SIS: I second that notion!$"
+	.string "Big Sis: I second that notion!$"
 
 gTVPokemonTodaySuccessfulText07::
 	.string "If it were me, I'd give that nickname\n"
@@ -1020,7 +1020,7 @@ gTVPokemonTodaySuccessfulText10::
 	.string "I'll use the nickname {STR_VAR_2}, too!$"
 
 gTVPokemonTodaySuccessfulText11::
-	.string "Big SIS: Oh, no!\n"
+	.string "Big Sis: Oh, no!\n"
 	.string "Look at the time!\p"
 	.string "Well, gang, this is it for today.\n"
 	.string "See you again next time!\p"
@@ -1029,7 +1029,7 @@ gTVPokemonTodaySuccessfulText11::
 
 SmartShopper_Text_Intro::
 	.string "Hello!\p"
-	.string "It's time for TODAY'S SMART SHOPPER.\p"
+	.string "It's time for TODAY'S Smart SHOPPER.\p"
 	.string "Interviewer: How are you, viewers?\p"
 	.string "Today we're visiting a shop\n"
 	.string "in {STR_VAR_2}.\p"
@@ -1182,7 +1182,7 @@ gTVTodaysRivalTrainerText07::
 
 gTVTodaysRivalTrainerText08::
 	.string "Today's rival Trainer is {STR_VAR_1},\n"
-	.string "who's in a SECRET Base now.\p"
+	.string "who's in a Secret Base now.\p"
 	.string "{STR_VAR_1} has so far registered\n"
 	.string "{STR_VAR_2} Pokémon in the Pokédex.$"
 
@@ -1458,11 +1458,11 @@ gTVBreakingNewsText11::
 gTVSecretBaseVisitText00::
 	.string "Hello, folks!\n"
 	.string "It's time again for\l"
-	.string "a SECRET Base VISIT.\p"
-	.string "Today, we visit the SECRET Base\n"
+	.string "a Secret Base VISIT.\p"
+	.string "Today, we visit the Secret Base\n"
 	.string "of {STR_VAR_1}.\p"
 	.string "How has {STR_VAR_1} personalized\n"
-	.string "the SECRET Base?\p"
+	.string "the Secret Base?\p"
 	.string "Let's find out!\n"
 	.string "… … … … … …$"
 
@@ -1510,13 +1510,13 @@ gTVSecretBaseVisitText06::
 	.string "The placement of this {STR_VAR_2}\n"
 	.string "right here…\p"
 	.string "It has a presence that fills\n"
-	.string "the entire SECRET Base!$"
+	.string "the entire Secret Base!$"
 
 gTVSecretBaseVisitText07::
 	.string "Wheeew!\p"
 	.string "There's nothing in place here.\p"
 	.string "This empty space has an effect on\n"
-	.string "the entire SECRET Base.$"
+	.string "the entire Secret Base.$"
 
 gTVSecretBaseVisitText08::
 	.string "Oh!\n"
@@ -1578,10 +1578,10 @@ gTVSecretBaseVisitText12::
 	.string "Certainly, it was quite a lesson!$"
 
 gTVSecretBaseVisitText13::
-	.string "I must say, what a superb SECRET Base\n"
+	.string "I must say, what a superb Secret Base\n"
 	.string "it was!\p"
 	.string "Viewers, if you have the chance,\n"
-	.string "do visit {STR_VAR_1}'s SECRET Base.\p"
+	.string "do visit {STR_VAR_1}'s Secret Base.\p"
 	.string "Until next time, I bid you adieu!$"
 
 gTVPokemonLotteryWinnerFlashReportText00::
@@ -1592,7 +1592,7 @@ gTVPokemonLotteryWinnerFlashReportText00::
 	.string "Hello! We're coming at you live from\n"
 	.string "the Pokémon Lottery Corner on\l"
 	.string "the ground floor of the Lilycove\l"
-	.string "Department STORE!\p"
+	.string "Department Store!\p"
 	.string "Like it always happens, another\n"
 	.string "lucky Trainer appeared today!\p"
 	.string "That Trainer's name…\n"
@@ -1604,14 +1604,14 @@ gTVPokemonLotteryWinnerFlashReportText00::
 	.string "Viewers, don't just watch,\n"
 	.string "get in on the action!\p"
 	.string "All of us at the Lilycove Department\n"
-	.string "STORE look forward to your next visit!\p"
+	.string "Store look forward to your next visit!\p"
 	.string "This has been a live broadcast from\n"
-	.string "the Lilycove Department STORE,\l"
+	.string "the Lilycove Department Store,\l"
 	.string "offering you the greatest selection\l"
 	.string "in all Hoenn!$"
 
 gTVThePokemonBattleSeminarText00::
-	.string "THE Pokémon Battle SEMINAR!\p"
+	.string "THE Pokémon Battle Seminar!\p"
 	.string "We examine battles to see what\n"
 	.string "lessons we may learn from others.\p"
 	.string "Today's case study is on {STR_VAR_1}'s\n"
@@ -1698,7 +1698,7 @@ gTVTrainerFanClubText08::
 
 gTVTrainerFanClubText09::
 	.string "Fans: The Trainer's nifty style of\n"
-	.string "decorating a SECRET Base!$"
+	.string "decorating a Secret Base!$"
 
 gTVTrainerFanClubText10::
 	.string "Fans: The Trainer's bold ways of\n"
@@ -1813,13 +1813,13 @@ TVSpotTheCuties_Text_RibbonCute::
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonSmart::
-	.string "The SMART Ribbon is especially\n"
+	.string "The Smart Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it for winning\n"
-	.string "a SMART Contest.\p"
+	.string "a Smart Contest.\p"
 	.string "It verily draws out the smartness\n"
 	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the SMART Ribbon!\n"
+	.string "{STR_VAR_2} and the Smart Ribbon!\n"
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonTough::
@@ -2015,7 +2015,7 @@ gTVWhatsNo1InHoennTodayText00::
 	.string "than {STR_VAR_1}!$"
 
 gTVWhatsNo1InHoennTodayText01::
-	.string "In one day, {STR_VAR_1} spun the SLOTS\n"
+	.string "In one day, {STR_VAR_1} spun the Slots\n"
 	.string "at the Game Corner {STR_VAR_2} times.\p"
 	.string "While playing, {STR_VAR_1} was heard\n"
 	.string "murmuring, “For me, the reels don't\l"
@@ -2045,7 +2045,7 @@ gTVWhatsNo1InHoennTodayText04::
 	.string "Toward the end, even {STR_VAR_1}\n"
 	.string "seemed to get dizzy.\p"
 	.string "The Trainer appeared to totter\n"
-	.string "around like a SPINDA!$"
+	.string "around like a Spinda!$"
 
 gTVWhatsNo1InHoennTodayText05::
 	.string "In just one day, {STR_VAR_1} planted\n"
@@ -2082,11 +2082,11 @@ gTVWhatsNo1InHoennTodayText08::
 	.string "You, too, can be no. 1 every day!$"
 
 TVSecretBaseSecrets_Text_Intro::
-	.string "SECRET Base SECRETS!\p"
+	.string "Secret Base Secrets!\p"
 	.string "What do Trainers do in the secrecy\n"
-	.string "of SECRET Bases?\p"
+	.string "of Secret Bases?\p"
 	.string "Today, we investigate {STR_VAR_1}'s\n"
-	.string "SECRET Base.\p"
+	.string "Secret Base.\p"
 	.string "Oh? It looks like {STR_VAR_2} has come\n"
 	.string "for a visit.\p"
 	.string "Let's have a peek!\p"
@@ -2100,33 +2100,33 @@ TVSecretBaseSecrets_Text_WhatWillPlayerDoNext2::
 
 TVSecretBaseSecrets_Text_TookXStepsBeforeLeaving::
 	.string "In the end, {STR_VAR_2} took {STR_VAR_3} steps\n"
-	.string "in {STR_VAR_1}'s SECRET Base before\l"
+	.string "in {STR_VAR_1}'s Secret Base before\l"
 	.string "leaving.$"
 
 TVSecretBaseSecrets_Text_BaseFailedToInterestPlayer::
 	.string "Hmm…\p"
-	.string "It appears as if {STR_VAR_1}'s SECRET\n"
+	.string "It appears as if {STR_VAR_1}'s Secret\n"
 	.string "Base failed to interest {STR_VAR_2}…$"
 
 TVSecretBaseSecrets_Text_PlayerEnjoyedBase::
 	.string "{STR_VAR_2} appears to have enjoyed\n"
-	.string "{STR_VAR_1}'s SECRET Base thoroughly.$"
+	.string "{STR_VAR_1}'s Secret Base thoroughly.$"
 
 TVSecretBaseSecrets_Text_PlayerHugeFanOfBase::
 	.string "{STR_VAR_2} appears to have become\n"
 	.string "a huge fan of {STR_VAR_1}'s\l"
-	.string "SECRET Base.$"
+	.string "Secret Base.$"
 
 TVSecretBaseSecrets_Text_Outro::
 	.string "Viewers may want to check out\n"
-	.string "{STR_VAR_1}'s SECRET Base, too.\p"
+	.string "{STR_VAR_1}'s Secret Base, too.\p"
 	.string "Tune in next time as we visit another\n"
-	.string "SECRET Base! Thanks for joining us!$"
+	.string "Secret Base! Thanks for joining us!$"
 
 TVSecretBaseSecrets_Text_StoppedMoving1::
 	.string "The visitor has stopped!\p"
 	.string "The visitor isn't moving at all!\p"
-	.string "Was {STR_VAR_1}'s SECRET Base\n"
+	.string "Was {STR_VAR_1}'s Secret Base\n"
 	.string "that unimpressive?$"
 
 TVSecretBaseSecrets_Text_StoppedMoving2::
@@ -2164,13 +2164,13 @@ TVSecretBaseSecrets_Text_UsedPlant::
 
 TVSecretBaseSecrets_Text_UsedGoldShield::
 	.string "The visitor is examining\n"
-	.string "a Gold SHIELD!\p"
+	.string "a Gold Shield!\p"
 	.string "The visitor's eyes appear to be\n"
 	.string "lit up with wonder!$"
 
 TVSecretBaseSecrets_Text_UsedSilverShield::
 	.string "The visitor is examining\n"
-	.string "a SILVER SHIELD!\p"
+	.string "a Silver Shield!\p"
 	.string "The visitor appears to be wide-eyed!$"
 
 TVSecretBaseSecrets_Text_UsedGlassOrnament::
@@ -2269,7 +2269,7 @@ TVSecretBaseSecrets_Text_BattledDraw::
 
 TVSecretBaseSecrets_Text_UsedSpinMat::
 	.string "The visitor stepped on\n"
-	.string "a SPIN Mat!\p"
+	.string "a Spin Mat!\p"
 	.string "It looks like the visitor is dizzy!\p"
 	.string "The visitor is tottering about!\n"
 	.string "Look out!$"
@@ -2298,7 +2298,7 @@ TVSecretBaseSecrets_Text_UsedBrick::
 
 TVSecretBaseSecrets_Text_UsedSolidBoard::
 	.string "The visitor is walking across\n"
-	.string "the SOLID BOARD.\p"
+	.string "the Solid Board.\p"
 	.string "The visitor keeps looking down.\p"
 	.string "The visitor appears to be surprisingly\n"
 	.string "timid and cautious!$"
@@ -2324,7 +2324,7 @@ TVSecretBaseSecrets_Text_UsedTire::
 	.string "the kind of car that would use it?$"
 
 TVSecretBaseSecrets_Text_UsedStand::
-	.string "The visitor climbed a STAND!\p"
+	.string "The visitor climbed a stand!\p"
 	.string "The visitor is looking out across\n"
 	.string "{STR_VAR_1}'s Base from high up!\p"
 	.string "And…\p"
@@ -2342,7 +2342,7 @@ TVSecretBaseSecrets_Text_UsedDoll::
 
 TVSecretBaseSecrets_Text_UsedSlide::
 	.string "The visitor is climbing the ladder\n"
-	.string "on a SLIDE!\p"
+	.string "on a slide!\p"
 	.string "And…\p"
 	.string "The visitor slid down!\p"
 	.string "Looks like the visitor is having\n"
@@ -2350,7 +2350,7 @@ TVSecretBaseSecrets_Text_UsedSlide::
 
 TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown::
 	.string "The visitor is climbing the ladder\n"
-	.string "on a SLIDE!\p"
+	.string "on a slide!\p"
 	.string "And…\p"
 	.string "The visitor went back down\n"
 	.string "the ladder!\p"
@@ -2366,13 +2366,13 @@ TVSecretBaseSecrets_Text_UsedJumpMat::
 	.string "What a solo performance!$"
 
 gTVSafariFanClubText00::
-	.string "SAFARI Fan Club!\p"
+	.string "Safari Fan Club!\p"
 	.string "Reporter: All right, mates!\n"
-	.string "Tossing them SAFARI Balls, are you?\p"
-	.string "You can bet I am here in the SAFARI\n"
+	.string "Tossing them Safari Balls, are you?\p"
+	.string "You can bet I am here in the Safari\n"
 	.string "ZONE chock-full of amazing Pokémon!\p"
 	.string "Let's get with it and have a chat with\n"
-	.string "this good fellow of a SAFARI guide!\p"
+	.string "this good fellow of a Safari guide!\p"
 	.string "All right, mate, how are the visiting\n"
 	.string "Trainers looking?$"
 
@@ -2395,7 +2395,7 @@ gTVSafariFanClubText03::
 gTVSafariFanClubText04::
 	.string "Reporter: Is that right, then?\p"
 	.string "Sounds like our mate {STR_VAR_1}\n"
-	.string "is a stout SAFARI master!\p"
+	.string "is a stout Safari master!\p"
 	.string "Guide: I hope the Trainer comes back\n"
 	.string "and shows us that great technique.$"
 
@@ -2427,14 +2427,14 @@ gTVSafariFanClubText08::
 gTVSafariFanClubText09::
 	.string "Reporter: Is that right, then?\p"
 	.string "Sounds like our mate {STR_VAR_1}\n"
-	.string "needs more SAFARI seasoning.\p"
+	.string "needs more Safari seasoning.\p"
 	.string "Guide: I hope the Trainer visits\n"
 	.string "over and over to get the hang of it.$"
 
 gTVSafariFanClubText10::
 	.string "Reporter: Quite right, it is!\n"
 	.string "Facing up to challenges is important!\p"
-	.string "Viewers, come on down to the SAFARI\n"
+	.string "Viewers, come on down to the Safari\n"
 	.string "and make the challenge yourself!\p"
 	.string "Until next time, cheerio!$"
 

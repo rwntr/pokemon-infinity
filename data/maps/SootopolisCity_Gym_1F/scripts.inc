@@ -178,7 +178,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "SOOTOPOLIS's Gym Leader Juan is\n"
+	.string "Sootopolis's Gym Leader Juan is\n"
 	.string "a master of WATER-type Pokémon.\p"
 	.string "And, to get to Juan, an icy floor\n"
 	.string "will hamper your progress…\p"
@@ -275,10 +275,10 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "Badge from the Gym in Fortree.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "SOOTOPOLIS City Pokémon$"
+	.string "Sootopolis City Pokémon$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
-	.string "SOOTOPOLIS City Pokémon\p"
+	.string "Sootopolis City Pokémon\p"
 	.string "Juan'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 

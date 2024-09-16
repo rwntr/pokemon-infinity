@@ -1043,7 +1043,7 @@ Route104_Text_TMsAreOneTimeUse:
 	.string "Think twice before using it!$"
 
 Route104_Text_DontNeedThisTakeIt:
-	.string "This Flower SHOP started selling\n"
+	.string "This Flower Shop started selling\n"
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping.\p"
@@ -1051,7 +1051,7 @@ Route104_Text_DontNeedThisTakeIt:
 	.string "Would you take it, please?$"
 
 Route104_Text_FlowerShopSellingSaplings:
-	.string "This Flower SHOP started selling\n"
+	.string "This Flower Shop started selling\n"
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping. Where should I put them?$"

@@ -465,7 +465,7 @@ SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
 	.string "Capt. Stern: Why…\p"
 	.string "Why would Team Aqua steal my\n"
-	.string "SUBMARINE Explorer 1?\p"
+	.string "Submarine Explorer 1?\p"
 	.string "They can't be after the slumbering\n"
 	.string "Pokémon at the bottom of the sea…\p"
 	.string "But even if I were to chase them,\n"
@@ -498,7 +498,7 @@ SlateportCity_Harbor_Text_NeedDiveToCatchSub:
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
 	.string "Capt. Stern: Oh, yes.\n"
-	.string "Mr. Briney came to our SHIPYARD.\p"
+	.string "Mr. Briney came to our Shipyard.\p"
 	.string "It won't be long now before we finish\n"
 	.string "making the ferry!$"
 
@@ -513,10 +513,10 @@ SlateportCity_Harbor_Text_FinishedMakingFerry:
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
 	.string "Capt. Stern: Oh?\n"
 	.string "{PLAYER}{KUN}, that item you have…\p"
-	.string "That's a SCANNER! That would sure\n"
+	.string "That's a Scanner! That would sure\n"
 	.string "help us on our explorations.\p"
 	.string "{PLAYER}{KUN}, would you trade your\n"
-	.string "SCANNER for something?\p"
+	.string "Scanner for something?\p"
 	.string "Like, say, a Deepseatooth or\n"
 	.string "a Deepseascale that I have?$"
 
@@ -524,7 +524,7 @@ SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
 	.string "Capt. Stern: Are you certain?\n"
 	.string "It's useless to you, {PLAYER}{KUN}…\p"
 	.string "Well, okay, then. If you want to trade\n"
-	.string "your SCANNER, let me know.$"
+	.string "your Scanner, let me know.$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
 	.string "Capt. Stern: So you'll trade it for\n"
@@ -538,7 +538,7 @@ SlateportCity_Harbor_Text_WhichOneDoYouWant:
 	.string "Capt. Stern: Which one do you want?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
-	.string "{PLAYER} handed the SCANNER to\n"
+	.string "{PLAYER} handed the Scanner to\n"
 	.string "Capt. Stern.$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:

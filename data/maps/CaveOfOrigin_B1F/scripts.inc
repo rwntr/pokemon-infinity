@@ -66,7 +66,7 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "I've heard tales of your exploits.\p"
 	.string "My name is WALLACE.\p"
 	.string "I was once the Gym Leader of\n"
-	.string "SOOTOPOLIS, but something came up.\p"
+	.string "Sootopolis, but something came up.\p"
 	.string "So now, I've entrusted my mentor Juan\n"
 	.string "with the's operation.\p"
 	.string "… … … … … …\n"
@@ -112,9 +112,9 @@ CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
 	.string "Can't you remember somehow?$"
 
 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
-	.string "WALLACE: The SKY Pillar?\p"
+	.string "WALLACE: The Sky Pillar?\p"
 	.string "That's it!\n"
-	.string "It must be the SKY Pillar!\p"
+	.string "It must be the Sky Pillar!\p"
 	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"
-	.string "We'll head to the SKY Pillar right away!$"
+	.string "We'll head to the Sky Pillar right away!$"
 

@@ -1168,17 +1168,17 @@ BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle:
 	.string "Where the talents of Trainers\n"
 	.string "are put to the test!\p"
 	.string "Welcome to the Battle Tower!\p"
-	.string "I am your guide to the SINGLE\n"
+	.string "I am your guide to the Single\n"
 	.string "Battle Rooms.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeSinglesChallenge:
-	.string "Would you like to take the SINGLE\n"
+	.string "Would you like to take the Single\n"
 	.string "Battle Room challenge?$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge:
 	.string "The Battle Tower's Single Battle\n"
 	.string "Rooms are facilities for conducting\l"
-	.string "SINGLE Battles with three Pokémon.\p"
+	.string "Single Battles with three Pokémon.\p"
 	.string "There are many Single Battle Rooms\n"
 	.string "in the Battle Tower for team battles.\p"
 	.string "In each of the Single Battle Rooms,\n"
@@ -1243,7 +1243,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge:
 	.string "with a Trainer in the TOWER and enter\l"
 	.string "with two Pokémon each.\p"
 	.string "Inside the TOWER is a room named\n"
-	.string "the Battle SALON where you may meet\l"
+	.string "the Battle Salon where you may meet\l"
 	.string "other Trainers.\p"
 	.string "There, you must find a Trainer to act\n"
 	.string "as your partner in Multi Battles.\p"
@@ -1347,7 +1347,7 @@ BattleFrontier_BattleTowerLobby_Text_SaveGameBeforeShowingIn:
 
 BattleFrontier_BattleTowerLobby_Text_CongratsDefeatedMaiden:
 	.string "Congratulations!\n"
-	.string "You have defeated the SALON Maiden\l"
+	.string "You have defeated the Salon Maiden\l"
 	.string "and swept seven Trainers!$"
 
 BattleFrontier_BattleTowerLobby_Text_AwardYouTheseBattlePoints:
@@ -1383,7 +1383,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMonRules:
 	.string "and the Multi modes both require two.$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules:
-	.string "The Battle SALON is where you must\n"
+	.string "The Battle Salon is where you must\n"
 	.string "find a partner to form a tag team for\l"
 	.string "the Multi Battle Room challenge.\p"
 	.string "Choose the best partner for you by\n"

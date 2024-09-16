@@ -255,7 +255,7 @@ BattleFrontier_OutsideEast_Text_RankingHallSign:
 	.string "Set your sights on new records!$"
 
 BattleFrontier_OutsideEast_Text_ExchangeCornerSign:
-	.string "Battle Point Exchange SERVICE Corner\n"
+	.string "Battle Point Exchange Service Corner\n"
 	.string "Exchange your Battle Points!$"
 
 BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial:
@@ -292,7 +292,7 @@ BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam:
 	.string "We're storming the Battle Arena!$"
 
 BattleFrontier_OutsideEast_Text_DidScottBringYouHere:
-	.string "Did SCOTT bring you here, too?\n"
+	.string "Did Scott bring you here, too?\n"
 	.string "What is it with that guy?\p"
 	.string "It sounds like he really does know\n"
 	.string "how to spot talented Trainers, but…\p"
@@ -403,7 +403,7 @@ BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome:
 	.string "Ooh, I just can't wait anymore!\p"
 	.string "Let's go to a Multi Battle Room\n"
 	.string "right this instant!\p"
-	.string "If we get together in the Battle SALON,\n"
+	.string "If we get together in the Battle Salon,\n"
 	.string "the power of our love will overcome\l"
 	.string "everyone we meet.\p"
 	.string "Why, before us, darling, everything\n"
@@ -414,7 +414,7 @@ BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers:
 	.string "for tough Trainers.\p"
 	.string "Many people with special abilities\n"
 	.string "have been invited, it seems.\p"
-	.string "That man SCOTT…\p"
+	.string "That man Scott…\p"
 	.string "He may have built this place to serve\n"
 	.string "a bigger objective…$"
 

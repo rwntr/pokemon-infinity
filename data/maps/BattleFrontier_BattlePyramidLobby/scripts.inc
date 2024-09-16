@@ -744,7 +744,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintPPWaste:
 	.string "It is a curse…\p"
 	.string "…And, I see your Pokémon drained of\n"
 	.string "Power Points and having no recourse\l"
-	.string "but to use STRUGGLE…$"
+	.string "but to use Struggle…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintLevitate:
 	.string "I see Pokémon loftily airborne…\p"
@@ -784,8 +784,8 @@ BattleFrontier_BattlePyramidLobby_Text_HintFighting:
 	.string "by Fighting moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintWeather:
-	.string "Rain Dance… SUNNY Day…\n"
-	.string "SANDSTORM… Hail…\p"
+	.string "Rain Dance… Sunny Day…\n"
+	.string "Sandstorm… Hail…\p"
 	.string "I see Pokémon that become stronger\n"
 	.string "with the weather…\p"
 	.string "…And, I see your Pokémon confounded\n"
@@ -812,7 +812,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintGhost:
 	.string "from Ghost-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintSteel:
-	.string "I see STEEL-type Pokémon…\p"
+	.string "I see Steel-type Pokémon…\p"
 	.string "…And, I see your Pokémon suffering\n"
 	.string "from enormously powerful moves…$"
 

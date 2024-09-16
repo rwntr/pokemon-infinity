@@ -52,7 +52,7 @@ gBirchDexRatingText_LessThan90::
 	.string "Your talent is remarkable!$"
 
 gBirchDexRatingText_LessThan100::
-	.string "Have you visited the SAFARI ZONE?\p"
+	.string "Have you visited the Safari ZONE?\p"
 	.string "I hear there are some Pokémon that\n"
 	.string "can only be caught there.$"
 
@@ -63,7 +63,7 @@ gBirchDexRatingText_LessThan110::
 
 gBirchDexRatingText_LessThan120::
 	.string "There might be Pokémon that can be\n"
-	.string "found using Rock SMASH.$"
+	.string "found using Rock Smash.$"
 
 gBirchDexRatingText_LessThan130::
 	.string "You should get some more Pokémon\n"

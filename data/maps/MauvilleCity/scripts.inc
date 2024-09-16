@@ -565,7 +565,7 @@ MauvilleCity_Text_RegisteredWally:
 	.string "in the Pokénav.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "SCOTT: Hehe…\n"
+	.string "Scott: Hehe…\n"
 	.string "I was watching that match!\p"
 	.string "You're friends with that boy WALLY,\n"
 	.string "aren't you?\p"
@@ -596,7 +596,7 @@ MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "WATTSON: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to New Mauville is just\n"
-	.string "a short SURF away from Route 110.\p"
+	.string "a short Surf away from Route 110.\p"
 	.string "That's it, then, you have my trust!\n"
 	.string "Wahahahaha!$"
 

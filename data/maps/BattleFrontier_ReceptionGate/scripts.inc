@@ -330,11 +330,11 @@ BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
 	.string "You came out here!$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "Guide: Oh! MR. SCOTT, sir!\n"
+	.string "Guide: Oh! MR. Scott, sir!\n"
 	.string "Good day to you, sir!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "SCOTT: It's great to see you here,\n"
+	.string "Scott: It's great to see you here,\n"
 	.string "it really is!\p"
 	.string "I hope you'll take your time and\n"
 	.string "explore everywhere.\p"
@@ -354,7 +354,7 @@ BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
 	.string "It is the gigantic tower considered\n"
 	.string "to be the Battle Frontier's symbol.\p"
 	.string "There are four kinds of Battle Rooms\n"
-	.string "in the tower for SINGLE, Double, Multi,\l"
+	.string "in the tower for Single, Double, Multi,\l"
 	.string "and Link Multi Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
@@ -363,14 +363,14 @@ BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 	.string "Events named Battle Tourneys are held\n"
 	.string "in this facility.\p"
 	.string "The Battle Tourneys are offered in\n"
-	.string "two courses--for SINGLE and Double\l"
+	.string "two courses--for Single and Double\l"
 	.string "Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
 	.string "The Battle Palace is the red building\n"
 	.string "on the right of the Battle Frontier.\p"
 	.string "There are two kinds of Battle Halls\n"
-	.string "for SINGLE and Double Battles.$"
+	.string "for Single and Double Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
 	.string "The Battle Arena is the dojo-like\n"
@@ -385,7 +385,7 @@ BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 	.string "An event called the Battle Swap\n"
 	.string "is conducted there.\p"
 	.string "The Battle Swap event is offered in\n"
-	.string "two courses for SINGLE and Double\l"
+	.string "two courses for Single and Double\l"
 	.string "Battles.$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
@@ -410,7 +410,7 @@ BattleFrontier_ReceptionGate_Text_RankingHallInfo:
 	.string "the Battle Frontier.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The Exchange SERVICE Corner is near\n"
+	.string "The Exchange Service Corner is near\n"
 	.string "the Battle Tower.\p"
 	.string "The Battle Points you have earned in\n"
 	.string "the Battle Frontier may be exchanged\l"
@@ -505,6 +505,6 @@ BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "Trainers who battled outstandingly\l"
 	.string "at the Battle Frontier.\p"
 	.string "You may trade in your Battle Points\n"
-	.string "for prizes at the Exchange SERVICE\l"
+	.string "for prizes at the Exchange Service\l"
 	.string "Corner.$"
 

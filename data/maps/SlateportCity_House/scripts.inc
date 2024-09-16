@@ -11,7 +11,7 @@ SlateportCity_House_EventScript_Girl::
 
 SlateportCity_House_Text_NatureToDoWithStatGains:
 	.string "My Pokémon has a Hasty nature.\p"
-	.string "It has higher SPEED compared to\n"
+	.string "It has higher Speed compared to\n"
 	.string "my other Pokémon.\p"
 	.string "Maybe their nature has something to\n"
 	.string "do with the stat gains of Pokémon.$"

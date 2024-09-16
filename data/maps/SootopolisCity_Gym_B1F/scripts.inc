@@ -107,7 +107,7 @@ SootopolisCity_Gym_B1F_Text_ConniePostBattle:
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
 	.string "The Pokémon of the highest level\n"
 	.string "in the Hoenn region…\p"
-	.string "That's the SOOTOPOLIS.$"
+	.string "That's the Sootopolis.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
 	.string "What a high level you are!$"

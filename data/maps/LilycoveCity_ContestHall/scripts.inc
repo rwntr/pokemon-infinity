@@ -339,7 +339,7 @@ LilycoveCity_ContestHall_Text_TodayWonSmartnessContest:
 	.string "This Pokémon won the Beauty Contest\n"
 	.string "here before.\p"
 	.string "Well, guess what? Today, I made it\n"
-	.string "win a SMARTNESS Contest!\p"
+	.string "win a Smartness Contest!\p"
 	.string "My abilities scare even me…$"
 
 LilycoveCity_ContestHall_Text_EnteredBunchOfContests:
@@ -362,7 +362,7 @@ LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous:
 	.string "like a Contest hall in the sticks.$"
 
 LilycoveCity_ContestHall_Text_GiveItBestSmartAppeal:
-	.string "MC: Okay, SMART Pokémon and their\n"
+	.string "MC: Okay, Smart Pokémon and their\n"
 	.string "Trainers, are you ready?!\p"
 	.string "Give it your best showing!\n"
 	.string "Let's appeal!$"
@@ -376,9 +376,9 @@ LilycoveCity_ContestHall_Text_EnteredWrongContest:
 	.string "Ayayayay…\n"
 	.string "I entered the wrong Contest.\p"
 	.string "I entered this tough Pokémon in\n"
-	.string "the SMARTNESS Contest…\p"
+	.string "the Smartness Contest…\p"
 	.string "Come on, wow them with a smart-looking\n"
-	.string "Rock SMASH.$"
+	.string "Rock Smash.$"
 
 LilycoveCity_ContestHall_Text_RaisedMonToBeSmart:
 	.string "I've spent many a year, and all my\n"
@@ -416,7 +416,7 @@ LilycoveCity_ContestHall_Text_PokemonSmarterThanTrainers:
 
 LilycoveCity_ContestHall_Text_StillLoveSmartnessContests:
 	.string "When all's said and done, I still love\n"
-	.string "SMARTNESS Contests.\p"
+	.string "Smartness Contests.\p"
 	.string "That intellectual green color…\n"
 	.string "It's so… So… Cool.$"
 
@@ -483,7 +483,7 @@ LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals:
 	.string "Judge: Oh, such charming and cute\n"
 	.string "appeals!\p"
 	.string "Oh, my goodness! What a perfectly\n"
-	.string "adorable WATER SPORT appeal!$"
+	.string "adorable WATER Sport appeal!$"
 
 LilycoveCity_ContestHall_Text_MyAzurillWasDistracted:
 	.string "Oh, no… My sweet Azurill was\n"
@@ -533,6 +533,6 @@ LilycoveCity_ContestHall_Text_CuteContestStage:
 	.string "BE CHARMED BY CUTE POKéMON!$"
 
 LilycoveCity_ContestHall_Text_SmartContestStage:
-	.string "SMARTNESS Contest Stage\n"
+	.string "Smartness Contest Stage\n"
 	.string "BE IMPRESSED BY SMART POKéMON!$"
 

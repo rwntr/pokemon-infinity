@@ -671,8 +671,8 @@ Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "Trainer TIPS\p"
 	.string "One of the indicators of a Pokémon's\n"
 	.string "powerfulness is Sp. Atk. It stands for\l"
-	.string "“SPECIAL Attack.”\p"
-	.string "Likewise, Sp. Def stands for “SPECIAL\n"
+	.string "“Special Attack.”\p"
+	.string "Likewise, Sp. Def stands for “Special\n"
 	.string "Defense.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
@@ -717,7 +717,7 @@ Route111_Text_RootFossilDisappeared:
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Oh, no!\p"
 	.string "My uncle in Mauville told me to take\n"
-	.string "Rock SMASH with me if I was going to\l"
+	.string "Rock Smash with me if I was going to\l"
 	.string "Route 111!\p"
 	.string "My uncle? He lives across from\n"
 	.string "the bike shop in Mauville.$"

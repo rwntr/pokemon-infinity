@@ -217,7 +217,7 @@ RustboroCity_PokemonSchool_Text_ExplainPoison:
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "If a Pokémon becomes paralyzed,\n"
-	.string "its SPEED drops.\p"
+	.string "its Speed drops.\p"
 	.string "It may also not be able to move while\n"
 	.string "it is in battle.\p"
 	.string "Paralysis remains after battle.\n"
@@ -264,7 +264,7 @@ RustboroCity_PokemonSchool_Text_TradingRightNow:
 	.string "right now.$"
 
 RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
-	.string "I always wanted a SEEDOT, and\n"
+	.string "I always wanted a Seedot, and\n"
 	.string "I'm finally getting one!$"
 
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
@@ -305,12 +305,12 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "Hello? Didn't we meet before?\n"
 	.string "I think back in Petalburg City.\p"
 	.string "Let me introduce myself.\n"
-	.string "My name's SCOTT.\p"
+	.string "My name's Scott.\p"
 	.string "I've been traveling everywhere in\n"
 	.string "search of outstanding Trainers.\p"
 	.string "More specifically, I'm looking for\n"
 	.string "Pokémon battle experts.\p"
-	.string "So, what brings you to this SCHOOL?\n"
+	.string "So, what brings you to this School?\n"
 	.string "Are you a Trainer, too?\p"
 	.string "The first thing you should do is to\n"
 	.string "have a Pokémon learn the move Cut.\p"
@@ -318,13 +318,13 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "this town has Cut.$"
 
 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
-	.string "SCOTT: Hmm…\p"
+	.string "Scott: Hmm…\p"
 	.string "The talent levels of the students here\n"
 	.string "are unknown. The potential's there.$"
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
-	.string "SCOTT: Oh, what's that?\p"
-	.string "It's a STONE Badge, isn't it?\n"
+	.string "Scott: Oh, what's that?\p"
+	.string "It's a Stone Badge, isn't it?\n"
 	.string "That's pretty impressive, I'd say.\p"
 	.string "But, you know, I would've loved to see\n"
 	.string "you in battle.\p"
@@ -335,13 +335,13 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "Hello? Didn't we meet before?\n"
 	.string "I think back in Petalburg City.\p"
 	.string "Let me introduce myself.\n"
-	.string "My name's SCOTT.\p"
+	.string "My name's Scott.\p"
 	.string "I've been traveling everywhere in\n"
 	.string "search of outstanding Trainers.\p"
 	.string "More specifically, I'm looking for\n"
 	.string "Pokémon battle experts.\p"
 	.string "Oh, what's that?\n"
-	.string "It's a STONE Badge, isn't it?\p"
+	.string "It's a Stone Badge, isn't it?\p"
 	.string "That's pretty impressive, I'd say, for\n"
 	.string "a starting Trainer like yourself.\p"
 	.string "But, you know, I would've loved to see\n"
