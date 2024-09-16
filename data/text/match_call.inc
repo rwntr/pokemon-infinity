@@ -2224,7 +2224,7 @@ MatchCall_Text_TateLiza4::
 	.string "LIZA: We could all battle again!$"
 
 MatchCall_Text_Juan1::
-	.string "JUAN: Hmm…\n"
+	.string "Juan: Hmm…\n"
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
@@ -2233,7 +2233,7 @@ MatchCall_Text_Juan1::
 	.string "yet surpass WALLACE!$"
 
 MatchCall_Text_Juan2::
-	.string "JUAN: Fufu… {PLAYER}{KUN}…\n"
+	.string "Juan: Fufu… {PLAYER}{KUN}…\n"
 	.string "You've finally achieved your goal.\p"
 	.string "My eye for appraising talent wasn't\n"
 	.string "mistaken…\p"
@@ -2242,14 +2242,14 @@ MatchCall_Text_Juan2::
 	.string "of power and prestige.$"
 
 MatchCall_Text_Juan3::
-	.string "JUAN: Hoho… {PLAYER}{KUN}…\p"
+	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
 	.string "Our SOOTOPOLIS has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
 
 MatchCall_Text_Juan4::
-	.string "JUAN: {PLAYER}{KUN}…\p"
+	.string "Juan: {PLAYER}{KUN}…\p"
 	.string "Like the finest music, the battles\n"
 	.string "we wage together strike chords\l"
 	.string "of inspiration in my heart…\p"
@@ -2403,7 +2403,7 @@ MatchCall_Text_May9::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
 	.string "I was thinking of going to the hot\n"
 	.string "spring in Lavaridge.\p"
-	.string "But on the way, around JAGGED\n"
+	.string "But on the way, around Jagged\n"
 	.string "PASS, I ran into some bad-looking\l"
 	.string "characters. The mood was ugly!$"
 
@@ -2530,7 +2530,7 @@ MatchCall_Text_Brendan9::
 	.string "Brendan: Hey there, {PLAYER}.\p"
 	.string "I was on my way back to the hot\n"
 	.string "spring in Lavaridge.\p"
-	.string "But around JAGGED PASS, I ran into\n"
+	.string "But around Jagged PASS, I ran into\n"
 	.string "some nasty-looking characters.\p"
 	.string "Those creeps…\n"
 	.string "I think they were Team Magma.$"

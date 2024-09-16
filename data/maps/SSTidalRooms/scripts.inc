@@ -102,19 +102,19 @@ SSTidalRooms_Text_ThomasPostBattle:
 	.string "the Gentleman's code of conduct.$"
 
 SSTidalRooms_Text_JedIntro:
-	.string "JED: I feel a little shy about this, but…\n"
+	.string "Jed: I feel a little shy about this, but…\n"
 	.string "We'll show you our lovey-dovey power!$"
 
 SSTidalRooms_Text_JedDefeat:
-	.string "JED: Sigh…$"
+	.string "Jed: Sigh…$"
 
 SSTidalRooms_Text_JedPostBattle:
-	.string "JED: It's the first time that our lovey-\n"
+	.string "Jed: It's the first time that our lovey-\n"
 	.string "dovey power couldn't prevail!\l"
 	.string "You must be an awesome Trainer!$"
 
 SSTidalRooms_Text_JedNotEnoughMons:
-	.string "JED: You only have one Pokémon?\n"
+	.string "Jed: You only have one Pokémon?\n"
 	.string "Isn't that just too lonesome?$"
 
 SSTidalRooms_Text_LeaIntro:

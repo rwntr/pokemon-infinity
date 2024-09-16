@@ -178,9 +178,9 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "SOOTOPOLIS's Gym Leader JUAN is\n"
+	.string "SOOTOPOLIS's Gym Leader Juan is\n"
 	.string "a master of WATER-type Pokémon.\p"
-	.string "And, to get to JUAN, an icy floor\n"
+	.string "And, to get to Juan, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
@@ -188,7 +188,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even JUAN, who\n"
+	.string "Yow! You've beaten even Juan, who\n"
 	.string "was supposedly the best in all Hoenn!\p"
 	.string "Okay! Check out your Trainer Card.\p"
 	.string "If you've gotten all the Badges, you're\n"
@@ -234,7 +234,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN Badge\n"
-	.string "from JUAN.$"
+	.string "from Juan.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the RAIN Badge shall assure you\n"
@@ -254,7 +254,7 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered Gym Leader JUAN\n"
+	.string "Registered Gym Leader Juan\n"
 	.string "in the Pokénav.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
@@ -279,11 +279,11 @@ SootopolisCity_Gym_1F_Text_GymStatue:
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "SOOTOPOLIS City Pokémon\p"
-	.string "JUAN'S Certified Trainers:\n"
+	.string "Juan'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "JUAN: Ah, this had returned to its\n"
+	.string "Juan: Ah, this had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
@@ -296,7 +296,7 @@ SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "JUAN: If I told you to become my\n"
+	.string "Juan: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
 	.string "to you.\p"
@@ -306,7 +306,7 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "JUAN: Ah, this had returned to its\n"
+	.string "Juan: Ah, this had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
