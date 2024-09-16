@@ -33,8 +33,8 @@ FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
 	.string "we will present you with a fine prize.$"
 
 FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "Before showing you to the BATTLE\n"
-	.string "TENT, I must save. Is that okay?$"
+	.string "Before showing you to the Battle\n"
+	.string "Tent, I must save. Is that okay?$"
 
 @ Unused
 FallarborTown_BattleTentLobby_Text_WhichLevelMode:

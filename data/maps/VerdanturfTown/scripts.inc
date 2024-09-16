@@ -118,7 +118,7 @@ VerdanturfTown_Text_BattleTentSign:
 	.string "“Feast Your Eyes on Battles!”$"
 
 VerdanturfTown_Text_RusturfTunnelSign:
-	.string "Rusturf TUNNEL\n"
+	.string "Rusturf Tunnel\n"
 	.string "“Linking Rustboro and VERDANTURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"

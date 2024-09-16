@@ -33,7 +33,7 @@ MtPyre_1F_Text_TakeThisForYourOwnGood:
 
 MtPyre_1F_Text_ExplainCleanseTag:
 	.string "Have a Pokémon hold that\n"
-	.string "Cleanse TAG.\p"
+	.string "Cleanse Tag.\p"
 	.string "It will help ward off wild Pokémon.$"
 
 MtPyre_1F_Text_ComeToPayRespects:

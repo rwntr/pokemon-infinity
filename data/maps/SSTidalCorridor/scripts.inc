@@ -314,8 +314,8 @@ SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole:
 SSTidalCorridor_Text_BrineyWelcomeAboard:
 	.string "MR. BRINEY: Welcome aboard, {PLAYER}{KUN}!\p"
 	.string "They made me honorary captain of\n"
-	.string "the S.S. TIDAL!\p"
-	.string "You can call me CAPTAIN BRINEY now!\p"
+	.string "the S.S. Tidal!\p"
+	.string "You can call me Captain Briney now!\p"
 	.string "You know, I retired once before,\n"
 	.string "but when I saw this majestic ship…\p"
 	.string "Let me just say, it stirred my sleeping\n"

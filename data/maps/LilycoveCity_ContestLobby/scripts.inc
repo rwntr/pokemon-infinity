@@ -1061,7 +1061,7 @@ LilycoveCity_ContestLobby_Text_ContestFeastForEyes:
 	.string "that just scream to be painted?$"
 
 LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
-	.string "The TOUGHNESS CONTEST is like\n"
+	.string "The Toughness Contest is like\n"
 	.string "extreme, man!\p"
 	.string "Those muscular appeals…\n"
 	.string "Cascading sweat… I swoon!$"

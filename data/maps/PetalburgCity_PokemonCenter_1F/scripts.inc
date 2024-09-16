@@ -70,7 +70,7 @@ PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "a battle could be easy or hard.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "For example, your TREECKO\n"
+	.string "For example, your Treecko\n"
 	.string "is a Grass type.\p"
 	.string "It's strong against the WATER and\n"
 	.string "Ground types.\p"
@@ -78,7 +78,7 @@ PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
 	.string "Pokémon.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "For example, your TORCHIC\n"
+	.string "For example, your Torchic\n"
 	.string "is a Fire type.\p"
 	.string "It's strong against the Grass and\n"
 	.string "Bug types.\p"

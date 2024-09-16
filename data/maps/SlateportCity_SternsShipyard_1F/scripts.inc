@@ -104,8 +104,8 @@ SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs:
 	.string "ferry is steadily coming together.$"
 
 SlateportCity_SternsShipyard_1F_Text_FerryIsReady:
-	.string "DOCK: The ferry is finally ready!\p"
-	.string "The new S.S. TIDAL is truly a marvel\n"
+	.string "Dock: The ferry is finally ready!\p"
+	.string "The new S.S. Tidal is truly a marvel\n"
 	.string "of technology!\p"
 	.string "But, I get the feeling that we can\n"
 	.string "make something even better.\p"

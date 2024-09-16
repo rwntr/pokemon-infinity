@@ -601,7 +601,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
-	.string "THUNDERBOLT!\p"
+	.string "Thunderbolt!\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:

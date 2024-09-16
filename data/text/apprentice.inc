@@ -250,7 +250,7 @@ gText_ApprenticePleaseTeach5::
 	.string "Oh, hi, there! {PLAYER}{KUN}!\n"
 	.string "I know you because you're famous!\l"
 	.string "Call me {STR_VAR_1}! Glad to meet you!\p"
-	.string "I'm a TRIATHLETE, so I keep myself\n"
+	.string "I'm a Triathlete, so I keep myself\n"
 	.string "fit even while I raise Pokémon.\p"
 	.string "I'm also involved with other things\n"
 	.string "like work, napping, ballroom dancing…\p"
@@ -450,7 +450,7 @@ gText_ApprenticeRejectTeaching10::
 	.string "I'll show you what I'll do!\p"
 	.string "Waaah! Waaah! Waaah!\n"
 	.string "Hiccup!\p"
-	.string "Hahaha, that was my Fake TEARS!\p"
+	.string "Hahaha, that was my Fake Tears!\p"
 	.string "Come on, will you please be\n"
 	.string "my Pokémon master?$"
 

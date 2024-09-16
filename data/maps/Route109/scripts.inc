@@ -557,7 +557,7 @@ Route109_Text_SeashoreHouseSign:
 	.string "The place for hot TRAINERS!”$"
 
 Route109_Text_TrainerTipsSign:
-	.string "TRAINER TIPS\p"
+	.string "Trainer Tips\p"
 	.string "Pokémon at the same level may not\n"
 	.string "always have identical stats.\p"
 	.string "Pokémon raised by TRAINERS are said\n"

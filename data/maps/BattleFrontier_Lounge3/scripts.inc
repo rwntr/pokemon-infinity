@@ -225,21 +225,21 @@ BattleFrontier_Lounge3_Text_YouLookToughExplainGambling::
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "TOWER's Single Battle Rooms.\p"
+	.string "Tower's Single Battle Rooms.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "TOWER's Double Battle Rooms.\p"
+	.string "Tower's Double Battle Rooms.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "TOWER's Multi Battle Rooms.\p"
+	.string "Tower's Multi Battle Rooms.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
