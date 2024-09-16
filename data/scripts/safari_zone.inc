@@ -163,7 +163,7 @@ Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 	.string "fruitful if you use {POKEBLOCK}s.\p"
 	.string "Please come back with a {POKEBLOCK} Case.\p"
 	.string "You may obtain a {POKEBLOCK} Case from\n"
-	.string "the LILYCOVE Contest HALL.$"
+	.string "the LILYCOVE Contest Hall.$"
 
 SafariZone_South_Text_StillHaveTimeExit:
 	.string "You still have time left. Would you like\n"

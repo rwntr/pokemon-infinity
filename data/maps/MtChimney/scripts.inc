@@ -833,8 +833,8 @@ MtChimney_Text_SawyerDefeat:
 	.string "Oh, you're a real firebrand, too!$"
 
 MtChimney_Text_SawyerPostBattle:
-	.string "I think I need a dip in LAVARIDGE\n"
-	.string "HOT SPRING with the locals!$"
+	.string "I think I need a dip in Lavaridge\n"
+	.string "Hot SPRING with the locals!$"
 
 MtChimney_Text_SawyerRegister:
 	.string "I like little fireballs like you.\n"

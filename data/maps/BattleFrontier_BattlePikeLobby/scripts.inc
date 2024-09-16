@@ -423,7 +423,7 @@ BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules:
 
 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules:
 	.string "During a Battle Choice challenge,\n"
-	.string "any BERRY or HERB held by POKéMON\l"
+	.string "any Berry or Herb held by Pokémon\l"
 	.string "will be effective only once.$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:

@@ -392,7 +392,7 @@ LavaridgeTown_Text_HotSpringsClaims:
 
 LavaridgeTown_Text_TownSign:
 	.string "Lavaridge Town\p"
-	.string "“Pokémon Center HOT SPRINGS\n"
+	.string "“Pokémon Center Hot SPRINGS\n"
 	.string "An excellent place for relaxing!”$"
 
 LavaridgeTown_Text_GymSign:
@@ -401,6 +401,6 @@ LavaridgeTown_Text_GymSign:
 	.string "“One with a fiery passion that burns!”$"
 
 LavaridgeTown_Text_HerbShopSign:
-	.string "POKéMON HERB SHOP\n"
+	.string "Pokémon Herb SHOP\n"
 	.string "“Bitter taste--better cure!”$"
 

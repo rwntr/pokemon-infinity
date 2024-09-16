@@ -65,7 +65,7 @@ RustboroCity_Mart_EventScript_BugCatcher::
 	end
 
 RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish:
-	.string "I'm buying some PARLYZ HEALS and\n"
+	.string "I'm buying some PARLYZ Heals and\n"
 	.string "Antidotes.\p"
 	.string "Just in case I run into SHROOMISH\n"
 	.string "in PETALBURG WOODS.$"

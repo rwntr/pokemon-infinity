@@ -272,17 +272,17 @@ BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble::
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "PALACE's SINGLE BATTLE HALLS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
+	.string "What I'm looking for is a Trainer who's\n"
+	.string "going to be challenging the Battle\l"
+	.string "PALACE's Single Battle Halls.\p"
+	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble::
-	.string "What I'm looking for is a TRAINER who's\n"
-	.string "going to be challenging the BATTLE\l"
-	.string "PALACE's DOUBLE BATTLE HALLS.\p"
-	.string "But so far, I haven't seen a TRAINER\n"
+	.string "What I'm looking for is a Trainer who's\n"
+	.string "going to be challenging the Battle\l"
+	.string "PALACE's Double Battle Halls.\p"
+	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleArena::
@@ -382,15 +382,15 @@ BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble::
 	.string "Both of our futures depend on you!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle::
-	.string "Get to the BATTLE PALACE's\n"
-	.string "SINGLE BATTLE HALLS pronto!\p"
+	.string "Get to the Battle Palace's\n"
+	.string "Single Battle Halls pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble::
-	.string "Get to the BATTLE PALACE's\n"
-	.string "DOUBLE BATTLE HALLS pronto!\p"
+	.string "Get to the Battle Palace's\n"
+	.string "Double Battle Halls pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"

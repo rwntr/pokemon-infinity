@@ -534,7 +534,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
-	.string "You've chosen the WHITE HERB.\n"
+	.string "You've chosen the WHITE Herb.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
@@ -542,7 +542,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
-	.string "You've chosen the MENTAL HERB.\n"
+	.string "You've chosen the MENTAL Herb.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:

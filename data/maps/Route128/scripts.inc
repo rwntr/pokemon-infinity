@@ -285,7 +285,7 @@ Route128_Text_StevenWholeWorldWillDrown:
 	.string "This is terrible…\p"
 	.string "After the scorching heat wave ended,\n"
 	.string "this deluge began.\p"
-	.string "If this doesn't stop, all of HOENN…\n"
+	.string "If this doesn't stop, all of Hoenn…\n"
 	.string "No, the whole world will drown.\p"
 	.string "This huge rain cloud is spreading\n"
 	.string "from above SOOTOPOLIS…\p"

@@ -287,7 +287,7 @@ TrainerHill_Entrance_Pokemart_Expanded:
 	pokemartlistend
 
 TrainerHill_Entrance_Text_StillGettingReady:
-	.string "This is the TRAINER HILL where\n"
+	.string "This is the Trainer Hill where\n"
 	.string "you may enjoy tag battles with many\l"
 	.string "TRAINERS.\p"
 	.string "Unfortunately, we're still getting\n"
@@ -295,7 +295,7 @@ TrainerHill_Entrance_Text_StillGettingReady:
 
 TrainerHill_Entrance_Text_WelcomeToTrainerHill:
 	.string "Welcome!\p"
-	.string "This is the TRAINER HILL where\n"
+	.string "This is the Trainer Hill where\n"
 	.string "you may enjoy tag battles with many\l"
 	.string "TRAINERS!$"
 
@@ -349,7 +349,7 @@ TrainerHill_Entrance_Text_ThankYouForPlaying:
 	.string "Thank you for playing!$"
 
 TrainerHill_Entrance_Text_ExplainTrainerHill:
-	.string "Here at the TRAINER HILL, we conduct\n"
+	.string "Here at the Trainer Hill, we conduct\n"
 	.string "an event called the Time Attack.\p"
 	.string "It is a race that measures how long\n"
 	.string "you take to reach our owner on\l"
@@ -376,7 +376,7 @@ TrainerHill_Roof_Text_YouFinallyCameBravo:
 	.string "I know why you came all the way\l"
 	.string "here by yourself!\p"
 	.string "You wanted to see me, the owner\n"
-	.string "of the TRAINER HILL, because…\p"
+	.string "of the Trainer Hill, because…\p"
 	.string "You want to form a tag team with me!\n"
 	.string "Wa-hoo!\p"
 	.string "…Uh?\n"
@@ -413,7 +413,7 @@ TrainerHill_Roof_Text_ArriveZippierNextTime:
 
 @ Unused
 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner:
-	.string "I had the TRAINER HILL built for but\n"
+	.string "I had the Trainer Hill built for but\n"
 	.string "one reason and one only!\p"
 	.string "To find the most suitable partner\n"
 	.string "with whom I may form a tag team!$"
@@ -428,8 +428,8 @@ TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
 	.string "anyone that stands in my way!$"
 
 TrainerHill_Entrance_Text_CantWaitToTestTheWaters:
-	.string "I heard tough TRAINERS come to this\n"
-	.string "TRAINER HILL from all over.\p"
+	.string "I heard tough Trainers come to this\n"
+	.string "Trainer Hill from all over.\p"
 	.string "I can't wait to test the waters!\p"
 	.string "I'll knock aside anyone that stands\n"
 	.string "in my way!$"

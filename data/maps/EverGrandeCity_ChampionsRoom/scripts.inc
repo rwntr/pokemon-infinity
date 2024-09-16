@@ -264,7 +264,7 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "You now stand at the glorious peak\n"
 	.string "of the POKéMON LEAGUE.\p"
 	.string "I now proclaim you to be the new\n"
-	.string "HOENN region…$"
+	.string "Hoenn region…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "MAY: {PLAYER}{KUN}!\p"
