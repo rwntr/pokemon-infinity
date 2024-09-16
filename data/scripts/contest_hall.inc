@@ -1449,8 +1449,8 @@ LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank:
 	.string "Rank yet…$"
 
 LilycoveCity_ContestLobby_Text_EggCannotTakePart:
-	.string "I'm sorry, but an EGG cannot take part\n"
-	.string "in a POKéMON CONTEST.$"
+	.string "I'm sorry, but an Egg cannot take part\n"
+	.string "in a Pokémon Contest.$"
 
 LilycoveCity_ContestLobby_Text_MonInNoConditionForContest:
 	.string "Your POKéMON appears to be in no\n"
@@ -1670,8 +1670,8 @@ LilycoveCity_ContestLobby_Text_MonInNoCondition2:
 	.string "condition to take part in a CONTEST…$"
 
 LilycoveCity_ContestLobby_Text_EggCannotTakePart2:
-	.string "I'm sorry, but an EGG cannot take part\n"
-	.string "in a POKéMON CONTEST.$"
+	.string "I'm sorry, but an Egg cannot take part\n"
+	.string "in a Pokémon Contest.$"
 
 LilycoveCity_ContestLobby_Text_EnterWhichPokemon3:
 	.string "Which POKéMON would you like to enter?$"

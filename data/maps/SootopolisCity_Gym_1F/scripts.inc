@@ -263,9 +263,9 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "way to the ultimate destination.\p"
 	.string "The POKéMON LEAGUE.\p"
 	.string "Travel to the easternmost reaches\n"
-	.string "of HOENN, to the island EVER GRANDE.\p"
-	.string "There, you shall find the POKéMON\n"
-	.string "LEAGUE.$"
+	.string "of HOENN, to the island Ever GRANDE.\p"
+	.string "There, you shall find the Pokémon\n"
+	.string "League.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "There remains but one Badge to\n"

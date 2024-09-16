@@ -572,8 +572,8 @@ BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "You seem to not have the three\n"
 	.string "POKéMON qualified for the challenge.\p"
 	.string "Please also remember to take all\n"
-	.string "items from your POKéMON.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "items from your Pokémon.\p"
+	.string "Eggs{STR_VAR_1} ineligible.\p"
 	.string "When you are ready, please have\n"
 	.string "a word with me.$"
 
@@ -584,8 +584,8 @@ BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLv50:
 	.string "The three POKéMON must be different\n"
 	.string "and each no higher than Level 50.\p"
 	.string "Please also remember to take all\n"
-	.string "items from your POKéMON.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
+	.string "items from your Pokémon.\p"
+	.string "Eggs{STR_VAR_1} ineligible.\p"
 	.string "When you are ready, please have\n"
 	.string "a word with me.$"
 

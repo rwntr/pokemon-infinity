@@ -630,9 +630,9 @@ Route111_Text_ToughToKeepWinningUpTheRanks:
 	.string "If you don't raise your POKéMON some\n"
 	.string "more, it could be tough to keep winning\l"
 	.string "up through the ranks.\p"
-	.string "I've heard the POKéMON LEAGUE's\n"
-	.string "ELITE FOUR are far stronger than\l"
-	.string "any GYM LEADER.$"
+	.string "I've heard the Pokémon League's\n"
+	.string "Elite FOUR are far stronger than\l"
+	.string "any Gym Leader.$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
 	.string "I challenged the WINSTRATE family,\n"
@@ -715,7 +715,7 @@ Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "the bike shop in MAUVILLE.$"
 
 Route111_Text_TrainerHillSign:
-	.string "{RIGHT_ARROW} TRAINER HILL ENTRANCE\p"
+	.string "{RIGHT_ARROW} Trainer HILL Entrance\p"
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 

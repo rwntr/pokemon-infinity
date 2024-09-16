@@ -457,9 +457,9 @@ SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
 	.string "Fwahahahaha…$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "CAPT. STERN: Why…\p"
-	.string "Why would TEAM AQUA steal my\n"
-	.string "SUBMARINE EXPLORER 1?\p"
+	.string "Capt. Stern: Why…\p"
+	.string "Why would Team Aqua steal my\n"
+	.string "SUBMARINE Explorer 1?\p"
 	.string "They can't be after the slumbering\n"
 	.string "POKéMON at the bottom of the sea…\p"
 	.string "But even if I were to chase them,\n"
