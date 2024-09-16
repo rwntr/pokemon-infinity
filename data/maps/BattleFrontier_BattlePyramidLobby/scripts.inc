@@ -802,9 +802,9 @@ BattleFrontier_BattlePyramidLobby_Text_HintDark:
 	.string "from Dark-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintWater:
-	.string "I see WATER-type Pokémon…\p"
+	.string "I see Water-type Pokémon…\p"
 	.string "…And, I see your Pokémon suffering\n"
-	.string "from WATER-type moves…$"
+	.string "from Water-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintGhost:
 	.string "I see Ghost-type Pokémon…\p"

@@ -273,7 +273,7 @@ Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "We have a situation here!\p"
 	.string "A Team Magma mob just passed\n"
-	.string "the WEATHER Institute.\p"
+	.string "the Weather Institute.\p"
 	.string "They appear to be headed for\n"
 	.string "Mt. Pyre!$"
 

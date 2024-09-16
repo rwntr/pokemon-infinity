@@ -1230,7 +1230,7 @@ gTVTodaysRivalTrainerText06::
 	.string "and ahead of our rivals!$"
 
 TrendWatcher_Text_Intro::
-	.string "Dewford TREND-WATCHER Network!\p"
+	.string "Dewford Trend-Watcher Network!\p"
 	.string "MC: Wassup?\n"
 	.string "We'll keep it real with the latest on\l"
 	.string "what's hip and happening in Dewford.\p"
@@ -1458,7 +1458,7 @@ gTVBreakingNewsText11::
 gTVSecretBaseVisitText00::
 	.string "Hello, folks!\n"
 	.string "It's time again for\l"
-	.string "a Secret Base VISIT.\p"
+	.string "a Secret Base visit.\p"
 	.string "Today, we visit the Secret Base\n"
 	.string "of {STR_VAR_1}.\p"
 	.string "How has {STR_VAR_1} personalized\n"
@@ -1833,23 +1833,23 @@ TVSpotTheCuties_Text_RibbonTough::
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonWinning::
-	.string "The WINNING Ribbon is especially\n"
+	.string "The Winning Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it for its feats\n"
 	.string "at the Battle Tower.\p"
 	.string "It verily draws out the mightiness\n"
 	.string "of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the WINNING Ribbon!\n"
+	.string "{STR_VAR_2} and the Winning Ribbon!\n"
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonVictory::
-	.string "The VICTORY Ribbon is especially\n"
+	.string "The Victory Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it for its feats\n"
 	.string "at the Battle Tower.\p"
 	.string "It verily draws out the incredible\n"
 	.string "mightiness of {STR_VAR_2}.\p"
-	.string "{STR_VAR_2} and the VICTORY Ribbon!\n"
+	.string "{STR_VAR_2} and the Victory Ribbon!\n"
 	.string "The combination is super effective!$"
 
 TVSpotTheCuties_Text_RibbonArtist::
@@ -2005,7 +2005,7 @@ gTVPokemonNewsBattleFrontierText18::
 	.string "That's the news on Pokémon News!$"
 
 gTVWhatsNo1InHoennTodayText00::
-	.string "WHAT'S No. 1 IN Hoenn Today?\n"
+	.string "What'S No. 1 IN Hoenn Today?\n"
 	.string "Yes, it's that time again!\p"
 	.string "Hello, viewers! Are you giving your\n"
 	.string "best at whatever you do?\p"
@@ -2439,7 +2439,7 @@ gTVSafariFanClubText10::
 	.string "Until next time, cheerio!$"
 
 ContestLiveUpdates_Text_Intro::
-	.string "“Pokémon Contest Live UPDATES!”\p"
+	.string "“Pokémon Contest Live Update!”\p"
 	.string "MC: Thanks for joining us!\p"
 	.string "We're live from the just-ended\n"
 	.string "{STR_VAR_1} site.\p"
@@ -2647,7 +2647,7 @@ ContestLiveUpdates_Text_Outro::
 	.string "You're the Contest winner!$"
 
 gTVPokemonBattleUpdateText00::
-	.string "“Pokémon Battle UPDATE!”\p"
+	.string "“Pokémon Battle Update!”\p"
 	.string "Bringing you the results of Pokémon\n"
 	.string "battles as they come in!$"
 
@@ -2673,7 +2673,7 @@ gTVPokemonBattleUpdateText04::
 	.string "And for the defeated {STR_VAR_2},\n"
 	.string "we hope for a better result next time!\p"
 	.string "This concludes this episode of\n"
-	.string "“Pokémon Battle UPDATE!”$"
+	.string "“Pokémon Battle Update!”$"
 
 gTVPokemonBattleUpdateText05::
 	.string "The teams of Trainers {STR_VAR_1} and\n"
@@ -2694,7 +2694,7 @@ gTVPokemonBattleUpdateText07::
 	.string "As for the defeated {STR_VAR_2}'s team,\n"
 	.string "we hope for a better result next time!\p"
 	.string "This concludes this episode of\n"
-	.string "“Pokémon Battle UPDATE!”$"
+	.string "“Pokémon Battle Update!”$"
 
 GabbyAndTy_Text_GabbyPreFirstBattle:
 	.string "Gabby: Oh! We've just spotted a tough-\n"
@@ -2926,7 +2926,7 @@ gTVInSearchOfTrainersText08::
 	.string "See you again on our next broadcast!$"
 
 ContestLadyShow_Text_Intro::
-	.string "“Pokémon Contest Live UPDATES!”\p"
+	.string "“Pokémon Contest Live Updates!”\p"
 	.string "MC: Sorry to interrupt the regular\n"
 	.string "programming, and thanks for joining us!\p"
 	.string "We bring you this live from\n"

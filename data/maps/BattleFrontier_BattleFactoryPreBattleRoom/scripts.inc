@@ -510,7 +510,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the WATER type.$"
+	.string "in the handling of the Water type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
 	.string "The Trainer is apparently skilled\n"

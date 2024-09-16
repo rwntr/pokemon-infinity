@@ -468,7 +468,7 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "Now, if there's anything that troubles\n"
 	.string "you, don't hesitate to tell me!\p"
 	.string "You can usually find me in my cottage\n"
-	.string "by the sea near Petalburg WOODS.\p"
+	.string "by the sea near Petalburg Woods.\p"
 	.string "Come, Peeko, we should make our way\n"
 	.string "home.\p"
 	.string "Peeko: Pihyoh!$"
@@ -477,16 +477,16 @@ RusturfTunnel_Text_WhyCantTheyKeepDigging:
 	.string "… …\p"
 	.string "Why can't they keep digging?\n"
 	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
+	.string "My beloved awaits me in Verdanturf\n"
 	.string "Town just beyond here…\p"
-	.string "If Rustboro and VERDANTURF were\n"
+	.string "If Rustboro and Verdanturf were\n"
 	.string "joined by this tunnel, I could visit\l"
 	.string "her every day…\p"
 	.string "But this…\n"
 	.string "What am I to do?$"
 
 RusturfTunnel_Text_ToGetToVerdanturf:
-	.string "To get from Rustboro to VERDANTURF,\n"
+	.string "To get from Rustboro to Verdanturf,\n"
 	.string "you need to go to Dewford, then pass\l"
 	.string "through Slateport and Mauville…$"
 
@@ -503,9 +503,9 @@ RusturfTunnel_Text_ExplainStrength:
 	.string "large boulders.$"
 
 RusturfTunnel_Text_WandaReunion:
-	.string "WANDA!\n"
+	.string "Wanda!\n"
 	.string "Now I can see you anytime!\p"
-	.string "WANDA: That's…wonderful.\p"
+	.string "Wanda: That's…wonderful.\p"
 	.string "Please, take some rest at my home.$"
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:

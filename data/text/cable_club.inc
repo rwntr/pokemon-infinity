@@ -203,7 +203,7 @@ CableClub_Text_CanMixRecords::
 
 @ Unused
 CableClub_Text_GuideToVariousServices:
-	.string "A guide to the WIRELESS Club's\n"
+	.string "A guide to the Wireless Club's\n"
 	.string "various services.$"
 
 CableClub_Text_CancelSelectedItem::
@@ -222,16 +222,16 @@ CableClub_Text_NeedBerryForBerryCrush:
 	.string "you must have at least one Berry.$"
 
 CableClub_Text_NeedTwoMonsForUnionRoom:
-	.string "To enter the UNION Room, you must\n"
+	.string "To enter the Union Room, you must\n"
 	.string "have at least two Pokémon.$"
 
 CableClub_Text_NoEnigmaBerryInUnionRoom:
 	.string "No Pokémon holding the {STR_VAR_1}\n"
-	.string "Berry may enter the UNION Room.$"
+	.string "Berry may enter the Union Room.$"
 
 CableClub_Text_UnionRoomAdapterNotConnected:
-	.string "This is the Pokémon WIRELESS Club\n"
-	.string "UNION Room.\p"
+	.string "This is the Pokémon Wireless Club\n"
+	.string "Union Room.\p"
 	.string "Unfortunately, your Wireless\n"
 	.string "Adapter is not connected properly.\p"
 	.string "Please do come again.$"
@@ -253,7 +253,7 @@ MossdeepCity_GameCorner_1F_Text_DescribeWhichGame:
 
 MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo:
 	.string "“Pokémon Jump”\p"
-	.string "Make your Pokémon skip the VINE WHIP\n"
+	.string "Make your Pokémon skip the Vine Whip\n"
 	.string "rope with the A Button.\p"
 	.string "Only mini Pokémon around 28 inches\n"
 	.string "or less may participate.\p"
@@ -332,7 +332,7 @@ MossdeepCity_GameCorner_1F_Text_RetryPlease:
 	.string "again, please?$"
 
 CableClub_Text_WelcomeWhichDirectCornerRoom:
-	.string "Welcome to the Pokémon WIRELESS\n"
+	.string "Welcome to the Pokémon Wireless\n"
 	.string "Club Direct Corner.\p"
 	.string "You may interact directly with\n"
 	.string "your friends here.\p"
@@ -388,15 +388,15 @@ CableClub_Text_ChooseGroupLeader:
 	.string "“Join Group.”$"
 
 CableClub_Text_WelcomeUnionRoomEnter:
-	.string "Welcome to the Pokémon WIRELESS\n"
-	.string "Club UNION Room.\p"
+	.string "Welcome to the Pokémon Wireless\n"
+	.string "Club Union Room.\p"
 	.string "You may interact directly with\n"
 	.string "other Trainers here, some of\l"
 	.string "whom you may not even know.\p"
 	.string "Would you like to enter the Room?$"
 
 CableClub_Text_UnionRoomInfo:
-	.string "The Trainers in the UNION Room\n"
+	.string "The Trainers in the Union Room\n"
 	.string "will be those players around you\l"
 	.string "who have also entered the Room.\p"
 	.string "You may do all sorts of things\n"
@@ -411,7 +411,7 @@ CableClub_Text_UnionRoomInfo:
 
 CableClub_Text_EnjoyUnionRoom:
 	.string "I hope you enjoy your time in\n"
-	.string "the UNION Room.$"
+	.string "the Union Room.$"
 
 CableClub_Text_FirstTimeRightThisWay:
 	.string "Hello!\n"
@@ -428,10 +428,10 @@ CableClub_Text_ExplainWirelessClubFirstTime:
 	.string "On the top floor, there are two\n"
 	.string "rooms.\p"
 	.string "First, the room on the left.\n"
-	.string "It's the UNION Room.\p"
+	.string "It's the Union Room.\p"
 	.string "You may link up with Trainers\n"
 	.string "around you who have also entered\l"
-	.string "the UNION Room.\p"
+	.string "the Union Room.\p"
 	.string "With them, you may do things like\n"
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
@@ -455,14 +455,14 @@ CableClub_Text_AskAboutLinking:
 
 CableClub_Text_ExplainWirelessClub:
 	.string "Let me explain how the Pokémon\n"
-	.string "WIRELESS Club works.\p"
+	.string "Wireless Club works.\p"
 	.string "On this, the top floor, there are\n"
 	.string "two rooms.\p"
 	.string "First, the room on the left.\n"
-	.string "It's the UNION Room.\p"
+	.string "It's the Union Room.\p"
 	.string "You may link up with Trainers\n"
 	.string "around you who have also entered\l"
-	.string "the UNION Room.\p"
+	.string "the Union Room.\p"
 	.string "With them, you may do things like\n"
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
@@ -470,7 +470,7 @@ CableClub_Text_ExplainWirelessClub:
 	.string "You may trade or battle Pokémon\n"
 	.string "with your friends in this room.\p"
 	.string "Sometimes, you may not be able to\n"
-	.string "find your friends in the UNION Room\l"
+	.string "find your friends in the Union Room\l"
 	.string "or the Direct Corner.\p"
 	.string "In that case, please move closer\n"
 	.string "to your friends.\p"

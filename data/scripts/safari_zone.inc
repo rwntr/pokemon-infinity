@@ -209,7 +209,7 @@ SafariZone_Northwest_Text_Man:
 	.string "energy to catch Pokémon…$"
 
 SafariZone_North_Text_Fisherman:
-	.string "I'm on a mission to find WATER Pokémon\n"
+	.string "I'm on a mission to find Water Pokémon\n"
 	.string "you don't see in Hoenn.\p"
 	.string "Do you have any idea where the lake is?$"
 

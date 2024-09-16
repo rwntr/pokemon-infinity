@@ -95,7 +95,7 @@ RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
 	.string "You see, I'm a new father, so raising\n"
 	.string "a child is all new to me.\p"
 	.string "And I have a problem. My daughter\n"
-	.string "WALDA doesn't laugh enough.\p"
+	.string "Walda doesn't laugh enough.\p"
 	.string "I think she'd laugh for me if I told\n"
 	.string "her something funny.\p"
 	.string "Do you know of a funny word or\n"
@@ -134,7 +134,7 @@ RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll:
 	.string "{STR_VAR_1}.\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+	.string "Maybe Walda is one serious child…$"
 
 RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase:
 	.string "Oh, so you don't know any good words.\n"
@@ -147,7 +147,7 @@ RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2:
 	.string "{STR_VAR_1}.\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+	.string "Maybe Walda is one serious child…$"
 
 RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
 	.string "Oh, so you don't know any good words.\n"
@@ -158,7 +158,7 @@ RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
 
 RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 	.string "Thank you!\p"
-	.string "Thanks to you, my darling WALDA\n"
+	.string "Thanks to you, my darling Walda\n"
 	.string "laughed for me!\p"
 	.string "Actually, I may not look all that\n"
 	.string "special, but I'm one of Devon\l"

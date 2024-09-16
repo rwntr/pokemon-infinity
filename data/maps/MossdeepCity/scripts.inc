@@ -331,11 +331,11 @@ MossdeepCity_Text_WhatToDoWithWeirdRock:
 
 MossdeepCity_Text_WailmerWatching:
 	.string "Around Mossdeep, you can see wild\n"
-	.string "WAILMER.\p"
+	.string "Wailmer.\p"
 	.string "It's called, uh…\n"
 	.string "What was it now…\p"
 	.string "WAI, WAI, WAI…\p"
-	.string "WAILMER watching!$"
+	.string "Wailmer watching!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
 	.string "The island's Space Center has been\n"
@@ -431,5 +431,5 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "I think the there had a new\n"
 	.string "Leader come in.\p"
 	.string "People tell me the new Leader once\n"
-	.string "mentored WALLACE.$"
+	.string "mentored Wallace.$"
 

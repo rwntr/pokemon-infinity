@@ -385,7 +385,7 @@ Route116_Text_GoonHightailedItOutOfTunnel:
 Route116_Text_ThankYouTokenOfAppreciation:
 	.string "Oh! It's you!\p"
 	.string "You're that person who not only helped\n"
-	.string "me in Petalburg WOODS, but also got\l"
+	.string "me in Petalburg Woods, but also got\l"
 	.string "back my stolen package and then even\l"
 	.string "graciously delivered it to Slateport!\p"
 	.string "Capt. Stern informed us that the\n"
@@ -448,7 +448,7 @@ Route116_Text_RouteSignRustboro:
 
 Route116_Text_RusturfTunnelSign:
 	.string "Rusturf Tunnel\n"
-	.string "“Linking Rustboro and VERDANTURF\p"
+	.string "“Linking Rustboro and Verdanturf\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 

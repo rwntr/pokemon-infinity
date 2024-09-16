@@ -108,20 +108,20 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "new Devon products in Rustboro now.$"
 
 VerdanturfTown_Text_TownSign:
-	.string "VERDANTURF Town\p"
+	.string "Verdanturf Town\p"
 	.string "“The windswept highlands with the\n"
 	.string "sweet fragrance of grass.”$"
 
 VerdanturfTown_Text_WandasHouse:
-	.string "WANDA'S House$"
+	.string "Wanda'S House$"
 
 VerdanturfTown_Text_BattleTentSign:
-	.string "Battle Tent VERDANTURF Site\n"
+	.string "Battle Tent Verdanturf Site\n"
 	.string "“Feast Your Eyes on Battles!”$"
 
 VerdanturfTown_Text_RusturfTunnelSign:
 	.string "Rusturf Tunnel\n"
-	.string "“Linking Rustboro and VERDANTURF\p"
+	.string "“Linking Rustboro and Verdanturf\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 
