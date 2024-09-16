@@ -282,7 +282,7 @@ Route104_Text_MiaNotEnoughMons:
 
 Route104_Text_IvanIntro:
 	.string "Why keep it a secret?\n"
-	.string "I'm the WATER Pokémon expert!\p"
+	.string "I'm the Water Pokémon expert!\p"
 	.string "Huh?\n"
 	.string "You don't know me?$"
 
@@ -762,7 +762,7 @@ Route108_Text_MissyPostBattle:
 	.string "It's so healthy!$"
 
 Route108_Text_CoryIntro:
-	.string "I love WATER-type Pokémon.\n"
+	.string "I love Water-type Pokémon.\n"
 	.string "I love other Pokémon, too!$"
 
 Route108_Text_CoryDefeated:
@@ -1715,7 +1715,7 @@ Route113_Text_ToriDefeat:
 
 Route113_Text_ToriPostBattle:
 	.string "Tori: How much ash do we have?\n"
-	.string "Enough for a WHITE Flute, I hope.$"
+	.string "Enough for a White Flute, I hope.$"
 
 Route113_Text_ToriNotEnoughMons:
 	.string "Tori: We want to battle 2-on-2.\n"
@@ -1731,7 +1731,7 @@ Route113_Text_TiaDefeat:
 
 Route113_Text_TiaPostBattle:
 	.string "Tia: We have a lot of ashes!\n"
-	.string "I think enough for a WHITE Flute!$"
+	.string "I think enough for a White Flute!$"
 
 Route113_Text_TiaNotEnoughMons:
 	.string "Tia: We want to battle 2-on-2.\n"
@@ -3816,7 +3816,7 @@ Route125_Text_TanyaPostBattle:
 
 Route125_Text_SharonIntro:
 	.string "How would you like to take on the\n"
-	.string "WATER-type Pokémon I raised?$"
+	.string "Water-type Pokémon I raised?$"
 
 Route125_Text_SharonDefeat:
 	.string "Lost it…$"
@@ -4202,7 +4202,7 @@ Route128_Text_KatelynRematchDefeat:
 
 Route128_Text_KatelynPostRematch:
 	.string "You should give serious thought to\n"
-	.string "challenges on VICTORY Road.$"
+	.string "challenges on Victory Road.$"
 
 Route128_Text_AlexaIntro:
 	.string "We've been working so hard to mount\n"
@@ -4230,14 +4230,14 @@ Route128_Text_RubenPostBattle:
 Route128_Text_WayneIntro:
 	.string "I want to visit Ever Grande, so I\n"
 	.string "caught myself a Pokémon that knows\l"
-	.string "the move WATERFALL to crest the falls.$"
+	.string "the move Waterfall to crest the falls.$"
 
 Route128_Text_WayneDefeat:
 	.string "I'm crestfallen!$"
 
 Route128_Text_WaynePostBattle:
 	.string "Awww, phooey!\p"
-	.string "My Pokémon knows WATERFALL, but\n"
+	.string "My Pokémon knows Waterfall, but\n"
 	.string "I don't have the Sootopolis Badge!$"
 
 Route128_Text_HarrisonIntro:

@@ -35,7 +35,7 @@ SootopolisCity_House6_Text_FirstGuestInWhileTakeDoll:
 	.string "Hello! You're our first guest in\n"
 	.string "a good while.\p"
 	.string "You've brightened up my day, so I'll\n"
-	.string "give you a big WAILMER Doll.$"
+	.string "give you a big Wailmer Doll.$"
 
 SootopolisCity_House6_Text_TakeGoodCareOfIt:
 	.string "Take good care of it!$"

@@ -494,7 +494,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
-	.string "You've chosen the VENUSAUR Doll.\n"
+	.string "You've chosen the Venusaur Doll.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
@@ -526,7 +526,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
-	.string "You've chosen the HP UP.\n"
+	.string "You've chosen the HP Up.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
@@ -534,7 +534,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
-	.string "You've chosen the WHITE Herb.\n"
+	.string "You've chosen the White Herb.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:

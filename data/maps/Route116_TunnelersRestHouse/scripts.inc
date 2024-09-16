@@ -40,7 +40,7 @@ Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
+	.string "Verdanturf all by his lonesome.\l"
 	.string "He's desperate to get through.\p"
 	.string "He says that if he digs little by little\n"
 	.string "without using machines, he won't\l"
@@ -49,13 +49,13 @@ Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 	.string "I wonder if he made it through yet.$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
-	.string "To get to VERDANTURF without using\n"
+	.string "To get to Verdanturf without using\n"
 	.string "this Tunnel, you'd have to cross the\l"
 	.string "sea to Dewford, sail on to Slateport,\l"
 	.string "then travel through Mauville.$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "Did you hear? The Tunnel to VERDANTURF\n"
+	.string "Did you hear? The Tunnel to Verdanturf\n"
 	.string "has gone through!\p"
 	.string "Sometimes, if you hope strongly enough,\n"
 	.string "dreams do come true.$"

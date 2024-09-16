@@ -161,6 +161,6 @@ Route113_Text_TrainerTipsRegisterKeyItems:
 	.string "the registered item conveniently.$"
 
 Route113_Text_GlassWorkshopSign:
-	.string "glass WORKSHOP\n"
+	.string "Glass Workshop\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
 
