@@ -100,7 +100,7 @@ DesertRuins_Braille_UseRockSmash:
 	.braille "LEFT, LEFT,\n"
 	.braille "DOWN, DOWN.\n"
 	.braille "THEN, USE\n"
-	.braille "ROCK SMASH.$"
+	.braille "Rock Smash.$"
 
 IslandCave_Braille_RunLapAroundWall:
 	brailleformat 5, 0, 25, 19, 8, 3

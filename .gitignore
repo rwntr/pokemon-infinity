@@ -39,6 +39,7 @@ prefabs.json
 *.sym
 *.js
 moveArtifacts.sh
-/src/data/map_group_count.h
+src/data/map_group_count.h
+tools/trainerproc/trainerproc
 /src/data/trainers_old.party
-TestingDiscordWebhookAGAIN
+
