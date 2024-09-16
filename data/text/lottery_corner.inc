@@ -1,12 +1,12 @@
 LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
-	.string "This is the Pokémon LOTTERY Corner.\p"
+	.string "This is the Pokémon Lottery Corner.\p"
 	.string "All shoppers at our Department STORE\n"
-	.string "get to draw a Pokémon LOTO TICKET.\p"
-	.string "If the LOTO TICKET's number matches\n"
+	.string "get to draw a Pokémon Loto TICKET.\p"
+	.string "If the Loto TICKET's number matches\n"
 	.string "the ID number of any of your Pokémon,\l"
 	.string "you will receive a fabulous gift.\p"
 	.string "Would you like to draw a Pokémon\n"
-	.string "LOTO TICKET?$"
+	.string "Loto TICKET?$"
 
 LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow:
 	.string "Please come back tomorrow.$"
@@ -15,11 +15,11 @@ LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain:
 	.string "Please do visit again.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket:
-	.string "Please pick a LOTO TICKET.\n"
+	.string "Please pick a Loto TICKET.\n"
 	.string "…{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}…{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}…{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait:
-	.string "The LOTO TICKET number is {STR_VAR_1}.\p"
+	.string "The Loto TICKET number is {STR_VAR_1}.\p"
 	.string "I need to run a check on this number\n"
 	.string "to see if it matches any of your\l"
 	.string "Pokémon's ID numbers. Please wait.$"
@@ -28,13 +28,13 @@ LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon:
 	.string "Congratulations!\p"
 	.string "The ID number of your team's\n"
 	.string "{STR_VAR_1} matches your\l"
-	.string "LOTO TICKET's number!$"
+	.string "Loto TICKET's number!$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPCMon:
 	.string "Congratulations!\p"
 	.string "The ID number of your PC-boxed\n"
 	.string "{STR_VAR_1} matches your\l"
-	.string "LOTO TICKET's number!$"
+	.string "Loto TICKET's number!$"
 
 LilycoveCity_DepartmentStore_1F_Text_NoNumbersMatched:
 	.string "I'm sorry.\n"

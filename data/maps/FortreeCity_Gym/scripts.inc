@@ -161,7 +161,7 @@ FortreeCity_Gym_Text_JaredPostBattle:
 	.string "A Trainer has to be smart to keep\n"
 	.string "up with unexpected turns of events.\p"
 	.string "Do you have the smarts to get to\n"
-	.string "our LEADER?$"
+	.string "our Leader?$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
 	.string "The lovers of Bird Pokémon aspire\n"
@@ -181,7 +181,7 @@ FortreeCity_Gym_Text_EdwardoPostBattle:
 
 FortreeCity_Gym_Text_FlintIntro:
 	.string "There's no need for WINONA, our\n"
-	.string "LEADER, to deal with you!\p"
+	.string "Leader, to deal with you!\p"
 	.string "I'm plenty good enough for you!$"
 
 FortreeCity_Gym_Text_FlintDefeat:
@@ -190,7 +190,7 @@ FortreeCity_Gym_Text_FlintDefeat:
 
 FortreeCity_Gym_Text_FlintPostBattle:
 	.string "WINONA is cute and she's strong.\n"
-	.string "She's the ultimate LEADER!\p"
+	.string "She's the ultimate Leader!\p"
 	.string "Blush…$"
 
 FortreeCity_Gym_Text_AshleyIntro:
@@ -229,11 +229,11 @@ FortreeCity_Gym_Text_DariusDefeat:
 
 FortreeCity_Gym_Text_DariusPostBattle:
 	.string "Sure, you beat me all right.\n"
-	.string "But you'd better watch it! Our LEADER\l"
+	.string "But you'd better watch it! Our Leader\l"
 	.string "WINONA's Pokémon are all business.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "I am WINONA. I am the LEADER of\n"
+	.string "I am WINONA. I am the Leader of\n"
 	.string "the Fortree Pokémon.\p"
 	.string "I have become one with Bird Pokémon\n"
 	.string "and have soared the skies…\p"

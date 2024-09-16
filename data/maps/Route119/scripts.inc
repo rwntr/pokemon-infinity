@@ -506,7 +506,7 @@ Route119_Text_MayExplainFly:
 	.string "the Badge from Fortree City.\l"
 	.string "That's important, so don't forget.\p"
 	.string "You should Fly home and visit\n"
-	.string "LITTLEROOT for a change.\p"
+	.string "Littleroot for a change.\p"
 	.string "I bet your mom's worried about you,\n"
 	.string "{PLAYER}{KUN}.\p"
 	.string "Well, let's meet again somewhere!$"

@@ -67,7 +67,7 @@ SSTidalRooms_Text_TakeRestOnBed:
 	.string "Let's take a rest.$"
 
 SSTidalRooms_Text_ColtonIntro:
-	.string "I often sail to LILYCOVE City.\p"
+	.string "I often sail to Lilycove City.\p"
 	.string "I enjoy attending Contests,\n"
 	.string "you see.$"
 
@@ -118,19 +118,19 @@ SSTidalRooms_Text_JedNotEnoughMons:
 	.string "Isn't that just too lonesome?$"
 
 SSTidalRooms_Text_LeaIntro:
-	.string "LEA: I feel a little silly, but…\n"
+	.string "Lea: I feel a little silly, but…\n"
 	.string "We'll show you our lovey-dovey power!$"
 
 SSTidalRooms_Text_LeaDefeat:
-	.string "LEA: Oh, boo!$"
+	.string "Lea: Oh, boo!$"
 
 SSTidalRooms_Text_LeaPostBattle:
-	.string "LEA: I can't believe it!\n"
+	.string "Lea: I can't believe it!\n"
 	.string "Our lovey-dovey power failed…\l"
 	.string "You must be an awesome Trainer!$"
 
 SSTidalRooms_Text_LeaNotEnoughMons:
-	.string "LEA: I wanted to battle…\n"
+	.string "Lea: I wanted to battle…\n"
 	.string "But you don't even have two Pokémon…$"
 
 SSTidalRooms_Text_GarretIntro:

@@ -95,7 +95,7 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 	.string "a simple deductive process.\p"
 	.string "You spoke to me because you wanted\n"
 	.string "to access something on this PC.\p"
-	.string "Oh, I'm sorry. I'm LANETTE.\p"
+	.string "Oh, I'm sorry. I'm Lanette.\p"
 	.string "Honestly, I'm glad to meet you--it's\n"
 	.string "great you're using the Storage System.\p"
 	.string "If you could, please visit me at home.\n"

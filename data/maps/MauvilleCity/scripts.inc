@@ -589,7 +589,7 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "switch off the generator.\p"
 	.string "The generator has been running a bit\n"
 	.string "haywire. It's getting unsafe.\p"
-	.string "Here, this is the KEY to get into\n"
+	.string "Here, this is the Key to get into\n"
 	.string "New Mauville.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
@@ -640,7 +640,7 @@ MauvilleCity_Text_CitySign:
 
 MauvilleCity_Text_GymSign:
 	.string "Mauville City Pokémon\n"
-	.string "LEADER: WATTSON\l"
+	.string "Leader: WATTSON\l"
 	.string "“The cheerfully electrifying man!”$"
 
 MauvilleCity_Text_BikeShopSign:

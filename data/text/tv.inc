@@ -1254,12 +1254,12 @@ TrendWatcher_Text_Intro::
 @ Identical to below, may have been different in other languages
 TrendWatcher_Text_MaleTaughtMePhrase::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}\n"
-	.string "was what {STR_VAR_3} from LITTLEROOT\l"
+	.string "was what {STR_VAR_3} from Littleroot\l"
 	.string "taught me as being trendy…$"
 
 TrendWatcher_Text_FemaleTaughtMePhrase::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}\n"
-	.string "was what {STR_VAR_3} from LITTLEROOT\l"
+	.string "was what {STR_VAR_3} from Littleroot\l"
 	.string "taught me as being trendy…$"
 
 TrendWatcher_Text_PhraseWasHopeless::
@@ -1587,11 +1587,11 @@ gTVSecretBaseVisitText13::
 gTVPokemonLotteryWinnerFlashReportText00::
 	.string "It's exciting!\n"
 	.string "It's dramatic!\p"
-	.string "It's the Pokémon LOTTERY\n"
+	.string "It's the Pokémon Lottery\n"
 	.string "WINNER FLASH REPORT!\p"
 	.string "Hello! We're coming at you live from\n"
-	.string "the Pokémon LOTTERY Corner on\l"
-	.string "the ground floor of the LILYCOVE\l"
+	.string "the Pokémon Lottery Corner on\l"
+	.string "the ground floor of the Lilycove\l"
 	.string "Department STORE!\p"
 	.string "Like it always happens, another\n"
 	.string "lucky Trainer appeared today!\p"
@@ -1603,10 +1603,10 @@ gTVPokemonLotteryWinnerFlashReportText00::
 	.string "Congratulations!\p"
 	.string "Viewers, don't just watch,\n"
 	.string "get in on the action!\p"
-	.string "All of us at the LILYCOVE Department\n"
+	.string "All of us at the Lilycove Department\n"
 	.string "STORE look forward to your next visit!\p"
 	.string "This has been a live broadcast from\n"
-	.string "the LILYCOVE Department STORE,\l"
+	.string "the Lilycove Department STORE,\l"
 	.string "offering you the greatest selection\l"
 	.string "in all Hoenn!$"
 
@@ -1909,7 +1909,7 @@ gTVPokemonNewsBattleFrontierText03::
 gTVPokemonNewsBattleFrontierText04::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
-	.string "the Battle Tower's LINK Multi Battle\l"
+	.string "the Battle Tower's Link Multi Battle\l"
 	.string "ROOM challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
@@ -2439,7 +2439,7 @@ gTVSafariFanClubText10::
 	.string "Until next time, cheerio!$"
 
 ContestLiveUpdates_Text_Intro::
-	.string "“Pokémon Contest LIVE UPDATES!”\p"
+	.string "“Pokémon Contest Live UPDATES!”\p"
 	.string "MC: Thanks for joining us!\p"
 	.string "We're live from the just-ended\n"
 	.string "{STR_VAR_1} site.\p"
@@ -2926,7 +2926,7 @@ gTVInSearchOfTrainersText08::
 	.string "See you again on our next broadcast!$"
 
 ContestLadyShow_Text_Intro::
-	.string "“Pokémon Contest LIVE UPDATES!”\p"
+	.string "“Pokémon Contest Live UPDATES!”\p"
 	.string "MC: Sorry to interrupt the regular\n"
 	.string "programming, and thanks for joining us!\p"
 	.string "We bring you this live from\n"

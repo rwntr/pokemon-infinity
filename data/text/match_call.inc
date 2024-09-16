@@ -1184,7 +1184,7 @@ MatchCall_PersonalizedText47::
 
 MatchCall_PersonalizedText48::
 	.string "Oh, hi, hi, this is {STR_VAR_1}!\p"
-	.string "I'm raising Pokémon with LIV!\n"
+	.string "I'm raising Pokémon with Liv!\n"
 	.string "We're trying very hard!\p"
 	.string "If we try harder, can we become\n"
 	.string "number one? Bye-bye!$"
@@ -1287,12 +1287,12 @@ MatchCall_PersonalizedText57::
 MatchCall_PersonalizedText58::
 	.string "Oh, hi!\p"
 	.string "I'm still searching for treasures\n"
-	.string "with KIRA!\p"
+	.string "with Kira!\p"
 	.string "Maybe there isn't any treasure\n"
 	.string "here at all…\p"
 	.string "But the important thing is for me\n"
-	.string "to search alongside KIRA.\p"
-	.string "Oh, hey, KIRA!\n"
+	.string "to search alongside Kira.\p"
+	.string "Oh, hey, Kira!\n"
 	.string "Wh-why are you angry?\p"
 	.string "I'm not ignoring you, honey!\n"
 	.string "You're my one and only!\p"
@@ -2191,37 +2191,37 @@ MatchCall_Text_Winona4::
 
 MatchCall_Text_TateLiza1::
 	.string "Tate: Oh! You're…\n"
-	.string "LIZA: {PLAYER}!\p"
+	.string "Liza: {PLAYER}!\p"
 	.string "Tate: We're in training again…\n"
-	.string "LIZA: So we can reopen our!\p"
+	.string "Liza: So we can reopen our!\p"
 	.string "Tate: When our is ready…\n"
-	.string "LIZA: When our is ready…\p"
+	.string "Liza: When our is ready…\p"
 	.string "Tate: A mark'll appear by our name…\n"
-	.string "LIZA: On the MATCH Call list.$"
+	.string "Liza: On the MATCH Call list.$"
 
 MatchCall_Text_TateLiza2::
 	.string "Tate: {PLAYER}, congratulations!\n"
-	.string "LIZA: {PLAYER}, congratulations!\p"
+	.string "Liza: {PLAYER}, congratulations!\p"
 	.string "Tate: The two of us are…\n"
-	.string "LIZA: Still in training!\p"
+	.string "Liza: Still in training!\p"
 	.string "Tate: We need some more time, but…\n"
-	.string "LIZA: When our is ready…\p"
+	.string "Liza: When our is ready…\p"
 	.string "Tate: A mark'll appear by our name…\n"
-	.string "LIZA: On the MATCH Call list.$"
+	.string "Liza: On the MATCH Call list.$"
 
 MatchCall_Text_TateLiza3::
 	.string "Tate: {PLAYER}!\n"
-	.string "LIZA: {PLAYER}!\p"
+	.string "Liza: {PLAYER}!\p"
 	.string "Tate: Our is ready!\n"
-	.string "LIZA: Our is ready!\p"
+	.string "Liza: Our is ready!\p"
 	.string "Tate: Please come visit…\n"
-	.string "LIZA: MOSSDEEP anytime!$"
+	.string "Liza: MOSSDEEP anytime!$"
 
 MatchCall_Text_TateLiza4::
 	.string "Tate: {PLAYER}, the battle we had…\n"
-	.string "LIZA: Is an invaluable experience.\p"
+	.string "Liza: Is an invaluable experience.\p"
 	.string "Tate: It would be nice if…\n"
-	.string "LIZA: We could all battle again!$"
+	.string "Liza: We could all battle again!$"
 
 MatchCall_Text_Juan1::
 	.string "Juan: Hmm…\n"
@@ -2349,7 +2349,7 @@ MatchCall_Text_May2::
 	.string "For some reason, the big port of\n"
 	.string "Slateport doesn't have a.\p"
 	.string "When they finally build a there,\n"
-	.string "I should apply to be the LEADER.$"
+	.string "I should apply to be the Leader.$"
 
 MatchCall_Text_May3::
 	.string "May: Hi, {PLAYER}{KUN}!\p"
@@ -2448,7 +2448,7 @@ MatchCall_Text_May14::
 	.string "May: {PLAYER}{KUN}!\n"
 	.string "I heard the rumors!\p"
 	.string "You beat the SOOTOPOLIS\n"
-	.string "LEADER?\p"
+	.string "Leader?\p"
 	.string "That means you don't have far\n"
 	.string "to go, do you?$"
 
@@ -2475,7 +2475,7 @@ MatchCall_Text_Brendan2::
 	.string "I mean, not when the big port of\n"
 	.string "Slateport doesn't have a.\p"
 	.string "When they finally build a there,\n"
-	.string "I should apply to be the LEADER.$"
+	.string "I should apply to be the Leader.$"
 
 MatchCall_Text_Brendan3::
 	.string "Brendan: Yo, {PLAYER}!\p"
@@ -2575,7 +2575,7 @@ MatchCall_Text_Brendan14::
 	.string "Brendan: {PLAYER}!\n"
 	.string "I heard the rumors!\p"
 	.string "You beat the SOOTOPOLIS\n"
-	.string "LEADER? Awesome!\p"
+	.string "Leader? Awesome!\p"
 	.string "You're getting awful close now!$"
 
 MatchCall_Text_Brendan15::

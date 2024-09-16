@@ -1266,11 +1266,11 @@ BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle:
 	.string "Where the talents of Trainers\n"
 	.string "are put to the test!\p"
 	.string "Welcome to the Battle Tower!\p"
-	.string "I am your guide to the LINK Multi\n"
+	.string "I am your guide to the Link Multi\n"
 	.string "Battle ROOMS.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge:
-	.string "Would you like to take the LINK Multi\n"
+	.string "Would you like to take the Link Multi\n"
 	.string "Battle Room challenge?$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge:
@@ -1307,7 +1307,7 @@ BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend:
 	.string "you wish to enter, and register again.$"
 
 BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers:
-	.string "The LINK Multi Battle Room challenge\n"
+	.string "The Link Multi Battle Room challenge\n"
 	.string "is only for two linked players.$"
 
 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMon:
@@ -1367,7 +1367,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules:
 	.string "The Battle Tower is a facility where\n"
 	.string "four types of battles are waged--\l"
 	.string "Single Battle, Double Battle, Multi\l"
-	.string "Battle, and LINK Multi Battle.\p"
+	.string "Battle, and Link Multi Battle.\p"
 	.string "For each of these types, there are\n"
 	.string "separate Battle ROOMS.\p"
 	.string "Please speak with a guide offering\n"
@@ -1393,7 +1393,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules:
 	.string "after winning seven straight matches.$"
 
 BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules:
-	.string "The LINK Multi Battle Mode is for two\n"
+	.string "The Link Multi Battle Mode is for two\n"
 	.string "friends to mount a challenge together.\p"
 	.string "You and your friend must be linked with\n"
 	.string "Wireless Adapters or a GBA Game Link\l"

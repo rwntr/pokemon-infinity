@@ -46,7 +46,7 @@ Route114_LanettesHouse_EventScript_PC::
 	end
 
 Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
-	.string "LANETTE: Oh! {PLAYER}{KUN}!\p"
+	.string "Lanette: Oh! {PLAYER}{KUN}!\p"
 	.string "I'm sorry everything is so cluttered…\n"
 	.string "When I get engrossed in research,\l"
 	.string "things end up this way…\p"
@@ -60,7 +60,7 @@ Route114_LanettesHouse_Text_OrganizeYourBoxes:
 	.string "can tell which Pokémon are in them.$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage1:
-	.string "It's LANETTE's research notes.\n"
+	.string "It's Lanette's research notes.\n"
 	.string "There's information about Boxes.\p"
 	.string "Design Boxes to hold 30 Pokémon each.\p"
 	.string "Each Trainer should be able to store\n"

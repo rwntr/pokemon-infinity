@@ -188,7 +188,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Eon Pokémon,\n"
 	.string "a WATER & Ground MUD Fish Pokémon,\l"
-	.string "and a STEEL- & PSYCHIC-type Iron LEG\l"
+	.string "and a STEEL- & PSYCHIC-type Iron Leg\l"
 	.string "Pokémon.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
@@ -287,7 +287,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "when he's serious?\p"
 	.string "When he throws his entire might into\n"
 	.string "battle, he's said to use these Pokémon:\p"
-	.string "A Fire-type LEGENDARY Pokémon,\n"
+	.string "A Fire-type Legendary Pokémon,\n"
 	.string "a NORMAL-type LAZY Pokémon,\l"
 	.string "and a WATER-type Aurora Pokémon.$"
 
@@ -296,10 +296,10 @@ BattleFrontier_Lounge2_Text_PyramidKingIsThere::
 	.string "One of those top Trainers that SCOTT\n"
 	.string "calls the Frontier BRAINS is there.\p"
 	.string "It's this fiery-hot Trainer called\n"
-	.string "the PYRAMID KING that runs the place.$"
+	.string "the PYRAMID King that runs the place.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
-	.string "Have you battled the PYRAMID KING\n"
+	.string "Have you battled the PYRAMID King\n"
 	.string "before?\p"
 	.string "When he's checking the foe's power,\n"
 	.string "he apparently uses these Pokémon:\p"
@@ -308,7 +308,7 @@ BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
 	.string "and a STEEL-type Iron Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
-	.string "Have you battled the PYRAMID KING\n"
+	.string "Have you battled the PYRAMID King\n"
 	.string "when he's serious?\p"
 	.string "When he's pumped with hot power,\n"
 	.string "he apparently uses these Pokémon:\p"
@@ -347,7 +347,7 @@ BattleFrontier_Lounge2_Text_MultiBattleAdvice::
 
 BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice::
 	.string "If you're with a friend, head for the\n"
-	.string "LINK Multi Battle Room.\p"
+	.string "Link Multi Battle Room.\p"
 	.string "If you play with a strong friend,\n"
 	.string "you can expect to see tough foes!$"
 

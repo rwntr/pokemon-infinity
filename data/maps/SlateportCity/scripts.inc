@@ -1241,11 +1241,11 @@ SlateportCity_Text_SternsShipyardNearsCompletion:
 	.string "Stern's Shipyard\p"
 	.string "“The ferry S.S. TIDAL nears\n"
 	.string "completion for serving the ports of\l"
-	.string "Slateport and LILYCOVE.”$"
+	.string "Slateport and Lilycove.”$"
 
 SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "Stern's Shipyard\p"
-	.string "“Boarding of the Slateport-LILYCOVE\n"
+	.string "“Boarding of the Slateport-Lilycove\n"
 	.string "ferry S.S. TIDAL is handled at the\l"
 	.string "Harbor.”$"
 

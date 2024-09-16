@@ -171,7 +171,7 @@ RustboroCity_Gym_Text_MarcDefeat:
 	.string "Our challenger is one feisty customer!$"
 
 RustboroCity_Gym_Text_MarcPostBattle:
-	.string "I have to hand it to our LEADER.\p"
+	.string "I have to hand it to our Leader.\p"
 	.string "It took smarts and sense for her to\n"
 	.string "pick the ROCK type at her young age.$"
 

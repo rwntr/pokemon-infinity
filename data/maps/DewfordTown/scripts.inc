@@ -650,7 +650,7 @@ DewfordTown_Text_TownSign:
 
 DewfordTown_Text_GymSign:
 	.string "Dewford Town Pokémon\n"
-	.string "LEADER: Brawly\l"
+	.string "Leader: Brawly\l"
 	.string "“A big wave in fighting!”$"
 
 DewfordTown_Text_HallSign:
@@ -661,11 +661,11 @@ Route104_Text_LandedInDewfordDeliverLetter:
 	.string "Mr. Briney: Ahoy!\n"
 	.string "We've hit land in Dewford.\p"
 	.string "I suppose you're off to deliver that\n"
-	.string "LETTER to, who was it now, Steven!$"
+	.string "Letter to, who was it now, Steven!$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
 	.string "Mr. Briney: Have you delivered your\n"
-	.string "LETTER?\p"
+	.string "Letter?\p"
 	.string "Or were you meaning to sail back to\n"
 	.string "PETALBURG?$"
 
@@ -676,7 +676,7 @@ DewfordTown_Text_PetalburgWereSettingSail2:
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
 	.string "Mr. Briney: Then you go on and deliver\n"
-	.string "the LETTER. I'll be waiting.$"
+	.string "the Letter. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInDewford:
 	.string "Mr. Briney: Ahoy!\n"
