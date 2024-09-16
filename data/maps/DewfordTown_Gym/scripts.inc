@@ -285,7 +285,7 @@ DewfordTown_Gym_EventScript_GymStatue::
 DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "DEWFORD's Gym Leader Brawly commands\n"
+	.string "Dewford's Gym Leader Brawly commands\n"
 	.string "FIGHTING-type Pokémon.\p"
 	.string "Going against him with NORMAL-type\n"
 	.string "Pokémon is asking for trouble.\p"
@@ -381,7 +381,7 @@ DewfordTown_Gym_Text_CristianPostBattle:
 
 DewfordTown_Gym_Text_BrawlyIntro:
 	.string "I'm Brawly!\n"
-	.string "DEWFORD's Gym Leader!\p"
+	.string "Dewford's Gym Leader!\p"
 	.string "I've been churned in the rough waves\n"
 	.string "of these parts, and I've grown tough\l"
 	.string "in the pitch-black cave!\p"
@@ -411,7 +411,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains Bulk UP.\p"
 	.string "It's a move that raises both Attack\n"
-	.string "and DEFENSE stats.\p"
+	.string "and Defense stats.\p"
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
@@ -424,10 +424,10 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "among Trainers one day!$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "DEWFORD Town Pokémon$"
+	.string "Dewford Town Pokémon$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "DEWFORD Town Pokémon\p"
+	.string "Dewford Town Pokémon\p"
 	.string "Brawly's Certified Trainers:\n"
 	.string "{PLAYER}$"
 

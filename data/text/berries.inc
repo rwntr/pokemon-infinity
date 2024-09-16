@@ -1,5 +1,5 @@
 PetalburgCity_Gym_Text_GiveEnigmaBerry:
-	.string "DAD: Hi, {PLAYER}!\p"
+	.string "Dad: Hi, {PLAYER}!\p"
 	.string "I just received a very rare Berry.\n"
 	.string "I'd like you to have it.$"
 

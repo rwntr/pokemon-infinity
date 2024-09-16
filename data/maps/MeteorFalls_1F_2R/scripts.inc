@@ -61,7 +61,7 @@ MeteorFalls_1F_2R_EventScript_RematchJay::
 	end
 
 MeteorFalls_1F_2R_Text_NicolasIntro:
-	.string "This is where we DRAGON users do our\n"
+	.string "This is where we Dragon users do our\n"
 	.string "training.\p"
 	.string "The Champion even visits.\n"
 	.string "Now do you see how special it is here?$"

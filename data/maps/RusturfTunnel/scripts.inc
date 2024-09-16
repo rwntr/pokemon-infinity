@@ -487,7 +487,7 @@ RusturfTunnel_Text_WhyCantTheyKeepDigging:
 
 RusturfTunnel_Text_ToGetToVerdanturf:
 	.string "To get from Rustboro to VERDANTURF,\n"
-	.string "you need to go to DEWFORD, then pass\l"
+	.string "you need to go to Dewford, then pass\l"
 	.string "through Slateport and Mauville…$"
 
 RusturfTunnel_Text_YouShatteredBoulderTakeHM:

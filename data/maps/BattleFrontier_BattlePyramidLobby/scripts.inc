@@ -784,7 +784,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintFighting:
 	.string "by FIGHTING moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintWeather:
-	.string "RAIN DANCE… SUNNY DAY…\n"
+	.string "RAIN Dance… SUNNY Day…\n"
 	.string "SANDSTORM… HAIL…\p"
 	.string "I see Pokémon that become stronger\n"
 	.string "with the weather…\p"
@@ -797,9 +797,9 @@ BattleFrontier_BattlePyramidLobby_Text_HintBug:
 	.string "from different kinds of attacks…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintDark:
-	.string "I see DARK-type Pokémon…\p"
+	.string "I see Dark-type Pokémon…\p"
 	.string "…And, I see your Pokémon suffering\n"
-	.string "from DARK-type moves…$"
+	.string "from Dark-type moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintWater:
 	.string "I see WATER-type Pokémon…\p"

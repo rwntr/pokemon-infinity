@@ -561,7 +561,7 @@ BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:
 BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
 	.string "The Double Battle Tournament\n"
 	.string "is exactly as the name suggests--\l"
-	.string "a tournament of DOUBLE Battles.\p"
+	.string "a tournament of Double Battles.\p"
 	.string "All participating Trainers must\n"
 	.string "enter three Pokémon each.\p"
 	.string "In each battle, one of the three\n"

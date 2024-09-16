@@ -672,8 +672,8 @@ Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "One of the indicators of a Pokémon's\n"
 	.string "powerfulness is Sp. Atk. It stands for\l"
 	.string "“SPECIAL Attack.”\p"
-	.string "Likewise, Sp. DEF stands for “SPECIAL\n"
-	.string "DEFENSE.”$"
+	.string "Likewise, Sp. Def stands for “SPECIAL\n"
+	.string "Defense.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
 	.string "There should be a tower made of sand\n"

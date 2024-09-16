@@ -86,7 +86,7 @@ MtPyre_2F_Text_LukeNotEnoughMons:
 	.string "off to my girl how cool I am!$"
 
 MtPyre_2F_Text_DezIntro:
-	.string "DEZ: I came here on a dare with my\n"
+	.string "Dez: I came here on a dare with my\n"
 	.string "boyfriend.\p"
 	.string "It's really scary, but I'm with my\n"
 	.string "boyfriend. It's okay.\p"
@@ -94,14 +94,14 @@ MtPyre_2F_Text_DezIntro:
 	.string "cool by beating you!$"
 
 MtPyre_2F_Text_DezDefeat:
-	.string "DEZ: Waaaah! I'm scared!$"
+	.string "Dez: Waaaah! I'm scared!$"
 
 MtPyre_2F_Text_DezPostBattle:
-	.string "DEZ: We're lovey-dovey, so we don't\n"
+	.string "Dez: We're lovey-dovey, so we don't\n"
 	.string "care if we lose!$"
 
 MtPyre_2F_Text_DezNotEnoughMons:
-	.string "DEZ: If you want to challenge us, you\n"
+	.string "Dez: If you want to challenge us, you\n"
 	.string "should bring at least two Pokémon.\p"
 	.string "My boyfriend's strong.\n"
 	.string "Just one Pokémon won't do at all.$"

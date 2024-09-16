@@ -208,9 +208,9 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "I understand that you're delivering\n"
 	.string "a package to Slateport's SHIPYARD.\p"
 	.string "Well, on the way, could you stop off in\n"
-	.string "DEWFORD Town?\p"
+	.string "Dewford Town?\p"
 	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to Steven in DEWFORD.$"
+	.string "LETTER to Steven in Dewford.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
 	.string "Mr. Stone: Now, you should know that\n"
@@ -230,7 +230,7 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "Trainer on an adventure.\p"
 	.string "It has a map of the Hoenn region.\p"
 	.string "You can check the locations of\n"
-	.string "DEWFORD and Slateport easily!\p"
+	.string "Dewford and Slateport easily!\p"
 	.string "By the way, I've heard that sinister\n"
 	.string "criminals--Magma and Aqua, I believe--\l"
 	.string "have been making trouble far and wide.\p"

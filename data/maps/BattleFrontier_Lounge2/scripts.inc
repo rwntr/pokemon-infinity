@@ -162,7 +162,7 @@ BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
 	.string "when she's serious?\p"
 	.string "When she's battling flat out,\n"
 	.string "she apparently uses these Pokémon:\p"
-	.string "A DRAGON & PSYCHIC EON Pokémon,\n"
+	.string "A Dragon & PSYCHIC EON Pokémon,\n"
 	.string "an ELECTRIC-type THUNDER Pokémon,\l"
 	.string "and a NORMAL-type SLEEPING Pokémon.$"
 
@@ -177,7 +177,7 @@ BattleFrontier_Lounge2_Text_DomeAceSilverMons::
 	.string "Have you battled the Dome Ace?\p"
 	.string "When he's treating the opponent\n"
 	.string "lightly, he uses these three Pokémon:\p"
-	.string "A DRAGON & FLYING DRAGON Pokémon,\n"
+	.string "A Dragon & FLYING Dragon Pokémon,\n"
 	.string "a WATER & GROUND MUD FISH Pokémon,\l"
 	.string "and a FIRE & FLYING FLAME Pokémon.$"
 
@@ -186,7 +186,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "when he's serious?\p"
 	.string "When he's demonstrating his strategy,\n"
 	.string "he uses these three Pokémon:\p"
-	.string "A DRAGON & FLYING EON Pokémon,\n"
+	.string "A Dragon & FLYING EON Pokémon,\n"
 	.string "a WATER & GROUND MUD FISH Pokémon,\l"
 	.string "and a STEEL- & PSYCHIC-type IRON LEG\l"
 	.string "Pokémon.$"
@@ -253,7 +253,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Bug & FIGHTING SINGLE HORN Pokémon,\n"
-	.string "a DARK-type MOONLIGHT Pokémon,\l"
+	.string "a Dark-type MOONLIGHT Pokémon,\l"
 	.string "and a Bug & GHOST SHED Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
@@ -261,7 +261,7 @@ BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "when she's serious?\p"
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
-	.string "A DARK-type MOONLIGHT Pokémon,\n"
+	.string "A Dark-type MOONLIGHT Pokémon,\n"
 	.string "a GHOST & POISON SHADOW Pokémon\l"
 	.string "and a GRASS- & FIGHTING-type\l"
 	.string "MUSHROOM Pokémon.$"
@@ -319,24 +319,24 @@ BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
 	.string "Sure, there are several places where\n"
-	.string "you can enter DOUBLE Battles.\p"
+	.string "you can enter Double Battles.\p"
 	.string "But the Double Battle ROOMS of\n"
 	.string "the Battle Tower are, like, basic!\p"
 	.string "They're where you should learn about\n"
-	.string "how DOUBLE Battles are played here\l"
+	.string "how Double Battles are played here\l"
 	.string "in the Battle Frontier.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice2::
 	.string "Watch yourself in the battles here.\p"
 	.string "I hear there are Trainers that have\n"
 	.string "strategies they developed just for\l"
-	.string "DOUBLE Battles.$"
+	.string "Double Battles.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice3::
 	.string "Once you're confident and comfortable\n"
-	.string "with DOUBLE Battles here, you should\l"
+	.string "with Double Battles here, you should\l"
 	.string "think about challenging other places\l"
-	.string "offering DOUBLE Battles.$"
+	.string "offering Double Battles.$"
 
 BattleFrontier_Lounge2_Text_MultiBattleAdvice::
 	.string "All sorts of Trainers gather in\n"

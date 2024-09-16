@@ -2499,7 +2499,7 @@ gText_ApprenticeWinSpeechThanks14::
 gText_ApprenticePickWinSpeech15::
 	.string "Hm? You appear to be {PLAYER}{KUN}…\n"
 	.string "But are you really?\l"
-	.string "Perhaps a clever {PLAYER} DOLL?\p"
+	.string "Perhaps a clever {PLAYER} Doll?\p"
 	.string "Oh, no, no, no, don't worry!\n"
 	.string "If you really are real, please\l"
 	.string "forget about my rudeness.\p"

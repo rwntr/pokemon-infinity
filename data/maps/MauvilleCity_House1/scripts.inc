@@ -23,7 +23,7 @@ MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "I hear people call me the ROCK SMASH\n"
 	.string "GUY, but I find that sort of degrading.\p"
 	.string "I think I deserve a bit more respect,\n"
-	.string "like maybe the ROCK SMASH DUDE.\p"
+	.string "like maybe the ROCK SMASH Dude.\p"
 	.string "Woohoo!\p"
 	.string "Anyways, your Pokémon look pretty\n"
 	.string "strong.\p"

@@ -486,10 +486,10 @@ Route109_Text_BrineySailToDewfordQuestion:
 	.string "Mr. Briney: I thought you're supposed\n"
 	.string "to deliver the Devon GOODS.\p"
 	.string "Would you like to sail back to\n"
-	.string "DEWFORD, then?$"
+	.string "Dewford, then?$"
 
 Route109_Text_BrineyDewfordItIs:
-	.string "Mr. Briney: DEWFORD it is, then!\p"
+	.string "Mr. Briney: Dewford it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 

@@ -265,13 +265,13 @@ MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo:
 	.string "jumps in time.$"
 
 MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo:
-	.string "“DODRIO Berry-Picking”\p"
-	.string "Command DODRIO's three heads to\n"
+	.string "“Dodrio Berry-Picking”\p"
+	.string "Command Dodrio's three heads to\n"
 	.string "catch falling Berries.\p"
 	.string "Press right, up, or left on the\n"
 	.string "{PLUS} Control Pad to move the heads.\p"
 	.string "To play this game, you must have\n"
-	.string "a DODRIO.$"
+	.string "a Dodrio.$"
 
 MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay:
 	.string "If you want to play a game,\n"
@@ -323,8 +323,8 @@ MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed:
 	.string "That's all you need to know.$"
 
 MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed:
-	.string "DODRIO Berry-Picking is a game that \n"
-	.string "only DODRIO may enter.$"
+	.string "Dodrio Berry-Picking is a game that \n"
+	.string "only Dodrio may enter.$"
 
 @ Unused
 MossdeepCity_GameCorner_1F_Text_RetryPlease:
@@ -333,7 +333,7 @@ MossdeepCity_GameCorner_1F_Text_RetryPlease:
 
 CableClub_Text_WelcomeWhichDirectCornerRoom:
 	.string "Welcome to the Pokémon WIRELESS\n"
-	.string "Club DIRECT Corner.\p"
+	.string "Club Direct Corner.\p"
 	.string "You may interact directly with\n"
 	.string "your friends here.\p"
 	.string "Which room would you like to\n"
@@ -435,14 +435,14 @@ CableClub_Text_ExplainWirelessClubFirstTime:
 	.string "With them, you may do things like\n"
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
-	.string "the DIRECT Corner.\p"
+	.string "the Direct Corner.\p"
 	.string "You may trade or battle Pokémon\n"
 	.string "with your friends in this room.\p"
 	.string "If the Wireless Adapter isn't\n"
 	.string "connected, you may still link up\l"
 	.string "using a GBA Game Link cable.\p"
 	.string "If that is the case, you must go\n"
-	.string "to the DIRECT Corner.\p"
+	.string "to the Direct Corner.\p"
 	.string "I hope you enjoy the Wireless \n"
 	.string "Communication System.$"
 
@@ -466,19 +466,19 @@ CableClub_Text_ExplainWirelessClub:
 	.string "With them, you may do things like\n"
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
-	.string "the DIRECT Corner.\p"
+	.string "the Direct Corner.\p"
 	.string "You may trade or battle Pokémon\n"
 	.string "with your friends in this room.\p"
 	.string "Sometimes, you may not be able to\n"
 	.string "find your friends in the UNION ROOM\l"
-	.string "or the DIRECT Corner.\p"
+	.string "or the Direct Corner.\p"
 	.string "In that case, please move closer\n"
 	.string "to your friends.\p"
 	.string "If the Wireless Adapter isn't\n"
 	.string "connected, you may still link up\l"
 	.string "using a GBA Game Link cable.\p"
 	.string "If that is the case, you must go\n"
-	.string "to the DIRECT Corner.\p"
+	.string "to the Direct Corner.\p"
 	.string "I hope you enjoy the Wireless \n"
 	.string "Communication System.$"
 
