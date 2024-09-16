@@ -353,7 +353,7 @@ BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
 	.string "It is the gigantic tower considered\n"
 	.string "to be the Battle Frontier's symbol.\p"
-	.string "There are four kinds of Battle ROOMS\n"
+	.string "There are four kinds of Battle Rooms\n"
 	.string "in the tower for SINGLE, Double, Multi,\l"
 	.string "and Link Multi Battles.$"
 
@@ -402,7 +402,7 @@ BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
 	.string "is conducted there.$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "The RANKING Hall is located near\n"
+	.string "The Ranking Hall is located near\n"
 	.string "the Battle Tower.\p"
 	.string "There, you may see the most fantastic\n"
 	.string "records left by the Trainers that\l"

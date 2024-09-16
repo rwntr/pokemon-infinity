@@ -63,13 +63,13 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	end
 
 MirageTower_4F_Text_TakeRootFossil:
-	.string "You found the ROOT Fossil.\p"
+	.string "You found the Root Fossil.\p"
 	.string "If this Fossil is taken, the ground\n"
 	.string "around it will likely crumble away…\p"
-	.string "Take the ROOT Fossil anyway?$"
+	.string "Take the Root Fossil anyway?$"
 
 MirageTower_4F_Text_LeftRootFossilAlone:
-	.string "{PLAYER} left the ROOT Fossil alone.$"
+	.string "{PLAYER} left the Root Fossil alone.$"
 
 MirageTower_4F_Text_TakeClawFossil:
 	.string "You found the Claw Fossil.\p"

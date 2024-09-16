@@ -230,7 +230,7 @@ Route121_SafariZoneEntrance_Text_TrainerTip:
 
 SafariZone_Southwest_Text_RestHouseSign:
 	.string "“Relieve your tired feet.”\n"
-	.string "REST House$"
+	.string "Rest House$"
 
 SafariZone_RestHouse_Text_Youngster:
 	.string "I don't have any {POKEBLOCK}s, but I caught\n"

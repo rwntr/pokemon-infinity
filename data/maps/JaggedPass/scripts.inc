@@ -219,7 +219,7 @@ JaggedPass_Text_EthanRematchDefeat:
 	.string "bumpy ground…$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "I should get an Acro Bike from RYDEL\n"
+	.string "I should get an Acro Bike from Rydel\n"
 	.string "in Mauville City…$"
 
 JaggedPass_Text_GruntIntro:

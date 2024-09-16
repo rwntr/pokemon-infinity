@@ -681,5 +681,5 @@ BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree:
 BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules:
 	.string "If battling Pokémon faint at the same\n"
 	.string "time--a double KO--in a tournament\l"
-	.string "match, the REFEREES will review\l"
+	.string "match, the Referees will review\l"
 	.string "the match and declare the winner.$"

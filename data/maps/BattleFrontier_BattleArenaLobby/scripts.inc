@@ -488,7 +488,7 @@ BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
 	.string "match on your Frontier Pass?$"
 
 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
-	.string "I lost on the REFEREE's decision…\p"
+	.string "I lost on the Referee's decision…\p"
 	.string "I don't think it was a good idea to only\n"
 	.string "use defensive moves and not attack…$"
 
@@ -527,7 +527,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules:
 	.string "three turns.\p"
 	.string "If the outcome is not decided after\n"
 	.string "three turns, it goes to judging.\p"
-	.string "The REFEREE will choose the winner\n"
+	.string "The Referee will choose the winner\n"
 	.string "based on how the Pokémon battled.\p"
 	.string "Also, a Pokémon cannot be switched out\n"
 	.string "until its battle's outcome is decided.$"

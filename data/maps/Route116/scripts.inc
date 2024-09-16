@@ -409,7 +409,7 @@ Route116_Text_NewBallAvailableAtMart:
 
 Route116_Text_BagIsJamPacked:
 	.string "Your Bag is jam-packed.\n"
-	.string "I can't give you this REPEAT Ball.$"
+	.string "I can't give you this Repeat Ball.$"
 
 Route116_Text_TokenOfAppreciation:
 	.string "As a token of our appreciation for\n"
@@ -447,13 +447,13 @@ Route116_Text_RouteSignRustboro:
 	.string "{LEFT_ARROW} Rustboro City$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "RUSTURF TUNNEL\n"
+	.string "Rusturf TUNNEL\n"
 	.string "“Linking Rustboro and VERDANTURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 
 Route116_Text_TunnelersRestHouse:
-	.string "TUNNELER'S REST House$"
+	.string "TUNNELER'S Rest House$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
 	.string "Trainer TIPS\p"

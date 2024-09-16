@@ -1121,7 +1121,7 @@ SlateportCity_Text_BuyTooMuch:
 SlateportCity_Text_GetNameRaterToHelpYou:
 	.string "If you want to change your Pokémon's\n"
 	.string "nickname, you'll have to get the Name\l"
-	.string "RATER to help you.$"
+	.string "Rater to help you.$"
 
 SlateportCity_Text_CantChangeTradeMonName:
 	.string "Any Pokémon you get in a trade,\n"
@@ -1280,7 +1280,7 @@ SlateportCity_Text_HarborSign:
 	.string "the ferry S.S. TIDAL.”$"
 
 SlateportCity_Text_NameRatersHouseSign:
-	.string "Name RATER'S House\n"
+	.string "Name Rater'S House\n"
 	.string "“Pokémon nicknames rated.”$"
 
 SlateportCity_Text_ExplainBerries:

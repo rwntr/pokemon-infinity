@@ -711,13 +711,13 @@ Route111_Text_ClawFossilDisappeared:
 	.string "the sand…$"
 
 Route111_Text_RootFossilDisappeared:
-	.string "The ROOT Fossil disappeared into\n"
+	.string "The Root Fossil disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Oh, no!\p"
 	.string "My uncle in Mauville told me to take\n"
-	.string "ROCK SMASH with me if I was going to\l"
+	.string "Rock SMASH with me if I was going to\l"
 	.string "Route 111!\p"
 	.string "My uncle? He lives across from\n"
 	.string "the bike shop in Mauville.$"

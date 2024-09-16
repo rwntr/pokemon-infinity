@@ -1024,5 +1024,5 @@ Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz2:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll5Quiz3:
 	.string "MECHADOLL 5 QUIZ.\p"
-	.string "On the Cycling ROAD, how many\n"
+	.string "On the Cycling Road, how many\n"
 	.string "TRIATHLETES were there?$"

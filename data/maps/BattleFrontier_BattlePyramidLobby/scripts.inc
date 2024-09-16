@@ -556,7 +556,7 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid:
 	.string "If you fail in your challenge, any item\n"
 	.string "placed in the Battle Bag disappears.\p"
 	.string "If you want to interrupt your\n"
-	.string "challenge, you must select “REST”\l"
+	.string "challenge, you must select “Rest”\l"
 	.string "and save the game.\p"
 	.string "If you don't save before interrupting,\n"
 	.string "you will be disqualified.$"
@@ -774,9 +774,9 @@ BattleFrontier_BattlePyramidLobby_Text_HintPsychic:
 	.string "from Psychic moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintRock:
-	.string "I see ROCK-type Pokémon…\p"
+	.string "I see Rock-type Pokémon…\p"
 	.string "…And, I see your Pokémon suffering\n"
-	.string "from ROCK moves…$"
+	.string "from Rock moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintFighting:
 	.string "I see Fighting-type Pokémon…\p"
@@ -784,7 +784,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintFighting:
 	.string "by Fighting moves…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintWeather:
-	.string "RAIN Dance… SUNNY Day…\n"
+	.string "Rain Dance… SUNNY Day…\n"
 	.string "SANDSTORM… Hail…\p"
 	.string "I see Pokémon that become stronger\n"
 	.string "with the weather…\p"

@@ -39,10 +39,10 @@ MossdeepCity_Mart_EventScript_Sailor::
 	end
 
 MossdeepCity_Mart_Text_ReviveIsFantastic:
-	.string "REVIVE is fantastic!\p"
+	.string "Revive is fantastic!\p"
 	.string "Give it to a fainted Pokémon,\n"
 	.string "and the Pokémon will arise.\p"
-	.string "But be careful, REVIVE doesn't restore\n"
+	.string "But be careful, Revive doesn't restore\n"
 	.string "the used-up PP of moves.$"
 
 MossdeepCity_Mart_Text_MaxRepelLastsLongest:

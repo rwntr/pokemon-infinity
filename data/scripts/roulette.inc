@@ -56,7 +56,7 @@ Roulette_Text_KeepPlaying::
 	.string "Keep playing?$"
 
 Roulette_Text_BoardWillBeCleared::
-	.string "The ROULETTE board will be cleared.$"
+	.string "The Roulette board will be cleared.$"
 
 @ Unused
 Roulette_Text_YouDontHaveACoinCase::

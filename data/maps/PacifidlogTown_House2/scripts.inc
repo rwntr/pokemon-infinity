@@ -119,7 +119,7 @@ PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
 	.string "deserves a TM like this.$"
 
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
-	.string "If a Pokémon likes you a lot, RETURN's\n"
+	.string "If a Pokémon likes you a lot, Return's\n"
 	.string "power is enhanced.\p"
 	.string "If it doesn't like you, Frustration's\n"
 	.string "power goes up.$"

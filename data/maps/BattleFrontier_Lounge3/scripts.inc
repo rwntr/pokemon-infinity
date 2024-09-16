@@ -225,21 +225,21 @@ BattleFrontier_Lounge3_Text_YouLookToughExplainGambling::
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "TOWER's Single Battle ROOMS.\p"
+	.string "TOWER's Single Battle Rooms.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "TOWER's Double Battle ROOMS.\p"
+	.string "TOWER's Double Battle Rooms.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti::
 	.string "What I'm looking for is a Trainer who's\n"
 	.string "going to be challenging the Battle\l"
-	.string "TOWER's Multi Battle ROOMS.\p"
+	.string "TOWER's Multi Battle Rooms.\p"
 	.string "But so far, I haven't seen a Trainer\n"
 	.string "that has that winning quality.$"
 
@@ -334,21 +334,21 @@ BattleFrontier_Lounge3_Text_ThanksOffYouGo::
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerSingle::
 	.string "Get to the Battle Tower's\n"
-	.string "Single Battle ROOMS pronto!\p"
+	.string "Single Battle Rooms pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerDouble::
 	.string "Get to the Battle Tower's\n"
-	.string "Double Battle ROOMS pronto!\p"
+	.string "Double Battle Rooms pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerMulti::
 	.string "Get to the Battle Tower's\n"
-	.string "Multi Battle ROOMS pronto!\p"
+	.string "Multi Battle Rooms pronto!\p"
 	.string "It's a must-win situation!\n"
 	.string "Don't blow your chance!\l"
 	.string "Both of our futures depend on you!$"

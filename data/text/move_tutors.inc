@@ -32,7 +32,7 @@ MoveTutor_Text_RolloutTeach:
 	.string "that way.\p"
 	.string "Do you think your Pokémon will\n"
 	.string "want to roll, too?\p"
-	.string "I can teach one the move ROLLOUT\n"
+	.string "I can teach one the move Rollout\n"
 	.string "if you'd like.$"
 
 MoveTutor_Text_RolloutDeclined:

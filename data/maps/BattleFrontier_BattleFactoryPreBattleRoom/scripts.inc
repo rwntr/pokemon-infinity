@@ -550,7 +550,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
 	.string "The Trainer is apparently skilled\n"
-	.string "in the handling of the ROCK type.$"
+	.string "in the handling of the Rock type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
 	.string "The Trainer is apparently skilled\n"

@@ -251,7 +251,7 @@ BattleFrontier_OutsideEast_Text_BattlePyramidSign:
 	.string "Advance through the Battle Quest!$"
 
 BattleFrontier_OutsideEast_Text_RankingHallSign:
-	.string "Battle Frontier RANKING Hall\n"
+	.string "Battle Frontier Ranking Hall\n"
 	.string "Set your sights on new records!$"
 
 BattleFrontier_OutsideEast_Text_ExchangeCornerSign:
@@ -390,7 +390,7 @@ BattleFrontier_OutsideEast_Text_EnoughBattlePointsForDoll:
 
 BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere:
 	.string "Oh, yeah, okay!\n"
-	.string "So this is the RANKING Hall!\p"
+	.string "So this is the Ranking Hall!\p"
 	.string "I'd like to go down in history as\n"
 	.string "a super champ and have my name\l"
 	.string "recorded here for posterity.$"

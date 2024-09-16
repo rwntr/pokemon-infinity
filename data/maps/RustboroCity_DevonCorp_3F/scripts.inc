@@ -298,7 +298,7 @@ RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
 	.string "you should go see Capt. Stern.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
-	.string "Devon's new products, the REPEAT Ball\n"
+	.string "Devon's new products, the Repeat Ball\n"
 	.string "and TIMER Ball, have become hugely\l"
 	.string "popular among Trainers.$"
 

@@ -519,7 +519,7 @@ SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory:
 	.string "I'd better write it up in a hurry!$"
 
 gTVRecentHappeningsText00::
-	.string "Hello, it's time for RECENT HAPPENINGS.\p"
+	.string "Hello, it's time for Recent Happenings.\p"
 	.string "For Pokémon Trainers, every day\n"
 	.string "is a storybook tale.\p"
 	.string "What we want to do is to introduce you\n"
@@ -707,7 +707,7 @@ gTVTrainerFanClubSpecialText05::
 
 gTVNameRaterText00::
 	.string "And now, it's time for…\n"
-	.string "THE Name RATER SHOW.\p"
+	.string "THE Name Rater SHOW.\p"
 	.string "I tell your Pokémon's fortune from\n"
 	.string "the nickname you've bestowed.\p"
 	.string "Advice is what I have to give, and it is\n"
@@ -858,9 +858,9 @@ gTVPokemonAnglerText01::
 	.string "catching {STR_VAR_2}?\p"
 	.string "Guru: Hm? Catching {STR_VAR_2}?\n"
 	.string "Well, let me tell you, use your fishing\l"
-	.string "ROD with vigor!\p"
+	.string "Rod with vigor!\p"
 	.string "Do you see {STR_VAR_1} over there?\n"
-	.string "See how the ROD is handled?\p"
+	.string "See how the Rod is handled?\p"
 	.string "That Trainer's already caught\n"
 	.string "{STR_VAR_3} in a row.\p"
 	.string "Announcer: It's incredible!\n"
@@ -1168,7 +1168,7 @@ gTVWorldOfMastersText02::
 	.string "Please tune in next time.$"
 
 gTVTodaysRivalTrainerText00::
-	.string "TODAY'S RIVAL Trainer!\p"
+	.string "Today's Rival Trainer!\p"
 	.string "Hello, fellow Pokémon Trainers!\n"
 	.string "How are we all doing today?\p"
 	.string "Today, like every other day,\n"
@@ -1889,28 +1889,28 @@ gTVPokemonNewsBattleFrontierText01::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
 	.string "the Battle Tower's Single Battle\l"
-	.string "ROOM challenge.\p"
+	.string "Room challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText02::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
 	.string "the Battle Tower's Double Battle\l"
-	.string "ROOM challenge.\p"
+	.string "Room challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText03::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
 	.string "the Battle Tower's Multi Battle\l"
-	.string "ROOM challenge.\p"
+	.string "Room challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText04::
 	.string "The Trainer {STR_VAR_1} set a new\n"
 	.string "{STR_VAR_2}-win-streak record while on\l"
 	.string "the Battle Tower's Link Multi Battle\l"
-	.string "ROOM challenge.\p"
+	.string "Room challenge.\p"
 	.string "Here's to {STR_VAR_1}!$"
 
 gTVPokemonNewsBattleFrontierText05::
@@ -2024,7 +2024,7 @@ gTVWhatsNo1InHoennTodayText01::
 
 gTVWhatsNo1InHoennTodayText02::
 	.string "In one day, {STR_VAR_1} played\n"
-	.string "the ROULETTE game at the Game\l"
+	.string "the Roulette game at the Game\l"
 	.string "Corner {STR_VAR_2} times.\p"
 	.string "While playing, {STR_VAR_1} shouted,\n"
 	.string "“Let the balls decide!”\p"
@@ -2367,7 +2367,7 @@ TVSecretBaseSecrets_Text_UsedJumpMat::
 
 gTVSafariFanClubText00::
 	.string "SAFARI Fan Club!\p"
-	.string "REPORTER: All right, mates!\n"
+	.string "Reporter: All right, mates!\n"
 	.string "Tossing them SAFARI Balls, are you?\p"
 	.string "You can bet I am here in the SAFARI\n"
 	.string "ZONE chock-full of amazing Pokémon!\p"
@@ -2393,7 +2393,7 @@ gTVSafariFanClubText03::
 	.string "There's an expert for you.$"
 
 gTVSafariFanClubText04::
-	.string "REPORTER: Is that right, then?\p"
+	.string "Reporter: Is that right, then?\p"
 	.string "Sounds like our mate {STR_VAR_1}\n"
 	.string "is a stout SAFARI master!\p"
 	.string "Guide: I hope the Trainer comes back\n"
@@ -2425,14 +2425,14 @@ gTVSafariFanClubText08::
 	.string "used at all that time.$"
 
 gTVSafariFanClubText09::
-	.string "REPORTER: Is that right, then?\p"
+	.string "Reporter: Is that right, then?\p"
 	.string "Sounds like our mate {STR_VAR_1}\n"
 	.string "needs more SAFARI seasoning.\p"
 	.string "Guide: I hope the Trainer visits\n"
 	.string "over and over to get the hang of it.$"
 
 gTVSafariFanClubText10::
-	.string "REPORTER: Quite right, it is!\n"
+	.string "Reporter: Quite right, it is!\n"
 	.string "Facing up to challenges is important!\p"
 	.string "Viewers, come on down to the SAFARI\n"
 	.string "and make the challenge yourself!\p"
