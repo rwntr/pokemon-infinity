@@ -723,7 +723,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp:
 	.string "Dusclops used WILL-O-WISP!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam:
-	.string "Dusclops used ICE Beam!$"
+	.string "Dusclops used Ice Beam!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
 	.string "Look here!\n"

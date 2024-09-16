@@ -188,7 +188,7 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 	.string "he uses these three Pokémon:\p"
 	.string "A Dragon & Flying Eon Pokémon,\n"
 	.string "a WATER & Ground MUD Fish Pokémon,\l"
-	.string "and a STEEL- & PSYCHIC-type IRON LEG\l"
+	.string "and a STEEL- & PSYCHIC-type Iron LEG\l"
 	.string "Pokémon.$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
@@ -236,7 +236,7 @@ BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "When she's seriously annoyed, they say\n"
 	.string "she uses these three Pokémon:\p"
 	.string "A POISON-type Fang SNAKE Pokémon,\n"
-	.string "a STEEL & Ground IRON SNAKE Pokémon,\l"
+	.string "a STEEL & Ground Iron SNAKE Pokémon,\l"
 	.string "and a WATER- & Flying-type Atrocious\l"
 	.string "Pokémon.$"
 
@@ -280,7 +280,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
 	.string "spirit, he's said to use these Pokémon:\p"
 	.string "A POISON & Flying-type Bat Pokémon,\n"
 	.string "a NORMAL-type LAZY Pokémon, and a\l"
-	.string "WATER- & ICE-type TRANSPORT Pokémon.$"
+	.string "WATER- & Ice-type TRANSPORT Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "Have you battled the PALACE MAVEN\n"
@@ -304,15 +304,15 @@ BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
 	.string "When he's checking the foe's power,\n"
 	.string "he apparently uses these Pokémon:\p"
 	.string "A ROCK-type ROCK PEAK Pokémon,\n"
-	.string "an ICE-type ICEBERG Pokémon,\l"
-	.string "and a STEEL-type IRON Pokémon.$"
+	.string "an Ice-type Iceberg Pokémon,\l"
+	.string "and a STEEL-type Iron Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 	.string "Have you battled the PYRAMID KING\n"
 	.string "when he's serious?\p"
 	.string "When he's pumped with hot power,\n"
 	.string "he apparently uses these Pokémon:\p"
-	.string "An ICE & Flying Freeze Pokémon, an\n"
+	.string "An Ice & Flying Freeze Pokémon, an\n"
 	.string "Electric & Flying Electric Pokémon,\l"
 	.string "and a Fire- & Flying-type Flame\l"
 	.string "Pokémon.$"

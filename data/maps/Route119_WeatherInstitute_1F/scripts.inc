@@ -116,7 +116,7 @@ Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
 	.string "if the rain can be put to good use.$"
 
 Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
-	.string "On the 2nd floor of the INSTITUTE,\n"
+	.string "On the 2nd floor of the Institute,\n"
 	.string "we study the weather patterns over\l"
 	.string "the Hoenn region.\p"
 	.string "We've been noticing temporary and\n"

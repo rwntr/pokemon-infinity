@@ -221,7 +221,7 @@ RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "It may also not be able to move while\n"
 	.string "it is in battle.\p"
 	.string "Paralysis remains after battle.\n"
-	.string "Cure it using a PARLYZ HEAL.$"
+	.string "Cure it using a PARLYZ Heal.$"
 
 RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "If a Pokémon falls asleep, it will be\n"
@@ -235,13 +235,13 @@ RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "A burn reduces Attack power, and it\n"
 	.string "steadily reduces the victim's HP.\p"
 	.string "A burn lingers after battle.\n"
-	.string "Cure a burn using a BURN HEAL.$"
+	.string "Cure a burn using a BURN Heal.$"
 
 RustboroCity_PokemonSchool_Text_ExplainFreeze:
 	.string "If a Pokémon is frozen, it becomes\n"
 	.string "completely helpless.\p"
 	.string "It will remain frozen after battle.\n"
-	.string "Thaw it out using an ICE HEAL.$"
+	.string "Thaw it out using an Ice Heal.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "Students who don't study get a little\n"

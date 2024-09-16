@@ -1030,7 +1030,7 @@ gTVPokemonTodaySuccessfulText11::
 SmartShopper_Text_Intro::
 	.string "Hello!\p"
 	.string "It's time for TODAY'S SMART SHOPPER.\p"
-	.string "INTERVIEWER: How are you, viewers?\p"
+	.string "Interviewer: How are you, viewers?\p"
 	.string "Today we're visiting a shop\n"
 	.string "in {STR_VAR_2}.\p"
 	.string "Let's check on what the hot sellers\n"
@@ -1047,7 +1047,7 @@ SmartShopper_Text_ClerkNormal::
 	.string "named {STR_VAR_1} bought {STR_VAR_3}.$"
 
 SmartShopper_Text_RandomComment1::
-	.string "INTERVIEWER: The Trainer bought\n"
+	.string "Interviewer: The Trainer bought\n"
 	.string "{STR_VAR_3} {STR_VAR_2}s? That's a haul!\p"
 	.string "If I may say so, {STR_VAR_1} must have\n"
 	.string "been stocking up for a long journey\l"
@@ -1056,13 +1056,13 @@ SmartShopper_Text_RandomComment1::
 	.string "important!$"
 
 SmartShopper_Text_RandomComment2::
-	.string "INTERVIEWER: Speaking of the item\n"
+	.string "Interviewer: Speaking of the item\n"
 	.string "{STR_VAR_2}, I just bought {STR_VAR_3} of\l"
 	.string "them recently.\p"
 	.string "After all, {STR_VAR_2}'s a great item!$"
 
 SmartShopper_Text_RandomComment3::
-	.string "INTERVIEWER: {STR_VAR_2}?!\n"
+	.string "Interviewer: {STR_VAR_2}?!\n"
 	.string "But {STR_VAR_3} of them?!\p"
 	.string "I didn't think there would be anyone\n"
 	.string "buying that many.\p"
@@ -1070,7 +1070,7 @@ SmartShopper_Text_RandomComment3::
 	.string "two at a time…$"
 
 SmartShopper_Text_RandomComment4::
-	.string "INTERVIEWER: One time, I bought\n"
+	.string "Interviewer: One time, I bought\n"
 	.string "a whole lot of the item {STR_VAR_2}.\p"
 	.string "But it turned out to be too many.\n"
 	.string "I ended up regretting it…\p"
@@ -1082,7 +1082,7 @@ SmartShopper_Text_RandomComment4::
 SmartShopper_Text_SecondItem::
 	.string "Clerk: {STR_VAR_1} also bought the item\n"
 	.string "{STR_VAR_2} in bulk, taking {STR_VAR_3}.\p"
-	.string "INTERVIEWER: Oh, that's smart.\n"
+	.string "Interviewer: Oh, that's smart.\n"
 	.string "{STR_VAR_2}'s a very good item, too.$"
 
 SmartShopper_Text_ThirdItem::
@@ -1094,7 +1094,7 @@ SmartShopper_Text_DuringSale::
 	.string "That's smart shopping.$"
 
 SmartShopper_Text_OutroNormal::
-	.string "INTERVIEWER: Hmm… {STR_VAR_1} sounds like\n"
+	.string "Interviewer: Hmm… {STR_VAR_1} sounds like\n"
 	.string "quite the shrewd bargain hunter!\p"
 	.string "In total, {STR_VAR_1}'s purchases came to…\p"
 	.string "¥{STR_VAR_2}?!\n"
@@ -1119,16 +1119,16 @@ SmartShopper_Text_ClerkMax::
 	.string "I never dreamt that any customer\n"
 	.string "would ever need so many {STR_VAR_2}s.\l"
 	.string "It's just unheard of!\p"
-	.string "INTERVIEWER: So that would be like 100\n"
+	.string "Interviewer: So that would be like 100\n"
 	.string "or 200 sold?\p"
 	.string "Clerk: Oh, no, much more than that!\p"
-	.string "INTERVIEWER: Oh, my goodness!\n"
+	.string "Interviewer: Oh, my goodness!\n"
 	.string "{STR_VAR_1} must be a special shopper!\p"
 	.string "Clerk: {STR_VAR_1} is a VIP customer,\n"
 	.string "no doubt about it.$"
 
 SmartShopper_Text_OutroMax::
-	.string "INTERVIEWER: Hmm…\n"
+	.string "Interviewer: Hmm…\n"
 	.string "That is amazing.\p"
 	.string "But why would the Trainer need to buy\n"
 	.string "so many?\p"
@@ -1293,7 +1293,7 @@ TrendWatcher_Text_Outro::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}!$"
 
 gTVHoennTreasureInvestigatorsText00::
-	.string "Hoenn TREASURE INVESTIGATORS!\p"
+	.string "Hoenn TREASURE Investigators!\p"
 	.string "Hi, gang!\n"
 	.string "Score any secret items lately?\p"
 	.string "As always, we'll examine eyewitness\n"
@@ -1304,7 +1304,7 @@ gTVHoennTreasureInvestigatorsText00::
 gTVHoennTreasureInvestigatorsText01::
 	.string "Wow, we'd better check this letter\n"
 	.string "out! Let me read it to you.\p"
-	.string "…Dear INVESTIGATORS,\n"
+	.string "…Dear Investigators,\n"
 	.string "I hope you are well.\p"
 	.string "I recently saw {STR_VAR_2} somewhere\n"
 	.string "around {STR_VAR_3}.\p"
@@ -1312,21 +1312,21 @@ gTVHoennTreasureInvestigatorsText01::
 	.string "{STR_VAR_1}. It made me envious.\p"
 	.string "…Well, good going, {STR_VAR_2}!\p"
 	.string "Viewers, let that motivate you to\n"
-	.string "fire up your ITEMFINDERS and search!\p"
+	.string "fire up your Itemfinders and search!\p"
 	.string "I'll be waiting for exciting news\n"
 	.string "from all of you!$"
 
 gTVHoennTreasureInvestigatorsText02::
 	.string "Wow, we'd better check this letter\n"
 	.string "out! Let me read it to you.\p"
-	.string "…Dear INVESTIGATORS,\n"
+	.string "…Dear Investigators,\n"
 	.string "I hope you are well.\p"
 	.string "I recently saw {STR_VAR_2} on a ferry.\p"
 	.string "The Trainer found the item\n"
 	.string "{STR_VAR_1}. It made me envious.\p"
 	.string "…Well, good going, {STR_VAR_2}!\p"
 	.string "Viewers, let that motivate you to\n"
-	.string "fire up your ITEMFINDERS and search!\p"
+	.string "fire up your Itemfinders and search!\p"
 	.string "I'll be waiting for exciting news\n"
 	.string "from all of you!$"
 
@@ -2358,7 +2358,7 @@ TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown::
 
 TVSecretBaseSecrets_Text_UsedJumpMat::
 	.string "The visitor stepped on\n"
-	.string "a JUMP MAT!\p"
+	.string "a Jump MAT!\p"
 	.string "The visitor jumped once!\p"
 	.string "Jumped twice!\p"
 	.string "And a successful landing!\p"
@@ -2621,7 +2621,7 @@ ContestLiveUpdates_Text_LostBySmallMargin::
 	.string "were weeping over this outcome.$"
 
 ContestLiveUpdates_Text_RepeatedAppeals::
-	.string "It disappointed the JUDGE by\n"
+	.string "It disappointed the Judge by\n"
 	.string "repeating the same appeals.\p"
 	.string "It's an unforgivable error in any\n"
 	.string "Contest, and the Pokémon paid.\p"

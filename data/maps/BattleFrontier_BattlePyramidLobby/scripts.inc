@@ -758,7 +758,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility:
 	.string "escape the power's clutches…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintIce:
-	.string "I see ICE-type Pokémon…\p"
+	.string "I see Ice-type Pokémon…\p"
 	.string "…And, I see your Pokémon fighting\n"
 	.string "the freezing effects of ice…$"
 
