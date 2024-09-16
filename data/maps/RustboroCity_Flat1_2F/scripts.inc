@@ -161,7 +161,7 @@ RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 	.string "Thanks to you, my darling WALDA\n"
 	.string "laughed for me!\p"
 	.string "Actually, I may not look all that\n"
-	.string "special, but I'm one of DEVON\l"
+	.string "special, but I'm one of Devon\l"
 	.string "CORPORATION's top researchers.\p"
 	.string "So, how about I do something in return\n"
 	.string "for you?\p"

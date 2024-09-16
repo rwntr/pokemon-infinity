@@ -424,10 +424,10 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "among Trainers one day!$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "DEWFORD TOWN Pokémon$"
+	.string "DEWFORD Town Pokémon$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "DEWFORD TOWN Pokémon\p"
+	.string "DEWFORD Town Pokémon\p"
 	.string "Brawly's Certified Trainers:\n"
 	.string "{PLAYER}$"
 

@@ -87,7 +87,7 @@ SecretBase_Text_Trainer1PreChampion:
 	.string "I finally got to use it!$"
 
 SecretBase_Text_Trainer6Intro:
-	.string "Welcome to my Pokémon LAB.\p"
+	.string "Welcome to my Pokémon Lab.\p"
 	.string "I carry out research on battling in\n"
 	.string "secrecy.\p"
 	.string "Would you like to see how strong I am?$"
@@ -108,7 +108,7 @@ SecretBase_Text_Trainer6PostBattle:
 	.string "Please come back again tomorrow.$"
 
 SecretBase_Text_Trainer6PreChampion:
-	.string "Welcome to my Pokémon LAB.\p"
+	.string "Welcome to my Pokémon Lab.\p"
 	.string "I carry out research on battling in\n"
 	.string "secrecy.$"
 

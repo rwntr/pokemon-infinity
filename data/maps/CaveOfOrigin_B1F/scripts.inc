@@ -71,7 +71,7 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "with the's operation.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "GROUDON and KYOGRE, the two Pokémon\n"
+	.string "Groudon and Kyogre, the two Pokémon\n"
 	.string "wreaking havoc here, are considered\l"
 	.string "to be super-ancient Pokémon.\p"
 	.string "But there aren't just two super-\n"

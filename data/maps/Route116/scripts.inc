@@ -388,7 +388,7 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "me in PETALBURG WOODS, but also got\l"
 	.string "back my stolen package and then even\l"
 	.string "graciously delivered it to Slateport!\p"
-	.string "CAPT. STERN informed us that the\n"
+	.string "Capt. Stern informed us that the\n"
 	.string "package arrived, too!\p"
 	.string "I thank you very, very much!\p"
 	.string "Why, if I were a rain cloud, I would\n"
@@ -403,7 +403,7 @@ Route116_Text_ThankYouTokenOfAppreciation:
 
 Route116_Text_NewBallAvailableAtMart:
 	.string "Our new Poké Ball will be available\n"
-	.string "at the Pokémon MART in RUSTBORO.\p"
+	.string "at the Pokémon MART in Rustboro.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
 
@@ -443,17 +443,17 @@ Route116_Text_NotWhatImLookingFor:
 	.string "They're not what I'm looking for…$"
 
 Route116_Text_RouteSignRustboro:
-	.string "ROUTE 116\n"
-	.string "{LEFT_ARROW} RUSTBORO CITY$"
+	.string "Route 116\n"
+	.string "{LEFT_ARROW} Rustboro City$"
 
 Route116_Text_RusturfTunnelSign:
 	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
+	.string "“Linking Rustboro and VERDANTURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 
 Route116_Text_TunnelersRestHouse:
-	.string "TUNNELER'S REST HOUSE$"
+	.string "TUNNELER'S REST House$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
 	.string "Trainer TIPS\p"

@@ -124,7 +124,7 @@ MauvilleCity_PokemonCenter_1F_Text_YouDontWantToTrade:
 	.string "I feel unwanted…$"
 
 MauvilleCity_PokemonCenter_1F_Text_YouveNoRoomForThis:
-	.string "You've got all the {STR_VAR_2}S that can\n"
+	.string "You've got all the {STR_VAR_2}s that can\n"
 	.string "be stored. You've no room for this.$"
 
 MauvilleCity_PokemonCenter_1F_Text_SoWellTradeTheseDecor:
@@ -387,7 +387,7 @@ MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle::
 	.string "The Fishing Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtAction::
-	.string "Caught Pokémon with a ROD$"
+	.string "Caught Pokémon with a Rod$"
 
 MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtStory::
 	.string "This is a tale of a Trainer\n"
@@ -401,7 +401,7 @@ MauvilleCity_PokemonCenter_1F_Text_EggsHatchedTitle::
 	.string "The EGG-Warming Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_EggsHatchedAction::
-	.string "Hatched EGGS$"
+	.string "Hatched Eggs$"
 
 MauvilleCity_PokemonCenter_1F_Text_EggsHatchedStory::
 	.string "This is a tale of a Trainer\n"
@@ -429,7 +429,7 @@ MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterTitle::
 	.string "The Pokémon CENTER-Loving Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterAction::
-	.string "Used Pokémon CENTERS$"
+	.string "Used Pokémon Centers$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory::
 	.string "This is a tale of a Trainer\n"
@@ -527,7 +527,7 @@ MauvilleCity_PokemonCenter_1F_Text_UsedStruggleTitle::
 	.string "The Tenacious Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedStruggleAction::
-	.string "Resorted to using STRUGGLE$"
+	.string "Resorted to using Struggle$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedStruggleStory::
 	.string "This is a tale of a Trainer\n"
@@ -583,12 +583,12 @@ MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksTitle::
 	.string "The Blend-Loving Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksAction::
-	.string "Made {POKEBLOCK}S$"
+	.string "Made {POKEBLOCK}s$"
 
 MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksStory::
 	.string "This is a tale of a Trainer\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This Trainer made {POKEBLOCK}S\n"
+	.string "This Trainer made {POKEBLOCK}s\n"
 	.string "{STR_VAR_1} times!\p"
 	.string "There is none better at using a Berry\n"
 	.string "Blender than {STR_VAR_3}!$"

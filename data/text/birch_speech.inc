@@ -1,7 +1,7 @@
 gText_Birch_Welcome::
 	.string "Hi! Sorry to keep you waiting!\p"
 	.string "Welcome to the world of Pokémon!\p"
-	.string "My name is BIRCH.\p"
+	.string "My name is Birch.\p"
 	.string "But everyone calls me the Pokémon\n"
 	.string "PROFESSOR.\p"
 	.string "$"
@@ -57,7 +57,7 @@ gText_Birch_AreYouReady::
 	.string "world of Pokémon where dreams,\l"
 	.string "adventure, and friendships await!\p"
 	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my Pokémon LAB.\p"
+	.string "Come see me in my Pokémon Lab.\p"
 	.string "$"
 
 	gText_Pie_Welcome::

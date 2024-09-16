@@ -259,7 +259,7 @@ MauvilleCity_Gym_EventScript_GymStatue::
 MauvilleCity_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
+	.string "WATTSON, the LEADER of Mauville\n"
 	.string "GYM, uses ELECTRIC-type Pokémon.\p"
 	.string "If you challenge him with WATER-type\n"
 	.string "Pokémon, he'll zap them! Bzzt!\p"
@@ -315,7 +315,7 @@ MauvilleCity_Gym_Text_VivianDefeat:
 	.string "I'm shocked by your power!$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "I've heard that MAUVILLE was founded\n"
+	.string "I've heard that Mauville was founded\n"
 	.string "by WATTSON.\p"
 	.string "He was a Trainer long before we\n"
 	.string "became Trainers.\l"
@@ -329,7 +329,7 @@ MauvilleCity_Gym_Text_AngeloDefeat:
 	.string "My eyes are frazzled…$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "MAUVILLE's WATTSON has a shiny\n"
+	.string "Mauville's WATTSON has a shiny\n"
 	.string "forehead. It makes me happy!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
@@ -343,7 +343,7 @@ MauvilleCity_Gym_Text_WattsonIntro:
 	.string "Wahahahah!\n"
 	.string "Now, that is amusing!\p"
 	.string "Then, I, WATTSON, the LEADER of\n"
-	.string "MAUVILLE, shall electrify you!$"
+	.string "Mauville, shall electrify you!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
 	.string "Wahahahah!\n"
@@ -382,10 +382,10 @@ MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "Go forth and endeavor, youngster!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "MAUVILLE City Pokémon$"
+	.string "Mauville City Pokémon$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "MAUVILLE City Pokémon\p"
+	.string "Mauville City Pokémon\p"
 	.string "WATTSON'S Certified Trainers:\n"
 	.string "{PLAYER}$"
 

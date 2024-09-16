@@ -439,19 +439,19 @@ BattleFrontier_BattleDomeLobby_EventScript_ExitRules::
 BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle:
 	.string "Where the strategies of Trainers\n"
 	.string "are put to the test!\p"
-	.string "Welcome to the BATTLE DOME!\p"
-	.string "I am your guide to the SINGLE BATTLE\n"
+	.string "Welcome to the Battle Dome!\p"
+	.string "I am your guide to the Single Battle\n"
 	.string "Tournament.$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge:
 	.string "Would you like to challenge\n"
-	.string "the SINGLE BATTLE Tournament?$"
+	.string "the Single Battle Tournament?$"
 
 BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain:
 	.string "We hope to see you again.$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
-	.string "The SINGLE BATTLE Tournament\n"
+	.string "The Single Battle Tournament\n"
 	.string "is exactly as the name suggests--\l"
 	.string "a tournament of SINGLE BATTLES.\p"
 	.string "All participating Trainers must\n"
@@ -472,7 +472,7 @@ BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
 	.string "you will be disqualified.$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge:
-	.string "Before I show you to the BATTLE DOME,\n"
+	.string "Before I show you to the Battle Dome,\n"
 	.string "I must save the data. Is that okay?$"
 
 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode:
@@ -504,7 +504,7 @@ BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50:
 
 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome:
 	.string "I will now show you to\n"
-	.string "the BATTLE DOME.$"
+	.string "the Battle Dome.$"
 
 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting:
 	.string "Excuse me!\p"
@@ -544,22 +544,22 @@ BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou:
 	.string "We've been waiting for you!$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2:
-	.string "Before I show you to the BATTLE DOME,\n"
+	.string "Before I show you to the Battle Dome,\n"
 	.string "I must save the data. Is that okay?$"
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle:
 	.string "Where the strategies of Trainers\n"
 	.string "are put to the test!\p"
-	.string "Welcome to the BATTLE DOME!\p"
-	.string "I am your guide to the DOUBLE BATTLE\n"
+	.string "Welcome to the Battle Dome!\p"
+	.string "I am your guide to the Double Battle\n"
 	.string "Tournament.$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:
 	.string "Would you like to challenge\n"
-	.string "the DOUBLE BATTLE Tournament?$"
+	.string "the Double Battle Tournament?$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
-	.string "The DOUBLE BATTLE Tournament\n"
+	.string "The Double Battle Tournament\n"
 	.string "is exactly as the name suggests--\l"
 	.string "a tournament of DOUBLE BATTLES.\p"
 	.string "All participating Trainers must\n"
@@ -567,7 +567,7 @@ BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
 	.string "In each battle, one of the three\n"
 	.string "Pokémon must be held in reserve.\p"
 	.string "The remaining two Pokémon must take\n"
-	.string "part in a DOUBLE BATTLE.\p"
+	.string "part in a Double Battle.\p"
 	.string "Choose the two battling Pokémon after\n"
 	.string "examining the opponent's trio.\p"
 	.string "You win the tournament by defeating\n"
@@ -581,19 +581,19 @@ BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50:
 	.string "They're the results of the last\n"
-	.string "Level 50 SINGLE BATTLE Tournament.$"
+	.string "Level 50 Single Battle Tournament.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLv50:
 	.string "They're the results of the last\n"
-	.string "Level 50 DOUBLE BATTLE Tournament.$"
+	.string "Level 50 Double Battle Tournament.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLvOpen:
 	.string "They're the results of the last\n"
-	.string "Open Level SINGLE BATTLE Tournament.$"
+	.string "Open Level Single Battle Tournament.$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLvOpen:
 	.string "They're the results of the last\n"
-	.string "Open Level DOUBLE BATTLE Tournament.$"
+	.string "Open Level Double Battle Tournament.$"
 
 BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough:
 	.string "Did you see it?\n"
@@ -604,12 +604,12 @@ BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough:
 	.string "on the monitor beside the PC.$"
 
 BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier:
-	.string "The BATTLE FRONTIER…\n"
+	.string "The Battle Frontier…\n"
 	.string "I've long dreamed about a place like it.$"
 
 @ Functionally unused
 BattleFrontier_OutsideWest_Text_BattleDomeSign2:
-	.string "The BATTLE DOME\n"
+	.string "The Battle Dome\n"
 	.string "Become the Unbeatable Superstar!$"
 
 @ Functionally unused
@@ -619,10 +619,10 @@ BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction:
 
 BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation:
 	.string "When a Trainer chains tournament\n"
-	.string "wins at the BATTLE DOME, he or she\l"
+	.string "wins at the Battle Dome, he or she\l"
 	.string "gains a reputation as a star.\p"
 	.string "Tough Trainers are drawn by that\n"
-	.string "reputation to the BATTLE DOME.\p"
+	.string "reputation to the Battle Dome.\p"
 	.string "A true superstar is a Trainer who\n"
 	.string "can keep winning tournaments.$"
 
@@ -640,7 +640,7 @@ BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully:
 
 BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker:
 	.string "Congratulations!\p"
-	.string "You defeated the DOME ACE and won\n"
+	.string "You defeated the Dome Ace and won\n"
 	.string "the Battle Tournament!$"
 
 BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints:
@@ -650,7 +650,7 @@ BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints:
 
 BattleFrontier_BattleDomeLobby_Text_RecordLastMatch:
 	.string "Would you like to record your\n"
-	.string "last BATTLE DOME match on your\l"
+	.string "last Battle Dome match on your\l"
 	.string "FRONTIER PASS?$"
 
 BattleFrontier_BattleDomeLobby_Text_RulesAreListed:

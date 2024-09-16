@@ -129,7 +129,7 @@ BattleFacility_TrainerBattle_PlaceholderText:
 	.string "This is a sample message.$"
 
 gText_BattlePyramidConfirmRest::
-	.string "Your BATTLE PYRAMID quest will be\n"
+	.string "Your Battle Pyramid quest will be\n"
 	.string "saved so that you may quit for now.\l"
 	.string "Is that okay?$"
 

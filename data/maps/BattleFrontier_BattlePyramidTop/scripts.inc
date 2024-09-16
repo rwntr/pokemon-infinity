@@ -221,7 +221,7 @@ BattleFrontier_BattlePyramidTop_Movement_CameraPanUp:
 BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo:
 	.string "It is a delight to see you here!\n"
 	.string "You have reached the summit of\l"
-	.string "the BATTLE PYRAMID!\p"
+	.string "the Battle Pyramid!\p"
 	.string "Above here is the PYRAMID's\n"
 	.string "lookout point.\p"
 	.string "It is a place open only to those\n"

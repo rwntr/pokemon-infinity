@@ -63,7 +63,7 @@ gPokeNewsTextGameCorner_Ongoing::
 	.string "arrived!\p"
 	.string "Could you be lucky at the SLOTS \n"
 	.string "and ROULETTE?\p"
-	.string "The location is MAUVILLE City.\n"
+	.string "The location is Mauville City.\n"
 	.string "This is the place!\p"
 	.string "That's the news on Pokémon NEWS.$"
 
@@ -77,7 +77,7 @@ gPokeNewsTextGameCorner_Ending::
 	.string "Could you be lucky at the SLOTS\n"
 	.string "and ROULETTE?\p"
 	.string "Time is limited and has almost run out.\n"
-	.string "The location is MAUVILLE City.\p"
+	.string "The location is Mauville City.\p"
 	.string "That's the news on Pokémon NEWS.$"
 
 gPokeNewsTextLilycove_Upcoming::
@@ -121,7 +121,7 @@ gPokeNewsTextBlendMaster_Upcoming::
 	.string "Greetings!\n"
 	.string "It's time for Pokémon NEWS.\p"
 	.string "We have big news for everyone\n"
-	.string "involved in the making of {POKEBLOCK}S.\p"
+	.string "involved in the making of {POKEBLOCK}s.\p"
 	.string "The legendary BLEND Master will be\n"
 	.string "appearing in LILYCOVE City with just\l"
 	.string "a mere {STR_VAR_1}-day wait to go!\p"
@@ -129,7 +129,7 @@ gPokeNewsTextBlendMaster_Upcoming::
 	.string "the best in all Hoenn when it comes to\l"
 	.string "spinning a Berry Blender.\p"
 	.string "Those people who want to make great\n"
-	.string "{POKEBLOCK}S or see the Master in action\l"
+	.string "{POKEBLOCK}s or see the Master in action\l"
 	.string "are urged to save their Berries.\p"
 	.string "That's the news on Pokémon NEWS.$"
 
@@ -137,14 +137,14 @@ gPokeNewsTextBlendMaster_Ongoing::
 	.string "Greetings!\n"
 	.string "It's time for Pokémon NEWS.\p"
 	.string "We have big news for everyone\n"
-	.string "involved in the making of {POKEBLOCK}S.\p"
+	.string "involved in the making of {POKEBLOCK}s.\p"
 	.string "The legendary BLEND Master has\n"
 	.string "finally appeared!\p"
 	.string "The BLEND Master is spinning\n"
 	.string "the Berry Blender at the LILYCOVE\l"
 	.string "Contest HALL.\p"
 	.string "Those people who want to make great\n"
-	.string "{POKEBLOCK}S or see the Master in action\l"
+	.string "{POKEBLOCK}s or see the Master in action\l"
 	.string "should hurry to LILYCOVE.\p"
 	.string "That's the news on Pokémon NEWS.$"
 

@@ -73,7 +73,7 @@ FallarborTown_Text_Azurill:
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "Have you already challenged FLANNERY,\n"
-	.string "the LEADER of LAVARIDGE?\p"
+	.string "the LEADER of Lavaridge?\p"
 	.string "The girl's grandfather was famous.\n"
 	.string "He was one of the ELITE FOUR in the\l"
 	.string "Pokémon League at one point.\p"
@@ -82,11 +82,11 @@ FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "right.$"
 
 FallarborTown_Text_BattleTentSign:
-	.string "BATTLE TENT FALLARBOR SITE\n"
+	.string "Battle Tent Fallarbor Site\n"
 	.string "“May the Greatest Teams Gather!”$"
 
 FallarborTown_Text_TownSign:
-	.string "FALLARBOR TOWN\n"
+	.string "Fallarbor Town\n"
 	.string "“A farm community with small gardens.”$"
 
 FallarborTown_Text_MoveTutorSign:

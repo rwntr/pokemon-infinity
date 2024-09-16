@@ -12,7 +12,7 @@ FortreeCity_House3_EventScript_SchoolKidM::
 FortreeCity_House3_Text_MetStevenHadAmazingPokemon:
 	.string "While speaking about Pokédexes,\n"
 	.string "I remembered something.\p"
-	.string "I met this Trainer, STEVEN, when\n"
+	.string "I met this Trainer, Steven, when\n"
 	.string "I was searching for rare stones.\p"
 	.string "Hoo, boy, he had some amazing Pokémon\n"
 	.string "with him.\p"

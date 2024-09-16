@@ -274,8 +274,8 @@ BattleFrontier_BattlePike_EventScript_CloseCurtain::
 BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike:
 	.string "Where the luck of Trainers\n"
 	.string "is put to the test…\p"
-	.string "Welcome to the BATTLE PIKE…\p"
-	.string "I am your guide to the BATTLE PIKE…$"
+	.string "Welcome to the Battle Pike…\p"
+	.string "I am your guide to the Battle Pike…$"
 
 BattleFrontier_BattlePikeLobby_Text_TakeChallenge:
 	.string "Would you like to take the Battle\n"
@@ -288,7 +288,7 @@ BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike:
 	.string "simple…\p"
 	.string "Choose one of three paths and make\n"
 	.string "your way to the goal room at the end\l"
-	.string "of the BATTLE PIKE. It's that simple.\p"
+	.string "of the Battle Pike. It's that simple.\p"
 	.string "However, what happens on the chosen\n"
 	.string "path depends entirely on the luck\l"
 	.string "of the challenger…\p"
@@ -382,7 +382,7 @@ BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting:
 BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen:
 	.string "Congratulations…\p"
 	.string "You have snatched victory from the\n"
-	.string "PIKE QUEEN and cleared the event…$"
+	.string "Pike Queen and cleared the event…$"
 
 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints:
 	.string "In recognition of your amazing luck,\n"

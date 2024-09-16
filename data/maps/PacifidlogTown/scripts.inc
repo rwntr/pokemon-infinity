@@ -48,7 +48,7 @@ PacifidlogTown_Text_SkyPillarTooScary:
 	.string "that suits me fine.$"
 
 PacifidlogTown_Text_TownSign:
-	.string "PACIFIDLOG TOWN\p"
+	.string "PACIFIDLOG Town\p"
 	.string "“Where the morning sun smiles upon\n"
 	.string "the waters.”$"
 
