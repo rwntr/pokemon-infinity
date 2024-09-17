@@ -2230,6 +2230,24 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MaxLure,
     },
 
+    [ITEM_POKE_VIAL] =
+    {
+        .name = _("Poké Vial"),
+        .price = 0,
+        .holdEffectParam = 0,
+        .description = COMPOUND_STRING(
+            "Potent medicine\n"
+            "that fully restores\n"
+            "all Pokémon."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+
+    },
+    //DEAL WITH THIS LATER LOL .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
+
+
     [ITEM_ESCAPE_ROPE] =
     {
         .name = _("Escape Rope"),
@@ -6032,6 +6050,125 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
         .iconPic = gItemIcon_Diancite,
         .iconPalette = gItemIconPalette_Diancite,
+    },
+
+    [ITEM_MILOTICITE] =
+    {
+        .name = _("Miloticite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Milotic to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Miloticite,
+        .iconPalette = gItemIconPalette_Miloticite,
+    },
+
+    [ITEM_BUTTERFRENITE] =
+    {
+        .name = _("Butterfrenite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Butterfree to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Butterfrenite,
+        .iconPalette = gItemIconPalette_Butterfrenite,
+    },
+
+    [ITEM_MACHAMPITE] =
+    {
+        .name = _("Machampite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Machamp to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Machampite,
+        .iconPalette = gItemIconPalette_Machampite,
+    },
+
+    [ITEM_KINGLERITE] =
+    {
+        .name = _("Kinglerite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Kingler to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Kinglerite,
+        .iconPalette = gItemIconPalette_Kinglerite,
+    },
+
+    [ITEM_KINGDRANITE] =
+    {
+        .name = _("Kingdranite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Kingdra to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Kingdranite,
+        .iconPalette = gItemIconPalette_Kingdranite,
+    },
+
+    [ITEM_LAPRASITE] =
+    {
+        .name = _("Laprasite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Lapras to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Laprasite,
+        .iconPalette = gItemIconPalette_Laprasite,
+    },
+
+    [ITEM_FLYGONITE] =
+    {
+        .name = _("Flygonite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Flygon to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Flygonite,
+        .iconPalette = gItemIconPalette_Flygonite,
     },
 
 // Gems
@@ -14069,5 +14206,19 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
+    },
+
+    [ITEM_TRAINING_BAND] =
+    {
+        .name = _("Training Band"),
+        .price = 5000,
+        .holdEffect = HOLD_EFFECT_TRAINING_BAND,
+        .description = COMPOUND_STRING(
+            "Massively boosts\n"
+            "Exp. gain for\n"
+            "weaker Pokémon."),
+        .pocket = POCKET_BATTLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 };

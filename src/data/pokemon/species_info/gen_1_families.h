@@ -1192,6 +1192,66 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sButterfreeFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_BUTTERFREE_MEGA] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 15,
+        .baseDefense   = 60,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = BUTTERFREE_EXP_YIELD,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_SILVER_POWDER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_COMPOUND_EYES, ABILITY_COMPOUND_EYES },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Butterfree"),
+        .cryId = CRY_BUTTERFREE_MEGA,
+        .natDexNum = NATIONAL_DEX_BUTTERFREE,
+        .categoryName = _("Butterfly"),
+        .height = 170,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Its luminescent wings are good for\n"
+            "both stirring up strong hurricanes\n"
+            "and disorienting foes with their\n"
+            "loud, rhythmic beating."),
+        .pokemonScale = 312,
+        .pokemonOffset = 2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ButterfreeMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_ButterfreeMega,
+         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 7,
+        .backPic = gMonBackPic_ButterfreeMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_ButterfreeMega,
+        .shinyPalette = gMonShinyPalette_ButterfreeMega,
+        .iconSprite = gMonIcon_ButterfreeMega,
+        .iconPalIndex = 0,
+        FOOTPRINT(Butterfree)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sButterfreeLevelUpLearnset,
+        .teachableLearnset = sButterfreeTeachableLearnset,
+        .formSpeciesIdTable = sButterfreeFormSpeciesIdTable,
+        .formChangeTable = sButterfreeFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_BUTTERFREE_GIGANTAMAX] =
     {
@@ -7745,6 +7805,64 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sMachampFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_MACHAMP_MEGA] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 170,
+        .baseDefense   = 100,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .catchRate = 45,
+        .expYield = MACHAMP_EXP_YIELD,
+        .evYield_Attack = 3,
+        .itemRare = ITEM_FOCUS_BAND,
+        .genderRatio = PERCENT_FEMALE(25),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_POWER_FISTS, ABILITY_POWER_FISTS, ABILITY_POWER_FISTS },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Machamp"),
+        .cryId = CRY_MACHAMP_MEGA,
+        .natDexNum = NATIONAL_DEX_MACHAMP,
+        .categoryName = _("Superpower"),
+        .height = 250,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Mega Machamp's fists are said to\n"
+            "pierce through even the toughest\n"
+            "of defenses - almost as if by\n"
+            "magic."),
+        .pokemonScale = 280,
+        .pokemonOffset = 1,
+        .trainerScale = 269,
+        .trainerOffset = -1,
+        .frontPic = gMonFrontPic_MachampMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_MachampMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_MachampMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_MachampMega,
+        .shinyPalette = gMonShinyPalette_MachampMega,
+        .iconSprite = gMonIcon_MachampMega,
+        .iconPalIndex = 0,
+        FOOTPRINT(Machamp)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sMachampLevelUpLearnset,
+        .teachableLearnset = sMachampTeachableLearnset,
+        .formSpeciesIdTable = sMachampFormSpeciesIdTable,
+        .formChangeTable = sMachampFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_MACHAMP_GIGANTAMAX] =
     {
@@ -11088,6 +11206,62 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sKinglerFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_KINGLER_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 170,
+        .baseDefense   = 135,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 206,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
+        .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
+        .speciesName = _("Kingler"),
+        .cryId = CRY_KINGLER_MEGA,
+        .natDexNum = NATIONAL_DEX_KINGLER,
+        .categoryName = _("Pincer"),
+        .height = 190,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "The pincers of Mega Kingler\n"
+            "can destroy anything they hit."),
+        .pokemonScale = 256,
+        .pokemonOffset = 2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KinglerMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_KinglerMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_KinglerMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_KinglerMega,
+        .shinyPalette = gMonShinyPalette_KinglerMega,
+        .iconSprite = gMonIcon_KinglerMega,
+        .iconPalIndex = 0,
+        FOOTPRINT(Kingler)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sKinglerLevelUpLearnset,
+        .teachableLearnset = sKinglerTeachableLearnset,
+        .formSpeciesIdTable = sKinglerFormSpeciesIdTable,
+        .formChangeTable = sKinglerFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_KINGLER_GIGANTAMAX] =
     {
@@ -13315,6 +13489,69 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKingdraLevelUpLearnset,
         .teachableLearnset = sKingdraTeachableLearnset,
     },
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_KINGDRA_MEGA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 105,
+        .baseDefense   = 100,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 270,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 243,
+    #else
+        .expYield = 207,
+    #endif
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_DRAGON_SCALE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SWIFT_SWIM, ABILITY_SWIFT_SWIM },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Kingdra"),
+        .cryId = CRY_KINGDRA_MEGA,
+        .natDexNum = NATIONAL_DEX_KINGDRA,
+        .categoryName = _("Dragon"),
+        .height = 18,
+        .weight = 1520,
+        .description = COMPOUND_STRING(
+            "Mega Kingdra's fins allow it to deftly.\n"
+            "cut through rushing water currents.\n"
+            "Its sheer speed can cause massive\n"
+            "whirlpools, damaging unsuspecting ships."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 287,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KingdraMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_KingdraMega,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .backPic = gMonBackPic_KingdraMega,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_KingdraMega,
+        .shinyPalette = gMonShinyPalette_KingdraMega,
+        .iconSprite = gMonIcon_KingdraMega,
+        .iconPalIndex = 0,
+        FOOTPRINT(Kingdra)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sKingdraLevelUpLearnset,
+        .teachableLearnset = sKingdraTeachableLearnset,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HORSEA
 
@@ -15344,6 +15581,67 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Lapras)
         .isGigantamax = TRUE,
+        .levelUpLearnset = sLaprasLevelUpLearnset,
+        .teachableLearnset = sLaprasTeachableLearnset,
+        .eggMoveLearnset = sLaprasEggMoveLearnset,
+        .formSpeciesIdTable = sLaprasFormSpeciesIdTable,
+        .formChangeTable = sLaprasFormChangeTable,
+    },
+#endif //P_GIGANTAMAX_FORMS
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_LAPRAS_MEGA] =
+    {
+        .baseHP        = 130,
+        .baseAttack    = 105,
+        .baseDefense   = 110,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 187 : 219,
+        .evYield_HP = 2,
+        .itemCommon = ITEM_MYSTIC_WATER,
+        .itemRare = ITEM_MYSTIC_WATER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_ICE_BODY, ABILITY_ICE_BODY, ABILITY_ICE_BODY },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Lapras"),
+        .cryId = CRY_LAPRAS_MEGA,
+        .natDexNum = NATIONAL_DEX_LAPRAS,
+        .categoryName = _("Transport"),
+        .height = 240,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "The Mega Energy coursing through this\n"
+            "Pokémon's body results in a shimmering\n"
+            "blue aura around it.  Sailors who\n"
+            "come close to one at sea claim to\n"
+            "hear a faint singing."),
+        .pokemonScale = 257,
+        .pokemonOffset = 10,
+        .trainerScale = 423,
+        .trainerOffset = 8,
+        .frontPic = gMonFrontPic_LaprasMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_LaprasMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_LaprasGigantamax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_LaprasMega,
+        .shinyPalette = gMonShinyPalette_LaprasMega,
+        .iconSprite = gMonIcon_LaprasMega,
+        .iconPalIndex = 2,
+        FOOTPRINT(Lapras)
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sLaprasLevelUpLearnset,
         .teachableLearnset = sLaprasTeachableLearnset,
         .eggMoveLearnset = sLaprasEggMoveLearnset,
