@@ -3209,7 +3209,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     }
                 }
                 else if (GetBattlerTurnOrderNum(gEffectBattler) > gCurrentTurnActionNumber
-                        && !(GetActiveGimmick(gEffectBattler) == GIMMICK_DYNAMAX))
+                        && GetActiveGimmick(gEffectBattler) != GIMMICK_DYNAMAX)
                 {
                     gBattleMons[gEffectBattler].status2 |= sStatusFlagsForMoveEffects[gBattleScripting.moveEffect];
                     gBattlescriptCurrInstr++;
@@ -4012,7 +4012,7 @@ static void Cmd_tryfaintmon(void)
                 gSideTimers[B_SIDE_OPPONENT].retaliateTimer = 2;
             }
             if ((gHitMarker & HITMARKER_DESTINYBOND) && IsBattlerAlive(gBattlerAttacker)
-                 && !(GetActiveGimmick(gBattlerAttacker) == GIMMICK_DYNAMAX))
+                 && GetActiveGimmick(gBattlerAttacker) != GIMMICK_DYNAMAX)
             {
                 gHitMarker &= ~HITMARKER_DESTINYBOND;
                 BattleScriptPush(gBattlescriptCurrInstr);
@@ -4298,10 +4298,6 @@ static void Cmd_getexp(void)
         }
         else
         {
-            // Print Exp gain message once, only after KO, and only if something can gain Exp
-            if (!PartyIsMaxLevel())
-                PrepareStringBattle(STRINGID_PKMNGAINEDEXP, *expMonId);
-
             gBattleScripting.getexpState++;
             gBattleStruct->givenExpMons |= gBitTable[gBattlerPartyIndexes[gBattlerFainted]];
         }
@@ -4314,6 +4310,7 @@ static void Cmd_getexp(void)
             u32 sentInBits = gSentPokesToOpponent[(gBattlerFainted & 2) >> 1];
             u32 expShareBits = 0;
             s32 viaSentIn = 0;
+            s32 viaExpShare = 0;
 
             for (i = 0; i < PARTY_SIZE; i++)
             {
@@ -4323,6 +4320,11 @@ static void Cmd_getexp(void)
                     viaSentIn++;
 
                 holdEffect = GetMonHoldEffect(&gPlayerParty[i]);
+                if (holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
+                {
+                    expShareBits |= gBitTable[i];
+                    viaExpShare++;
+                }
             }
             // Get order of mons getting exp: 1. all mons via sent in, 2. all mons via exp share
             for (i = 0; i < PARTY_SIZE; i++)
@@ -4347,11 +4349,33 @@ static void Cmd_getexp(void)
             if (B_TRAINER_EXP_MULTIPLIER <= GEN_7 && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                 calculatedExp = (calculatedExp * 150) / 100;
 
-            *exp = calculatedExp;
-            gBattleStruct->expShareExpValue = calculatedExp / 4; // Portion of EXP given to all Pokemon, whether they battled or not
-            if (gBattleStruct->expShareExpValue == 0)
-                gBattleStruct->expShareExpValue = 1;
+            if (B_SPLIT_EXP < GEN_6)
+            {
+                if (viaExpShare) // at least one mon is getting exp via exp share
+                {
+                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
+                    if (*exp == 0)
+                        *exp = 1;
 
+                    gBattleStruct->expShareExpValue = calculatedExp / 4;  //Flat 25% of base value
+                    if (gBattleStruct->expShareExpValue == 0)
+                        gBattleStruct->expShareExpValue = 1;
+                }
+                else
+                {
+                    *exp = SAFE_DIV(calculatedExp, viaSentIn);
+                    if (*exp == 0)
+                        *exp = 1;
+                    gBattleStruct->expShareExpValue = 0;
+                }
+            }
+            else
+            {
+                *exp = calculatedExp;
+                gBattleStruct->expShareExpValue = calculatedExp / 4;  //Flat 25% of base value
+                if (gBattleStruct->expShareExpValue == 0)
+                    gBattleStruct->expShareExpValue = 1;
+            }
 
             gBattleScripting.getexpState++;
             gBattleStruct->expOrderId = 0;
@@ -12854,7 +12878,7 @@ static void Cmd_trysetencore(void)
 
     s32 i;
 
-    if (IsMaxMove(gLastMoves[gBattlerTarget]) && !(GetActiveGimmick(gBattlerTarget) == GIMMICK_DYNAMAX))
+    if (IsMaxMove(gLastMoves[gBattlerTarget]) && GetActiveGimmick(gBattlerTarget) != GIMMICK_DYNAMAX)
     {
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
