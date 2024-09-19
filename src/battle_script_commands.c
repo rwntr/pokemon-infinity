@@ -4249,6 +4249,19 @@ static bool32 BattleTypeAllowsExp(void)
         return TRUE;
 }
 
+bool8 PartyIsMaxLevel(void)
+{
+    int i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) != 100
+            && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+            return FALSE;
+    }
+    return TRUE;
+}
+
 static u32 GetMonHoldEffect(struct Pokemon *mon)
 {
     u32 holdEffect;
@@ -4269,13 +4282,11 @@ static u32 GetMonHoldEffect(struct Pokemon *mon)
 static void Cmd_getexp(void)
 {
     CMD_ARGS(u8 battler);
-
     u32 holdEffect;
     s32 i; // also used as stringId
     u8 *expMonId = &gBattleStruct->expGetterMonId;
 
     gBattlerFainted = GetBattlerForBattleScript(cmd->battler);
-
     switch (gBattleScripting.getexpState)
     {
     case 0: // check if should receive exp at all
@@ -4287,6 +4298,10 @@ static void Cmd_getexp(void)
         }
         else
         {
+            // Print Exp gain message once, only after KO, and only if something can gain Exp
+            if (!PartyIsMaxLevel())
+                PrepareStringBattle(STRINGID_PKMNGAINEDEXP, *expMonId);
+
             gBattleScripting.getexpState++;
             gBattleStruct->givenExpMons |= gBitTable[gBattlerPartyIndexes[gBattlerFainted]];
         }
@@ -4299,7 +4314,6 @@ static void Cmd_getexp(void)
             u32 sentInBits = gSentPokesToOpponent[(gBattlerFainted & 2) >> 1];
             u32 expShareBits = 0;
             s32 viaSentIn = 0;
-            s32 viaExpShare = 0;
 
             for (i = 0; i < PARTY_SIZE; i++)
             {
@@ -4309,11 +4323,6 @@ static void Cmd_getexp(void)
                     viaSentIn++;
 
                 holdEffect = GetMonHoldEffect(&gPlayerParty[i]);
-                if (holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
-                {
-                    expShareBits |= gBitTable[i];
-                    viaExpShare++;
-                }
             }
             // Get order of mons getting exp: 1. all mons via sent in, 2. all mons via exp share
             for (i = 0; i < PARTY_SIZE; i++)
@@ -4338,33 +4347,11 @@ static void Cmd_getexp(void)
             if (B_TRAINER_EXP_MULTIPLIER <= GEN_7 && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                 calculatedExp = (calculatedExp * 150) / 100;
 
-            if (B_SPLIT_EXP < GEN_6)
-            {
-                if (viaExpShare) // at least one mon is getting exp via exp share
-                {
-                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
-                    if (*exp == 0)
-                        *exp = 1;
+            *exp = calculatedExp;
+            gBattleStruct->expShareExpValue = calculatedExp / 4; // Portion of EXP given to all Pokemon, whether they battled or not
+            if (gBattleStruct->expShareExpValue == 0)
+                gBattleStruct->expShareExpValue = 1;
 
-                    gBattleStruct->expShareExpValue = calculatedExp / 2 / viaExpShare;
-                    if (gBattleStruct->expShareExpValue == 0)
-                        gBattleStruct->expShareExpValue = 1;
-                }
-                else
-                {
-                    *exp = SAFE_DIV(calculatedExp, viaSentIn);
-                    if (*exp == 0)
-                        *exp = 1;
-                    gBattleStruct->expShareExpValue = 0;
-                }
-            }
-            else
-            {
-                *exp = calculatedExp;
-                gBattleStruct->expShareExpValue = calculatedExp / 2;
-                if (gBattleStruct->expShareExpValue == 0)
-                    gBattleStruct->expShareExpValue = 1;
-            }
 
             gBattleScripting.getexpState++;
             gBattleStruct->expOrderId = 0;
@@ -4414,16 +4401,10 @@ static void Cmd_getexp(void)
 
                 if (IsValidForBattle(&gPlayerParty[*expMonId]))
                 {
-                    if (wasSentOut)
+                    if (wasSentOut || holdEffect == HOLD_EFFECT_EXP_SHARE)
                         gBattleMoveDamage = GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expValue);
                     else
-                        gBattleMoveDamage = 0;
-
-                    if ((holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
-                        && (B_SPLIT_EXP < GEN_6 || gBattleMoveDamage == 0)) // only give exp share bonus in later gens if the mon wasn't sent out
-                    {
-                        gBattleMoveDamage += GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);;
-                    }
+                        gBattleMoveDamage = GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);
 
                     ApplyExperienceMultipliers(&gBattleMoveDamage, *expMonId, gBattlerFainted);
 
@@ -15313,6 +15294,16 @@ static void Cmd_handleballthrow(void)
                 gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
                 SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
             }
+            else if (gLastUsedItem == ITEM_DREAM_BALL)
+            {
+                u8 Ability = 2;
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &Ability);
+            }
+            else if (gLastUsedItem == ITEM_FRIEND_BALL)
+            {
+                u8 Friendship= 200;
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, &Friendship);
+            }
         }
         else // mon may be caught, calculate shakes
         {
@@ -15366,6 +15357,16 @@ static void Cmd_handleballthrow(void)
                     HealStatusConditions(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], STATUS1_ANY, gBattlerTarget);
                     gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
                     SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+                }
+                else if (gLastUsedItem == ITEM_DREAM_BALL)
+                {
+                    u8 Ability = 2;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &Ability);
+                }
+                else if (gLastUsedItem == ITEM_FRIEND_BALL)
+                {
+                    u8 Friendship= 200;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, &Friendship);
                 }
             }
             else // not caught
