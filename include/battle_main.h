@@ -87,6 +87,7 @@ void ModifyPersonalityForNature(u32 *personality, u32 newNature);
 u32 GeneratePersonalityForGender(u32 gender, u32 species);
 void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon *partyEntry);
 void trySetMonEvIvFromSpread(struct Pokemon *mon, const struct TrainerMon *partyData, s32 idx);
+s32 GetHighestLevelInPlayerParty(void);
 
 extern u16 gDynamicEnemyMinLevel(const struct Trainer *trainer,bool32 firstTrainer, u32 battleTypeFlags);
 

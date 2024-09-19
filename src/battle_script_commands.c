@@ -16197,10 +16197,19 @@ u8 GetFirstFaintedPartyIndex(u8 battler)
 
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler)
 {
+    s32 highestLevel;
     u32 holdEffect = GetMonHoldEffect(&gPlayerParty[expGetterMonId]);
 
     if (IsTradedMon(&gPlayerParty[expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
+    if (holdEffect == HOLD_EFFECT_TRAINING_BAND)
+    {
+        highestLevel = GetHighestLevelInPlayerParty();
+        if (GetMonData(&gPlayerParty[expGetterMonId], MON_DATA_LEVEL) < (highestLevel - 4))
+        {
+            *expAmount *= 5;
+        }
+    }
     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
         *expAmount = (*expAmount * 150) / 100;
     if (B_UNEVOLVED_EXP_MULTIPLIER >= GEN_6 && IsMonPastEvolutionLevel(&gPlayerParty[expGetterMonId]))

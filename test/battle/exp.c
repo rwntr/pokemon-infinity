@@ -47,15 +47,17 @@ WILD_BATTLE_TEST("Higher leveled Pokemon give more exp", s32 exp)
     }
 }
 
-WILD_BATTLE_TEST("Lucky Egg boosts gained exp points by 50%", s32 exp)
+WILD_BATTLE_TEST("Lucky Egg & Training Band boost Exp gains by 50% and 500% respectively", s32 exp)
 {
     u32 item = 0;
 
     PARAMETRIZE { item = ITEM_LUCKY_EGG; }
     PARAMETRIZE { item = ITEM_NONE; }
+    PARAMETRIZE { item = ITEM_TRAINING_BAND; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Level(20); Item(item); }
+        PLAYER(SPECIES_TRUBBISH) { Level(100); Moves(MOVE_SPLASH); } //to proc training band
         OPPONENT(SPECIES_CATERPIE) { Level(10); HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -65,6 +67,7 @@ WILD_BATTLE_TEST("Lucky Egg boosts gained exp points by 50%", s32 exp)
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].exp, Q_4_12(1.5), results[0].exp);
+        EXPECT_MUL_EQ(results[1].exp, Q_4_12(5), results[2].exp);
     }
 }
 
