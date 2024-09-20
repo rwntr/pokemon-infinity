@@ -1001,7 +1001,19 @@
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 828
+//IE Items
+#define ITEM_MILOTICITE 828
+#define ITEM_BUTTERFRENITE 829
+#define ITEM_MACHAMPITE 830
+#define ITEM_KINGLERITE 831
+#define ITEM_KINGDRANITE 832
+#define ITEM_LAPRASITE 833
+#define ITEM_FLYGONITE 834
+#define ITEM_TRAINING_BAND 835
+#define ITEM_POKE_VIAL 836
+
+
+#define ITEMS_COUNT 837
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

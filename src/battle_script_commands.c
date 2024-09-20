@@ -3209,7 +3209,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     }
                 }
                 else if (GetBattlerTurnOrderNum(gEffectBattler) > gCurrentTurnActionNumber
-                        && !(GetActiveGimmick(gEffectBattler) == GIMMICK_DYNAMAX))
+                        && GetActiveGimmick(gEffectBattler) != GIMMICK_DYNAMAX)
                 {
                     gBattleMons[gEffectBattler].status2 |= sStatusFlagsForMoveEffects[gBattleScripting.moveEffect];
                     gBattlescriptCurrInstr++;
@@ -4012,7 +4012,7 @@ static void Cmd_tryfaintmon(void)
                 gSideTimers[B_SIDE_OPPONENT].retaliateTimer = 2;
             }
             if ((gHitMarker & HITMARKER_DESTINYBOND) && IsBattlerAlive(gBattlerAttacker)
-                 && !(GetActiveGimmick(gBattlerAttacker) == GIMMICK_DYNAMAX))
+                 && GetActiveGimmick(gBattlerAttacker) != GIMMICK_DYNAMAX)
             {
                 gHitMarker &= ~HITMARKER_DESTINYBOND;
                 BattleScriptPush(gBattlescriptCurrInstr);
@@ -4249,6 +4249,19 @@ static bool32 BattleTypeAllowsExp(void)
         return TRUE;
 }
 
+bool8 PartyIsMaxLevel(void)
+{
+    int i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) != 100
+            && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+            return FALSE;
+    }
+    return TRUE;
+}
+
 static u32 GetMonHoldEffect(struct Pokemon *mon)
 {
     u32 holdEffect;
@@ -4269,13 +4282,11 @@ static u32 GetMonHoldEffect(struct Pokemon *mon)
 static void Cmd_getexp(void)
 {
     CMD_ARGS(u8 battler);
-
     u32 holdEffect;
     s32 i; // also used as stringId
     u8 *expMonId = &gBattleStruct->expGetterMonId;
 
     gBattlerFainted = GetBattlerForBattleScript(cmd->battler);
-
     switch (gBattleScripting.getexpState)
     {
     case 0: // check if should receive exp at all
@@ -4346,7 +4357,7 @@ static void Cmd_getexp(void)
                     if (*exp == 0)
                         *exp = 1;
 
-                    gBattleStruct->expShareExpValue = calculatedExp / 2 / viaExpShare;
+                    gBattleStruct->expShareExpValue = calculatedExp / 4;  //Flat 25% of base value
                     if (gBattleStruct->expShareExpValue == 0)
                         gBattleStruct->expShareExpValue = 1;
                 }
@@ -4361,7 +4372,7 @@ static void Cmd_getexp(void)
             else
             {
                 *exp = calculatedExp;
-                gBattleStruct->expShareExpValue = calculatedExp / 2;
+                gBattleStruct->expShareExpValue = calculatedExp / 4;  //Flat 25% of base value
                 if (gBattleStruct->expShareExpValue == 0)
                     gBattleStruct->expShareExpValue = 1;
             }
@@ -4414,16 +4425,10 @@ static void Cmd_getexp(void)
 
                 if (IsValidForBattle(&gPlayerParty[*expMonId]))
                 {
-                    if (wasSentOut)
+                    if (wasSentOut || holdEffect == HOLD_EFFECT_EXP_SHARE)
                         gBattleMoveDamage = GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expValue);
                     else
-                        gBattleMoveDamage = 0;
-
-                    if ((holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
-                        && (B_SPLIT_EXP < GEN_6 || gBattleMoveDamage == 0)) // only give exp share bonus in later gens if the mon wasn't sent out
-                    {
-                        gBattleMoveDamage += GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);;
-                    }
+                        gBattleMoveDamage = GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);
 
                     ApplyExperienceMultipliers(&gBattleMoveDamage, *expMonId, gBattlerFainted);
 
@@ -12873,7 +12878,7 @@ static void Cmd_trysetencore(void)
 
     s32 i;
 
-    if (IsMaxMove(gLastMoves[gBattlerTarget]) && !(GetActiveGimmick(gBattlerTarget) == GIMMICK_DYNAMAX))
+    if (IsMaxMove(gLastMoves[gBattlerTarget]) && GetActiveGimmick(gBattlerTarget) != GIMMICK_DYNAMAX)
     {
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
@@ -15313,6 +15318,16 @@ static void Cmd_handleballthrow(void)
                 gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
                 SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
             }
+            else if (gLastUsedItem == ITEM_DREAM_BALL)
+            {
+                u8 Ability = 2;
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &Ability);
+            }
+            else if (gLastUsedItem == ITEM_FRIEND_BALL)
+            {
+                u8 Friendship= 200;
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, &Friendship);
+            }
         }
         else // mon may be caught, calculate shakes
         {
@@ -15366,6 +15381,16 @@ static void Cmd_handleballthrow(void)
                     HealStatusConditions(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], STATUS1_ANY, gBattlerTarget);
                     gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
                     SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+                }
+                else if (gLastUsedItem == ITEM_DREAM_BALL)
+                {
+                    u8 Ability = 2;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &Ability);
+                }
+                else if (gLastUsedItem == ITEM_FRIEND_BALL)
+                {
+                    u8 Friendship= 200;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, &Friendship);
                 }
             }
             else // not caught
@@ -16197,10 +16222,19 @@ u8 GetFirstFaintedPartyIndex(u8 battler)
 
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler)
 {
+    s32 highestLevel;
     u32 holdEffect = GetMonHoldEffect(&gPlayerParty[expGetterMonId]);
 
     if (IsTradedMon(&gPlayerParty[expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
+    if (holdEffect == HOLD_EFFECT_TRAINING_BAND)
+    {
+        highestLevel = GetHighestLevelInPlayerParty();
+        if (GetMonData(&gPlayerParty[expGetterMonId], MON_DATA_LEVEL) < (highestLevel - 4))
+        {
+            *expAmount *= 5;
+        }
+    }
     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
         *expAmount = (*expAmount * 150) / 100;
     if (B_UNEVOLVED_EXP_MULTIPLIER >= GEN_6 && IsMonPastEvolutionLevel(&gPlayerParty[expGetterMonId]))

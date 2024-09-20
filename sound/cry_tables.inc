@@ -30,6 +30,9 @@ gCryTable::
 	cry Cry_Caterpie
 	cry Cry_Metapod
 	cry Cry_Butterfree
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_uncomp Cry_ButterfreeMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CATERPIE
 .if P_FAMILY_WEEDLE == TRUE
 	cry Cry_Weedle
@@ -165,6 +168,9 @@ gCryTable::
 	cry Cry_Machop
 	cry Cry_Machoke
 	cry Cry_Machamp
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_uncomp Cry_MachampMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MACHOP
 .if P_FAMILY_BELLSPROUT == TRUE
 	cry Cry_Bellsprout
@@ -250,6 +256,9 @@ gCryTable::
 .if P_FAMILY_KRABBY == TRUE
 	cry Cry_Krabby
 	cry Cry_Kingler
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_uncomp Cry_KinglerMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KRABBY
 .if P_FAMILY_VOLTORB == TRUE
 	cry Cry_Voltorb
@@ -316,6 +325,9 @@ gCryTable::
 	cry Cry_Seadra
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Kingdra
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_uncomp Cry_KingdraMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HORSEA
 .if P_FAMILY_GOLDEEN == TRUE
@@ -389,6 +401,9 @@ gCryTable::
 .endif @ P_FAMILY_MAGIKARP
 .if P_FAMILY_LAPRAS == TRUE
 	cry Cry_Lapras
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_uncomp Cry_LaprasMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LAPRAS
 .if P_FAMILY_DITTO == TRUE
 	cry Cry_Ditto
@@ -910,6 +925,9 @@ gCryTable::
 	cry Cry_Trapinch
 	cry Cry_Vibrava
 	cry Cry_Flygon
+.if P_MEGA_EVOLUTIONS == TRUE
+    cry_uncomp Cry_FlygonMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TRAPINCH
 .if P_FAMILY_CACNEA == TRUE
 	cry Cry_Cacnea
@@ -957,6 +975,9 @@ gCryTable::
 .if P_FAMILY_FEEBAS == TRUE
 	cry Cry_Feebas
 	cry Cry_Milotic
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_uncomp Cry_MiloticMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FEEBAS
 .if P_FAMILY_CASTFORM == TRUE
 	cry Cry_Castform
@@ -2458,6 +2479,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Caterpie
 	cry_reverse Cry_Metapod
 	cry_reverse Cry_Butterfree
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_reverse_uncomp Cry_ButterfreeMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CATERPIE
 .if P_FAMILY_WEEDLE == TRUE
 	cry_reverse Cry_Weedle
@@ -2593,6 +2617,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Machop
 	cry_reverse Cry_Machoke
 	cry_reverse Cry_Machamp
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_reverse_uncomp Cry_MachampMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MACHOP
 .if P_FAMILY_BELLSPROUT == TRUE
 	cry_reverse Cry_Bellsprout
@@ -2678,6 +2705,9 @@ gCryTable_Reverse::
 .if P_FAMILY_KRABBY == TRUE
 	cry_reverse Cry_Krabby
 	cry_reverse Cry_Kingler
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_reverse_uncomp Cry_KinglerMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KRABBY
 .if P_FAMILY_VOLTORB == TRUE
 	cry_reverse Cry_Voltorb
@@ -2744,6 +2774,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Seadra
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Kingdra
+.if P_MEGA_EVOLUTIONS == TRUE
+    cry_reverse_uncomp Cry_KingdraMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HORSEA
 .if P_FAMILY_GOLDEEN == TRUE
@@ -2817,6 +2850,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MAGIKARP
 .if P_FAMILY_LAPRAS == TRUE
 	cry_reverse Cry_Lapras
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_reverse_uncomp Cry_LaprasMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LAPRAS
 .if P_FAMILY_DITTO == TRUE
 	cry_reverse Cry_Ditto
@@ -3338,6 +3374,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Trapinch
 	cry_reverse Cry_Vibrava
 	cry_reverse Cry_Flygon
+.if P_MEGA_EVOLUTIONS == TRUE
+    cry_reverse_uncomp Cry_FlygonMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TRAPINCH
 .if P_FAMILY_CACNEA == TRUE
 	cry_reverse Cry_Cacnea
@@ -3385,6 +3424,9 @@ gCryTable_Reverse::
 .if P_FAMILY_FEEBAS == TRUE
 	cry_reverse Cry_Feebas
 	cry_reverse Cry_Milotic
+.if P_MEGA_EVOLUTIONS == TRUE
+	cry_reverse_uncomp Cry_MiloticMega
+.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FEEBAS
 .if P_FAMILY_CASTFORM == TRUE
 	cry_reverse Cry_Castform

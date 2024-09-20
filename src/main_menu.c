@@ -1312,6 +1312,7 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 #define tLotadSpriteId data[9]
 #define tBrendanSpriteId data[10]
 #define tMaySpriteId data[11]
+#define tYesNoType data[12]
 
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
@@ -1662,7 +1663,7 @@ static void Task_NewGameBirchSpeech_SoItsPlayerName(u8 taskId)
     NewGameBirchSpeech_ClearWindow(0);
     StringExpandPlaceholders(gStringVar4, gText_Birch_SoItsPlayer);
     AddTextPrinterForMessage(1);
-    FlagSet(FLAG_BIRCH_SPEECH_1);
+    gTasks[taskId].tYesNoType = 1;
     gTasks[taskId].func = Task_NewGameBirchSpeech_CreateNameYesNo;
 }
 
@@ -1682,14 +1683,14 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
         // Player chose "Yes" - go to next section
         case 0:
             PlaySE(SE_SELECT);
-            if (FlagGet(FLAG_BIRCH_SPEECH_1) && !(FlagGet(FLAG_BIRCH_SPEECH_2 & FLAG_BIRCH_SPEECH_3))) // Confirm gender
+            if (gTasks[taskId].tYesNoType == 1) // Confirm gender
             {
                 gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
                 NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
                 NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
                 gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
             }
-            else if (FlagGet(FLAG_BIRCH_SPEECH_1 | FLAG_BIRCH_SPEECH_2) && !FlagGet(FLAG_BIRCH_SPEECH_3)) // Confirm difficulty
+            else if (gTasks[taskId].tYesNoType == 2) // Confirm difficulty
             {
                 NewGameBirchSpeech_ClearWindow(0);
                 gTasks[taskId].func = Task_NewGameBirchSpeech_LevelCapSelect;
@@ -1703,11 +1704,11 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
         case MENU_B_PRESSED:
         case 1:
             PlaySE(SE_SELECT);
-            if (FlagGet(FLAG_BIRCH_SPEECH_1) && !(FlagGet(FLAG_BIRCH_SPEECH_2 & FLAG_BIRCH_SPEECH_3)))
+            if (gTasks[taskId].tYesNoType == 1)
             {
                 gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
             }
-            else if (FlagGet(FLAG_BIRCH_SPEECH_1) && (FlagGet(FLAG_BIRCH_SPEECH_2) && !FlagGet(FLAG_BIRCH_SPEECH_3)))
+            else if (gTasks[taskId].tYesNoType == 2)
             {
                 NewGameBirchSpeech_ClearWindow(0);
                 StringExpandPlaceholders(gStringVar4, gText_Pie_WhichDifficulty);
@@ -1877,7 +1878,7 @@ static void Task_NewGameBirchSpeech_DifficultyDesc(u8 taskId)
             break;
     }
 
-    FlagSet(FLAG_BIRCH_SPEECH_2);
+    gTasks[taskId].tYesNoType = 2;
     NewGameBirchSpeech_ClearWindow(0);
     StringExpandPlaceholders(gStringVar4, str);
     AddTextPrinterForMessage(1);
@@ -1948,7 +1949,7 @@ static void Task_NewGameBirchSpeech_LevelCapsDesc(u8 taskId)
             break;
     }
 
-    FlagSet(FLAG_BIRCH_SPEECH_3);
+    gTasks[taskId].tYesNoType = 3;
     NewGameBirchSpeech_ClearWindow(0);
     StringExpandPlaceholders(gStringVar4, str);
     AddTextPrinterForMessage(1);
