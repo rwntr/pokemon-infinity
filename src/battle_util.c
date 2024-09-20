@@ -5813,7 +5813,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ILLUSION:
-            if (gBattleStruct->illusion[gBattlerTarget].on && !gBattleStruct->illusion[gBattlerTarget].broken && TARGET_TURN_DAMAGED)
+            if (gBattleStruct->illusion[gBattlerTarget].on && !gBattleStruct->illusion[gBattlerTarget].broken && (TARGET_TURN_DAMAGED
+                || gBattleStruct->illusion[gBattlerTarget].missBreakFlag))
             {
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_IllusionOff;
@@ -8688,6 +8689,11 @@ u32 GetBattlerWeight(u32 battler)
     return weight;
 }
 
+u32 GetBattlerHeight(u32 battler)
+{
+    u32 size = GetSpeciesHeight(gBattleMons[battler].species);
+    return size;
+}
 u32 CountBattlerStatIncreases(u32 battler, bool32 countEvasionAcc)
 {
     u32 i;
@@ -9188,6 +9194,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gBattleMons[battlerAtk].status1 & STATUS1_BURN && IS_MOVE_SPECIAL(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    //Boost Illusion mons' atk/spatk power by 20% if they are no longer maintaining their illusion
+    case ABILITY_ILLUSION:
+        if (gBattleStruct->illusion[battlerAtk].broken || !gBattleStruct->illusion[battlerAtk].on)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
     case ABILITY_TOXIC_BOOST:
         if (gBattleMons[battlerAtk].status1 & STATUS1_PSN_ANY && IS_MOVE_PHYSICAL(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));

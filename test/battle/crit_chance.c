@@ -211,10 +211,12 @@ SINGLE_BATTLE_TEST("Crit Chance: Signature items Leek and Lucky Punch increase t
 {
     u32 species;
     u32 item;
+    u32 ability;
 
     PASSES_RANDOMLY(1, 2, RNG_CRITICAL_HIT);
 
-    PARAMETRIZE { species = SPECIES_FARFETCHD; item = ITEM_LEEK; }
+
+    PARAMETRIZE { species = SPECIES_FARFETCHD; item = ITEM_LEEK; ability = ABILITY_INNER_FOCUS; }
     PARAMETRIZE { species = SPECIES_FARFETCHD_GALARIAN; item = ITEM_LEEK; }
     PARAMETRIZE { species = SPECIES_SIRFETCHD; item = ITEM_LEEK; }
     PARAMETRIZE { species = SPECIES_CHANSEY; item = ITEM_LUCKY_PUNCH; }
@@ -223,7 +225,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Signature items Leek and Lucky Punch increase t
         ASSUME(gItemsInfo[ITEM_LEEK].holdEffect == HOLD_EFFECT_LEEK);
         ASSUME(gItemsInfo[ITEM_LUCKY_PUNCH].holdEffect == HOLD_EFFECT_LUCKY_PUNCH);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(species) { Item(item); }
+        OPPONENT(species) { Item(item); Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {

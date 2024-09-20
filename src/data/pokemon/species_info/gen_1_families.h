@@ -8778,10 +8778,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PONYTA_GALARIAN] =
     {
         .baseHP        = 50,
-        .baseAttack    = 85,
+        .baseAttack    = 65,
         .baseDefense   = 55,
         .baseSpeed     = 90,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 85,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 190,
@@ -8842,11 +8842,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     //INFINITY_TODO
     [SPECIES_RAPIDASH_GALARIAN] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 100,
+        .baseHP        = 85,
+        .baseAttack    = 80,
         .baseDefense   = 70,
         .baseSpeed     = 105,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 110,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FAIRY),
         .catchRate = 60,
@@ -8866,10 +8866,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 17,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "Little can stand up to its psycho cut.\n"
-            "Unleashed from this Pokémon's horn,\n"
-            "the move will punch a hole right\n"
-            "through a thick metal sheet."),
+            "It can channel energy through its horn\n"
+            "to unleash powerful special attacks on\n"
+            "its foes.  Energy gathers at the tip,\n"
+            "which acts as a focus."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 289,

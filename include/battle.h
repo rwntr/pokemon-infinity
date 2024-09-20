@@ -563,6 +563,7 @@ struct Illusion
     u8 set;
     u8 broken;
     u8 partyId;
+    u8 missBreakFlag;
     struct Pokemon *mon;
 };
 
