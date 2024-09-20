@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
     PARAMETRIZE { faintCount = 2; }
     GIVEN {
         // Not Wobbuffet to omit type effectiveness.  Not Golem anymore either because 135 base attack
-        // puts it into a threshold where the max power base attack will do 1 singular point more damage
+        // puts it into a threshold where the max power Last Respects will do 1 singular point more damage
         // than the parameters of MUL_EQ will allow for.  this is fine and not a problem
         PLAYER(SPECIES_HITMONLEE);
         PLAYER(SPECIES_GEODUDE);
@@ -48,7 +48,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
         // Not Wobbuffet to omit type effectiveness.  Not Golem anymore either because 135 base attack
-        // puts it into a threshold where the max power base attack will do 1 singular point more damage
+        // puts it into a threshold where the max power Last Respects will do 1 singular point more damage
         // than the parameters of MUL_EQ will allow for.  this is fine and not a problem
         OPPONENT(SPECIES_HITMONLEE);
         OPPONENT(SPECIES_GEODUDE);
