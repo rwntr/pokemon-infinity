@@ -1588,17 +1588,9 @@ bool8 GiveIllusionEvasivenessBoost(u32 battler)
 {
     struct Pokemon *illusionMon;
     illusionMon = GetIllusionMonPtr(battler);
-    u16 illusionMonSpecies = SPECIES_NONE;
-    u32 illusionMonHeight = 0;
-    if (illusionMon != NULL)
-        illusionMonSpecies = GetMonData(illusionMon, MON_DATA_SPECIES);
-    else
-        return FALSE;
-
-    illusionMonHeight = GetSpeciesHeight(illusionMonSpecies);
-
-    if (illusionMonHeight > GetBattlerHeight(battler))
+    if (illusionMon != NULL && (GetSpeciesHeight(GetMonData(illusionMon, MON_DATA_SPECIES)) > GetBattlerHeight(battler))) {
         return TRUE;
+    }
 
     return FALSE;
 }
