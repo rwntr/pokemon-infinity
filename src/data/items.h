@@ -144,257 +144,6 @@ static const u8 sGenericMulchDesc[]   = _("A fertilizer that\n"
                                           "is unsuitable for\n"
                                           "local soil.");
 
-//TEMPORARY (will move these to compound strings)
-static const u8 sTM51Desc[] = _(
-    "The user lands and\n"
-    "rests, restoring up\n"
-    "to half its max HP.");
-
-static const u8 sTM52Desc[] = _(
-    "Attacks at full\n"
-    "power. May also\n"
-    "lower Sp Def.");
-
-static const u8 sTM53Desc[] = _(
-    "Draws power from\n"
-    "nature to attack.\n"
-    "May lower Sp Def.");
-
-static const u8 sTM54Desc[] = _(
-    "Attacks with a\n"
-    "psychic wave. Does\n"
-    "physical damage.");
-
-static const u8 sTM55Desc[] = _(
-    "Shoots boiling water\n"
-    "at the foe. May\n"
-    "inflict a burn.");
-
-static const u8 sTM56Desc[] = _(
-    "Recovers half the\n"
-    "HP of the damage \n"
-    "this move inflicts.");
-
-static const u8 sTM57Desc[] = _(
-    "Fires a beam of\n"
-    "electricity.\n"
-    "May raise Sp. Atk.");
-
-static const u8 sTM58Desc[] = _(
-    "Endures any attack\n"
-    "for 1 turn, leaving\n"
-    "at least 1HP.");
-
-static const u8 sTM59Desc[] = _(
-    "Generates a shock\n"
-    "wave to damage the\n"
-    "foe.");
-
-static const u8 sTM60Desc[] = _(
-    "Recovers half the\n"
-    "HP of the damage \n"
-    "this move inflicts.");
-
-static const u8 sTM61Desc[] = _(
-    "Inflicts a burn on\n"
-    "the foe with\n"
-    "intense fire.");
-
-static const u8 sTM62Desc[] = _(
-    "Does double damage\n"
-    "if the user has\n"
-    "no held item.");
-
-static const u8 sTM63Desc[] = _(
-    "Large boulders are\n"
-    "hurled. May cause\n"
-    "flinching.");
-
-static const u8 sTM64Desc[] = _(
-    "Inflicts severe\n"
-    "damage but makes\n"
-    "the user faint.");
-
-static const u8 sTM65Desc[] = _(
-    "Slashes with a claw\n"
-    "of shadows. High\n"
-    "critical-hit ratio.");
-
-static const u8 sTM66Desc[] = _(
-    "Deals double damage\n"
-    "if the user moves\n"
-    "after the foe.");
-
-static const u8 sTM67Desc[] = _(
-    "Recycles a used\n"
-    "held item for one\n"
-    "more use.");
-
-static const u8 sTM68Desc[] = _(
-    "Powerful, but needs\n"
-    "recharging the\n"
-    "next turn.");
-
-static const u8 sTM69Desc[] = _(
-    "Polishes the body\n"
-    "to sharply raise\n"
-    "speed.");
-
-static const u8 sTM70Desc[] = _(
-    "Weakens all attacks,\n"
-    "but only usable\n"
-    "with hail.");
-
-static const u8 sTM71Desc[] = _(
-    "Stabs the foe with\n"
-    "sharp stones. High\n"
-    "critical-hit ratio.");
-
-static const u8 sTM72Desc[] = _(
-    "Does damage then\n"
-    "switches out the\n"
-    "user.");
-
-static const u8 sTM73Desc[] = _(
-    "A weak jolt of\n"
-    "electricity that\n"
-    "paralyzes the foe.");
-
-static const u8 sTM74Desc[] = _(
-    "A high-speed spin\n"
-    "that hurts faster\n"
-    "foes more.");
-
-static const u8 sTM75Desc[] = _(
-    "A fighting dance\n"
-    "that sharply raises\n"
-    "Attack.");
-
-static const u8 sTM76Desc[] = _(
-    "A sneaky trap of\n"
-    "stones that hurt\n"
-    "a foe switching in.");
-
-static const u8 sTM77Desc[] = _(
-    "Resisting, the user\n"
-    "attacks the foes.\n"
-    "Lowers Sp. Atk.");
-
-static const u8 sTM78Desc[] = _(
-    "The user stomps\n"
-    "down on the ground.\n"
-    "Lowers Speed.");
-
-static const u8 sTM79Desc[] = _(
-    "Super effective on\n"
-    "Water-types. May\n"
-    "cause freezing.");
-
-static const u8 sTM80Desc[] = _(
-    "Does double damage\n"
-    "if the foe is\n"
-    "poisoned.");
-
-static const u8 sTM81Desc[] = _(
-    "Slashes foe with\n"
-    "crossed scythes,\n"
-    "claws, etc.");
-
-static const u8 sTM82Desc[] = _(
-    "Knocks the foe\n"
-    "away to end the\n"
-    "battle.");
-
-static const u8 sTM83Desc[] = _(
-    "Attacks in a cloak\n"
-    "of flames. Raises\n"
-    "the user's Speed.");
-
-static const u8 sTM84Desc[] = _(
-    "A stabbing attack\n"
-    "that may poison\n"
-    "the foe.");
-
-static const u8 sTM85Desc[] = _(
-    "Heals for half the\n"
-    "damage inflicted on\n"
-    "a sleeping foe.");
-
-static const u8 sTM86Desc[] = _(
-    "A snare attack that\n"
-    "does more damage\n"
-    "to heavier foes.");
-
-static const u8 sTM87Desc[] = _(
-    "Throws a rock to\n"
-    "knock the foe to\n"
-    "the ground.");
-
-static const u8 sTM88Desc[] = _(
-    "Attacks the foe's\n"
-    "legs, lowering its\n"
-    "Speed.");
-
-static const u8 sTM89Desc[] = _(
-    "Does damage then\n"
-    "switches out the\n"
-    "user.");
-
-static const u8 sTM90Desc[] = _(
-    "Creates a decoy\n"
-    "using 1/4 of the\n"
-    "user's maximum HP.");
-
-static const u8 sTM91Desc[] = _(
-    "Releases a blast\n"
-    "of light that may\n"
-    "lower Sp. Def.");
-
-static const u8 sTM92Desc[] = _(
-    "Slower Pokémon get\n"
-    "to move first for\n"
-    "five turns.");
-
-static const u8 sTM93Desc[] = _(
-    "An electric charge\n"
-    "attack that also\n"
-    "hurts the user.");
-
-static const u8 sTM94Desc[] = _(
-    "Strikes first if\n"
-    "the foe is readying\n"
-    "an attack.");
-
-static const u8 sTM95Desc[] = _(
-    "Yells and rants at\n"
-    "the foe, lowering\n"
-    "its Sp. Atk.");
-
-static const u8 sTM96Desc[] = _(
-    "An attack that\n"
-    "gains power if\n"
-    "damaged by the foe.");
-
-static const u8 sTM97Desc[] = _(
-    "Releases a horrible\n"
-    "aura that may cause\n"
-    "flinching.");
-
-static const u8 sTM98Desc[] = _(
-    "An attack that\n"
-    "leaves the foe with\n"
-    "at least 1 HP.");
-
-static const u8 sTM99Desc[] = _(
-    "Damages foes by\n"
-    "emitting a bright\n"
-    "flash.");
-
-static const u8 sTM100Desc[] = _(
-    "A move that works\n"
-    "differently for\n"
-    "Ghost-types.");
-
 const struct Item gItemsInfo[] =
 {
     [ITEM_NONE] =
@@ -11458,11 +11207,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_OVERHEAT,
     },
 
-    [ITEM_TM51] =
+    [ITEM_TM_ROOST] =
     {
         .name = _("TM51"),
         .price = 3000,
-        .description = sTM51Desc, // Todo
+        .description = COMPOUND_STRING(
+            "The user lands and\n"
+            "rests, restoring up\n"
+            "to half its max HP."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11470,11 +11222,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ROOST, //
     },
 
-    [ITEM_TM52] =
+    [ITEM_TM_FOCUS_BLAST] =
     {
         .name = _("TM52"),
         .price = 3000,
-        .description = sTM52Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Attacks at full\n"
+            "power. May also\n"
+            "lower Sp Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11482,11 +11237,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FOCUS_BLAST,
     },
 
-    [ITEM_TM53] =
+    [ITEM_TM_ENERGY_BALL] =
     {
         .name = _("TM53"),
         .price = 3000,
-        .description = sTM53Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Draws power from\n"
+            "nature to attack.\n"
+            "May lower Sp Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11494,11 +11252,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ENERGY_BALL,
     },
 
-    [ITEM_TM54] =
+    [ITEM_TM_PSYSHOCK] =
     {
         .name = _("TM54"),
         .price = 3000,
-        .description = sTM54Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Attacks with a\n"
+            "psychic wave. Does\n"
+            "physical damage."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11506,11 +11267,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_PSYSHOCK,
     },
 
-    [ITEM_TM55] =
+    [ITEM_TM_SCALD] =
     {
         .name = _("TM55"),
         .price = 3000,
-        .description = sTM55Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Shoots boiling water\n"
+            "at the foe. May\n"
+            "inflict a burn."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11518,11 +11282,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SCALD,
     },
 
-    [ITEM_TM56] =
+    [ITEM_TM_LEECH_LIFE] =
     {
         .name = _("TM56"),
         .price = 3000,
-        .description = sTM56Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Recovers half the\n"
+            "HP of the damage \n"
+            "this move inflicts."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11530,11 +11297,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_LEECH_LIFE,
     },
 
-    [ITEM_TM57] =
+    [ITEM_TM_CHARGE_BEAM] =
     {
         .name = _("TM57"),
         .price = 3000,
-        .description = sTM57Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Fires a beam of\n"
+            "electricity.\n"
+            "May raise Sp. Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11542,11 +11312,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_CHARGE_BEAM,
     },
 
-    [ITEM_TM58] =
+    [ITEM_TM_ENDURE] =
     {
         .name = _("TM58"),
         .price = 3000,
-        .description = sTM58Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Endures any attack\n"
+            "for 1 turn, leaving\n"
+            "at least 1HP."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11554,11 +11327,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ENDURE,
     },
 
-    [ITEM_TM59] =
+    [ITEM_TM_DRAGON_PULSE] =
     {
         .name = _("TM59"),
         .price = 3000,
-        .description = sTM59Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Generates a shock\n"
+            "wave to damage the\n"
+            "foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11566,11 +11342,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DRAGON_PULSE, // Todo
     },
 
-    [ITEM_TM60] =
+    [ITEM_TM_DRAIN_PUNCH] =
     {
         .name = _("TM60"),
         .price = 3000,
-        .description = sTM60Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Recovers half the\n"
+            "HP of the damage \n"
+            "this move inflicts."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11578,11 +11357,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DRAIN_PUNCH,
     },
 
-    [ITEM_TM61] =
+    [ITEM_TM_WILL_O_WISP] =
     {
         .name = _("TM61"),
         .price = 3000,
-        .description = sTM61Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Inflicts a burn on\n"
+            "the foe with\n"
+            "intense fire."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11590,11 +11372,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_WILL_O_WISP,
     },
 
-    [ITEM_TM62] =
+    [ITEM_TM_ACROBATICS] =
     {
         .name = _("TM62"),
         .price = 3000,
-        .description = sTM62Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Does double damage\n"
+            "if the user has\n"
+            "no held item."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11602,23 +11387,28 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ACROBATICS,
     },
 
-    [ITEM_TM63] =
+    [ITEM_TM_ROCK_SLIDE] =
     {
         .name = _("TM63"),
         .price = 3000,
-        .description = sTM63Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Large boulders are\n"
+            "hurled. May cause\n"
+            "flinching."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ROCK_SLIDE, // Todo
-    },
+        .secondaryId = MOVE_ROCK_SLIDE,     },
 
-    [ITEM_TM64] =
+    [ITEM_TM_EXPLOSION] =
     {
         .name = _("TM64"),
         .price = 3000,
-        .description = sTM64Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Inflicts severe\n"
+            "damage but makes\n"
+            "the user faint."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11626,11 +11416,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_EXPLOSION,
     },
 
-    [ITEM_TM65] =
+    [ITEM_TM_SHADOW_CLAW] =
     {
         .name = _("TM65"),
         .price = 3000,
-        .description = sTM65Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Slashes with a claw\n"
+            "of shadows. High\n"
+            "critical-hit ratio."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11638,11 +11431,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SHADOW_CLAW,
     },
 
-    [ITEM_TM66] =
+    [ITEM_TM_PAYBACK] =
     {
         .name = _("TM66"),
         .price = 3000,
-        .description = sTM66Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Deals double damage\n"
+            "if the user moves\n"
+            "after the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11650,11 +11446,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_PAYBACK,
     },
 
-    [ITEM_TM67] =
+    [ITEM_TM_RECYCLE] =
     {
         .name = _("TM67"),
         .price = 3000,
-        .description = sTM67Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Recycles a used\n"
+            "held item for one\n"
+            "more use."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11662,11 +11461,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_RECYCLE,
     },
 
-    [ITEM_TM68] =
+    [ITEM_TM_GIGA_IMPACT] =
     {
         .name = _("TM68"),
         .price = 3000,
-        .description = sTM68Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Powerful, but needs\n"
+            "recharging the\n"
+            "next turn."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11674,11 +11476,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_GIGA_IMPACT,
     },
 
-    [ITEM_TM69] =
+    [ITEM_TM_ROCK_POLISH] =
     {
         .name = _("TM69"),
         .price = 3000,
-        .description = sTM69Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Polishes the body\n"
+            "to sharply raise\n"
+            "speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11686,11 +11491,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ROCK_POLISH,
     },
 
-    [ITEM_TM70] =
+    [ITEM_TM_AURORA_VEIL] =
     {
         .name = _("TM70"),
         .price = 3000,
-        .description = sTM70Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Weakens all attacks,\n"
+            "but only usable\n"
+            "with hail."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11698,11 +11506,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_AURORA_VEIL,
     },
 
-    [ITEM_TM71] =
+    [ITEM_TM_STONE_EDGE] =
     {
         .name = _("TM71"),
         .price = 3000,
-        .description = sTM71Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Stabs the foe with\n"
+            "sharp stones. High\n"
+            "critical-hit ratio."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11710,11 +11521,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_STONE_EDGE,
     },
 
-    [ITEM_TM72] =
+    [ITEM_TM_VOLT_SWITCH] =
     {
         .name = _("TM72"),
         .price = 3000,
-        .description = sTM72Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Does damage then\n"
+            "switches out the\n"
+            "user."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11722,11 +11536,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_VOLT_SWITCH,
     },
 
-    [ITEM_TM73] =
+    [ITEM_TM_THUNDER_WAVE] =
     {
         .name = _("TM73"),
         .price = 3000,
-        .description = sTM73Desc, // Todo
+        .description = COMPOUND_STRING(
+            "A weak jolt of\n"
+            "electricity that\n"
+            "paralyzes the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11734,11 +11551,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_THUNDER_WAVE,
     },
 
-    [ITEM_TM74] =
+    [ITEM_TM_GYRO_BALL] =
     {
         .name = _("TM74"),
         .price = 3000,
-        .description = sTM74Desc, // Todo
+        .description = COMPOUND_STRING(
+            "A high-speed spin\n"
+            "that hurts faster\n"
+            "foes more."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11746,11 +11566,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_GYRO_BALL,
     },
 
-    [ITEM_TM75] =
+    [ITEM_TM_SWORDS_DANCE] =
     {
         .name = _("TM75"),
         .price = 3000,
-        .description = sTM75Desc, // Todo
+        .description = COMPOUND_STRING(
+            "A fighting dance\n"
+            "that sharply raises\n"
+            "Attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11758,11 +11581,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SWORDS_DANCE, 
     },
 
-    [ITEM_TM76] =
+    [ITEM_TM_STEALTH_ROCK] =
     {
         .name = _("TM76"),
         .price = 3000,
-        .description = sTM76Desc, // Todo
+        .description = COMPOUND_STRING(
+            "A sneaky trap of\n"
+            "stones that hurt\n"
+            "a foe switching in."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11770,11 +11596,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_STEALTH_ROCK,
     },
 
-    [ITEM_TM77] =
+    [ITEM_TM_STRUGGLE_BUG] =
     {
         .name = _("TM77"),
         .price = 3000,
-        .description = sTM77Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Resisting, the user\n"
+            "attacks the foes.\n"
+            "Lowers Sp. Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11782,11 +11611,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_STRUGGLE_BUG, // Todo
     },
 
-    [ITEM_TM78] =
+    [ITEM_TM_BULLDOZE] =
     {
         .name = _("TM78"),
         .price = 3000,
-        .description = sTM78Desc, // Todo
+        .description = COMPOUND_STRING(
+            "The user stomps\n"
+            "down on the ground.\n"
+            "Lowers Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11794,11 +11626,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_BULLDOZE,
     },
 
-    [ITEM_TM79] =
+    [ITEM_TM_FREEZE_DRY] =
     {
         .name = _("TM79"),
         .price = 3000,
-        .description = sTM79Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Super effective on\n"
+            "Water-types. May\n"
+            "cause freezing."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11806,11 +11641,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FREEZE_DRY,
     },
 
-    [ITEM_TM80] =
+    [ITEM_TM_VENOSHOCK] =
     {
         .name = _("TM80"),
         .price = 3000,
-        .description = sTM80Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Does double damage\n"
+            "if the foe is\n"
+            "poisoned."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11818,11 +11656,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_VENOSHOCK,
     },
 
-    [ITEM_TM81] =
+    [ITEM_TM_X_SCISSOR] =
     {
         .name = _("TM81"),
         .price = 3000,
-        .description = sTM81Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Slashes foe with\n"
+            "crossed scythes,\n"
+            "claws, etc."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11830,11 +11671,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_X_SCISSOR,
     },
 
-    [ITEM_TM82] =
+    [ITEM_TM_DRAGON_TAIL] =
     {
         .name = _("TM82"),
         .price = 3000,
-        .description = sTM82Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Knocks the foe\n"
+            "away to end the\n"
+            "battle."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11842,11 +11686,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DRAGON_TAIL,
     },
 
-    [ITEM_TM83] =
+    [ITEM_TM_FLAME_CHARGE] =
     {
         .name = _("TM83"),
         .price = 3000,
-        .description = sTM83Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Attacks in a cloak\n"
+            "of flames. Raises\n"
+            "the user's Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11854,11 +11701,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FLAME_CHARGE,
     },
 
-    [ITEM_TM84] =
+    [ITEM_TM_POISON_JAB] =
     {
         .name = _("TM84"),
         .price = 3000,
-        .description = sTM84Desc, // Todo
+        .description = COMPOUND_STRING(
+            "A stabbing attack\n"
+            "that may poison\n"
+            "the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11866,11 +11716,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_POISON_JAB,
     },
 
-    [ITEM_TM85] =
+    [ITEM_TM_DREAM_EATER] =
     {
         .name = _("TM85"),
         .price = 3000,
-        .description = sTM85Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Heals for half the\n"
+            "damage inflicted on\n"
+            "a sleeping foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11878,11 +11731,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DREAM_EATER,
     },
 
-    [ITEM_TM86] =
+    [ITEM_TM_GRASS_KNOT] =
     {
         .name = _("TM86"),
         .price = 3000,
-        .description = sTM86Desc, //Todo
+        .description = COMPOUND_STRING(
+            "A snare attack that\n"
+            "does more damage\n"
+            "to heavier foes."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11890,11 +11746,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_GRASS_KNOT,
     },
 
-    [ITEM_TM87] =
+    [ITEM_TM_SMACK_DOWN] =
     {
         .name = _("TM87"),
         .price = 3000,
-        .description = sTM87Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Throws a rock to\n"
+            "knock the foe to\n"
+            "the ground."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11902,11 +11761,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SMACK_DOWN,
     },
 
-    [ITEM_TM88] =
+    [ITEM_TM_LOW_SWEEP] =
     {
         .name = _("TM88"),
         .price = 3000,
-        .description = sTM88Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Attacks the foe's\n"
+            "legs, lowering its\n"
+            "Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11914,11 +11776,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_LOW_SWEEP,
     },
 
-    [ITEM_TM89] =
+    [ITEM_TM_U_TURN] =
     {
         .name = _("TM89"),
         .price = 3000,
-        .description = sTM89Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Does damage then\n"
+            "switches out the\n"
+            "user."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11926,11 +11791,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_U_TURN
     },
 
-    [ITEM_TM90] =
+    [ITEM_TM_SUBSTITUTE] =
     {
         .name = _("TM90"),
         .price = 3000,
-        .description = sTM90Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Creates a decoy\n"
+            "using 1/4 of the\n"
+            "user's maximum HP."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11938,11 +11806,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SUBSTITUTE,
     },
 
-    [ITEM_TM91] =
+    [ITEM_TM_FLASH_CANNON] =
     {
         .name = _("TM91"),
         .price = 3000,
-        .description = sTM91Desc, // Todo
+        .description = COMPOUND_STRING(
+        "Releases a blast\n"
+            "of light that may\n"
+            "lower Sp. Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11950,11 +11821,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FLASH_CANNON,
     },
 
-    [ITEM_TM92] =
+    [ITEM_TM_TRICK_ROOM] =
     {
         .name = _("TM92"),
         .price = 3000,
-        .description = sTM92Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Slower Pokémon get\n"
+            "to move first for\n"
+            "five turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11962,11 +11836,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_TRICK_ROOM,
     },
 
-    [ITEM_TM93] =
+    [ITEM_TM_WILD_CHARGE] =
     {
         .name = _("TM93"),
         .price = 3000,
-        .description = sTM93Desc, // Todo
+        .description = COMPOUND_STRING(
+            "An electric charge\n"
+            "attack that also\n"
+            "hurts the user."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11974,11 +11851,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_WILD_CHARGE,
     },
 
-    [ITEM_TM94] =
+    [ITEM_TM_SUCKER_PUNCH] =
     {
         .name = _("TM94"),
         .price = 3000,
-        .description = sTM94Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Strikes first if\n"
+            "the foe is readying\n"
+            "an attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11986,11 +11866,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SUCKER_PUNCH,
     },
 
-    [ITEM_TM95] =
+    [ITEM_TM_SNARL] =
     {
         .name = _("TM95"),
         .price = 3000,
-        .description = sTM95Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Yells and rants at\n"
+            "the foe, lowering\n"
+            "its Sp. Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11998,11 +11881,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SNARL,
     },
 
-    [ITEM_TM96] =
+    [ITEM_TM_AVALANCHE] =
     {
         .name = _("TM96"),
         .price = 3000,
-        .description = sTM96Desc, // Todo
+        .description = COMPOUND_STRING(
+            "An attack that\n"
+            "gains power if\n"
+            "damaged by the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12010,11 +11896,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_AVALANCHE,
     },
 
-    [ITEM_TM97] =
+    [ITEM_TM_DARK_PULSE] =
     {
         .name = _("TM97"),
         .price = 3000,
-        .description = sTM97Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Releases a horrible\n"
+            "aura that may cause\n"
+            "flinching."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12022,11 +11911,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DARK_PULSE
     },
 
-    [ITEM_TM98] =
+    [ITEM_TM_FALSE_SWIPE] =
     {
         .name = _("TM98"),
         .price = 3000,
-        .description = sTM98Desc, // Todo
+        .description = COMPOUND_STRING(
+            "An attack that\n"
+            "leaves the foe with\n"
+            "at least 1 HP."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12034,11 +11926,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FALSE_SWIPE,
     },
 
-    [ITEM_TM99] =
+    [ITEM_TM_DAZZLING_GLEAM] =
     {
         .name = _("TM99"),
         .price = 3000,
-        .description = sTM99Desc, // Todo
+        .description = COMPOUND_STRING(
+            "Damages foes by\n"
+            "emitting a bright\n"
+            "flash."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12046,11 +11941,14 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DAZZLING_GLEAM,
     },
 
-    [ITEM_TM100] =
+    [ITEM_TM_CURSE] =
     {
         .name = _("TM100"),
         .price = 3000,
-        .description = sTM100Desc, // Todo
+        .description = COMPOUND_STRING(
+            "A move that works\n"
+            "differently for\n"
+            "Ghost-types."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
