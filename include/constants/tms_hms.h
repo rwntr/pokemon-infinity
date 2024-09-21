@@ -51,7 +51,58 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(ROOST) \
+    F(FOCUS_BLAST) \
+    F(ENERGY_BALL) \
+    F(PSYSHOCK) \
+    F(SCALD) \
+    F(LEECH_LIFE) \
+    F(CHARGE_BEAM) \
+    F(ENDURE) \
+    F(DRAGON_PULSE) \
+    F(DRAIN_PUNCH) \
+    F(WILL_O_WISP) \
+    F(ACROBATICS) \
+    F(ROCK_SLIDE) \
+    F(EXPLOSION) \
+    F(SHADOW_CLAW) \
+    F(PAYBACK) \
+    F(RECYCLE) \
+    F(GIGA_IMPACT) \
+    F(ROCK_POLISH) \
+    F(AURORA_VEIL) \
+    F(STONE_EDGE) \
+    F(VOLT_SWITCH) \
+    F(THUNDER_WAVE) \
+    F(GYRO_BALL) \
+    F(SWORDS_DANCE) \
+    F(STEALTH_ROCK) \
+    F(STRUGGLE_BUG) \
+    F(BULLDOZE) \
+    F(FREEZE_DRY) \
+    F(VENOSHOCK) \
+    F(X_SCISSOR) \
+    F(DRAGON_TAIL) \
+    F(FLAME_CHARGE) \
+    F(POISON_JAB) \
+    F(DREAM_EATER) \
+    F(GRASS_KNOT) \
+    F(SMACK_DOWN) \
+    F(LOW_SWEEP) \
+    F(U_TURN) \
+    F(SUBSTITUTE) \
+    F(FLASH_CANNON) \
+    F(TRICK_ROOM) \
+    F(WILD_CHARGE) \
+    F(SUCKER_PUNCH) \
+    F(SNARL) \
+    F(AVALANCHE) \
+    F(DARK_PULSE) \
+    F(FALSE_SWIPE) \
+    F(DAZZLING_GLEAM) \
+    F(CURSE)
+
 
 #define FOREACH_HM(F) \
     F(CUT) \
