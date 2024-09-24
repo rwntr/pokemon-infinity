@@ -43,3 +43,8 @@ src/data/map_group_count.h
 tools/trainerproc/trainerproc
 /src/data/trainers_old.party
 
+CMakeFiles/*
+cmake-build-debug/*
+cmake_install.cmake
+CMakeCache.txt
+main.c

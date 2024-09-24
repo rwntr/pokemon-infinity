@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Side effected by Lucky Chant blocks critical hi
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_LUCKY_CHANT); MOVE(player, MOVE_TACKLE, criticalHit: TRUE); }
+        TURN { MOVE(opponent, MOVE_LUCKY_CHANT); MOVE(player, MOVE_TACKLE, .criticalHit = TRUE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         NOT MESSAGE("A critical hit!");
@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Battle Armor and Shell Armor block critical hit
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE, criticalHit: TRUE); }
+        TURN { MOVE(player, MOVE_TACKLE, .criticalHit = TRUE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         NOT MESSAGE("A critical hit!");
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Flag ignoresTargetAbility ignores Battle Armor 
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
-        TURN { MOVE(player, MOVE_SUNSTEEL_STRIKE, criticalHit: TRUE); }
+        TURN { MOVE(player, MOVE_SUNSTEEL_STRIKE, .criticalHit = TRUE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUNSTEEL_STRIKE, player);
         MESSAGE("A critical hit!");
@@ -95,7 +95,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Mold Breaker, Teravolt and Turboblaze ignore Ba
         PLAYER(speciesPlayer) { Ability(abilityPlayer); }
         OPPONENT(speciesOpponent) { Ability(abilityOpponent); }
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE, criticalHit: TRUE); }
+        TURN { MOVE(player, MOVE_TACKLE, .criticalHit = TRUE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         MESSAGE("A critical hit!");
@@ -242,7 +242,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Dire Hit increases a battler's critical hit cha
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_DIRE_HIT, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_DIRE_HIT, .partyIndex = 0); }
         TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_ENERGY, player);
@@ -315,7 +315,7 @@ DOUBLE_BATTLE_TEST("Crit Chance: Dragon Cheer increases critical hit ratio by tw
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_CHEER, target: playerRight); MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_CHEER, .target = playerRight); MOVE(playerRight, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_CHEER, playerLeft);
         MESSAGE("Dratini is getting pumped!");
@@ -335,7 +335,7 @@ DOUBLE_BATTLE_TEST("Crit Chance: Dragon Cheer fails if critical hit stage was al
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_FOCUS_ENERGY); MOVE(playerRight, MOVE_DRAGON_CHEER, target: playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_FOCUS_ENERGY); MOVE(playerRight, MOVE_DRAGON_CHEER, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_ENERGY, playerLeft);
         MESSAGE("But it failed!");
