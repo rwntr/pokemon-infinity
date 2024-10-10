@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Foul Play uses physical attack stat of target", s16 damage)
         TURN { MOVE(opponent, MOVE_SWORDS_DANCE); MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }

@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Infernal Parade's power doubles if the target has a status c
         TURN { MOVE(player, MOVE_INFERNAL_PARADE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_INFERNAL_PARADE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[i].damage);

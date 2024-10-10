@@ -127,7 +127,7 @@ DOUBLE_BATTLE_TEST("Brick Break can remove Light Screen, Reflect and Aurora Veil
         TURN {
             MOVE(opponentLeft, MOVE_SNOWSCAPE);
             MOVE(playerLeft, move);
-            MOVE(playerRight, MOVE_BRICK_BREAK, target: playerLeft);
+            MOVE(playerRight, MOVE_BRICK_BREAK, .target = playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNOWSCAPE, opponentLeft);

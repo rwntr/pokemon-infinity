@@ -47,7 +47,7 @@ DOUBLE_BATTLE_TEST("Focus Punch activation is based on Speed")
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
         OPPONENT(SPECIES_WYNAUT) { Speed(5); }
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_FOCUS_PUNCH, target: playerLeft); MOVE(playerRight, MOVE_FOCUS_PUNCH, target: opponentLeft); MOVE(playerLeft, MOVE_FOCUS_PUNCH, target: opponentLeft); MOVE(opponentLeft, MOVE_FOCUS_PUNCH, target: playerLeft); }
+        TURN { MOVE(opponentRight, MOVE_FOCUS_PUNCH, .target = playerLeft); MOVE(playerRight, MOVE_FOCUS_PUNCH, .target = opponentLeft); MOVE(playerLeft, MOVE_FOCUS_PUNCH, .target = opponentLeft); MOVE(opponentLeft, MOVE_FOCUS_PUNCH, .target = playerLeft); }
     }
     SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, opponentRight);

@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Rowap Berry causes the attacker to lose 1/8 of its max HP if
         HP_BAR(opponent);
         if (move == MOVE_SWIFT) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            HP_BAR(player, captureDamage: &damage);
+            HP_BAR(player, .captureDamage =  &damage);
             MESSAGE("Wobbuffet was hurt by Foe Wobbuffet's Rowap Berry!");
         } else {
             NONE_OF {

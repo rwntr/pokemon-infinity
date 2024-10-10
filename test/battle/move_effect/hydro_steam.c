@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Hydro Steam deals 1.5x damage under both Sunlight and Rain",
         TURN { MOVE(player, MOVE_HYDRO_STEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYDRO_STEAM, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[2].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Hydro Steam is affected by Utility Umbrella", s16 damage)
         TURN { MOVE(player, MOVE_HYDRO_STEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYDRO_STEAM, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(1.5), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(0.5), results[0].damage);

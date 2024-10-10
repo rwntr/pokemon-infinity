@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Body Press uses physical defense stat of target", s16 damage
         TURN { MOVE(opponent, MOVE_CHARM); MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Body Press's damage depends on the user's base Defense inste
         TURN { MOVE(opponent, MOVE_BODY_PRESS); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BODY_PRESS, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_GT(results[1].damage, results[0].damage);
     }
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Body Press's damage depends on the user's Defense and not At
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BODY_PRESS, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_GT(results[0].damage, results[1].damage);
         EXPECT_EQ(results[1].damage, results[2].damage);
@@ -88,7 +88,7 @@ SINGLE_BATTLE_TEST("Body Press uses Defense Stat even in Wonder Room", s16 damag
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BODY_PRESS, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage);
     }
@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Body Press uses Special Defense stat Stages in Wonder Room",
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BODY_PRESS, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_GT(results[1].damage, results[0].damage);
         EXPECT_EQ(results[0].damage, results[2].damage);

@@ -41,8 +41,8 @@ DOUBLE_BATTLE_TEST("Storm Drain forces single-target Water-type moves to target 
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_WATER_GUN, target: opponentRight);
-            MOVE(playerRight, MOVE_WATER_GUN, target: opponentRight);
+            MOVE(playerLeft, MOVE_WATER_GUN, .target = opponentRight);
+            MOVE(playerRight, MOVE_WATER_GUN, .target = opponentRight);
             MOVE(opponentLeft, MOVE_CELEBRATE);
             MOVE(opponentRight, MOVE_CELEBRATE);
         }

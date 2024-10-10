@@ -21,11 +21,11 @@ SINGLE_BATTLE_TEST("Opportunist only copies foe's positive stat changes in a tur
         if (ability == ABILITY_FRISK) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_SMASH, player);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-            HP_BAR(player, captureDamage: &results[i].damage);
+            HP_BAR(player, .captureDamage =  &results[i].damage);
         } else {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_SMASH, player);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-            HP_BAR(player, captureDamage: &results[i].damage);
+            HP_BAR(player, .captureDamage =  &results[i].damage);
         }
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
@@ -55,7 +55,7 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
         OPPONENT(SPECIES_SPINDA) { Ability(abilityLeft); }
         OPPONENT(SPECIES_SPINDA) { Ability(abilityRight); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_TACKLE, target: playerRight); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(opponentRight, MOVE_TACKLE, .target = playerRight); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         if (abilityLeft == ABILITY_CONTRARY) {
@@ -86,8 +86,8 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
             MESSAGE("Espathra's Attack sharply rose!");
         }
 
-        HP_BAR(playerLeft, captureDamage: &results[i].damageLeft);
-        HP_BAR(playerRight, captureDamage: &results[i].damageRight);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].damageLeft);
+        HP_BAR(playerRight, .captureDamage =  &results[i].damageRight);
     } THEN {
         EXPECT_EQ(opponentLeft->statStages[STAT_ATK],  DEFAULT_STAT_STAGE + (abilityLeft  == ABILITY_CONTRARY ? 1 : - 1));
         EXPECT_EQ(opponentRight->statStages[STAT_ATK], DEFAULT_STAT_STAGE + (abilityRight == ABILITY_CONTRARY ? 1 : - 1));

@@ -21,16 +21,16 @@ SINGLE_BATTLE_TEST("Light Ball always gives Pikachu a 2.0x Atk/Sp. Atk boost")
         TURN { MOVE(player, MOVE_SWIFT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &boostedHitPhys);
+        HP_BAR(opponent, .captureDamage =  &boostedHitPhys);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, player);
-        HP_BAR(opponent, captureDamage: &boostedHitSpec);
+        HP_BAR(opponent, .captureDamage =  &boostedHitSpec);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THIEF, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &normalHitPhys);
+        HP_BAR(opponent, .captureDamage =  &normalHitPhys);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, player);
-        HP_BAR(opponent, captureDamage: &normalHitSpec);
+        HP_BAR(opponent, .captureDamage =  &normalHitSpec);
 
     } THEN {
         EXPECT_MUL_EQ(normalHitPhys, Q_4_12(2.0), boostedHitPhys);
@@ -58,16 +58,16 @@ SINGLE_BATTLE_TEST("Light Ball always gives Raichu a 1.5x Atk/Sp. Atk boost")
         TURN { MOVE(player, MOVE_SWIFT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &boostedHitPhys);
+        HP_BAR(opponent, .captureDamage =  &boostedHitPhys);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, player);
-        HP_BAR(opponent, captureDamage: &boostedHitSpec);
+        HP_BAR(opponent, .captureDamage =  &boostedHitSpec);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THIEF, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &normalHitPhys);
+        HP_BAR(opponent, .captureDamage =  &normalHitPhys);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, player);
-        HP_BAR(opponent, captureDamage: &normalHitSpec);
+        HP_BAR(opponent, .captureDamage =  &normalHitSpec);
 
     } THEN {
         EXPECT_MUL_EQ(normalHitPhys, Q_4_12(1.5), boostedHitPhys);
@@ -96,16 +96,16 @@ SINGLE_BATTLE_TEST("Light Ball always gives Alolan Raichu a 1.5x Atk/Sp. Atk boo
         TURN { MOVE(player, MOVE_SWIFT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &boostedHitPhys);
+        HP_BAR(opponent, .captureDamage =  &boostedHitPhys);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, player);
-        HP_BAR(opponent, captureDamage: &boostedHitSpec);
+        HP_BAR(opponent, .captureDamage =  &boostedHitSpec);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THIEF, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &normalHitPhys);
+        HP_BAR(opponent, .captureDamage =  &normalHitPhys);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, player);
-        HP_BAR(opponent, captureDamage: &normalHitSpec);
+        HP_BAR(opponent, .captureDamage =  &normalHitSpec);
 
     } THEN {
         EXPECT_MUL_EQ(normalHitPhys, Q_4_12(1.5), boostedHitPhys);

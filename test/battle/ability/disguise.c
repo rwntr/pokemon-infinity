@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu will lose 1/8 of its max HP upon changing 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AERIAL_ACE, opponent);
         ABILITY_POPUP(player, ABILITY_DISGUISE);
-        HP_BAR(player, captureDamage: &disguiseDamage);
+        HP_BAR(player, .captureDamage =  &disguiseDamage);
     } THEN {
         EXPECT_EQ(player->species, SPECIES_MIMIKYU_BUSTED);
         EXPECT_EQ(disguiseDamage, player->maxHP / 8);

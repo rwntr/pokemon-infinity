@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Overgrow boosts Grass-type moves in a pinch", s16 damage)
     } WHEN {
         TURN { MOVE(player, MOVE_VINE_WHIP); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Overgrow boosts Grass-type moves outside of pinch", s16 dama
     } WHEN {
         TURN { MOVE(player, MOVE_VINE_WHIP); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
     }

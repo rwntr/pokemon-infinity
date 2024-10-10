@@ -39,7 +39,7 @@ DOUBLE_BATTLE_TEST("Red Card switches the target with a random non-battler, non-
         OPPONENT(SPECIES_CHARMANDER);
         OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
@@ -234,7 +234,7 @@ DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_ROCK_SLIDE);
-            MOVE(opponentRight, MOVE_TACKLE, target: playerRight);
+            MOVE(opponentRight, MOVE_TACKLE, .target = playerRight);
         }
     } SCENE {
         // Fastest target's Red Card activates.
@@ -265,8 +265,8 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_INGRAIN); }
         TURN {
-            MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft);
-            MOVE(opponentRight, MOVE_TACKLE, target: playerLeft);
+            MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft);
+            MOVE(opponentRight, MOVE_TACKLE, .target = playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
@@ -293,8 +293,8 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
         OPPONENT(SPECIES_UNOWN);
     } WHEN {
         TURN {
-            MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft);
-            MOVE(opponentRight, MOVE_TACKLE, target: playerLeft);
+            MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft);
+            MOVE(opponentRight, MOVE_TACKLE, .target = playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);

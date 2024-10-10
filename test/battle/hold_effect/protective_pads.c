@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Protective Pads protected moves still make direct contact", 
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Wobbuffet used Tackle!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(0.5), results[1].damage);
     }
@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Protective Pads doesn't reduce tough claws damage", s16 dama
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Binacle used Tackle!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage);
     }

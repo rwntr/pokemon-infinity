@@ -21,7 +21,7 @@ DOUBLE_BATTLE_TEST("Dazzling, Queenly Majesty and Armor Tail protect the user fr
         OPPONENT(species) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_QUICK_ATTACK, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_QUICK_ATTACK, .target = opponentLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, opponentRight);
         ABILITY_POPUP(opponentLeft, ability);
@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Dazzling, Queenly Majesty and Armor Tail protect users partn
         OPPONENT(species) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_QUICK_ATTACK, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_QUICK_ATTACK, .target = opponentRight); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, opponentRight);
         ABILITY_POPUP(opponentLeft, ability);

@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Download raises Attack if player has lower Def than Sp. Def"
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
             MESSAGE("Foe Porygon's Download raised its Attack!");
         }
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Download raises Sp.Attack if enemy has lower Sp. Def than De
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
             MESSAGE("Porygon's Download raised its Sp. Atk!");
         }
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -89,7 +89,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRI_ATTACK, opponent);
-        HP_BAR(player, captureDamage: &results[i].damageSpecial);
+        HP_BAR(player, .captureDamage =  &results[i].damageSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damageSpecial, Q_4_12(1.5), results[1].damageSpecial);
     }

@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a single 
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, player);
             MESSAGE("Wobbuffet became confused!");
         }
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
@@ -52,7 +52,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a double 
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, playerRight);
             MESSAGE("Wobbuffet became confused!");
         }
-        HP_BAR(opponentLeft, captureDamage: &results[i].damage);
+        HP_BAR(opponentLeft, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
@@ -79,7 +79,7 @@ SINGLE_BATTLE_TEST("Berserk Gene activates on switch in", s16 damage)
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, player);
             MESSAGE("Wobbuffet became confused!");
         }
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
@@ -106,7 +106,7 @@ SINGLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but s
             ABILITY_POPUP(player, ABILITY_OWN_TEMPO);
             MESSAGE("Slowbro's Own Tempo prevents confusion!");
         }
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
         NOT MESSAGE("Slowbro became confused!");
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
@@ -134,7 +134,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but s
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE((positionLeft != 0) ? playerLeft : playerRight, MOVE_TACKLE, target: opponentLeft);
+            MOVE((positionLeft != 0) ? playerLeft : playerRight, MOVE_TACKLE, .target = opponentLeft);
         }
     } SCENE {
         if (item == ITEM_BERSERK_GENE)
@@ -144,7 +144,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene does not confuse a Pokemon with Own Tempo but s
             ABILITY_POPUP((positionLeft != 0) ? playerLeft : playerRight, ABILITY_OWN_TEMPO);
             MESSAGE("Slowbro's Own Tempo prevents confusion!");
         }
-        HP_BAR(opponentLeft, captureDamage: &results[i].damage);
+        HP_BAR(opponentLeft, .captureDamage =  &results[i].damage);
         NOT MESSAGE("Slowbro became confused!");
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);

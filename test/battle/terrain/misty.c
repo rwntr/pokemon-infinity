@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Misty Terrain does not increase the power of Fairy-type move
         TURN { MOVE(player, MOVE_MOONBLAST); }
     } SCENE {
         MESSAGE("Wobbuffet used Moonblast!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage);
     }
@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Misty Terrain decreases power of Dragon-type moves by 50 per
         TURN { MOVE(player, MOVE_DRAGON_CLAW); }
     } SCENE {
         MESSAGE("Wobbuffet used Dragon Claw!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
     }

@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Utility Umbrella blocks Sun damage modifiers", s16 damage)
         TURN { MOVE(player, attackingMove); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, attackingMove, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(0.5), results[3].damage);
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Utility Umbrella blocks Rain damage modifiers", s16 damage)
         TURN { MOVE(player, attackingMove); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, attackingMove, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(1.5), results[3].damage);

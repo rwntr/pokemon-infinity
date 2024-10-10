@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Fire-type move
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(6.0), results[1].damage); // double base power + type effectiveness + sun 50% boost
     }
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Water-type mov
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(6.0), results[1].damage); // double base power + type effectiveness + rain 50% boost
     }
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Rock-type move
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(4.0), results[1].damage); // double base power + type effectiveness.
     }
@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to an Ice-type move
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(4.0), results[1].damage); // double base power + type effectiveness.
     }

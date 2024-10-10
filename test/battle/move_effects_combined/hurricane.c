@@ -64,7 +64,7 @@ DOUBLE_BATTLE_TEST("Hurricane can hit airborne targets (Sky Drop)")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_SKY_DROP, target: opponentLeft); MOVE(playerRight, MOVE_HURRICANE, target: playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_SKY_DROP, .target = opponentLeft); MOVE(playerRight, MOVE_HURRICANE, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKY_DROP, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HURRICANE, playerRight);

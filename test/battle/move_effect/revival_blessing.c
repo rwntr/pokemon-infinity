@@ -96,7 +96,7 @@ TO_DO_BATTLE_TEST("Revived battlers still lose their turn");
 //         OPPONENT(SPECIES_WOBBUFFET);
 //         OPPONENT(SPECIES_WYNAUT) { HP(1); }
 //     } WHEN {
-//         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight);
+//         TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentRight);
 //                MOVE(opponentLeft, MOVE_REVIVAL_BLESSING);
 //                SEND_OUT(opponentLeft, 1); }
 //     } SCENE {

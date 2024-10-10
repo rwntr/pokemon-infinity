@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Pay Day Scatters coins around after it hits - doubles")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_PAY_DAY, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_PAY_DAY, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PAY_DAY, playerLeft);
         HP_BAR(opponentLeft);

@@ -77,7 +77,7 @@ DOUBLE_BATTLE_TEST("Salac Berry does not miss timing miss timing")
         OPPONENT(SPECIES_WYNAUT) { MaxHP(100); HP(26); Item(ITEM_SALAC_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, .target = opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
         MESSAGE("A sea of fire enveloped the opposing team!");

@@ -2,7 +2,7 @@
 #include "test/battle.h"
 #include "battle_ai_util.h"
 
-AI_SINGLE_BATTLE_TEST("AI will not further increase Attack / Sp. Atk stat if it knows it faints to target: AI faster")
+AI_SINGLE_BATTLE_TEST("AI will not further increase Attack / Sp. Atk stat if it knows it faints to target:AI faster")
 {
     u16 move;
 
@@ -22,7 +22,7 @@ AI_SINGLE_BATTLE_TEST("AI will not further increase Attack / Sp. Atk stat if it 
     }
 }
 
-AI_SINGLE_BATTLE_TEST("AI will not further increase Attack / Sp. Atk stat if it knows it faints to target: AI slower")
+AI_SINGLE_BATTLE_TEST("AI will not further increase Attack / Sp. Atk stat if it knows it faints to target:AI slower")
 {
     u16 move;
 

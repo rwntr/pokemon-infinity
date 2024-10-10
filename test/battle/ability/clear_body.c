@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent intimid
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_TACKLE); }
 
     } SCENE {
-        HP_BAR(player, captureDamage: &turnOneHit);
+        HP_BAR(player, .captureDamage =  &turnOneHit);
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent intimid
             MESSAGE("Foe Torkoal's White Smoke prevents stat loss!");
         else
             MESSAGE("Foe Metang's Clear Body prevents stat loss!");
-        HP_BAR(player, captureDamage: &turnTwoHit);
+        HP_BAR(player, .captureDamage =  &turnTwoHit);
     } THEN {
         EXPECT_EQ(turnOneHit, turnTwoHit);
     }
@@ -291,7 +291,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent A
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         NOT ABILITY_POPUP(opponent, ability);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
     }

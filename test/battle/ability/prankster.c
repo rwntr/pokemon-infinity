@@ -42,7 +42,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves affect Ally Dark-type Pokémon")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_CONFUSE_RAY, target: playerRight); }
+        TURN { MOVE(playerLeft, MOVE_CONFUSE_RAY, .target = playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
         NOT MESSAGE("It doesn't affect Umbreon…");
@@ -72,8 +72,8 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves called via Instruct do not affect D
         OPPONENT(SPECIES_UMBREON) { Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_CONFUSE_RAY, target: opponentLeft);
-               MOVE(playerRight, MOVE_INSTRUCT, target: playerLeft);
+        TURN { MOVE(playerLeft, MOVE_CONFUSE_RAY, .target = opponentLeft);
+               MOVE(playerRight, MOVE_INSTRUCT, .target = playerLeft);
         }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
@@ -106,8 +106,8 @@ DOUBLE_BATTLE_TEST("Moves called via Prankster-affected After you affect Dark-ty
         OPPONENT(SPECIES_UMBREON) { Speed(10); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(10); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
-               MOVE(playerRight, MOVE_CONFUSE_RAY, target: opponentLeft);
+        TURN { MOVE(playerLeft, MOVE_AFTER_YOU, .target = playerRight);
+               MOVE(playerRight, MOVE_CONFUSE_RAY, .target = opponentLeft);
         }
     } SCENE {
         MESSAGE("Volbeat used After You!");
@@ -196,7 +196,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by a Dark
         PLAYER(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
-        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); MOVE(opponent, MOVE_CONFUSE_RAY); }
+        TURN { MOVE(player, MOVE_CELEBRATE, .gimmick = GIMMICK_MEGA); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
         MESSAGE("Foe Volbeat's Confuse Ray was bounced back by Absol's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
@@ -209,7 +209,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves that are bounced back by Magic Boun
         PLAYER(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
         OPPONENT(SPECIES_MURKROW) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
-        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); MOVE(opponent, MOVE_CONFUSE_RAY); }
+        TURN { MOVE(player, MOVE_CELEBRATE, .gimmick = GIMMICK_MEGA); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
         MESSAGE("Foe Murkrow's Confuse Ray was bounced back by Absol's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);

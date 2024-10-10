@@ -36,7 +36,7 @@ DOUBLE_BATTLE_TEST("Dragon Tail switches the target with a random non-battler, n
         OPPONENT(SPECIES_CHARMANDER);
         OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_TAIL, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_TAIL, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, playerLeft);
         MESSAGE("Foe Bulbasaur was dragged out!");

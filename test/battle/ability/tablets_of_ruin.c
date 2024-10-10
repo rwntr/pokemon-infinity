@@ -21,10 +21,10 @@ SINGLE_BATTLE_TEST("Tablets of Ruin reduces Attack if opposing mon's ability doe
         ABILITY_POPUP(player, ABILITY_TABLETS_OF_RUIN);
         MESSAGE("Wo-Chien's Tablets of Ruin weakened the Attack of all surrounding Pokémon!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &damage[0]);
+        HP_BAR(player, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ENTRAINMENT, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &damage[1]);
+        HP_BAR(player, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], Q_4_12(1.33), damage[1]);
     }

@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Barb Barrage's power doubles if the target is poisoned/badly
         TURN { MOVE(player, MOVE_BARB_BARRAGE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BARB_BARRAGE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[2].damage);

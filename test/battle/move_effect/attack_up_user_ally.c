@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Howl raises user's Attack by 1 stage", s16 damage)
             MESSAGE("Wobbuffet's Attack rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -44,8 +44,8 @@ DOUBLE_BATTLE_TEST("Howl raises user's and partner's Attack by 1 stage", s16 dam
         OPPONENT(SPECIES_WYNAUT) { Speed(12); }
     } WHEN {
         if (raiseAttack) TURN { MOVE(playerLeft, MOVE_HOWL); }
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
-        TURN { MOVE(playerRight, MOVE_TACKLE, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentLeft); }
+        TURN { MOVE(playerRight, MOVE_TACKLE, .target = opponentRight); }
     } SCENE {
         if (raiseAttack) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_HOWL, playerLeft);
@@ -55,9 +55,9 @@ DOUBLE_BATTLE_TEST("Howl raises user's and partner's Attack by 1 stage", s16 dam
             MESSAGE("Wynaut's Attack rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
-        HP_BAR(opponentLeft, captureDamage: &results[i].damageLeft);
+        HP_BAR(opponentLeft, .captureDamage =  &results[i].damageLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
-        HP_BAR(opponentRight, captureDamage: &results[i].damageRight);
+        HP_BAR(opponentRight, .captureDamage =  &results[i].damageRight);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damageLeft, Q_4_12(1.5), results[1].damageLeft);
         EXPECT_MUL_EQ(results[0].damageRight, Q_4_12(1.5), results[1].damageRight);
@@ -75,11 +75,11 @@ DOUBLE_BATTLE_TEST("Howl does not work on partner if it has Soundproof")
         OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
         OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
-        TURN { MOVE(playerLeft, MOVE_HOWL); MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerRight, MOVE_TACKLE, .target = opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_HOWL); MOVE(playerRight, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
-        HP_BAR(opponentLeft, captureDamage: &damage[0]);
+        HP_BAR(opponentLeft, .captureDamage =  &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HOWL, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -91,7 +91,7 @@ DOUBLE_BATTLE_TEST("Howl does not work on partner if it has Soundproof")
         ABILITY_POPUP(playerRight, ABILITY_SOUNDPROOF);
         MESSAGE("Voltorb's Soundproof blocks Howl!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
-        HP_BAR(opponentLeft, captureDamage: &damage[1]);
+        HP_BAR(opponentLeft, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }

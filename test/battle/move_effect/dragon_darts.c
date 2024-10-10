@@ -29,7 +29,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes each opponent once in a double battle")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentLeft);
@@ -47,7 +47,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes the ally twice if the target protects")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_PROTECT); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_PROTECT); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
@@ -66,7 +66,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes the right ally twice if the target is a
         OPPONENT(SPECIES_CLEFAIRY);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentRight);
@@ -84,7 +84,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes the left ally twice if the target is a 
         OPPONENT(SPECIES_CLEFAIRY);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentRight);
@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes left ally twice if electrified and righ
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); };
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, .target = playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentLeft);
@@ -122,7 +122,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes right ally twice if electrified and lef
         OPPONENT(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); };
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, .target = playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentRight);
@@ -141,7 +141,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes left ally twice if electrified and righ
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ELECTIVIRE) { Ability(ABILITY_MOTOR_DRIVE); };
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, .target = playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentLeft);
@@ -160,7 +160,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes right ally twice if electrified and lef
         OPPONENT(SPECIES_ELECTIVIRE) { Ability(ABILITY_MOTOR_DRIVE); };
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_ELECTRIFY, .target = playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentRight);
@@ -180,7 +180,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes the ally twice if the target is in a se
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_FLY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_FLY, .target = playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLY, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
@@ -199,7 +199,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts is not effected by Wide Guard")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WIDE_GUARD, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
@@ -218,7 +218,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes hit the ally if the target fainted")
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_SONIC_BOOM, target: opponentLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
+        TURN { MOVE(playerRight, MOVE_SONIC_BOOM, .target = opponentLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SONIC_BOOM, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
@@ -237,7 +237,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes left ally twice if one strike misses")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHT_POWDER); };
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentRight, hit: FALSE); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentRight, hit: FALSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentLeft);
@@ -255,7 +255,7 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes right ally twice if one strike misses")
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHT_POWDER); };
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft, hit: FALSE); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, .target = opponentLeft, hit: FALSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DARTS, playerLeft);
         HP_BAR(opponentRight);

@@ -127,7 +127,7 @@ DOUBLE_BATTLE_TEST("Raging Bull can remove Light Screen, Reflect and Aurora Veil
         TURN {
             MOVE(opponentLeft, MOVE_SNOWSCAPE);
             MOVE(playerLeft, move);
-            MOVE(playerRight, MOVE_RAGING_BULL, target: playerLeft);
+            MOVE(playerRight, MOVE_RAGING_BULL, .target = playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNOWSCAPE, opponentLeft);

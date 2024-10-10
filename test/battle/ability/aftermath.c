@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Aftermath damages the attacker by 1/4th of its max HP if fai
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         MESSAGE("Voltorb fainted!");
         ABILITY_POPUP(player, ABILITY_AFTERMATH);
-        HP_BAR(opponent, captureDamage: &aftermathDamage);
+        HP_BAR(opponent, .captureDamage =  &aftermathDamage);
     } THEN {
         EXPECT_EQ(aftermathDamage, opponent->maxHP / 4);
     }

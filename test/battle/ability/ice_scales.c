@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Ice Scales halves the damage from special moves", s16 damage
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(0.5), results[1].damage); // Ice Scales halves the damage of Psychic
         EXPECT_MUL_EQ(results[2].damage, UQ_4_12(0.5), results[3].damage); // Ice Scales halves the damage of Psyshock, even if it targets Defense

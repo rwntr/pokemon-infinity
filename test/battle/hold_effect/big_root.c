@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Big Root now causes absorb effect moves to recover 50% extra
     } SCENE {
         MESSAGE("Victreebel used Giga Drain!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GIGA_DRAIN, player);
-        HP_BAR(player, captureDamage: &results[i].hp);
+        HP_BAR(player, .captureDamage =  &results[i].hp);
         MESSAGE("Foe Wobbuffet had its energy drained!");
     } FINALLY {
         EXPECT_MUL_EQ(results[1].hp, UQ_4_12(1.5), results[0].hp);

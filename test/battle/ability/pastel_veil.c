@@ -24,7 +24,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison on partner")
         OPPONENT(SPECIES_PONYTA_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_POISON_STING, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_POISON_STING, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_STING, playerLeft);
         NOT STATUS_ICON(opponentRight, poison: TRUE);
@@ -59,9 +59,9 @@ DOUBLE_BATTLE_TEST("Pastel Veil does not cure Mold Breaker poison on partner")
         OPPONENT(SPECIES_PONYTA_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TOXIC, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_TOXIC, .target = opponentRight); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, playerLeft, target: opponentRight);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, playerLeft, .target = opponentRight);
         STATUS_ICON(opponentRight, badPoison: TRUE);
         NOT STATUS_ICON(opponentRight, none: TRUE);
     }
@@ -92,7 +92,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner")
         OPPONENT(SPECIES_PONYTA_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TOXIC, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_TOXIC, .target = opponentRight); }
     } SCENE {
         MESSAGE("Wobbuffet used Toxic!");
         ABILITY_POPUP(opponentLeft, ABILITY_PASTEL_VEIL);

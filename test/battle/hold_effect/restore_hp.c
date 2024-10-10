@@ -18,7 +18,7 @@ DOUBLE_BATTLE_TEST("Restore HP Item effects do not miss timing")
         OPPONENT(SPECIES_WYNAUT) { MaxHP(100); HP(51); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, .target = opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
         MESSAGE("A sea of fire enveloped the opposing team!");
@@ -47,7 +47,7 @@ DOUBLE_BATTLE_TEST("Restore HP Item effects do not miss timing after a recoil mo
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE(opponentLeft, MOVE_TAKE_DOWN, target: playerLeft);
+            MOVE(opponentLeft, MOVE_TAKE_DOWN, .target = playerLeft);
             MOVE(opponentRight, MOVE_CELEBRATE);
             MOVE(playerLeft, MOVE_CELEBRATE);
             MOVE(playerRight, MOVE_CELEBRATE);

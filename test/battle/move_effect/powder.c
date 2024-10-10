@@ -107,7 +107,7 @@ DOUBLE_BATTLE_TEST("Powder blocks the target's Fire type moves even if it doesn'
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentLeft); }
+        TURN { MOVE(opponentRight, MOVE_POWDER, .target = playerLeft); MOVE(playerLeft, MOVE_EMBER, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentRight);
         NONE_OF {
@@ -125,7 +125,7 @@ DOUBLE_BATTLE_TEST("Powder fails if target is already affected by Powder")
         OPPONENT(SPECIES_VIVILLON);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, MOVE_POWDER, target: playerLeft); }
+        TURN { MOVE(opponentRight, MOVE_POWDER, .target = playerLeft); MOVE(opponentLeft, MOVE_POWDER, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentRight);
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentLeft);
@@ -171,7 +171,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
         OPPONENT(SPECIES_TREVENANT);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, MOVE_FORESTS_CURSE, target: playerLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_POWDER, .target = playerLeft); MOVE(opponentLeft, MOVE_FORESTS_CURSE, .target = playerLeft); MOVE(playerLeft, MOVE_EMBER, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FORESTS_CURSE, opponentLeft);
@@ -191,7 +191,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
         OPPONENT(SPECIES_FORRETRESS) { Ability(ABILITY_OVERCOAT); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerRight, MOVE_DOODLE, target: opponentLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_POWDER, .target = playerLeft); MOVE(playerRight, MOVE_DOODLE, .target = opponentLeft); MOVE(playerLeft, MOVE_EMBER, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerRight);
@@ -278,7 +278,7 @@ DOUBLE_BATTLE_TEST("Powder damages a target using Shell Trap even if it wasn't h
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, move, target: playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentRight, MOVE_POWDER, .target = playerLeft); MOVE(opponentLeft, move, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentRight);

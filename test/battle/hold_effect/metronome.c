@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Metronome Item gradually boosts power of consecutively used 
     } SCENE {
         for (j = 0; j < METRONOME_TURNS; ++j) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-            HP_BAR(opponent, captureDamage: &damage[j]);
+            HP_BAR(opponent, .captureDamage =  &damage[j]);
         }
     } THEN {
         for (j = 0; j < METRONOME_TURNS; ++j) {
@@ -53,12 +53,12 @@ SINGLE_BATTLE_TEST("Metronome Item's boost is reset if the attacker uses a diffe
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, player);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }
@@ -76,10 +76,10 @@ SINGLE_BATTLE_TEST("Metronome Item's boost is reset if the move fails")
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }
@@ -96,10 +96,10 @@ SINGLE_BATTLE_TEST("Metronome Item counts called moves instead of the calling mo
         TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_TACKLE)); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], UQ_4_12(1.2), damage[1]);
     }
@@ -124,7 +124,7 @@ SINGLE_BATTLE_TEST("Metronome Item counts charging turn of moves for its attacki
         MESSAGE("Foe Wobbuffet used Celebrate!");
         MESSAGE("Congratulations, 1!");
         MESSAGE("Wobbuffet used Solar Beam!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(1.2), results[1].damage);
     }
@@ -142,11 +142,11 @@ SINGLE_BATTLE_TEST("Metronome Item doesn't increase damage per hit of multi-hit 
         TURN { MOVE(player, MOVE_FURY_ATTACK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_ATTACK, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
         MESSAGE("Hit 5 time(s)!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_ATTACK, player);
-        HP_BAR(opponent, captureDamage: &damage[2]);
+        HP_BAR(opponent, .captureDamage =  &damage[2]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], UQ_4_12(1.2), damage[2]); // Got bonus once for the second turn
         EXPECT_EQ(damage[0], damage[1]); // Do not get the bonus while still inside the first turn

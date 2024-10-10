@@ -21,9 +21,9 @@ SINGLE_BATTLE_TEST("Fickle Beam deals double damage 30% of the time")
         TURN { MOVE(player, MOVE_FICKLE_BEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWER_GEM, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FICKLE_BEAM, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], Q_4_12(2.0), damage[1]);
     }

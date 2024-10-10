@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Dry Skin increases damage taken from Fire-type moves by 25%"
         TURN { MOVE(player, MOVE_EMBER); }
     } SCENE {
         MESSAGE("Wobbuffet used Ember!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         // Due to numerics related to rounding on each applied multiplier,
         // the ability effect doesn't manifest as a 25% damage increase, but as a ~31% damage increase in this case.

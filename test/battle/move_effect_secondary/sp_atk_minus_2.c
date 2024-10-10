@@ -31,7 +31,7 @@ DOUBLE_BATTLE_TEST("Overheat drops Sp. Atk by 2 stages - doubles")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_OVERHEAT, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_OVERHEAT, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OVERHEAT, playerLeft);
         HP_BAR(opponentLeft);

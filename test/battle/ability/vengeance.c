@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Vengeance boosts Ghost-type moves in a pinch", s16 damage)
     } WHEN {
         TURN { MOVE(player, MOVE_SHADOW_BALL); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Vengeance boosts Ghost-type moves outside of pinch", s16 dam
     } WHEN {
         TURN { MOVE(player, MOVE_SHADOW_BALL); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
     }

@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("X Attack sharply raises battler's Attack stat", s16 damage)
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Wobbuffet used Tackle!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("X Defense sharply raises battler's Defense stat", s16 damage
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Tackle!");
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("X Sp. Atk sharply raises battler's Sp. Attack stat", s16 dam
         TURN { MOVE(player, MOVE_DISARMING_VOICE); }
     } SCENE {
         MESSAGE("Wobbuffet used Disarming Voice!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
@@ -88,7 +88,7 @@ SINGLE_BATTLE_TEST("X Sp. Def sharply raises battler's Sp. Defense stat", s16 da
         TURN { MOVE(opponent, MOVE_DISARMING_VOICE); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Disarming Voice!");
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
@@ -166,7 +166,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Attack stat", s16 damage)
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Wobbuffet used Tackle!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -186,7 +186,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Defense stat", s16 damage)
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Tackle!");
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.66), results[1].damage);
     }
@@ -206,7 +206,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Sp. Attack stat", s16 damage)
         TURN { MOVE(player, MOVE_DISARMING_VOICE); }
     } SCENE {
         MESSAGE("Wobbuffet used Disarming Voice!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -226,7 +226,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms battler's Sp. Defense stat", s16 damage)
         TURN { MOVE(opponent, MOVE_DISARMING_VOICE); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Disarming Voice!");
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.66), results[1].damage);
     }

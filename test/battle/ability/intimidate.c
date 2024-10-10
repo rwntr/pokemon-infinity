@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
             MESSAGE("Foe Arbok's Intimidate cuts Wobbuffet's attack!");
         }
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
             MESSAGE("Foe Arbok's Intimidate cuts Wobbuffet's attack!");
         }
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -143,7 +143,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
     } WHEN {
         TURN {
             SWITCH(playerLeft, 2);
-            MOVE(playerRight, MOVE_GUNK_SHOT, target: opponentLeft);
+            MOVE(playerRight, MOVE_GUNK_SHOT, .target = opponentLeft);
             MOVE(opponentRight, MOVE_SPLASH);
         }
         TURN {
@@ -178,7 +178,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates immediately after the mon was switched 
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_U_TURN, target: opponentLeft); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); }
+        TURN { MOVE(playerLeft, MOVE_U_TURN, .target = opponentLeft); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_ELECTRIC_SURGE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, playerLeft);
@@ -230,7 +230,7 @@ DOUBLE_BATTLE_TEST("Intimidate is not going to trigger if a mon switches out thr
     } WHEN {
         TURN {
             MOVE(opponentRight, MOVE_HEALING_WISH);
-            MOVE(playerLeft, MOVE_U_TURN, target: opponentLeft);
+            MOVE(playerLeft, MOVE_U_TURN, .target = opponentLeft);
             SEND_OUT(playerLeft, 2);
             SEND_OUT(opponentLeft, 2);
             SEND_OUT(opponentRight, 3);

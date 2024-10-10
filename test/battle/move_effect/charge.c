@@ -21,10 +21,10 @@ SINGLE_BATTLE_TEST("Charge doubles the damage of the next Electric move of the u
         TURN { MOVE(player, MOVE_THUNDERBOLT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &normalDamage);
+        HP_BAR(opponent, .captureDamage =  &normalDamage);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHARGE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &chargedUpDamage);
+        HP_BAR(opponent, .captureDamage =  &chargedUpDamage);
     } THEN {
         EXPECT_MUL_EQ(normalDamage, Q_4_12(2.0), chargedUpDamage);
     }
@@ -45,11 +45,11 @@ SINGLE_BATTLE_TEST("Charge's effect is kept until the user uses an Electric move
         TURN { MOVE(player, MOVE_THUNDERBOLT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &normalDamage);
+        HP_BAR(opponent, .captureDamage =  &normalDamage);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHARGE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &chargedUpDamage);
+        HP_BAR(opponent, .captureDamage =  &chargedUpDamage);
     } THEN {
         EXPECT_MUL_EQ(normalDamage, Q_4_12(2.0), chargedUpDamage);
     }
@@ -69,10 +69,10 @@ SINGLE_BATTLE_TEST("Charge's effect is removed if the user fails using an Electr
         TURN { MOVE(player, MOVE_THUNDER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHARGE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }
@@ -97,12 +97,12 @@ SINGLE_BATTLE_TEST("Charge's effect does not stack with Electromorphosis or Wind
         TURN { MOVE(player, MOVE_THUNDERBOLT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &normalDamage);
+        HP_BAR(opponent, .captureDamage =  &normalDamage);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHARGE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AIR_CUTTER, opponent);
         ABILITY_POPUP(player, ability);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &chargedUpDamage);
+        HP_BAR(opponent, .captureDamage =  &chargedUpDamage);
     } THEN {
         EXPECT_MUL_EQ(normalDamage, Q_4_12(2.0), chargedUpDamage);
     }
@@ -125,11 +125,11 @@ SINGLE_BATTLE_TEST("Charge's effect is removed regardless if the next move is El
         TURN { MOVE(player, MOVE_THUNDERBOLT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &normalDamage);
+        HP_BAR(opponent, .captureDamage =  &normalDamage);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHARGE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &chargedUpDamage);
+        HP_BAR(opponent, .captureDamage =  &chargedUpDamage);
     } THEN {
         if (B_CHARGE < GEN_9)
             EXPECT_EQ(normalDamage, chargedUpDamage);
@@ -154,10 +154,10 @@ SINGLE_BATTLE_TEST("Charge will not expire if it flinches twice in a row")
          TURN { MOVE(player, MOVE_THUNDERBOLT); }
     } SCENE {
          ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-         HP_BAR(opponent, captureDamage: &normalDamage);
+         HP_BAR(opponent, .captureDamage =  &normalDamage);
          ANIMATION(ANIM_TYPE_MOVE, MOVE_CHARGE, player);
          ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-         HP_BAR(opponent, captureDamage: &chargedUpDamage);
+         HP_BAR(opponent, .captureDamage =  &chargedUpDamage);
     } THEN {
         if (B_CHARGE < GEN_9)
             EXPECT_EQ(normalDamage, chargedUpDamage);

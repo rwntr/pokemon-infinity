@@ -391,9 +391,9 @@ AI_DOUBLE_BATTLE_TEST("AI won't use a Weather changing move if partner already c
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_TACKLE, weatherMoveRight); }
     } WHEN {
             TURN {  NOT_EXPECT_MOVE(opponentRight, weatherMoveRight);
-                    SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, target:playerLeft);
-                    SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, target:playerRight);
-                    SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, target:opponentLeft);
+                    SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, .target = playerLeft);
+                    SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, .target = playerRight);
+                    SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, .target = opponentLeft);
                  }
     }
 }
@@ -414,9 +414,9 @@ AI_DOUBLE_BATTLE_TEST("AI will not use Helping Hand if partner does not have any
         OPPONENT(SPECIES_WOBBUFFET) { Moves(move1, move2, move3, move4); }
     } WHEN {
             TURN {  NOT_EXPECT_MOVE(opponentLeft, MOVE_HELPING_HAND);
-                    SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:playerLeft);
-                    SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:playerRight);
-                    SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:opponentLeft);
+                    SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, .target = playerLeft);
+                    SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, .target = playerRight);
+                    SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, .target = opponentLeft);
                  }
     } SCENE {
         NOT MESSAGE("Foe Wobbuffet used Helping Hand!");
@@ -443,9 +443,9 @@ AI_DOUBLE_BATTLE_TEST("AI will not use a status move if partner already chose He
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_TACKLE, statusMove); }
     } WHEN {
             TURN {  NOT_EXPECT_MOVE(opponentRight, statusMove);
-                    SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, target:playerLeft);
-                    SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, target:playerRight);
-                    SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, target:opponentLeft);
+                    SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, .target = playerLeft);
+                    SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, .target = playerRight);
+                    SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, .target = opponentLeft);
                  }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Helping Hand!");
@@ -479,14 +479,14 @@ AI_DOUBLE_BATTLE_TEST("AI without any flags chooses moves at random - doubles")
     } WHEN {
             TURN { EXPECT_MOVES(opponentLeft, MOVE_SPLASH, MOVE_EXPLOSION, MOVE_RAGE, MOVE_HELPING_HAND);
                    EXPECT_MOVES(opponentRight, MOVE_SPLASH, MOVE_EXPLOSION, MOVE_RAGE, MOVE_HELPING_HAND);
-                   SCORE_EQ_VAL(opponentLeft, MOVE_SPLASH, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentLeft, MOVE_EXPLOSION, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentLeft, MOVE_RAGE, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentRight, MOVE_SPLASH, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentRight, MOVE_EXPLOSION, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentRight, MOVE_RAGE, AI_SCORE_DEFAULT, target:playerLeft);
-                   SCORE_EQ_VAL(opponentRight, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:playerLeft);
+                   SCORE_EQ_VAL(opponentLeft, MOVE_SPLASH, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentLeft, MOVE_EXPLOSION, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentLeft, MOVE_RAGE, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentRight, MOVE_SPLASH, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentRight, MOVE_EXPLOSION, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentRight, MOVE_RAGE, AI_SCORE_DEFAULT, .target = playerLeft);
+                   SCORE_EQ_VAL(opponentRight, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, .target = playerLeft);
                 }
     }
 }
@@ -660,7 +660,7 @@ AI_DOUBLE_BATTLE_TEST("AI will not choose Earthquake if it damages the partner")
         if (species == SPECIES_CHARIZARD)
             TURN { EXPECT_MOVE(opponentLeft, MOVE_EARTHQUAKE); }
         else
-            TURN { EXPECT_MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); }
+            TURN { EXPECT_MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); }
     }
 }
 
@@ -674,7 +674,7 @@ AI_DOUBLE_BATTLE_TEST("AI will choose Earthquake if partner is not alive")
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
         OPPONENT(SPECIES_PIKACHU) { HP(1); Moves(MOVE_CELEBRATE); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentRight); }
         TURN { EXPECT_MOVE(opponentLeft, MOVE_EARTHQUAKE); }
     }
 }

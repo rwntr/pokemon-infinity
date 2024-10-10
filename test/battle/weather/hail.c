@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Hail deals 1/16 damage per turn")
         TURN {MOVE(player, MOVE_HAIL);}
     } SCENE {
         MESSAGE("Foe Wobbuffet is pelted by HAIL!");
-        HP_BAR(opponent, captureDamage: &hailDamage);
+        HP_BAR(opponent, .captureDamage =  &hailDamage);
    } THEN { EXPECT_EQ(hailDamage, opponent->maxHP / 16); }
 }
 

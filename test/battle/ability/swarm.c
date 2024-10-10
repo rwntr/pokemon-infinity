@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Swarm boosts Bug-type moves in a pinch", s16 damage)
     } WHEN {
         TURN { MOVE(player, MOVE_BUG_BITE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         // Due to numerics related to rounding on each applied multiplier,
         // the 50% move power increase doesn't manifest as a 50% damage increase, but as a 44% damage increase in this case.
@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Swarm boosts Bug-type moves outside of pinch", s16 damage)
     } WHEN {
         TURN { MOVE(player, MOVE_BUG_BITE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
     // Due to numerics related to rounding on each applied multiplier,
     // the 50% move power increase doesn't manifest as a 50% damage increase, but as a 44% damage increase in this case.

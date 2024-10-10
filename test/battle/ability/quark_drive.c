@@ -42,10 +42,10 @@ SINGLE_BATTLE_TEST("Quark Drive boosts either Attack or Special Attack, not both
         TURN { MOVE(opponent, MOVE_ELECTRIC_TERRAIN); MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ELECTRIC_TERRAIN, opponent);
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         if ((move == MOVE_TACKLE && species == SPECIES_IRON_VALIANT) || (move == MOVE_ROUND && species == SPECIES_IRON_MOTH))
             EXPECT_MUL_EQ(damage[0], Q_4_12(1.3), damage[1]);

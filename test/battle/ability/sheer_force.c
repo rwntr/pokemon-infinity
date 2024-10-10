@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Sheer Force boosts power, but removes secondary effects of m
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
         if (ability == ABILITY_SHEER_FORCE) {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);

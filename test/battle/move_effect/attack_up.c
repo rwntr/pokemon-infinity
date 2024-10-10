@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Meditate raises Attack by 1 stage", s16 damage)
             MESSAGE("Wobbuffet's Attack rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }

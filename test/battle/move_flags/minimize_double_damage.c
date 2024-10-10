@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("MinimizeDoubleDamage flag makes moves cause double damage to
         else
             TURN { MOVE(player, MOVE_STEAMROLLER); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(2.0), results[1].damage);
     }

@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Sandstorm deals 1/16 damage per turn")
         TURN {MOVE(player, MOVE_SANDSTORM);}
     } SCENE {
         MESSAGE("Foe Wobbuffet is buffeted by the sandstorm!");
-        HP_BAR(opponent, captureDamage: &sandstormDamage);
+        HP_BAR(opponent, .captureDamage =  &sandstormDamage);
    } THEN { EXPECT_EQ(sandstormDamage, opponent->maxHP / 16); }
 }
 
@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_SWIFT); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }

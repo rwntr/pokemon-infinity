@@ -21,10 +21,10 @@ SINGLE_BATTLE_TEST("Beads of Ruin reduces Sp. Def if opposing mon's ability does
         ABILITY_POPUP(player, ABILITY_BEADS_OF_RUIN);
         MESSAGE("Chi-Yu's Beads of Ruin weakened the Sp. Def of all surrounding Pokémon!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROLE_PLAY, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[1], Q_4_12(1.33), damage[0]);
     }

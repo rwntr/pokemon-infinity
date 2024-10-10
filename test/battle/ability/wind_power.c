@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Wind Power sets up Charge for player when hit by a wind move
         TURN { MOVE(player, MOVE_THUNDERBOLT), MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &dmgBefore);
+        HP_BAR(opponent, .captureDamage =  &dmgBefore);
 
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         HP_BAR(player);
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Wind Power sets up Charge for player when hit by a wind move
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, player);
-        HP_BAR(opponent, captureDamage: &dmgAfter);
+        HP_BAR(opponent, .captureDamage =  &dmgAfter);
 
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         HP_BAR(player);
@@ -76,7 +76,7 @@ SINGLE_BATTLE_TEST("Wind Power sets up Charge for opponent when hit by a wind mo
         TURN { MOVE(opponent, MOVE_THUNDERBOLT), MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, opponent);
-        HP_BAR(player, captureDamage: &dmgBefore);
+        HP_BAR(player, .captureDamage =  &dmgBefore);
 
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Wind Power sets up Charge for opponent when hit by a wind mo
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDERBOLT, opponent);
-        HP_BAR(player, captureDamage: &dmgAfter);
+        HP_BAR(player, .captureDamage =  &dmgAfter);
 
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);

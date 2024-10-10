@@ -53,7 +53,7 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh does not trigger if Pokemon faint to in
         OPPONENT(SPECIES_ABRA) { HP(1); }
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_QUICK_ATTACK, target: opponentRight); SEND_OUT(opponentLeft, 2);  }
+        TURN { MOVE(playerRight, MOVE_QUICK_ATTACK, .target = opponentRight); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
         int i;
 
@@ -134,7 +134,7 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh does not increase damage done by the sa
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, playerLeft);
-        HP_BAR(opponentLeft, captureDamage: &damage[0]);
+        HP_BAR(opponentLeft, .captureDamage =  &damage[0]);
         HP_BAR(playerRight);
         MESSAGE("Abra fainted!");
         ABILITY_POPUP(playerLeft, abilityPopUp);
@@ -145,7 +145,7 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh does not increase damage done by the sa
             MESSAGE("Glastrier's Chilling Neigh raised its Attack!");
         else
             MESSAGE("Calyrex's Chilling Neigh raised its Attack!");
-        HP_BAR(opponentRight, captureDamage: &damage[1]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_EQ(playerLeft->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(damage[0], damage[1]);

@@ -24,7 +24,7 @@ DOUBLE_BATTLE_TEST("Heal Bell cures the entire party")
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerLeft, move, target: playerLeft); }
+        TURN { MOVE(playerLeft, move, .target = playerLeft); }
         TURN { SWITCH(playerLeft, 2); SWITCH(playerRight, 3); }
     } SCENE {
         int i;
@@ -51,7 +51,7 @@ DOUBLE_BATTLE_TEST("Heal Bell does not cure soundproof partners")
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_HEAL_BELL, target: playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_HEAL_BELL, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BELL, playerLeft);
         if (ability == ABILITY_SOUNDPROOF) {
@@ -76,7 +76,7 @@ SINGLE_BATTLE_TEST("Heal Bell cures inactive soundproof Pokemon")
         PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(player, MOVE_HEAL_BELL, target: player); }
+        TURN { MOVE(player, MOVE_HEAL_BELL, .target = player); }
         TURN { SWITCH(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BELL, player);
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Heal Bell cures a soundproof user")
         PLAYER(SPECIES_EXPLOUD) { Ability(ABILITY_SOUNDPROOF); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(player, MOVE_HEAL_BELL, target: player); }
+        TURN { MOVE(player, MOVE_HEAL_BELL, .target = player); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BELL, player);
         NOT MESSAGE("Exploud is hurt by poison!");

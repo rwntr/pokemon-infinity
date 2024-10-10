@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Electromorphosis sets up Charge when hit by any move")
         TURN { MOVE(player, MOVE_THUNDER_SHOCK), MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_SHOCK, player);
-        HP_BAR(opponent, captureDamage: &dmgBefore);
+        HP_BAR(opponent, .captureDamage =  &dmgBefore);
 
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         HP_BAR(player);
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Electromorphosis sets up Charge when hit by any move")
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_SHOCK, player);
-        HP_BAR(opponent, captureDamage: &dmgAfter);
+        HP_BAR(opponent, .captureDamage =  &dmgAfter);
 
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         HP_BAR(player);

@@ -141,7 +141,7 @@ SINGLE_BATTLE_TEST("Booster Energy increases special attack by 30% if it is the 
         TURN { MOVE(player, MOVE_ROUND); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.3), results[1].damage);
     }
@@ -167,7 +167,7 @@ SINGLE_BATTLE_TEST("Booster Energy increases special defense by 30% if it is the
         TURN { MOVE(opponent, MOVE_ROUND); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.7), results[1].damage);
     }

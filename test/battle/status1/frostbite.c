@@ -15,11 +15,11 @@ SINGLE_BATTLE_TEST("Frostbite reduces the special attack by 50 percent")
         TURN { MOVE(opponent, MOVE_SWIFT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, opponent);
-        HP_BAR(player, captureDamage: &reducedDamage);
+        HP_BAR(player, .captureDamage =  &reducedDamage);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLAME_WHEEL, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWIFT, opponent);
-        HP_BAR(player, captureDamage: &normaleDamage);
+        HP_BAR(player, .captureDamage =  &normaleDamage);
    } THEN { EXPECT_EQ(reducedDamage * 2, normaleDamage); }
 }
 
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Frostbite deals 1/16 damage to effected pokemon")
     } SCENE {
         MESSAGE("Foe Wobbuffet is hurt by its frostbite!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, opponent);
-        HP_BAR(opponent, captureDamage: &frostbiteDamage);
+        HP_BAR(opponent, .captureDamage =  &frostbiteDamage);
    } THEN { EXPECT_EQ(frostbiteDamage, opponent->maxHP / 16); }
 }
 

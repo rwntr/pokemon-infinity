@@ -63,7 +63,7 @@ DOUBLE_BATTLE_TEST("Psychic Noise heal block effect is blocked by partners Aroma
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_MILCERY) { Ability(ABILITY_AROMA_VEIL); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_PSYCHIC_NOISE, target: opponentLeft); MOVE(opponentLeft, MOVE_RECOVER); }
+        TURN { MOVE(playerLeft, MOVE_PSYCHIC_NOISE, .target = opponentLeft); MOVE(opponentLeft, MOVE_RECOVER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC_NOISE, playerLeft);
         ABILITY_POPUP(opponentRight, ABILITY_AROMA_VEIL);

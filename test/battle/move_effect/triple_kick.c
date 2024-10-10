@@ -19,11 +19,11 @@ SINGLE_BATTLE_TEST("Triple Kick damage is increased by its base damage for each 
         TURN { MOVE(player, MOVE_TRIPLE_KICK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_KICK, player);
-        HP_BAR(opponent, captureDamage: &firstHit);
+        HP_BAR(opponent, .captureDamage =  &firstHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_KICK, player);
-        HP_BAR(opponent, captureDamage: &secondHit);
+        HP_BAR(opponent, .captureDamage =  &secondHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_KICK, player);
-        HP_BAR(opponent, captureDamage: &thirdHit);
+        HP_BAR(opponent, .captureDamage =  &thirdHit);
     } THEN {
         EXPECT_MUL_EQ(firstHit, Q_4_12(2.0), secondHit);
         EXPECT_MUL_EQ(firstHit, Q_4_12(3.0), thirdHit);

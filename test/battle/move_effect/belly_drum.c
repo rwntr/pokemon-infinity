@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Belly Drum maximizes the user's Attack stat", s16 damage)
             MESSAGE("Wobbuffet cut its own HP and maximized ATTACK!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(4), results[1].damage);
     }

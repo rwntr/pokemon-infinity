@@ -96,7 +96,7 @@ SINGLE_BATTLE_TEST("Spit Up's power raises depending on Stockpile's count", s16 
             }
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIT_UP, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(3.0), results[2].damage);
@@ -133,7 +133,7 @@ SINGLE_BATTLE_TEST("Swallow heals HP depending on Stockpile's count", s16 hpHeal
             }
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWALLOW, player);
-        HP_BAR(player, captureDamage: &results[i].hpHeal);
+        HP_BAR(player, .captureDamage =  &results[i].hpHeal);
     } FINALLY {
         EXPECT_EQ(results[0].hpHeal, -100);
         EXPECT_EQ(results[1].hpHeal, -200);
@@ -165,10 +165,10 @@ SINGLE_BATTLE_TEST("Stockpile temporarily raises Def and Sp. Def", s16 dmgPyhsic
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &results[i].dmgPyhsical);
+        HP_BAR(player, .captureDamage =  &results[i].dmgPyhsical);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponent);
-        HP_BAR(player, captureDamage: &results[i].dmgSpecial);
+        HP_BAR(player, .captureDamage =  &results[i].dmgSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].dmgPyhsical, Q_4_12(1.5), results[1].dmgPyhsical);
         EXPECT_MUL_EQ(results[0].dmgSpecial,  Q_4_12(1.5), results[1].dmgSpecial);
@@ -191,7 +191,7 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
         OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(opponentRight, MOVE_GUST, .target = playerLeft); }
         TURN { MOVE(playerLeft, MOVE_STOCKPILE); }
         if (count != 1) {
             TURN { MOVE(playerLeft, MOVE_STOCKPILE); }
@@ -199,12 +199,12 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
                  TURN { MOVE(playerLeft, MOVE_STOCKPILE); }
             }
         }
-        TURN { MOVE(playerLeft, move, target: opponentLeft); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerLeft); }
+        TURN { MOVE(playerLeft, move, .target = opponentLeft); MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(opponentRight, MOVE_GUST, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        HP_BAR(playerLeft, captureDamage: &results[i].dmgPyhsicalBefore);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].dmgPyhsicalBefore);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentRight);
-        HP_BAR(playerLeft, captureDamage: &results[i].dmgSpecialBefore);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].dmgSpecialBefore);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOCKPILE, playerLeft);
         if (count != 1) {
@@ -238,9 +238,9 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
         MESSAGE("Wobbuffet's stockpiled effect wore off!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        HP_BAR(playerLeft, captureDamage: &results[i].dmgPhysicalAfter);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].dmgPhysicalAfter);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentRight);
-        HP_BAR(playerLeft, captureDamage: &results[i].dmgSpecialAfter);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].dmgSpecialAfter);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].dmgPyhsicalBefore, UQ_4_12(1.0), results[0].dmgPhysicalAfter);
         EXPECT_MUL_EQ(results[0].dmgSpecialBefore,  UQ_4_12(1.0), results[0].dmgSpecialAfter);

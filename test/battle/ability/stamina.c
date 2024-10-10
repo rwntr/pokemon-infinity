@@ -11,7 +11,7 @@
 #define STAMINA_HIT(attacker, target, move, msg, dmgVar)        \
 {                                                               \
     ANIMATION(ANIM_TYPE_MOVE, move, attacker);                  \
-    HP_BAR(target, captureDamage: &dmgVar);                     \
+    HP_BAR(target, .captureDamage =  &dmgVar);                     \
     STAMINA_STAT_RAISE(target, msg);                            \
 }
 

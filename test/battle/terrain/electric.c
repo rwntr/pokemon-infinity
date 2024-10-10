@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Electric Terrain increases power of Electric-type moves by 3
         TURN { MOVE(player, MOVE_THUNDER_SHOCK); }
     } SCENE {
         MESSAGE("Wobbuffet used Thunder Shock!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (B_TERRAIN_TYPE_BOOST >= GEN_8)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.3), results[1].damage);

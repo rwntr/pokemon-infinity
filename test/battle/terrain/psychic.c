@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain increases power of Psychic-type moves by 30/
         TURN { MOVE(player, MOVE_CONFUSION); }
     } SCENE {
         MESSAGE("Wobbuffet used Confusion!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (B_TERRAIN_TYPE_BOOST >= GEN_8)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.3), results[1].damage);
@@ -112,7 +112,7 @@ DOUBLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_PSYCHIC_TERRAIN); }
-        TURN { MOVE(playerLeft, MOVE_HEAL_PULSE, target: playerRight); }
+        TURN { MOVE(playerLeft, MOVE_HEAL_PULSE, .target = playerRight); }
     } SCENE {
         MESSAGE("Sableye used Psychic Terrain!");
         MESSAGE("Sableye used Heal Pulse!");

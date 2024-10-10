@@ -44,9 +44,9 @@ SINGLE_BATTLE_TEST("Tera Shell makes all hits of multi-hit moves against Terapag
         ABILITY_POPUP(player, ABILITY_TERA_SHELL);
         MESSAGE("Terapagos made its shell gleam! It's distorting type matchups!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_HIT, opponent);
-        HP_BAR(player, captureDamage: &firstHit);
+        HP_BAR(player, .captureDamage =  &firstHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_HIT, opponent);
-        HP_BAR(player, captureDamage: &secondHit);
+        HP_BAR(player, .captureDamage =  &secondHit);
         MESSAGE("It's not very effective…");
     } THEN {
         EXPECT_EQ(firstHit, secondHit);
@@ -63,15 +63,15 @@ DOUBLE_BATTLE_TEST("Tera Shell only makes the first hit of a double battle turn 
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_TACKLE, target: playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(opponentRight, MOVE_TACKLE, .target = playerLeft); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_TERA_SHELL);
         MESSAGE("Terapagos made its shell gleam! It's distorting type matchups!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        HP_BAR(playerLeft, captureDamage: &firstHit);
+        HP_BAR(playerLeft, .captureDamage =  &firstHit);
         MESSAGE("It's not very effective…");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
-        HP_BAR(playerLeft, captureDamage: &secondHit);
+        HP_BAR(playerLeft, .captureDamage =  &secondHit);
         NOT MESSAGE("It's not very effective…");
     } THEN {
         EXPECT_MUL_EQ(firstHit, Q_4_12(2.0), secondHit);

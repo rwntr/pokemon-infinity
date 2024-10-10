@@ -510,6 +510,10 @@
 #define MAX_QUEUED_EVENTS 30
 #define MAX_EXPECTED_ACTIONS 10
 
+//#define abs(x) (((x) < 0) ? -(x) : (x))
+
+//#define _(x)        {x}
+
 enum { BATTLE_TEST_SINGLES, BATTLE_TEST_DOUBLES, BATTLE_TEST_WILD, BATTLE_TEST_AI_SINGLES, BATTLE_TEST_AI_DOUBLES };
 
 typedef void (*SingleBattleTestFunction)(void *, const u32, struct BattlePokemon *, struct BattlePokemon *);
@@ -1003,7 +1007,7 @@ void SendOut(u32 sourceLine, struct BattlePokemon *, u32 partyIndex);
 #define MESSAGE(pattern) do {static const u8 msg[] = _(pattern); QueueMessage(__LINE__, msg);} while (0)
 #define STATUS_ICON(battler, status) QueueStatus(__LINE__, battler, (struct StatusEventContext) { status })
 #define FREEZE_OR_FROSTBURN_STATUS(battler, isFrostbite) \
-    (B_USE_FROSTBITE ? STATUS_ICON(battler, frostbite: isFrostbite) : STATUS_ICON(battler, freeze: isFrostbite))
+    (B_USE_FROSTBITE ? STATUS_ICON(battler, .frostbite = isFrostbite) : STATUS_ICON(battler, .freeze = isFrostbite))
 
 #define SWITCH_OUT_MESSAGE(name) ONE_OF {                                         \
                                      MESSAGE(name ", that's enough! Come back!"); \

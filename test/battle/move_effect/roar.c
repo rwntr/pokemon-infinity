@@ -35,7 +35,7 @@ DOUBLE_BATTLE_TEST("Roar switches the target with a random non-battler, non-fain
         OPPONENT(SPECIES_CHARMANDER);
         OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ROAR, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_ROAR, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, playerLeft);
         MESSAGE("Foe Bulbasaur was dragged out!");

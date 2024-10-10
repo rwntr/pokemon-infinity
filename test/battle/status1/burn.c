@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Burn reduces Attack by 50%", s16 damage)
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
     }

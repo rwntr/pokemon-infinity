@@ -18,8 +18,8 @@ SINGLE_BATTLE_TEST("Retaliate doubles in base power the turn after an ally faint
         TURN { MOVE(player, MOVE_RETALIATE); }
         TURN { MOVE(player, MOVE_RETALIATE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &damage[0]);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
     }
@@ -37,8 +37,8 @@ SINGLE_BATTLE_TEST("Retaliate doubles in base power the turn after an ally faint
         TURN { MOVE(opponent, MOVE_RETALIATE); }
         TURN { MOVE(opponent, MOVE_RETALIATE); }
     } SCENE {
-        HP_BAR(player, captureDamage: &damage[0]);
-        HP_BAR(player, captureDamage: &damage[1]);
+        HP_BAR(player, .captureDamage =  &damage[0]);
+        HP_BAR(player, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
     }
@@ -80,14 +80,14 @@ DOUBLE_BATTLE_TEST("Retaliate works with passive damage")
         OPPONENT(SPECIES_CLEFABLE) { Ability(ABILITY_MAGIC_GUARD); Level(1); }
         OPPONENT(SPECIES_CLEFABLE) { Ability(ABILITY_MAGIC_GUARD); }
     } WHEN {
-        TURN { MOVE(opponentRight, move2, target: moveTarget); MOVE(opponentLeft, move, target: moveTarget); MOVE(playerLeft, MOVE_CELEBRATE); SEND_OUT(playerLeft, 2); }
-        TURN { MOVE(opponentRight, MOVE_CELEBRATE, target: moveTarget); MOVE(playerLeft, MOVE_RETALIATE, target: opponentRight); }
-        TURN { MOVE(opponentRight, MOVE_CELEBRATE, target: moveTarget); MOVE(playerLeft, MOVE_RETALIATE, target: opponentRight); }
+        TURN { MOVE(opponentRight, move2, .target = moveTarget); MOVE(opponentLeft, move, .target = moveTarget); MOVE(playerLeft, MOVE_CELEBRATE); SEND_OUT(playerLeft, 2); }
+        TURN { MOVE(opponentRight, MOVE_CELEBRATE, .target = moveTarget); MOVE(playerLeft, MOVE_RETALIATE, .target = opponentRight); }
+        TURN { MOVE(opponentRight, MOVE_CELEBRATE, .target = moveTarget); MOVE(playerLeft, MOVE_RETALIATE, .target = opponentRight); }
     } SCENE {
         if (move != MOVE_FLAME_BURST)
             MESSAGE("Wynaut used Celebrate!");
-        HP_BAR(opponentRight, captureDamage: &damage[0]);
-        HP_BAR(opponentRight, captureDamage: &damage[1]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[0]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
     }
@@ -109,8 +109,8 @@ SINGLE_BATTLE_TEST("Retaliate works with Perish Song")
         TURN { MOVE(player, MOVE_RETALIATE); }
         TURN { MOVE(player, MOVE_RETALIATE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &damage[0]);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
     }
@@ -129,8 +129,8 @@ SINGLE_BATTLE_TEST("Retaliate works with self-inflicted fainting")
         TURN { MOVE(player, MOVE_RETALIATE); }
         TURN { MOVE(player, MOVE_RETALIATE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &damage[0]);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
     }

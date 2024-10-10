@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Snow multiplies the defense of Ice-types by 1.5x", s16 damag
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }

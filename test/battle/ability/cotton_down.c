@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("Cotton Down drops speed by one of all other battlers on the 
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
         ABILITY_POPUP(opponentLeft, ABILITY_COTTON_DOWN);

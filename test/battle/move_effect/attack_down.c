@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Growl lowers Attack by 1 stage", s16 damage)
             MESSAGE("Foe Wobbuffet's Attack fell!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damage, Q_4_12(1.5), results[0].damage);
     }

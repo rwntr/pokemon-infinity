@@ -22,10 +22,10 @@ SINGLE_BATTLE_TEST("Mirror Herb copies all of foe's positive stat changes in a t
         if (item == ITEM_NONE) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-            HP_BAR(player, captureDamage: &results[i].damage);
+            HP_BAR(player, .captureDamage =  &results[i].damage);
         } else {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-            HP_BAR(player, captureDamage: &results[i].damage);
+            HP_BAR(player, .captureDamage =  &results[i].damage);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         }
     } FINALLY {

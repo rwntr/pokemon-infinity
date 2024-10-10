@@ -79,8 +79,8 @@ DOUBLE_BATTLE_TEST("Flower Gift increases the attack of Cherrim and its allies b
     } WHEN {
         if (sunny)
             TURN { MOVE(playerLeft, MOVE_SUNNY_DAY); }
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft);
-               MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentLeft);
+               MOVE(playerRight, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         // sun activates
         if (sunny) {
@@ -90,10 +90,10 @@ DOUBLE_BATTLE_TEST("Flower Gift increases the attack of Cherrim and its allies b
         }
         // player uses Tackle
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
-        HP_BAR(opponentLeft, captureDamage: &results[i].damageL);
+        HP_BAR(opponentLeft, .captureDamage =  &results[i].damageL);
         // partner uses Tackle
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
-        HP_BAR(opponentLeft, captureDamage: &results[i].damageR);
+        HP_BAR(opponentLeft, .captureDamage =  &results[i].damageR);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damageL, UQ_4_12(1.5), results[1].damageL);
         EXPECT_MUL_EQ(results[0].damageR, UQ_4_12(1.5), results[1].damageR);
@@ -114,7 +114,7 @@ DOUBLE_BATTLE_TEST("Flower Gift increases the Sp. Def of Cherrim and its allies 
     } WHEN {
         if (sunny)
             TURN { MOVE(playerLeft, MOVE_SUNNY_DAY); }
-        TURN { MOVE(opponentLeft, MOVE_HYPER_VOICE, target: playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_HYPER_VOICE, .target = playerLeft); }
     } SCENE {
         // sun activates
         if (sunny) {
@@ -124,8 +124,8 @@ DOUBLE_BATTLE_TEST("Flower Gift increases the Sp. Def of Cherrim and its allies 
         }
         // opponentLeft uses Hyper Voice
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, opponentLeft);
-        HP_BAR(playerLeft, captureDamage: &results[i].damageL);
-        HP_BAR(playerRight, captureDamage: &results[i].damageR);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].damageL);
+        HP_BAR(playerRight, .captureDamage =  &results[i].damageR);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damageL, UQ_4_12(1.5), results[0].damageL);
         EXPECT_MUL_EQ(results[1].damageR, UQ_4_12(1.5), results[0].damageR);

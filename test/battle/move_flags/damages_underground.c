@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Being underground causes the target to take double damage fr
         else
             TURN { MOVE(player, MOVE_EARTHQUAKE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(2.0), results[1].damage);
     }

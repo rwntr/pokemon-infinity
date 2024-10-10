@@ -16,12 +16,12 @@ SINGLE_BATTLE_TEST("Scrappy prevents intimidate")
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_TACKLE); }
 
     } SCENE {
-        HP_BAR(player, captureDamage: &turnOneHit);
+        HP_BAR(player, .captureDamage =  &turnOneHit);
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
         ABILITY_POPUP(opponent, ABILITY_SCRAPPY);
         MESSAGE("Foe Kangaskhan's Scrappy prevents stat loss!");
-        HP_BAR(player, captureDamage: &turnTwoHit);
+        HP_BAR(player, .captureDamage =  &turnTwoHit);
     } THEN {
         EXPECT_EQ(turnOneHit, turnTwoHit);
     }

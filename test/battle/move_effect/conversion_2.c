@@ -195,7 +195,7 @@ SINGLE_BATTLE_TEST("Conversion 2 fails if the targeted move is Stellar Type")
         PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_CONVERSION_2); }
+        TURN { MOVE(player, MOVE_TERA_BLAST, .gimmick = GIMMICK_TERA); MOVE(opponent, MOVE_CONVERSION_2); }
     } SCENE {
         // turn 1
         MESSAGE("Wobbuffet used Tera Blast!");

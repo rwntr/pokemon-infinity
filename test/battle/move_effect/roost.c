@@ -236,8 +236,8 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
         OPPONENT(SPECIES_SANDSHREW) { Speed(20); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROOST);
-               MOVE(opponentLeft, MOVE_GUST, target: playerLeft);
-               MOVE(opponentRight, MOVE_EARTHQUAKE, target: playerLeft); }
+               MOVE(opponentLeft, MOVE_GUST, .target = playerLeft);
+               MOVE(opponentRight, MOVE_EARTHQUAKE, .target = playerLeft); }
     } SCENE {
         MESSAGE("Kecleon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, playerLeft);

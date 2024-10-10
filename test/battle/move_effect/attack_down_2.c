@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Charm lowers Attack by 2 stages", s16 damage)
             MESSAGE("Foe Wobbuffet's Attack harshly fell!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damage, Q_4_12(2.0), results[0].damage);
     }

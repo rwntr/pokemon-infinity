@@ -136,7 +136,7 @@ DOUBLE_BATTLE_TEST("Covert Cloak does or does not block Sparkling Aria depending
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_COVERT_CLOAK); Status1(STATUS1_BURN); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, moveToUse, target: opponentRight); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
+        TURN { MOVE(playerRight, moveToUse, .target = opponentRight); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLING_ARIA, playerLeft);
         if (moveToUse == MOVE_TACKLE) {

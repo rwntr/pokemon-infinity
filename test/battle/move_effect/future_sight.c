@@ -30,10 +30,10 @@ SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without 
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
-        HP_BAR(opponent, captureDamage: &seedFlareDmg);
+        HP_BAR(opponent, .captureDamage =  &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         MESSAGE("Foe Regice took the Future Sight attack!");
-        HP_BAR(opponent, captureDamage: &futureSightDmg);
+        HP_BAR(opponent, .captureDamage =  &futureSightDmg);
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
     }
@@ -56,10 +56,10 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
-        HP_BAR(opponent, captureDamage: &seedFlareDmg);
+        HP_BAR(opponent, .captureDamage =  &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         MESSAGE("Foe Regice took the Future Sight attack!");
-        HP_BAR(opponent, captureDamage: &futureSightDmg);
+        HP_BAR(opponent, .captureDamage =  &futureSightDmg);
         NOT MESSAGE("Raichu was hurt by its Life Orb!");
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
@@ -83,9 +83,9 @@ SINGLE_BATTLE_TEST("Future Sight receives STAB from party mon")
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
-        HP_BAR(opponent, captureDamage: &seedFlareDmg);
+        HP_BAR(opponent, .captureDamage =  &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        HP_BAR(opponent, captureDamage: &futureSightDmg);
+        HP_BAR(opponent, .captureDamage =  &futureSightDmg);
     } THEN {
         EXPECT_MUL_EQ(seedFlareDmg, Q_4_12(1.5), futureSightDmg);
     }

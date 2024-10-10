@@ -42,10 +42,10 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts either Attack or Special Attack, not b
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUNNY_DAY, opponent);
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         if ((move == MOVE_TACKLE && species == SPECIES_ROARING_MOON) || (move == MOVE_ROUND && species == SPECIES_WALKING_WAKE))
             EXPECT_MUL_EQ(damage[0], Q_4_12(1.3), damage[1]);

@@ -295,7 +295,7 @@ DOUBLE_BATTLE_TEST("Crit Chance: Dragon Cheer increases critical hit ratio by on
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DRAGON_CHEER, target: playerRight); MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_DRAGON_CHEER, .target = playerRight); MOVE(playerRight, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_CHEER, playerLeft);
         MESSAGE("Wynaut is getting pumped!");

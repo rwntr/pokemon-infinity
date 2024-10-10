@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Work Up raises Attack and Sp. Attack by 1 stage each", s16 d
             MESSAGE("Wobbuffet's Sp. Atk rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(1.5), results[3].damage);

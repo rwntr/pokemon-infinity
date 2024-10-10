@@ -187,7 +187,7 @@ DOUBLE_BATTLE_TEST("Scale Shot does not corrupt the next turn move used")
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_SCALE_SHOT, target: opponentRight); SWITCH(playerLeft, 2); SEND_OUT(opponentRight, 2); }
+        TURN { MOVE(playerRight, MOVE_SCALE_SHOT, .target = opponentRight); SWITCH(playerLeft, 2); SEND_OUT(opponentRight, 2); }
         TURN { MOVE(playerRight, MOVE_BULLDOZE); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, playerRight);

@@ -108,7 +108,7 @@ DOUBLE_BATTLE_TEST("Dancer still triggers if another dancer flinches")
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(20); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_FAKE_OUT, target: playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); }
+        TURN { MOVE(opponentLeft, MOVE_FAKE_OUT, .target = playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, playerRight);
@@ -181,7 +181,7 @@ DOUBLE_BATTLE_TEST("Dancer triggers on Instructed dance moves")
         OPPONENT(SPECIES_ORICORIO);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(playerLeft, MOVE_INSTRUCT, target: playerRight); }
+        TURN { MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(playerLeft, MOVE_INSTRUCT, .target = playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, playerRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
@@ -208,7 +208,7 @@ DOUBLE_BATTLE_TEST("Dancer-called move doesn't update move to be Instructed")
         OPPONENT(SPECIES_ORICORIO);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(opponentRight, MOVE_INSTRUCT, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(opponentRight, MOVE_INSTRUCT, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, playerRight);
@@ -235,7 +235,7 @@ DOUBLE_BATTLE_TEST("Dancer doesn't call a move that didn't execute due to Powder
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
-        TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }
+        TURN { MOVE(opponentRight, MOVE_POWDER, .target = playerLeft); MOVE(playerLeft, MOVE_FIERY_DANCE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POWDER, opponentRight);
         NONE_OF {

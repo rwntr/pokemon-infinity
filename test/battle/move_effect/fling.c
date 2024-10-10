@@ -450,9 +450,9 @@ SINGLE_BATTLE_TEST("Fling deals damage based on items fling power")
         TURN { MOVE(player, MOVE_FLING); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CRUNCH, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLING, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }

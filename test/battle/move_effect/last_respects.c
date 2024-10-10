@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LAST_RESPECTS, player);
-        HP_BAR(opponent, captureDamage: &results[j].damage);
+        HP_BAR(opponent, .captureDamage =  &results[j].damage);
     } THEN {
         if (faintCount > 0)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0 + faintCount), results[faintCount].damage);
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LAST_RESPECTS, opponent);
-        HP_BAR(player, captureDamage: &results[j].damage);
+        HP_BAR(player, .captureDamage =  &results[j].damage);
     } THEN {
         if (faintCount > 0)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0 + faintCount), results[faintCount].damage);

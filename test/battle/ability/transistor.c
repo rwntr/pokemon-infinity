@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Transistor increases Electric-type move damage", s16 damage)
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage); // Tackle should be unaffected
     #if B_TRANSISTOR_BOOST >= GEN_9

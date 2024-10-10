@@ -244,7 +244,7 @@ DOUBLE_BATTLE_TEST("Pickup triggers based on Speed order")
         OPPONENT(SPECIES_WOBBUFFET) { Speed(3); MaxHP(100); HP(51); Item(ITEM_SITRUS_BERRY); }
         OPPONENT(SPECIES_ZIGZAGOON) { Speed(50); Ability(ABILITY_PICKUP); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
         ABILITY_POPUP(opponentRight, ABILITY_PICKUP);

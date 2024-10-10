@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("Illusion can only imitate Normal Form terapagos")
         // Switch back to Terapagos
         TURN { SWITCH(player, 1); }
         //  Terapagos Stellar, Zoroark gets Roared in, should not be Stellar Terapagos
-        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_ROAR); }
+        TURN { MOVE(player, MOVE_CELEBRATE, .gimmick = GIMMICK_TERA); MOVE(opponent, MOVE_ROAR); }
         //  Reveal the Zoroark
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
     }

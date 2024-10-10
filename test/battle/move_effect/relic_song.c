@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Relic Song will have its power boosted by 20% when used by a
         TURN { MOVE(opponent, MOVE_RELIC_SONG); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
     }

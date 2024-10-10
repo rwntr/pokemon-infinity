@@ -64,8 +64,8 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Reflect and Light 
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_REFLECT); MOVE(opponentRight, MOVE_LIGHT_SCREEN); }
-        TURN { MOVE(playerLeft, move, target: opponentLeft); }
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); MOVE(playerRight, MOVE_GUST, target: opponentRight); }
+        TURN { MOVE(playerLeft, move, .target = opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentLeft); MOVE(playerRight, MOVE_GUST, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LIGHT_SCREEN, opponentRight);
@@ -77,9 +77,9 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Reflect and Light 
             MESSAGE("Foe's Light Screen wore off!");
         }
         MESSAGE("Wobbuffet used Tackle!");
-        HP_BAR(opponentLeft, captureDamage: &results[i].damagePhysical);
+        HP_BAR(opponentLeft, .captureDamage =  &results[i].damagePhysical);
         MESSAGE("Wobbuffet used Gust!");
-        HP_BAR(opponentRight, captureDamage: &results[i].damageSpecial);
+        HP_BAR(opponentRight, .captureDamage =  &results[i].damageSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damagePhysical, Q_4_12(1.5), results[0].damagePhysical);
         EXPECT_MUL_EQ(results[1].damageSpecial, Q_4_12(1.5), results[0].damageSpecial);
@@ -99,8 +99,8 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Mist and Safeguard
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_MIST); MOVE(opponentRight, MOVE_SAFEGUARD); }
-        TURN { MOVE(playerLeft, move, target: opponentLeft); }
-        TURN { MOVE(playerLeft, MOVE_SCREECH, target: opponentLeft); MOVE(playerRight, MOVE_TOXIC, target: opponentRight); }
+        TURN { MOVE(playerLeft, move, .target = opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_SCREECH, .target = opponentLeft); MOVE(playerRight, MOVE_TOXIC, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIST, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SAFEGUARD, opponentRight);
@@ -145,7 +145,7 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Stealth Rock and S
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STEALTH_ROCK); MOVE(opponentRight, MOVE_STICKY_WEB); }
-        TURN { MOVE(playerLeft, move, target: opponentLeft); }
+        TURN { MOVE(playerLeft, move, .target = opponentLeft); }
         TURN { SWITCH(playerLeft, 2); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponentLeft);
@@ -304,8 +304,8 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Aurora Veil from p
         OPPONENT(SPECIES_GLALIE) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_HAIL); MOVE(playerRight, MOVE_AURORA_VEIL); }
-        TURN { MOVE(opponentLeft, move, target: playerLeft); }
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerRight); }
+        TURN { MOVE(opponentLeft, move, .target = playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(opponentRight, MOVE_GUST, .target = playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HAIL, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AURORA_VEIL, playerRight);
@@ -316,9 +316,9 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Aurora Veil from p
             MESSAGE("Ally's Aurora Veil wore off!");
         }
         MESSAGE("Foe Glalie used Tackle!");
-        HP_BAR(playerLeft, captureDamage: &results[i].damagePhysical);
+        HP_BAR(playerLeft, .captureDamage =  &results[i].damagePhysical);
         MESSAGE("Foe Glalie used Gust!");
-        HP_BAR(playerRight, captureDamage: &results[i].damageSpecial);
+        HP_BAR(playerRight, .captureDamage =  &results[i].damageSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damagePhysical, Q_4_12(1.5), results[0].damagePhysical);
         EXPECT_MUL_EQ(results[1].damageSpecial, Q_4_12(1.5), results[0].damageSpecial);
@@ -344,7 +344,7 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes everything it can"
         TURN { MOVE(playerLeft, MOVE_TOXIC_SPIKES); MOVE(playerRight, MOVE_STEALTH_ROCK); MOVE(opponentLeft, MOVE_TOXIC_SPIKES); MOVE(opponentRight, MOVE_STEALTH_ROCK); }
         TURN { MOVE(playerLeft, MOVE_HAIL); MOVE(playerRight, MOVE_AURORA_VEIL); MOVE(opponentLeft, MOVE_AURORA_VEIL); MOVE(opponentRight, MOVE_LIGHT_SCREEN); }
         TURN { MOVE(playerLeft, MOVE_REFLECT); MOVE(playerRight, MOVE_LIGHT_SCREEN); MOVE(opponentLeft, MOVE_REFLECT); MOVE(opponentRight, MOVE_SAFEGUARD); }
-        TURN { MOVE(playerLeft, MOVE_MIST); MOVE(playerRight, MOVE_SAFEGUARD); MOVE(opponentLeft, MOVE_MIST); MOVE(opponentRight, MOVE_DEFOG, target: playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_MIST); MOVE(playerRight, MOVE_SAFEGUARD); MOVE(opponentLeft, MOVE_MIST); MOVE(opponentRight, MOVE_DEFOG, .target = playerLeft); }
     } SCENE {
         MESSAGE("Foe Glalie used Defog!");
         MESSAGE("Glalie is protected by MIST!");

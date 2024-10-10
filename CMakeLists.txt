@@ -1,18 +1,26 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.30.5)
 project(pokemon_infinity C)
 SET(CMAKE_MODULE_PATH ~/.CMakeModules)
-set(CMAKE_C_STANDARD 90)
-set(CMAKE_C_COMPILER "arm-none-eabi-gcc")
-set(CMAKE_CXX_COMPILER "arm-none-eabi-g++")
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_C_COMPILER "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc")
+set(CMAKE_CXX_COMPILER "/opt/devkitpro/devkitARM/bin/arm-none-eabi-g++")
 
 FILE(GLOB_RECURSE SRCS asm/*.s data/*.s src/*.c constants/*.inc test/*.c tools/*.c data/*.inc)
 
+FILE(GLOB_RECURSE HDRS ./*.h)
+
+
 ADD_EXECUTABLE(pokeemerald.gba ${SRCS})
 
-TARGET_INCLUDE_DIRECTORIES(pokeemerald.gba PUBLIC BEFORE gflib)
-TARGET_INCLUDE_DIRECTORIES(pokeemerald.gba PUBLIC BEFORE include)
-TARGET_INCLUDE_DIRECTORIES(pokeemerald.gba PUBLIC BEFORE constants)
-TARGET_INCLUDE_DIRECTORIES(pokeemerald.gba PUBLIC SYSTEM BEFORE tools/agbcc/include)
+INCLUDE_DIRECTORIES(PUBLIC BEFORE ${HDRS})
+INCLUDE_DIRECTORIES(PUBLIC BEFORE gflib)
+INCLUDE_DIRECTORIES(PUBLIC BEFORE include)
+INCLUDE_DIRECTORIES(PUBLIC BEFORE constants)
+INCLUDE_DIRECTORIES(PUBLIC SYSTEM BEFORE tools/agbcc/include)
+INCLUDE_DIRECTORIES(PUBLIC SYSTEM BEFORE $ENV{DEVKITARM}/arm-none-eabi/include)
+INCLUDE_DIRECTORIES(PUBLIC SYSTEM BEFORE $ENV{DEVKITARM}/include/)
+INCLUDE_DIRECTORIES(PUBLIC SYSTEM BEFORE $ENV{DEVKITPRO}/libgba/include)
+INCLUDE_DIRECTORIES(PUBLIC SYSTEM BEFORE $ENV{DEVKITARM}/arm-none-eabi/include/c++/14.2.0)
 
-
-TARGET_COMPILE_DEFINITIONS(pokeemerald.gba PUBLIC __ARM_NONE_EABI_GCC__)
+TARGET_COMPILE_DEFINITIONS(pokeemerald.gba PUBLIC __ARM_NONE_EABI_GCC__ PUBLIC __INTELLISENSE__)

@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Damage calculation matches Gen5+")
     }
     SCENE {
         MESSAGE("Glaceon used Ice Fang!");
-        HP_BAR(opponent, captureDamage: &dmg);
+        HP_BAR(opponent, .captureDamage =  &dmg);
     }
     THEN {
         EXPECT_EQ(expectedDamage, dmg);
@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Damage calculation matches Gen5+ (Muscle Band, crit)")
     }
     SCENE {
         MESSAGE("Glaceon used Ice Fang!");
-        HP_BAR(opponent, captureDamage: &dmg);
+        HP_BAR(opponent, .captureDamage =  &dmg);
     }
     THEN {
         EXPECT_EQ(expectedDamage, dmg);
@@ -110,7 +110,7 @@ SINGLE_BATTLE_TEST("Damage calculation matches Gen5+ (Marshadow vs Mawile)")
     }
     SCENE{
         MESSAGE("Marshadow used Spectral Thief!");
-        HP_BAR(opponent, captureDamage: &dmg);
+        HP_BAR(opponent, .captureDamage =  &dmg);
     }
     THEN{
         EXPECT_EQ(expectedDamage, dmg);
@@ -131,18 +131,18 @@ DOUBLE_BATTLE_TEST("A spread move will do correct damage to the second mon if th
         TURN { MOVE(playerLeft, MOVE_ROCK_SLIDE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_SLIDE, playerLeft);
-        HP_BAR(opponentLeft, captureDamage: &damage[0]);
-        HP_BAR(opponentRight, captureDamage: &damage[1]);
+        HP_BAR(opponentLeft, .captureDamage =  &damage[0]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[1]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_SLIDE, playerLeft);
-        HP_BAR(opponentLeft, captureDamage: &damage[2]);
-        HP_BAR(opponentRight, captureDamage: &damage[3]);
+        HP_BAR(opponentLeft, .captureDamage =  &damage[2]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[3]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_SLIDE, playerRight);
-        HP_BAR(opponentRight, captureDamage: &damage[4]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[4]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_SLIDE, playerLeft);
-        HP_BAR(opponentRight, captureDamage: &damage[5]);
+        HP_BAR(opponentRight, .captureDamage =  &damage[5]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
         EXPECT_EQ(damage[1], damage[3]);

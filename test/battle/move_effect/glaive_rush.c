@@ -36,10 +36,10 @@ SINGLE_BATTLE_TEST("If Glaive Rush is successful, moves targeted at the user dea
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &glaiveRushEffectedDmg);
+        HP_BAR(player, .captureDamage =  &glaiveRushEffectedDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &normalDmg);
+        HP_BAR(player, .captureDamage =  &normalDmg);
     } THEN {
         EXPECT_MUL_EQ(normalDmg, Q_4_12(2.0), glaiveRushEffectedDmg);
     }
@@ -58,10 +58,10 @@ SINGLE_BATTLE_TEST("If Glaive Rush is successful, moves targeted at the user dea
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_CELEBRATE);  }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &normalDmg);
+        HP_BAR(player, .captureDamage =  &normalDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &glaiveRushEffectedDmg);
+        HP_BAR(player, .captureDamage =  &glaiveRushEffectedDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
     } THEN {
         EXPECT_MUL_EQ(normalDmg, Q_4_12(2.0), glaiveRushEffectedDmg);
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("If Glaive Rush isn't successful moves targeted at the user d
         else
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
@@ -110,7 +110,7 @@ SINGLE_BATTLE_TEST("Glaive Rush doesn't affect the user if the effect is blocked
         else
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
     }
@@ -133,10 +133,10 @@ SINGLE_BATTLE_TEST("Glaive Rush status last until the the user's next turn")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &normalDmgFristHit);
+        HP_BAR(player, .captureDamage =  &normalDmgFristHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        HP_BAR(player, captureDamage: &normalDmgSecondHit);
+        HP_BAR(player, .captureDamage =  &normalDmgSecondHit);
     } THEN {
         EXPECT_EQ(normalDmgFristHit, normalDmgSecondHit);
     }

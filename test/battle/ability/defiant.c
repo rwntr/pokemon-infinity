@@ -207,7 +207,7 @@ DOUBLE_BATTLE_TEST("Defiant is activated by Cotton Down for non-ally pokemon")
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
         OPPONENT(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_TACKLE, .target = opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
         ABILITY_POPUP(opponentLeft, ABILITY_COTTON_DOWN);

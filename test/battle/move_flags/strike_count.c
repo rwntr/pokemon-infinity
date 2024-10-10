@@ -30,11 +30,11 @@ SINGLE_BATTLE_TEST("Three strike count turns a move into a 3-hit move")
         TURN { MOVE(player, MOVE_TRIPLE_DIVE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_DIVE, player);
-        HP_BAR(opponent, captureDamage: &firstHit);
+        HP_BAR(opponent, .captureDamage =  &firstHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_DIVE, player);
-        HP_BAR(opponent, captureDamage: &secondHit);
+        HP_BAR(opponent, .captureDamage =  &secondHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_DIVE, player);
-        HP_BAR(opponent, captureDamage: &thirdHit);
+        HP_BAR(opponent, .captureDamage =  &thirdHit);
     } THEN {
         EXPECT_EQ(firstHit, secondHit);
         EXPECT_EQ(secondHit, thirdHit);
@@ -57,13 +57,13 @@ SINGLE_BATTLE_TEST("Surging Strikes hits 3 times with each hit being a critical 
         TURN { MOVE(player, MOVE_SURGING_STRIKES); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SURGING_STRIKES, player);
-        HP_BAR(opponent, captureDamage: &firstHit);
+        HP_BAR(opponent, .captureDamage =  &firstHit);
         MESSAGE("A critical hit!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SURGING_STRIKES, player);
-        HP_BAR(opponent, captureDamage: &secondHit);
+        HP_BAR(opponent, .captureDamage =  &secondHit);
         MESSAGE("A critical hit!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SURGING_STRIKES, player);
-        HP_BAR(opponent, captureDamage: &thirdHit);
+        HP_BAR(opponent, .captureDamage =  &thirdHit);
         MESSAGE("A critical hit!");
     } THEN {
         EXPECT_EQ(firstHit, secondHit);

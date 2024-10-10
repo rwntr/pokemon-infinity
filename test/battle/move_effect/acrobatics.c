@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Acrobatics doubles in power if the user has no held item", s
     } WHEN {
         TURN { MOVE(opponent, MOVE_ACROBATICS); }
     } SCENE {
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2), results[1].damage);
     }
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Acrobatics still doubles in power when Flying Gem is consume
     } WHEN {
         TURN { MOVE(opponent, MOVE_ACROBATICS); }
     } SCENE {
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         if (I_GEM_BOOST_POWER >= GEN_6)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.3), (results[1].damage));

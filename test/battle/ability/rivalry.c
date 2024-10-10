@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Rivalry increases power by x1.25 towards Pokémon of the sam
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.25), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(1.25), results[3].damage);
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Rivalry decreases power by x0.75 towards Pokémon of differe
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.75), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(0.75), results[3].damage);
@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Rivalry doesn't modify power if the attacker is genderless",
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT(results[0].damage == results[1].damage);
         EXPECT(results[2].damage == results[3].damage);
@@ -91,7 +91,7 @@ SINGLE_BATTLE_TEST("Rivalry doesn't modify power if the target is genderless", s
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT(results[0].damage == results[1].damage);
         EXPECT(results[2].damage == results[3].damage);

@@ -44,12 +44,12 @@ SINGLE_BATTLE_TEST("Shell Side Arm does not change category mid-turn")
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SHELL_SIDE_ARM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_SIDE_ARM, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, .captureDamage =  &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LIGHT_SCREEN, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_SIDE_ARM, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, .captureDamage =  &damage[1]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_SIDE_ARM, player);
-        HP_BAR(opponent, captureDamage: &damage[2]);
+        HP_BAR(opponent, .captureDamage =  &damage[2]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
         EXPECT_EQ(damage[1], damage[2]);
@@ -64,8 +64,8 @@ DOUBLE_BATTLE_TEST("Shell Side Arm chooses its category for each battler on the 
         OPPONENT(SPECIES_REGIROCK) { Speed(30); Defense(200); SpDefense(100); }
         OPPONENT(SPECIES_REGICE) { Speed(30); Defense(100); SpDefense(200); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, target: opponentRight); MOVE(opponentRight, MOVE_COUNTER); }
-        TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, target: opponentLeft); MOVE(opponentLeft, MOVE_MIRROR_COAT); }
+        TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, .target = opponentRight); MOVE(opponentRight, MOVE_COUNTER); }
+        TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, .target = opponentLeft); MOVE(opponentLeft, MOVE_MIRROR_COAT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_SIDE_ARM, playerLeft);
         HP_BAR(opponentRight);
@@ -86,7 +86,7 @@ DOUBLE_BATTLE_TEST("Shell Side Arm does not change category mid-turn")
         OPPONENT(SPECIES_WOBBUFFET) { Speed(30); Defense(200); SpDefense(190); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(40); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, target: opponentLeft);
+        TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, .target = opponentLeft);
                MOVE(opponentRight, MOVE_LIGHT_SCREEN);
                MOVE(opponentLeft, MOVE_MIRROR_COAT);
         }

@@ -14,7 +14,7 @@ DOUBLE_BATTLE_TEST("Quash-affected target will move last in the priority bracket
         OPPONENT(SPECIES_TORCHIC) { Speed(20); }
         OPPONENT(SPECIES_TREECKO) { Speed(40); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentRight); }
+        TURN { MOVE(playerLeft, MOVE_QUASH, .target = opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUASH, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Quash is not affected by dynamic speed")
         OPPONENT(SPECIES_TORCHIC) { Speed(50); }
         OPPONENT(SPECIES_TREECKO) { Speed(40); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentLeft);
+        TURN { MOVE(playerLeft, MOVE_QUASH, .target = opponentLeft);
                MOVE(opponentRight, MOVE_TAILWIND);
         }
     } SCENE {
@@ -53,13 +53,13 @@ DOUBLE_BATTLE_TEST("Quash calculates correct turn order if only one pokemon is l
         OPPONENT(SPECIES_DRAGONITE) { Speed(60); }
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_QUASH, target: playerRight);
-            MOVE(playerRight, MOVE_STONE_EDGE, target: opponentLeft);
+            MOVE(playerLeft, MOVE_QUASH, .target = playerRight);
+            MOVE(playerRight, MOVE_STONE_EDGE, .target = opponentLeft);
             MOVE(opponentRight, MOVE_CELEBRATE);
         }
         TURN {
-            MOVE(playerLeft, MOVE_QUASH, target: playerRight);
-            MOVE(playerRight, MOVE_STONE_EDGE, target: opponentRight);
+            MOVE(playerLeft, MOVE_QUASH, .target = playerRight);
+            MOVE(playerRight, MOVE_STONE_EDGE, .target = opponentRight);
             MOVE(opponentRight, MOVE_CELEBRATE);
         }
     } SCENE {
@@ -88,8 +88,8 @@ DOUBLE_BATTLE_TEST("Quash-affected targets move from fastest to slowest (Gen 8+)
         OPPONENT(SPECIES_TORCHIC) { Speed(speedLeft); }
         OPPONENT(SPECIES_TREECKO) { Speed(speedRight); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentRight);
-               MOVE(playerRight, MOVE_QUASH, target: opponentLeft);
+        TURN { MOVE(playerLeft, MOVE_QUASH, .target = opponentRight);
+               MOVE(playerRight, MOVE_QUASH, .target = opponentLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUASH, playerLeft);
@@ -120,8 +120,8 @@ DOUBLE_BATTLE_TEST("Quash-affected mon that acted early via After You is not aff
         OPPONENT(SPECIES_TORCHIC) { Speed(10); }
         OPPONENT(SPECIES_TREECKO) { Speed(40); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentLeft);
-               MOVE(opponentRight, MOVE_AFTER_YOU, target: opponentLeft);
+        TURN { MOVE(playerLeft, MOVE_QUASH, .target = opponentLeft);
+               MOVE(opponentRight, MOVE_AFTER_YOU, .target = opponentLeft);
                MOVE(opponentLeft, MOVE_TAILWIND);
         }
     } SCENE {

@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Ogerpon Masks increase the base power of moves by 20%", s16 
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[2].damage);

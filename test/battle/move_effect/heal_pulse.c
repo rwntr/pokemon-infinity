@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Heal Pulse can heal partner")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_HEAL_PULSE, target: playerLeft); }
+        TURN { MOVE(playerRight, MOVE_HEAL_PULSE, .target = playerLeft); }
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, playerRight);

@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Solar Beam and Solar Blade's power are not halved in bad wea
     } WHEN {
         TURN { MOVE(opponent, move1); MOVE(player, move2); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage);
         EXPECT_EQ(results[0].damage, results[2].damage);

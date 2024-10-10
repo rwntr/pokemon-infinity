@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("ignoresTargetAbility moves do not ignore the attacker's own 
         else
             ANIMATION(ANIM_TYPE_MOVE, MOVE_AMNESIA, opponent);
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(2.0), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, UQ_4_12(2.0), results[3].damage);
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("ignoresTargetAbility moves do ignore target's abilities", s1
         TURN { MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage);
         EXPECT_EQ(results[2].damage, results[3].damage);

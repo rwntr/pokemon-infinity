@@ -42,9 +42,9 @@ SINGLE_BATTLE_TEST("Gem boost is only applied once")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Normal Gem strengthened Wobbuffet's power!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &boostedHit);
+        HP_BAR(opponent, .captureDamage =  &boostedHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, captureDamage: &normalHit);
+        HP_BAR(opponent, .captureDamage =  &normalHit);
     } THEN {
         EXPECT_MUL_EQ(normalHit, Q_4_12(1.3), boostedHit);
     }
@@ -64,9 +64,9 @@ SINGLE_BATTLE_TEST("Gem modifier is used for all hits of Multi Hit Moves")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_HIT, player);
-        HP_BAR(opponent, captureDamage: &firstHit);
+        HP_BAR(opponent, .captureDamage =  &firstHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_HIT, player);
-        HP_BAR(opponent, captureDamage: &secondHit);
+        HP_BAR(opponent, .captureDamage =  &secondHit);
     } THEN {
         EXPECT_EQ(firstHit, secondHit);
     }

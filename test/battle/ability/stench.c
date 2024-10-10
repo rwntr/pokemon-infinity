@@ -42,13 +42,13 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_FAKE_OUT, target: opponentLeft);
-            MOVE(opponentLeft, MOVE_TACKLE, WITH_RNG(RNG_STENCH, TRUE),  target: playerRight);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            MOVE(playerLeft, MOVE_FAKE_OUT, .target = opponentLeft);
+            MOVE(opponentLeft, MOVE_TACKLE, WITH_RNG(RNG_STENCH, TRUE),  .target = playerRight);
+            MOVE(playerRight, MOVE_TACKLE, .target = opponentRight);
         }
         TURN {
-            MOVE(opponentLeft, MOVE_SCARY_FACE, WITH_RNG(RNG_STENCH, TRUE),  target: playerRight);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            MOVE(opponentLeft, MOVE_SCARY_FACE, WITH_RNG(RNG_STENCH, TRUE),  .target = playerRight);
+            MOVE(playerRight, MOVE_TACKLE, .target = opponentRight);
         }
     } SCENE {
         NONE_OF { MESSAGE("Wynaut flinched!"); }
@@ -66,9 +66,9 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
         OPPONENT(SPECIES_WOBBUFFET) {Speed(50); }
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_FAKE_OUT, target: opponentLeft);
-            MOVE(opponentRight, MOVE_TACKLE, target: playerRight);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            MOVE(playerLeft, MOVE_FAKE_OUT, .target = opponentLeft);
+            MOVE(opponentRight, MOVE_TACKLE, .target = playerRight);
+            MOVE(playerRight, MOVE_TACKLE, .target = opponentRight);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, playerLeft);

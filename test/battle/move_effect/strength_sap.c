@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Strength Sap lowers Attack by 1 and restores HP based on tar
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Wobbuffet's Attack fell!");
-        HP_BAR(player, captureDamage: &results[i].hp);
+        HP_BAR(player, .captureDamage =  &results[i].hp);
         MESSAGE("Foe Wobbuffet had its energy drained!");
     } THEN {
         EXPECT_EQ(results[i].hp * -1, atkStat);
@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("Strength Sap works exactly the same when attacker is behind 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Wobbuffet's Attack fell!");
-        HP_BAR(player, captureDamage: &results[i].hp);
+        HP_BAR(player, .captureDamage =  &results[i].hp);
         NOT MESSAGE("The SUBSTITUTE took damage for Foe Wobbuffet!");
         MESSAGE("Foe Wobbuffet had its energy drained!");
     } THEN {
@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Strength Sap lowers Attack by 1 and restores HP based on tar
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Wobbuffet's Attack fell!");
-        HP_BAR(player, captureDamage: &results[i].hp);
+        HP_BAR(player, .captureDamage =  &results[i].hp);
         MESSAGE("Foe Wobbuffet had its energy drained!");
     } THEN {
         if (statStage < DEFAULT_STAT_STAGE) {
@@ -159,7 +159,7 @@ SINGLE_BATTLE_TEST("Strength Sap restores more HP if Big Root is held", s16 hp)
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Wobbuffet's Attack fell!");
-        HP_BAR(player, captureDamage: &results[i].hp);
+        HP_BAR(player, .captureDamage =  &results[i].hp);
         MESSAGE("Foe Wobbuffet had its energy drained!");
     } FINALLY {
         EXPECT_GT(abs(results[1].hp), abs(results[0].hp));
@@ -186,7 +186,7 @@ SINGLE_BATTLE_TEST("Strength Sap makes attacker lose HP if target's ability is L
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Wobbuffet's Attack fell!");
         ABILITY_POPUP(opponent, ABILITY_LIQUID_OOZE);
-        HP_BAR(player, captureDamage: &lostHp);
+        HP_BAR(player, .captureDamage =  &lostHp);
         MESSAGE("It sucked up the liquid ooze!");
         if (atkStat >= 490) {
             MESSAGE("Wobbuffet fainted!");

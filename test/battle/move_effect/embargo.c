@@ -152,7 +152,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't block a held item's form-changing effect, bu
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); MOVE(opponent, MOVE_RAZOR_LEAF); }
     } SCENE {
-        HP_BAR(player, captureDamage: &results[i].damage);
+        HP_BAR(player, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -264,7 +264,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Plate items on the move J
         MESSAGE("Foe Dragonite used Embargo!");
         MESSAGE("Arceus can't use items anymore!");
         MESSAGE("Arceus used Judgment!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -285,7 +285,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Drive items on the move T
         MESSAGE("Foe Gyarados used Embargo!");
         MESSAGE("Genesect can't use items anymore!");
         MESSAGE("Genesect used Techno Blast!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -306,7 +306,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Memory items on the move 
         MESSAGE("Foe Venusaur used Embargo!");
         MESSAGE("Silvally can't use items anymore!");
         MESSAGE("Silvally used Multi-Attack!");
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -342,7 +342,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
-        TURN { MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); }
+        TURN { MOVE(opponent, MOVE_CELEBRATE, .gimmick = GIMMICK_MEGA); }
     } SCENE {
         // Turn 1
         MESSAGE("Wobbuffet used Embargo!");

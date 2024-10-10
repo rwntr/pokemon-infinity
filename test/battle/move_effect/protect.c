@@ -329,7 +329,7 @@ DOUBLE_BATTLE_TEST("Wide Guard protects self and ally from multi-target moves")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, move, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, move, .target = opponentLeft); }
         TURN {}
     } SCENE {
         MESSAGE("Foe Wobbuffet used Wide Guard!");
@@ -366,8 +366,8 @@ DOUBLE_BATTLE_TEST("Wide Guard can not fail on consecutive turns")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_HYPER_VOICE, target: opponentLeft); }
-        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_HYPER_VOICE, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_HYPER_VOICE, .target = opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_HYPER_VOICE, .target = opponentLeft); }
         TURN {}
     } SCENE {
         for (turns = 0; turns < 2; turns++) {
@@ -429,8 +429,8 @@ DOUBLE_BATTLE_TEST("Quick Guard can not fail on consecutive turns")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_QUICK_GUARD); MOVE(playerLeft, MOVE_QUICK_ATTACK, target: opponentRight); }
-        TURN { MOVE(opponentLeft, MOVE_QUICK_GUARD); MOVE(playerLeft, MOVE_QUICK_ATTACK, target: opponentRight); }
+        TURN { MOVE(opponentLeft, MOVE_QUICK_GUARD); MOVE(playerLeft, MOVE_QUICK_ATTACK, .target = opponentRight); }
+        TURN { MOVE(opponentLeft, MOVE_QUICK_GUARD); MOVE(playerLeft, MOVE_QUICK_ATTACK, .target = opponentRight); }
     } SCENE {
         for (turns = 0; turns < 2; turns++) {
             MESSAGE("Foe Wobbuffet used Quick Guard!");
@@ -508,7 +508,7 @@ DOUBLE_BATTLE_TEST("Crafty Shield protects self and ally from Confide")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); MOVE(playerLeft, MOVE_CONFIDE, target: opponentLeft); MOVE(playerRight, MOVE_CONFIDE, target: opponentRight); }
+        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); MOVE(playerLeft, MOVE_CONFIDE, .target = opponentLeft); MOVE(playerRight, MOVE_CONFIDE, .target = opponentRight); }
     } SCENE {
         MESSAGE("Wobbuffet used Confide!");
         MESSAGE("Foe Wobbuffet protected itself!");

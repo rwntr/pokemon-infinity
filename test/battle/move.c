@@ -95,7 +95,7 @@ DOUBLE_BATTLE_TEST("Turn order is determined randomly if priority and Speed tie 
         OPPONENT(SPECIES_WOBBUFFET) { Attack(100); Speed(1); }
         OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ENDEAVOR, target: opponentLeft); MOVE(playerRight, MOVE_LIFE_DEW); MOVE(opponentLeft, MOVE_CRUSH_GRIP, target: playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, 0)); MOVE(opponentRight, MOVE_SUPER_FANG, target: playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_ENDEAVOR, .target = opponentLeft); MOVE(playerRight, MOVE_LIFE_DEW); MOVE(opponentLeft, MOVE_CRUSH_GRIP, .target = playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, 0)); MOVE(opponentRight, MOVE_SUPER_FANG, .target = playerLeft); }
     } THEN {
         //  This tests for unique combinatins of HP values depending on which order the moves are executed in
         //  The unique outcomes arise from the specific attacks and HP, Def, and Atk values chosen
@@ -175,7 +175,7 @@ SINGLE_BATTLE_TEST("Critical hits deal 50% more damage", s16 damage)
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: criticalHit); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -195,7 +195,7 @@ SINGLE_BATTLE_TEST("Critical hits do not ignore positive stat stages", s16 damag
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_LT(results[0].damage, results[i].damage);
@@ -216,7 +216,7 @@ SINGLE_BATTLE_TEST("Critical hits ignore negative stat stages", s16 damage)
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_EQ(results[0].damage, results[i].damage);

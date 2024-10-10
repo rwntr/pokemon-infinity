@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Whiteout increases Ice move damage by 50% in hail", s16 dama
     } WHEN {
         TURN { MOVE(opponent, move1); MOVE(player, move2); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Whiteout increases Ice move damage by 30% in snow", s16 dama
     } WHEN {
         TURN { MOVE(opponent, move1); MOVE(player, move2); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.3), results[1].damage);
     }

@@ -41,8 +41,8 @@ DOUBLE_BATTLE_TEST("Lightning Rod forces single-target Electric-type moves to ta
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_THUNDERBOLT, target: opponentRight);
-            MOVE(playerRight, MOVE_THUNDERBOLT, target: opponentRight);
+            MOVE(playerLeft, MOVE_THUNDERBOLT, .target = opponentRight);
+            MOVE(playerRight, MOVE_THUNDERBOLT, .target = opponentRight);
             MOVE(opponentLeft, MOVE_CELEBRATE);
             MOVE(opponentRight, MOVE_CELEBRATE);
         }

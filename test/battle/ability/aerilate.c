@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Aerilate turns a Normal-type move into Flying-type move")
         PLAYER(SPECIES_MEGANIUM);
         OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); }
     } WHEN {
-        TURN { MOVE(opponent, MOVE_TACKLE, gimmick: GIMMICK_MEGA); }
+        TURN { MOVE(opponent, MOVE_TACKLE, .gimmick = GIMMICK_MEGA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Aerilate can not turn certain moves into Flying type moves")
         PLAYER(SPECIES_MEGANIUM);
         OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); }
     } WHEN {
-        TURN { MOVE(opponent, move, gimmick: GIMMICK_MEGA); }
+        TURN { MOVE(opponent, move, .gimmick = GIMMICK_MEGA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);

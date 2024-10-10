@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Dragon's Maw increases Dragon-type move damage", s16 damage)
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage); // Tackle should be unaffected
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(1.5), results[3].damage); // Dragon Claw should be affected

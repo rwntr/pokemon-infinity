@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Knock Off deals additional damage to opponents holding an it
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
-        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(opponent, .captureDamage =  &results[i].damage);
         if (item != ITEM_NONE)
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
     } FINALLY {
@@ -180,7 +180,7 @@ DOUBLE_BATTLE_TEST("Knock Off does not trigger the opposing ally's Symbiosis")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_KNOCK_OFF, target: playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_KNOCK_OFF, .target = playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
