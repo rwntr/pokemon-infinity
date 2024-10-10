@@ -183,5 +183,5 @@ gText_Pie_Documents::
 	.string "They cover everything from Pokémon and\n"
 	.string "item locations to new ability effects.\p"
 	.string "Finally, I hope you enjoy the hack!\n"
-	.string "- Buffel Saft\p"
+	.string "- Gerben, Ruairi, and the PI team\p"
 	.string "$"
