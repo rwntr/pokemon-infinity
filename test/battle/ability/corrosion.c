@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Corrosion can poison or badly poison a Pokemon regardless of
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TWINEEDLE, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -40,9 +40,9 @@ SINGLE_BATTLE_TEST("Corrosion can poison or badly poison a Steel type with a sta
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         if (move == MOVE_POISON_POWDER)
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         else
-            STATUS_ICON(opponent, badPoison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
     }
 }
 
@@ -59,7 +59,7 @@ SINGLE_BATTLE_TEST("Corrosion does not effect poison type damaging moves if the 
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SLUDGE_BOMB, player);
             HP_BAR(opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         }
     }
 }
@@ -84,9 +84,9 @@ SINGLE_BATTLE_TEST("Corrosion can poison Poison- and Steel-type targets if it us
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         if (heldItem == ITEM_POISON_BARB)
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         else
-            STATUS_ICON(opponent, badPoison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
     }
 }
 
@@ -100,7 +100,7 @@ SINGLE_BATTLE_TEST("If a Poison- or Steel-type Pokémon with Corrosion holds a T
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-        STATUS_ICON(player, badPoison: TRUE);
+        STATUS_ICON(player, .badPoison = TRUE);
     }
 }
 
@@ -120,13 +120,13 @@ SINGLE_BATTLE_TEST("If a Poison- or Steel-type Pokémon with Corrosion poisons a
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         if (move == MOVE_TOXIC)
-            STATUS_ICON(opponent, badPoison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
         else
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-            STATUS_ICON(player, badPoison: TRUE);
-            STATUS_ICON(player, poison: TRUE);
+            STATUS_ICON(player, .badPoison = TRUE);
+            STATUS_ICON(player, .poison = TRUE);
         }
     }
 }
@@ -147,8 +147,8 @@ SINGLE_BATTLE_TEST("Corrosion cannot bypass moves that prevent poisoning such as
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-            STATUS_ICON(opponent, badPoison: TRUE);
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         }
     }
 }
@@ -169,8 +169,8 @@ SINGLE_BATTLE_TEST("Corrosion cannot bypass abilities that prevent poisoning suc
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-            STATUS_ICON(opponent, badPoison: TRUE);
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         }
     }
 }
@@ -193,9 +193,9 @@ SINGLE_BATTLE_TEST("Corrosion allows the Pokémon with the ability to poison a S
         ANIMATION(ANIM_TYPE_MOVE, move, player); // Bounced by Magic Coat
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         if (move == MOVE_TOXIC)
-            STATUS_ICON(opponent, badPoison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
         else
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -219,9 +219,9 @@ SINGLE_BATTLE_TEST("Corrosion's effect is lost if the move used by the Pokémon 
             ANIMATION(ANIM_TYPE_MOVE, move, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         if (move == MOVE_TOXIC)
-            STATUS_ICON(opponent, badPoison: TRUE);
+            STATUS_ICON(opponent, .badPoison = TRUE);
         else
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         }
     }
 }

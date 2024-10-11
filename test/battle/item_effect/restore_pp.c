@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Ether restores the PP of one of a battler's moves by 10 ")
         PLAYER(SPECIES_WOBBUFFET) { MovesWithPP({MOVE_TACKLE, 0}, {MOVE_CONFUSION, 20}); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_ETHER, partyIndex: 0, move: MOVE_TACKLE); }
+        TURN { USE_ITEM(player, ITEM_ETHER, .partyIndex = 0, .move = MOVE_TACKLE); }
     } THEN {
         EXPECT_EQ(player->pp[0], 10);
         EXPECT_EQ(player->pp[1], 20);
@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Max Ether restores the PP of one of a battler's moves fully"
         PLAYER(SPECIES_WOBBUFFET) { MovesWithPP({MOVE_TACKLE, 0}, {MOVE_CONFUSION, 20}); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_MAX_ETHER, partyIndex: 0, move: MOVE_TACKLE); }
+        TURN { USE_ITEM(player, ITEM_MAX_ETHER, .partyIndex = 0, .move = MOVE_TACKLE); }
     } THEN {
         EXPECT_EQ(player->pp[0], 35);
         EXPECT_EQ(player->pp[1], 20);
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Elixir restores the PP of all of a battler's moves by 10")
         PLAYER(SPECIES_WOBBUFFET) { MovesWithPP({MOVE_TACKLE, 0}, {MOVE_CONFUSION, 0}, {MOVE_SCRATCH, 0}, {MOVE_GROWL, 0}); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_ELIXIR, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_ELIXIR, .partyIndex = 0); }
     } THEN {
         EXPECT_EQ(player->pp[0], 10);
         EXPECT_EQ(player->pp[1], 10);
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Max Elixir restores the PP of all of a battler's moves fully
         PLAYER(SPECIES_WOBBUFFET) { MovesWithPP({MOVE_TACKLE, 0}, {MOVE_CONFUSION, 0}, {MOVE_SCRATCH, 0}, {MOVE_GROWL, 0}); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_MAX_ELIXIR, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_MAX_ELIXIR, .partyIndex = 0); }
     } THEN {
         EXPECT_EQ(player->pp[0], 35);
         EXPECT_EQ(player->pp[1], 25);
@@ -84,7 +84,7 @@ TO_DO_BATTLE_TEST("Elixir can be used if at least one move is missing PP in any 
         PLAYER(SPECIES_WOBBUFFET) { MovesWithPP({MOVE_MEDITATE, move1PP}, {MOVE_AGILITY, move2PP}, {MOVE_PSYBEAM, move3PP}, {MOVE_TRICK, move4PP}); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_ELIXIR, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_ELIXIR, .partyIndex = 0); }
     } THEN {
         EXPECT_EQ(player->pp[0], 40);
         EXPECT_EQ(player->pp[1], 30);

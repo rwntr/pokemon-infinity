@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Mind Blown makes the user lose 1/2 of its Max HP")
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
-        HP_BAR(player, damage: 200);
+        HP_BAR(player, .damage = 200);
         NOT MESSAGE("Wobbuffet fainted!"); // Wobb had more than 1/2 of its HP, so it can't faint.
     }
 }
@@ -31,7 +31,7 @@ DOUBLE_BATTLE_TEST("Mind Blown makes the user lose 1/2 of its Max HP in a double
         TURN { MOVE(playerLeft, MOVE_MIND_BLOWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, playerLeft);
-        HP_BAR(playerLeft, damage: 200);
+        HP_BAR(playerLeft, .damage = 200);
         NOT MESSAGE("Wobbuffet fainted!"); // Wobb had more than 1/2 of its HP, so it can't faint.
     }
 }
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Mind Blown causes the user to faint when below 1/2 of its Ma
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -61,7 +61,7 @@ DOUBLE_BATTLE_TEST("Mind Blown causes the user to faint when below 1/2 of its Ma
         TURN { MOVE(playerLeft, MOVE_MIND_BLOWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, playerLeft);
-        HP_BAR(playerLeft, hp: 0);
+        HP_BAR(playerLeft, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -76,9 +76,9 @@ SINGLE_BATTLE_TEST("Mind Blown causes the user & the target to faint when below 
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         MESSAGE("Foe Wobbuffet fainted!");
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -95,13 +95,13 @@ DOUBLE_BATTLE_TEST("Mind Blown causes everyone to faint in a double battle")
         TURN { MOVE(playerLeft, MOVE_MIND_BLOWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, playerLeft);
-        HP_BAR(opponentLeft, hp: 0);
+        HP_BAR(opponentLeft, .hp = 0);
         MESSAGE("Foe Abra fainted!");
-        HP_BAR(playerRight, hp: 0);
+        HP_BAR(playerRight, .hp = 0);
         MESSAGE("Wynaut fainted!");
-        HP_BAR(opponentRight, hp: 0);
+        HP_BAR(opponentRight, .hp = 0);
         MESSAGE("Foe Kadabra fainted!");
-        HP_BAR(playerLeft, hp: 0);
+        HP_BAR(playerLeft, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -130,7 +130,7 @@ SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
     } SCENE {
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
-            HP_BAR(player, damage: 200);
+            HP_BAR(player, .damage = 200);
         }
         ABILITY_POPUP(opponent, ABILITY_DAMP);
         MESSAGE("Foe Golduck's Damp prevents Wobbuffet from using Mind Blown!");

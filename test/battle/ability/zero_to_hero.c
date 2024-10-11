@@ -149,7 +149,7 @@ SINGLE_BATTLE_TEST("Zero to Hero's message displays correctly after all battlers
         TURN { MOVE(opponent, MOVE_EXPLOSION); SEND_OUT(player, 0); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
         SEND_IN_MESSAGE("Palafin");
@@ -172,7 +172,7 @@ SINGLE_BATTLE_TEST("Zero to Hero's message displays correctly after all battlers
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 0); }
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_TACKLE); }
     } SCENE {
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
         SEND_IN_MESSAGE("Wobbuffet");

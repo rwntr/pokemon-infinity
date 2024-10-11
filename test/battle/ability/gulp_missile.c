@@ -111,7 +111,7 @@ SINGLE_BATTLE_TEST("(Gulp Missile) Cramorant in Gorging paralyzes the target if 
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-        STATUS_ICON(opponent, paralysis: TRUE);
+        STATUS_ICON(opponent, .paralysis = TRUE);
     }
 }
 
@@ -130,6 +130,6 @@ SINGLE_BATTLE_TEST("(Gulp Missile) triggers even if the user is fainted by oppos
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         HP_BAR(player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-        STATUS_ICON(opponent, paralysis: TRUE);
+        STATUS_ICON(opponent, .paralysis = TRUE);
     }
 }

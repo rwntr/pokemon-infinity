@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Ally Switch fails if there is no partner")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target:playerRight); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target =playerRight); }
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); }
     } SCENE {
         MESSAGE("Wobbuffet fainted!");
@@ -48,7 +48,7 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
         OPPONENT(SPECIES_KADABRA) { Speed(3); }
         OPPONENT(SPECIES_ABRA) { Speed(2); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SCREECH, target:playerLeft); MOVE(opponentRight, MOVE_SCREECH, target:playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SCREECH, .target =playerLeft); MOVE(opponentRight, MOVE_SCREECH, .target =playerLeft); }
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -78,7 +78,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect the target of Snipe Shot")
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SNIPE_SHOT, target:playerLeft); } // Kadabra targets Wobb and Snipe Shot ignores Ally Switch position change.
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SNIPE_SHOT, .target =playerLeft); } // Kadabra targets Wobb and Snipe Shot ignores Ally Switch position change.
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect moves done by pokemon with Sta
         OPPONENT(SPECIES_KADABRA) { Ability(ability); }
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_TACKLE, target:playerRight); } // Kadabra targets playerRight Wynaut.
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_TACKLE, .target =playerRight); } // Kadabra targets playerRight Wynaut.
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -131,7 +131,7 @@ DOUBLE_BATTLE_TEST("Ally Switch has no effect on partner's chosen move")
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, chosenMove, target:chosenTarget); }
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, chosenMove, .target =chosenTarget); }
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -156,7 +156,7 @@ DOUBLE_BATTLE_TEST("Ally Switch - move fails if the target was ally which change
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, move, target:playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, move, .target =playerLeft); }
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -190,7 +190,7 @@ DOUBLE_BATTLE_TEST("Ally Switch works if ally used two-turn move like Dig")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_DIG, target:opponentRight); }
+        TURN { MOVE(playerRight, MOVE_DIG, .target =opponentRight); }
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); SKIP_TURN(playerRight); }
     } SCENE {
         MESSAGE("Wynaut used Dig!");

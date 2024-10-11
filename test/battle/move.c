@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("AdditionalEffect.chance controls the proportion of secondary
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
-        STATUS_ICON(opponent, paralysis: TRUE);
+        STATUS_ICON(opponent, .paralysis = TRUE);
     }
 }
 
@@ -173,7 +173,7 @@ SINGLE_BATTLE_TEST("Critical hits deal 50% more damage", s16 damage)
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_SCRATCH, criticalHit: criticalHit); }
+        TURN { MOVE(player, MOVE_SCRATCH, .criticalHit = criticalHit); }
     } SCENE {
         HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } FINALLY {
@@ -193,7 +193,7 @@ SINGLE_BATTLE_TEST("Critical hits do not ignore positive stat stages", s16 damag
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
-        TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
+        TURN { MOVE(player, MOVE_SCRATCH, .criticalHit = TRUE); }
     } SCENE {
         HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } THEN {
@@ -214,7 +214,7 @@ SINGLE_BATTLE_TEST("Critical hits ignore negative stat stages", s16 damage)
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
-        TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
+        TURN { MOVE(player, MOVE_SCRATCH, .criticalHit = TRUE); }
     } SCENE {
         HP_BAR(opponent, .captureDamage =  &results[i].damage);
     } THEN {

@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Magic Bounce bounces back status moves")
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
         MESSAGE("Wynaut's Toxic was bounced back by Foe Espeon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, opponent);
-        STATUS_ICON(player, badPoison: TRUE);
+        STATUS_ICON(player, .badPoison = TRUE);
     }
 }
 
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Magic Bounce bounces back powder moves")
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
         MESSAGE("Wynaut's Stun Spore was bounced back by Foe Espeon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
-        STATUS_ICON(player, paralysis: TRUE);
+        STATUS_ICON(player, .paralysis = TRUE);
     }
 }
 
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Magic Bounce cannot bounce back powder moves against Grass T
         MESSAGE("Oddish's Stun Spore was bounced back by Foe Espeon's Magic Bounce!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
         MESSAGE("It doesn't affect Oddish…");
-        NOT STATUS_ICON(player, paralysis: TRUE);
+        NOT STATUS_ICON(player, .paralysis = TRUE);
     }
 }
 
@@ -129,6 +129,6 @@ SINGLE_BATTLE_TEST("Magic Bounce bounced back status moves can not be bounced ba
         MESSAGE("Espeon's Toxic was bounced back by Foe Espeon's Magic Bounce!");
         NOT ABILITY_POPUP(player, ABILITY_MAGIC_BOUNCE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, opponent);
-        STATUS_ICON(player, badPoison: TRUE);
+        STATUS_ICON(player, .badPoison = TRUE);
     }
 }

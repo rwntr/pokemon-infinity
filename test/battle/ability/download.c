@@ -69,7 +69,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_TRI_ATTACK); }
     } SCENE {
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
 

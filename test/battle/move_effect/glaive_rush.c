@@ -79,7 +79,7 @@ SINGLE_BATTLE_TEST("If Glaive Rush isn't successful moves targeted at the user d
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHT_POWDER); }
     } WHEN {
-        TURN { MOVE(player, MOVE_GLAIVE_RUSH, hit: missesGlaiveRush); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_GLAIVE_RUSH, .hit = missesGlaiveRush); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         if (!missesGlaiveRush)
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);

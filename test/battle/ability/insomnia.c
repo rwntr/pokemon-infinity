@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Insomnia prevents sleep")
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            STATUS_ICON(player, sleep: TRUE);
+            STATUS_ICON(player, .sleep = TRUE);
         }
     }
 }
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Insomnia prevents yawn")
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            STATUS_ICON(player, sleep: TRUE);
+            STATUS_ICON(player, .sleep = TRUE);
         }
     }
 }
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Insomnia prevents rest")
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_REST, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            STATUS_ICON(player, sleep: TRUE);
+            STATUS_ICON(player, .sleep = TRUE);
             HP_BAR(player);
         }
     }

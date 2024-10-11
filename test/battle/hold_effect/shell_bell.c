@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Shell Bell restores a maximum of 1/3 of holder's missing HP"
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FALSE_SWIPE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        HP_BAR(player, captureHP: &hp);
+        HP_BAR(player, .captureHP = &hp);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
      THEN {

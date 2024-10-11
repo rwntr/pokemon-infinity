@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
         {
             TURN { MOVE(opponent, MOVE_RECYCLE); SWITCH(player, 1); }
             TURN { MOVE(opponent, MOVE_RECYCLE); MOVE(player, MOVE_MEMENTO); SEND_OUT(player, 0); }
-            TURN { MOVE(opponent, MOVE_RECYCLE); USE_ITEM(player, ITEM_REVIVE, partyIndex: 1); }
+            TURN { MOVE(opponent, MOVE_RECYCLE); USE_ITEM(player, ITEM_REVIVE, .partyIndex = 1); }
         }
         TURN {
             MOVE(opponent, MOVE_RECYCLE);
@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
         {
             TURN { MOVE(player, MOVE_RECYCLE); SWITCH(opponent, 1); }
             TURN { MOVE(player, MOVE_RECYCLE); MOVE(opponent, MOVE_MEMENTO); SEND_OUT(opponent, 0); }
-            TURN { MOVE(player, MOVE_RECYCLE); USE_ITEM(opponent, ITEM_REVIVE, partyIndex: 1); }
+            TURN { MOVE(player, MOVE_RECYCLE); USE_ITEM(opponent, ITEM_REVIVE, .partyIndex = 1); }
         }
         TURN {
             MOVE(player, MOVE_RECYCLE);

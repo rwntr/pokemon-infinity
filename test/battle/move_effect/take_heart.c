@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Take Heart cures the user of all status conditions")
             MESSAGE("Wobbuffet is fast asleep.");
         } else if (status1 == STATUS1_FREEZE) {
             PASSES_RANDOMLY(20, 100, RNG_FROZEN);
-            STATUS_ICON(player, none: TRUE);
+            STATUS_ICON(player, .none = TRUE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         } else {
             MESSAGE("Wobbuffet's status returned to normal!");

@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Vessel of Ruin's message displays correctly after all battle
         TURN { MOVE(opponent, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_RUINATION); }
     } SCENE {
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
         MESSAGE("Go! Ting-Lu!");
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Vessel of Ruin's message displays correctly after all battle
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_RUINATION); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
         SEND_IN_MESSAGE("Wobbuffet");

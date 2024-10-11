@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Psychic Noise blocks healing moves for 2 turns")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_NOISE); MOVE(opponent, MOVE_RECOVER); }
-        TURN { MOVE(opponent, MOVE_RECOVER, allowed: FALSE); }
+        TURN { MOVE(opponent, MOVE_RECOVER, .allowed = FALSE); }
         TURN { MOVE(opponent, MOVE_RECOVER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC_NOISE, player);

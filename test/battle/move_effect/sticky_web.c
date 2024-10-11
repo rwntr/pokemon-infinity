@@ -210,9 +210,9 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STICKY_WEB); }
         if (hasReplacement) {
-            TURN { MOVE(opponentLeft, MOVE_MEMENTO, target:playerLeft); SEND_OUT(opponentLeft, 2); }
+            TURN { MOVE(opponentLeft, MOVE_MEMENTO, .target =playerLeft); SEND_OUT(opponentLeft, 2); }
         } else {
-            TURN { MOVE(opponentLeft, MOVE_MEMENTO, target:playerLeft);}
+            TURN { MOVE(opponentLeft, MOVE_MEMENTO, .target =playerLeft);}
         }
         TURN { SWITCH(playerRight, 2); }
     } SCENE {
@@ -247,7 +247,7 @@ SINGLE_BATTLE_TEST("Sticky Web is placed on the correct side after Explosion")
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); MOVE(opponent, MOVE_STICKY_WEB); SEND_OUT(player, 1);}
     } SCENE {
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         MESSAGE("Wobbuffet fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponent);
@@ -264,7 +264,7 @@ SINGLE_BATTLE_TEST("Sticky Web is placed on the correct side after Memento")
     } WHEN {
         TURN { MOVE(player, MOVE_MEMENTO); MOVE(opponent, MOVE_STICKY_WEB); SEND_OUT(player, 1); }
     } SCENE {
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MEMENTO, player);
         MESSAGE("Wobbuffet fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponent);

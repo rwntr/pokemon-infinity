@@ -28,6 +28,6 @@ SINGLE_BATTLE_TEST("Compound Eyes does not affect OHKO moves")
         TURN { MOVE(player, MOVE_FISSURE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FISSURE, player);
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
     }
 }

@@ -31,7 +31,7 @@ DOUBLE_BATTLE_TEST("Tera Starstorm targets both opponents in a double battle if 
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TERA_STARSTORM, target:opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_TERA_STARSTORM, .target =opponentLeft); }
     } SCENE {
         MESSAGE("Terapagos used Tera Starstorm!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TERA_STARSTORM, playerLeft);

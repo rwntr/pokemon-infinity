@@ -122,6 +122,6 @@ SINGLE_BATTLE_TEST("Chloroplast results in 2/3 max HP recovery, weather-agnostic
     } WHEN {
         TURN { MOVE(opponent, move1); MOVE(player, move2); }
     } SCENE {
-        HP_BAR(player, damage: -(300 / 1.5));
+        HP_BAR(player, .damage = -(300 / 1.5));
     }
 }

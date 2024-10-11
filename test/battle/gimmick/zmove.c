@@ -645,7 +645,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Searing Sunraze Smash ignores the target's abilitie
         PLAYER(SPECIES_SOLGALEO) { Item(ITEM_SOLGANIUM_Z); }
         OPPONENT(SPECIES_LAPRAS) { Ability(ABILITY_BATTLE_ARMOR); }
     } WHEN {
-        TURN { MOVE(player, MOVE_SUNSTEEL_STRIKE, .gimmick = GIMMICK_Z_MOVE, criticalHit: TRUE); }
+        TURN { MOVE(player, MOVE_SUNSTEEL_STRIKE, .gimmick = GIMMICK_Z_MOVE, .criticalHit = TRUE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ZMOVE_ACTIVATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEARING_SUNRAZE_SMASH, player);

@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures any primary s
         PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(300); Status1(status); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its HP restored!");
         if (status != STATUS1_NONE) {
@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Full Restore restores a party members HP and cures any prima
         PLAYER(SPECIES_WYNAUT) { HP(1); MaxHP(300); Status1(status); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 1); }
+        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, .partyIndex = 1); }
         TURN { SWITCH(player, 1); }
     } SCENE {
         MESSAGE("Wynaut had its HP restored!");
@@ -74,7 +74,7 @@ SINGLE_BATTLE_TEST("Full Restore heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, .partyIndex = 0); }
     } SCENE {
         NOT MESSAGE("Wobbuffet had its HP restored!"); // The message is not printed if mon has max HP.
         MESSAGE("Wobbuffet had its status healed!");
@@ -97,7 +97,7 @@ SINGLE_BATTLE_TEST("Full Restore heals a party member from any primary status")
         PLAYER(SPECIES_WYNAUT) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 1); }
+        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, .partyIndex = 1); }
         TURN { SWITCH(player, 1); }
     } SCENE {
         NOT MESSAGE("Wynaut had its HP restored!"); // The message is not printed if mon has max HP.
@@ -115,7 +115,7 @@ SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures confusion")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN{ MOVE(opponent, MOVE_CONFUSE_RAY); }
-        TURN{ USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
+        TURN{ USE_ITEM(player, ITEM_FULL_RESTORE, .partyIndex = 0); }
         TURN{ MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Wobbuffet had its HP restored!");
@@ -133,7 +133,7 @@ SINGLE_BATTLE_TEST("Full Restore resets Toxic Counter")
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC); }
         TURN { ; }
-        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_FULL_RESTORE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Toxic!");
         MESSAGE("Wobbuffet had its HP restored!");

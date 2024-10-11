@@ -56,14 +56,14 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
         HP_BAR(playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
         MESSAGE("Foe Wobbuffet was burned!");
-        STATUS_ICON(opponentLeft, burn: TRUE);
+        STATUS_ICON(opponentLeft, .burn = TRUE);
 
         MESSAGE("Foe Wobbuffet used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         HP_BAR(playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
         MESSAGE("Foe Wobbuffet was burned!");
-        STATUS_ICON(opponentRight, burn: TRUE);
+        STATUS_ICON(opponentRight, .burn = TRUE);
 
         MESSAGE("Wynaut used Beak Blast!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BEAK_BLAST, playerLeft);
@@ -96,13 +96,13 @@ SINGLE_BATTLE_TEST("Beak Blast burns only when contact moves are used")
         if (burn) {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
             MESSAGE("Foe Wobbuffet was burned!");
-            STATUS_ICON(opponent, burn: TRUE);
+            STATUS_ICON(opponent, .burn = TRUE);
         }
         else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
                 MESSAGE("Foe Wobbuffet was burned!");
-                STATUS_ICON(opponent, burn: TRUE);
+                STATUS_ICON(opponent, .burn = TRUE);
             }
         }
 

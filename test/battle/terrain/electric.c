@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Electric Terrain protects grounded battlers from falling asl
         MESSAGE("Wobbuffet surrounds itself with electrified terrain!");
         MESSAGE("Wobbuffet used Spore!");
         MESSAGE("Foe Claydol fell asleep!");
-        STATUS_ICON(opponent, sleep: TRUE);
+        STATUS_ICON(opponent, .sleep = TRUE);
     }
 }
 

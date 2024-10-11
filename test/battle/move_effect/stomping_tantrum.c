@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if it failed on 
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHTPOWDER); };
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
-        TURN { MOVE(player, MOVE_STOMPING_TANTRUM, hit: FALSE); }
+        TURN { MOVE(player, MOVE_STOMPING_TANTRUM, .hit = FALSE); }
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);

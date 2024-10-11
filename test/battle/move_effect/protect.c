@@ -400,7 +400,7 @@ DOUBLE_BATTLE_TEST("Quick Guard protects self and ally from priority moves")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_QUICK_GUARD); MOVE(playerLeft, move, target:targetOpponent); }
+        TURN { MOVE(opponentLeft, MOVE_QUICK_GUARD); MOVE(playerLeft, move, .target =targetOpponent); }
         TURN {}
     } SCENE {
         MESSAGE("Foe Wobbuffet used Quick Guard!");
@@ -461,7 +461,7 @@ DOUBLE_BATTLE_TEST("Crafty Shield protects self and ally from status moves")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); (move == MOVE_TACKLE) ? MOVE(playerLeft, move, target:targetOpponent) : MOVE(playerLeft, move); }
+        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); (move == MOVE_TACKLE) ? MOVE(playerLeft, move, .target =targetOpponent) : MOVE(playerLeft, move); }
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CRAFTY_SHIELD, opponentLeft);

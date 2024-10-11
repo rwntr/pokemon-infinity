@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Burn Up user loses its Fire-type if enemy faints")
         TURN { MOVE(player, MOVE_BURN_UP); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, player);
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         MESSAGE("Cyndaquil burned itself out!");
     }
 }
@@ -106,7 +106,7 @@ SINGLE_BATTLE_TEST("Double Shock user loses its Electric-type if enemy faints")
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_SHOCK, player);
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         MESSAGE("Pikachu used up all of its electricity!");
     }
 }

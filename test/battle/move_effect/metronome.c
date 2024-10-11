@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Metronome's called powder move fails against Grass Types")
         MESSAGE("Wobbuffet used Poison Powder!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_POWDER, player);
         MESSAGE("It doesn't affect Foe Tangela…");
-        NOT STATUS_ICON(opponent, poison: TRUE);
+        NOT STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 

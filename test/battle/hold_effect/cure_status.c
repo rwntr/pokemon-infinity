@@ -22,9 +22,9 @@ SINGLE_BATTLE_TEST("Pecha and Lum Berries cure poison")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_POWDER, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        STATUS_ICON(opponent, poison: FALSE);
+        STATUS_ICON(opponent, .poison = FALSE);
     }
 }
 
@@ -44,9 +44,9 @@ SINGLE_BATTLE_TEST("Pecha and Lum Berries cure bad poison")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        STATUS_ICON(opponent, badPoison: TRUE);
+        STATUS_ICON(opponent, .badPoison = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        STATUS_ICON(opponent, badPoison: FALSE);
+        STATUS_ICON(opponent, .badPoison = FALSE);
     }
 }
 
@@ -66,9 +66,9 @@ SINGLE_BATTLE_TEST("Rawst and Lum Berries cure burn")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WILL_O_WISP, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-        STATUS_ICON(opponent, burn: TRUE);
+        STATUS_ICON(opponent, .burn = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        STATUS_ICON(opponent, burn: FALSE);
+        STATUS_ICON(opponent, .burn = FALSE);
     }
 }
 
@@ -110,9 +110,9 @@ SINGLE_BATTLE_TEST("Chesto and Lum Berries cure sleep")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPNOSIS, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        STATUS_ICON(opponent, sleep: TRUE);
+        STATUS_ICON(opponent, .sleep = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        STATUS_ICON(opponent, sleep: FALSE);
+        STATUS_ICON(opponent, .sleep = FALSE);
     }
 }
 
@@ -132,9 +132,9 @@ SINGLE_BATTLE_TEST("Cheri and Lum Berries cure paralysis")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-        STATUS_ICON(opponent, paralysis: TRUE);
+        STATUS_ICON(opponent, .paralysis = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        STATUS_ICON(opponent, paralysis: FALSE);
+        STATUS_ICON(opponent, .paralysis = FALSE);
     }
 }
 
@@ -210,18 +210,18 @@ SINGLE_BATTLE_TEST("Opponent Pokemon can be further poisoned with Toxic spikes a
         // 1st switch-in
         MESSAGE("2 sent out Wynaut!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         if (item == ITEM_PECHA_BERRY) {
             MESSAGE("Foe Wynaut's Pecha Berry cured poison!");
         } else {
             MESSAGE("Foe Wynaut's Lum Berry cured its poison problem!");
         }
-        STATUS_ICON(opponent, poison: FALSE);
+        STATUS_ICON(opponent, .poison = FALSE);
         // 2nd switch-in
         MESSAGE("2 sent out Wobbuffet!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -251,17 +251,17 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
         // 1st switch-in
         SEND_IN_MESSAGE("Wobbuffet");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-        STATUS_ICON(player, poison: TRUE);
+        STATUS_ICON(player, .poison = TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         if (item == ITEM_PECHA_BERRY) {
             MESSAGE("Wobbuffet's Pecha Berry cured poison!");
         } else {
             MESSAGE("Wobbuffet's Lum Berry cured its poison problem!");
         }
-        STATUS_ICON(player, poison: FALSE);
+        STATUS_ICON(player, .poison = FALSE);
         // 2nd switch-in
         SEND_IN_MESSAGE("Wynaut");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-        STATUS_ICON(player, poison: TRUE);
+        STATUS_ICON(player, .poison = TRUE);
     }
 }

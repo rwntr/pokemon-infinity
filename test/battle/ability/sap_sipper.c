@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Sap Sipper negates effects from Grass-type moves")
     } SCENE {
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            STATUS_ICON(player, sleep: TRUE);
+            STATUS_ICON(player, .sleep = TRUE);
         }
     }
 }

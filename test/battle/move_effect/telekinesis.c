@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Telekinesis makes the target unable to avoid any attacks mad
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_TELEKINESIS); MOVE(opponent, MOVE_MINIMIZE); }
-        TURN { MOVE(player, MOVE_SCREECH, hit:FALSE); }
+        TURN { MOVE(player, MOVE_SCREECH, .hit =FALSE); }
     } SCENE {
         MESSAGE("Wobbuffet used Telekinesis!");
         MESSAGE("Foe Wynaut was hurled into the air!");

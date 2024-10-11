@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Poison Touch has a 30% chance to poison when attacking with 
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         MESSAGE("Foe Wobbuffet was poisoned by Grimer's Poison Touch!");
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -39,13 +39,13 @@ SINGLE_BATTLE_TEST("Poison Touch only applies when using contact moves")
             ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
             MESSAGE("Foe Wobbuffet was poisoned by Grimer's Poison Touch!");
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
                 MESSAGE("Foe Wobbuffet was poisoned by Grimer's Poison Touch!");
-                STATUS_ICON(opponent, poison: TRUE);
+                STATUS_ICON(opponent, .poison = TRUE);
             }
         }
     }
@@ -66,12 +66,12 @@ SINGLE_BATTLE_TEST("Poison Touch applies between multi-hit move hits")
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         MESSAGE("Foe Wobbuffet was poisoned by Grimer's Poison Touch!");
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
         MESSAGE("Foe Wobbuffet's Pecha Berry cured poison!");
-        STATUS_ICON(opponent, poison: FALSE);
+        STATUS_ICON(opponent, .poison = FALSE);
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         MESSAGE("Foe Wobbuffet was poisoned by Grimer's Poison Touch!");
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
     }
 }

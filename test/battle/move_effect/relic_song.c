@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Relic Song has a 10% chance to put the target to sleep")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        STATUS_ICON(opponent, sleep: TRUE);
+        STATUS_ICON(opponent, .sleep = TRUE);
     }
 }
 

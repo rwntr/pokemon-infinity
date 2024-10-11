@@ -49,9 +49,9 @@ SINGLE_BATTLE_TEST("Comatose may be suppressed if pokemon transformed into a pok
         MESSAGE("Foe Ditto transformed into Komala!");
 
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        if (move == MOVE_POISONPOWDER)      { STATUS_ICON(opponent, poison: TRUE); }
-        else if (move == MOVE_TOXIC)        { STATUS_ICON(opponent, badPoison: TRUE); }
-        else if (move == MOVE_THUNDER_WAVE) { STATUS_ICON(opponent, paralysis: TRUE); }
-        else if (move == MOVE_SLEEP_POWDER) { STATUS_ICON(opponent, sleep: TRUE); }
+        if (move == MOVE_POISONPOWDER)      { STATUS_ICON(opponent, .poison = TRUE); }
+        else if (move == MOVE_TOXIC)        { STATUS_ICON(opponent, .badPoison = TRUE); }
+        else if (move == MOVE_THUNDER_WAVE) { STATUS_ICON(opponent, .paralysis = TRUE); }
+        else if (move == MOVE_SLEEP_POWDER) { STATUS_ICON(opponent, .sleep = TRUE); }
     }
 }

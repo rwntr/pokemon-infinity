@@ -143,9 +143,9 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Greninja when fainting its A
         }
     } WHEN {
         if (monsCountPlayer == 3) {
-            TURN { MOVE(playerLeft, MOVE_WATER_GUN, target:playerRight); SEND_OUT(playerRight, 2); }
+            TURN { MOVE(playerLeft, MOVE_WATER_GUN, .target =playerRight); SEND_OUT(playerRight, 2); }
         } else {
-            TURN { MOVE(playerLeft, MOVE_WATER_GUN, target:playerRight); }
+            TURN { MOVE(playerLeft, MOVE_WATER_GUN, .target =playerRight); }
         }
 
     } SCENE {

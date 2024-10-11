@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Poison Heal heals from (Toxic) Poison damage")
     } SCENE {
         ABILITY_POPUP(player, ABILITY_POISON_HEAL);
         MESSAGE("The poisoning healed Shroomish a little bit!");
-        HP_BAR(player, damage: -50);
+        HP_BAR(player, .damage = -50);
     }
 }
 
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Poison Heal does not heal or cause damage when under Heal Bl
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_POISON_HEAL);
             MESSAGE("The poisoning healed Shroomish a little bit!");
-            HP_BAR(player, damage: -50);
+            HP_BAR(player, .damage = -50);
         }
     }
 }
@@ -70,8 +70,8 @@ SINGLE_BATTLE_TEST("Poison Heal activates before Toxic Orb")
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_POISON_HEAL);
             MESSAGE("The poisoning healed Shroomish a little bit!");
-            HP_BAR(player, damage: -50);
-            HP_BAR(player, damage: 50);
+            HP_BAR(player, .damage = -50);
+            HP_BAR(player, .damage = 50);
         }
     }
 }

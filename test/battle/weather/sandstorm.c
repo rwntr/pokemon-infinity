@@ -91,6 +91,6 @@ SINGLE_BATTLE_TEST("Sandstorm damage rounds properly when maxHP < 16")
     } WHEN {
         TURN { MOVE(opponent, MOVE_SANDSTORM); }
     } SCENE {
-        HP_BAR(player, damage: 1);
+        HP_BAR(player, .damage = 1);
     }
 }

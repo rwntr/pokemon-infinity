@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Synthesis recovers 1/2 of the user's max HP")
     } WHEN {
         TURN { MOVE(player, MOVE_SYNTHESIS); }
     } SCENE {
-        HP_BAR(player, damage: -(200 / 2));
+        HP_BAR(player, .damage = -(200 / 2));
     }
 }
 
@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Synthesis recovers 2/3 of the user's max HP in Sunlight")
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); MOVE(player, MOVE_SYNTHESIS); }
     } SCENE {
-        HP_BAR(player, damage: -(300 / 1.5));
+        HP_BAR(player, .damage = -(300 / 1.5));
     }
 }
 
@@ -43,6 +43,6 @@ SINGLE_BATTLE_TEST("Synthesis recovers 1/4 of the user's max HP in Rain, Sandsto
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_SYNTHESIS); }
     } SCENE {
-        HP_BAR(player, damage: -(400 / 4));
+        HP_BAR(player, .damage = -(400 / 4));
     }
 }

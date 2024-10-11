@@ -122,11 +122,11 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Mist and Safeguard
         MESSAGE("Wobbuffet used Toxic!");
         if (move == MOVE_DEFOG) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, playerRight);
-            STATUS_ICON(opponentRight, badPoison: TRUE);
+            STATUS_ICON(opponentRight, .badPoison = TRUE);
         }
         else {
             MESSAGE("Foe Wobbuffet's party is protected by Safeguard!");
-            NOT STATUS_ICON(opponentRight, badPoison: TRUE);
+            NOT STATUS_ICON(opponentRight, .badPoison = TRUE);
         }
     }
 }
@@ -277,13 +277,13 @@ SINGLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Toxic Spikes from 
         if (move != MOVE_DEFOG) {
             MESSAGE("Foe Wobbuffet was poisoned!");
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         }
         else {
             NONE_OF {
                 MESSAGE("Foe Wobbuffet was poisoned!");
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-                STATUS_ICON(opponent, poison: TRUE);
+                STATUS_ICON(opponent, .poison = TRUE);
             }
         }
     }

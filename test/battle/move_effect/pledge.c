@@ -129,8 +129,8 @@ DOUBLE_BATTLE_TEST("Sea Of Fire deals 1/8th damage per turn")
     } SCENE {
         s32 maxHPopponentLeft = GetMonData(&OPPONENT_PARTY[0], MON_DATA_MAX_HP);
         s32 maxHPopponentRight = GetMonData(&OPPONENT_PARTY[1], MON_DATA_MAX_HP);
-        HP_BAR(opponentLeft, damage: maxHPopponentLeft / 8);
-        HP_BAR(opponentRight, damage: maxHPopponentRight / 8);
+        HP_BAR(opponentLeft, .damage = maxHPopponentLeft / 8);
+        HP_BAR(opponentRight, .damage = maxHPopponentRight / 8);
     }
 }
 

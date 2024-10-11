@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Charge's effect is removed if the user fails using an Electr
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER); }
         TURN { MOVE(player, MOVE_CHARGE); }
-        TURN { MOVE(player, MOVE_THUNDER, hit: FALSE); }
+        TURN { MOVE(player, MOVE_THUNDER, .hit = FALSE); }
         TURN { MOVE(player, MOVE_THUNDER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER, player);

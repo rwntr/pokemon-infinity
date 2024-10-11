@@ -141,11 +141,11 @@ DOUBLE_BATTLE_TEST("Covert Cloak does or does not block Sparkling Aria depending
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLING_ARIA, playerLeft);
         if (moveToUse == MOVE_TACKLE) {
             MESSAGE("Foe Wobbuffet's burn was healed.");
-            STATUS_ICON(opponentLeft, none: TRUE);
+            STATUS_ICON(opponentLeft, .none = TRUE);
         } else {
             NONE_OF {
                 MESSAGE("Foe Wobbuffet's burn was healed.");
-                STATUS_ICON(opponentLeft, none: TRUE);
+                STATUS_ICON(opponentLeft, .none = TRUE);
             }
         }
     }
@@ -163,7 +163,7 @@ SINGLE_BATTLE_TEST("Covert Cloak blocks Sparkling Aria in singles")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLING_ARIA, player);
         NONE_OF {
             MESSAGE("Foe Wobbuffet's burn was healed.");
-            STATUS_ICON(opponent, none: TRUE);
+            STATUS_ICON(opponent, .none = TRUE);
         }
     }
 }

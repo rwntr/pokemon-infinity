@@ -18,11 +18,11 @@ SINGLE_BATTLE_TEST("Healing Wish causes the user to faint and fully heals the re
         TURN { MOVE(player, MOVE_HEALING_WISH); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEALING_WISH, player);
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         MESSAGE("Gardevoir fainted!");
         MESSAGE("The healing wish came true for Wynaut!");
-        HP_BAR(player, hp: 100);
-        STATUS_ICON(player, none: TRUE);
+        HP_BAR(player, .hp = 100);
+        STATUS_ICON(player, .none = TRUE);
         MESSAGE("Wynaut regained health!");
     }
 }
@@ -40,11 +40,11 @@ DOUBLE_BATTLE_TEST("Lunar Dance causes the user to faint and fully heals the rep
         TURN { MOVE(playerLeft, MOVE_LUNAR_DANCE); SEND_OUT(playerLeft, 2); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LUNAR_DANCE, playerLeft);
-        HP_BAR(playerLeft, hp: 0);
+        HP_BAR(playerLeft, .hp = 0);
         MESSAGE("Gardevoir fainted!");
         MESSAGE("Wynaut became cloaked in mystical moonlight!");
-        HP_BAR(playerLeft, hp: 100);
-        STATUS_ICON(playerLeft, none: TRUE);
+        HP_BAR(playerLeft, .hp = 100);
+        STATUS_ICON(playerLeft, .none = TRUE);
         MESSAGE("Wynaut regained health!");
     }
 }
@@ -62,7 +62,7 @@ SINGLE_BATTLE_TEST("Healing Wish effect activates only if the switched pokemon c
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 2); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEALING_WISH, player);
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         MESSAGE("Gardevoir fainted!");
         NONE_OF {
             MESSAGE("The healing wish came true for Wynaut!");
@@ -70,8 +70,8 @@ SINGLE_BATTLE_TEST("Healing Wish effect activates only if the switched pokemon c
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         MESSAGE("The healing wish came true for Wynaut!");
-        HP_BAR(player, hp: 100);
-        STATUS_ICON(player, none: TRUE);
+        HP_BAR(player, .hp = 100);
+        STATUS_ICON(player, .none = TRUE);
         MESSAGE("Wynaut regained health!");
     }
 }

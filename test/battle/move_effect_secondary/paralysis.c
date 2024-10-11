@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("Thunder Shock inflicts paralysis")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_SHOCK, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-        STATUS_ICON(opponent, paralysis: TRUE);
+        STATUS_ICON(opponent, .paralysis = TRUE);
     }
 }
 
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Thunder Shock cannot paralyze an Electric-type")
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-            STATUS_ICON(opponent, paralysis: TRUE);
+            STATUS_ICON(opponent, .paralysis = TRUE);
         }
     }
 }
@@ -59,11 +59,11 @@ SINGLE_BATTLE_TEST("Body Slam shouldn't paralyze Normal-types")
         HP_BAR(opponent);
         #if B_STATUS_TYPE_IMMUNITY > GEN_1
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-            STATUS_ICON(opponent, paralysis: TRUE);
+            STATUS_ICON(opponent, .paralysis = TRUE);
         #else
             NONE_OF {
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-                STATUS_ICON(opponent, paralysis: TRUE);
+                STATUS_ICON(opponent, .paralysis = TRUE);
             }
         #endif
     }

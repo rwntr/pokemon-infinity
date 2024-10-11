@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a double 
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_TACKLE, target:opponentLeft, WITH_RNG(RNG_CONFUSION, FALSE)); }
+        TURN { MOVE(playerRight, MOVE_TACKLE, .target =opponentLeft, WITH_RNG(RNG_CONFUSION, FALSE)); }
     } SCENE {
         if (item == ITEM_BERSERK_GENE)
         {

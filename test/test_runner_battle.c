@@ -1762,7 +1762,7 @@ void Moves_(u32 sourceLine, u16 moves[MAX_MON_MOVES])
     {
         if (moves[i] == MOVE_NONE)
             break;
-        INVALID_IF(moves[i] >= MOVES_COUNT, "Illegal move: %d", moves[i]);
+        INVALID_IF(moves[i] >= MOVES_COUNT, "Illegal .move = %d", moves[i]);
         SetMonData(DATA.currentMon, MON_DATA_MOVE1 + i, &moves[i]);
         SetMonData(DATA.currentMon, MON_DATA_PP1 + i, &gMovesInfo[moves[i]].pp);
     }
@@ -1777,7 +1777,7 @@ void MovesWithPP_(u32 sourceLine, struct moveWithPP moveWithPP[MAX_MON_MOVES])
     {
         if (moveWithPP[i].moveId == MOVE_NONE)
             break;
-        INVALID_IF(moveWithPP[i].moveId >= MOVES_COUNT, "Illegal move: %d", &moveWithPP[i].moveId);
+        INVALID_IF(moveWithPP[i].moveId >= MOVES_COUNT, "Illegal .move = %d", &moveWithPP[i].moveId);
         SetMonData(DATA.currentMon, MON_DATA_MOVE1 + i, &moveWithPP[i].moveId);
         SetMonData(DATA.currentMon, MON_DATA_PP1 + i, &moveWithPP[i].pp);
     }
@@ -1984,7 +1984,7 @@ void CloseTurn(u32 sourceLine)
              if (IsAITest() && (i & BIT_SIDE) == B_SIDE_OPPONENT) // If Move was not specified, allow any move used.
                 SetAiActionToPass(sourceLine, i);
              else
-                Move(sourceLine, &gBattleMons[i], (struct MoveContext) { move: MOVE_CELEBRATE, explicitMove: TRUE });
+                Move(sourceLine, &gBattleMons[i], (struct MoveContext) { .move = MOVE_CELEBRATE, .explicitMove = TRUE });
         }
     }
     DATA.turnState = TURN_CLOSED;
@@ -2057,7 +2057,7 @@ void MoveGetIdAndSlot(s32 battlerId, struct MoveContext *ctx, u32 *moveId, u32 *
 
     if (ctx->explicitMove)
     {
-        INVALID_IF(ctx->move == MOVE_NONE || ctx->move >= MOVES_COUNT, "Illegal move: %d", ctx->move);
+        INVALID_IF(ctx->move == MOVE_NONE || ctx->move >= MOVES_COUNT, "Illegal .move = %d", ctx->move);
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
             *moveId = GetMonData(mon, MON_DATA_MOVE1 + i);
@@ -2222,7 +2222,7 @@ void ExpectSendOut(u32 sourceLine, struct BattlePokemon *battler, u32 partyIndex
         if (IsAITest() && (battlerId & BIT_SIDE) == B_SIDE_OPPONENT) // If Move was not specified, allow any move used.
             SetAiActionToPass(sourceLine, battlerId);
         else
-            Move(sourceLine, battler, (struct MoveContext) { move: MOVE_CELEBRATE, explicitMove: TRUE });
+            Move(sourceLine, battler, (struct MoveContext) { .move = MOVE_CELEBRATE, .explicitMove = TRUE });
     }
 
     DATA.currentMonIndexes[battlerId] = partyIndex;
@@ -2387,7 +2387,7 @@ void SendOut(u32 sourceLine, struct BattlePokemon *battler, u32 partyIndex)
             INVALID_IF(DATA.currentMonIndexes[i] == partyIndex, "SEND_OUT to battler");
     }
     if (!(DATA.actionBattlers & (1 << battlerId)))
-        Move(sourceLine, battler, (struct MoveContext) { move: MOVE_CELEBRATE, explicitMove: TRUE });
+        Move(sourceLine, battler, (struct MoveContext) { .move = MOVE_CELEBRATE, .explicitMove = TRUE });
     PushBattlerAction(sourceLine, battlerId, RECORDED_PARTY_INDEX, partyIndex);
     DATA.currentMonIndexes[battlerId] = partyIndex;
 }
@@ -2414,7 +2414,7 @@ void UseItem(u32 sourceLine, struct BattlePokemon *battler, struct ItemContext c
             if (GetMonData(CurrentMon(battlerId), MON_DATA_MOVE1 + i, NULL) == ctx.move)
                 break;
         }
-        INVALID_IF(i == MAX_MON_MOVES, "USE_ITEM on invalid move: %d", ctx.move);
+        INVALID_IF(i == MAX_MON_MOVES, "USE_ITEM on invalid .move = %d", ctx.move);
     }
     else
     {

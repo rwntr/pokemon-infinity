@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Infernal Parade inflicts burn")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_INFERNAL_PARADE, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-        STATUS_ICON(opponent, burn: TRUE);
+        STATUS_ICON(opponent, .burn = TRUE);
     }
 }
 

@@ -8,7 +8,7 @@ SINGLE_BATTLE_TEST("Paralyze Heal heals a battler from being paralyzed")
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_PARALYSIS); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_PARALYZE_HEAL, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_PARALYZE_HEAL, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Antidote heals a battler from being poisoned")
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_ANTIDOTE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_ANTIDOTE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Antidote heals a battler from being badly poisoned")
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_TOXIC_POISON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_ANTIDOTE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_ANTIDOTE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Antidote resets Toxic Counter")
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC); }
         TURN { ; }
-        TURN { USE_ITEM(player, ITEM_ANTIDOTE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_ANTIDOTE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Toxic!");
         MESSAGE("Wobbuffet had its status healed!");
@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Awakening heals a battler from being asleep")
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_SLEEP); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_AWAKENING, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_AWAKENING, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Burn Heal heals a battler from being burned")
         PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_BURN); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_BURN_HEAL, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_BURN_HEAL, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Ice Heal heals a battler from being frozen or frostbite")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_ICE_HEAL, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_ICE_HEAL, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -127,7 +127,7 @@ SINGLE_BATTLE_TEST("Full Heal heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_FULL_HEAL, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_FULL_HEAL, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -150,7 +150,7 @@ SINGLE_BATTLE_TEST("Heal Powder heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_HEAL_POWDER, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_HEAL_POWDER, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -173,7 +173,7 @@ SINGLE_BATTLE_TEST("Pewter Crunchies heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_PEWTER_CRUNCHIES, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_PEWTER_CRUNCHIES, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -196,7 +196,7 @@ SINGLE_BATTLE_TEST("Lava Cookies heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_LAVA_COOKIE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_LAVA_COOKIE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -219,7 +219,7 @@ SINGLE_BATTLE_TEST("Rage Candy Bar heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_RAGE_CANDY_BAR, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_RAGE_CANDY_BAR, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -242,7 +242,7 @@ SINGLE_BATTLE_TEST("Old Gateu heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_OLD_GATEAU, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_OLD_GATEAU, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -265,7 +265,7 @@ SINGLE_BATTLE_TEST("Casteliacone heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_CASTELIACONE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_CASTELIACONE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -288,7 +288,7 @@ SINGLE_BATTLE_TEST("Lumiose Galette heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_LUMIOSE_GALETTE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_LUMIOSE_GALETTE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");;
     } THEN {
@@ -311,7 +311,7 @@ SINGLE_BATTLE_TEST("Shalour Sable heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_SHALOUR_SABLE, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_SHALOUR_SABLE, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -334,7 +334,7 @@ SINGLE_BATTLE_TEST("Big Malasada heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_BIG_MALASADA, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_BIG_MALASADA, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -357,7 +357,7 @@ SINGLE_BATTLE_TEST("Jubilife Muffin heals a battler from any primary status")
         PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_JUBILIFE_MUFFIN, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_JUBILIFE_MUFFIN, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {
@@ -385,7 +385,7 @@ SINGLE_BATTLE_TEST("Full Heal, Heal Powder and Local Specialties heal a battler 
         OPPONENT(SPECIES_GENGAR);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CONFUSE_RAY); }
-        TURN { USE_ITEM(player, item, partyIndex: 0); }
+        TURN { USE_ITEM(player, item, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet had its status healed!");
     } THEN {

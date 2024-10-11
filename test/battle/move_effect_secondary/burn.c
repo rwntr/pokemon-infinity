@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("Ember inflicts burn")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-        STATUS_ICON(opponent, burn: TRUE);
+        STATUS_ICON(opponent, .burn = TRUE);
     }
 }
 
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Ember cannot burn a Fire-type Pokémon")
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-            STATUS_ICON(opponent, burn: TRUE);
+            STATUS_ICON(opponent, .burn = TRUE);
         }
     }
 }
@@ -54,12 +54,12 @@ DOUBLE_BATTLE_TEST("Lava Plume inflicts burn to all adjacent battlers")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LAVA_PLUME, playerLeft);
         HP_BAR(opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        STATUS_ICON(opponentLeft, burn: TRUE);
+        STATUS_ICON(opponentLeft, .burn = TRUE);
         HP_BAR(playerRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, playerRight);
-        STATUS_ICON(playerRight, burn: TRUE);
+        STATUS_ICON(playerRight, .burn = TRUE);
         HP_BAR(opponentRight);
-        STATUS_ICON(opponentRight, burn: TRUE);
+        STATUS_ICON(opponentRight, .burn = TRUE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
     }
 }
@@ -77,7 +77,7 @@ SINGLE_BATTLE_TEST("Matcha Gotcha inflicts burn 20% of the time")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MATCHA_GOTCHA, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-        STATUS_ICON(opponent, burn: TRUE);
+        STATUS_ICON(opponent, .burn = TRUE);
     }
 }
 
@@ -95,10 +95,10 @@ DOUBLE_BATTLE_TEST("Matcha Gatcha can burn both targets")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MATCHA_GOTCHA, playerLeft);
         HP_BAR(opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        STATUS_ICON(opponentLeft, burn: TRUE);
+        STATUS_ICON(opponentLeft, .burn = TRUE);
         HP_BAR(opponentRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
-        STATUS_ICON(opponentRight, burn: TRUE);
+        STATUS_ICON(opponentRight, .burn = TRUE);
     }
 }
 
@@ -121,11 +121,11 @@ SINGLE_BATTLE_TEST("Scald shouldn't burn a Water-type Pokémon")
         HP_BAR(opponent);
         #if B_STATUS_TYPE_IMMUNITY > GEN_1
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-            STATUS_ICON(opponent, burn: TRUE);
+            STATUS_ICON(opponent, .burn = TRUE);
         #else
             NONE_OF {
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-                STATUS_ICON(opponent, burn: TRUE);
+                STATUS_ICON(opponent, .burn = TRUE);
             }
         #endif
     }

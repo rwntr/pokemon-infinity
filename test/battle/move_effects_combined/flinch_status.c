@@ -30,13 +30,13 @@ SINGLE_BATTLE_TEST("Thunder, Ice and Fire Fang inflict status 10% of the time")
         HP_BAR(opponent);
         if (move == MOVE_THUNDER_FANG) {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponent);
-            STATUS_ICON(opponent, paralysis: TRUE);
+            STATUS_ICON(opponent, .paralysis = TRUE);
         } if (move == MOVE_ICE_FANG) {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, opponent);
             FREEZE_OR_FROSTBURN_STATUS(opponent, TRUE);
         } if (move == MOVE_FIRE_FANG) {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-            STATUS_ICON(opponent, burn: TRUE);
+            STATUS_ICON(opponent, .burn = TRUE);
         }
     }
 }

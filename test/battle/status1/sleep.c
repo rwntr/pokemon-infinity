@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("Sleep prevents the battler from using a move")
         for (j = 0; j < turns - 1; j++)
             MESSAGE("Wobbuffet is fast asleep.");
         MESSAGE("Wobbuffet woke up!");
-        STATUS_ICON(player, none: TRUE);
+        STATUS_ICON(player, .none = TRUE);
         MESSAGE("Wobbuffet used Celebrate!");
     }
 }

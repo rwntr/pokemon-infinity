@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Belch cannot be used if the user has not eaten a berry")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (item == ITEM_NONE)
-            TURN { MOVE(player, MOVE_BELCH, allowed: FALSE); MOVE(player, MOVE_CELEBRATE); }
+            TURN { MOVE(player, MOVE_BELCH, .allowed = FALSE); MOVE(player, MOVE_CELEBRATE); }
         else {
             TURN { MOVE(player, MOVE_STUFF_CHEEKS); }
             TURN { MOVE(player, MOVE_BELCH); }

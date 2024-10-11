@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Immunity prevents Poison Sting poison")
         TURN { MOVE(player, MOVE_POISON_STING); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_STING, player);
-        NOT STATUS_ICON(opponent, poison: TRUE);
+        NOT STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Immunity prevents Toxic bad poison")
         MESSAGE("Wobbuffet used Toxic!");
         ABILITY_POPUP(opponent, ABILITY_IMMUNITY);
         MESSAGE("Foe Snorlax's Immunity prevents poisoning!");
-        NOT STATUS_ICON(opponent, poison: TRUE);
+        NOT STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -42,6 +42,6 @@ SINGLE_BATTLE_TEST("Immunity prevents Toxic Spikes poison")
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }
     } SCENE {
-        NOT STATUS_ICON(opponent, poison: TRUE);
+        NOT STATUS_ICON(opponent, .poison = TRUE);
     }
 }

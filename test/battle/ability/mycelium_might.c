@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Mycelium Might causes the user to move last in the priority 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
-        STATUS_ICON(opponent, sleep: TRUE);
+        STATUS_ICON(opponent, .sleep = TRUE);
     }
 }
 
@@ -24,9 +24,9 @@ SINGLE_BATTLE_TEST("Mycelium Might will respect the speed if both battlers have 
         TURN { MOVE(opponent, MOVE_WILL_O_WISP); MOVE(player, MOVE_WILL_O_WISP); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WILL_O_WISP, player);
-        STATUS_ICON(opponent, burn: TRUE);
+        STATUS_ICON(opponent, .burn = TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WILL_O_WISP, opponent);
-        STATUS_ICON(player, burn: TRUE);
+        STATUS_ICON(player, .burn = TRUE);
     }
 }
 

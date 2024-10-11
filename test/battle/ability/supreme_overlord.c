@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
     } WHEN {
         TURN { MOVE(opponent, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
         SEND_IN_MESSAGE("Kingambit");
@@ -124,7 +124,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
         SEND_IN_MESSAGE("Wobbuffet");

@@ -77,7 +77,7 @@ SINGLE_BATTLE_TEST("Flare Blitz deals 33% of recoil damage to the user and can b
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLARE_BLITZ, player);
         HP_BAR(opponent, .captureDamage =  &directDamage);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-        STATUS_ICON(opponent, burn: TRUE);
+        STATUS_ICON(opponent, .burn = TRUE);
         HP_BAR(player, .captureDamage =  &recoilDamage);
     } THEN {
         EXPECT_MUL_EQ(directDamage, UQ_4_12(0.33), recoilDamage);

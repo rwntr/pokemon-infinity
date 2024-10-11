@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Embargo blocks the effect of an affected Pokémon's held ite
         MESSAGE("Foe Wobbuffet can't use items anymore!");
         // Turn 2
         MESSAGE("Wobbuffet used Fissure!");
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
     }
 }
 
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Embargo blocks an affected Pokémon's trainer from using ite
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
-        TURN { USE_ITEM(opponent, ITEM_POTION, partyIndex: 0); }
+        TURN { USE_ITEM(opponent, ITEM_POTION, .partyIndex = 0); }
     } SCENE {
         MESSAGE("Wobbuffet used Embargo!");
         MESSAGE("Foe Wobbuffet can't use items anymore!");
@@ -245,7 +245,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't block the effects of berries obtained throug
         MESSAGE("Wobbuffet used Pluck!");
         HP_BAR(opponent);
         MESSAGE("Wobbuffet stole and ate Foe Wobbuffet's Oran Berry!");
-        HP_BAR(player, damage: -hp);
+        HP_BAR(player, .damage = -hp);
     }
 }
 

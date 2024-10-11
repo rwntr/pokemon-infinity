@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Steel Beam makes the user lose 1/2 of its Max HP")
         TURN { MOVE(player, MOVE_STEEL_BEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_BEAM, player);
-        HP_BAR(player, damage: 200);
+        HP_BAR(player, .damage = 200);
         NOT MESSAGE("Wobbuffet fainted!"); // Wobb had more than 1/2 of its HP, so it can't faint.
     }
 }
@@ -28,10 +28,10 @@ DOUBLE_BATTLE_TEST("Steel Beam makes the user lose 1/2 of its Max HP in a double
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_STEEL_BEAM, target:opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_STEEL_BEAM, .target =opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_BEAM, playerLeft);
-        HP_BAR(playerLeft, damage: 200);
+        HP_BAR(playerLeft, .damage = 200);
         NOT MESSAGE("Wobbuffet fainted!"); // Wobb had more than 1/2 of its HP, so it can't faint.
     }
 }
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Steel Beam causes the user to faint when below 1/2 of its Ma
         TURN { MOVE(player, MOVE_STEEL_BEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_BEAM, player);
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -58,10 +58,10 @@ DOUBLE_BATTLE_TEST("Steel Beam causes the user to faint when below 1/2 of its Ma
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_STEEL_BEAM, target:opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_STEEL_BEAM, .target =opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_BEAM, playerLeft);
-        HP_BAR(playerLeft, hp: 0);
+        HP_BAR(playerLeft, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -76,9 +76,9 @@ SINGLE_BATTLE_TEST("Steel Beam causes the user & the target to faint when below 
         TURN { MOVE(player, MOVE_STEEL_BEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_BEAM, player);
-        HP_BAR(opponent, hp: 0);
+        HP_BAR(opponent, .hp = 0);
         MESSAGE("Foe Wobbuffet fainted!");
-        HP_BAR(player, hp: 0);
+        HP_BAR(player, .hp = 0);
         MESSAGE("Wobbuffet fainted!");
     }
 }
@@ -140,7 +140,7 @@ SINGLE_BATTLE_TEST("Steel Beam is not blocked by Damp")
         TURN { MOVE(player, MOVE_STEEL_BEAM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_BEAM, player);
-        HP_BAR(player, damage: 200);
+        HP_BAR(player, .damage = 200);
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_DAMP);
             MESSAGE("Foe Golduck's Damp prevents Wobbuffet from using Steel Beam!");

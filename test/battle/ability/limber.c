@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Limber prevents paralysis")
         HP_BAR(player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, player);
-            STATUS_ICON(player, paralysis: TRUE);
+            STATUS_ICON(player, .paralysis = TRUE);
         }
     }
 }

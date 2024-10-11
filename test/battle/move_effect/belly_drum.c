@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Belly Drum cuts the user's HP in half")
         TURN { MOVE(player, MOVE_BELLY_DRUM); }
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
-        HP_BAR(player, hp: maxHP / 2);
+        HP_BAR(player, .hp = maxHP / 2);
     }
 }
 

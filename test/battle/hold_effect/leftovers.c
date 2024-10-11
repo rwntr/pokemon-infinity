@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("Leftovers recovers 1/16th HP at end of turn")
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Wobbuffet's Leftovers restored its HP a little!");
-        HP_BAR(player, damage: -maxHP / 16);
+        HP_BAR(player, .damage = -maxHP / 16);
     }
 }
 

@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Heal Pulse heals the target by 1/2 of it's maxHP")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-        HP_BAR(player, damage: -maxHP / 2);
+        HP_BAR(player, .damage = -maxHP / 2);
     }
 }
 
@@ -32,7 +32,7 @@ DOUBLE_BATTLE_TEST("Heal Pulse can heal partner")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, playerRight);
-        HP_BAR(playerLeft, damage: -maxHP / 2);
+        HP_BAR(playerLeft, .damage = -maxHP / 2);
     }
 }
 
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Heal Pulse is boosted by Mega Launcher")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-        HP_BAR(player, damage: -maxHP * 75 / 100);
+        HP_BAR(player, .damage = -maxHP * 75 / 100);
     }
 }
 
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Heal Pulse ignores accurace checks")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-        HP_BAR(player, damage: -maxHP / 2);
+        HP_BAR(player, .damage = -maxHP / 2);
     }
 }
 
@@ -78,7 +78,7 @@ SINGLE_BATTLE_TEST("Heal Pulse is blocked by Substitute")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-            HP_BAR(player, damage: -maxHP / 2);
+            HP_BAR(player, .damage = -maxHP / 2);
         }
     }
 }
@@ -96,6 +96,6 @@ SINGLE_BATTLE_TEST("Floral Healing heals the target by 2/3rd of it's maxHP if Gr
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASSY_TERRAIN, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLORAL_HEALING, opponent);
-        HP_BAR(player, damage: -maxHP * 2 / 3);
+        HP_BAR(player, .damage = -maxHP * 2 / 3);
     }
 }

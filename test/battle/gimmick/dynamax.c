@@ -304,7 +304,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can have base moves disabled on 
         TURN { MOVE(opponent, MOVE_DISABLE); MOVE(player, MOVE_TACKLE, .gimmick = GIMMICK_DYNAMAX); }
         TURN {}
         TURN {}
-        TURN { MOVE(player, MOVE_TACKLE, allowed: FALSE); MOVE(player, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_TACKLE, .allowed = FALSE); MOVE(player, MOVE_CELEBRATE); }
     } SCENE {
         MESSAGE("Foe Wobbuffet used Celebrate!");
         MESSAGE("Wobbuffet used Tackle!");
@@ -512,7 +512,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot use Max Guard while holdi
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, .gimmick = GIMMICK_DYNAMAX); }
-        TURN { MOVE(player, MOVE_PROTECT, allowed: FALSE); MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_PROTECT, .allowed = FALSE); MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Wobbuffet used Max Strike!");
         MESSAGE("Wobbuffet used Max Strike!");
@@ -805,9 +805,9 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Max Overgrowth sets up Grassy Terrain")
         MESSAGE("Wobbuffet used Max Overgrowth!");
         MESSAGE("Grass grew to cover the battlefield!");
         MESSAGE("Wobbuffet is healed by the grassy terrain!");
-        HP_BAR(player, damage: -maxHP/16);
+        HP_BAR(player, .damage = -maxHP/16);
         MESSAGE("Foe Wobbuffet is healed by the grassy terrain!");
-        HP_BAR(opponent, damage: -maxHP/16);
+        HP_BAR(opponent, .damage = -maxHP/16);
     }
 }
 
@@ -938,10 +938,10 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Volt Crash paralyzes both opponents")
     } SCENE {
         MESSAGE("Pikachu used G-Max Volt Crash!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponentLeft);
-        STATUS_ICON(opponentLeft, paralysis: TRUE);
+        STATUS_ICON(opponentLeft, .paralysis = TRUE);
         MESSAGE("Foe Wobbuffet is paralyzed! It may be unable to move!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponentRight);
-        STATUS_ICON(opponentRight, paralysis: TRUE);
+        STATUS_ICON(opponentRight, .paralysis = TRUE);
         MESSAGE("Foe Wynaut is paralyzed! It may be unable to move!");
     }
 }
@@ -968,21 +968,21 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Stun Shock paralyzes or poisons both opponen
         // opponent left
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentLeft);
         if (statusAnim == B_ANIM_STATUS_PSN) {
-            STATUS_ICON(opponentLeft, poison: TRUE);
+            STATUS_ICON(opponentLeft, .poison = TRUE);
             MESSAGE("Foe Wobbuffet was poisoned!");
         }
         else {
-            STATUS_ICON(opponentLeft, paralysis: TRUE);
+            STATUS_ICON(opponentLeft, .paralysis = TRUE);
             MESSAGE("Foe Wobbuffet is paralyzed! It may be unable to move!");
         }
         // opponent right
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentRight);
         if (statusAnim == B_ANIM_STATUS_PSN) {
-            STATUS_ICON(opponentRight, poison: TRUE);
+            STATUS_ICON(opponentRight, .poison = TRUE);
             MESSAGE("Foe Wynaut was poisoned!");
         }
         else {
-            STATUS_ICON(opponentRight, paralysis: TRUE);
+            STATUS_ICON(opponentRight, .paralysis = TRUE);
             MESSAGE("Foe Wynaut is paralyzed! It may be unable to move!");
         }
     }
@@ -1004,14 +1004,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Stun Shock chooses statuses before consideri
         MESSAGE("Toxtricity used G-Max Stun Shock!");
         NONE_OF {
             // opponent left
-            STATUS_ICON(opponentLeft, poison: TRUE);
+            STATUS_ICON(opponentLeft, .poison = TRUE);
             MESSAGE("Foe Garbodor was poisoned!");
-            STATUS_ICON(opponentLeft, paralysis: TRUE);
+            STATUS_ICON(opponentLeft, .paralysis = TRUE);
             MESSAGE("Foe Garbodor is paralyzed! It may be unable to move!");
             // opponent right
-            STATUS_ICON(opponentRight, poison: TRUE);
+            STATUS_ICON(opponentRight, .poison = TRUE);
             MESSAGE("Foe Trubbish was poisoned!");
-            STATUS_ICON(opponentRight, paralysis: TRUE);
+            STATUS_ICON(opponentRight, .paralysis = TRUE);
             MESSAGE("Foe Trubbish is paralyzed! It may be unable to move!");
         }
     }
@@ -1038,29 +1038,29 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Befuddle paralyzes, poisons, or sleeps both 
         // opponent left
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentLeft);
         if (statusAnim == B_ANIM_STATUS_PSN) {
-            STATUS_ICON(opponentLeft, poison: TRUE);
+            STATUS_ICON(opponentLeft, .poison = TRUE);
             MESSAGE("Foe Wobbuffet was poisoned!");
         }
         else if (statusAnim == B_ANIM_STATUS_PRZ) {
-            STATUS_ICON(opponentLeft, paralysis: TRUE);
+            STATUS_ICON(opponentLeft, .paralysis = TRUE);
             MESSAGE("Foe Wobbuffet is paralyzed! It may be unable to move!");
         }
         else {
-            STATUS_ICON(opponentLeft, sleep: TRUE);
+            STATUS_ICON(opponentLeft, .sleep = TRUE);
             MESSAGE("Foe Wobbuffet fell asleep!");
         }
         // opponent right
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentRight);
         if (statusAnim == B_ANIM_STATUS_PSN) {
-            STATUS_ICON(opponentRight, poison: TRUE);
+            STATUS_ICON(opponentRight, .poison = TRUE);
             MESSAGE("Foe Wobbuffet was poisoned!");
         }
         else if (statusAnim == B_ANIM_STATUS_PRZ) {
-            STATUS_ICON(opponentRight, paralysis: TRUE);
+            STATUS_ICON(opponentRight, .paralysis = TRUE);
             MESSAGE("Foe Wobbuffet is paralyzed! It may be unable to move!");
         }
         else {
-            STATUS_ICON(opponentRight, sleep: TRUE);
+            STATUS_ICON(opponentRight, .sleep = TRUE);
             MESSAGE("Foe Wobbuffet fell asleep!");
         }
     }
@@ -1159,9 +1159,9 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Meltdown torments both opponents for 3 turns
         TURN { MOVE(playerLeft, MOVE_IRON_HEAD, .target = opponentLeft, .gimmick = GIMMICK_DYNAMAX); \
                MOVE(opponentLeft, MOVE_SPLASH); MOVE(opponentRight, MOVE_SPLASH); }
         TURN { MOVE(playerLeft, MOVE_CELEBRATE, .target = opponentLeft); \
-               MOVE(opponentLeft, MOVE_SPLASH, allowed: FALSE); \
+               MOVE(opponentLeft, MOVE_SPLASH, .allowed = FALSE); \
                MOVE(opponentLeft, MOVE_CELEBRATE); \
-               MOVE(opponentRight, MOVE_SPLASH, allowed: FALSE); \
+               MOVE(opponentRight, MOVE_SPLASH, .allowed = FALSE); \
                MOVE(opponentRight, MOVE_CELEBRATE); }
         TURN { MOVE(playerLeft, MOVE_CELEBRATE, .target = opponentLeft); \
                MOVE(opponentLeft, MOVE_SPLASH); \
@@ -1277,7 +1277,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Snooze makes only the target drowsy")
         // turn 2
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
         MESSAGE("Foe Blissey fell asleep!");
-        STATUS_ICON(opponentLeft, sleep: TRUE);
+        STATUS_ICON(opponentLeft, .sleep = TRUE);
     }
 }
 
@@ -1314,9 +1314,9 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Sweetness cures allies' status conditions")
         TURN { MOVE(playerLeft, MOVE_VINE_WHIP, .target = opponentLeft, .gimmick = GIMMICK_DYNAMAX); }
     } SCENE {
         MESSAGE("Appletun used G-Max Sweetness!");
-        STATUS_ICON(playerLeft, none: TRUE);
+        STATUS_ICON(playerLeft, .none = TRUE);
         MESSAGE("Appletun's status returned to normal!");
-        STATUS_ICON(playerRight, none: TRUE);
+        STATUS_ICON(playerRight, .none = TRUE);
         MESSAGE("Applin's status returned to normal!");
     }
 }

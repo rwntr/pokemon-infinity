@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Bad poison deals 1/16th cumulative damage per turn")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         for (j = 0; j < 4; j++)
-            HP_BAR(player, damage: maxHP / 16 * (j + 1));
+            HP_BAR(player, .damage = maxHP / 16 * (j + 1));
     }
 }
 
@@ -34,8 +34,8 @@ SINGLE_BATTLE_TEST("Bad poison cumulative damage resets on switch")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         for (j = 0; j < 2; j++)
-            HP_BAR(player, damage: maxHP / 16 * (j + 1));
+            HP_BAR(player, .damage = maxHP / 16 * (j + 1));
         for (j = 0; j < 2; j++)
-            HP_BAR(player, damage: maxHP / 16 * (j + 1));
+            HP_BAR(player, .damage = maxHP / 16 * (j + 1));
     }
 }

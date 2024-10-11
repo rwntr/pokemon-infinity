@@ -23,9 +23,9 @@ SINGLE_BATTLE_TEST("Items can restore a battler's HP by a fixed amount")
         PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(400); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, item, partyIndex: 0); }
+        TURN { USE_ITEM(player, item, .partyIndex = 0); }
     } SCENE {
-        HP_BAR(player, damage: -hp);
+        HP_BAR(player, .damage = -hp);
     }
 }
 
@@ -41,8 +41,8 @@ SINGLE_BATTLE_TEST("Items can restore a battler's HP by a percentage")
         PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(400); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, item, partyIndex: 0); }
+        TURN { USE_ITEM(player, item, .partyIndex = 0); }
     } SCENE {
-        HP_BAR(player, damage: -min(399, 400 * percentage / 100));
+        HP_BAR(player, .damage = -min(399, 400 * percentage / 100));
     }
 }

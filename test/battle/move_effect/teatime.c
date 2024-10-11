@@ -182,7 +182,7 @@ SINGLE_BATTLE_TEST("Teatime triggers Volt Absorb if it has been affected by Elec
         if (shouldTriggerAbility)
         {
             ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
-            HP_BAR(player, damage: -25);
+            HP_BAR(player, .damage = -25);
             NOT MESSAGE("Using Liechi Berry, the Attack of Jolteon rose!");
         } else {
             NOT ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);

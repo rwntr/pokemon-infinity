@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Ice Body recovers 1/16th of Max HP in hail.")
         TURN { MOVE(opponent, move); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_ICE_BODY);
-        HP_BAR(player, damage: -(100 / 16));
+        HP_BAR(player, .damage = -(100 / 16));
         MESSAGE("Glalie's Ice Body healed it a little bit!");
     }
 }

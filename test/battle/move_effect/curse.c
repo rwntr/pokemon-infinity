@@ -31,6 +31,6 @@ SINGLE_BATTLE_TEST("Curse cuts the user's HP in half when used by Ghost-types")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
-        HP_BAR(player, hp: maxHP / 2);
+        HP_BAR(player, .hp = maxHP / 2);
     }
 }

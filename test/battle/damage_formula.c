@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Damage calculation matches Gen5+ (Muscle Band, crit)")
         OPPONENT(SPECIES_GARCHOMP) { Defense(163); }
     } WHEN {
         TURN {
-            MOVE(player, MOVE_ICE_FANG, WITH_RNG(RNG_DAMAGE_MODIFIER, i), criticalHit: TRUE);
+            MOVE(player, MOVE_ICE_FANG, WITH_RNG(RNG_DAMAGE_MODIFIER, i), .criticalHit = TRUE);
         }
     }
     SCENE {
@@ -105,7 +105,7 @@ SINGLE_BATTLE_TEST("Damage calculation matches Gen5+ (Marshadow vs Mawile)")
         OPPONENT(SPECIES_MAWILE) { Level(100); Defense(226); HP(241); }
     } WHEN {
         TURN {
-            MOVE(player, MOVE_SPECTRAL_THIEF, WITH_RNG(RNG_DAMAGE_MODIFIER, i), criticalHit: FALSE);
+            MOVE(player, MOVE_SPECTRAL_THIEF, WITH_RNG(RNG_DAMAGE_MODIFIER, i), .criticalHit = FALSE);
         }
     }
     SCENE{

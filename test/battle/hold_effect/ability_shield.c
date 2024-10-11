@@ -73,11 +73,11 @@ SINGLE_BATTLE_TEST("Ability Shield protects against Mycelium Might")
         if (item == ITEM_ABILITY_SHIELD) {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
-                STATUS_ICON(player, sleep: TRUE);
+                STATUS_ICON(player, .sleep = TRUE);
             }
         } else {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
-            STATUS_ICON(player, sleep: TRUE);
+            STATUS_ICON(player, .sleep = TRUE);
         }
     }
 }

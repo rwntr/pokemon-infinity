@@ -13,9 +13,9 @@ SINGLE_BATTLE_TEST("Misty Terrain protects grounded battlers from non-volatile s
         MESSAGE("Wobbuffet used Misty Terrain!");
         MESSAGE("Foe Claydol used Toxic!");
         MESSAGE("Wobbuffet surrounds itself with a protective mist!");
-        NOT { STATUS_ICON(opponent, badPoison: TRUE); }
+        NOT { STATUS_ICON(opponent, .badPoison = TRUE); }
         MESSAGE("Wobbuffet used Toxic!");
-        STATUS_ICON(opponent, badPoison: TRUE);
+        STATUS_ICON(opponent, .badPoison = TRUE);
     }
 }
 

@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Poison Sting inflicts poison")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_STING, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        STATUS_ICON(opponent, poison: TRUE);
+        STATUS_ICON(opponent, .poison = TRUE);
     }
 }
 
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Poison cannot be inflicted on Poison and Steel-type Pokémon
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-            STATUS_ICON(opponent, poison: TRUE);
+            STATUS_ICON(opponent, .poison = TRUE);
         }
     }
 }

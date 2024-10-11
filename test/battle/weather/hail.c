@@ -79,6 +79,6 @@ SINGLE_BATTLE_TEST("Hail damage rounds properly when maxHP < 16")
     } WHEN {
         TURN { MOVE(opponent, MOVE_HAIL); }
     } SCENE {
-        HP_BAR(player, damage: 1);
+        HP_BAR(player, .damage = 1);
     }
 }

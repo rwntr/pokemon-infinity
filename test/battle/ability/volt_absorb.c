@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Volt Absorb heals 25% when hit by electric type moves")
         TURN { MOVE(opponent, MOVE_THUNDER_SHOCK); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
-        HP_BAR(player, damage: -25);
+        HP_BAR(player, .damage = -25);
         MESSAGE("Jolteon restored HP using its Volt Absorb!");
     }
 }
@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Volt Absorb activates on status moves")
         TURN { MOVE(opponent, MOVE_THUNDER_WAVE); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
-        HP_BAR(player, damage: -25);
+        HP_BAR(player, .damage = -25);
         MESSAGE("Jolteon restored HP using its Volt Absorb!");
     }
 }
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Volt Absorb is only triggered once on multi strike moves")
         TURN { MOVE(opponent, MOVE_FURY_SWIPES); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
-        HP_BAR(player, damage: -25);
+        HP_BAR(player, .damage = -25);
         MESSAGE("Jolteon restored HP using its Volt Absorb!");
     }
 }
@@ -75,7 +75,7 @@ DOUBLE_BATTLE_TEST("Volt Absorb does not stop Electric Typed Explosion from dama
         TURN { MOVE(opponentLeft, MOVE_EXPLOSION); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_VOLT_ABSORB);
-        HP_BAR(playerLeft, damage: -25);
+        HP_BAR(playerLeft, .damage = -25);
         MESSAGE("Jolteon restored HP using its Volt Absorb!");
         HP_BAR(playerRight, .captureDamage =  &damage1);
         HP_BAR(opponentRight, .captureDamage =  &damage2);
@@ -95,7 +95,7 @@ SINGLE_BATTLE_TEST("Volt Absorb prevents Cell Battery from activating")
         TURN { MOVE(opponent, MOVE_THUNDER_SHOCK); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
-        HP_BAR(player, damage: -25);
+        HP_BAR(player, .damage = -25);
         MESSAGE("Jolteon restored HP using its Volt Absorb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);

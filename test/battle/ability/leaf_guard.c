@@ -43,10 +43,10 @@ SINGLE_BATTLE_TEST("Leaf Guard prevents status conditions from Flame Orb and Tox
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
     } SCENE {
         if (item == ITEM_FLAME_ORB) {
-            NONE_OF { MESSAGE("Leafeon was burned!"); STATUS_ICON(player, burn: TRUE); }
+            NONE_OF { MESSAGE("Leafeon was burned!"); STATUS_ICON(player, .burn = TRUE); }
         }
         else {
-            NONE_OF { MESSAGE("Leafeon is badly poisoned!"); STATUS_ICON(player, poison: TRUE); }
+            NONE_OF { MESSAGE("Leafeon is badly poisoned!"); STATUS_ICON(player, .poison = TRUE); }
         }
     }
 }
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Leaf Guard prevents Rest during sun")
     } SCENE {
         MESSAGE("But it failed!");
         NONE_OF {
-            STATUS_ICON(player, sleep: TRUE);
+            STATUS_ICON(player, .sleep = TRUE);
             HP_BAR(player);
         }
     }

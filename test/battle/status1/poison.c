@@ -13,6 +13,6 @@ SINGLE_BATTLE_TEST("Poison deals 1/8th damage per turn")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         for (j = 0; j < 4; j++)
-            HP_BAR(player, damage: maxHP / 8);
+            HP_BAR(player, .damage = maxHP / 8);
     }
 }

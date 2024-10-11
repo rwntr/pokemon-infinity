@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Burn deals 1/16th damage per turn")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         for (j = 0; j < 4; j++)
-            HP_BAR(player, damage: maxHP / 16);
+            HP_BAR(player, .damage = maxHP / 16);
     }
 }
 

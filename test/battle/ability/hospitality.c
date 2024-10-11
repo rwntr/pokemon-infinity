@@ -19,12 +19,12 @@ DOUBLE_BATTLE_TEST("Hospitality user restores 25% of ally's health")
         if (health == 75) {
             ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
             MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
-            HP_BAR(playerRight, damage: -25);
+            HP_BAR(playerRight, .damage = -25);
         } else {
             NONE_OF {
                 ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
                 MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
-                HP_BAR(playerRight, damage: -25);
+                HP_BAR(playerRight, .damage = -25);
             }
         }
     }
@@ -45,7 +45,7 @@ DOUBLE_BATTLE_TEST("Hospitality user restores 25% of ally's health on switch-in"
         SEND_IN_MESSAGE("Poltchageist");
         ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
         MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
-        HP_BAR(playerRight, damage: -25);
+        HP_BAR(playerRight, .damage = -25);
     }
 }
 

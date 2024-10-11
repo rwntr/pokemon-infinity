@@ -8,7 +8,7 @@ SINGLE_BATTLE_TEST("Guard Spec. sets Mist effect on the battlers side")
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { USE_ITEM(player, ITEM_GUARD_SPEC, partyIndex: 0); }
+        TURN { USE_ITEM(player, ITEM_GUARD_SPEC, .partyIndex = 0); }
         TURN { MOVE(opponent, MOVE_GROWL); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIST, player);
