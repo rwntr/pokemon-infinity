@@ -77,7 +77,7 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POWER_WEIGHT); }
         OPPONENT(SPECIES_CATERPIE) { HP(1); }
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffect == HOLD_EFFECT_POWER_ITEM);
-        ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam == 8);
+        ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam == 16);
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].secondaryId == STAT_HP);
         ASSUME(gSpeciesInfo[SPECIES_CATERPIE].evYield_HP == 1);
     } WHEN {
@@ -90,7 +90,7 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
         MESSAGE("Wobbuffet used Scratch!");
         MESSAGE("Wild Caterpie fainted!");
     } THEN {
-        finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam + gSpeciesInfo[SPECIES_CATERPIE].evYield_HP);
+        finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam);
         EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HP_EV), finalHPEVAmount);
     }
 }

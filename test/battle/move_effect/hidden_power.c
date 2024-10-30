@@ -18,10 +18,10 @@ SINGLE_BATTLE_TEST("Hidden Power's type is determined by IVs")
     PARAMETRIZE { type = TYPE_FLYING;   hidden = TRUE;  foeType = TYPE_STEEL;     foeSpecies = SPECIES_REGISTEEL; hp = 31; atk = 15; def = 31; spAtk = 30; spDef = 30; speed = 30; }
     PARAMETRIZE { type = TYPE_FLYING;   hidden = TRUE;  foeType = TYPE_STEEL;     foeSpecies = SPECIES_REGISTEEL; hp = 31; atk = 22; def = 31; spAtk = 30; spDef = 30; speed = 30; }
     PARAMETRIZE { type = TYPE_FLYING;   hidden = TRUE;  foeType = TYPE_STEEL;     foeSpecies = SPECIES_REGISTEEL; hp = 31; atk = 31; def = 31; spAtk = 30; spDef = 30; speed = 30; }
-    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_ARBOK;     hp = 30; atk =  2; def = 31; spAtk = 30; spDef = 30; speed = 31; }
-    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_ARBOK;     hp = 31; atk = 15; def = 30; spAtk = 30; spDef = 30; speed = 31; }
-    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_ARBOK;     hp = 30; atk = 22; def = 31; spAtk = 30; spDef = 30; speed = 31; }
-    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_ARBOK;     hp = 31; atk = 31; def = 30; spAtk = 30; spDef = 30; speed = 31; }
+    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_SWALOT;     hp = 30; atk =  2; def = 31; spAtk = 30; spDef = 30; speed = 31; }
+    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_SWALOT;     hp = 31; atk = 15; def = 30; spAtk = 30; spDef = 30; speed = 31; }
+    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_SWALOT;     hp = 30; atk = 22; def = 31; spAtk = 30; spDef = 30; speed = 31; }
+    PARAMETRIZE { type = TYPE_POISON;   hidden = TRUE;  foeType = TYPE_POISON;    foeSpecies = SPECIES_SWALOT;     hp = 31; atk = 31; def = 30; spAtk = 30; spDef = 30; speed = 31; }
     PARAMETRIZE { type = TYPE_GROUND;   hidden = TRUE;  foeType = TYPE_GRASS;     foeSpecies = SPECIES_TANGELA;   hp = 31; atk =  2; def = 31; spAtk = 30; spDef = 30; speed = 31; }
     PARAMETRIZE { type = TYPE_GROUND;   hidden = TRUE;  foeType = TYPE_GRASS;     foeSpecies = SPECIES_TANGELA;   hp = 31; atk = 15; def = 31; spAtk = 30; spDef = 30; speed = 31; }
     PARAMETRIZE { type = TYPE_GROUND;   hidden = TRUE;  foeType = TYPE_GRASS;     foeSpecies = SPECIES_TANGELA;   hp = 31; atk = 22; def = 31; spAtk = 30; spDef = 30; speed = 31; }
