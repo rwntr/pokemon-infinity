@@ -9267,57 +9267,6 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (moveType == TYPE_STEEL)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_TRANSISTOR:
-        if (moveType == TYPE_ELECTRIC)
-        {
-            if (B_TRANSISTOR_BOOST >= GEN_9)
-                modifier = uq4_12_multiply(modifier, UQ_4_12(5325 / 4096));
-            else
-                modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
-        }
-        break;
-    case ABILITY_DRAGONS_MAW:
-        if (moveType == TYPE_DRAGON)
-            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
-        break;
-    case ABILITY_LIQUID_VOICE:
-        if (gMovesInfo[move].soundMove)
-            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
-        break;
-    case ABILITY_GORILLA_TACTICS:
-        if (IS_MOVE_PHYSICAL(move))
-            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
-        break;
-    case ABILITY_ROCKY_PAYLOAD:
-        if (moveType == TYPE_ROCK)
-            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
-        break;
-    case ABILITY_PROTOSYNTHESIS:
-        {
-            u8 atkHighestStat = GetHighestStatId(battlerAtk);
-            if (((weather & B_WEATHER_SUN && WEATHER_HAS_EFFECT) || gBattleStruct->boosterEnergyActivates & (1u << battlerAtk))
-             && ((IS_MOVE_PHYSICAL(move) && atkHighestStat == STAT_ATK) || (IS_MOVE_SPECIAL(move) && atkHighestStat == STAT_SPATK))
-             && !(gBattleMons[battlerAtk].status2 & STATUS2_TRANSFORMED))
-                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
-        }
-        break;
-    case ABILITY_QUARK_DRIVE:
-        {
-            u8 atkHighestStat = GetHighestStatId(battlerAtk);
-            if ((gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN || gBattleStruct->boosterEnergyActivates & (1u << battlerAtk))
-             && ((IS_MOVE_PHYSICAL(move) && atkHighestStat == STAT_ATK) || (IS_MOVE_SPECIAL(move) && atkHighestStat == STAT_SPATK))
-             && !(gBattleMons[battlerAtk].status2 & STATUS2_TRANSFORMED))
-                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
-        }
-        break;
-    case ABILITY_ORICHALCUM_PULSE:
-        if (weather & B_WEATHER_SUN && WEATHER_HAS_EFFECT && IS_MOVE_PHYSICAL(move))
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
-        break;
-    case ABILITY_HADRON_ENGINE:
-        if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN && IS_MOVE_SPECIAL(move))
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
-        break;
     case ABILITY_SHARPNESS:
         if (gMovesInfo[move].slicingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));

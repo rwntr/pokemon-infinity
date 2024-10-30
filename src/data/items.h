@@ -11272,9 +11272,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM55"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Shoots boiling water\n"
-            "at the foe. May\n"
-            "inflict a burn."),
+            "Shoots boiling\n"
+            "water at the foe.\n"
+            "May inflict burn."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11436,8 +11436,8 @@ const struct Item gItemsInfo[] =
         .name = _("TM66"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Deals double damage\n"
-            "if the user moves\n"
+            "Deals 2x damage\n"
+            "if user moves\n"
             "after the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -11496,9 +11496,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM70"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Weakens all attacks,\n"
-            "but only usable\n"
-            "with hail."),
+            "Weakens all\n"
+            "attacks. Only\n"
+            "usable in hail."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11736,7 +11736,7 @@ const struct Item gItemsInfo[] =
         .name = _("TM86"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "A snare attack that\n"
+            "A snare that\n"
             "does more damage\n"
             "to heavier foes."),
         .importance = I_REUSABLE_TMS,
@@ -11901,8 +11901,8 @@ const struct Item gItemsInfo[] =
         .name = _("TM97"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Releases a horrible\n"
-            "aura that may cause\n"
+            "Releases a dark\n"
+            "aura. May cause\n"
             "flinching."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
