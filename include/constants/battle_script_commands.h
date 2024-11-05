@@ -233,7 +233,7 @@
 #define VARIOUS_STORE_HEALING_WISH                   141
 #define VARIOUS_HIT_SWITCH_TARGET_FAILED             142
 #define VARIOUS_TRY_REVIVAL_BLESSING                 143
-
+#define VARIOUS_TRY_ACTIVATE_RAMPAGE                 144
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0
 #define DMG_RECOIL_FROM_MISS       1
