@@ -531,7 +531,108 @@ Pin missile takes its IE level up value of 23
 - Lv. 62, ExtremeSpeed (was 0)
 - Lv. 68, Raging Fury
 
+### 0060  Poliwag
 
+- Lv. 27, Chilling Water
+- Lv. 41, Earth Power
+  - replaces Mud Bomb
+
+### 0061  Poliwhirl
+
+- Lv. 29, Chilling Water
+- Lv. 53, Earth Power
+  - replaces Mud Bomb
+
+### 0062  Poliwrath
+
+- Lv. 1, Earth Power
+  - replaces Mud Bomb
+- Lv. 59, Jet Punch
+- Lv. 65, Rage Fist
+
+### 0063  Abra
+
+- No change
+
+### 0064  Kadabra
+
+- Lv. 49, Calm Mind
+- Lv. 52, Focus Blast
+
+### 0065  Alakazam
+
+- Lv. 49, Calm Mind
+- Lv. 52, Focus Blast
+- Lv. 58, Expanding Force
+
+### 0066  Machop
+
+- No change
+
+### 0067  Machoke
+
+- Lv. 60, Double Edge (was 66 in vanilla)
+- Lv. 63, Meteor Assault
+
+### 0068  Machamp
+
+- Lv. 60, Double Edge (was 66 in vanilla)
+- Lv. 63, Meteor Assault
+
+### 0069  Bellsprout
+
+- Lv. 19, Trailblaze
+- Lv. 25, Grassy Glide
+- Lv. 45, Power Whip (was 52 in vanilla)
+
+### 0070  Weepinbell
+
+- Lv. 19, Trailblaze
+- Lv. 26, Grassy Glide
+- Lv. 50, Power Whip (was 58 in vanilla)
+
+### 0071  Victreebel
+
+- Lv. 1, Trailblaze
+- Lv. 1, Grassy Glide
+- Lv. 55, Power Whip (was 58 in vanilla)
+
+### 0072  Tentacool
+
+- Lv. 23, Chilling Water
+- Lv. 36, Flip Turn
+- Lv. 38, Corrosive Gas
+
+### 0073  Tentacruel
+
+- Lv. 23, Chilling Water
+- Lv. 38, Flip Turn
+- Lv. 42, Corrosive Gas
+- Lv. 47, Skitter Smack
+
+### 0074  Geodude - Kanto
+
+- 
+
+### 0074  Geodude - Alola
+
+- 
+
+### 0075  Graveler - Kanto
+
+- 
+
+### 0075  Graveler - Alola
+
+- 
+
+### 0076  Golem - Kanto
+
+- 
+
+### 0076  Golem - Alola
+
+- 
 
 ## Gen 2
 
@@ -565,6 +666,11 @@ Pin missile takes its IE level up value of 23
 - Lv. 1, Trailblaze
 - Lv. 64, Leaf Storm
 - Lv. 71, Chloroblast
+
+### 0186  Politoed
+
+- Lv. 29, Chilling Water
+- Lv. 55, Earth Power
 
 ### 0236  Tyrogue
 

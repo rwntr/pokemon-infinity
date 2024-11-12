@@ -1925,7 +1925,7 @@ static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {
         LEVEL_UP_MOVE(33, MOVE_FLIP_TURN),
         LEVEL_UP_MOVE(35, MOVE_WAKE_UP_SLAP),
         LEVEL_UP_MOVE(38, MOVE_HYDRO_PUMP),
-        LEVEL_UP_MOVE(41, MOVE_MUD_BOMB),
+        LEVEL_UP_MOVE(41, MOVE_EARTH_POWER),
         LEVEL_UP_END
 };
 
@@ -1943,20 +1943,20 @@ static const struct LevelUpMove sPoliwhirlLevelUpLearnset[] = {
         LEVEL_UP_MOVE(37, MOVE_BELLY_DRUM),
         LEVEL_UP_MOVE(43, MOVE_WAKE_UP_SLAP),
         LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-        LEVEL_UP_MOVE(53, MOVE_MUD_BOMB),
+        LEVEL_UP_MOVE(53, MOVE_EARTH_POWER),
         LEVEL_UP_END
 };
 
 static const struct LevelUpMove sPoliwrathLevelUpLearnset[] = {
         LEVEL_UP_MOVE( 0, MOVE_SUBMISSION),
         LEVEL_UP_MOVE( 1, MOVE_CIRCLE_THROW),
-        LEVEL_UP_MOVE( 1, MOVE_MUD_BOMB),
         LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
         LEVEL_UP_MOVE( 1, MOVE_DOUBLE_SLAP),
         LEVEL_UP_MOVE( 1, MOVE_RAIN_DANCE),
         LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
         LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
         LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
+        LEVEL_UP_MOVE( 1, MOVE_EARTH_POWER),
         LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
         LEVEL_UP_MOVE(28, MOVE_DYNAMIC_PUNCH),
         LEVEL_UP_MOVE(32, MOVE_WATER_PULSE),
@@ -1993,6 +1993,7 @@ static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
         LEVEL_UP_MOVE(43, MOVE_WAKE_UP_SLAP),
         LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
         LEVEL_UP_MOVE(52, MOVE_HYDRO_PUMP),
+        LEVEL_UP_MOVE(55, MOVE_EARTH_POWER),
         LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -2020,6 +2021,7 @@ static const struct LevelUpMove sKadabraLevelUpLearnset[] = {
         LEVEL_UP_MOVE(41, MOVE_ROLE_PLAY),
         LEVEL_UP_MOVE(43, MOVE_FUTURE_SIGHT),
         LEVEL_UP_MOVE(46, MOVE_TRICK),
+        LEVEL_UP_MOVE(49, MOVE_CALM_MIND),
         LEVEL_UP_MOVE(52, MOVE_FOCUS_BLAST),
         LEVEL_UP_END
 };
@@ -2037,9 +2039,9 @@ static const struct LevelUpMove sAlakazamLevelUpLearnset[] = {
         LEVEL_UP_MOVE(33, MOVE_TELEKINESIS),
         LEVEL_UP_MOVE(36, MOVE_ALLY_SWITCH),
         LEVEL_UP_MOVE(38, MOVE_PSYCHIC),
-        LEVEL_UP_MOVE(41, MOVE_CALM_MIND),
         LEVEL_UP_MOVE(43, MOVE_FUTURE_SIGHT),
         LEVEL_UP_MOVE(46, MOVE_TRICK),
+        LEVEL_UP_MOVE(49, MOVE_CALM_MIND),
         LEVEL_UP_MOVE(52, MOVE_FOCUS_BLAST),
         LEVEL_UP_MOVE(58, MOVE_EXPANDING_FORCE),
         LEVEL_UP_END
@@ -2065,6 +2067,7 @@ static const struct LevelUpMove sMachopLevelUpLearnset[] = {
         LEVEL_UP_MOVE(39, MOVE_CROSS_CHOP),
         LEVEL_UP_MOVE(43, MOVE_SCARY_FACE),
         LEVEL_UP_MOVE(45, MOVE_DYNAMIC_PUNCH),
+        LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
         LEVEL_UP_END
 };
 
@@ -2086,6 +2089,7 @@ static const struct LevelUpMove sMachokeLevelUpLearnset[] = {
         LEVEL_UP_MOVE(47, MOVE_CROSS_CHOP),
         LEVEL_UP_MOVE(53, MOVE_SCARY_FACE),
         LEVEL_UP_MOVE(57, MOVE_DYNAMIC_PUNCH),
+        LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
         LEVEL_UP_MOVE(63, MOVE_METEOR_ASSAULT),
         LEVEL_UP_END
 };
@@ -2110,6 +2114,7 @@ static const struct LevelUpMove sMachampLevelUpLearnset[] = {
         LEVEL_UP_MOVE(47, MOVE_CROSS_CHOP),
         LEVEL_UP_MOVE(53, MOVE_SCARY_FACE),
         LEVEL_UP_MOVE(57, MOVE_DYNAMIC_PUNCH),
+        LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
         LEVEL_UP_MOVE(63, MOVE_METEOR_ASSAULT),
         LEVEL_UP_END
 };
@@ -2133,6 +2138,7 @@ static const struct LevelUpMove sBellsproutLevelUpLearnset[] = {
         LEVEL_UP_MOVE(31, MOVE_POISON_JAB),
         LEVEL_UP_MOVE(34, MOVE_SLAM),
         LEVEL_UP_MOVE(37, MOVE_WRING_OUT),
+        LEVEL_UP_MOVE(45, MOVE_POWER_WHIP),
         LEVEL_UP_END
 };
 
@@ -2153,6 +2159,7 @@ static const struct LevelUpMove sWeepinbellLevelUpLearnset[] = {
         LEVEL_UP_MOVE(33, MOVE_POISON_JAB),
         LEVEL_UP_MOVE(38, MOVE_SLAM),
         LEVEL_UP_MOVE(41, MOVE_WRING_OUT),
+        LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
         LEVEL_UP_END
 };
 
@@ -2176,6 +2183,7 @@ static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
         LEVEL_UP_MOVE(32, MOVE_LEAF_STORM),
         LEVEL_UP_MOVE(35, MOVE_POISON_JAB),
         LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
+        LEVEL_UP_MOVE(55, MOVE_POWER_WHIP),
         LEVEL_UP_END
 };
 
