@@ -355,7 +355,196 @@ Pin missile takes its IE level up value of 23
 - Lv. 56, Moonblast
 - Lv. 60, Misty Explosion
 
+### 0041  Zubat
+
+- Lv. 46, Dual Wingbeat
+
+### 0042  Golbat
+
+- Lv. 53, Dual Wingbeat
+
+### 0043  Oddish
+
+- Lv. 21, Trailblaze
+
+### 0044  Gloom
+
+- Lv. 21, Trailblaze
+- Lv. 35, Corrosive Gas
+
+### 0045  Vileplume
+
+- Lv. 0, Grassy Glide
+- Lv. 1, Trailblaze
+- Lv. 41, Corrosive Gas
+
+### 0046  Paras
+
+- No change
+
+### 0047  Parasect
+
+- No change
+
+### 0048  Venonat
+
+- Lv. 33, Psychic Noise
+- Lv. 39, Pounce
+
+### 0049  Venomoth
+
+- Lv. 34, Psychic Noise
+- Lv. 40, Pounce
+
+### 0050  Diglett - Kanto
+
+- Lv. 37, Scorching Sands
+
+### 0050  Diglett - Alola
+
+- Lv. 42, Steel Beam
+
+### 0051  Dugtrio - Kanto
+
+- Lv. 0, Scorching Sands
+
+### 0051  Dugtrio - Alola
+
+- Lv. 52, Steel Beam
+
+### 0050  Diglett - Kanto
+
+- Lv. 37, Scorching Sands
+
+### 0052  Meowth - Kanto
+
+- Lv. 31, Trailblaze
+- Lv. 85, Make It Rain (lol)
+
+### 0052  Meowth - Alola
+
+- Lv. 1, Scratch
+  - Replaces pound.  Dude seriously
+- Lv. 9, Fake Out (was 8 in IE)
+- Lv. 14, Fury Swipes (was 11 in IE)
+- Lv. 17, Screech (was 14 in IE)
+- Lv. 19, Assurance (was 34 in IE, 24 in vanilla)
+- Lv. 22, Feint Attack (was 16 in IE)
+- Lv. 25, Taunt (was 19 in IE)
+- Lv. 28, Pay Day (was 23 in IE)
+- Lv. 31, Trailblaze
+- Lv. 33, Slash (was 41 in IE)
+- Lv. 33, Night Slash (was 25 in IE)
+- Lv. 35, Play Rough (was 44 in Vanilla)
+- Lv. 38, Nasty Plot (was 29 in IE)
+- Lv. 40, Captivate (was 39 in IE)
+- Lv. 50, Dark Pulse
+- Lv. 85, Make It Rain (lol)
+
+### 0052  Meowth - Galar
+
+- Lv. 26, Trailblaze
+- Lv. 48, Close Combat
+- Lv. 52, Steel Beam
+- Lv. 85, Make It Rain
+
+### 0053  Persian - Kanto
+
+- Lv. 34, Trailblaze
+- Lv. 44, Play Rough (was 54 in vanilla and IE)
+- Lv. 47, Feint (was 51 in IE)
+
+### 0053  Persian - Alola
+
+- Lv. 14, Fury Swipes (was 11 in IE)
+- Lv. 17, Screech (was 14 in IE)
+- Lv. 19, Assurance (was 34 in IE, 24 in vanilla)
+- Lv. 22, Feint Attack (was 16 in IE)
+- Lv. 25, Taunt (was 19 in IE)
+- Lv. 28, Pay Day (was 23 in IE)
+- Lv. 30, Power Gem (was 29 in IE)
+- Lv. 34, Trailblaze
+- Lv. 37, Play Rough (was 54 in Vanilla and IE)
+- Lv. 42, Slash (was 46 in IE)
+- Lv. 42, Night Slash (was 23 in IE)
+- Lv. 47, Feint (was 51 in IE)
+- Lv. 51, Dark Pulse
+
+### 0054  Psyduck
+
+- No change
+
+### 0055  Golduck
+
+- Lv. 55, Jet Punch
+
+### 0056  Mankey
+
+- No change
+
+### 0057  Primeape
+
+- No change
+
+### 0058  Growlithe - Kanto
+
+- Lv. 49, Reversal (was 52 in vanilla)
+- Lv. 52, Raging Fury
+
+### 0058  Growlithe - Hisui
+
+- Lv. 1, Howl (was 4)
+- Lv. 1, Rock Throw
+- Lv. 5, Ember (was 1)
+- Lv. 9, Bite (was 8)
+- Lv. 11, Odor Sleuth
+- Lv. 13, Helping Hand (was 16)
+- Lv. 15, Flame Wheel (was 12)
+- Lv. 19, Roar (was 44)
+- Lv. 21, Fire Fang (was 24)
+- Lv 24, Take Down (was 36)
+- Lv. 27, Crunch (was 32)
+- Lv. 30, Rock Slide (was 48)
+- Lv. 32, Agility
+- Lv. 37, Double-Edge
+- Lv. 41, Heat Wave
+- Lv. 45, Outrage
+- Lv. 49, Flare Blitz (was 56)
+- Lv. 55, Head Smash
+
+### 0059  Arcanine - Kanto
+
+- Lv. 64, Raging Fury
+
+### 0059  Arcanine - Hisui
+
+- Lv. 0, Accelerock
+- Lv. 1, Rock Throw
+- Lv. 1, Odor Sleuth
+- Lv. 1, Rock Slide
+- Lv. 1, Take Down
+- Lv. 1, Thunder Fang
+- Lv. 37, Double Edge
+- Lv. 50, Flare Blitz (was 1)
+- Lv. 55, Headlong Rush
+- Lv. 58, Head Smash
+- Lv. 62, ExtremeSpeed (was 0)
+- Lv. 68, Raging Fury
+
+
+
 ## Gen 2
+
+### 0169  Crobat
+
+- Lv. 1, 31, Mean Look (from vanilla, was 32)
+- Lv. 15, Poison Fang (from vanilla)
+- Lv. 41, Haze (was 40)
+- Lv. 45, Venoshock (was 43)
+- Lv. 52, Air Slash (was 48 IE, 62 vanilla)
+- Lv. 54, Quick Guard (was 51 IE, 20 vanilla)
+- Lv. 56, Dual Wingbeat
+- Lv. 63, Sky Attack
 
 ### 0172  Pichu
 
@@ -369,6 +558,13 @@ Pin missile takes its IE level up value of 23
 ### 0174  Igglybuff
 
 - No change
+
+### 0182  Bellossom
+
+- Lv. 1, Fiery Dance
+- Lv. 1, Trailblaze
+- Lv. 64, Leaf Storm
+- Lv. 71, Chloroblast
 
 ### 0236  Tyrogue
 
@@ -390,3 +586,42 @@ Pin missile takes its IE level up value of 23
 
 - 
 
+
+
+## Gen 3
+
+
+
+## Gen 4
+
+
+
+## Gen 5
+
+
+
+## Gen 6
+
+
+
+## Gen 7
+
+
+
+## Gen 8
+
+### 0863  Perrserker
+
+- Lv. 0, Bullet Punch
+- Lv. 28, Trailblaze
+- Lv. 52, Thrash (was 54 in IE and vanilla)
+- Lv. 56, Close Combat
+- Lv. 60, Steel Beam
+
+## Gen 9
+
+Gen 9 changes are listed relative to vanilla stats & learnsets, as IE does not have any Gen 9 Pokemon.
+
+### 0979  Annihilape
+
+- No change
