@@ -612,27 +612,260 @@ Pin missile takes its IE level up value of 23
 
 ### 0074  Geodude - Kanto
 
-- 
+- No change
 
 ### 0074  Geodude - Alola
 
-- 
+- No change
 
 ### 0075  Graveler - Kanto
 
-- 
+- Lv. 37, Body Press
 
 ### 0075  Graveler - Alola
 
-- 
+- No change
 
 ### 0076  Golem - Kanto
 
-- 
+- Lv. 37, Body Press
 
 ### 0076  Golem - Alola
 
-- 
+- Lv. 68, Supercell Slam
+
+### 0077  Ponyta - Kanto
+
+- No change
+
+### 0077  Ponyta - Galar
+
+ABILITY:  Run Away -> Pixilate
+
+- Lv. 3, Tail Whip (was 5)
+- Lv. 4, Fairy Wind (was 15)
+- Lv. 9, Confusion (was 10)
+- Lv. 13, Eerie Impulse
+- Lv. 16, Swift
+- Lv. 18, Will O Wisp
+- Lv. 30, Calm Mind
+- Lv. 32, Healing Wish (was 55)
+- Lv. 34, Psychic Terrain
+- Lv. 38, Dazzling Gleam
+- Lv. 40, Eerie Spell
+- Lv. 43, Mystical Fire
+- Lv. 46, Psychic (was 50)
+- Lv. 48, Hyper Voice
+- Lv. 49, Moonblast
+- Lv. 52, Expanding Force
+- Lv. 56, Hyper Beam
+- Lv. 60, Magic Powder
+
+### 0078  Rapidash - Kanto
+
+- No change
+
+### 0078  Rapidash - Galar
+
+ABILITY:  Run Away -> Pixilate
+
+- Lv. 0, 42, Dazzling Gleam
+  - Replaces Psycho Cut
+- Lv. 1, Healing Wish
+- Lv. 1, Fairy Wind (was 15)
+- Lv. 1, Psychic Terrain
+- Lv. 14, Eerie Impulse
+- Lv. 17, Swift
+- Lv. 23, Will O Wisp
+- Lv. 26, Agility (was 20)
+- Lv. 28, Psybeam (was 25)
+- Lv. 38, Calm Mind
+- Lv. 40, Eerie Spell
+- Lv. 46, Mystical Fire
+- Lv. 49, Psychic (was 56)
+- Lv. 52, Hyper Voice
+- Lv. 55, Moonblast
+- Lv. 59, Expanding Force
+- Lv. 62, Hyper Beam
+- Lv. 70, Magic Powder
+
+### 0079  Slowpoke - Kanto
+
+- Lv. 17, Chilling Water
+
+### 0079  Slowpoke - Galar
+
+- Lv. 18, Chilling Water
+- Lv. 25, Water Pulse (was 18)
+
+### 0080  Slowbro - Kanto
+
+- Lv. 17, Chilling Water
+- Lv. 34, Body Press
+
+### 0080  Slowbro - Galar
+
+- Lv. 18, Chilling Water
+- Lv. 25, Water Pulse (was 18)
+- Lv. 32, Body Press
+
+### 0081  Magnemite
+
+- Lv. 51, Steel Beam
+
+### 0082  Magneton
+
+- Lv. 0, Twin Beam
+- Lv. 66, Steel Beam
+
+### 0083  Farfetch'd - Kanto
+
+- No change
+
+### 0083  Farfetch'd - Galar
+
+- No change
+
+### 0084  Doduo
+
+- Lv. 24, Trailblaze
+- Lv. 45, Twin Beam
+
+### 0085  Dodrio
+
+- Lv. 0, Twin Beam
+- Lv. 24, Trailblaze
+
+### 0086  Seel
+
+- Lv. 25, Chilling Water
+- Lv. 29, Flip Turn
+- Lv. 35, Ice Spinner
+- Gets both Snowscape and Hail at 53
+
+### 0087  Dewgong
+
+- Lv. 25, Chilling Water
+- Lv. 29, Flip Turn
+- Lv. 37, Ice Spinner
+- Lv. 59, Alluring Voice
+- Gets both Snowscape and Hail at 65
+
+### 0088  Grimer - Kanto
+
+- No change
+
+### 0088  Grimer - Alola
+
+- No change
+
+### 0089  Muk - Kanto
+
+- No change
+
+### 0089  Muk - Alola
+
+- No change
+
+### 0090  Shellder
+
+- Lv. 23, Chilling Water
+- Lv. 38, Ice Spinner
+
+### 0091  Cloyster
+
+- Lv. 1, Chilling Water
+- Lv. 42, Ice Spinner
+
+### 0092  Gastly
+
+- Lv. 33, Corrosive Gas
+
+### 0093  Haunter
+
+- Lv. 39, Corrosive Gas
+
+### 0094  Gengar
+
+ABILITY:  Cursed Body reverted to Levitate.
+
+- Lv. 40, Corrosive Gas
+
+### 0095  Onix
+
+- No change
+
+### 0096  Drowzee
+
+- Lv. 21, Trailblaze
+
+### 0097  Hypno
+
+- Lv. 27, Trailblaze
+- Gets Future Sight again at 61
+
+### 0098  Krabby
+
+- Lv. 17, Bubble Beam
+- Lv. 33, Aqua Cutter
+
+### 0099  Kingler
+
+- Lv. 19, Bubble Beam
+- Lv. 35, Aqua Cutter
+
+### 0100  Voltorb - Kanto
+
+- Lv. 18, Rapid Spin
+- Lv. 54, Court Change
+
+### 0100  Voltorb - Hisui
+
+- Lv. 1, ThunderShock (was 4)
+- Lv. 1, Absorb
+- Lv. 4, Sonic Boom
+- Lv. 6, Eerie Impulse
+- Lv. 9, Shock Wave
+- Lv. 11, Magical Leaf
+- Lv. 19, Swift (was 20)
+- Lv. 24, Self-Destruct (was 26)
+- Lv. 27, Mega Drain
+- Lv. 29, Light Screen
+- Lv. 33, Magnet Rise
+- Lv. 36, Discharge (was 34)
+- Lv. 38, Giga Drain
+- Lv. 44, Energy Ball (was 29)
+- Lv. 48, Mirror Coat
+- Lv. 54, Court Change
+
+### 0101  Electrode - Kanto
+
+- Lv. 0, Magnetic Flux (was 1)
+- Lv. 18, Rapid Spin
+- Lv. 60, Court Change
+- Lv. 65, Zap Cannon
+
+### 0101  Electrode - Hisui
+
+- Lv. 1, ThunderShock (was 4)
+- Lv. 1, Absorb
+- Lv. 4, Sonic Boom
+- Lv. 6, Eerie Impulse
+- Lv. 9, Shock Wave
+- Lv. 11, Magical Leaf
+- Lv. 19, Swift (was 20)
+- Lv. 24, Self-Destruct (was 26)
+- Lv. 27, Mega Drain
+- Lv. 29, Light Screen
+- Lv. 33, Magnet Rise
+- Lv. 38, Discharge (was 34)
+- Lv. 41, Giga Drain
+- Lv. 44, Explosion )was 41
+- Lv. 47, Energy Ball (was 29)
+- Lv. 50, Mirror Coat
+- Lv. 53, Gyro Ball (was 46)
+- Lv. 56, Chloroblast
+- Lv. 62, Court Change
 
 ## Gen 2
 
@@ -672,6 +905,19 @@ Pin missile takes its IE level up value of 23
 - Lv. 29, Chilling Water
 - Lv. 55, Earth Power
 
+### 0199  Slowking - Johto
+
+- Lv. 35, Chilling Water
+
+### 0199  Slowking - Galar
+
+- Lv. 18, Chilling Water
+- Lv. 25, Water Pulse (was 18)
+
+### 0208  Steelix
+
+- No change
+
 ### 0236  Tyrogue
 
 - 
@@ -699,6 +945,11 @@ Pin missile takes its IE level up value of 23
 
 
 ## Gen 4
+
+### 0462  Magnezone
+
+- Lv. 69, Steel Beam
+- Lv. 74, Thunder Cage
 
 
 
