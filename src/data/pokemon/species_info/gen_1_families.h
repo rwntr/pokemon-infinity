@@ -4014,11 +4014,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_NIDOQUEEN] =
     {
         .baseHP        = 90,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 92 : 82,
-        .baseDefense   = 87,
+        .baseAttack    = 65,
+        .baseDefense   = 92,
         .baseSpeed     = 76,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 85,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 92,
         .types = MON_TYPES(TYPE_POISON, TYPE_GROUND),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -4216,9 +4216,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_NIDOKING] =
     {
-        .baseHP        = 81,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 102 : 92,
-        .baseDefense   = 77,
+        .baseHP        = 75,
+        .baseAttack    = 110,
+        .baseDefense   = 75,
         .baseSpeed     = 85,
         .baseSpAttack  = 85,
         .baseSpDefense = 75,

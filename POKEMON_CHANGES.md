@@ -1,7 +1,392 @@
 # Pokemon Infinity Mon Changes
 
+These mon changes include only changes that were made that do *not* align with either Gen IX standards or changes that were made to mons in Inclement Emerald.  Unless otherwise noted, stat totals are equal to their INCLEMENT EMERALD counterparts, except for Gen VIII and IX Pokemon.
+
+Abilities are equal to their INCLEMENT EMERALD counterparts, unless otherwise stated.  
+
+Movesets contain all moves available by level-up in both Inclement Emerald AND Gen IX.  Moves in both learnsets will be learned at their Inclement Emerald levels unless otherwise noted.  (I.e. if Eevee gets tackle at Lv. 10 in IE and Lv. 15 in Gen 9, it will get it at Lv. 10 in Pokemon Infinity for now.)
+
+
+
+Moves learned at level 0 mean they are automatically learned upon evolution, and may be relearned by a move rememberer.
+
+Moves learned at level 1 are moves that Pokemon may have when encountered in the wild, and may be relearned by a move rememberer.
+
+
+
 ## Gen 1
 
-### Bulbasaur
+### 0001  Bulbasaur
+
+- Lv. 14, Trailblaze (was TM)
+- Lv. 16, Grassy Glide (new)
+- Lv. 26, Snap Trap (new)
+- Lv. 33, Double Edge becomes Power Whip (new).
+
+### 0002  Ivysaur
+
+- Lv. 0, Grassy Glide (new)
+- Lv. 14, Trailblaze (was TM)
+- Lv. 42, Snap Trap (new)
+- Lv. 45, Double Edge becomes Power Whip (new).
+
+### 0003  Venusaur
+
+- Lv. 1, Grassy Glide (new)
+- Lv. 14, Trailblaze (was TM)
+- Lv. 47, Snap Trap (new)
+- Lv. 51, Double Edge becomes Power Whip (new).
+
+### 0004  Charmander
+
+- Lv. 33, Breaking Swipe (new)
+- Lv. 34, Temper Flare (new)
+- Lv. 41, Flare Blitz (From 40)
+
+### 0005  Charmeleon
+
+- Lv. 34, Scary Face (From 37)
+- Lv. 37, Breaking Swipe (new)
+- Lv. 40, Temper Flare (new)
+
+### 0006  Charizard
+
+- Lv. 0, Breaking Swipe (new)
+- Lv. 48, Temper Flare (new)
+- Lv. 68, Raging Fury (new)
+
+### 0007  Squirtle
+
+- Lv. 16, Flip Turn (was TM)
+- Lv. 20, Chilling Water (new)
+- Lv. 22, Rain Dance (was 21 in IE and Vanilla)
+- Lv. 39, Ice Spinner (new)
+
+### 0008  Wartortle
+
+- Lv. 0, Flip Turn (was TM)
+- Lv. 15 Water Pulse from Vanilla has been removed.
+  - With IE's Water Pulse buff, this would be a little broken.
+- Lv. 22, Chilling Water (new)
+- Lv. 47, Ice Spinner (new)
+- Lv. 52, Shell Smash (was 35 in vanilla, was 50 in IE)
+
+### 0009  Blastoise
+
+- Lv. 0, Water Pulse (was 15 in IE and Vanilla)
+- Lv. 1, Flip Turn (was TM)
+- Lv. 23, Chilling Water (new)
+- Lv. 38, Body Press (new)
+- Lv. 53, Ice Spinner (new)
+- Lv. 60, Shell Smash (was 35 in vanilla, was 56 in IE)
+  - Makes room for Wave Crash at 56
+
+### 0010  Caterpie
+
+- No change
+
+### 0011  Metapod
+
+- No change
+
+### 0012  Butterfree
+
+- Lv. 35, Psychic Noise (new)
+
+### 0013  Weedle
+
+- No change
+
+### 0014  Kakuna
+
+- No change
+
+### 0015  Beedrill
+
+Pin missile takes its IE level up value of 23
+
+- Lv. 0 & 1, Fury Attack (was 1 & 11)
+- Lv. 13, Laser Focus (was 14 in vanilla)
+  - Makes room for Lv. 14, Rage
+- Lv. 25, Venoshock (was 23 in vanilla)
+
+### 0016  Pidgey
+
+- Lv. 39, Dual Wingbeat (new)
+
+### 0017  Pidgeotto
+
+- Lv. 45, Dual Wingbeat (new)
+
+### 0018  Pidgeot
+
+- Lv. 47, Dual Wingbeat (new)
+
+### 0019  Rattata - Kanto
+
+- Lv. 9, Laser Focus (was 13 in vanilla)
+- Lv. 11, Bite (was 10 in vanilla and IE)
+- Lv. 18, Take Down (was 16 in vanilla)
+  - In IE this was removed for Lv. 16 Hyper Fang, but I kept both
+- Lv. 20, Assurance (was 19 in IE and vanilla)
+  - Makes evenly spaced room for Take Down & Hyper Fang
+- Lv. 24, Agility (new)
+
+### 0019  Rattata - Alola
+
+- Lv. 1, Tail Whip (was 3 in IE)
+- Lv. 4, Quick Attack (was 6 in IE)
+- Lv. 7, Focus Energy (was 9 in IE)
+- Lv. 9, Bite (was 12 in IE, 10 in Vanilla)
+- Lv. 10, Hone Claws (new)
+- Lv. 12, Pursuit (was 13 in vanilla)
+- Lv. 18, Assurance (was 19 in vanilla)
+- Lv. 20, Crunch (was 18 in IE, 22 in vanilla)
+- Lv. 28, Psychic Fangs (new)
+- Lv. 29, Double Edge (was 27 in IE, 31 in Vanilla)
+- Lv. 33, Swords Dance (new)
+- Lv. 37, Endeavor (was 34 in vanilla)
+- Lv. 39, Knock Off (new)
+
+### 0020  Raticate - Kanto
+
+- Lv. 1, Ice Fang
+- Lv. 1, Fire Fang
+- Lv. 1, Thunder Fang
+- Lv. 9, Laser Focus (was 13 in vanilla)
+- Lv. 11, Bite (was 10 in IE and vanilla)
+- Lv. 18, Take Down (was 16 in vanilla)
+  - In IE this was removed for Lv. 16 Hyper Fang, but I kept both
+- Lv. 21, Assurance (was 19 in IE and vanilla)
+  - Makes evenly spaced room for Take Down & Hyper Fang
+- Lv. 24, Crunch (was 26 in IE)
+- Lv. 27, Agility (new)
+- Lv. 47, Jaw Lock (new)
+- Lv. 55, Giga Impact (new)
+
+### 0020  Raticate - Alola
+
+- Lv. 0, Swords Dance (was 1)
+- Lv. 1, Poison Fang (new)
+- Lv. 9, Laser Focus (was 13 in vanilla)
+- Lv. 11, Bite (was 10 in IE and vanilla)
+- Lv. 18, Take Down (was 16 in vanilla)
+- Lv. 22, Assurance (was 19 in vanilla)
+- Lv. 38, Psychic Fangs (new)
+- Lv. 44, Endeavor (from vanilla)
+- Lv. 47, Jaw Lock (new)
+- Lv. 50, Knock Off (new)
+
+### 0021  Spearow
+
+- Lv. 34, Dual Wingbeat (new)
+
+### 0022  Fearow
+
+- Lv. 38, Dual Wingbeat (new)
+- Lv. 45, Drill Run (from vanilla, IE has it at 0 and we keep it there too.)
+- Lv. 70, Horn Drill (new, tentative)
+
+### 0023  Ekans
+
+- Lv. 18, Acid (was 20 in vanilla)
+- Lv. 27, Trailblaze
+- Lv. 30, Pounce
+- Lv. 32, Mud Bomb (was 33 in IE)
+- Lv. 34, Lash Out (new)
+- Lv. 47, Shed Tail (new, tentative, possibly broken)
+
+### 0024  Ekans
+
+- Lv. 18, Acid (was 20 in vanilla)
+- Lv. 30, Trailblaze
+- Lv. 33, Pounce
+- Lv. 38, Mud Bomb (was 39 in IE)
+- Lv. 40, Lash Out (new)
+- Lv. 46, Psychic Fangs (new)
+- Lv. 59, Shed Tail (new, tentative, possibly broken)
+
+### 0025  Pikachu
+
+- Lv. 27, Trailblaze
+
+### 0026  Raichu - Kanto
+
+- Lv. 35, Trailblaze
+- Lv. 50, Zap Cannon
+
+### 0026  Raichu - Alola
+
+- Lv. 35, Trailblaze
+- Lv. 36, Psyshock
+- Lv. 78, Psystrike
+
+### 0027  Sandshrew - Kanto
+
+- Lv. 16, Bulldoze (was 18 in vanilla)
+- Lv. 28, Agility (was 27 in vanilla)
+- Lv. 36, Night Slash
+
+### 0027  Sandshrew - Alola
+
+- Lv. 36, Ice Spinner
+- Lv. 42 gets both Hail and Snowscape.
+- Lv. 49, Steel Beam
+
+### 0028  Sandslash - Kanto
+
+- Lv. 0, Hone Claws (new)
+- Lv. 16, Bulldoze (was 18 in vanilla)
+- Lv. 31, Agility (only Sandshrew gets this in vanilla???)
+- Lv. 40, Night Slash
+
+### 0028  Sandslash - Alola
+
+- Lv. 16, Bulldoze (was 18 in vanilla)
+- Lv. 40, Ice Spinner
+- Lv. 46 gets both Hail and Snowscape.
+- Lv. 55, Steel Beam
+
+### 0029  Nidoran F
+
+- Lv. 27, Acid Spray (replaces Poison Fang)
+- Lv. 40, Toxic (from vanilla)
+- Lv. 48, Earth Power (was 55 in vanilla)
+
+### 0030  Nidorina
+
+- Lv. 0, 31, Sludge
+- Lv. 47, Toxic (from vanilla)
+- Lv. 50, Earth Power (was 71 in vanilla)
+
+### 0031  Nidoqueen
+
+​	Atk: 92 -> 65
+
+​	Def: 87 -> 92
+
+​	SpA: 75 -> 90
+
+​	SpD: 85 -> 92
+
+- Gets all its missing Lv. 1 moves back from Vanilla.
+- Lv. 1, Sludge
+- Lv. 0, Focus Blast (replaces Superpower)
+- Lv. 0, Venoshock (new)
+- Lv. 40, Sludge Wave (was 1 in vanilla)
+- Lv. 50, Earth Power (was 1 in vanilla)
+- Lv. 60, Hyper Beam
+
+### 0032  Nidoran M
+
+- Lv. 27, Poison Fang (was 45 in Vanilla)
+- Lv. 40, Toxic (from vanilla)
+- Lv. 48, Earthquake
+  - replaces Lv. 55, Earth Power from vanilla
+
+### 0033  Nidorino
+
+- Lv. 0, 31, Poison Tail
+- Lv. 47, Toxic (from vanilla)
+- Lv. 49, Earthquake
+  - replaces Lv. 71, Earth Power from vanilla
+
+### 0034  Nidoking
+
+​	HP: 81 -> 75
+
+​	Atk: 102 -> 110
+
+​	Def: 77 -> 75
+
+- Gets all its missing Lv. 0 & 1 moves back from Vanilla.
+- Lv. 1, Poison Tail
+- Lv. 0, 1, Drill Run
+- Lv. 0, 1, Megahorn (was 58 in IE)
+- Lv. 40, Cross Chop
+- Lv. 50, Earthquake
+  - replaces Lv. 1, Earth Power from vanilla
+- Lv. 60, Head Smash
+
+### 0035  Clefairy
+
+- Lv. 17, Life Dew (was 16 in vanilla)
+- Lv. 52, Misty Explosion
+
+### 0036  Clefable
+
+- Lv. 1, Life Dew
+- Lv. 50, Dual Wingbeat
+- Lv. 55, Misty Explosion
+
+### 0037  Vulpix - Kanto
+
+- Lv. 37, Burning Jealousy
+
+### 0037  Vulpix - Alola
+
+- Lv. 30, Chilling Water
+- Lv. 60, Frost Breath
+
+### 0038  Ninetales - Kanto
+
+- Lv. 42, Burning Jealousy
+- Lv. 63, Psychic Noise
+- Lv. 68, Eerie Spell
+
+### 0038  Ninetales - Alola
+
+- Lv. 1, Chilling Water
+- Lv. 58, Blizzard (was 60 in IE, 1 in vanilla)
+- Lv. 64, Frost Breath
+- Lv. 68, Eerie Spell
+
+### 0039  Jigglypuff
+
+- Lv. 29, Trailblaze
+- Lv. 48, Boomburst
+- Lv. 51, Moonblast
+- Lv. 54, Misty Explosion
+
+### 0040  Wigglytuff
+
+- Lv. 29, Trailblaze
+- Lv. 52, Boomburst
+- Lv. 56, Moonblast
+- Lv. 60, Misty Explosion
+
+## Gen 2
+
+### 0172  Pichu
+
+- Lv. 32, Wild Charge
+- Lv. 38, ExtremeSpeed
+
+### 0173  Cleffa
+
+- No change
+
+### 0174  Igglybuff
+
+- No change
+
+### 0236  Tyrogue
 
 - 
+
+### 0237  Hitmontop
+
+- 
+
+### 0238  Smoochum
+
+- 
+
+### 0239  Elekid
+
+- 
+
+### 0240  Magby
+
+- 
+
