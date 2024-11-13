@@ -140,14 +140,14 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves which deal more damage instead of moves 
 
     abilityAtk = ABILITY_NONE;
 
-    // Scald and Poison Jab take 3 hits, Waterfall takes 2.
-    PARAMETRIZE { move1 = MOVE_WATERFALL; move2 = MOVE_SCALD; move3 = MOVE_POISON_JAB; move4 = MOVE_WATER_GUN; expectedMove = MOVE_SCALD; turns = 2; }
-    // Poison Jab takes 3 hits, Water gun 5. Immunity so there's no poison chip damage.
-    PARAMETRIZE { move1 = MOVE_POISON_JAB; move2 = MOVE_WATER_GUN; expectedMove = MOVE_POISON_JAB; abilityDef = ABILITY_IMMUNITY; turns = 3; }
+    // Waterfall and Poison Jab take 3 hits, Water pulse takes 2.
+    PARAMETRIZE { move1 = MOVE_WATERFALL; move2 = MOVE_WATER_PULSE; move3 = MOVE_POISON_JAB; move4 = MOVE_WATER_GUN; expectedMove = MOVE_WATER_PULSE; turns = 2; }
+    // Sludge Bomb takes 3 hits, Water gun 5. Immunity so there's no poison chip damage.
+    PARAMETRIZE { move1 = MOVE_SLUDGE_BOMB; move2 = MOVE_WATER_GUN; expectedMove = MOVE_SLUDGE_BOMB; abilityDef = ABILITY_IMMUNITY; turns = 3; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_WATERFALL].category == DAMAGE_CATEGORY_PHYSICAL);
-        ASSUME(gMovesInfo[MOVE_SCALD].category == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(gMovesInfo[MOVE_WATER_PULSE].category == DAMAGE_CATEGORY_SPECIAL);
         ASSUME(gMovesInfo[MOVE_POISON_JAB].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_WATER_GUN].category == DAMAGE_CATEGORY_SPECIAL);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
