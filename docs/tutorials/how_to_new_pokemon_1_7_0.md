@@ -962,7 +962,7 @@ We register the table each form entry in `gSpeciesInfo`.
         .teachableLearnset = sPikachuTeachableLearnset,
 +       .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLAN}),
+                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLA}),
     },
 
     [SPECIES_PIKACHU_COSPLAY] =

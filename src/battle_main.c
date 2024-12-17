@@ -73,7 +73,6 @@
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "cable_club.h"
-#include "data/trainer_spreads.h"
 
 extern const struct BgTemplate gBattleBgTemplates[];
 extern const struct WindowTemplate *const gBattleWindowTemplates[];

@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Light Ball always gives Alolan Raichu a 1.5x Atk/Sp. Atk boo
 
     GIVEN {
         ASSUME(P_ALOLAN_FORMS);
-        PLAYER(SPECIES_RAICHU_ALOLAN) { Item(ITEM_LIGHT_BALL); };
+        PLAYER(SPECIES_RAICHU_ALOLA) { Item(ITEM_LIGHT_BALL); };
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
