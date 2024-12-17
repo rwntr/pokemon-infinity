@@ -81,7 +81,7 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if target protec
         HP_BAR(opponent, .captureDamage =  &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponent);
-        MESSAGE("Foe Wobbuffet protected itself!");
+        MESSAGE("The opposing Wobbuffet protected itself!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
         HP_BAR(opponent, .captureDamage =  &damage[1]);
@@ -124,8 +124,8 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user was immune t
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
-        MESSAGE("It doesn't affect Foe Pidgey…");
+        HP_BAR(opponent, .captureDamage: &damage[0]);
+        MESSAGE("It doesn't affect the opposing Pidgey…");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
         HP_BAR(opponent, .captureDamage =  &damage[1]);
     } THEN {

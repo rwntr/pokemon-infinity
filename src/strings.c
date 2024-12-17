@@ -264,6 +264,9 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the Pokémon List");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
+const u8 gText_PlayedPokeFluteCatchy[] = _("Played the Poké Flute.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
+const u8 gText_PlayedPokeFlute[] = _("Played the Poké Flute.");
+const u8 gText_PokeFluteAwakenedMon[] = _("The Poké Flute awakened sleeping\nPokémon.{PAUSE_UNTIL_PRESS}");
 
 const u8 *const gBagMenu_ReturnToStrings[] =
 {
@@ -1878,6 +1881,8 @@ const u8 gText_Fertilize[] = _("Fertilize");
 const u8 gText_PlantBerry[] = _("Plant Berry");
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
+const u8 gText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
+const u8 gText_Rename[] = _("RENAME");
 
 // New Strings
 // Nature changer

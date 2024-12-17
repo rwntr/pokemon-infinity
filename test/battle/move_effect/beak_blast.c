@@ -15,16 +15,16 @@ DOUBLE_BATTLE_TEST("Beak Blast's charging message is shown before other moves ar
         OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_BEAK_BLAST, .target = opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_BEAK_BLAST, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_BEAK_BLAST_SETUP, playerLeft);
         MESSAGE("Wynaut started heating up its beak!");
 
         MESSAGE("Wobbuffet used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Wobbuffet used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Wobbuffet used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
 
         MESSAGE("Wynaut used Beak Blast!");
@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
         OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target = playerLeft); MOVE(opponentRight, MOVE_TACKLE, .target = playerLeft); MOVE(playerLeft, MOVE_BEAK_BLAST, .target = opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_TACKLE, target: playerLeft); MOVE(playerLeft, MOVE_BEAK_BLAST, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_BEAK_BLAST_SETUP, playerLeft);
         MESSAGE("Wynaut started heating up its beak!");
@@ -51,19 +51,19 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
         MESSAGE("Wobbuffet used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
 
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("The opposing Wobbuffet used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         HP_BAR(playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        MESSAGE("Foe Wobbuffet was burned!");
-        STATUS_ICON(opponentLeft, .burn = TRUE);
+        MESSAGE("The opposing Wobbuffet was burned!");
+        STATUS_ICON(opponentLeft, burn: TRUE);
 
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("The opposing Wobbuffet used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         HP_BAR(playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
-        MESSAGE("Foe Wobbuffet was burned!");
-        STATUS_ICON(opponentRight, .burn = TRUE);
+        MESSAGE("The opposing Wobbuffet was burned!");
+        STATUS_ICON(opponentRight, burn: TRUE);
 
         MESSAGE("Wynaut used Beak Blast!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BEAK_BLAST, playerLeft);
@@ -95,14 +95,14 @@ SINGLE_BATTLE_TEST("Beak Blast burns only when contact moves are used")
 
         if (burn) {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-            MESSAGE("Foe Wobbuffet was burned!");
-            STATUS_ICON(opponent, .burn = TRUE);
+            MESSAGE("The opposing Wobbuffet was burned!");
+            STATUS_ICON(opponent, burn: TRUE);
         }
         else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-                MESSAGE("Foe Wobbuffet was burned!");
-                STATUS_ICON(opponent, .burn = TRUE);
+                MESSAGE("The opposing Wobbuffet was burned!");
+                STATUS_ICON(opponent, burn: TRUE);
             }
         }
 

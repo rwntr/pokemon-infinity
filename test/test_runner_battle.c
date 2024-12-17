@@ -35,20 +35,12 @@
 #define STATE gBattleTestRunnerState
 #define DATA gBattleTestRunnerState->data
 
-#if HQ_RANDOM == TRUE
 #define RNG_SEED_DEFAULT {0, 0, 0, 0}
 static inline bool32 RngSeedNotDefault(const rng_value_t *seed)
 {
     return (seed->a | seed->b | seed->c | seed->ctr) != 0;
 
 }
-#else
-#define RNG_SEED_DEFAULT 0x00000000
-static inline bool32 RngSeedNotDefault(const rng_value_t *seed)
-{
-    return *seed != RNG_SEED_DEFAULT;
-}
-#endif
 #undef Q_4_12
 #define Q_4_12(n) (s32)((n) * 4096)
 
@@ -373,6 +365,7 @@ u32 RandomUniform(enum RandomTag tag, u32 lo, u32 hi)
 
     if (tag == STATE->rngTag)
     {
+        STATE->didRunRandomly = TRUE;
         u32 n = hi - lo + 1;
         if (STATE->trials == 1)
         {
@@ -409,6 +402,7 @@ u32 RandomUniformExcept(enum RandomTag tag, u32 lo, u32 hi, bool32 (*reject)(u32
 
     if (tag == STATE->rngTag)
     {
+        STATE->didRunRandomly = TRUE;
         if (STATE->trials == 1)
         {
             u32 n = 0, i;
@@ -457,6 +451,7 @@ u32 RandomWeightedArray(enum RandomTag tag, u32 sum, u32 n, const u8 *weights)
 
     if (tag == STATE->rngTag)
     {
+        STATE->didRunRandomly = TRUE;
         if (STATE->trials == 1)
         {
             STATE->trials = n;
@@ -530,6 +525,7 @@ const void *RandomElementArray(enum RandomTag tag, const void *array, size_t siz
 
     if (tag == STATE->rngTag)
     {
+        STATE->didRunRandomly = TRUE;
         if (STATE->trials == 1)
         {
             STATE->trials = count;
@@ -771,7 +767,7 @@ static u32 CountAiExpectMoves(struct ExpectedAIAction *expectedAction, u32 battl
     u32 i, countExpected = 0;
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
-        if (gBitTable[i] & expectedAction->moveSlots)
+        if ((1u << i) & expectedAction->moveSlots)
         {
             if (printLog)
                 PrintAiMoveLog(battlerId, i, gBattleMons[battlerId].moves[i], gBattleStruct->aiFinalScore[battlerId][expectedAction->target][i]);
@@ -790,6 +786,8 @@ void TestRunner_Battle_CheckChosenMove(u32 battlerId, u32 moveId, u32 target)
     if (!expectedAction->actionSet)
         return;
 
+    DATA.trial.lastActionTurn = gBattleResults.battleTurnCounter;
+
     if (!expectedAction->pass)
     {
         u32 i, expectedMoveId = 0, countExpected;
@@ -803,7 +801,7 @@ void TestRunner_Battle_CheckChosenMove(u32 battlerId, u32 moveId, u32 target)
 
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
-            if (gBitTable[i] & expectedAction->moveSlots)
+            if ((1u << i) & expectedAction->moveSlots)
             {
                 expectedMoveId = gBattleMons[battlerId].moves[i];
                 if (!expectedAction->notMove)
@@ -858,6 +856,8 @@ void TestRunner_Battle_CheckSwitch(u32 battlerId, u32 partyIndex)
 
     if (!expectedAction->actionSet)
         return;
+
+    DATA.trial.lastActionTurn = gBattleResults.battleTurnCounter;
 
     if (!expectedAction->pass)
     {
@@ -919,8 +919,8 @@ static void CheckIfMaxScoreEqualExpectMove(u32 battlerId, s32 target, struct Exp
         // We expect move 'i', but it has the same best score as another move that we didn't expect.
         if (scores[i] == scores[bestScoreId]
             && !aiAction->notMove
-            && (aiAction->moveSlots & gBitTable[i])
-            && !(aiAction->moveSlots & gBitTable[bestScoreId]))
+            && (aiAction->moveSlots & (1u << i))
+            && !(aiAction->moveSlots & (1u << bestScoreId)))
         {
             Test_ExitWithResult(TEST_RESULT_FAIL, SourceLine(0), ":L%s:%d: EXPECT_MOVE %S has the same best score(%d) as not expected MOVE %S", filename,
                                 aiAction->sourceLine, GetMoveName(moves[i]), scores[i], GetMoveName(moves[bestScoreId]));
@@ -928,8 +928,8 @@ static void CheckIfMaxScoreEqualExpectMove(u32 battlerId, s32 target, struct Exp
         // We DO NOT expect move 'i', but it has the same best score as another move.
         if (scores[i] == scores[bestScoreId]
             && aiAction->notMove
-            && (aiAction->moveSlots & gBitTable[i])
-            && !(aiAction->moveSlots & gBitTable[bestScoreId]))
+            && (aiAction->moveSlots & (1u << i))
+            && !(aiAction->moveSlots & (1u << bestScoreId)))
         {
             Test_ExitWithResult(TEST_RESULT_FAIL, SourceLine(0), ":L%s:%d: NOT_EXPECT_MOVE %S has the same best score(%d) as MOVE %S", filename,
                                 aiAction->sourceLine, GetMoveName(moves[i]), scores[i], GetMoveName(moves[bestScoreId]));
@@ -942,9 +942,9 @@ static void PrintAiMoveLog(u32 battlerId, u32 moveSlot, u32 moveId, s32 totalSco
     s32 i, scoreFromLogs = 0;
 
     if (!DATA.logAI) return;
-    if (DATA.aiLogPrintedForMove[battlerId] & gBitTable[moveSlot]) return;
+    if (DATA.aiLogPrintedForMove[battlerId] & (1u << moveSlot)) return;
 
-    DATA.aiLogPrintedForMove[battlerId] |= gBitTable[moveSlot];
+    DATA.aiLogPrintedForMove[battlerId] |= 1u << moveSlot;
     Test_MgbaPrintf("Score Log for move %S:\n", GetMoveName(moveId));
     for (i = 0; i < MAX_AI_LOG_LINES; i++)
     {
@@ -1160,6 +1160,7 @@ static s32 TryMessage(s32 i, s32 n, const u8 *string)
                 switch (string[j])
                 {
                 case CHAR_SPACE:
+                case CHAR_NBSP:
                 case CHAR_PROMPT_SCROLL:
                 case CHAR_PROMPT_CLEAR:
                 case CHAR_NEWLINE:
@@ -1353,23 +1354,20 @@ static void CB2_BattleTest_NextParameter(void)
     else
     {
         STATE->trials = 0;
+        STATE->didRunRandomly = FALSE;
         BattleTest_Run(gTestRunnerState.test->data);
     }
 }
 
 static inline rng_value_t MakeRngValue(const u16 seed)
 {
-    #if HQ_RANDOM == TRUE
-        int i;
-        rng_value_t result = {0, 0, seed, 1};
-        for (i = 0; i < 16; i++)
-        {
+    int i;
+    rng_value_t result = {0, 0, seed, 1};
+    for (i = 0; i < 16; i++)
+    {
             _SFC32_Next(&result);
-        }
-        return result;
-    #else
-        return ISO_RANDOMIZE1(seed);
-    #endif
+    }
+    return result;
 }
 
 static void CB2_BattleTest_NextTrial(void)
@@ -1403,6 +1401,9 @@ static void CB2_BattleTest_NextTrial(void)
     }
     else
     {
+        if (STATE->rngTag && !STATE->didRunRandomly && STATE->expectedRatio != Q_4_12(0.0) && STATE->expectedRatio != Q_4_12(1.0))
+            Test_ExitWithResult(TEST_RESULT_INVALID, SourceLine(0), ":L%s:%d: PASSES_RANDOMLY specified but no Random* call with that tag executed", gTestRunnerState.test->filename, SourceLine(0));
+
         // This is a tolerance of +/- ~2%.
         if (abs(STATE->observedRatio - STATE->expectedRatio) <= Q_4_12(0.02))
             gTestRunnerState.result = TEST_RESULT_PASS;
@@ -2244,7 +2245,7 @@ static void TryMarkExpectMove(u32 sourceLine, struct BattlePokemon *battler, str
 
     id = DATA.expectedAiActionIndex[battlerId];
     DATA.expectedAiActions[battlerId][id].type = B_ACTION_USE_MOVE;
-    DATA.expectedAiActions[battlerId][id].moveSlots |= gBitTable[moveSlot];
+    DATA.expectedAiActions[battlerId][id].moveSlots |= 1 << moveSlot;
     DATA.expectedAiActions[battlerId][id].target = target;
     DATA.expectedAiActions[battlerId][id].explicitTarget = ctx->explicitTarget;
     DATA.expectedAiActions[battlerId][id].sourceLine = sourceLine;
