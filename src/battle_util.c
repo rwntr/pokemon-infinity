@@ -9810,7 +9810,7 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
     case HOLD_EFFECT_LIGHT_BALL:
         if (atkBaseSpeciesId == SPECIES_PIKACHU)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
-        else if (atkBaseSpeciesId == SPECIES_RAICHU || atkBaseSpeciesId == SPECIES_RAICHU_ALOLAN)
+        else if (atkBaseSpeciesId == SPECIES_RAICHU || atkBaseSpeciesId == SPECIES_RAICHU_ALOLA)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case HOLD_EFFECT_CHOICE_BAND:
@@ -9872,7 +9872,7 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
     }
 
     // Power Fists makes punching moves do special damage
-    if (gBattleMons[battlerAtk].ability == ABILITY_POWER_FISTS && gMovesInfo[move].punchingMove)
+    if (atkAbility == ABILITY_POWER_FISTS && gMovesInfo[move].punchingMove)
     {
         defStat = spDef;
         defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];

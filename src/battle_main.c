@@ -29,7 +29,7 @@
 #include "gpu_regs.h"
 #include "international_string_util.h"
 #include "item.h"
-#include "level_caps.h"
+#include "caps.h"
 #include "link.h"
 #include "link_rfu.h"
 #include "load_save.h"
@@ -73,6 +73,7 @@
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "cable_club.h"
+#include "data/trainer_spreads.h"
 
 extern const struct BgTemplate gBattleBgTemplates[];
 extern const struct WindowTemplate *const gBattleWindowTemplates[];
@@ -6119,7 +6120,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         return TYPE_WATER;
     }
-    else if (gMovesInfo[move].soundMove && attackerAbility == ABILITY_SAND_SONG)
+    else if (gMovesInfo[move].soundMove && ability == ABILITY_SAND_SONG)
     {
         gBattleStruct->dynamicMoveType = TYPE_GROUND | F_DYNAMIC_TYPE_SET;
     }

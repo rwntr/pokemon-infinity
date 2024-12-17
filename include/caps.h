@@ -19,6 +19,7 @@
 #endif
 
 u32 GetCurrentLevelCap(void);
+u32 GetCurrentEVCap(void);
 #define B_NUM_CAP_FLAGS 9
 #define B_NUM_CAP_SETTINGS 3
 
@@ -32,6 +33,6 @@ u16 GetActiveLevelCapIndex(void);
 u32 GetActiveLevelCap(void);
 u32 GetLastLevelCap(u16 currCapIdx);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);
-u32 GetActiveEVCap(void);
+
 
 #endif /* GUARD_CAPS_H */

@@ -220,6 +220,7 @@
 #define VARIOUS_BATTLER_ITEM_TO_LAST_USED_ITEM       128
 #define VARIOUS_SWAP_SIDE_STATUSES                   129
 #define VARIOUS_SWAP_STATS                           130
+#define VARIOUS_TRY_ACTIVATE_RAMPAGE                 131
 
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0
