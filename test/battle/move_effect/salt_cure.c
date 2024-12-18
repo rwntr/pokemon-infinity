@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Salt Cure inflicts 1/8 of the target's maximum HP as damage 
         MESSAGE("The opposing Wobbuffet is being salt cured!");
         for (j = 0; j < 4; j++) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SALT_CURE_DAMAGE, opponent);
-            HP_BAR(opponent, .damage: maxHP / 8);
+            HP_BAR(opponent, .damage = maxHP / 8);
             MESSAGE("The opposing Wobbuffet is hurt by Salt Cure!");
         }
     }

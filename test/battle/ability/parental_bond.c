@@ -275,8 +275,8 @@ SINGLE_BATTLE_TEST("Parental Bond Snore strikes twice while asleep")
     } SCENE {
         MESSAGE("Kangaskhan is fast asleep.");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNORE, player);
-        HP_BAR(opponent, .captureDamage: &damage[0]);
-        HP_BAR(opponent, .captureDamage: &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
         MESSAGE("The Pokémon was hit 2 time(s)!");
     } THEN {
         if (B_PARENTAL_BOND_DMG == GEN_6)

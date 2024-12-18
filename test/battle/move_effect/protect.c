@@ -465,7 +465,7 @@ DOUBLE_BATTLE_TEST("Crafty Shield protects self and ally from status moves")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); (move == MOVE_TACKLE) ? MOVE(playerLeft, move, .target =targetOpponent) : MOVE(playerLeft, move); }
+        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); (move == MOVE_TACKLE) ? MOVE(playerLeft, move, .target = targetOpponent) : MOVE(playerLeft, move); }
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CRAFTY_SHIELD, opponentLeft);
@@ -525,7 +525,7 @@ DOUBLE_BATTLE_TEST("Crafty Shield protects self and ally from Confide and Decora
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); MOVE(playerLeft, move, .target: opponentLeft); MOVE(playerRight, move, target: opponentRight); }
+        TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); MOVE(playerLeft, move, .target = opponentLeft); MOVE(playerRight, move, .target = opponentRight); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
         MESSAGE("The opposing Wobbuffet protected itself!");

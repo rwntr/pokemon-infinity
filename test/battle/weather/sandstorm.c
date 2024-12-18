@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Sandstorm deals 1/16 damage per turn")
         TURN {MOVE(player, MOVE_SANDSTORM);}
     } SCENE {
         MESSAGE("The opposing Wobbuffet is buffeted by the sandstorm!");
-        HP_BAR(opponent, .captureDamage: &sandstormDamage);
+        HP_BAR(opponent, .captureDamage = &sandstormDamage);
    } THEN { EXPECT_EQ(sandstormDamage, opponent->maxHP / 16); }
 }
 

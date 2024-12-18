@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("Mirror Move's called powder move fails against Grass Types")
         TURN { MOVE(player, MOVE_STUN_SPORE); MOVE(opponent, MOVE_MIRROR_MOVE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, player);
-        STATUS_ICON(opponent, .paralysis: TRUE);
+        STATUS_ICON(opponent, .paralysis = TRUE);
         MESSAGE("The opposing Wobbuffet used Mirror Move!");
         MESSAGE("The opposing Wobbuffet used Stun Spore!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);

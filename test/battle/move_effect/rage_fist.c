@@ -240,7 +240,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not increased if move had no affect"
     } SCENE {
         for (turns = 0; turns < 2; turns++) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
-            HP_BAR(opponent, .captureDamage: &timesGotHit[turns]);
+            HP_BAR(opponent, .captureDamage = &timesGotHit[turns]);
             MESSAGE("The opposing Regirock used Tackle!");
             MESSAGE("It doesn't affect Gastly…");
         }

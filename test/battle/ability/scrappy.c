@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Scrappy prevents intimidate")
         NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
         ABILITY_POPUP(opponent, ABILITY_SCRAPPY);
         MESSAGE("The opposing Kangaskhan's Scrappy prevents stat loss!");
-        HP_BAR(player, .captureDamage: &turnTwoHit);
+        HP_BAR(player, .captureDamage = &turnTwoHit);
     } THEN {
         EXPECT_EQ(turnOneHit, turnTwoHit);
     }

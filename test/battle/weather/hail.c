@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Hail deals 1/16 damage per turn")
         TURN {MOVE(player, MOVE_HAIL);}
     } SCENE {
         MESSAGE("The opposing Wobbuffet is buffeted by the hail!");
-        HP_BAR(opponent, .captureDamage: &hailDamage);
+        HP_BAR(opponent, .captureDamage = &hailDamage);
    } THEN { EXPECT_EQ(hailDamage, opponent->maxHP / 16); }
 }
 

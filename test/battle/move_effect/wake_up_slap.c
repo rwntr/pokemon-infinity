@@ -26,11 +26,11 @@ SINGLE_BATTLE_TEST("Wake-Up Slap does not cure paralyzed pokemons behind substit
             {
                 MESSAGE("The opposing Seismitoad's substitute faded!"); // Smelling Salts does 86 damage, the sub has 122 HP, if hitting a sub it shouldn't get boosted damage.
                 MESSAGE("The opposing Seismitoad woke up!");
-                STATUS_ICON(opponent, .none: TRUE);
+                STATUS_ICON(opponent, none: TRUE);
             }
         } else {
             MESSAGE("The opposing Seismitoad woke up!");
-            STATUS_ICON(opponent, .none: TRUE);
+            STATUS_ICON(opponent, none: TRUE);
         }
     }
 }

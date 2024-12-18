@@ -12,9 +12,9 @@ SINGLE_BATTLE_TEST("Grassy Terrain recovers 1/16th HP at end of turn")
         s32 maxHPPlayer = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         s32 maxHPOpponent = GetMonData(&OPPONENT_PARTY[0], MON_DATA_MAX_HP);
         MESSAGE("Wobbuffet is healed by the grassy terrain!");
-        HP_BAR(player, .damage: -maxHPPlayer / 16);
+        HP_BAR(player, .damage = -maxHPPlayer / 16);
         MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
-        HP_BAR(opponent, .damage: -maxHPOpponent / 16);
+        HP_BAR(opponent, .damage = -maxHPOpponent / 16);
     }
 }
 

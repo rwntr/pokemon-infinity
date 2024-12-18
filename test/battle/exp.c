@@ -64,7 +64,7 @@ WILD_BATTLE_TEST("Lucky Egg & Training Band boost Exp gains by 50% and 500% resp
     } SCENE {
         MESSAGE("Wobbuffet used Tackle!");
         MESSAGE("The wild Caterpie fainted!");
-        EXPERIENCE_BAR(player, .captureGainedExp: &results[i].exp);
+        EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].exp, Q_4_12(1.5), results[0].exp);
         EXPECT_MUL_EQ(results[1].exp, Q_4_12(5), results[2].exp);
