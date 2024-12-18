@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Draining Kiss recovers 75% of the damage dealt")
     s16 damage;
     s16 healed;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_WOBBUFFET) { HP(1), MaxHP(100); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAINING_KISS); }

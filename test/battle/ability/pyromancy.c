@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Pyromancy increases secondary burn rate by 5x with fire type
         TURN { MOVE(player, MOVE_EMBER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, player);
-        MESSAGE("Foe Wobbuffet was burned!");
+        MESSAGE("The opposing Wobbuffet was burned!");
     }
 }
 
@@ -30,6 +30,6 @@ SINGLE_BATTLE_TEST("Pyromancy burn rate does not apply to moves that aren't fire
         TURN { MOVE(player, MOVE_MATCHA_GOTCHA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MATCHA_GOTCHA, player);
-    MESSAGE("Foe Wobbuffet was burned!");
+    MESSAGE("The opposing Wobbuffet was burned!");
     }
 }

@@ -16,11 +16,11 @@ SINGLE_BATTLE_TEST("Blitz Boxer grants priority at any HP")
     } SCENE {
         if (hp == 100) {
             MESSAGE("Hitmonchan used Fire Punch!");
-            MESSAGE("Foe Wobbuffet used Celebrate!");
+            MESSAGE("The opposing Wobbuffet used Celebrate!");
         }
         else {
             MESSAGE("Hitmonchan used Fire Punch!");
-            MESSAGE("Foe Wobbuffet used Celebrate!");
+            MESSAGE("The opposing Wobbuffet used Celebrate!");
         }
     }
 }
@@ -40,10 +40,10 @@ SINGLE_BATTLE_TEST("Blitz Boxer only grants priority to Punching moves")
     } SCENE {
         if (move == MOVE_THUNDERPUNCH) {
             MESSAGE("Hitmonchan used Thunder Punch!");
-            MESSAGE("Foe Charmander used Celebrate!");
+            MESSAGE("The opposing Charmander used Celebrate!");
         }
         else {
-            MESSAGE("Foe Charmander used Celebrate!");
+            MESSAGE("The opposing Charmander used Celebrate!");
             MESSAGE("Hitmonchan used Close Combat!");
         }
     }

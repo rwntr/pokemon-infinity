@@ -176,7 +176,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by grounded Poison-type Pokémon on
     } SCENE {
         if (grounded) {
             NOT STATUS_ICON(opponent, .poison = TRUE);
-            MESSAGE("The poison spikes disappeared from the ground around the opposing team's feet!");
+            MESSAGE("The poison spikes disappeared from the ground around the opposing team!");
             NOT STATUS_ICON(opponent, .poison = TRUE);
         } else {
             NOT STATUS_ICON(opponent, .poison = TRUE);

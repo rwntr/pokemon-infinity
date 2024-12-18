@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Rampage skips recharge turn if a Pokemon was KO'd on the las
     } SCENE {
         MESSAGE("Typhlosion used Hyper Beam!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_BEAM, player);
-        MESSAGE("Foe Glalie fainted!");
+        MESSAGE("The opposing Glalie fainted!");
         MESSAGE("Typhlosion used Hyper Beam!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_BEAM, player);
         }
