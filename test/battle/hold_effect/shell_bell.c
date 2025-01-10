@@ -16,8 +16,28 @@ SINGLE_BATTLE_TEST("Shell Bell restores a maximum of 1/3 of holder's missing HP"
         HP_BAR(player, .captureHP = &hp);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
-     THEN {
+    THEN {
         //Max HP - init HP == 100-1 == 99, /3 = 33, init hp + 33 = 34.
         EXPECT_EQ(hp, 34);
-     }
+    }
+}
+
+SINGLE_BATTLE_TEST("Shell Bell doesn't restore HP for damage dealt by a foreseen move")
+{
+    GIVEN {
+        ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
+        PLAYER(SPECIES_WOBBUFFET) { Level(16); Item(ITEM_SHELL_BELL); HP(10); }
+        OPPONENT(SPECIES_WOBBUFFET) { Level(16); };
+    } WHEN {
+        TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
+        TURN { }
+        TURN { }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
+        MESSAGE("The opposing Wobbuffet took the Future Sight attack!");
+        HP_BAR(opponent);
+        NONE_OF {
+            HP_BAR(player);
+        }
+    }
 }
