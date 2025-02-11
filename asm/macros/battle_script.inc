@@ -478,9 +478,10 @@
 	.byte \battler
 	.endm
 
-	.macro switchinanim battler:req, dontClearSubstitute:req
+	.macro switchinanim battler:req, dontClearTransform:req, dontClearSubstitute:req
 	.byte 0x4e
 	.byte \battler
+	.byte \dontClearTransform
 	.byte \dontClearSubstitute
 	.endm
 
@@ -1460,8 +1461,9 @@
 	.endm
 
 	@ Used by effects that may proc Symbiosis but do not call removeitem.
-	.macro trysymbiosis
+	.macro trysymbiosis battler:req
 	callnative BS_TrySymbiosis
+    .byte \battler
 	.endm
 
 	@ returns B_SIDE_x to gBattleCommunication[0]
@@ -1719,11 +1721,6 @@
 	.4byte \failInstr
 	.endm
 
-	.macro tryhitswitchtarget failInstr:req
-	callnative BS_TryHitSwitchTarget
-	.4byte \failInstr
-	.endm
-
 	.macro setmagiccoattarget
 	callnative BS_SetMagicCoatTarget
 	.endm
@@ -1753,6 +1750,16 @@
 	.macro removeterrain
 	callnative BS_RemoveTerrain
 	.endm
+
+	.macro tryspectralthiefsteal jumpInstr:req
+	callnative BS_TrySpectralThiefSteal
+	.4byte \jumpInstr
+	.endm
+
+	.macro spectralthiefprintstats
+	callnative BS_SpectralThiefPrintStats
+	.endm
+
 
 @ various command changed to more readable macros
 	.macro cancelmultiturnmoves battler:req
@@ -2046,10 +2053,6 @@
 
 	.macro setpowder battler:req
 	various \battler, VARIOUS_SET_POWDER
-	.endm
-
-	.macro spectralthiefprintstats
-	various BS_ATTACKER, VARIOUS_SPECTRAL_THIEF
 	.endm
 
 	.macro bringdownairbornebattler battler:req
