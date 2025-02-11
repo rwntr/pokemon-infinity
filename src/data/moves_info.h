@@ -5818,7 +5818,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
+        .additionalEffects = ADDITIONAL_EFFECTS(
         #if B_SPEED_BUFFING_RAPID_SPIN >= GEN_8
             {
                 .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
