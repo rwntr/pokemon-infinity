@@ -4810,12 +4810,12 @@ s32 GetBattleMovePriority(u32 battler, u32 ability, u32 move)
         priority++;
     }
     else if (GetMoveEffect(move) == EFFECT_GRASSY_GLIDE && IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN) && GetActiveGimmick(gBattlerAttacker) != GIMMICK_DYNAMAX && !IsGimmickSelected(battler, GIMMICK_DYNAMAX))
-    {
         priority++;
-    }
     else if (ability == ABILITY_TRIAGE && IsHealingMove(move))
         priority += 3;
-
+    else if (ability == ABILITY_BLITZ_BOXER && IsPunchingMove(move))
+        priority++;
+        
     if (gProtectStructs[battler].quash)
         priority = -8;
 
