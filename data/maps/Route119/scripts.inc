@@ -1,7 +1,3 @@
-.set LOCALID_RIVAL, 16
-.set LOCALID_RIVAL_ON_BIKE, 25
-.set LOCALID_SCOTT, 43
-
 Route119_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route119_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route119_OnTransition
@@ -42,20 +38,20 @@ Route119_EventScript_RivalTrigger2::
 
 Route119_EventScript_RivalEncounter::
 	lockall
-	addobject LOCALID_RIVAL_ON_BIKE
+	addobject LOCALID_ROUTE119_RIVAL_ON_BIKE
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route119_EventScript_PlayMayMusic
 	call_if_eq VAR_RESULT, FEMALE, Route119_EventScript_PlayBrendanMusic
 	delay 65
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_RivalEnter1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_RivalEnter2
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 30
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_SetRivalPos1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_SetRivalPos2
-	removeobject LOCALID_RIVAL_ON_BIKE
-	addobject LOCALID_RIVAL
+	removeobject LOCALID_ROUTE119_RIVAL_ON_BIKE
+	addobject LOCALID_ROUTE119_RIVAL
 	delay 30
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route119_EventScript_BattleMay
@@ -140,78 +136,78 @@ Route119_EventScript_RivalExitScottArrive::
 	closemessage
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_SetRivalPos1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_SetRivalPos2
-	removeobject LOCALID_RIVAL
-	addobject LOCALID_RIVAL_ON_BIKE
+	removeobject LOCALID_ROUTE119_RIVAL
+	addobject LOCALID_ROUTE119_RIVAL_ON_BIKE
 	delay 30
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_RivalExit1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_RivalExit2
-	removeobject LOCALID_RIVAL_ON_BIKE
+	removeobject LOCALID_ROUTE119_RIVAL_ON_BIKE
 	setvar VAR_ROUTE119_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	delay 60
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_SetScottPos1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_SetScottPos2
-	addobject LOCALID_SCOTT
-	applymovement LOCALID_SCOTT, Route119_Movement_ScottEnter
+	addobject LOCALID_ROUTE119_SCOTT
+	applymovement LOCALID_ROUTE119_SCOTT, Route119_Movement_ScottEnter
 	waitmovement 0
 	addvar VAR_SCOTT_STATE, 1
 	msgbox Route119_Text_ScottWayToGoBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_ScottExit1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_ScottExit2
-	removeobject LOCALID_SCOTT
+	removeobject LOCALID_ROUTE119_SCOTT
 	releaseall
 	end
 
 Route119_EventScript_SetScottPos1::
-	setobjectxyperm LOCALID_SCOTT, 27, 25
+	setobjectxyperm LOCALID_ROUTE119_SCOTT, 27, 25
 	return
 
 Route119_EventScript_SetScottPos2::
-	setobjectxyperm LOCALID_SCOTT, 28, 25
+	setobjectxyperm LOCALID_ROUTE119_SCOTT, 28, 25
 	return
 
 Route119_EventScript_ScottExit1::
-	applymovement LOCALID_SCOTT, Route119_Movement_ScottExit1
+	applymovement LOCALID_ROUTE119_SCOTT, Route119_Movement_ScottExit1
 	waitmovement 0
 	return
 
 Route119_EventScript_ScottExit2::
-	applymovement LOCALID_SCOTT, Route119_Movement_ScottExit2
+	applymovement LOCALID_ROUTE119_SCOTT, Route119_Movement_ScottExit2
 	waitmovement 0
 	return
 
 Route119_EventScript_RivalEnter1::
-	applymovement LOCALID_RIVAL_ON_BIKE, Route119_Movement_RivalEnter1
+	applymovement LOCALID_ROUTE119_RIVAL_ON_BIKE, Route119_Movement_RivalEnter1
 	waitmovement 0
 	return
 
 Route119_EventScript_RivalEnter2::
-	applymovement LOCALID_RIVAL_ON_BIKE, Route119_Movement_RivalEnter2
+	applymovement LOCALID_ROUTE119_RIVAL_ON_BIKE, Route119_Movement_RivalEnter2
 	waitmovement 0
 	return
 
 Route119_EventScript_RivalExit1::
-	applymovement OBJ_EVENT_ID_PLAYER, Route119_Movement_PlayerWatchRivalExit1
-	applymovement LOCALID_RIVAL_ON_BIKE, Route119_Movement_RivalExit1
+	applymovement LOCALID_PLAYER, Route119_Movement_PlayerWatchRivalExit1
+	applymovement LOCALID_ROUTE119_RIVAL_ON_BIKE, Route119_Movement_RivalExit1
 	waitmovement 0
 	return
 
 Route119_EventScript_RivalExit2::
-	applymovement OBJ_EVENT_ID_PLAYER, Route119_Movement_PlayerWatchRivalExit2
-	applymovement LOCALID_RIVAL_ON_BIKE, Route119_Movement_RivalExit2
+	applymovement LOCALID_PLAYER, Route119_Movement_PlayerWatchRivalExit2
+	applymovement LOCALID_ROUTE119_RIVAL_ON_BIKE, Route119_Movement_RivalExit2
 	waitmovement 0
 	return
 
 Route119_EventScript_SetRivalPos1::
-	setobjectxyperm LOCALID_RIVAL, 25, 32
-	setobjectxyperm LOCALID_RIVAL_ON_BIKE, 25, 32
+	setobjectxyperm LOCALID_ROUTE119_RIVAL, 25, 32
+	setobjectxyperm LOCALID_ROUTE119_RIVAL_ON_BIKE, 25, 32
 	return
 
 Route119_EventScript_SetRivalPos2::
-	setobjectxyperm LOCALID_RIVAL, 26, 32
-	setobjectxyperm LOCALID_RIVAL_ON_BIKE, 26, 32
+	setobjectxyperm LOCALID_ROUTE119_RIVAL, 26, 32
+	setobjectxyperm LOCALID_ROUTE119_RIVAL_ON_BIKE, 26, 32
 	return
 
 Route119_Movement_PlayerWatchRivalExit1:
@@ -480,11 +476,11 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "May: {PLAYER}{KUN}!\n"
+	.string "MAY: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
-	.string "Ready with your Pokémon?\n"
+	.string "Ready with your POKéMON?\n"
 	.string "Of course you are! Go!$"
 
 Route119_Text_MayDefeat:
@@ -494,26 +490,26 @@ Route119_Text_MayDefeat:
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou:
-	.string "May: But I had absolutely nothing to\n"
+	.string "MAY: But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
 
 Route119_Text_MayExplainFly:
-	.string "May: Use Fly, and your Pokémon will\n"
+	.string "MAY: Use FLY, and your POKéMON will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
-	.string "But, to use Fly, you have to get\n"
-	.string "the Badge from Fortree City.\l"
+	.string "But, to use FLY, you have to get\n"
+	.string "the GYM BADGE from FORTREE CITY.\l"
 	.string "That's important, so don't forget.\p"
-	.string "You should Fly home and visit\n"
-	.string "Littleroot for a change.\p"
+	.string "You should FLY home and visit\n"
+	.string "LITTLEROOT for a change.\p"
 	.string "I bet your mom's worried about you,\n"
 	.string "{PLAYER}{KUN}.\p"
 	.string "Well, let's meet again somewhere!$"
 
 Route119_Text_BrendanIntro:
-	.string "Brendan: {PLAYER}! So this is where\n"
-	.string "you've been looking for Pokémon?\p"
+	.string "BRENDAN: {PLAYER}! So this is where\n"
+	.string "you've been looking for POKéMON?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
@@ -524,42 +520,42 @@ Route119_Text_BrendanDefeat:
 	.string "You've gotten pretty darn decent.$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "Brendan: I'd say you're good enough\n"
-	.string "to search for Pokémon anywhere.\p"
+	.string "BRENDAN: I'd say you're good enough\n"
+	.string "to search for POKéMON anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
 
 Route119_Text_BrendanExplainFly:
-	.string "Brendan: Use Fly, and your Pokémon\n"
+	.string "BRENDAN: Use FLY, and your POKéMON\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
-	.string "But you need the Fortree Badge \n"
+	.string "But you need the FORTREE GYM BADGE \n"
 	.string "to do that.\p"
 	.string "Anyway, I have to move along.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
-	.string "Scott: Hahahah!\n"
+	.string "SCOTT: Hahahah!\n"
 	.string "Way to go, {PLAYER}{KUN}!\p"
-	.string "I just passed by a Trainer riding\n"
-	.string "a Bike.\p"
-	.string "You just beat that Trainer, didn't you?\n"
+	.string "I just passed by a TRAINER riding\n"
+	.string "a BIKE.\p"
+	.string "You just beat that TRAINER, didn't you?\n"
 	.string "It was pretty obvious that you did.\p"
 	.string "The kid looked really upset with\n"
 	.string "a face all red from anger.\p"
 	.string "I sure seem to run into you often.\n"
-	.string "Are you off to Fortree next?\p"
-	.string "I expect that you'll do well at the.\n"
+	.string "Are you off to FORTREE GYM next?\p"
+	.string "I expect that you'll do well at the GYM.\n"
 	.string "Well, I'll be seeing you!$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "Scott: Hiya, {PLAYER}{KUN}, it's me!\p"
+	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
 	.string "Just as I thought, you won at\n"
-	.string "the Fortree.\p"
+	.string "the FORTREE GYM.\p"
 	.string "Your strength…\n"
-	.string "Perhaps you really are the Trainer\l"
+	.string "Perhaps you really are the TRAINER\l"
 	.string "that I've been searching for.\p"
 	.string "Remember, you have a fan in me.\n"
 	.string "I'll be cheering from the sidelines.\l"
@@ -569,46 +565,46 @@ Route119_Text_ScottYouWonAtFortreeGym:
 
 Route119_Text_StayAwayFromWeatherInstitute:
 	.string "We're standing lookout here.\p"
-	.string "Hey, you! Stay away from the Weather\n"
-	.string "Institute. It's not safe.$"
+	.string "Hey, you! Stay away from the WEATHER\n"
+	.string "INSTITUTE. It's not safe.$"
 
 Route119_Text_DontGoNearWeatherInstitute:
 	.string "Lookout duty is surprisingly boring.\p"
 	.string "Hey, you! Please don't go near the\n"
-	.string "Weather Institute.$"
+	.string "WEATHER INSTITUTE.$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
-	.string "I thought you Fly by catching a whole\n"
-	.string "flock of Bird Pokémon, and then\l"
+	.string "I thought you FLY by catching a whole\n"
+	.string "flock of BIRD POKéMON, and then\l"
 	.string "hanging on to them somehow.\p"
 	.string "But it turns out there's an HM move\n"
-	.string "called Fly!\p"
+	.string "called FLY!\p"
 	.string "I wish I'd known about that a long\n"
 	.string "time ago…$"
 
 Route119_Text_TallGrassSnaresBikeTires:
 	.string "Tch…\n"
 	.string "It's a no-go…\p"
-	.string "The tall grass snares Bike tires.\n"
+	.string "The tall grass snares BIKE tires.\n"
 	.string "There's no way you can cycle here.$"
 
 Route119_Text_CanYourMonMakeSecretBase:
-	.string "Can your Pokémon use its Secret Power\n"
+	.string "Can your POKéMON use its SECRET POWER\n"
 	.string "on a big pile of grass and make a\l"
-	.string "Secret Base?$"
+	.string "SECRET BASE?$"
 
 Route119_Text_RouteSignFortree:
-	.string "Route 119\n"
-	.string "{RIGHT_ARROW} Fortree City$"
+	.string "ROUTE 119\n"
+	.string "{RIGHT_ARROW} FORTREE CITY$"
 
 Route119_Text_WeatherInstitute:
-	.string "Weather Institute$"
+	.string "WEATHER INSTITUTE$"
 
 Route119_Text_TrainerTipsDecoration:
-	.string "Trainer Tips\p"
+	.string "TRAINER TIPS\p"
 	.string "Up to sixteen decorations and\n"
 	.string "furniture items can be placed in\l"
-	.string "a Secret Base.\p"
+	.string "a SECRET BASE.\p"
 	.string "Pick your favorite items and create\n"
-	.string "your very own Secret Base exactly the\l"
+	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"

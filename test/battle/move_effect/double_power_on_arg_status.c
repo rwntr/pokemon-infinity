@@ -12,15 +12,15 @@ SINGLE_BATTLE_TEST("Hex deals double damage to foes with a status", s16 damage)
     PARAMETRIZE { status1 = STATUS1_PARALYSIS; }
     PARAMETRIZE { status1 = STATUS1_TOXIC_POISON; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_HEX].effect == EFFECT_DOUBLE_POWER_ON_ARG_STATUS);
-        ASSUME(gMovesInfo[MOVE_HEX].argument == STATUS1_ANY);
+        ASSUME(GetMoveEffect(MOVE_HEX) == EFFECT_DOUBLE_POWER_ON_ARG_STATUS);
+        ASSUME(GetMoveEffectArg_Status(MOVE_HEX) == STATUS1_ANY);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Status1(status1); }
     } WHEN {
         TURN { MOVE(player, MOVE_HEX); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEX, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[i].damage);
@@ -36,15 +36,15 @@ SINGLE_BATTLE_TEST("Venoshock's power doubles if the target is poisoned/badly po
     PARAMETRIZE { status1 = STATUS1_POISON; }
     PARAMETRIZE { status1 = STATUS1_TOXIC_POISON; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_VENOSHOCK].effect == EFFECT_DOUBLE_POWER_ON_ARG_STATUS);
-        ASSUME(gMovesInfo[MOVE_VENOSHOCK].argument == STATUS1_PSN_ANY);
+        ASSUME(GetMoveEffect(MOVE_VENOSHOCK) == EFFECT_DOUBLE_POWER_ON_ARG_STATUS);
+        ASSUME(GetMoveEffectArg_Status(MOVE_VENOSHOCK) == STATUS1_PSN_ANY);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Status1(status1); }
     } WHEN {
         TURN { MOVE(player, MOVE_VENOSHOCK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VENOSHOCK, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[2].damage);

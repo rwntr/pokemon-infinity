@@ -1,7 +1,3 @@
-@ NOTE: Route 104's sail to Dewford script references local IDs from Dewford's map.
-@  These are labeled in DewfordTown/scripts.inc
-.set LOCALID_RIVAL, 34
-
 Route104_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route104_OnFrame
 	map_script MAP_SCRIPT_ON_TRANSITION, Route104_OnTransition
@@ -36,7 +32,7 @@ Route104_EventScript_TrySetRivalPos::
 	goto_if_ge VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_DontSetRivalPos
 	goto_if_set FLAG_MET_RIVAL_RUSTBORO, Route104_EventScript_DontSetRivalPos
 	goto_if_unset FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_DontSetRivalPos
-	setobjectxyperm LOCALID_RIVAL, 17, 52
+	setobjectxyperm LOCALID_ROUTE104_RIVAL, 17, 52
 	return
 
 Route104_EventScript_DontSetRivalPos::
@@ -45,7 +41,7 @@ Route104_EventScript_DontSetRivalPos::
 Route104_EventScript_Rival::
 	lockall
 	setvar VAR_0x8008, 1
-	applymovement LOCALID_RIVAL, Common_Movement_FacePlayer
+	applymovement LOCALID_ROUTE104_RIVAL, Common_Movement_FacePlayer
 	waitmovement 0
 	goto Route104_EventScript_RivalEncounter
 
@@ -54,22 +50,22 @@ Route104_EventScript_RivalTrigger::
 	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 	setvar VAR_ROUTE104_STATE, 2
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 10
-	addobject LOCALID_RIVAL
+	addobject LOCALID_ROUTE104_RIVAL
 	clearflag FLAG_HIDE_ROUTE_104_RIVAL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBackUp
+	applymovement LOCALID_PLAYER, Route104_Movement_PlayerBackUp
 	waitmovement 0
-	applymovement LOCALID_RIVAL, Route104_Movement_RivalExitBrineysCottage
+	applymovement LOCALID_ROUTE104_RIVAL, Route104_Movement_RivalExitBrineysCottage
 	waitmovement 0
 	delay 20
 	setvar VAR_0x8008, 0
 	call RustboroCity_EventScript_PlayRivalMusic
 	playse SE_PIN
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE104_RIVAL, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_RIVAL, Common_Movement_Delay48
+	applymovement LOCALID_ROUTE104_RIVAL, Common_Movement_Delay48
 	waitmovement 0
 	goto Route104_EventScript_RivalEncounter
 
@@ -107,14 +103,14 @@ Route104_EventScript_MayEncounter::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
-	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
+	applymovement LOCALID_PLAYER, Route104_Movement_PlayerFaceRival
+	applymovement LOCALID_ROUTE104_RIVAL, Route104_Movement_RivalWalkSlowLeft
 	msgbox Route104_Text_MayHowsYourPokedex, MSGBOX_DEFAULT
 	closemessage
 	waitmovement 0
-	applymovement LOCALID_RIVAL, Route104_Movement_RivalApproachPlayer
+	applymovement LOCALID_ROUTE104_RIVAL, Route104_Movement_RivalApproachPlayer
 	waitmovement 0
-	copyobjectxytoperm LOCALID_RIVAL
+	copyobjectxytoperm LOCALID_ROUTE104_RIVAL
 	msgbox Route104_Text_MayMinesDecentLetsBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleMay
 	msgbox Route104_Text_MayHaventRaisedPokemon, MSGBOX_DEFAULT
@@ -193,14 +189,14 @@ Route104_EventScript_BrendanEncounter::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
-	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
+	applymovement LOCALID_PLAYER, Route104_Movement_PlayerFaceRival
+	applymovement LOCALID_ROUTE104_RIVAL, Route104_Movement_RivalWalkSlowLeft
 	msgbox Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT
 	closemessage
 	waitmovement 0
-	applymovement LOCALID_RIVAL, Route104_Movement_RivalApproachPlayer
+	applymovement LOCALID_ROUTE104_RIVAL, Route104_Movement_RivalApproachPlayer
 	waitmovement 0
-	copyobjectxytoperm LOCALID_RIVAL
+	copyobjectxytoperm LOCALID_ROUTE104_RIVAL
 	msgbox Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
 	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
@@ -347,28 +343,28 @@ Route104_EventScript_Girl2::
 	end
 
 Route104_EventScript_SailToDewford::
-	setobjectsubpriority LOCALID_BRINEY_R104, MAP_ROUTE104, 0
-	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104, 0
-	applymovement LOCALID_BRINEY_R104, Route104_Movement_BrineyBoardBoat
+	setobjectsubpriority LOCALID_ROUTE104_BRINEY, MAP_ROUTE104, 0
+	setobjectsubpriority LOCALID_PLAYER, MAP_ROUTE104, 0
+	applymovement LOCALID_ROUTE104_BRINEY, Route104_Movement_BrineyBoardBoat
 	waitmovement 0
-	removeobject LOCALID_BRINEY_R104
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBoardBoat
+	removeobject LOCALID_ROUTE104_BRINEY
+	applymovement LOCALID_PLAYER, Route104_Movement_PlayerBoardBoat
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
+	hideobjectat LOCALID_PLAYER, MAP_ROUTE104
 	call Common_EventScript_PlayBrineysBoatMusic
 	goto_if_set FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordNoCall
 	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordDadCalls
 	end
 
 Route104_EventScript_SailToDewfordNoCall::
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewford
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewford
+	applymovement LOCALID_ROUTE104_BOAT, Route104_Movement_SailToDewford
+	applymovement LOCALID_PLAYER, Route104_Movement_SailToDewford
 	waitmovement 0
 	goto Route104_EventScript_ArriveInDewford
 
 Route104_EventScript_SailToDewfordDadCalls::
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordBeforeDadCalls
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordBeforeDadCalls
+	applymovement LOCALID_ROUTE104_BOAT, Route104_Movement_SailToDewfordBeforeDadCalls
+	applymovement LOCALID_PLAYER, Route104_Movement_SailToDewfordBeforeDadCalls
 	waitmovement 0
 	pokenavcall Route104_Text_DadPokenavCall
 	waitmessage
@@ -379,35 +375,35 @@ Route104_EventScript_SailToDewfordDadCalls::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordAfterDadCalls
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordAfterDadCalls, MAP_ROUTE104
-	waitmovement LOCALID_BOAT_R104, MAP_ROUTE104
+	applymovement LOCALID_PLAYER, Route104_Movement_SailToDewfordAfterDadCalls
+	applymovement LOCALID_ROUTE104_BOAT, Route104_Movement_SailToDewfordAfterDadCalls, MAP_ROUTE104
+	waitmovement LOCALID_ROUTE104_BOAT, MAP_ROUTE104
 	waitmovement 0
 	goto Route104_EventScript_ArriveInDewford
 
 Route104_EventScript_ArriveInDewford::
 	delay 50
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerExitBoat
+	applymovement LOCALID_PLAYER, Route104_Movement_PlayerExitBoat
 	waitmovement 0
 	call Common_EventScript_StopBrineysBoatMusic
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerMoveForBriney
+	showobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
+	applymovement LOCALID_PLAYER, Route104_Movement_PlayerMoveForBriney
 	waitmovement 0
-	setobjectxyperm LOCALID_BRINEY_DEWFORD, 12, 8
-	addobject LOCALID_BRINEY_DEWFORD
-	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
+	setobjectxyperm LOCALID_DEWFORD_BRINEY, 12, 8
+	addobject LOCALID_DEWFORD_BRINEY
+	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
 	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
-	applymovement LOCALID_BRINEY_DEWFORD, Route104_Movement_BrineyExitBoat
+	applymovement LOCALID_DEWFORD_BRINEY, Route104_Movement_BrineyExitBoat
 	waitmovement 0
-	addobject LOCALID_BOAT_DEWFORD
+	addobject LOCALID_DEWFORD_BOAT
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 	call Common_EventScript_StopBrineysBoatMusic
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-	hideobjectat LOCALID_BOAT_R104, MAP_ROUTE104
+	hideobjectat LOCALID_ROUTE104_BOAT, MAP_ROUTE104
 	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
-	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
-	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
-	copyobjectxytoperm LOCALID_BRINEY_DEWFORD
+	resetobjectsubpriority LOCALID_PLAYER, MAP_ROUTE104
+	resetobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN
+	copyobjectxytoperm LOCALID_DEWFORD_BRINEY
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 0
 	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_DeliverLetterReminder
 	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDewford
@@ -1000,7 +996,7 @@ Route104_EventScript_Darian::
 
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"
-	.string "Mr. Briney lives.\p"
+	.string "MR. BRINEY lives.\p"
 	.string "He was once a mighty sailor who never\n"
 	.string "feared the sea, however stormy.$"
 
@@ -1010,20 +1006,20 @@ Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "of the sea?$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
-	.string "If you're going to throw a Poké Ball,\n"
-	.string "weaken the wild Pokémon first.\p"
+	.string "If you're going to throw a POKé BALL,\n"
+	.string "weaken the wild POKéMON first.\p"
 	.string "It will be easier to catch if it's been\n"
 	.string "poisoned, burned, or lulled to sleep.$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
 	.string "You're a thief if you try to steal\n"
-	.string "someone else's Pokémon.\p"
-	.string "You should throw Poké Balls only at\n"
-	.string "wild Pokémon.$"
+	.string "someone else's POKéMON.\p"
+	.string "You should throw POKé BALLS only at\n"
+	.string "wild POKéMON.$"
 
 Route104_Text_ImNotATrainer:
-	.string "Oh, no, I'm not a Trainer.\p"
-	.string "But that's right, if Trainers lock eyes,\n"
+	.string "Oh, no, I'm not a TRAINER.\p"
+	.string "But that's right, if TRAINERS lock eyes,\n"
 	.string "it's a challenge to battle.\p"
 	.string "If you don't want to battle, stay out\n"
 	.string "of their sight.$"
@@ -1032,69 +1028,69 @@ Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "I like filling my mouth with seeds,\n"
 	.string "then spitting them out fast!\p"
 	.string "You can have this, so you try it out!\p"
-	.string "Use it on a Pokémon, and it will learn\n"
+	.string "Use it on a POKéMON, and it will learn\n"
 	.string "a move for firing seeds rapidly.$"
 
 Route104_Text_TMsAreOneTimeUse:
 	.string "A word of advice!\p"
-	.string "A TM, Technical Machine, is good only\n"
+	.string "A TM, TECHNICAL MACHINE, is good only\n"
 	.string "for one-time use.\p"
 	.string "Once you use it, it's gone.\n"
 	.string "Think twice before using it!$"
 
 Route104_Text_DontNeedThisTakeIt:
-	.string "This Flower Shop started selling\n"
+	.string "This FLOWER SHOP started selling\n"
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping.\p"
-	.string "I don't need this White Herb anymore.\n"
+	.string "I don't need this WHITE HERB anymore.\n"
 	.string "Would you take it, please?$"
 
 Route104_Text_FlowerShopSellingSaplings:
-	.string "This Flower Shop started selling\n"
+	.string "This FLOWER SHOP started selling\n"
 	.string "saplings recently.\p"
 	.string "It made me so happy, I went overboard\n"
 	.string "shopping. Where should I put them?$"
 
 Route104_Text_MrBrineysCottage:
-	.string "Mr. Briney's Cottage$"
+	.string "MR. BRINEY'S COTTAGE$"
 
 Route104_Text_RouteSignPetalburg:
-	.string "Route 1O4\n"
-	.string "{RIGHT_ARROW} Petalburg City$"
+	.string "ROUTE 1O4\n"
+	.string "{RIGHT_ARROW} PETALBURG CITY$"
 
 Route104_Text_RouteSignRustboro:
-	.string "Route 1O4\n"
-	.string "{UP_ARROW} Rustboro City$"
+	.string "ROUTE 1O4\n"
+	.string "{UP_ARROW} RUSTBORO CITY$"
 
 Route104_Text_PrettyPetalFlowShop:
-	.string "Pretty Petal Flower Shop$"
+	.string "PRETTY PETAL FLOWER SHOP$"
 
 Route104_Text_TrainerTipsDoubleBattles:
-	.string "Trainer Tips\p"
-	.string "In the Hoenn region there are pairs\n"
-	.string "of Trainers who challenge others\l"
-	.string "for 2-on-2 Pokémon battles called\l"
-	.string "Double Battles.\p"
-	.string "In a Double Battle, the Trainer must\n"
-	.string "send out two Pokémon, the one at the\l"
+	.string "TRAINER TIPS\p"
+	.string "In the HOENN region there are pairs\n"
+	.string "of TRAINERS who challenge others\l"
+	.string "for 2-on-2 POKéMON battles called\l"
+	.string "DOUBLE BATTLES.\p"
+	.string "In a DOUBLE BATTLE, the TRAINER must\n"
+	.string "send out two POKéMON, the one at the\l"
 	.string "left of the list and the top one.\l"
-	.string "Watch how Pokémon are lined up.$"
+	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "May: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "Devon upgraded your Pokénav with\n"
-	.string "the Match Call system, huh?\p"
+	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "DEVON upgraded your POKéNAV with\n"
+	.string "the MATCH CALL system, huh?\p"
 	.string "We should register each other so we\n"
 	.string "can get in contact anytime.$"
 
 Route104_Text_RegisteredMay:
-	.string "{PLAYER} registered May\n"
-	.string "in the Pokénav.$"
+	.string "{PLAYER} registered MAY\n"
+	.string "in the POKéNAV.$"
 
 Route104_Text_MayHowsYourPokedex:
-	.string "May: Oh, by the way, {PLAYER}{KUN},\n"
-	.string "how's your Pokédex coming along?$"
+	.string "MAY: Oh, by the way, {PLAYER}{KUN},\n"
+	.string "how's your POKéDEX coming along?$"
 
 Route104_Text_MayMinesDecentLetsBattle:
 	.string "Mine's looking pretty decent.\n"
@@ -1102,17 +1098,17 @@ Route104_Text_MayMinesDecentLetsBattle:
 	.string "How about a little battle?$"
 
 Route104_Text_MayHaventRaisedPokemon:
-	.string "May: Oh, what's the matter?\p"
+	.string "MAY: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
-	.string "Pokémon very much?\p"
-	.string "That's not very good for a Trainer!$"
+	.string "POKéMON very much?\p"
+	.string "That's not very good for a TRAINER!$"
 
 Route104_Text_MayLetsBattle:
-	.string "May: So, what do you think?\n"
+	.string "MAY: So, what do you think?\n"
 	.string "How about a little battle here?$"
 
 Route104_Text_MayIntro:
-	.string "May: You just became a Trainer,\n"
+	.string "MAY: You just became a TRAINER,\n"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 
 Route104_Text_MayDefeat:
@@ -1120,26 +1116,26 @@ Route104_Text_MayDefeat:
 	.string "You're better than I expected!$"
 
 Route104_Text_MayPostBattle:
-	.string "May: I can tell you've gotten pretty\n"
-	.string "good with the way you handle Pokémon.\p"
+	.string "MAY: I can tell you've gotten pretty\n"
+	.string "good with the way you handle POKéMON.\p"
 	.string "But instead of only making them\n"
-	.string "battle, you should be like Mr. Briney.\p"
+	.string "battle, you should be like MR. BRINEY.\p"
 	.string "It's important to become friends with\n"
-	.string "Pokémon, too.$"
+	.string "POKéMON, too.$"
 
 Route104_Text_BrendanWeShouldRegister:
-	.string "Brendan: Oh, hey, {PLAYER}!\p"
-	.string "Cool, you had Devon install the Match\n"
-	.string "Call system on your Pokénav!\p"
+	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+	.string "Cool, you had DEVON install the MATCH\n"
+	.string "CALL system on your POKéNAV!\p"
 	.string "Let's register each other in our\n"
-	.string "PokénavS so we can keep in touch.$"
+	.string "POKéNAVS so we can keep in touch.$"
 
 Route104_Text_RegisteredBrendan:
-	.string "{PLAYER} registered Brendan\n"
-	.string "in the Pokénav.$"
+	.string "{PLAYER} registered BRENDAN\n"
+	.string "in the POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
-	.string "Brendan: {PLAYER}, how's your Pokédex?\n"
+	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
 	.string "Have you filled in any pages yet?$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:
@@ -1148,25 +1144,25 @@ Route104_Text_BrendanDoingGreatLetsBattle:
 	.string "a battle?$"
 
 Route104_Text_BrendanNoConfidence:
-	.string "Brendan: What's the matter? Don't have\n"
-	.string "any confidence in your Pokémon?$"
+	.string "BRENDAN: What's the matter? Don't have\n"
+	.string "any confidence in your POKéMON?$"
 
 Route104_Text_BrendanLetsBattle:
-	.string "Brendan: What's up?\n"
+	.string "BRENDAN: What's up?\n"
 	.string "Want to have a battle with me?$"
 
 Route104_Text_BrendanIntro:
-	.string "Brendan: I know you just became\n"
-	.string "a Trainer, but I won't go easy!$"
+	.string "BRENDAN: I know you just became\n"
+	.string "a TRAINER, but I won't go easy!$"
 
 Route104_Text_BrendanDefeat:
 	.string "Hmm…\n"
 	.string "You're pretty good.$"
 
 Route104_Text_BrendanPostBattle:
-	.string "Brendan: You've gotten pretty decent\n"
-	.string "at handling Pokémon.\p"
+	.string "BRENDAN: You've gotten pretty decent\n"
+	.string "at handling POKéMON.\p"
 	.string "But, you know, you shouldn't just be\n"
-	.string "making Pokémon battle.\p"
-	.string "Like Mr. Briney, it's important to\n"
-	.string "become friends with your Pokémon.$"
+	.string "making POKéMON battle.\p"
+	.string "Like MR. BRINEY, it's important to\n"
+	.string "become friends with your POKéMON.$"

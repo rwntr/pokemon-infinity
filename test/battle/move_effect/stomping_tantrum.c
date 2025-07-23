@@ -3,10 +3,10 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_STOMPING_TANTRUM].effect == EFFECT_STOMPING_TANTRUM);
+    ASSUME(GetMoveEffect(MOVE_STOMPING_TANTRUM) == EFFECT_STOMPING_TANTRUM);
 }
 
-SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user flinched on the previous turn")
+SINGLE_BATTLE_TEST("Stomping Tantrum will deal double damage if user flinched on the previous turn")
 {
     s16 damage[3];
     GIVEN {
@@ -20,23 +20,23 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user flinched on 
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponent);
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[2]);
+        HP_BAR(opponent, captureDamage: &damage[2]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], Q_4_12(2.0), damage[1]);
         EXPECT_EQ(damage[0], damage[2]);
     }
 }
 
-SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user failed to attack due to paralysis")
+SINGLE_BATTLE_TEST("Stomping Tantrum will deal double damage if user failed to attack due to paralysis")
 {
     s16 damage[3];
     PASSES_RANDOMLY(25, 100, RNG_PARALYSIS);
@@ -50,23 +50,23 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user failed to at
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, opponent);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRICK, opponent);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[2]);
+        HP_BAR(opponent, captureDamage: &damage[2]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], Q_4_12(2.0), damage[1]);
         EXPECT_EQ(damage[0], damage[2]);
     }
 }
 
-SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if target protects")
+SINGLE_BATTLE_TEST("Stomping Tantrum will not deal double damage if target protects")
 {
     s16 damage[2];
     GIVEN {
@@ -78,19 +78,19 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if target protec
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponent);
         MESSAGE("The opposing Wobbuffet protected itself!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }
 }
 
-SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if it failed on the previous turn cause of Protect")
+SINGLE_BATTLE_TEST("Stomping Tantrum will not deal double if it missed")
 {
     s16 damage[2];
     GIVEN {
@@ -98,20 +98,20 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if it failed on 
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHTPOWDER); };
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
-        TURN { MOVE(player, MOVE_STOMPING_TANTRUM, .hit = FALSE); }
+        TURN { MOVE(player, MOVE_STOMPING_TANTRUM, hit: FALSE); }
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
         MESSAGE("Wobbuffet's attack missed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
-        EXPECT_EQ(damage[0], damage[1]);
+        EXPECT_MUL_EQ(damage[0], Q_4_12(2.0), damage[1]);
     }
 }
 
-SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user was immune to previous move")
+SINGLE_BATTLE_TEST("Stomping Tantrum will deal double damage if user was immune to previous move")
 {
     s16 damage[2];
     GIVEN {
@@ -124,10 +124,10 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user was immune t
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage = &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
         MESSAGE("It doesn't affect the opposing Pidgey…");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], Q_4_12(2.0), damage[1]);
     }

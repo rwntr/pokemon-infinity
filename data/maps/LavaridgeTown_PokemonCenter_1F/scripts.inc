@@ -1,5 +1,3 @@
-.set LOCALID_NURSE, 1
-
 LavaridgeTown_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LavaridgeTown_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -11,7 +9,7 @@ LavaridgeTown_PokemonCenter_1F_OnTransition:
 	end
 
 LavaridgeTown_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_LAVARIDGE_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -31,20 +29,20 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
-	.string "I think Pokémon get closer to their\n"
-	.string "Trainers if they spend time together.\p"
+	.string "I think POKéMON get closer to their\n"
+	.string "TRAINERS if they spend time together.\p"
 	.string "The longer the better.\n"
 	.string "That's what I think.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
 	.string "It's sort of magical how just sitting\n"
 	.string "in a hot-spring pool can invigorate.\p"
-	.string "I wish I could let my Pokémon\n"
+	.string "I wish I could let my POKéMON\n"
 	.string "soak, too.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
 	.string "Hohoho! Hey, kid, you can reach\n"
 	.string "the hot springs from here.\p"
-	.string "If Pokémon are getting rest, so too\n"
-	.string "should their Trainers.$"
+	.string "If POKéMON are getting rest, so too\n"
+	.string "should their TRAINERS.$"
 

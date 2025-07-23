@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 VerdanturfTown_BattleTentLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, VerdanturfTown_BattleTentLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, VerdanturfTown_BattleTentLobby_OnWarp
@@ -11,7 +9,7 @@ VerdanturfTown_BattleTentLobby_OnWarp:
 
 VerdanturfTown_BattleTentLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 VerdanturfTown_BattleTentLobby_OnFrame:
@@ -193,13 +191,13 @@ VerdanturfTown_BattleTentLobby_EventScript_EndCancelChallenge::
 	end
 
 VerdanturfTown_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
+	applymovement LOCALID_VERDANTURF_TENT_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
+	applymovement LOCALID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_AttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_VERDANTURF_TENT_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
@@ -329,10 +327,10 @@ VerdanturfTown_BattleTentLobby_EventScript_ExitRules::
 
 VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves:
 	.string "If it doesn't like a certain move,\n"
-	.string "a Pokémon will be reluctant to use it.\p"
+	.string "a POKéMON will be reluctant to use it.\p"
 	.string "It doesn't matter how strong it is,\n"
 	.string "either.\p"
-	.string "For example, a Pokémon with a GENTLE\n"
+	.string "For example, a POKéMON with a GENTLE\n"
 	.string "nature probably won't enjoy hurting\l"
 	.string "its opponents.\p"
 	.string "If it can't seem to live up to its\n"
@@ -343,41 +341,41 @@ VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
 	.string "My big sister is gentle usually.\n"
 	.string "But when she gets angry,\l"
 	.string "she's really, really scary!\p"
-	.string "I bet a gentle Pokémon will be scary\n"
+	.string "I bet a gentle POKéMON will be scary\n"
 	.string "if it gets angry!$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
-	.string "My feelings toward my Pokémon…\n"
+	.string "My feelings toward my POKéMON…\n"
 	.string "The attraction runs deep…\p"
 	.string "Oh, hi, you didn't see that, did you?\n"
 	.string "Well, it doesn't matter.\p"
 	.string "How would you like this TM for\n"
-	.string "your Pokémon?$"
+	.string "your POKéMON?$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
-	.string "My feelings toward my Pokémon…\n"
+	.string "My feelings toward my POKéMON…\n"
 	.string "I'm sure the attraction is mutual!\p"
 	.string "They battle exactly the way I want\n"
 	.string "them to!$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
 	.string "What kind of moves have you taught\n"
-	.string "your Pokémon?\p"
+	.string "your POKéMON?\p"
 	.string "I think you would give yourself\n"
 	.string "an advantage if they knew how to\l"
 	.string "heal or protect themselves.$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
-	.string "Scott: Hey there, {PLAYER}{KUN}!\n"
+	.string "SCOTT: Hey there, {PLAYER}{KUN}!\n"
 	.string "I thought I might see you here.\p"
-	.string "A Battle Tent's a place where\n"
-	.string "you can meet tough Trainers.\p"
+	.string "A BATTLE TENT's a place where\n"
+	.string "you can meet tough TRAINERS.\p"
 	.string "It doesn't matter what the rules are,\n"
 	.string "or how battles are waged, either.\p"
 	.string "{PLAYER}{KUN}, I expect you to do\n"
 	.string "the best you can!$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottVisitRegularly:
-	.string "Scott: I visit here regularly in hopes\n"
-	.string "of seeing tough Trainers in action\l"
+	.string "SCOTT: I visit here regularly in hopes\n"
+	.string "of seeing tough TRAINERS in action\l"
 	.string "in whatever the situation.$"

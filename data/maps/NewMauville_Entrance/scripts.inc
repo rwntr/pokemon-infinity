@@ -22,7 +22,7 @@ NewMauville_Entrance_OnTransition:
 
 NewMauville_Entrance_EventScript_Door::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox NewMauville_Entrance_Text_DoorIsLocked, MSGBOX_DEFAULT
 	checkitem ITEM_BASEMENT_KEY
@@ -50,9 +50,9 @@ NewMauville_Entrance_Text_DoorIsLocked:
 	.string "The door is locked.$"
 
 NewMauville_Entrance_Text_UseBasementKey:
-	.string "Use the Basement Key?$"
+	.string "Use the BASEMENT KEY?$"
 
 NewMauville_Entrance_Text_UsedBasementKey:
-	.string "{PLAYER} used the Basement Key.\p"
+	.string "{PLAYER} used the BASEMENT KEY.\p"
 	.string "The door opened!$"
 

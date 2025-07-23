@@ -7,7 +7,7 @@ SINGLE_BATTLE_TEST("Being airborne causes the target to take double damage from 
     PARAMETRIZE { useDive = FALSE; }
     PARAMETRIZE { useDive = TRUE; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TWISTER].damagesAirborneDoubleDamage);
+        ASSUME(MoveDamagesAirborneDoubleDamage(MOVE_TWISTER));
         PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
     } WHEN {
@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Being airborne causes the target to take double damage from 
         else
             TURN { MOVE(player, MOVE_TWISTER); }
     } SCENE {
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(2.0), results[1].damage);
     }

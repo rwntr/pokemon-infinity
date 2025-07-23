@@ -5,6 +5,7 @@
 #include <limits.h>
 #include "config/general.h" // we need to define config before gba headers as print stuff needs the functions nulled before defines.
 #include "gba/gba.h"
+#include "siirtc.h"
 #include "fpmath.h"
 #include "metaprogram.h"
 #include "constants/global.h"
@@ -27,10 +28,13 @@
 #define asm_unified(x) asm(".syntax unified\n" x "\n.syntax divided")
 #define NAKED __attribute__((naked))
 
+#if MODERN
+#define asm __asm__
+#endif
+
 /// IDE support
 #if defined(__APPLE__) || defined(__CYGWIN__) || defined(__INTELLISENSE__)
 // We define these when using certain IDEs to fool preproc
-#define abs(x) (((x) < 0) ? -(x) : (x))
 #define _(x)        {x}
 #define __(x)       {x}
 #define INCBIN(...) {0}
@@ -48,8 +52,6 @@
 // GameFreak used a macro called "NELEMS", as evidenced by
 // AgbAssert calls.
 #define NELEMS(arr) (sizeof(arr)/sizeof(*(arr)))
-
-
 
 #define SWAP(a, b, temp)    \
 {                           \
@@ -134,7 +136,7 @@
 
 #define FEATURE_FLAG_ASSERT(flag, id) STATIC_ASSERT(flag > TEMP_FLAGS_END || flag == 0, id)
 
-#ifndef NDEBUG
+// NOTE: This uses hardware timers 2 and 3; this will not work during active link connections or with the eReader
 static inline void CycleCountStart()
 {
     REG_TM2CNT_H = 0;
@@ -157,7 +159,6 @@ static inline u32 CycleCountEnd()
     // return result
     return REG_TM2CNT_L | (REG_TM3CNT_L << 16u);
 }
-#endif
 
 struct Coords8
 {
@@ -203,18 +204,50 @@ struct Time
     /*0x04*/ s8 seconds;
 };
 
+struct NPCFollowerMapData
+{
+    u8 id;
+    u8 number;
+    u8 group;
+};
+
+struct NPCFollower
+{
+    u8 inProgress:1;
+    u8 warpEnd:1;
+    u8 createSurfBlob:3;
+    u8 comeOutDoorStairs:3;
+    u8 objId;
+    u8 currentSprite;
+    u8 delayedState;
+    struct NPCFollowerMapData map;
+    struct Coords16 log;
+    const u8 *script;
+    u16 flag;
+    u16 graphicsId;
+    u16 flags;
+    u8 battlePartner; // If you have more than 255 total battle partners defined, change this to a u16
+};
+
 #include "constants/items.h"
 #define ITEM_FLAGS_COUNT ((ITEMS_COUNT / 8) + ((ITEMS_COUNT % 8) ? 1 : 0))
 
 struct SaveBlock3
 {
 #if OW_USE_FAKE_RTC
-    struct Time fakeRTC;
+    struct SiiRtcInfo fakeRTC;
+#endif
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    struct NPCFollower NPCfollower;
 #endif
 #if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_FIRST_TIME
     u8 itemFlags[ITEM_FLAGS_COUNT];
 #endif
-};
+#if USE_DEXNAV_SEARCH_LEVELS == TRUE
+    u8 dexNavSearchLevels[NUM_SPECIES];
+#endif
+    u8 dexNavChain;
+}; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;
 
@@ -489,7 +522,7 @@ struct ApprenticeQuestion
     u8 moveSlot:2;
     u8 suggestedChange:2; // TRUE if told to use held item or second move, FALSE if told to use no item or first move
     //u8 padding;
-    u16 data; // used both as an itemId and a moveId
+    u16 data; // used both as an itemId and a move
 };
 
 struct PlayersApprentice
@@ -544,11 +577,10 @@ struct SaveBlock2
              u16 optionsBattleStyle:1; // OPTIONS_BATTLE_STYLE_[SHIFT/SET]
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
-            u16 gameDifficulty:4; // Which difficulty the player chose (Normal/Hard/Challenge/Insanity, with Normal being 0)
+             //u16 padding1:4;
+             //u16 padding2;
     /*0x18*/ struct Pokedex pokedex;
-    /*0x90*/ u8 expCapType;
-             u8 levelCaps; // Various options for level caps
-             bool8 autoRun;
+    /*0x90*/ u8 filler_90[0x8];
     /*0x98*/ struct Time localTimeOffset;
     /*0xA0*/ struct Time lastBerryTreeUpdate;
     /*0xA8*/ u32 gcnLinkFlags; // Read by Pokémon Colosseum/XD
@@ -569,6 +601,8 @@ struct SaveBlock2
 }; // sizeof=0xF2C
 
 extern struct SaveBlock2 *gSaveBlock2Ptr;
+
+extern u8 UpdateSpritePaletteWithTime(u8);
 
 struct SecretBaseParty
 {
@@ -646,7 +680,8 @@ struct Roamer
     /*0x12*/ u8 tough;
     /*0x13*/ bool8 active;
     /*0x14*/ u8 statusB; // Stores frostbite
-    /*0x14*/ u8 filler[0x7];
+    /*0x15*/ bool8 shiny;
+    /*0x16*/ u8 filler[0x6];
 };
 
 struct RamScriptData
@@ -654,7 +689,7 @@ struct RamScriptData
     u8 magic;
     u8 mapGroup;
     u8 mapNum;
-    u8 objectId;
+    u8 localId;
     u8 script[995];
     //u8 padding;
 };
@@ -675,7 +710,6 @@ struct DewfordTrend
     u16 rand;
     u16 words[2];
 }; /*size = 0x8*/
-
 
 struct MauvilleManCommon
 {
@@ -1037,9 +1071,6 @@ struct SaveBlock1
     /*0x650*/ struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     /*0x690*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
     /*0x790*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
-    /*0x650*/ struct ItemSlot bagPocket_Medicine[BAG_MEDICINE_COUNT];
-    /*0x690*/ struct ItemSlot bagPocket_Battle[BAG_BATTLE_COUNT];
-    /*0x790*/ struct ItemSlot bagPocket_MegaStones[BAG_MEGASTONES_COUNT];
     /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
 #if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1 == FALSE
     /*0x988*/ u8 filler1[0x34]; // Previously Dex Flags, feel free to remove.
@@ -1127,7 +1158,7 @@ struct SaveBlock1
     // sizeof: 0x3???
 };
 
-extern struct SaveBlock1* gSaveBlock1Ptr;
+extern struct SaveBlock1 *gSaveBlock1Ptr;
 
 struct MapPosition
 {
@@ -1135,5 +1166,9 @@ struct MapPosition
     s16 y;
     s8 elevation;
 };
+
+#if T_SHOULD_RUN_MOVE_ANIM
+extern bool32 gLoadFail;
+#endif // T_SHOULD_RUN_MOVE_ANIM
 
 #endif // GUARD_GLOBAL_H

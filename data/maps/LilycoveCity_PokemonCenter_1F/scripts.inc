@@ -1,5 +1,3 @@
-.set LOCALID_NURSE, 1
-
 LilycoveCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -26,7 +24,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_ShowContestLadyMon::
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_LILYCOVE_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -51,18 +49,18 @@ LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone::
 	end
 
 LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon:
-	.string "I wonder how many kinds of Pokémon\n"
+	.string "I wonder how many kinds of POKéMON\n"
 	.string "there are in the world.\p"
 	.string "It'd be great to cross seas and\n"
-	.string "trade Pokémon with people far away.$"
+	.string "trade POKéMON with people far away.$"
 
 LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels:
 	.string "I've been hearing about some rotten\n"
-	.string "scoundrels who steal Pokémon and rip\l"
-	.string "off Meteorites.$"
+	.string "scoundrels who steal POKéMON and rip\l"
+	.string "off METEORITES.$"
 
 LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels:
 	.string "Those rotten scoundrels who steal\n"
-	.string "Pokémon and rip off Meteorites…\p"
+	.string "POKéMON and rip off METEORITES…\p"
 	.string "I haven't seen them around recently.$"
 

@@ -44,9 +44,6 @@ static const u16 sButterfreeFormSpeciesIdTable[] = {
 #if P_GIGANTAMAX_FORMS
     SPECIES_BUTTERFREE_GMAX,
 #endif
-#if P_MEGA_EVOLUTIONS
-    SPECIES_BUTTERFREE_MEGA,
-#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CATERPIE
@@ -247,9 +244,6 @@ static const u16 sMachampFormSpeciesIdTable[] = {
 #if P_GIGANTAMAX_FORMS
     SPECIES_MACHAMP_GMAX,
 #endif
-#if P_MEGA_EVOLUTIONS
-    SPECIES_MACHAMP_MEGA,
-#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MACHOP
@@ -388,9 +382,6 @@ static const u16 sKinglerFormSpeciesIdTable[] = {
 #if P_GIGANTAMAX_FORMS
     SPECIES_KINGLER_GMAX,
 #endif
-#if P_MEGA_EVOLUTIONS
-    SPECIES_KINGLER_MEGA,
-#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_KRABBY
@@ -454,38 +445,6 @@ static const u16 sKangaskhanFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_KANGASKHAN
 
-#if P_FAMILY_TRAPINCH
-static const u16 sFlygonFormSpeciesIdTable[] = {
-        SPECIES_FLYGON,
-#if P_MEGA_EVOLUTIONS
-        SPECIES_FLYGON_MEGA,
-#endif
-        FORM_SPECIES_END,
-};
-#endif //P_FAMILY_TRAPINCH
-
-#if P_FAMILY_HORSEA
-#if P_GEN_2_CROSS_EVOS
-static const u16 sKingdraFormSpeciesIdTable[] = {
-        SPECIES_KINGDRA,
-#if P_MEGA_EVOLUTIONS
-        SPECIES_KINGDRA_MEGA,
-#endif
-        FORM_SPECIES_END,
-};
-#endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_HORSEA
-
-#if P_FAMILY_FEEBAS
-static const u16 sMiloticFormSpeciesIdTable[] = {
-        SPECIES_MILOTIC,
-#if P_MEGA_EVOLUTIONS
-        SPECIES_MILOTIC_MEGA,
-#endif
-        FORM_SPECIES_END,
-};
-#endif //P_FAMILY_FEEBAS
-
 #if P_FAMILY_MR_MIME
 static const u16 sMrMimeFormSpeciesIdTable[] = {
     SPECIES_MR_MIME,
@@ -545,9 +504,6 @@ static const u16 sLaprasFormSpeciesIdTable[] = {
     SPECIES_LAPRAS,
 #if P_GIGANTAMAX_FORMS
     SPECIES_LAPRAS_GMAX,
-#endif
-#if P_MEGA_EVOLUTIONS
-    SPECIES_LAPRAS_MEGA,
 #endif
     FORM_SPECIES_END,
 };
@@ -1503,15 +1459,15 @@ static const u16 sFlorgesFormSpeciesIdTable[] = {
 #if P_FAMILY_FURFROU
 static const u16 sFurfrouFormSpeciesIdTable[] = {
     SPECIES_FURFROU_NATURAL,
-    SPECIES_FURFROU_HEART_TRIM,
-    SPECIES_FURFROU_STAR_TRIM,
-    SPECIES_FURFROU_DIAMOND_TRIM,
-    SPECIES_FURFROU_DEBUTANTE_TRIM,
-    SPECIES_FURFROU_MATRON_TRIM,
-    SPECIES_FURFROU_DANDY_TRIM,
-    SPECIES_FURFROU_LA_REINE_TRIM,
-    SPECIES_FURFROU_KABUKI_TRIM,
-    SPECIES_FURFROU_PHARAOH_TRIM,
+    SPECIES_FURFROU_HEART,
+    SPECIES_FURFROU_STAR,
+    SPECIES_FURFROU_DIAMOND,
+    SPECIES_FURFROU_DEBUTANTE,
+    SPECIES_FURFROU_MATRON,
+    SPECIES_FURFROU_DANDY,
+    SPECIES_FURFROU_LA_REINE,
+    SPECIES_FURFROU_KABUKI,
+    SPECIES_FURFROU_PHARAOH,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_FURFROU

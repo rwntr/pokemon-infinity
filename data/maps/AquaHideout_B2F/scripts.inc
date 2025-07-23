@@ -1,6 +1,3 @@
-.set LOCALID_MATT, 1
-.set LOCALID_SUBMARINE, 4
-
 AquaHideout_B2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, AquaHideout_B2F_OnTransition
 	.byte 0
@@ -15,7 +12,7 @@ AquaHideout_B2F_EventScript_PreventMattNoticing::
 
 AquaHideout_B2F_EventScript_MattNoticePlayer::
 	lockall
-	setvar VAR_0x8008, LOCALID_MATT
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 	playse SE_PIN
 	applymovement VAR_0x8008, Common_Movement_ExclamationMark
 	waitmovement 0
@@ -32,8 +29,8 @@ AquaHideout_B2F_EventScript_Matt::
 	end
 
 AquaHideout_B2F_EventScript_SubmarineEscape::
-	setvar VAR_0x8008, LOCALID_MATT
-	setvar VAR_0x8009, LOCALID_SUBMARINE
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
+	setvar VAR_0x8009, LOCALID_AQUA_HIDEOUT_SUBMARINE
 	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
@@ -94,7 +91,7 @@ AquaHideout_B2F_Text_MattIntro:
 	.string "Got here already, did you?\n"
 	.string "We underestimated you!\p"
 	.string "But this is it!\p"
-	.string "I'm a cut above the Grunts you've seen\n"
+	.string "I'm a cut above the GRUNTS you've seen\n"
 	.string "so far.\p"
 	.string "I'm not stalling for time.\n"
 	.string "I'm going to pulverize you!$"
@@ -105,16 +102,16 @@ AquaHideout_B2F_Text_MattDefeat:
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
 	.string "Hehehe!\p"
-	.string "While I was toying with you, our Boss\n"
+	.string "While I was toying with you, our BOSS\n"
 	.string "got through his preparations!$"
 
 AquaHideout_B2F_Text_MattPostBattle:
 	.string "Hehehe!\p"
-	.string "Our Boss has already gone on his way to\n"
+	.string "Our BOSS has already gone on his way to\n"
 	.string "some cave under the sea!\p"
 	.string "If you're going to give chase, you'd\n"
 	.string "better search the big, wide sea beyond\l"
-	.string "Lilycove.\p"
+	.string "LILYCOVE.\p"
 	.string "But will you find it then?\n"
 	.string "Hehehe!$"
 
@@ -127,11 +124,11 @@ AquaHideout_B2F_Text_Grunt4Defeat:
 	.string "Lost and dazed…$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "Boss…\n"
+	.string "BOSS…\n"
 	.string "Is this good enough?$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "Warp panels, the Hideout's pride\n"
+	.string "Warp panels, the HIDEOUT's pride\n"
 	.string "and joy!\p"
 	.string "You're clueless about where you are,\n"
 	.string "aren't you?\p"
@@ -144,12 +141,12 @@ AquaHideout_B2F_Text_Grunt6Defeat:
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
 	.string "That reminds me… I can't remember\n"
-	.string "where I put the Master Ball.\p"
-	.string "If I fail to guard it, our Boss will\n"
+	.string "where I put the MASTER BALL.\p"
+	.string "If I fail to guard it, our BOSS will\n"
 	.string "chew me out…$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
-	.string "When I joined Team Aqua, the first\n"
+	.string "When I joined TEAM AQUA, the first\n"
 	.string "thing I had to learn was how these\l"
 	.string "warp panels connected.$"
 

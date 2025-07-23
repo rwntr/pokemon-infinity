@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Dry Skin causes 1/8th Max HP damage in Sun")
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
-        HP_BAR(player, .damage = 200 / 8);
+        HP_BAR(player, damage: 200 / 8);
         MESSAGE("Parasect's Dry Skin takes its toll!");
     }
 }
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Dry Skin heals 1/8th Max HP in Rain")
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
         MESSAGE("Parasect's Dry Skin restored its HP a little!");
-        HP_BAR(player, .damage = -(200 / 8));
+        HP_BAR(player, damage: -(200 / 8));
     }
 }
 
@@ -39,8 +39,8 @@ SINGLE_BATTLE_TEST("Dry Skin increases damage taken from Fire-type moves by 25%"
     PARAMETRIZE { ability = ABILITY_EFFECT_SPORE; }
     PARAMETRIZE { ability = ABILITY_DRY_SKIN; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_EMBER].type == TYPE_FIRE);
-        ASSUME(gMovesInfo[MOVE_EMBER].power == 40);
+        ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
+        ASSUME(GetMovePower(MOVE_EMBER) == 40);
         ASSUME(gSpeciesInfo[SPECIES_PARASECT].types[0] == TYPE_BUG);
         ASSUME(gSpeciesInfo[SPECIES_PARASECT].types[1] == TYPE_GRASS);
         ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] == TYPE_PSYCHIC);
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Dry Skin increases damage taken from Fire-type moves by 25%"
         TURN { MOVE(player, MOVE_EMBER); }
     } SCENE {
         MESSAGE("Wobbuffet used Ember!");
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         // Due to numerics related to rounding on each applied multiplier,
         // the ability effect doesn't manifest as a 25% damage increase, but as a ~31% damage increase in this case.
@@ -64,14 +64,14 @@ SINGLE_BATTLE_TEST("Dry Skin increases damage taken from Fire-type moves by 25%"
 SINGLE_BATTLE_TEST("Dry Skin heals 25% when hit by water type moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_BUBBLE].type == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_BUBBLE); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
-        HP_BAR(player, .damage = -50);
+        HP_BAR(player, damage: -50);
         MESSAGE("Parasect restored HP using its Dry Skin!");
     }
 }
@@ -79,7 +79,7 @@ SINGLE_BATTLE_TEST("Dry Skin heals 25% when hit by water type moves")
 SINGLE_BATTLE_TEST("Dry Skin does not activate if protected")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_BUBBLE].type == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -92,15 +92,15 @@ SINGLE_BATTLE_TEST("Dry Skin does not activate if protected")
 SINGLE_BATTLE_TEST("Dry Skin is only triggered once on multi strike moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_WATER_SHURIKEN].type == TYPE_WATER);
-        ASSUME(gMovesInfo[MOVE_WATER_SHURIKEN].effect == EFFECT_MULTI_HIT);
+        ASSUME(GetMoveType(MOVE_WATER_SHURIKEN) == TYPE_WATER);
+        ASSUME(GetMoveEffect(MOVE_WATER_SHURIKEN) == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_WATER_SHURIKEN); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
-        HP_BAR(player, .damage = -50);
+        HP_BAR(player, damage: -50);
         MESSAGE("Parasect restored HP using its Dry Skin!");
     }
 }
@@ -111,14 +111,14 @@ SINGLE_BATTLE_TEST("Dry Skin prevents Absorb Bulb and Luminous Moss from activat
     PARAMETRIZE { item = ITEM_ABSORB_BULB; }
     PARAMETRIZE { item = ITEM_LUMINOUS_MOSS; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_BUBBLE].type == TYPE_WATER);
+        ASSUME(GetMoveType(MOVE_BUBBLE) == TYPE_WATER);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_BUBBLE); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_DRY_SKIN);
-        HP_BAR(player, .damage = -50);
+        HP_BAR(player, damage: -50);
         MESSAGE("Parasect restored HP using its Dry Skin!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);

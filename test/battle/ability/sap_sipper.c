@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Sap Sipper negates effects from Grass-type moves")
     } SCENE {
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            STATUS_ICON(player, .sleep = TRUE);
+            STATUS_ICON(player, sleep: TRUE);
         }
     }
 }
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Sap Sipper does not increase Attack if already maxed")
 SINGLE_BATTLE_TEST("Sap Sipper blocks multi-hit grass type moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_BULLET_SEED].effect == EFFECT_MULTI_HIT);
+        ASSUME(GetMoveEffect(MOVE_BULLET_SEED) == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_MARILL) { Ability(ABILITY_SAP_SIPPER); }
         OPPONENT(SPECIES_SHELLDER) { Ability(ABILITY_SKILL_LINK); }
     } WHEN {

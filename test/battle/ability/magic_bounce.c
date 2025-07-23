@@ -5,7 +5,8 @@
 SINGLE_BATTLE_TEST("Magic Bounce bounces back status moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
+        ASSUME(GetMoveEffect(MOVE_TOXIC) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_TOXIC) == MOVE_EFFECT_TOXIC);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
     } WHEN {
@@ -15,15 +16,16 @@ SINGLE_BATTLE_TEST("Magic Bounce bounces back status moves")
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
         MESSAGE("Wynaut's Toxic was bounced back by the opposing Espeon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, opponent);
-        STATUS_ICON(player, .badPoison = TRUE);
+        STATUS_ICON(player, badPoison: TRUE);
     }
 }
 
 SINGLE_BATTLE_TEST("Magic Bounce bounces back powder moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_STUN_SPORE].powderMove);
-        ASSUME(gMovesInfo[MOVE_STUN_SPORE].effect == EFFECT_PARALYZE);
+        ASSUME(IsPowderMove(MOVE_STUN_SPORE));
+        ASSUME(GetMoveEffect(MOVE_STUN_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_STUN_SPORE) == MOVE_EFFECT_PARALYSIS);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
     } WHEN {
@@ -33,14 +35,14 @@ SINGLE_BATTLE_TEST("Magic Bounce bounces back powder moves")
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
         MESSAGE("Wynaut's Stun Spore was bounced back by the opposing Espeon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
-        STATUS_ICON(player, .paralysis = TRUE);
+        STATUS_ICON(player, paralysis: TRUE);
     }
 }
 
 SINGLE_BATTLE_TEST("Magic Bounce cannot bounce back powder moves against Grass Types")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_STUN_SPORE].powderMove);
+        ASSUME(IsPowderMove(MOVE_STUN_SPORE));
         ASSUME(gSpeciesInfo[SPECIES_ODDISH].types[0] == TYPE_GRASS);
         PLAYER(SPECIES_ODDISH);
         OPPONENT(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
@@ -52,15 +54,15 @@ SINGLE_BATTLE_TEST("Magic Bounce cannot bounce back powder moves against Grass T
         MESSAGE("Oddish's Stun Spore was bounced back by the opposing Espeon's Magic Bounce!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
         MESSAGE("It doesn't affect Oddish…");
-        NOT STATUS_ICON(player, .paralysis = TRUE);
+        NOT STATUS_ICON(player, paralysis: TRUE);
     }
 }
 
 DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting both foes at two foes")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
-        ASSUME(gMovesInfo[MOVE_LEER].target == MOVE_TARGET_BOTH);
+        ASSUME(GetMoveEffect(MOVE_LEER) == EFFECT_DEFENSE_DOWN);
+        ASSUME(GetMoveTarget(MOVE_LEER) == MOVE_TARGET_BOTH);
         PLAYER(SPECIES_ABRA);
         PLAYER(SPECIES_KADABRA);
         OPPONENT(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
@@ -92,7 +94,7 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting foes field")
                   battlerTwo = SPECIES_ESPEON; abilityBattlerTwo = ABILITY_MAGIC_BOUNCE; }
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_STEALTH_ROCK].target == MOVE_TARGET_OPPONENTS_FIELD);
+        ASSUME(GetMoveTarget(MOVE_STEALTH_ROCK) == MOVE_TARGET_OPPONENTS_FIELD);
         PLAYER(SPECIES_ABRA);
         PLAYER(SPECIES_KADABRA);
         OPPONENT(battlerOne) { Ability(abilityBattlerOne); }
@@ -118,7 +120,8 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting foes field")
 SINGLE_BATTLE_TEST("Magic Bounce bounced back status moves can not be bounced back by Magic Bounce")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
+        ASSUME(GetMoveEffect(MOVE_TOXIC) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_TOXIC) == MOVE_EFFECT_TOXIC);
         PLAYER(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
         OPPONENT(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
     } WHEN {
@@ -129,6 +132,6 @@ SINGLE_BATTLE_TEST("Magic Bounce bounced back status moves can not be bounced ba
         MESSAGE("Espeon's Toxic was bounced back by the opposing Espeon's Magic Bounce!");
         NOT ABILITY_POPUP(player, ABILITY_MAGIC_BOUNCE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, opponent);
-        STATUS_ICON(player, .badPoison = TRUE);
+        STATUS_ICON(player, badPoison: TRUE);
     }
 }

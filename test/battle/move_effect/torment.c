@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_TORMENT].effect == EFFECT_TORMENT);
+    ASSUME(GetMoveEffect(MOVE_TORMENT) == EFFECT_TORMENT);
 }
 
 SINGLE_BATTLE_TEST("Torment prevents consecutive move uses")
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Torment prevents consecutive move uses")
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_SPLASH, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_TORMENT); MOVE(opponent, MOVE_SPLASH); }
-        TURN { MOVE(opponent, MOVE_SPLASH, .allowed = FALSE); MOVE(opponent, MOVE_CELEBRATE); }
+        TURN { MOVE(opponent, MOVE_SPLASH, allowed: FALSE); MOVE(opponent, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TORMENT, player);
         MESSAGE("The opposing Wobbuffet was subjected to torment!");
@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Torment forces Struggle if the only move is prevented")
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_SPLASH); }
     } WHEN {
         TURN { MOVE(player, MOVE_TORMENT); MOVE(opponent, MOVE_SPLASH); }
-        TURN { MOVE(opponent, MOVE_SPLASH, .allowed = FALSE); }
+        TURN { MOVE(opponent, MOVE_SPLASH, allowed: FALSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPLASH, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRUGGLE, opponent);

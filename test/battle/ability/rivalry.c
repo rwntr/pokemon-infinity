@@ -20,10 +20,10 @@ SINGLE_BATTLE_TEST("Rivalry increases power by x1.25 towards Pokémon of the sam
         PLAYER(species) { Ability(ability); }
         OPPONENT(species);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.25), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(1.25), results[3].damage);
@@ -42,10 +42,10 @@ SINGLE_BATTLE_TEST("Rivalry decreases power by x0.75 towards Pokémon of differe
         PLAYER(species1) { Ability(ability); }
         OPPONENT(species2);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.75), results[1].damage);
         EXPECT_MUL_EQ(results[2].damage, Q_4_12(0.75), results[3].damage);
@@ -65,10 +65,10 @@ SINGLE_BATTLE_TEST("Rivalry doesn't modify power if the attacker is genderless",
         PLAYER(SPECIES_PORYGON) { Ability(ABILITY_TRACE); } // No genderless mon naturally gets Rivalry
         OPPONENT(species) { Ability(ability); };
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT(results[0].damage == results[1].damage);
         EXPECT(results[2].damage == results[3].damage);
@@ -88,10 +88,10 @@ SINGLE_BATTLE_TEST("Rivalry doesn't modify power if the target is genderless", s
         PLAYER(species) { Ability(ability); };
         OPPONENT(SPECIES_PORYGON);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT(results[0].damage == results[1].damage);
         EXPECT(results[2].damage == results[3].damage);

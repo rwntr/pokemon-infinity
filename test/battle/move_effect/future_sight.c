@@ -3,10 +3,10 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_SEED_FLARE].power == gMovesInfo[MOVE_FUTURE_SIGHT].power);
-    ASSUME(gMovesInfo[MOVE_SEED_FLARE].category == gMovesInfo[MOVE_FUTURE_SIGHT].category);
-    ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
-    ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].power > 0);
+    ASSUME(GetMovePower(MOVE_SEED_FLARE) == GetMovePower(MOVE_FUTURE_SIGHT));
+    ASSUME(GetMoveCategory(MOVE_SEED_FLARE) == GetMoveCategory(MOVE_FUTURE_SIGHT));
+    ASSUME(GetMoveEffect(MOVE_FUTURE_SIGHT) == EFFECT_FUTURE_SIGHT);
+    ASSUME(GetMovePower(MOVE_FUTURE_SIGHT) > 0);
 }
 
 SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without modifiers")
@@ -30,10 +30,10 @@ SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without 
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
-        HP_BAR(opponent, .captureDamage =  &seedFlareDmg);
+        HP_BAR(opponent, captureDamage: &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         MESSAGE("The opposing Regice took the Future Sight attack!");
-        HP_BAR(opponent, .captureDamage =  &futureSightDmg);
+        HP_BAR(opponent, captureDamage: &futureSightDmg);
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
     }
@@ -56,10 +56,10 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
-        HP_BAR(opponent, .captureDamage =  &seedFlareDmg);
+        HP_BAR(opponent, captureDamage: &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         MESSAGE("The opposing Regice took the Future Sight attack!");
-        HP_BAR(opponent, .captureDamage =  &futureSightDmg);
+        HP_BAR(opponent, captureDamage: &futureSightDmg);
         NOT MESSAGE("Raichu was hurt by its Life Orb!");
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
@@ -83,9 +83,9 @@ SINGLE_BATTLE_TEST("Future Sight receives STAB from party mon")
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
-        HP_BAR(opponent, .captureDamage =  &seedFlareDmg);
+        HP_BAR(opponent, captureDamage: &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        HP_BAR(opponent, .captureDamage =  &futureSightDmg);
+        HP_BAR(opponent, captureDamage: &futureSightDmg);
     } THEN {
         EXPECT_MUL_EQ(seedFlareDmg, Q_4_12(1.5), futureSightDmg);
     }
@@ -159,7 +159,7 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints by residual d
 SINGLE_BATTLE_TEST("Future Sight breaks Focus Sash and doesn't make the holder endure another move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_PSYCHIC].power > 0);
+        ASSUME(GetMovePower(MOVE_PSYCHIC) > 0);
         ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PIDGEY) { Level(1); Item(ITEM_FOCUS_SASH); }

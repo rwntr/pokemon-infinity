@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_EMBARGO].effect == EFFECT_EMBARGO);
+    ASSUME(GetMoveEffect(MOVE_EMBARGO) == EFFECT_EMBARGO);
 }
 
 SINGLE_BATTLE_TEST("Embargo blocks the effect of an affected Pokémon's held item")
@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Embargo blocks the effect of an affected Pokémon's held ite
         MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
         MESSAGE("Wobbuffet used Fissure!");
-        HP_BAR(opponent, .hp = 0);
+        HP_BAR(opponent, hp: 0);
     }
 }
 
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Embargo blocks an affected Pokémon's trainer from using ite
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
-        TURN { USE_ITEM(opponent, ITEM_POTION, .partyIndex = 0); }
+        TURN { USE_ITEM(opponent, ITEM_POTION, partyIndex: 0); }
     } SCENE {
         MESSAGE("Wobbuffet used Embargo!");
         MESSAGE("The opposing Wobbuffet can't use items anymore!");
@@ -77,7 +77,7 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POWER_WEIGHT); }
         OPPONENT(SPECIES_CATERPIE) { HP(1); }
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffect == HOLD_EFFECT_POWER_ITEM);
-        ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam == 16);
+        ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam == 8);
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].secondaryId == STAT_HP);
         ASSUME(gSpeciesInfo[SPECIES_CATERPIE].evYield_HP == 1);
     } WHEN {
@@ -90,7 +90,7 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
         MESSAGE("Wobbuffet used Scratch!");
         MESSAGE("The wild Caterpie fainted!");
     } THEN {
-        finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam);
+        finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam + gSpeciesInfo[SPECIES_CATERPIE].evYield_HP);
         EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HP_EV), finalHPEVAmount);
     }
 }
@@ -152,7 +152,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't block a held item's form-changing effect, bu
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); MOVE(opponent, MOVE_RAZOR_LEAF); }
     } SCENE {
-        HP_BAR(player, .captureDamage =  &results[i].damage);
+        HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -245,7 +245,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't block the effects of berries obtained throug
         MESSAGE("Wobbuffet used Pluck!");
         HP_BAR(opponent);
         MESSAGE("Wobbuffet stole and ate its target's Oran Berry!");
-        HP_BAR(player, .damage = -hp);
+        HP_BAR(player, damage: -hp);
     }
 }
 
@@ -264,7 +264,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Plate items on the move J
         MESSAGE("The opposing Dragonite used Embargo!");
         MESSAGE("Arceus can't use items anymore!");
         MESSAGE("Arceus used Judgment!");
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -285,7 +285,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Drive items on the move T
         MESSAGE("The opposing Gyarados used Embargo!");
         MESSAGE("Genesect can't use items anymore!");
         MESSAGE("Genesect used Techno Blast!");
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -306,7 +306,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Memory items on the move 
         MESSAGE("The opposing Venusaur used Embargo!");
         MESSAGE("Silvally can't use items anymore!");
         MESSAGE("Silvally used Multi-Attack!");
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.0), results[1].damage);
     }
@@ -342,7 +342,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
-        TURN { MOVE(opponent, MOVE_CELEBRATE, .gimmick = GIMMICK_MEGA); }
+        TURN { MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); }
     } SCENE {
         // Turn 1
         MESSAGE("Wobbuffet used Embargo!");

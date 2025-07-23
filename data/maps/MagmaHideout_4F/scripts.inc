@@ -1,11 +1,3 @@
-.set LOCALID_GROUDON, 1
-.set LOCALID_GRUNT_1, 2
-.set LOCALID_GRUNT_2, 3
-.set LOCALID_GRUNT_3, 4
-.set LOCALID_TABITHA, 5
-.set LOCALID_MAXIE, 6
-.set LOCALID_GROUDON_SLEEPING, 7
-
 MagmaHideout_4F_MapScripts::
 	.byte 0
 
@@ -23,14 +15,14 @@ MagmaHideout_4F_EventScript_Maxie::
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	special DoOrbEffect
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 150
-	removeobject LOCALID_GROUDON_SLEEPING
-	addobject LOCALID_GROUDON
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON_SLEEPING
+	addobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
 	waitstate
 	delay 60
-	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
 	waitmovement 0
 	special FadeOutOrbEffect
 	waitstate
@@ -40,9 +32,9 @@ MagmaHideout_4F_EventScript_Maxie::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonExit
 	waitmovement 0
-	removeobject LOCALID_GROUDON
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
 	delay 4
 	setvar VAR_0x8004, 2  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
@@ -51,14 +43,14 @@ MagmaHideout_4F_EventScript_Maxie::
 	special ShakeCamera
 	waitstate
 	delay 30
-	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 30
-	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
@@ -71,11 +63,11 @@ MagmaHideout_4F_EventScript_Maxie::
 	setflag FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT
 	setvar VAR_SLATEPORT_HARBOR_STATE, 1
 	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_MAXIE
-	removeobject LOCALID_GRUNT_1
-	removeobject LOCALID_GRUNT_2
-	removeobject LOCALID_GRUNT_3
-	removeobject LOCALID_TABITHA
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_MAXIE
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
 	releaseall
@@ -134,18 +126,18 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "I want to see Groudon, too, but they\n"
+	.string "I want to see GROUDON, too, but they\n"
 	.string "won't let me see even its tail…\p"
 	.string "It's got me feeling really frustrated.\p"
 	.string "Oh, no!\n"
-	.string "I blabbed about Groudon!$"
+	.string "I blabbed about GROUDON!$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
 	.string "I guess it's impossible to win if one\n"
 	.string "doesn't have a calm mind…$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "I wonder if Groudon even has a tail?$"
+	.string "I wonder if GROUDON even has a tail?$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
 	.string "Fuhahaha!\n"
@@ -157,7 +149,7 @@ MagmaHideout_4F_Text_Grunt12Defeat:
 	.string "I've come so far, but now this?$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "Maxie, sir!\n"
+	.string "MAXIE, sir!\n"
 	.string "An intruder is headed your way!$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
@@ -174,8 +166,8 @@ MagmaHideout_4F_Text_TabithaIntro:
 	.string "Hehehe!\n"
 	.string "You made it this far, so I'll tell you!\p"
 	.string "That's right!\n"
-	.string "Up ahead, Groudon is sleeping!\p"
-	.string "Maxie went to Groudon just seconds\n"
+	.string "Up ahead, GROUDON is sleeping!\p"
+	.string "MAXIE went to GROUDON just seconds\n"
 	.string "ago!\p"
 	.string "It's going to awaken real soon!\n"
 	.string "Hehe! Hehehe!$"
@@ -186,28 +178,28 @@ MagmaHideout_4F_Text_TabithaDefeat:
 
 MagmaHideout_4F_Text_TabithaPostBattle:
 	.string "…And while you wasted time with me,\n"
-	.string "Maxie should have awakened Groudon…$"
+	.string "MAXIE should have awakened GROUDON…$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "Maxie: Groudon…\p"
+	.string "MAXIE: GROUDON…\p"
 	.string "Nothing could awaken you from your\n"
 	.string "sleep bathed in magma…\p"
-	.string "This Blue Orb is what you sought.\n"
+	.string "This BLUE ORB is what you sought.\n"
 	.string "Wasn't it?\p"
-	.string "I have brought you the Blue Orb.\n"
+	.string "I have brought you the BLUE ORB.\n"
 	.string "Let its shine awaken you!\p"
 	.string "And show me…\n"
 	.string "Show me the full extent of your power!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "Maxie: Groudon!\n"
+	.string "MAXIE: GROUDON!\n"
 	.string "What's wrong?\p"
-	.string "Wasn't the Blue Orb the key?\p"
-	.string "Groudon!\n"
+	.string "Wasn't the BLUE ORB the key?\p"
+	.string "GROUDON!\n"
 	.string "Where have you gone…$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "Maxie: Oh, so it was you?\p"
+	.string "MAXIE: Oh, so it was you?\p"
 	.string "I've seen you poking around uninvited\n"
 	.string "here and there…\p"
 	.string "I get it now!\n"
@@ -215,18 +207,18 @@ MagmaHideout_4F_Text_MaxieOhItWasYou:
 
 MagmaHideout_4F_Text_MaxieDefeat:
 	.string "What makes you so adept at handling\n"
-	.string "Pokémon?$"
+	.string "POKéMON?$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "Maxie: There has to be some reason\n"
-	.string "why Groudon fled…\p"
+	.string "MAXIE: There has to be some reason\n"
+	.string "why GROUDON fled…\p"
 	.string "That's what you're trying to say,\n"
 	.string "aren't you?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Humph…\n"
 	.string "You think I didn't know that?\p"
-	.string "With Groudon gone, there is no longer\n"
+	.string "With GROUDON gone, there is no longer\n"
 	.string "any need for this blasted volcano.\p"
-	.string "I am going after Groudon, so this\n"
+	.string "I am going after GROUDON, so this\n"
 	.string "is where we part!$"

@@ -1,11 +1,3 @@
-.set LOCALID_VICTOR, 1
-.set LOCALID_VICTORIA, 2
-.set LOCALID_VIVI, 3
-.set LOCALID_VICKY, 4
-.set LOCALID_ROCK_SMASH_MAN, 46
-
-@ Note: LOCALID_ROUTE111_PLAYER_FALLING is a local id for this map used elsewhere. It's defined in event_objects.h
-
 Route111_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route111_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route111_OnTransition
@@ -105,7 +97,7 @@ Route111_OnWarp:
 	.2byte 0
 
 Route111_EventScript_HidePlayerForMirageTower::
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_LITTLEROOT_TOWN
+	hideobjectat LOCALID_PLAYER, MAP_LITTLEROOT_TOWN
 	end
 
 Route111_OnFrame:
@@ -121,10 +113,10 @@ Route111_EventScript_MirageTowerDisappear::
 	addobject LOCALID_ROUTE111_PLAYER_FALLING
 	special StartPlayerDescendMirageTower
 	waitstate
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_LITTLEROOT_TOWN
+	showobjectat LOCALID_PLAYER, MAP_LITTLEROOT_TOWN
 	removeobject LOCALID_ROUTE111_PLAYER_FALLING
 	delay 16
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	delay 16
 	special StartMirageTowerDisintegration
 	waitstate
@@ -216,22 +208,22 @@ Route111_EventScript_PreventRouteAccess::
 	end
 
 Route111_EventScript_PushUpFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushUpFromRoute
+	applymovement LOCALID_PLAYER, Route111_Movement_PushUpFromRoute
 	waitmovement 0
 	return
 
 Route111_EventScript_PushDownFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushDownFromRoute
+	applymovement LOCALID_PLAYER, Route111_Movement_PushDownFromRoute
 	waitmovement 0
 	return
 
 Route111_EventScript_PushLeftFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushLeftFromRoute
+	applymovement LOCALID_PLAYER, Route111_Movement_PushLeftFromRoute
 	waitmovement 0
 	return
 
 Route111_EventScript_PushRightFromRoute::
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_PushRightFromRoute
+	applymovement LOCALID_PLAYER, Route111_Movement_PushRightFromRoute
 	waitmovement 0
 	return
 
@@ -277,68 +269,68 @@ Route111_EventScript_Victor::
 Route111_EventScript_BattleWinstrates::
 	msgbox Route111_Text_VictorIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICTOR, Route111_Text_VictorDefeat
-	applymovement LOCALID_VICTOR, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_ROUTE111_VICTOR, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	msgbox Route111_Text_VictorPostBattle, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_VICTOR, Route111_Movement_WinstrateEnterHouse
+	applymovement LOCALID_ROUTE111_VICTOR, Route111_Movement_WinstrateEnterHouse
 	waitmovement 0
-	removeobject LOCALID_VICTOR
+	removeobject LOCALID_ROUTE111_VICTOR
 	call Route111_EventScript_CloseWinstrateDoor
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_WaitForNextWinstrate
+	applymovement LOCALID_PLAYER, Route111_Movement_WaitForNextWinstrate
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
-	addobject LOCALID_VICTORIA
-	applymovement LOCALID_VICTORIA, Route111_Movement_WinstrateExitHouse
+	addobject LOCALID_ROUTE111_VICTORIA
+	applymovement LOCALID_ROUTE111_VICTORIA, Route111_Movement_WinstrateExitHouse
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICTORIA, Route111_Text_VictoriaDefeat
-	applymovement LOCALID_VICTORIA, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_ROUTE111_VICTORIA, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	msgbox Route111_Text_VictoriaPostBattle, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_VICTORIA, Route111_Movement_WinstrateEnterHouse
+	applymovement LOCALID_ROUTE111_VICTORIA, Route111_Movement_WinstrateEnterHouse
 	waitmovement 0
-	removeobject LOCALID_VICTORIA
+	removeobject LOCALID_ROUTE111_VICTORIA
 	call Route111_EventScript_CloseWinstrateDoor
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_WaitForNextWinstrate
+	applymovement LOCALID_PLAYER, Route111_Movement_WaitForNextWinstrate
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
-	addobject LOCALID_VIVI
-	applymovement LOCALID_VIVI, Route111_Movement_WinstrateExitHouse
+	addobject LOCALID_ROUTE111_VIVI
+	applymovement LOCALID_ROUTE111_VIVI, Route111_Movement_WinstrateExitHouse
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_ViviIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VIVI, Route111_Text_ViviDefeat
-	applymovement LOCALID_VIVI, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_ROUTE111_VIVI, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	msgbox Route111_Text_ViviPostBattle, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_VIVI, Route111_Movement_WinstrateEnterHouse
+	applymovement LOCALID_ROUTE111_VIVI, Route111_Movement_WinstrateEnterHouse
 	waitmovement 0
-	removeobject LOCALID_VIVI
+	removeobject LOCALID_ROUTE111_VIVI
 	call Route111_EventScript_CloseWinstrateDoor
-	applymovement OBJ_EVENT_ID_PLAYER, Route111_Movement_WaitForNextWinstrate
+	applymovement LOCALID_PLAYER, Route111_Movement_WaitForNextWinstrate
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
-	addobject LOCALID_VICKY
-	applymovement LOCALID_VICKY, Route111_Movement_WinstrateExitHouse
+	addobject LOCALID_ROUTE111_VICKY
+	applymovement LOCALID_ROUTE111_VICKY, Route111_Movement_WinstrateExitHouse
 	waitmovement 0
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICKY, Route111_Text_VickyDefeat
 	msgbox Route111_Text_VickyPostBattle, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_VICKY, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_ROUTE111_VICKY, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
-	applymovement LOCALID_VICKY, Route111_Movement_WinstrateEnterHouse
+	applymovement LOCALID_ROUTE111_VICKY, Route111_Movement_WinstrateEnterHouse
 	waitmovement 0
-	removeobject LOCALID_VICKY
+	removeobject LOCALID_ROUTE111_VICKY
 	call Route111_EventScript_CloseWinstrateDoor
 	release
 	end
@@ -427,11 +419,11 @@ Route111_EventScript_HikerMirageTowerVisible::
 
 Route111_EventScript_RockSmashTipFatMan::
 	lockall
-	applymovement LOCALID_ROCK_SMASH_MAN, Common_Movement_FacePlayer
+	applymovement LOCALID_ROUTE111_ROCK_SMASH_MAN, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROCK_SMASH_MAN, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE111_ROCK_SMASH_MAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
@@ -577,7 +569,7 @@ Route111_Text_BattleOurFamily:
 	.string "Hello! I take it you're a traveler.\p"
 	.string "How's this? What do you say to taking\n"
 	.string "on our family of four in a series of\l"
-	.string "Pokémon battles?$"
+	.string "POKéMON battles?$"
 
 Route111_Text_IsThatSo:
 	.string "Is that so?\n"
@@ -592,11 +584,11 @@ Route111_Text_VictorDefeat:
 
 Route111_Text_VictorPostBattle:
 	.string "Hey, all!\n"
-	.string "I've found a pretty strong Trainer!$"
+	.string "I've found a pretty strong TRAINER!$"
 
 Route111_Text_VictoriaIntro:
 	.string "Oh, my goodness! Aren't you young?\p"
-	.string "You must be quite the Trainer to beat\n"
+	.string "You must be quite the TRAINER to beat\n"
 	.string "my husband, though.\p"
 	.string "It's my turn to battle now!$"
 
@@ -605,7 +597,7 @@ Route111_Text_VictoriaDefeat:
 	.string "I can't get over how strong you are!$"
 
 Route111_Text_VictoriaPostBattle:
-	.string "There's a strong Trainer here!\n"
+	.string "There's a strong TRAINER here!\n"
 	.string "This one's really strong!$"
 
 Route111_Text_ViviIntro:
@@ -635,52 +627,52 @@ Route111_Text_VickyPostBattle:
 	.string "visit with us awhile.$"
 
 Route111_Text_ToughToKeepWinningUpTheRanks:
-	.string "If you don't raise your Pokémon some\n"
+	.string "If you don't raise your POKéMON some\n"
 	.string "more, it could be tough to keep winning\l"
 	.string "up through the ranks.\p"
-	.string "I've heard the Pokémon League's\n"
-	.string "Elite Four are far stronger than\l"
-	.string "any Gym Leader.$"
+	.string "I've heard the POKéMON LEAGUE's\n"
+	.string "ELITE FOUR are far stronger than\l"
+	.string "any GYM LEADER.$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
-	.string "I challenged the Winstrate family,\n"
+	.string "I challenged the WINSTRATE family,\n"
 	.string "but four matches in a row is tough\l"
 	.string "going… They destroyed me.$"
 
 Route111_Text_RouteSignMauville:
-	.string "Route 111\n"
-	.string "{DOWN_ARROW} Mauville City$"
+	.string "ROUTE 111\n"
+	.string "{DOWN_ARROW} MAUVILLE CITY$"
 
 Route111_Text_WinstrateHouseSign:
 	.string "“Our family's hearts beat as one!”\n"
-	.string "The Winstrate's House$"
+	.string "THE WINSTRATE'S HOUSE$"
 
 Route111_Text_RouteSign112:
-	.string "Route 111\n"
-	.string "{LEFT_ARROW} Route 112$"
+	.string "ROUTE 111\n"
+	.string "{LEFT_ARROW} ROUTE 112$"
 
 Route111_Text_RouteSign113:
-	.string "Route 111\n"
-	.string "{LEFT_ARROW} Route 113$"
+	.string "ROUTE 111\n"
+	.string "{LEFT_ARROW} ROUTE 113$"
 
 Route111_Text_OldLadysRestStopSign:
-	.string "Old Lady's Rest Stop\n"
+	.string "OLD LADY'S REST STOP\n"
 	.string "“Come in and rest your tired bones.”$"
 
 Route111_Text_TrainerTipsSpAtkSpDef:
-	.string "Trainer Tips\p"
-	.string "One of the indicators of a Pokémon's\n"
-	.string "powerfulness is Sp. Atk. It stands for\l"
-	.string "“Special Attack.”\p"
-	.string "Likewise, Sp. Def stands for “Special\n"
-	.string "Defense.”$"
+	.string "TRAINER TIPS\p"
+	.string "One of the indicators of a POKéMON's\n"
+	.string "powerfulness is SP. ATK. It stands for\l"
+	.string "“SPECIAL ATTACK.”\p"
+	.string "Likewise, SP. DEF stands for “SPECIAL\n"
+	.string "DEFENSE.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
 	.string "There should be a tower made of sand\n"
 	.string "around here somewhere.\p"
 	.string "But for some reason, it can be seen\n"
 	.string "sometimes, and sometimes not.\p"
-	.string "That's why I call it the Mirage Tower.$"
+	.string "That's why I call it the MIRAGE TOWER.$"
 
 Route111_Text_MirageTowerClearlyVisible:
 	.string "I see it!\n"
@@ -704,26 +696,26 @@ Route111_Text_MirageTowerHasntBeenSeenSince:
 	.string "Since I spoke to you, the tower of sand\n"
 	.string "hasn't been seen.\p"
 	.string "Perhaps it really was\n"
-	.string "the Mirage Tower…$"
+	.string "the MIRAGE TOWER…$"
 
 Route111_Text_ClawFossilDisappeared:
-	.string "The Claw Fossil disappeared into\n"
+	.string "The CLAW FOSSIL disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_RootFossilDisappeared:
-	.string "The Root Fossil disappeared into\n"
+	.string "The ROOT FOSSIL disappeared into\n"
 	.string "the sand…$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Oh, no!\p"
-	.string "My uncle in Mauville told me to take\n"
-	.string "Rock Smash with me if I was going to\l"
-	.string "Route 111!\p"
+	.string "My uncle in MAUVILLE told me to take\n"
+	.string "ROCK SMASH with me if I was going to\l"
+	.string "ROUTE 111!\p"
 	.string "My uncle? He lives across from\n"
-	.string "the bike shop in Mauville.$"
+	.string "the bike shop in MAUVILLE.$"
 
 Route111_Text_TrainerHillSign:
-	.string "{RIGHT_ARROW} Trainer Hill Entrance\p"
+	.string "{RIGHT_ARROW} TRAINER HILL ENTRANCE\p"
 	.string "“Scale the heights, you hot-blooded\n"
-	.string "Trainers!”$"
+	.string "TRAINERS!”$"
 

@@ -9,8 +9,8 @@ SINGLE_BATTLE_TEST("Accuracy controls the proportion of misses")
     PARAMETRIZE { move = MOVE_HYDRO_PUMP; }
     PARAMETRIZE { move = MOVE_RAZOR_LEAF; }
     PARAMETRIZE { move = MOVE_SCRATCH; }
-    ASSUME(0 < gMovesInfo[move].accuracy && gMovesInfo[move].accuracy <= 100);
-    PASSES_RANDOMLY(gMovesInfo[move].accuracy, 100, RNG_ACCURACY);
+    ASSUME(0 < GetMoveAccuracy(move) && GetMoveAccuracy(move) <= 100);
+    PASSES_RANDOMLY(GetMoveAccuracy(move), 100, RNG_ACCURACY);
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -35,21 +35,21 @@ SINGLE_BATTLE_TEST("AdditionalEffect.chance controls the proportion of secondary
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
-        STATUS_ICON(opponent, .paralysis = TRUE);
+        STATUS_ICON(opponent, paralysis: TRUE);
     }
 }
 
 SINGLE_BATTLE_TEST("Turn order is determined by priority")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_QUICK_ATTACK].priority > gMovesInfo[MOVE_TACKLE].priority);
+        ASSUME(GetMovePriority(MOVE_QUICK_ATTACK) > GetMovePriority(MOVE_SCRATCH));
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }
 
@@ -86,16 +86,16 @@ DOUBLE_BATTLE_TEST("Turn order is determined randomly if priority and Speed tie 
     PASSES_RANDOMLY(24, 24, RNG_SPEED_TIE);
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ENDEAVOR].effect == EFFECT_ENDEAVOR);
-        ASSUME(gMovesInfo[MOVE_LIFE_DEW].effect == EFFECT_JUNGLE_HEALING);
-        ASSUME(gMovesInfo[MOVE_CRUSH_GRIP].effect == EFFECT_POWER_BASED_ON_TARGET_HP);
-        ASSUME(gMovesInfo[MOVE_SUPER_FANG].effect == EFFECT_SUPER_FANG);
+        ASSUME(GetMoveEffect(MOVE_ENDEAVOR) == EFFECT_ENDEAVOR);
+        ASSUME(GetMoveEffect(MOVE_LIFE_DEW) == EFFECT_JUNGLE_HEALING);
+        ASSUME(GetMoveEffect(MOVE_CRUSH_GRIP) == EFFECT_POWER_BASED_ON_TARGET_HP);
+        ASSUME(GetMoveEffect(MOVE_SUPER_FANG) == EFFECT_SUPER_FANG);
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(480); HP(360); Defense(100); Speed(1); }
         PLAYER(SPECIES_WYNAUT) { Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Attack(100); Speed(1); }
         OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ENDEAVOR, .target = opponentLeft); MOVE(playerRight, MOVE_LIFE_DEW); MOVE(opponentLeft, MOVE_CRUSH_GRIP, .target = playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, 0)); MOVE(opponentRight, MOVE_SUPER_FANG, .target = playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_ENDEAVOR, target: opponentLeft); MOVE(playerRight, MOVE_LIFE_DEW); MOVE(opponentLeft, MOVE_CRUSH_GRIP, target: playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, 0)); MOVE(opponentRight, MOVE_SUPER_FANG, target: playerLeft); }
     } THEN {
         //  This tests for unique combinatins of HP values depending on which order the moves are executed in
         //  The unique outcomes arise from the specific attacks and HP, Def, and Atk values chosen
@@ -146,9 +146,9 @@ SINGLE_BATTLE_TEST("Critical hits deal 100% (Gen 1-5) or 50% (Gen 6+) more damag
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_SCRATCH, .criticalHit = criticalHit); }
+        TURN { MOVE(player, MOVE_SCRATCH, criticalHit: criticalHit); }
     } SCENE {
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[2].damage);
@@ -162,14 +162,14 @@ SINGLE_BATTLE_TEST("Critical hits do not ignore positive stat stages", s16 damag
     PARAMETRIZE { move = MOVE_HOWL; }
     PARAMETRIZE { move = MOVE_TAIL_WHIP; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SCRATCH].category == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
-        TURN { MOVE(player, MOVE_SCRATCH, .criticalHit = TRUE); }
+        TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
     } SCENE {
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_LT(results[0].damage, results[i].damage);
@@ -183,14 +183,14 @@ SINGLE_BATTLE_TEST("Critical hits ignore negative stat stages", s16 damage)
     PARAMETRIZE { move = MOVE_HARDEN; }
     PARAMETRIZE { move = MOVE_GROWL; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SCRATCH].category == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
-        TURN { MOVE(player, MOVE_SCRATCH, .criticalHit = TRUE); }
+        TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
     } SCENE {
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_EQ(results[0].damage, results[i].damage);
@@ -205,10 +205,10 @@ DOUBLE_BATTLE_TEST("Moves fail if they target the partner but they faint before 
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerRight); MOVE(playerLeft, MOVE_SCRATCH, target: playerRight); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
     }
 }
 
@@ -220,16 +220,16 @@ DOUBLE_BATTLE_TEST("Moves do not fail if an alive partner is the target")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
+        TURN { MOVE(playerLeft, MOVE_SCRATCH, target: playerRight); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
     }
 }
 
 DOUBLE_BATTLE_TEST("Moves fail if they target into a pokemon that was fainted by the previous move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_HYPER_VOICE].target == MOVE_TARGET_BOTH);
+        ASSUME(GetMoveTarget(MOVE_HYPER_VOICE) == MOVE_TARGET_BOTH);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
@@ -239,28 +239,28 @@ DOUBLE_BATTLE_TEST("Moves fail if they target into a pokemon that was fainted by
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_HYPER_VOICE);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentLeft);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentLeft);
             SEND_OUT(opponentLeft, 2);
             SEND_OUT(opponentRight, 3);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, playerLeft);
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
     }
 }
 
 DOUBLE_BATTLE_TEST("Moves that target the field are not going to fail if one mon fainted by the previous move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SURF].target == MOVE_TARGET_FOES_AND_ALLY);
+        ASSUME(GetMoveTarget(MOVE_SURF) == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); MOVE(playerLeft, MOVE_SURF); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerRight); MOVE(playerLeft, MOVE_SURF); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SURF, playerLeft);
     }
 }

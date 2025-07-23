@@ -1,6 +1,8 @@
 #include "global.h"
 #include "malloc.h"
 #include "berry_powder.h"
+#include "fake_rtc.h"
+#include "follower_npc.h"
 #include "item.h"
 #include "load_save.h"
 #include "main.h"
@@ -9,6 +11,7 @@
 #include "pokemon_storage_system.h"
 #include "random.h"
 #include "save_location.h"
+#include "script_pokemon_util.h"
 #include "trainer_hill.h"
 #include "gba/flash_internal.h"
 #include "decoration_inventory.h"
@@ -27,10 +30,7 @@ struct LoadedSaveData
  /*0x00F0*/ struct ItemSlot pokeBalls[BAG_POKEBALLS_COUNT];
  /*0x0130*/ struct ItemSlot TMsHMs[BAG_TMHM_COUNT];
  /*0x0230*/ struct ItemSlot berries[BAG_BERRIES_COUNT];
- /*0x02E8*/ struct ItemSlot medicine[BAG_MEDICINE_COUNT];
-            struct ItemSlot battle[BAG_BATTLE_COUNT];
-            struct ItemSlot megaStones[BAG_MEGASTONES_COUNT];
-            struct Mail mail[MAIL_COUNT];
+ /*0x02E8*/ struct Mail mail[MAIL_COUNT];
 };
 
 // EWRAM DATA
@@ -66,6 +66,7 @@ void CheckForFlashMemory(void)
 void ClearSav3(void)
 {
     CpuFill16(0, &gSaveblock3, sizeof(struct SaveBlock3));
+    FakeRtc_Reset();
 }
 
 void ClearSav2(void)
@@ -81,7 +82,7 @@ void ClearSav1(void)
 // Offset is the sum of the trainer id bytes
 void SetSaveBlocksPointers(u16 offset)
 {
-    struct SaveBlock1** sav1_LocalVar = &gSaveBlock1Ptr;
+    struct SaveBlock1 **sav1_LocalVar = &gSaveBlock1Ptr;
 
     offset = (offset + Random()) & (SAVEBLOCK_MOVE_RANGE - 4);
 
@@ -279,18 +280,6 @@ void LoadPlayerBag(void)
     for (i = 0; i < BAG_BERRIES_COUNT; i++)
         gLoadedSaveData.berries[i] = gSaveBlock1Ptr->bagPocket_Berries[i];
 
-    // load player medicine.
-    for (i = 0; i < BAG_MEDICINE_COUNT; i++)
-        gLoadedSaveData.medicine[i] = gSaveBlock1Ptr->bagPocket_Medicine[i];
-
-    // load player battle items.
-    for (i = 0; i < BAG_BATTLE_COUNT; i++)
-        gLoadedSaveData.battle[i] = gSaveBlock1Ptr->bagPocket_Battle[i];
-
-    // load player mega stones.
-    for (i = 0; i < BAG_MEGASTONES_COUNT; i++)
-        gLoadedSaveData.megaStones[i] = gSaveBlock1Ptr->bagPocket_MegaStones[i];
-
     // load mail.
     for (i = 0; i < MAIL_COUNT; i++)
         gLoadedSaveData.mail[i] = gSaveBlock1Ptr->mail[i];
@@ -322,18 +311,6 @@ void SavePlayerBag(void)
     // save player berries.
     for (i = 0; i < BAG_BERRIES_COUNT; i++)
         gSaveBlock1Ptr->bagPocket_Berries[i] = gLoadedSaveData.berries[i];
-
-    // save player medicine.
-    for (i = 0; i < BAG_MEDICINE_COUNT; i++)
-        gSaveBlock1Ptr->bagPocket_Medicine[i] = gLoadedSaveData.medicine[i];
-
-    // save player battle items.
-    for (i = 0; i < BAG_BATTLE_COUNT; i++)
-        gSaveBlock1Ptr->bagPocket_Battle[i] = gLoadedSaveData.battle[i];
-
-    // save player mega stones.
-    for (i = 0; i < BAG_MEGASTONES_COUNT; i++)
-        gSaveBlock1Ptr->bagPocket_MegaStones[i] = gLoadedSaveData.megaStones[i];
 
     // save mail.
     for (i = 0; i < MAIL_COUNT; i++)

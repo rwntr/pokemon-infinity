@@ -1,23 +1,78 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Big Root now causes absorb effect moves to recover 50% extra HP instead of 30%", s16 hp)
+ASSUMPTIONS
 {
-    u16 item;
-    PARAMETRIZE { item = ITEM_BIG_ROOT; }
-    PARAMETRIZE { item = ITEM_SILK_SCARF; }
-    GIVEN {
-        PLAYER(SPECIES_VICTREEBEL) { Item(item); SpAttack(999); HP(1);};
-        OPPONENT(SPECIES_WOBBUFFET) { HP(101); SpDefense(1); Item(ITEM_FOCUS_SASH); };
-    } WHEN {
-        TURN { MOVE(player, MOVE_GIGA_DRAIN); MOVE(opponent, MOVE_SPLASH); }
+    ASSUME(gItemsInfo[ITEM_BIG_ROOT].holdEffect == HOLD_EFFECT_BIG_ROOT);
+}
 
+SINGLE_BATTLE_TEST("Big Root increases healing from absorbing moves", s16 damage, s16 heal)
+{
+    u32 item;
+
+    PARAMETRIZE { item = ITEM_NONE; }
+    PARAMETRIZE { item = ITEM_BIG_ROOT; }
+
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { HP(200); Item(item); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_ABSORB); }
     } SCENE {
-        MESSAGE("Victreebel used Giga Drain!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_GIGA_DRAIN, player);
-        HP_BAR(player, .captureDamage =  &results[i].hp);
-        MESSAGE("The opposing Wobbuffet had its energy drained!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ABSORB, player);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(player, captureDamage: &results[i].heal);
     } FINALLY {
-        EXPECT_MUL_EQ(results[1].hp, UQ_4_12(1.5), results[0].hp);
+        EXPECT_EQ(results[0].damage, results[1].damage); // Damage is unaffected
+        EXPECT_MUL_EQ(results[1].heal, Q_4_12(5234 / 4096), results[0].heal);
+    }
+}
+
+SINGLE_BATTLE_TEST("Big Root increases the damage restored from Leech Seed, Ingrain and Aqua Ring", s16 heal, s16 damage)
+{
+    u32 item;
+    u32 move;
+
+    PARAMETRIZE { item = ITEM_NONE;     move = MOVE_LEECH_SEED; }
+    PARAMETRIZE { item = ITEM_BIG_ROOT; move = MOVE_LEECH_SEED; }
+    PARAMETRIZE { item = ITEM_NONE;     move = MOVE_INGRAIN;    }
+    PARAMETRIZE { item = ITEM_BIG_ROOT; move = MOVE_INGRAIN;    }
+    PARAMETRIZE { item = ITEM_NONE;     move = MOVE_AQUA_RING;  }
+    PARAMETRIZE { item = ITEM_BIG_ROOT; move = MOVE_AQUA_RING;  }
+
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { HP(200); Item(item); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, move); }
+    } SCENE {
+        if (move == MOVE_LEECH_SEED)
+            HP_BAR(opponent, captureDamage: &results[i].damage);
+        HP_BAR(player, captureDamage: &results[i].heal);
+    } FINALLY {
+        EXPECT_EQ(results[0].damage, results[1].damage); // Damage is unaffected
+        EXPECT_MUL_EQ(results[0].heal, Q_4_12(1.3), results[1].heal);
+        EXPECT_MUL_EQ(results[2].heal, Q_4_12(1.3), results[3].heal);
+        EXPECT_MUL_EQ(results[4].heal, Q_4_12(1.3), results[5].heal);
+    }
+}
+
+SINGLE_BATTLE_TEST("Big Root increases damage from absorbing Liquid Ooze", s16 damage)
+{
+    u32 item;
+
+    PARAMETRIZE { item = ITEM_NONE; }
+    PARAMETRIZE { item = ITEM_BIG_ROOT; }
+
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { HP(200); Item(item); }
+        OPPONENT(SPECIES_TENTACOOL) { Ability(ABILITY_LIQUID_OOZE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_ABSORB); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ABSORB, player);
+        HP_BAR(player, captureDamage: &results[i].damage);
+    } FINALLY {
+        EXPECT_MUL_EQ(results[1].damage, Q_4_12(5234 / 4096), results[0].damage);
     }
 }

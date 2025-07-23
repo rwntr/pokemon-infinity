@@ -1,7 +1,7 @@
 #ifndef GUARD_CAPS_H
 #define GUARD_CAPS_H
 
-/*#if B_EXP_CAP_TYPE != EXP_CAP_NONE && B_EXP_CAP_TYPE != EXP_CAP_HARD && B_EXP_CAP_TYPE != EXP_CAP_SOFT
+#if B_EXP_CAP_TYPE != EXP_CAP_NONE && B_EXP_CAP_TYPE != EXP_CAP_HARD && B_EXP_CAP_TYPE != EXP_CAP_SOFT
 #error "Invalid choice for B_EXP_CAP_TYPE, must be of [EXP_CAP_NONE, EXP_CAP_HARD, EXP_CAP_SOFT]"
 #endif
 
@@ -12,27 +12,14 @@
 #if B_LEVEL_CAP_TYPE == LEVEL_CAP_VARIABLE && B_LEVEL_CAP_VARIABLE == 0
 #error "B_LEVEL_CAP_TYPE set to LEVEL_CAP_VARIABLE, but no variable chosen for B_LEVEL_CAP_VARIABLE, set B_LEVEL_CAP_VARIABLE to a valid event variable"
 #endif
-#endif*/
+#endif
 
 #if B_EV_CAP_TYPE != EV_CAP_NONE && B_EV_CAP_TYPE != EV_CAP_FLAG_LIST && B_EV_CAP_TYPE != EV_CAP_VARIABLE && B_EV_CAP_TYPE != EV_CAP_NO_GAIN
 #error "Invalid choice for B_EV_CAP_TYPE, must be one of [EV_CAP_NONE, EV_CAP_FLAG_LIST, EV_CAP_VARIABLE, EV_CAP_NO_GAIN]"
 #endif
 
 u32 GetCurrentLevelCap(void);
-u32 GetCurrentEVCap(void);
-#define B_NUM_CAP_FLAGS 9
-#define B_NUM_CAP_SETTINGS 3
-
-extern const u32 sLevelCapsFlagMap[][4];
-
-void SetActiveDifficultySetting(u16 diffArg);
-void SetActiveLevelCapType(u16 capArg);
-u16 GetActiveDifficultySetting(void);
-u16 GetActiveLevelCapType(void);
-u16 GetActiveLevelCapIndex(void);
-u32 GetActiveLevelCap(void);
-u32 GetLastLevelCap(u16 currCapIdx);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);
-
+u32 GetCurrentEVCap(void);
 
 #endif /* GUARD_CAPS_H */

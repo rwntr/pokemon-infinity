@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_CURSE].effect == EFFECT_CURSE);
+    ASSUME(GetMoveEffect(MOVE_CURSE) == EFFECT_CURSE);
 }
 
 SINGLE_BATTLE_TEST("Curse lowers Speed, raises Attack, and raises Defense when used by non-Ghost-types")
@@ -15,7 +15,9 @@ SINGLE_BATTLE_TEST("Curse lowers Speed, raises Attack, and raises Defense when u
         TURN { MOVE(player, MOVE_CURSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Wobbuffet's Speed fell!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Wobbuffet's Attack rose!");
         MESSAGE("Wobbuffet's Defense rose!");
     }
@@ -31,7 +33,7 @@ SINGLE_BATTLE_TEST("Curse cuts the user's HP in half when used by Ghost-types")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
-        HP_BAR(player, .hp = maxHP / 2);
+        HP_BAR(player, hp: maxHP / 2);
     }
 }
 

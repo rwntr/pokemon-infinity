@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_RELIC_SONG].effect == EFFECT_RELIC_SONG);
+    ASSUME(GetMoveEffect(MOVE_RELIC_SONG) == EFFECT_RELIC_SONG);
     ASSUME(MoveHasAdditionalEffect(MOVE_RELIC_SONG, MOVE_EFFECT_SLEEP) == TRUE);
 }
 
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Relic Song has a 10% chance to put the target to sleep")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        STATUS_ICON(opponent, .sleep = TRUE);
+        STATUS_ICON(opponent, sleep: TRUE);
     }
 }
 
@@ -45,39 +45,6 @@ SINGLE_BATTLE_TEST("Relic Song will become a Water-type move when used by a Pok�
     GIVEN {
         PLAYER(SPECIES_VULPIX);
         OPPONENT(SPECIES_POPPLIO) { Ability(ABILITY_LIQUID_VOICE); }
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_RELIC_SONG); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, opponent);
-        HP_BAR(player);
-        MESSAGE("It's super effective!");
-    }
-}
-
-SINGLE_BATTLE_TEST("Relic Song will have its power boosted by 20% when used by a Pokémon with the Ability Liquid Voice", s16 damage)
-{
-    u16 ability;
-    PARAMETRIZE { ability = ABILITY_ANTICIPATION; }
-    PARAMETRIZE { ability = ABILITY_LIQUID_VOICE; }
-    GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_DARUMAKA) { Ability(ability); } //cannot be Popplio as STAB ruins calcs
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_RELIC_SONG); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, opponent);
-        HP_BAR(player, .captureDamage =  &results[i].damage);
-    } FINALLY {
-        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
-    }
-
-}
-
-SINGLE_BATTLE_TEST("Relic Song will become a Ground-type move when used by a Pokémon with the Ability Sand Song")
-{
-    GIVEN {
-        PLAYER(SPECIES_RAICHU);
-        OPPONENT(SPECIES_FLYGON) { Ability(ABILITY_SAND_SONG); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_RELIC_SONG); }
     } SCENE {

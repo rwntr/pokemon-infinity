@@ -1,6 +1,3 @@
-.set LOCALID_STEVEN, 1
-.set LOCALID_BELDUM_BALL, 2
-
 MossdeepCity_StevensHouse_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_StevensHouse_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_StevensHouse_OnTransition
@@ -20,8 +17,8 @@ MossdeepCity_StevensHouse_OnTransition:
 	end
 
 MossdeepCity_StevensHouse_EventScript_SetStevenPos::
-	setobjectxyperm LOCALID_STEVEN, 6, 5
-	setobjectmovementtype LOCALID_STEVEN, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm LOCALID_STEVENS_HOUSE_STEVEN, 6, 5
+	setobjectmovementtype LOCALID_STEVENS_HOUSE_STEVEN, MOVEMENT_TYPE_FACE_UP
 	return
 
 MossdeepCity_StevensHouse_OnFrame:
@@ -30,14 +27,14 @@ MossdeepCity_StevensHouse_OnFrame:
 
 MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	lockall
-	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
+	applymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_STEVEN, Common_Movement_Delay48
+	applymovement LOCALID_STEVENS_HOUSE_STEVEN, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
+	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
 	waitmovement 0
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
 	giveitem ITEM_HM_DIVE
@@ -46,7 +43,7 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
 	closemessage
 	delay 20
-	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
+	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
 	waitmovement 0
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
@@ -116,7 +113,7 @@ MossdeepCity_StevensHouse_EventScript_BeldumTransferredToPC::
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
 	bufferspeciesname STR_VAR_2, SPECIES_BELDUM
-	removeobject LOCALID_BELDUM_BALL
+	removeobject LOCALID_STEVENS_HOUSE_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	message MossdeepCity_StevensHouse_Text_ObtainedBeldum
 	waitmessage
@@ -151,47 +148,47 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "Steven: {PLAYER}{KUN}…\p"
+	.string "STEVEN: {PLAYER}{KUN}…\p"
 	.string "As you can see, there's not much here,\n"
 	.string "but this is my home.\p"
 	.string "Thank you for all that you've done.\p"
 	.string "This is my token of appreciation.\n"
-	.string "It's the Hidden Machine Dive.\p"
+	.string "It's the HIDDEN MACHINE DIVE.\p"
 	.string "No need to be shy--you've earned\n"
 	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "Steven: While you're using Surf, you\n"
+	.string "STEVEN: While you're using SURF, you\n"
 	.string "should notice dark patches of water.\p"
-	.string "Use Dive if you come to deep water\n"
+	.string "Use DIVE if you come to deep water\n"
 	.string "like it. You'll drop to the seafloor.\p"
 	.string "When you want to come back up, use\n"
-	.string "Dive again.\p"
+	.string "DIVE again.\p"
 	.string "In some places, it won't be possible\n"
 	.string "for you to surface, though.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "Steven: Apparently, there's an\n"
+	.string "STEVEN: Apparently, there's an\n"
 	.string "underwater cavern between\l"
-	.string "Mossdeep and Sootopolis.\p"
-	.string "You know, the one that Capt. Stern\n"
+	.string "MOSSDEEP and SOOTOPOLIS.\p"
+	.string "You know, the one that CAPT. STERN\n"
 	.string "found in his submarine.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "{PLAYER} checked the Poké Ball.\p"
-	.string "It contained the Pokémon\n"
-	.string "Beldum.\p"
-	.string "Take the Poké Ball?$"
+	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "It contained the POKéMON\n"
+	.string "BELDUM.\p"
+	.string "Take the POKé BALL?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "{PLAYER} obtained a Beldum.$"
+	.string "{PLAYER} obtained a BELDUM.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
-	.string "There is no space for another Pokémon.$"
+	.string "There is no space for another POKéMON.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the Poké Ball where\n"
+	.string "{PLAYER} left the POKé BALL where\n"
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
@@ -203,15 +200,15 @@ MossdeepCity_StevensHouse_Text_LetterFromSteven:
 	.string "I don't plan to return home for some\n"
 	.string "time.\p"
 	.string "I have a favor to ask of you.\p"
-	.string "I want you to take the Poké Ball on\n"
+	.string "I want you to take the POKé BALL on\n"
 	.string "the desk.\p"
-	.string "Inside it is a Beldum, my favorite\n"
-	.string "Pokémon.\p"
+	.string "Inside it is a BELDUM, my favorite\n"
+	.string "POKéMON.\p"
 	.string "I'm counting on you.\p"
 	.string "May our paths cross someday.\p"
-	.string "Steven Stone$"
+	.string "STEVEN STONE$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "It's a collection of rare rocks and\n"
-	.string "stones assembled by Steven.$"
+	.string "stones assembled by STEVEN.$"
 

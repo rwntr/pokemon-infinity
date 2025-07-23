@@ -1,6 +1,3 @@
-.set LOCALID_ROOT_FOSSIL, 1
-.set LOCALID_CLAW_FOSSIL, 2
-
 MirageTower_4F_MapScripts::
 	.byte 0
 
@@ -14,7 +11,7 @@ MirageTower_4F_EventScript_RootFossil::
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
-	removeobject LOCALID_ROOT_FOSSIL
+	removeobject LOCALID_MIRAGE_ROOT_FOSSIL
 	delay 30
 	setflag FLAG_CHOSE_ROOT_FOSSIL
 	goto MirageTower_4F_EventScript_CollapseMirageTower
@@ -35,7 +32,7 @@ MirageTower_4F_EventScript_ClawFossil::
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
-	removeobject LOCALID_CLAW_FOSSIL
+	removeobject LOCALID_MIRAGE_CLAW_FOSSIL
 	delay 30
 	setflag FLAG_CHOSE_CLAW_FOSSIL
 	goto MirageTower_4F_EventScript_CollapseMirageTower
@@ -63,20 +60,20 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	end
 
 MirageTower_4F_Text_TakeRootFossil:
-	.string "You found the Root Fossil.\p"
-	.string "If this Fossil is taken, the ground\n"
+	.string "You found the ROOT FOSSIL.\p"
+	.string "If this FOSSIL is taken, the ground\n"
 	.string "around it will likely crumble away…\p"
-	.string "Take the Root Fossil anyway?$"
+	.string "Take the ROOT FOSSIL anyway?$"
 
 MirageTower_4F_Text_LeftRootFossilAlone:
-	.string "{PLAYER} left the Root Fossil alone.$"
+	.string "{PLAYER} left the ROOT FOSSIL alone.$"
 
 MirageTower_4F_Text_TakeClawFossil:
-	.string "You found the Claw Fossil.\p"
-	.string "If this Fossil is taken, the ground\n"
+	.string "You found the CLAW FOSSIL.\p"
+	.string "If this FOSSIL is taken, the ground\n"
 	.string "around it will likely crumble away…\p"
-	.string "Take the Claw Fossil anyway?$"
+	.string "Take the CLAW FOSSIL anyway?$"
 
 MirageTower_4F_Text_LeaveClawFossilAlone:
-	.string "{PLAYER} left the Claw Fossil alone.$"
+	.string "{PLAYER} left the CLAW FOSSIL alone.$"
 

@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 SlateportCity_BattleTentLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_BattleTentLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SlateportCity_BattleTentLobby_OnWarp
@@ -11,7 +9,7 @@ SlateportCity_BattleTentLobby_OnWarp:
 
 SlateportCity_BattleTentLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 SlateportCity_BattleTentLobby_OnFrame:
@@ -138,13 +136,13 @@ SlateportCity_BattleTentLobby_EventScript_EnterChallenge::
 	end
 
 SlateportCity_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantWalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerWalkToDoor
+	applymovement LOCALID_SLATEPORT_TENT_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantWalkToDoor
+	applymovement LOCALID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerWalkToDoor
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_SLATEPORT_TENT_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
@@ -276,7 +274,7 @@ SlateportCity_BattleTentLobby_EventScript_ExitRules::
 
 SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 	.string "So, like, I couldn't find myself any\n"
-	.string "Pokémon that were, like, for me.\p"
+	.string "POKéMON that were, like, for me.\p"
 	.string "So, I figured, like, hey, I should file\n"
 	.string "a complaint to the guy there?\p"
 	.string "And he wouldn't hear me out, like, hey!\n"
@@ -286,14 +284,14 @@ SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 
 SlateportCity_BattleTentLobby_Text_ExplainTorment:
 	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's Torment, you hearing me?\p"
+	.string "Hey, it's TORMENT, you hearing me?\p"
 	.string "Like, it won't let the other guy\n"
 	.string "use the same move twice in a row, see?\p"
 	.string "Hey, now, you listen here, like,\n"
 	.string "I'm not laying a torment on you!$"
 
 SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
-	.string "I don't really like Bug Pokémon,\n"
+	.string "I don't really like BUG POKéMON,\n"
 	.string "but maybe I'll try using some for\l"
 	.string "a change of pace.\p"
 	.string "Who knows, I might even get to like\n"
@@ -301,7 +299,7 @@ SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
 
 SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons:
 	.string "You can battle all you want here even\n"
-	.string "if you don't have any tough Pokémon.$"
+	.string "if you don't have any tough POKéMON.$"
 
 SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection:
 	.string "Wouldn't it be nice if they had more of\n"

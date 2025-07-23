@@ -162,7 +162,7 @@
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
 #define VAR_DEVON_CORP_3F_STATE                          0x408F
 #define VAR_BRINEY_HOUSE_STATE                           0x4090
-#define VAR_POKE_VIAL_CHARGES                            0x4091 // Poke Vial
+#define VAR_UNUSED_0x4091                                0x4091 // Unused Var
 #define VAR_LITTLEROOT_INTRO_STATE                       0x4092
 #define VAR_MAUVILLE_GYM_STATE                           0x4093
 #define VAR_LILYCOVE_MUSEUM_2F_STATE                     0x4094
@@ -172,7 +172,7 @@
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
-#define VAR_POKE_VIAL_MAX_CHARGES                        0x409B // Poke Vial
+#define VAR_UNUSED_0x409B                                0x409B // Unused Var
 #define VAR_ELITE_4_STATE                                0x409C
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
@@ -301,7 +301,7 @@
 #define VAR_MON_BOX_ID                0x8012
 #define VAR_MON_BOX_POS               0x8013
 #define VAR_UNUSED_0x8014             0x8014
-#define VAR_TRAINER_BATTLE_OPPONENT_A 0x8015 // Alias of gTrainerBattleOpponent_A
+#define VAR_TRAINER_BATTLE_OPPONENT_A 0x8015 // Alias of TRAINER_BATTLE_PARAM.opponentA
 
 #define SPECIAL_VARS_END              0x8015
 
@@ -323,5 +323,17 @@
 #define VAR_TEMP_FRONTIER_TUTOR_ID         VAR_TEMP_E
 
 #define VAR_TEMP_TRANSFERRED_SPECIES  VAR_TEMP_1
+
+#if TESTING
+#define TESTING_VARS_START             0x9000
+#define TESTING_VAR_DIFFICULTY         (TESTING_VARS_START + 0x0)
+#define TESTING_VAR_UNUSED_1           (TESTING_VARS_START + 0x1)
+#define TESTING_VAR_UNUSED_2           (TESTING_VARS_START + 0x2)
+#define TESTING_VAR_UNUSED_3           (TESTING_VARS_START + 0x3)
+#define TESTING_VAR_UNUSED_4           (TESTING_VARS_START + 0x4)
+#define TESTING_VAR_UNUSED_5           (TESTING_VARS_START + 0x5)
+#define TESTING_VAR_UNUSED_6           (TESTING_VARS_START + 0x6)
+#define TESTING_VAR_UNUSED_7           (TESTING_VARS_START + 0x7)
+#endif // TESTING
 
 #endif // GUARD_CONSTANTS_VARS_H

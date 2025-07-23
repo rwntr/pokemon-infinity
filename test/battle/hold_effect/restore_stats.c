@@ -3,13 +3,13 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gItemsInfo[ITEM_WHITE_HERB].holdEffect == HOLD_EFFECT_RESTORE_STATS);
+    ASSUME(gItemsInfo[ITEM_WHITE_HERB].holdEffect == HOLD_EFFECT_WHITE_HERB);
 }
 
 SINGLE_BATTLE_TEST("White Herb restores stats when they're lowered")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
+        ASSUME(GetMoveEffect(MOVE_LEER) == EFFECT_DEFENSE_DOWN);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move
     PARAMETRIZE { species = SPECIES_DUGTRIO_ALOLA; ability = ABILITY_TANGLING_HAIR; }
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_DUAL_WINGBEAT].strikeCount == 2);
+        ASSUME(GetMoveStrikeCount(MOVE_DUAL_WINGBEAT) == 2);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
@@ -132,23 +132,22 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
     PARAMETRIZE { move = MOVE_KNOCK_OFF; }
 
     GIVEN {
-        ASSUME(MoveHasAdditionalEffect(MOVE_THIEF, MOVE_EFFECT_STEAL_ITEM) == TRUE);
-        ASSUME(gMovesInfo[MOVE_KNOCK_OFF].effect == EFFECT_KNOCK_OFF);
+        ASSUME(GetMoveEffect(MOVE_KNOCK_OFF) == EFFECT_KNOCK_OFF);
+        ASSUME(GetMoveEffect(MOVE_THIEF) == EFFECT_STEAL_ITEM);
         PLAYER(SPECIES_SLUGMA) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
-        if (move == MOVE_THIEF) {
-            MESSAGE("The opposing Wobbuffet stole Slugma's White Herb!");
-        }
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Slugma's Weak Armor lowered its Defense!");
         MESSAGE("Slugma's Weak Armor raised its Speed!");
         if (move == MOVE_KNOCK_OFF) {
             MESSAGE("The opposing Wobbuffet knocked off Slugma's White Herb!");
+        } else if (move == MOVE_THIEF) {
+            MESSAGE("The opposing Wobbuffet stole Slugma's White Herb!");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
@@ -166,9 +165,9 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
         PLAYER(SPECIES_SLUGMA) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); }
     } WHEN {
-        TURN { MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Slugma's Weak Armor lowered its Defense!");
@@ -215,5 +214,23 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
         } else {
             EXPECT(player->statStages[STAT_ATK] = DEFAULT_STAT_STAGE + 1);
         }
+    }
+}
+
+DOUBLE_BATTLE_TEST("White Herb is correctly displayed")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT) { Item(ITEM_WHITE_HERB); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(playerRight, MOVE_SUPERPOWER, target: opponentRight); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerRight);
+        MESSAGE("Wynaut returned its stats to normal using its White Herb!");
+    } THEN {
+        EXPECT(playerLeft->item == ITEM_NONE);
+        EXPECT(playerLeft->statStages[STAT_DEF] = DEFAULT_STAT_STAGE);
     }
 }

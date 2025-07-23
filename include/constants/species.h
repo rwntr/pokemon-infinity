@@ -1214,15 +1214,15 @@
 #define SPECIES_FLORGES_ORANGE                          1143
 #define SPECIES_FLORGES_BLUE                            1144
 #define SPECIES_FLORGES_WHITE                           1145
-#define SPECIES_FURFROU_HEART_TRIM                      1146
-#define SPECIES_FURFROU_STAR_TRIM                       1147
-#define SPECIES_FURFROU_DIAMOND_TRIM                    1148
-#define SPECIES_FURFROU_DEBUTANTE_TRIM                  1149
-#define SPECIES_FURFROU_MATRON_TRIM                     1150
-#define SPECIES_FURFROU_DANDY_TRIM                      1151
-#define SPECIES_FURFROU_LA_REINE_TRIM                   1152
-#define SPECIES_FURFROU_KABUKI_TRIM                     1153
-#define SPECIES_FURFROU_PHARAOH_TRIM                    1154
+#define SPECIES_FURFROU_HEART                           1146
+#define SPECIES_FURFROU_STAR                            1147
+#define SPECIES_FURFROU_DIAMOND                         1148
+#define SPECIES_FURFROU_DEBUTANTE                       1149
+#define SPECIES_FURFROU_MATRON                          1150
+#define SPECIES_FURFROU_DANDY                           1151
+#define SPECIES_FURFROU_LA_REINE                        1152
+#define SPECIES_FURFROU_KABUKI                          1153
+#define SPECIES_FURFROU_PHARAOH                         1154
 #define SPECIES_MEOWSTIC_F                              1155
 #define SPECIES_AEGISLASH_BLADE                         1156
 #define SPECIES_PUMPKABOO_SMALL                         1157
@@ -1637,15 +1637,8 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GMAX         SPECIES_URSHIFU_RAPID_STRIKE_GMAX
 #define SPECIES_MIMIKYU_BUSTED_TOTEM                    1523
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    SPECIES_MIMIKYU_BUSTED_TOTEM
-#define SPECIES_MILOTIC_MEGA                            1524
-#define SPECIES_BUTTERFREE_MEGA                         1525
-#define SPECIES_MACHAMP_MEGA                            1526
-#define SPECIES_FLYGON_MEGA                             1527
-#define SPECIES_LAPRAS_MEGA                             1528
-#define SPECIES_KINGLER_MEGA                            1529
-#define SPECIES_KINGDRA_MEGA                            1530
 
-#define SPECIES_EGG                                     (SPECIES_KINGDRA_MEGA + 1)
+#define SPECIES_EGG                                     (SPECIES_MIMIKYU_BUSTED_TOTEM + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_ALLY_SWITCH].effect == EFFECT_ALLY_SWITCH);
+    ASSUME(GetMoveEffect(MOVE_ALLY_SWITCH) == EFFECT_ALLY_SWITCH);
 }
 
 SINGLE_BATTLE_TEST("Ally Switch fails in a single battle")
@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Ally Switch fails if there is no partner")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, .target =playerRight); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target:playerRight); }
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); }
     } SCENE {
         MESSAGE("Wobbuffet fainted!");
@@ -41,14 +41,14 @@ DOUBLE_BATTLE_TEST("Ally Switch fails if there is no partner")
 DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SCREECH].effect == EFFECT_DEFENSE_DOWN_2);
-        ASSUME(gMovesInfo[MOVE_SCREECH].target == MOVE_TARGET_SELECTED);
+        ASSUME(GetMoveEffect(MOVE_SCREECH) == EFFECT_DEFENSE_DOWN_2);
+        ASSUME(GetMoveTarget(MOVE_SCREECH) == MOVE_TARGET_SELECTED);
         PLAYER(SPECIES_WOBBUFFET) { Speed(5); } // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
         PLAYER(SPECIES_WYNAUT) { Speed(4); }
         OPPONENT(SPECIES_KADABRA) { Speed(3); }
         OPPONENT(SPECIES_ABRA) { Speed(2); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SCREECH, .target =playerLeft); MOVE(opponentRight, MOVE_SCREECH, .target =playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SCREECH, target:playerLeft); MOVE(opponentRight, MOVE_SCREECH, target:playerLeft); }
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -72,13 +72,13 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
 DOUBLE_BATTLE_TEST("Ally Switch does not redirect the target of Snipe Shot")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SNIPE_SHOT].effect == EFFECT_SNIPE_SHOT);
+        ASSUME(GetMoveEffect(MOVE_SNIPE_SHOT) == EFFECT_SNIPE_SHOT);
         PLAYER(SPECIES_WOBBUFFET); // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SNIPE_SHOT, .target =playerLeft); } // Kadabra targets Wobb and Snipe Shot ignores Ally Switch position change.
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SNIPE_SHOT, target:playerLeft); } // Kadabra targets Wobb and Snipe Shot ignores Ally Switch position change.
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -103,14 +103,14 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect moves done by pokemon with Sta
         OPPONENT(SPECIES_KADABRA) { Ability(ability); }
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_TACKLE, .target =playerRight); } // Kadabra targets playerRight Wynaut.
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SCRATCH, target:playerRight); } // Kadabra targets playerRight Wynaut.
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
         MESSAGE("Wobbuffet and Wynaut switched places!");
 
-        MESSAGE("The opposing Kadabra used Tackle!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        MESSAGE("The opposing Kadabra used Scratch!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
         HP_BAR((ability == ABILITY_STALWART || ability == ABILITY_PROPELLER_TAIL) ? playerLeft : playerRight);
     }
 }
@@ -120,18 +120,18 @@ DOUBLE_BATTLE_TEST("Ally Switch has no effect on partner's chosen move")
     u16 chosenMove;
     struct BattlePokemon *chosenTarget = NULL;
 
-    PARAMETRIZE { chosenMove = MOVE_TACKLE; chosenTarget = opponentLeft; }
-    PARAMETRIZE { chosenMove = MOVE_TACKLE; chosenTarget = opponentRight; }
+    PARAMETRIZE { chosenMove = MOVE_SCRATCH; chosenTarget = opponentLeft; }
+    PARAMETRIZE { chosenMove = MOVE_SCRATCH; chosenTarget = opponentRight; }
     PARAMETRIZE { chosenMove = MOVE_POUND; chosenTarget = opponentLeft; }
     PARAMETRIZE { chosenMove = MOVE_POUND; chosenTarget = opponentRight; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT) { Moves(MOVE_TACKLE, MOVE_POUND, MOVE_CELEBRATE, MOVE_SCRATCH); }
+        PLAYER(SPECIES_WYNAUT) { Moves(MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE, MOVE_SCRATCH); }
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, chosenMove, .target =chosenTarget); }
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, chosenMove, target:chosenTarget); }
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -156,7 +156,7 @@ DOUBLE_BATTLE_TEST("Ally Switch - move fails if the target was ally which change
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, move, .target =playerLeft); }
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, move, target:playerLeft); }
     } SCENE {
         MESSAGE("Wobbuffet used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
@@ -164,6 +164,24 @@ DOUBLE_BATTLE_TEST("Ally Switch - move fails if the target was ally which change
 
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
         MESSAGE("But it failed!");
+    }
+}
+
+DOUBLE_BATTLE_TEST("Ally Switch doesn't make self-targeting status moves fail")
+{
+    GIVEN {
+        ASSUME(gMovesInfo[MOVE_HARDEN].target == MOVE_TARGET_USER);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, MOVE_HARDEN); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HARDEN, playerLeft);
+    } THEN {
+        EXPECT_EQ(playerLeft->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);
     }
 }
 
@@ -190,7 +208,7 @@ DOUBLE_BATTLE_TEST("Ally Switch works if ally used two-turn move like Dig")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_DIG, .target =opponentRight); }
+        TURN { MOVE(playerRight, MOVE_DIG, target:opponentRight); }
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); SKIP_TURN(playerRight); }
     } SCENE {
         MESSAGE("Wynaut used Dig!");
@@ -207,7 +225,7 @@ DOUBLE_BATTLE_TEST("Ally switch swaps sky drop targets if being used by partner"
 {
     u8 visibility;
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SKY_DROP].effect == EFFECT_SKY_DROP);
+        ASSUME(GetMoveEffect(MOVE_SKY_DROP) == EFFECT_SKY_DROP);
         PLAYER(SPECIES_FEAROW) { Speed(100); }
         PLAYER(SPECIES_XATU)   { Speed(150); }
         OPPONENT(SPECIES_ARON) { Speed(25); Ability(ABILITY_STURDY); }
@@ -244,7 +262,7 @@ DOUBLE_BATTLE_TEST("Ally switch swaps opposing sky drop targets if partner is be
 {
     u8 visibility;
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SKY_DROP].effect == EFFECT_SKY_DROP);
+        ASSUME(GetMoveEffect(MOVE_SKY_DROP) == EFFECT_SKY_DROP);
         PLAYER(SPECIES_ARON) { Speed(25); Ability(ABILITY_STURDY); }
         PLAYER(SPECIES_WYNAUT) { Speed(30); }
         OPPONENT(SPECIES_FEAROW) { Speed(100); }
@@ -277,12 +295,10 @@ DOUBLE_BATTLE_TEST("Ally switch swaps opposing sky drop targets if partner is be
     }
 }
 
-// Test passes in isolation but fails on CI
-/*
 DOUBLE_BATTLE_TEST("Ally Switch swaps Illusion data")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ALLY_SWITCH].effect == EFFECT_ALLY_SWITCH);
+        ASSUME(GetMoveEffect(MOVE_ALLY_SWITCH) == EFFECT_ALLY_SWITCH);
         PLAYER(SPECIES_HOOPA);
         PLAYER(SPECIES_ZOROARK);
         PLAYER(SPECIES_MAMOSWINE); // the third member here is required for zoroark
@@ -294,7 +310,28 @@ DOUBLE_BATTLE_TEST("Ally Switch swaps Illusion data")
         EXPECT(&gPlayerParty[2] == gBattleStruct->illusion[0].mon);
     }
 }
-*/
+
+DOUBLE_BATTLE_TEST("Ally switch updates last used moves for Mimic")
+{
+    GIVEN {
+        PLAYER(SPECIES_XATU)     { Speed(100); }
+        PLAYER(SPECIES_RIOLU)    { Speed(150); }
+        OPPONENT(SPECIES_FEAROW) { Speed(20); }
+        OPPONENT(SPECIES_ARON)   { Speed(30); }
+    } WHEN {
+        TURN { MOVE(playerRight, MOVE_FAKE_OUT, target: opponentRight); MOVE(playerLeft, MOVE_ALLY_SWITCH); 
+               MOVE(opponentLeft, MOVE_MIMIC, target: playerLeft);
+             }
+    } SCENE {
+        MESSAGE("Riolu used Fake Out!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, playerRight);
+        MESSAGE("Xatu used Ally Switch!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
+        MESSAGE("Xatu and Riolu switched places!");
+        MESSAGE("The opposing Fearow used Mimic!");
+        MESSAGE("The opposing Fearow learned Fake Out!");
+    }
+}
 
 // Triple Battles required to test
 //TO_DO_BATTLE_TEST("Ally Switch fails if the user is in the middle of the field in a Triple Battle");

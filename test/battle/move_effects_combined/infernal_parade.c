@@ -3,8 +3,8 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_INFERNAL_PARADE].effect == EFFECT_DOUBLE_POWER_ON_ARG_STATUS);
-    ASSUME(gMovesInfo[MOVE_INFERNAL_PARADE].argument == STATUS1_ANY);
+    ASSUME(GetMoveEffect(MOVE_INFERNAL_PARADE) == EFFECT_DOUBLE_POWER_ON_ARG_STATUS);
+    ASSUME(GetMoveEffectArg_Status(MOVE_INFERNAL_PARADE) == STATUS1_ANY);
     ASSUME(MoveHasAdditionalEffect(MOVE_INFERNAL_PARADE, MOVE_EFFECT_BURN) == TRUE);
 }
 
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Infernal Parade inflicts burn")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_INFERNAL_PARADE, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponent);
-        STATUS_ICON(opponent, .burn = TRUE);
+        STATUS_ICON(opponent, burn: TRUE);
     }
 }
 
@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Infernal Parade's power doubles if the target has a status c
         TURN { MOVE(player, MOVE_INFERNAL_PARADE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_INFERNAL_PARADE, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } THEN {
         if (i > 0)
             EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[i].damage);

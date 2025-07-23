@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_FOCUS_ENERGY].effect == EFFECT_FOCUS_ENERGY);
+    ASSUME(GetMoveEffect(MOVE_FOCUS_ENERGY) == EFFECT_FOCUS_ENERGY);
 }
 
 SINGLE_BATTLE_TEST("Focus Energy increases the user's critical hit ratio by 1 stage (Gen 1-2) or 2 stages (Gen 3+)")
@@ -31,11 +31,11 @@ SINGLE_BATTLE_TEST("Focus Energy increases the user's critical hit ratio by 1 st
     } WHEN {
         if (useFocusEnergy)
             TURN { MOVE(player, MOVE_FOCUS_ENERGY); }
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         if (useFocusEnergy)
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_ENERGY, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
         MESSAGE("A critical hit!");
     }
 }

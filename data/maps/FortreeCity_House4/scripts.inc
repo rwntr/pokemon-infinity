@@ -1,5 +1,3 @@
-.set LOCALID_WINGULL, 3
-
 FortreeCity_House4_MapScripts::
 	.byte 0
 
@@ -16,9 +14,9 @@ FortreeCity_House4_EventScript_Boy::
 	closemessage
 	setflag FLAG_WINGULL_SENT_ON_ERRAND
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_WINGULL
-	applymovement LOCALID_WINGULL, FortreeCity_House4_Movement_WingullExit
+	applymovement LOCALID_FORTREE_HOUSE_WINGULL, FortreeCity_House4_Movement_WingullExit
 	waitmovement 0
-	removeobject LOCALID_WINGULL
+	removeobject LOCALID_FORTREE_HOUSE_WINGULL
 	releaseall
 	end
 
@@ -65,33 +63,33 @@ FortreeCity_House4_EventScript_Wingull::
 	end
 
 FortreeCity_House4_Text_BringsWorldCloserTogether:
-	.string "By being together with Pokémon,\n"
+	.string "By being together with POKéMON,\n"
 	.string "people make more and more friends.\p"
 	.string "And that brings the world closer\n"
 	.string "together. I think it's wonderful!$"
 
 FortreeCity_House4_Text_GoBirdPokemon:
 	.string "There!\n"
-	.string "Go, Bird Pokémon!$"
+	.string "Go, BIRD POKéMON!$"
 
 FortreeCity_House4_Text_AskedWingullToRunErrand:
-	.string "Heheh, I asked my Wingull to run\n"
+	.string "Heheh, I asked my WINGULL to run\n"
 	.string "an errand for me.$"
 
 FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "Good!\n"
-	.string "Welcome back, Wingull!\p"
+	.string "Welcome back, WINGULL!\p"
 	.string "Huh? What is this?\n"
 	.string "What is it holding?\p"
-	.string "A Mental Herb?\n"
+	.string "A MENTAL HERB?\n"
 	.string "It must have picked it up somewhere.\p"
-	.string "But I'm not a Trainer, so you can\n"
+	.string "But I'm not a TRAINER, so you can\n"
 	.string "have it.$"
 
 FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:
-	.string "Thanks to my Wingull, I have friends\n"
+	.string "Thanks to my WINGULL, I have friends\n"
 	.string "who live far away.$"
 
 FortreeCity_House4_Text_Wingull:
-	.string "Wingull: Pihyoh!$"
+	.string "WINGULL: Pihyoh!$"
 

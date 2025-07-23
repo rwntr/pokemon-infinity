@@ -3,14 +3,14 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_ROUND].effect == EFFECT_ROUND);
+    ASSUME(GetMoveEffect(MOVE_ROUND) == EFFECT_ROUND);
 }
 
 DOUBLE_BATTLE_TEST("Round allows other battlers which also selected the moves to immediately use the move, ignoring turn order")
 {
     GIVEN {
         ASSUME(gItemsInfo[ITEM_LAGGING_TAIL].holdEffect == HOLD_EFFECT_LAGGING_TAIL);
-        ASSUME(gMovesInfo[MOVE_IRON_HEAD].additionalEffects[0].moveEffect == MOVE_EFFECT_FLINCH);
+        ASSUME(GetMoveAdditionalEffectById(MOVE_IRON_HEAD, 0)->moveEffect == MOVE_EFFECT_FLINCH);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -18,9 +18,9 @@ DOUBLE_BATTLE_TEST("Round allows other battlers which also selected the moves to
     } WHEN {
         TURN {
             MOVE(playerRight, MOVE_CELEBRATE);
-            MOVE(opponentLeft, MOVE_ROUND, .target = playerLeft);
-            MOVE(playerLeft, MOVE_IRON_HEAD, .target = opponentRight);
-            MOVE(opponentRight, MOVE_ROUND, .target = playerLeft);
+            MOVE(opponentLeft, MOVE_ROUND, target: playerLeft);
+            MOVE(playerLeft, MOVE_IRON_HEAD, target: opponentRight);
+            MOVE(opponentRight, MOVE_ROUND, target: playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
@@ -41,12 +41,12 @@ DOUBLE_BATTLE_TEST("Round usages beyond the first one has double base power")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE(opponentLeft, MOVE_ROUND, .target = playerLeft);
-            MOVE(opponentRight, MOVE_ROUND, .target = playerLeft);
+            MOVE(opponentLeft, MOVE_ROUND, target: playerLeft);
+            MOVE(opponentRight, MOVE_ROUND, target: playerLeft);
         }
     } SCENE {
-        HP_BAR(playerLeft, .captureDamage =  &damage[0]);
-        HP_BAR(playerLeft, .captureDamage =  &damage[1]);
+        HP_BAR(playerLeft, captureDamage: &damage[0]);
+        HP_BAR(playerLeft, captureDamage: &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], Q_4_12(2.0), damage[1]);
     }
@@ -61,10 +61,10 @@ DOUBLE_BATTLE_TEST("Round still preserves the turn order outside of the other Ro
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
-            MOVE(opponentLeft, MOVE_ROUND, .target = playerLeft);
+            MOVE(opponentLeft, MOVE_ROUND, target: playerLeft);
             MOVE(playerRight, MOVE_CELEBRATE);
             MOVE(playerLeft, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_ROUND, .target = playerLeft); }
+            MOVE(opponentRight, MOVE_ROUND, target: playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, opponentRight);
@@ -83,9 +83,9 @@ DOUBLE_BATTLE_TEST("Round still preserves the turn order outside of the other Ro
     } WHEN {
         TURN {
             SWITCH(playerRight, 2);
-            MOVE(opponentLeft, MOVE_ROUND, .target = playerLeft);
+            MOVE(opponentLeft, MOVE_ROUND, target: playerLeft);
             MOVE(playerLeft, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_ROUND, .target = playerLeft);
+            MOVE(opponentRight, MOVE_ROUND, target: playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, opponentLeft);
@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Round causes opposing pokemon to use Round immediately")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LAGGING_TAIL); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(playerRight, MOVE_ROUND, .target = opponentLeft); MOVE(playerLeft, MOVE_CELEBRATE, .target = opponentRight); MOVE(opponentRight, MOVE_ROUND, .target = playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(playerRight, MOVE_ROUND, target: opponentLeft); MOVE(playerLeft, MOVE_CELEBRATE, target: opponentRight); MOVE(opponentRight, MOVE_ROUND, target: playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, playerRight);

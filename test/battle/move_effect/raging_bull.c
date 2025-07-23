@@ -3,11 +3,11 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_RAGING_BULL].effect == EFFECT_RAGING_BULL);
-    ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
-    ASSUME(gMovesInfo[MOVE_LIGHT_SCREEN].effect == EFFECT_LIGHT_SCREEN);
-    ASSUME(gMovesInfo[MOVE_REFLECT].effect == EFFECT_REFLECT);
-    ASSUME(gMovesInfo[MOVE_AURORA_VEIL].effect == EFFECT_AURORA_VEIL);
+    ASSUME(GetMoveEffect(MOVE_RAGING_BULL) == EFFECT_RAGING_BULL);
+    ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
+    ASSUME(GetMoveEffect(MOVE_LIGHT_SCREEN) == EFFECT_LIGHT_SCREEN);
+    ASSUME(GetMoveEffect(MOVE_REFLECT) == EFFECT_REFLECT);
+    ASSUME(GetMoveEffect(MOVE_AURORA_VEIL) == EFFECT_AURORA_VEIL);
 }
 
 SINGLE_BATTLE_TEST("Raging Bull removes Light Screen, Reflect and Aurora Veil from the target's side of the field")
@@ -41,7 +41,6 @@ SINGLE_BATTLE_TEST("Raging Bull doesn't remove Light Screen, Reflect and Aurora 
     PARAMETRIZE { move = MOVE_REFLECT; }
     PARAMETRIZE { move = MOVE_AURORA_VEIL; }
 
-    KNOWN_FAILING;
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_GASTLY);
@@ -98,7 +97,7 @@ SINGLE_BATTLE_TEST("Raging Bull doesn't remove Light Screen, Reflect and Aurora 
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHT_POWDER); }
     } WHEN {
         TURN { MOVE(player, MOVE_SNOWSCAPE); MOVE(opponent, move); }
-        TURN { MOVE(player, MOVE_RAGING_BULL, .hit = FALSE); }
+        TURN { MOVE(player, MOVE_RAGING_BULL, hit: FALSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNOWSCAPE, player);
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
@@ -127,7 +126,7 @@ DOUBLE_BATTLE_TEST("Raging Bull can remove Light Screen, Reflect and Aurora Veil
         TURN {
             MOVE(opponentLeft, MOVE_SNOWSCAPE);
             MOVE(playerLeft, move);
-            MOVE(playerRight, MOVE_RAGING_BULL, .target = playerLeft);
+            MOVE(playerRight, MOVE_RAGING_BULL, target: playerLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNOWSCAPE, opponentLeft);

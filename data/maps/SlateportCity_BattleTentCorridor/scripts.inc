@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 SlateportCity_BattleTentCorridor_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_BattleTentCorridor_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SlateportCity_BattleTentCorridor_OnWarp
@@ -14,10 +12,10 @@ SlateportCity_BattleTentCorridor_OnWarp:
 SlateportCity_BattleTentCorridor_EventScript_SetUpObjects::
 	setvar VAR_TEMP_1, 1
 	goto_if_ne VAR_0x8006, 1, SlateportCity_BattleTentCorridor_EventScript_TurnPlayerNorth
-	setobjectxy LOCALID_ATTENDANT, 2, 2
-	turnobject LOCALID_ATTENDANT, DIR_SOUTH
+	setobjectxy LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, 2, 2
+	turnobject LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, DIR_SOUTH
 SlateportCity_BattleTentCorridor_EventScript_TurnPlayerNorth::
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 SlateportCity_BattleTentCorridor_OnFrame:
@@ -27,8 +25,8 @@ SlateportCity_BattleTentCorridor_OnFrame:
 SlateportCity_BattleTentCorridor_EventScript_EnterCorridor::
 	goto_if_eq VAR_0x8006, 1, SlateportCity_BattleTentCorridor_EventScript_ReturnToRoomFromBattle
 	setvar VAR_TEMP_0, 1
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantEnter
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerEnter
+	applymovement LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantEnter
+	applymovement LOCALID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerEnter
 	waitmovement 0
 	goto_if_eq VAR_0x8006, 2, SlateportCity_BattleTentCorridor_EventScript_ResumeChallenge
 	slateporttent_generaterentalmons
@@ -40,12 +38,12 @@ SlateportCity_BattleTentCorridor_EventScript_EnterCorridor::
 SlateportCity_BattleTentCorridor_EventScript_EnterBattleRoom::
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ATTENDANT, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	opendoor 2, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantExit
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerExit
+	applymovement LOCALID_SLATEPORT_TENT_CORRIDOR_ATTENDANT, SlateportCity_BattleTentCorridor_Movement_AttendantExit
+	applymovement LOCALID_PLAYER, SlateportCity_BattleTentCorridor_Movement_PlayerExit
 	waitmovement 0
 	closedoor 2, 1
 	waitdooranim
@@ -157,28 +155,28 @@ SlateportCity_BattleTentCorridor_Movement_AttendantExit:
 @ Unused
 SlateportCity_ContestHall_Text_AdviceForContests:
 	.string "Want a tasty little bit of advice\n"
-	.string "for Contests?\p"
+	.string "for CONTESTS?\p"
 	.string "Using a certain move after another\n"
 	.string "certain kind of move sometimes gets\l"
 	.string "you extra attention.\p"
 	.string "If you know what you're doing,\n"
 	.string "you can score big in appeal.\p"
 	.string "Of course, your opponents might try\n"
-	.string "disrupting your Pokémon's showing.$"
+	.string "disrupting your POKéMON's showing.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MyPapaIsContestJudge:
-	.string "My papa, he's a Contest Judge.\p"
+	.string "My papa, he's a CONTEST JUDGE.\p"
 	.string "I wonder what I should be when I\n"
-	.string "grow up, a Judge or a Gym Leader?$"
+	.string "grow up, a JUDGE or a GYM LEADER?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ImLikeMajorlyCheesed:
 	.string "Hey, man, I'm like majorly cheesed,\n"
 	.string "you know. Like, you know, I just\l"
-	.string "wanted to know why my Pokémon\l"
+	.string "wanted to know why my POKéMON\l"
 	.string "never won, you know, like, hey?\p"
-	.string "So, like, I gave the Judge my two\n"
+	.string "So, like, I gave the JUDGE my two\n"
 	.string "cents, you know, they're free.\p"
 	.string "And he wouldn't hear me out, like, hey!\n"
 	.string "So, like, total bummer, man!\p"
@@ -188,7 +186,7 @@ SlateportCity_ContestHall_Text_ImLikeMajorlyCheesed:
 @ Unused
 SlateportCity_ContestHall_Text_ExplainTorment:
 	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's Torment, you hearing me?\p"
+	.string "Hey, it's TORMENT, you hearing me?\p"
 	.string "Like, it won't let the other guy\n"
 	.string "use the same move twice in a row, see?\p"
 	.string "Hey, now, you listen here, like,\n"
@@ -197,20 +195,20 @@ SlateportCity_ContestHall_Text_ExplainTorment:
 @ Unused
 SlateportCity_ContestHall_Text_MCStepUpTakePartInContest:
 	.string "MC: Oh, my, my!\n"
-	.string "Now isn't that a dandy of a Pokémon?\p"
+	.string "Now isn't that a dandy of a POKéMON?\p"
 	.string "Please! Do step right up and take\n"
-	.string "part in our splendid Contests!\p"
+	.string "part in our splendid CONTESTS!\p"
 	.string "You'll do well! I'm sure of it!\n"
 	.string "My eyes have never failed me!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest:
-	.string "Judge: Well, hello there!\n"
-	.string "I see that you're a Trainer!\p"
+	.string "JUDGE: Well, hello there!\n"
+	.string "I see that you're a TRAINER!\p"
 	.string "Then, it just wouldn't do for you\n"
-	.string "to miss a Pokémon Contest!\p"
-	.string "Get a Contest Pass in Verdanturf\n"
-	.string "City and enter anytime!$"
+	.string "to miss a POKéMON CONTEST!\p"
+	.string "Get a CONTEST PASS in VERDANTURF\n"
+	.string "CITY and enter anytime!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ItsAppealTime:
@@ -220,8 +218,8 @@ SlateportCity_ContestHall_Text_ItsAppealTime:
 @ Unused
 SlateportCity_ContestHall_Text_DidntPayAttentionToAppeal:
 	.string "They didn't pay much attention to\n"
-	.string "my Pokémon's appeal…\p"
-	.string "Humph, that Judge, he doesn't know\n"
+	.string "my POKéMON's appeal…\p"
+	.string "Humph, that JUDGE, he doesn't know\n"
 	.string "a good thing when he sees it.$"
 
 @ Unused
@@ -232,7 +230,7 @@ SlateportCity_ContestHall_Text_RewardWithSageAdvice:
 	.string "this sage advice.\p"
 	.string "If a move goes over really well,\n"
 	.string "the audience will get excited.\p"
-	.string "The Pokémon that makes its appeal\n"
+	.string "The POKéMON that makes its appeal\n"
 	.string "right when everyone's excited…\p"
 	.string "Well, you'd think something good has\n"
 	.string "to happen!$"
@@ -240,38 +238,38 @@ SlateportCity_ContestHall_Text_RewardWithSageAdvice:
 @ Unused
 SlateportCity_ContestHall_Text_MoreFreakedOutThanMon:
 	.string "I can't do this! I'm more freaked out\n"
-	.string "than my Pokémon.\p"
+	.string "than my POKéMON.\p"
 	.string "I'm shivering and my heart is racing!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_BattleAndContestAlike:
-	.string "A battle and a Contest aren't the\n"
+	.string "A battle and a CONTEST aren't the\n"
 	.string "same, but they are alike, too.\p"
 	.string "You need to work hard and believe\n"
-	.string "in the Pokémon you've raised.$"
+	.string "in the POKéMON you've raised.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MonLooksOnTopOfGame:
-	.string "That Pokémon looks like it's on top\n"
+	.string "That POKéMON looks like it's on top\n"
 	.string "of its game, huh?\p"
-	.string "A Pokémon that does good in the\n"
+	.string "A POKéMON that does good in the\n"
 	.string "secondary judging seems to be more\l"
 	.string "relaxed when it's doing appeals.$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MyMonBetterThanThatLot:
 	.string "Will you look at that sorry sight?\p"
-	.string "Heh, my Pokémon's absolutely better\n"
+	.string "Heh, my POKéMON's absolutely better\n"
 	.string "than that lot!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_GetUrgeToMoveWithMon:
 	.string "Don't you get the urge to move with\n"
-	.string "Pokémon if they're putting on an\l"
+	.string "POKéMON if they're putting on an\l"
 	.string "energetic appeal?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_HyperRankStage:
-	.string "Pokémon Contests\n"
-	.string "Hyper Rank Stage!$"
+	.string "POKéMON CONTESTS\n"
+	.string "HYPER RANK STAGE!$"
 

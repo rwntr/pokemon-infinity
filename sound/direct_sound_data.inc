@@ -463,12 +463,6 @@ Cry_Metapod::
 	.align 2
 Cry_Butterfree::
 	.incbin "sound/direct_sound_samples/cries/butterfree.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_ButterfreeMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_butterfree.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CATERPIE
 
 .if P_FAMILY_WEEDLE == TRUE
@@ -806,12 +800,6 @@ Cry_Machoke::
 	.align 2
 Cry_Machamp::
 	.incbin "sound/direct_sound_samples/cries/machamp.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_MachampMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_machamp.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MACHOP
 
 .if P_FAMILY_BELLSPROUT == TRUE
@@ -876,7 +864,6 @@ Cry_Slowbro::
 Cry_Slowking::
 	.incbin "sound/direct_sound_samples/cries/slowking.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
 Cry_SlowbroMega::
@@ -1015,12 +1002,6 @@ Cry_Krabby::
 	.align 2
 Cry_Kingler::
 	.incbin "sound/direct_sound_samples/cries/kingler.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_KinglerMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_kingler.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KRABBY
 
 .if P_FAMILY_VOLTORB == TRUE
@@ -1168,12 +1149,6 @@ Cry_Seadra::
 	.align 2
 Cry_Kingdra::
 	.incbin "sound/direct_sound_samples/cries/kingdra.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_KingdraMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_kingdra.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HORSEA
 
@@ -1325,12 +1300,6 @@ Cry_GyaradosMega::
 	.align 2
 Cry_Lapras::
 	.incbin "sound/direct_sound_samples/cries/lapras.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_LaprasMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_lapras.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LAPRAS
 
 .if P_FAMILY_DITTO == TRUE
@@ -2546,12 +2515,6 @@ Cry_Vibrava::
 	.align 2
 Cry_Flygon::
 	.incbin "sound/direct_sound_samples/cries/flygon.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_FlygonMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_flygon.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TRAPINCH
 
 .if P_FAMILY_CACNEA == TRUE
@@ -2662,12 +2625,6 @@ Cry_Feebas::
 	.align 2
 Cry_Milotic::
 	.incbin "sound/direct_sound_samples/cries/milotic.bin"
-
-.if P_MEGA_EVOLUTIONS == TRUE
-	.align 2
-Cry_MiloticMega::
-	.incbin "sound/direct_sound_samples/cries/uncomp_mega_milotic.bin"
-.endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FEEBAS
 
 .if P_FAMILY_CASTFORM == TRUE

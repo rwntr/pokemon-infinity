@@ -27,12 +27,12 @@ SINGLE_BATTLE_TEST("Metronome Item gradually boosts power of consecutively used 
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         for (j = 0; j < METRONOME_TURNS; ++j) {
-            TURN { MOVE(player, MOVE_TACKLE); }
+            TURN { MOVE(player, MOVE_SCRATCH); }
         }
     } SCENE {
         for (j = 0; j < METRONOME_TURNS; ++j) {
-            ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-            HP_BAR(opponent, .captureDamage =  &damage[j]);
+            ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+            HP_BAR(opponent, captureDamage: &damage[j]);
         }
     } THEN {
         for (j = 0; j < METRONOME_TURNS; ++j) {
@@ -48,17 +48,17 @@ SINGLE_BATTLE_TEST("Metronome Item's boost is reset if the attacker uses a diffe
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_METRONOME); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
         TURN { MOVE(player, MOVE_QUICK_ATTACK); }
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, player);
 
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }
@@ -71,15 +71,15 @@ SINGLE_BATTLE_TEST("Metronome Item's boost is reset if the move fails")
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_METRONOME); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
-        TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_TACKLE); }
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
+        TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_SCRATCH); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &damage[0]);
 
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
     }
@@ -92,14 +92,14 @@ SINGLE_BATTLE_TEST("Metronome Item counts called moves instead of the calling mo
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_METRONOME); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_TACKLE)); }
-        TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_TACKLE)); }
+        TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_SCRATCH)); }
+        TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_SCRATCH)); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &damage[0]);
 
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
+        HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], UQ_4_12(1.2), damage[1]);
     }
@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Metronome Item counts charging turn of moves for its attacki
     PARAMETRIZE {item = ITEM_NONE; }
     PARAMETRIZE {item = ITEM_METRONOME; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SOLAR_BEAM].effect == EFFECT_SOLAR_BEAM);
+        ASSUME(GetMoveEffect(MOVE_SOLAR_BEAM) == EFFECT_SOLAR_BEAM);
         PLAYER(SPECIES_WOBBUFFET) { Item(item); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -124,7 +124,7 @@ SINGLE_BATTLE_TEST("Metronome Item counts charging turn of moves for its attacki
         MESSAGE("The opposing Wobbuffet used Celebrate!");
         MESSAGE("Congratulations, 1!");
         MESSAGE("Wobbuffet used Solar Beam!");
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, UQ_4_12(1.2), results[1].damage);
     }
@@ -134,7 +134,7 @@ SINGLE_BATTLE_TEST("Metronome Item doesn't increase damage per hit of multi-hit 
 {
     s16 damage[3];
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FURY_ATTACK].effect == EFFECT_MULTI_HIT);
+        ASSUME(GetMoveEffect(MOVE_FURY_ATTACK) == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_METRONOME); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -142,11 +142,11 @@ SINGLE_BATTLE_TEST("Metronome Item doesn't increase damage per hit of multi-hit 
         TURN { MOVE(player, MOVE_FURY_ATTACK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_ATTACK, player);
-        HP_BAR(opponent, .captureDamage =  &damage[0]);
-        HP_BAR(opponent, .captureDamage =  &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
+        HP_BAR(opponent, captureDamage: &damage[1]);
         MESSAGE("The Pokémon was hit 5 time(s)!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_ATTACK, player);
-        HP_BAR(opponent, .captureDamage =  &damage[2]);
+        HP_BAR(opponent, captureDamage: &damage[2]);
     } THEN {
         EXPECT_MUL_EQ(damage[0], UQ_4_12(1.2), damage[2]); // Got bonus once for the second turn
         EXPECT_EQ(damage[0], damage[1]); // Do not get the bonus while still inside the first turn

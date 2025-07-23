@@ -17,8 +17,22 @@ SINGLE_BATTLE_TEST("Sleep prevents the battler from using a move")
         for (j = 0; j < turns - 1; j++)
             MESSAGE("Wobbuffet is fast asleep.");
         MESSAGE("Wobbuffet woke up!");
-        STATUS_ICON(player, .none = TRUE);
+        STATUS_ICON(player, none: TRUE);
         MESSAGE("Wobbuffet used Celebrate!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Sleep: Spore doesn't affect grass types (Gen 6+)")
+{
+    GIVEN {
+        ASSUME(IsPowderMove(MOVE_SPORE));
+        ASSUME(B_POWDER_GRASS >= GEN_6);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_CHIKORITA);
+    } WHEN {
+        TURN { MOVE(player, MOVE_SPORE); }
+    } SCENE {
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
     }
 }
 

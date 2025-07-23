@@ -9,7 +9,7 @@ DOUBLE_BATTLE_TEST("Teraform Zero clears weather and terrain upon activation")
         OPPONENT(SPECIES_KYOGRE) {Ability(ABILITY_DRIZZLE); }
         OPPONENT(SPECIES_TAPU_KOKO) {Ability(ABILITY_ELECTRIC_SURGE); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_CELEBRATE, .gimmick = GIMMICK_TERA); }
+        TURN { MOVE(playerLeft, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_TERAFORM_ZERO);
         MESSAGE("The rain stopped.");
@@ -26,7 +26,7 @@ DOUBLE_BATTLE_TEST("Teraform Zero can be supressed")
         OPPONENT(SPECIES_KYOGRE) {Ability(ABILITY_DRIZZLE); }
         OPPONENT(SPECIES_TAPU_KOKO) {Ability(ABILITY_ELECTRIC_SURGE); }
     } WHEN {
-        TURN { SWITCH(playerRight, 2); MOVE(playerLeft, MOVE_CELEBRATE, .gimmick = GIMMICK_TERA); }
+        TURN { SWITCH(playerRight, 2); MOVE(playerLeft, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     } SCENE {
         ABILITY_POPUP(playerRight, ABILITY_NEUTRALIZING_GAS);
         NONE_OF {
@@ -39,12 +39,12 @@ DOUBLE_BATTLE_TEST("Teraform Zero can be supressed")
 SINGLE_BATTLE_TEST("Teraform Zero can be replaced")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_WORRY_SEED].effect == EFFECT_WORRY_SEED);
-        ASSUME(gMovesInfo[MOVE_REST].effect == EFFECT_REST);
+        ASSUME(GetMoveEffect(MOVE_WORRY_SEED) == EFFECT_WORRY_SEED);
+        ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_TERAPAGOS);
         OPPONENT(SPECIES_WHIMSICOTT) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
-        TURN { MOVE(opponent, MOVE_WORRY_SEED); MOVE(player, MOVE_REST, .gimmick = GIMMICK_TERA); }
+        TURN { MOVE(opponent, MOVE_WORRY_SEED); MOVE(player, MOVE_REST, gimmick: GIMMICK_TERA); }
     } SCENE {
         MESSAGE("The opposing Whimsicott used Worry Seed!");
         MESSAGE("Terapagos acquired Insomnia!");
@@ -57,11 +57,11 @@ SINGLE_BATTLE_TEST("Teraform Zero can be replaced")
 SINGLE_BATTLE_TEST("Teraform Zero cannot be swapped")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SKILL_SWAP].effect == EFFECT_SKILL_SWAP);
+        ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         PLAYER(SPECIES_TERAPAGOS);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_CELEBRATE, .gimmick = GIMMICK_TERA); MOVE(opponent, MOVE_SKILL_SWAP); }
+        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
         MESSAGE("The opposing Wobbuffet used Skill Swap!");
         MESSAGE("But it failed!");
@@ -71,11 +71,11 @@ SINGLE_BATTLE_TEST("Teraform Zero cannot be swapped")
 SINGLE_BATTLE_TEST("Teraform Zero cannot be copied")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ROLE_PLAY].effect == EFFECT_ROLE_PLAY);
+        ASSUME(GetMoveEffect(MOVE_ROLE_PLAY) == EFFECT_ROLE_PLAY);
         PLAYER(SPECIES_TERAPAGOS);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_CELEBRATE, .gimmick = GIMMICK_TERA); MOVE(opponent, MOVE_ROLE_PLAY); }
+        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_ROLE_PLAY); }
     } SCENE {
         MESSAGE("The opposing Wobbuffet used Role Play!");
         MESSAGE("But it failed!");
@@ -84,7 +84,6 @@ SINGLE_BATTLE_TEST("Teraform Zero cannot be copied")
 
 DOUBLE_BATTLE_TEST("Teraform Zero shouldn't cause Neutralizing Gas to show it's popup when trying to activate")
 {
-    KNOWN_FAILING; // #5010
     GIVEN {
         PLAYER(SPECIES_TERAPAGOS_TERASTAL);
         PLAYER(SPECIES_ABSOL) {Ability(ABILITY_PRESSURE); }
@@ -92,11 +91,11 @@ DOUBLE_BATTLE_TEST("Teraform Zero shouldn't cause Neutralizing Gas to show it's 
         OPPONENT(SPECIES_KYOGRE) {Ability(ABILITY_DRIZZLE); }
         OPPONENT(SPECIES_TAPU_KOKO) {Ability(ABILITY_ELECTRIC_SURGE); }
     } WHEN {
-        TURN {  SWITCH(playerRight, 2); MOVE(playerLeft, MOVE_CELEBRATE, .gimmick = GIMMICK_TERA); }
+        TURN {  SWITCH(playerRight, 2); MOVE(playerLeft, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     } SCENE {
         MESSAGE("Terapagos is storing energy!");
-        MESSAGE("Terapagos terastalized into the Stellar type!");
+        MESSAGE("Terapagos terastallized into the Stellar type!");
         NOT ABILITY_POPUP(playerRight, ABILITY_NEUTRALIZING_GAS);
-        MESSAGE("Terapagos used Celebreate!");
+        MESSAGE("Terapagos used Celebrate!");
     }
 }

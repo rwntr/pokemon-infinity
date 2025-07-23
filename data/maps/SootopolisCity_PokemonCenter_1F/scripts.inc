@@ -1,5 +1,3 @@
-.set LOCALID_NURSE, 1
-
 SootopolisCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SootopolisCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -10,7 +8,7 @@ SootopolisCity_PokemonCenter_1F_OnTransition:
 	end
 
 SootopolisCity_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_SOOTOPOLIS_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -46,12 +44,12 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 	end
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
-	.string "Wallace is rumored to be the toughest\n"
-	.string "Trainer in the whole Hoenn region.\p"
-	.string "This town's is led by the Trainer\n"
-	.string "who taught Wallace.\p"
-	.string "But the Elite Four… They're said to be\n"
-	.string "even stronger than Wallace's mentor.\p"
+	.string "WALLACE is rumored to be the toughest\n"
+	.string "TRAINER in the whole HOENN region.\p"
+	.string "This town's GYM is led by the TRAINER\n"
+	.string "who taught WALLACE.\p"
+	.string "But the ELITE FOUR… They're said to be\n"
+	.string "even stronger than WALLACE's mentor.\p"
 	.string "How strong could they be?$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:
@@ -63,10 +61,10 @@ SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:
 SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon:
 	.string "Whenever, wherever, and whatever\n"
 	.string "happens, I will always be friends with\l"
-	.string "Pokémon.\p"
-	.string "Because it's fun to be with Pokémon!$"
+	.string "POKéMON.\p"
+	.string "Because it's fun to be with POKéMON!$"
 
 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends:
-	.string "Aren't Pokémon our friends?\p"
+	.string "Aren't POKéMON our friends?\p"
 	.string "Why are they going wild this way?$"
 

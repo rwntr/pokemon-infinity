@@ -3,7 +3,8 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_HYPNOSIS].effect == EFFECT_SLEEP);
+    ASSUME(GetMoveEffect(MOVE_HYPNOSIS) == EFFECT_NON_VOLATILE_STATUS);
+    ASSUME(GetMoveNonVolatileStatus(MOVE_HYPNOSIS) == MOVE_EFFECT_SLEEP);
 }
 
 SINGLE_BATTLE_TEST("Hypnosis inflicts 1-3 turns of sleep")
@@ -25,7 +26,7 @@ SINGLE_BATTLE_TEST("Hypnosis inflicts 1-3 turns of sleep")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPNOSIS, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         MESSAGE("The opposing Wobbuffet fell asleep!");
-        STATUS_ICON(opponent, .sleep = TRUE);
+        STATUS_ICON(opponent, sleep: TRUE);
         for (count = 0; count < turns; ++count)
         {
             if (count < turns - 1)
@@ -33,6 +34,6 @@ SINGLE_BATTLE_TEST("Hypnosis inflicts 1-3 turns of sleep")
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         }
         MESSAGE("The opposing Wobbuffet woke up!");
-        STATUS_ICON(opponent, .none = TRUE);
+        STATUS_ICON(opponent, none: TRUE);
     }
 }

@@ -39,15 +39,24 @@ SINGLE_BATTLE_TEST("Booster Energy will activate Protosynthesis after harsh sunl
 {
     GIVEN {
         PLAYER(SPECIES_RAGING_BOLT) { Attack(100); Defense(100); Speed(100); SpAttack(110); SpDefense(100); Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_TORKOAL) { Speed(100); Ability(ABILITY_DROUGHT); }
+        OPPONENT(SPECIES_TORKOAL) { Speed(100); Ability(ABILITY_DROUGHT); };
     } WHEN {
-        TURN {MOVE(player, MOVE_RAIN_DANCE);}
+        TURN {}
+        TURN {}
+        TURN {}
+        TURN {}
+        TURN {}
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_DROUGHT);
+        NONE_OF {
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
+            MESSAGE("Raging Bolt used its Booster Energy to activate Protosynthesis!");
+            MESSAGE("Raging Bolt's Sp. Atk was heightened!");
+        }
         ABILITY_POPUP(player, ABILITY_PROTOSYNTHESIS);
         MESSAGE("The harsh sunlight activated Raging Bolt's Protosynthesis!");
         MESSAGE("Raging Bolt's Sp. Atk was heightened!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_RAIN_DANCE, player);
+        MESSAGE("The sunlight faded.");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         ABILITY_POPUP(player, ABILITY_PROTOSYNTHESIS);
         MESSAGE("Raging Bolt used its Booster Energy to activate Protosynthesis!");
@@ -134,14 +143,14 @@ SINGLE_BATTLE_TEST("Booster Energy increases special attack by 30% if it is the 
     PARAMETRIZE { species = SPECIES_IRON_MOTH; ability = ABILITY_QUARK_DRIVE; item = ITEM_BOOSTER_ENERGY; }
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ROUND].category == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(GetMoveCategory(MOVE_ROUND) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(species) { Attack(100); Defense(100); Speed(100); SpAttack(110); SpDefense(100); Ability(ability); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(100); };
     } WHEN {
         TURN { MOVE(player, MOVE_ROUND); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.3), results[1].damage);
     }
@@ -160,14 +169,14 @@ SINGLE_BATTLE_TEST("Booster Energy increases special defense by 30% if it is the
     PARAMETRIZE { species = SPECIES_IRON_MOTH; ability = ABILITY_QUARK_DRIVE; item = ITEM_BOOSTER_ENERGY; }
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ROUND].category == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(GetMoveCategory(MOVE_ROUND) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(species) { Attack(100); Defense(100); Speed(100); SpAttack(100); SpDefense(110); Ability(ability); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(100); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_ROUND); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROUND, opponent);
-        HP_BAR(player, .captureDamage =  &results[i].damage);
+        HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.7), results[1].damage);
     }

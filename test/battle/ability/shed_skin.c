@@ -8,7 +8,7 @@ SINGLE_BATTLE_TEST("Shed Skin triggers 33% of the time")
     else
         PASSES_RANDOMLY(33, 100, RNG_SHED_SKIN);
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ARBOK) { Status1(STATUS1_POISON); Ability(ABILITY_SHED_SKIN); }
     } WHEN {
@@ -16,6 +16,6 @@ SINGLE_BATTLE_TEST("Shed Skin triggers 33% of the time")
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_SHED_SKIN);
         MESSAGE("The opposing Arbok's Shed Skin cured its poison problem!");
-        STATUS_ICON(opponent, .poison = FALSE);
+        STATUS_ICON(opponent, poison: FALSE);
     }
 }

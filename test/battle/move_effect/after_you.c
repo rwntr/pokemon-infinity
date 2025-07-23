@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_AFTER_YOU].effect == EFFECT_AFTER_YOU);
+    ASSUME(GetMoveEffect(MOVE_AFTER_YOU) == EFFECT_AFTER_YOU);
 }
 
 DOUBLE_BATTLE_TEST("After You makes the target move after user")
@@ -15,7 +15,7 @@ DOUBLE_BATTLE_TEST("After You makes the target move after user")
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_AFTER_YOU, .target = playerRight);
+            MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
             MOVE(playerRight, MOVE_CELEBRATE);
             MOVE(opponentLeft, MOVE_CELEBRATE);
             MOVE(opponentRight, MOVE_CELEBRATE);
@@ -41,7 +41,7 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
             MOVE(playerLeft, MOVE_CELEBRATE);
             MOVE(playerRight, MOVE_CELEBRATE);
             MOVE(opponentLeft, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_AFTER_YOU, .target = opponentLeft);
+            MOVE(opponentRight, MOVE_AFTER_YOU, target: opponentLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerLeft);
@@ -61,13 +61,13 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon 
         OPPONENT(SPECIES_DRAGONITE) { Speed(60); }
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_AFTER_YOU, .target = playerRight);
-            MOVE(playerRight, MOVE_STONE_EDGE, .target = opponentLeft);
+            MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
+            MOVE(playerRight, MOVE_STONE_EDGE, target: opponentLeft);
             MOVE(opponentRight, MOVE_CELEBRATE);
         }
         TURN {
-            MOVE(playerLeft, MOVE_AFTER_YOU, .target = playerRight);
-            MOVE(playerRight, MOVE_STONE_EDGE, .target = opponentRight);
+            MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
+            MOVE(playerRight, MOVE_STONE_EDGE, target: opponentRight);
             MOVE(opponentRight, MOVE_CELEBRATE);
         }
     } SCENE {
@@ -99,7 +99,7 @@ DOUBLE_BATTLE_TEST("After You doesn't fail if the turn order remains the same af
             MOVE(playerLeft, MOVE_CELEBRATE);
             MOVE(playerRight, MOVE_CELEBRATE);
             MOVE(opponentLeft, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_AFTER_YOU, .target = opponentLeft);
+            MOVE(opponentRight, MOVE_AFTER_YOU, target: opponentLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerLeft);
@@ -112,17 +112,17 @@ DOUBLE_BATTLE_TEST("After You doesn't fail if the turn order remains the same af
 DOUBLE_BATTLE_TEST("After You ignores the effects of Quash")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_QUASH].effect == EFFECT_QUASH);
+        ASSUME(GetMoveEffect(MOVE_QUASH) == EFFECT_QUASH);
         PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
         PLAYER(SPECIES_WYNAUT) { Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
         OPPONENT(SPECIES_WYNAUT) { Speed(3); }
     } WHEN {
         TURN {
-            MOVE(playerLeft, MOVE_QUASH, .target = opponentLeft);
+            MOVE(playerLeft, MOVE_QUASH, target: opponentLeft);
             MOVE(playerRight, MOVE_CELEBRATE);
             MOVE(opponentLeft, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_AFTER_YOU, .target = opponentLeft);
+            MOVE(opponentRight, MOVE_AFTER_YOU, target: opponentLeft);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUASH, playerLeft);

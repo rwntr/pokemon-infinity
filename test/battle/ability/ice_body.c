@@ -2,8 +2,8 @@
 #include "test/battle.h"
 
 ASSUMPTIONS {
-    ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
-    ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
+    ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
+    ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
 }
 
 SINGLE_BATTLE_TEST("Ice Body prevents damage from hail")
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Ice Body recovers 1/16th of Max HP in hail.")
         TURN { MOVE(opponent, move); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_ICE_BODY);
-        HP_BAR(player, .damage = -(100 / 16));
+        HP_BAR(player, damage: -(100 / 16));
         MESSAGE("Glalie's Ice Body healed it a little bit!");
     }
 }

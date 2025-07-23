@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_KNOCK_OFF].effect == EFFECT_KNOCK_OFF);
+    ASSUME(GetMoveEffect(MOVE_KNOCK_OFF) == EFFECT_KNOCK_OFF);
 }
 
 SINGLE_BATTLE_TEST("Knock Off knocks a healing berry before it has the chance to activate")
@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Knock Off deals additional damage to opponents holding an it
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
         if (item != ITEM_NONE)
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
     } FINALLY {
@@ -90,11 +90,62 @@ SINGLE_BATTLE_TEST("Knock Off does not remove items through Substitute")
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); };
     } WHEN {
-        TURN { MOVE(opponent, MOVE_SUBSTITUTE);
-               MOVE(player, MOVE_KNOCK_OFF); }
+        TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
         NOT { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF); }
+    } THEN {
+        EXPECT(opponent->item == ITEM_LEFTOVERS);
+    }
+}
+
+SINGLE_BATTLE_TEST("Knock Off does not remove items through Substitute even if it breaks it")
+{
+    GIVEN {
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET) { MaxHP(4); HP(4); Item(ITEM_LEFTOVERS); };
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_KNOCK_OFF); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
+        MESSAGE("The opposing Wobbuffet's substitute faded!");
+        NOT { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF); }
+    } THEN {
+        EXPECT(opponent->item == ITEM_LEFTOVERS);
+    }
+}
+
+SINGLE_BATTLE_TEST("Knock Off does not remove items through Protect")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); };
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_KNOCK_OFF); }
+    } SCENE {
+        NONE_OF {
+            ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
+        }
+    } THEN {
+        EXPECT(opponent->item == ITEM_LEFTOVERS);
+    }
+}
+
+SINGLE_BATTLE_TEST("Knock Off does not remove items if target is immune")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
+        ASSUME(gSpeciesInfo[SPECIES_DONPHAN].types[0] == TYPE_GROUND || gSpeciesInfo[SPECIES_DONPHAN].types[1] == TYPE_GROUND);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_DONPHAN) { Item(ITEM_LEFTOVERS); };
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_ELECTRIFY); MOVE(player, MOVE_KNOCK_OFF); }
+    } SCENE {
+        NONE_OF {
+            ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
+        }
     } THEN {
         EXPECT(opponent->item == ITEM_LEFTOVERS);
     }
@@ -180,7 +231,7 @@ DOUBLE_BATTLE_TEST("Knock Off does not trigger the opposing ally's Symbiosis")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_KNOCK_OFF, .target = playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_KNOCK_OFF, target: playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
@@ -191,18 +242,6 @@ DOUBLE_BATTLE_TEST("Knock Off does not trigger the opposing ally's Symbiosis")
         }
     } THEN {
         EXPECT(playerLeft->item == ITEM_NONE);
-    }
-}
-
-SINGLE_BATTLE_TEST("Knock Off doesn't knock off items from Pokemon behind substitutes")
-{
-    GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_POKE_BALL); }
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_KNOCK_OFF); }
-    } SCENE {
-        NOT MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Poké Ball!");
     }
 }
 
@@ -323,5 +362,35 @@ SINGLE_BATTLE_TEST("Knock Off doesn't knock off begin-battle form-change hold it
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
         NOT MESSAGE("Wobbuffet knocked off the opposing Zamazenta's Rusted Shield!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Knock Off does not activate if user faints")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ROCKY_HELMET); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_KNOCK_OFF); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
+        MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Rocky Helmet!");
+        MESSAGE("Wobbuffet fainted!");
+    } THEN {
+        EXPECT(opponent->item == ITEM_ROCKY_HELMET);
+    }
+}
+
+SINGLE_BATTLE_TEST("Knock Off doesn't remove item if it's prevented by Sticky Hold")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_MUK) { MaxHP(100); HP(51); Item(ITEM_ORAN_BERRY); Ability(ABILITY_STICKY_HOLD); }
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
+    } SCENE {
+        ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
     }
 }

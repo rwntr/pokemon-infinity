@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Sandstorm deals 1/16 damage per turn")
         TURN {MOVE(player, MOVE_SANDSTORM);}
     } SCENE {
         MESSAGE("The opposing Wobbuffet is buffeted by the sandstorm!");
-        HP_BAR(opponent, .captureDamage = &sandstormDamage);
+        HP_BAR(opponent, captureDamage: &sandstormDamage);
    } THEN { EXPECT_EQ(sandstormDamage, opponent->maxHP / 16); }
 }
 
@@ -23,14 +23,14 @@ SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.
     PARAMETRIZE { move = MOVE_SANDSTORM; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(GetMoveCategory(MOVE_SWIFT) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_WOBBUFFET) ;
         OPPONENT(SPECIES_NOSEPASS);
     } WHEN {
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_SWIFT); }
     } SCENE {
-        HP_BAR(opponent, .captureDamage =  &results[i].damage);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
@@ -91,6 +91,23 @@ SINGLE_BATTLE_TEST("Sandstorm damage rounds properly when maxHP < 16")
     } WHEN {
         TURN { MOVE(opponent, MOVE_SANDSTORM); }
     } SCENE {
-        HP_BAR(player, .damage = 1);
+        HP_BAR(player, damage: 1);
+    }
+}
+
+SINGLE_BATTLE_TEST("Sandstorm doesn't do damage when weather is negated")
+{
+    u32 type1 = gSpeciesInfo[SPECIES_STOUTLAND].types[0];
+    u32 type2 = gSpeciesInfo[SPECIES_STOUTLAND].types[1];
+    GIVEN {
+        ASSUME(type1 != TYPE_ROCK && type2 != TYPE_ROCK);
+        ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
+        ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SANDSTORM); }
+    } SCENE {
+        NOT HP_BAR(player);
     }
 }

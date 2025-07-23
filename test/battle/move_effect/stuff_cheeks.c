@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_STUFF_CHEEKS].effect == EFFECT_STUFF_CHEEKS);
+    ASSUME(GetMoveEffect(MOVE_STUFF_CHEEKS) == EFFECT_STUFF_CHEEKS);
     ASSUME(gItemsInfo[ITEM_LIECHI_BERRY].pocket == POCKET_BERRIES);
     ASSUME(gItemsInfo[ITEM_LIECHI_BERRY].holdEffect == HOLD_EFFECT_ATTACK_UP);
 }
@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Stuff Cheeks cannot be used if the user doesn't hold a berry
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (item == ITEM_NONE)
-            TURN { MOVE(player, MOVE_STUFF_CHEEKS, .allowed = FALSE); MOVE(player, MOVE_CELEBRATE); }
+            TURN { MOVE(player, MOVE_STUFF_CHEEKS, allowed: FALSE); MOVE(player, MOVE_CELEBRATE); }
         else
             TURN { MOVE(player, MOVE_STUFF_CHEEKS); }
     } SCENE {
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Stuff Cheeks forces Struggle if it's the only move is blocke
         PLAYER(SPECIES_SKWOVET) { Moves(MOVE_STUFF_CHEEKS); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_STUFF_CHEEKS, .allowed = FALSE); }
+        TURN { MOVE(player, MOVE_STUFF_CHEEKS, allowed: FALSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRUGGLE, player);
     }
@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("Stuff Cheeks can be used even if Magic Room is active")
 SINGLE_BATTLE_TEST("Stuff Cheeks fails if the user's berry is removed before they use the move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_KNOCK_OFF].effect == EFFECT_KNOCK_OFF);
+        ASSUME(GetMoveEffect(MOVE_KNOCK_OFF) == EFFECT_KNOCK_OFF);
         PLAYER(SPECIES_SKWOVET) { Item(ITEM_LIECHI_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

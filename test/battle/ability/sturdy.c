@@ -4,7 +4,7 @@
 SINGLE_BATTLE_TEST("Sturdy prevents OHKO moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FISSURE].effect == EFFECT_OHKO);
+        ASSUME(GetMoveEffect(MOVE_FISSURE) == EFFECT_OHKO);
         PLAYER(SPECIES_GEODUDE) { Ability(ABILITY_STURDY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Sturdy prevents OHKOs")
         TURN { MOVE(opponent, MOVE_SEISMIC_TOSS); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEISMIC_TOSS, opponent);
-        HP_BAR(player, .hp = 1);
+        HP_BAR(player, hp: 1);
         ABILITY_POPUP(player, ABILITY_STURDY);
         MESSAGE("Geodude endured the hit using Sturdy!");
     }
@@ -42,6 +42,6 @@ SINGLE_BATTLE_TEST("Sturdy does not prevent non-OHKOs")
         TURN { MOVE(opponent, MOVE_SEISMIC_TOSS); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEISMIC_TOSS, opponent);
-        HP_BAR(player, .hp = 0);
+        HP_BAR(player, hp: 0);
     }
 }

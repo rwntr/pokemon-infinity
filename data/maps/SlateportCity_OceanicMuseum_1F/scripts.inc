@@ -1,5 +1,3 @@
-.set LOCALID_FAMILIAR_GRUNT, 13
-
 SlateportCity_OceanicMuseum_1F_MapScripts::
 	.byte 0
 
@@ -9,14 +7,14 @@ SlateportCity_OceanicMuseum_1F_EventScript_EntranceAttendant::
 
 SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFeeLeft::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFeeRight::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee
 	end
@@ -27,7 +25,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee::
 	goto_if_eq VAR_RESULT, YES, SlateportCity_OceanicMuseum_1F_EventScript_CheckMoneyForFee
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	releaseall
 	end
@@ -49,7 +47,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_NotEnoughMoney::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney, MSGBOX_DEFAULT
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	releaseall
 	end
@@ -146,9 +144,9 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	faceplayer
 	delay 8
 	playse SE_PIN
-	applymovement LOCALID_FAMILIAR_GRUNT, Common_Movement_ExclamationMark
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_FAMILIAR_GRUNT, Common_Movement_Delay48
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_Delay48
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_THIEF
@@ -163,21 +161,21 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth
-	applymovement LOCALID_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitSouth::
-	applymovement LOCALID_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitWestEast
-	applymovement LOCALID_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitWestEast
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
 	end
@@ -185,7 +183,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast::
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_FAMILIAR_AQUA_GRUNT
 	playse SE_EXIT
-	removeobject LOCALID_FAMILIAR_GRUNT
+	removeobject LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT
 	release
 	end
 
@@ -225,7 +223,7 @@ SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth:
 	step_end
 
 SlateportCity_OceanicMuseum_1F_Text_WouldYouLikeToEnter:
-	.string "Welcome to the Oceanic Museum.\p"
+	.string "Welcome to the OCEANIC MUSEUM.\p"
 	.string "The entrance fee is ¥50.\n"
 	.string "Would you like to enter?$"
 
@@ -243,13 +241,13 @@ SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
 	.string "You'd better go catch up to them!$"
 
 SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll:
-	.string "We, Team Aqua, exist for the good\n"
+	.string "We, TEAM AQUA, exist for the good\n"
 	.string "of all!$"
 
 SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere:
 	.string "We were told to assemble here,\n"
 	.string "so we did, but…\p"
-	.string "Our Boss, the linchpin, isn't here.$"
+	.string "Our BOSS, the linchpin, isn't here.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich:
 	.string "If I ripped off the stuff here,\n"
@@ -261,7 +259,7 @@ SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds:
 
 SlateportCity_OceanicMuseum_1F_Text_RustboroBungled:
 	.string "If our goons didn't bungle things\n"
-	.string "in Rustboro, we wouldn't be here!$"
+	.string "in RUSTBORO, we wouldn't be here!$"
 
 SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney:
 	.string "I didn't have ¥50, so it took a long\n"
@@ -274,26 +272,26 @@ SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling:
 SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 	.string "I get all giddy and gooey when\n"
 	.string "I see the sea!\p"
-	.string "For me, Capt. Stern is the number\n"
+	.string "For me, CAPT. STERN is the number\n"
 	.string "one role model!$"
 
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:
 	.string "The sea is vast without end, and\n"
 	.string "infinitely deep…\p"
-	.string "There must be many Pokémon that\n"
+	.string "There must be many POKéMON that\n"
 	.string "we don't know about.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
-	.string "I want a sea Pokémon.\p"
+	.string "I want a sea POKéMON.\p"
 	.string "I think it would feel cool and nice\n"
 	.string "to hug.$"
 
 SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
 	.string "Aiyeeeh!\n"
 	.string "What are you doing here?\p"
-	.string "Me? I'm the Team Aqua member\n"
+	.string "Me? I'm the TEAM AQUA member\n"
 	.string "you thumped before, remember?\l"
-	.string "Back in Rusturf Tunnel?\p"
+	.string "Back in RUSTURF TUNNEL?\p"
 	.string "Here, take this!\n"
 	.string "You have to forgive me!$"
 
@@ -317,7 +315,7 @@ SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment:
 	.string "A red ball is bobbing up and down\n"
 	.string "inside a glass vessel.\p"
 	.string "“This is an experiment simulating a\n"
-	.string "Waterfall using the ball's buoyancy.”$"
+	.string "WATERFALL using the ball's buoyancy.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay:
 	.string "It's a sample of soil from the ocean\n"
@@ -337,7 +335,7 @@ SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay:
 	.string "up as sand on beaches.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1:
-	.string "“Oceanic Mini-Fact 1!\n"
+	.string "“OCEANIC MINIFACT 1\n"
 	.string "Why is seawater blue?\p"
 	.string "“Light is composed of many colors.\p"
 	.string "“When light passes through water,\n"
@@ -346,7 +344,7 @@ SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1:
 	.string "color, making the sea appear blue.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2:
-	.string "“Oceanic Mini-Fact 2!\n"
+	.string "“OCEANIC MINIFACT 2\n"
 	.string "Why is the sea salty?\p"
 	.string "“Seawater contains dissolved salt in\n"
 	.string "the form of sodium and chlorine ions.\p"
@@ -356,7 +354,7 @@ SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2:
 	.string "makes the sea salty.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3:
-	.string "“Oceanic Mini-Fact 3!\n"
+	.string "“OCEANIC MINIFACT 3\n"
 	.string "Which is bigger? The sea or land?\p"
 	.string "“The sea covers about 70% of\n"
 	.string "the planet, and the rest is land.\p"

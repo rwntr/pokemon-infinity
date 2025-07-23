@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_HEAL_PULSE].effect == EFFECT_HEAL_PULSE);
+    ASSUME(GetMoveEffect(MOVE_HEAL_PULSE) == EFFECT_HEAL_PULSE);
 }
 
 SINGLE_BATTLE_TEST("Heal Pulse heals the target by 1/2 of it's maxHP")
@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Heal Pulse heals the target by 1/2 of it's maxHP")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-        HP_BAR(player, .damage = -maxHP / 2);
+        HP_BAR(player, damage: -maxHP / 2);
     }
 }
 
@@ -28,11 +28,11 @@ DOUBLE_BATTLE_TEST("Heal Pulse can heal partner")
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
-        TURN { MOVE(playerRight, MOVE_HEAL_PULSE, .target = playerLeft); }
+        TURN { MOVE(playerRight, MOVE_HEAL_PULSE, target: playerLeft); }
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, playerRight);
-        HP_BAR(playerLeft, .damage = -maxHP / 2);
+        HP_BAR(playerLeft, damage: -maxHP / 2);
     }
 }
 
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Heal Pulse is boosted by Mega Launcher")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-        HP_BAR(player, .damage = -maxHP * 75 / 100);
+        HP_BAR(player, damage: -maxHP * 75 / 100);
     }
 }
 
@@ -61,14 +61,14 @@ SINGLE_BATTLE_TEST("Heal Pulse ignores accurace checks")
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-        HP_BAR(player, .damage = -maxHP / 2);
+        HP_BAR(player, damage: -maxHP / 2);
     }
 }
 
 SINGLE_BATTLE_TEST("Heal Pulse is blocked by Substitute")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SUBSTITUTE].effect == EFFECT_SUBSTITUTE);
+        ASSUME(GetMoveEffect(MOVE_SUBSTITUTE) == EFFECT_SUBSTITUTE);
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(50); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -78,7 +78,7 @@ SINGLE_BATTLE_TEST("Heal Pulse is blocked by Substitute")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_PULSE, opponent);
-            HP_BAR(player, .damage = -maxHP / 2);
+            HP_BAR(player, damage: -maxHP / 2);
         }
     }
 }
@@ -86,8 +86,8 @@ SINGLE_BATTLE_TEST("Heal Pulse is blocked by Substitute")
 SINGLE_BATTLE_TEST("Floral Healing heals the target by 2/3rd of it's maxHP if Grassy Terrain is on the field")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FLORAL_HEALING].argument == MOVE_EFFECT_FLORAL_HEALING);
-        ASSUME(gMovesInfo[MOVE_GRASSY_TERRAIN].effect == EFFECT_GRASSY_TERRAIN);
+        ASSUME(GetMoveEffectArg_MoveProperty(MOVE_FLORAL_HEALING) == MOVE_EFFECT_FLORAL_HEALING);
+        ASSUME(GetMoveEffect(MOVE_GRASSY_TERRAIN) == EFFECT_GRASSY_TERRAIN);
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -96,6 +96,6 @@ SINGLE_BATTLE_TEST("Floral Healing heals the target by 2/3rd of it's maxHP if Gr
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASSY_TERRAIN, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLORAL_HEALING, opponent);
-        HP_BAR(player, .damage = -maxHP * 2 / 3);
+        HP_BAR(player, damage: -maxHP * 2 / 3);
     }
 }

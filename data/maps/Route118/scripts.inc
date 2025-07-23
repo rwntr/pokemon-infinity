@@ -1,5 +1,3 @@
-.set LOCALID_STEVEN, 19
-
 Route118_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route118_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route118_OnLoad
@@ -65,9 +63,9 @@ Route118_EventScript_RouteSign119::
 Route118_EventScript_StevenTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenApproachLedge0
+	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenApproachLedge0
 	waitmovement 0
 	goto Route118_EventScript_StevenTrigger
 	end
@@ -75,7 +73,7 @@ Route118_EventScript_StevenTrigger0::
 Route118_EventScript_StevenTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	goto Route118_EventScript_StevenTrigger
 	end
@@ -83,16 +81,16 @@ Route118_EventScript_StevenTrigger1::
 Route118_EventScript_StevenTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenApproachLedge2
+	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenApproachLedge2
 	waitmovement 0
 	goto Route118_EventScript_StevenTrigger
 	end
 
 Route118_EventScript_StevenTrigger::
 	playse SE_LEDGE
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenJumpLedge
+	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenJumpLedge
 	waitmovement 0
 	delay 30
 	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
@@ -101,25 +99,25 @@ Route118_EventScript_StevenTrigger::
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
 	call_if_eq VAR_0x8008, 2, Route118_EventScript_StevenExit2
 	setvar VAR_ROUTE118_STATE, 1
-	removeobject LOCALID_STEVEN
+	removeobject LOCALID_ROUTE118_STEVEN
 	releaseall
 	end
 
 Route118_EventScript_StevenExit0::
-	applymovement OBJ_EVENT_ID_PLAYER, Route118_Movement_PlayerWatchStevenExit
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenExit0
+	applymovement LOCALID_PLAYER, Route118_Movement_PlayerWatchStevenExit
+	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenExit0
 	waitmovement 0
 	return
 
 Route118_EventScript_StevenExit1::
-	applymovement OBJ_EVENT_ID_PLAYER, Route118_Movement_PlayerWatchStevenExit
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenExit1
+	applymovement LOCALID_PLAYER, Route118_Movement_PlayerWatchStevenExit
+	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenExit1
 	waitmovement 0
 	return
 
 Route118_EventScript_StevenExit2::
-	applymovement OBJ_EVENT_ID_PLAYER, Route118_Movement_PlayerWatchStevenExit
-	applymovement LOCALID_STEVEN, Route118_Movement_StevenExit2
+	applymovement LOCALID_PLAYER, Route118_Movement_PlayerWatchStevenExit
+	applymovement LOCALID_ROUTE118_STEVEN, Route118_Movement_StevenExit2
 	waitmovement 0
 	return
 
@@ -246,18 +244,18 @@ Route118_EventScript_Deandre::
 	end
 
 Route118_Text_StevenQuestions:
-	.string "Steven: Hi, {PLAYER}{KUN}!\p"
-	.string "It's me, Steven!\n"
-	.string "We met in the cave near Dewford.\p"
-	.string "Have you met many kinds of Pokémon\n"
+	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
+	.string "It's me, STEVEN!\n"
+	.string "We met in the cave near DEWFORD.\p"
+	.string "Have you met many kinds of POKéMON\n"
 	.string "since I last saw you?\p"
-	.string "There are many, many kinds of Pokémon\n"
+	.string "There are many, many kinds of POKéMON\n"
 	.string "in this wide world of ours.\p"
 	.string "If you wanted to raise only your\n"
 	.string "favorites, that's fine.\p"
 	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of Pokémon.\p"
-	.string "As a Trainer of Pokémon,\n"
+	.string "all sorts of POKéMON.\p"
+	.string "As a TRAINER of POKéMON,\n"
 	.string "what do you think?\p"
 	.string "Of course, it's not any of my business.\p"
 	.string "It would be nice if we were to meet\n"
@@ -265,14 +263,14 @@ Route118_Text_StevenQuestions:
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"
-	.string "A Good Rod is really good!\p"
+	.string "A GOOD ROD is really good!\p"
 	.string "Wouldn't you agree?$"
 
 Route118_Text_IdenticalMindsTakeThis:
 	.string "Hmm!\n"
 	.string "We're of identical minds!\p"
 	.string "Hmm!\n"
-	.string "Take this Good Rod!$"
+	.string "Take this GOOD ROD!$"
 
 Route118_Text_TryYourLuckFishing:
 	.string "Wherever there's water, try your luck\n"
@@ -282,21 +280,21 @@ Route118_Text_DontYouLikeToFish:
 	.string "Don't you like to fish?$"
 
 Route118_Text_TryCatchingMonWithGoodRod:
-	.string "Try catching all sorts of Pokémon\n"
-	.string "with your Good Rod.$"
+	.string "Try catching all sorts of POKéMON\n"
+	.string "with your GOOD ROD.$"
 
 Route118_Text_CanCrossRiversWithSurf:
 	.string "Even if there isn't a boat, you can\n"
 	.string "cross rivers and the sea if you have\l"
-	.string "a Pokémon that knows Surf.\p"
-	.string "Pokémon can be counted on to do so\n"
+	.string "a POKéMON that knows SURF.\p"
+	.string "POKéMON can be counted on to do so\n"
 	.string "much!$"
 
 Route118_Text_RouteSignMauville:
-	.string "Route 118\n"
-	.string "{LEFT_ARROW} Mauville City$"
+	.string "ROUTE 118\n"
+	.string "{LEFT_ARROW} MAUVILLE CITY$"
 
 Route118_Text_RouteSign119:
-	.string "Route 118\n"
-	.string "{UP_ARROW} Route 119$"
+	.string "ROUTE 118\n"
+	.string "{UP_ARROW} ROUTE 119$"
 

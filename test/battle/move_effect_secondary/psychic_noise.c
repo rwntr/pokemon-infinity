@@ -4,7 +4,7 @@
 ASSUMPTIONS
 {
     ASSUME(MoveHasAdditionalEffect(MOVE_PSYCHIC_NOISE, MOVE_EFFECT_PSYCHIC_NOISE));
-    ASSUME(gMovesInfo[MOVE_RECOVER].effect == EFFECT_RESTORE_HP);
+    ASSUME(GetMoveEffect(MOVE_RECOVER) == EFFECT_RESTORE_HP);
 }
 
 SINGLE_BATTLE_TEST("Psychic Noise blocks healing moves for 2 turns")
@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Psychic Noise blocks healing moves for 2 turns")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_NOISE); MOVE(opponent, MOVE_RECOVER); }
-        TURN { MOVE(opponent, MOVE_RECOVER, .allowed = FALSE); }
+        TURN { MOVE(opponent, MOVE_RECOVER, allowed: FALSE); }
         TURN { MOVE(opponent, MOVE_RECOVER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC_NOISE, player);
@@ -63,7 +63,7 @@ DOUBLE_BATTLE_TEST("Psychic Noise heal block effect is blocked by partners Aroma
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_MILCERY) { Ability(ABILITY_AROMA_VEIL); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_PSYCHIC_NOISE, .target = opponentLeft); MOVE(opponentLeft, MOVE_RECOVER); }
+        TURN { MOVE(playerLeft, MOVE_PSYCHIC_NOISE, target: opponentLeft); MOVE(opponentLeft, MOVE_RECOVER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC_NOISE, playerLeft);
         ABILITY_POPUP(opponentRight, ABILITY_AROMA_VEIL);

@@ -23,20 +23,20 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 
 MagmaHideout_2F_1R_Text_Grunt14Intro:
 	.string "What, what, what?\p"
-	.string "Only Team Magma members are supposed\n"
+	.string "Only TEAM MAGMA members are supposed\n"
 	.string "to be in here!\p"
-	.string "But you're not dressed in Team Magma's\n"
+	.string "But you're not dressed in TEAM MAGMA's\n"
 	.string "uniform…\p"
 	.string "You rouse my suspicion!\n"
 	.string "Battle with me!$"
 
 MagmaHideout_2F_1R_Text_Grunt14Defeat:
 	.string "Aiyiyi…\n"
-	.string "My pride as a Team Magma member…$"
+	.string "My pride as a TEAM MAGMA member…$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
 	.string "If you suffer from chills, you should\n"
-	.string "join Team Magma.$"
+	.string "join TEAM MAGMA.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
 	.string "Hold it right there!\p"

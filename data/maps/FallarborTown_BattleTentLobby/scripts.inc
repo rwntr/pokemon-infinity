@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 FallarborTown_BattleTentLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, FallarborTown_BattleTentLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FallarborTown_BattleTentLobby_OnWarp
@@ -11,7 +9,7 @@ FallarborTown_BattleTentLobby_OnWarp:
 
 FallarborTown_BattleTentLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 FallarborTown_BattleTentLobby_OnFrame:
@@ -191,13 +189,13 @@ FallarborTown_BattleTentLobby_EventScript_EndCancelChallenge::
 	end
 
 FallarborTown_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantWalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerWalkToDoor
+	applymovement LOCALID_FALLARBOR_TENT_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantWalkToDoor
+	applymovement LOCALID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerWalkToDoor
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_FALLARBOR_TENT_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
@@ -310,13 +308,13 @@ FallarborTown_BattleTentLobby_Text_MakeThinkImJustKid:
 	.string "the title!$"
 
 FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
-	.string "You know how Battle Tents offer\n"
+	.string "You know how BATTLE TENTS offer\n"
 	.string "different events in different towns?\p"
-	.string "My favorite is definitely the Battle\n"
-	.string "Tent in Fallarbor Town.\p"
-	.string "I think it's fantastic how Trainers\n"
+	.string "My favorite is definitely the BATTLE\n"
+	.string "TENT in FALLARBOR TOWN.\p"
+	.string "I think it's fantastic how TRAINERS\n"
 	.string "try to win with all their faith in\l"
-	.string "their Pokémon.$"
+	.string "their POKéMON.$"
 
 FallarborTown_BattleTentLobby_Text_CameToCampOut:
 	.string "I heard something about some tent,\n"
@@ -327,8 +325,8 @@ FallarborTown_BattleTentLobby_Text_CameToCampOut:
 	.string "my hand at battling!$"
 
 FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
-	.string "Scott: Hi, {PLAYER}{KUN}!\n"
-	.string "So you came out to this Battle Tent!\p"
+	.string "SCOTT: Hi, {PLAYER}{KUN}!\n"
+	.string "So you came out to this BATTLE TENT!\p"
 	.string "The people in these parts tend to be\n"
 	.string "easygoing and laid-back.\p"
 	.string "But, you see, what I'm looking for are\n"
@@ -336,13 +334,13 @@ FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
 	.string "How should I say this?\p"
 	.string "Someone bursting with the desire\n"
 	.string "and the drive to win.\p"
-	.string "If there were a Trainer like that,\n"
+	.string "If there were a TRAINER like that,\n"
 	.string "I'd immediately…\p"
 	.string "Whoops! Never mind!\n"
 	.string "Keep working at it!$"
 
 FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
-	.string "Scott: Instead of wasting your\n"
+	.string "SCOTT: Instead of wasting your\n"
 	.string "time with the likes of me, why not\l"
 	.string "make a challenge?$"
 

@@ -1,9 +1,3 @@
-.set LOCALID_CAPT_STERN, 4
-.set LOCALID_SS_TIDAL, 5
-.set LOCALID_GRUNT, 6
-.set LOCALID_ARCHIE, 7
-.set LOCALID_SUBMARINE, 8
-
 SlateportCity_Harbor_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_Harbor_OnTransition
 	.byte 0
@@ -21,8 +15,8 @@ SlateportCity_Harbor_EventScript_ShowSSTidal::
 
 SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene::
 	savebgm MUS_ENCOUNTER_AQUA
-	setobjectxyperm LOCALID_CAPT_STERN, 12, 13
-	setobjectmovementtype LOCALID_CAPT_STERN, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm LOCALID_SLATEPORT_HARBOR_CAPT_STERN, 12, 13
+	setobjectmovementtype LOCALID_SLATEPORT_HARBOR_CAPT_STERN, MOVEMENT_TYPE_FACE_LEFT
 	setflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS
 	return
 
@@ -47,26 +41,26 @@ SlateportCity_Harbor_EventScript_AquaEscapeTrigger2::
 SlateportCity_Harbor_EventScript_AquaEscapeTrigger3::
 	lockall
 	setvar VAR_0x8008, 3
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_PlayerWalkUp
+	applymovement LOCALID_PLAYER, SlateportCity_Harbor_Movement_PlayerWalkUp
 	waitmovement 0
 	goto SlateportCity_Harbor_EventScript_AquaEscapeScene
 	end
 
 SlateportCity_Harbor_EventScript_AquaEscapeScene::
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_SLATEPORT_HARBOR_ARCHIE, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	applymovement LOCALID_GRUNT, Common_Movement_WalkInPlaceFasterDown
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_SLATEPORT_HARBOR_GRUNT, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT, SlateportCity_Harbor_Movement_AquaBoardSub
-	applymovement LOCALID_ARCHIE, SlateportCity_Harbor_Movement_AquaBoardSub
-	applymovement LOCALID_SUBMARINE, SlateportCity_Harbor_Movement_SubmarineExit
+	applymovement LOCALID_SLATEPORT_HARBOR_GRUNT, SlateportCity_Harbor_Movement_AquaBoardSub
+	applymovement LOCALID_SLATEPORT_HARBOR_ARCHIE, SlateportCity_Harbor_Movement_AquaBoardSub
+	applymovement LOCALID_SLATEPORT_HARBOR_SUBMARINE, SlateportCity_Harbor_Movement_SubmarineExit
 	waitmovement 0
-	removeobject LOCALID_GRUNT
-	removeobject LOCALID_ARCHIE
-	removeobject LOCALID_SUBMARINE
+	removeobject LOCALID_SLATEPORT_HARBOR_GRUNT
+	removeobject LOCALID_SLATEPORT_HARBOR_ARCHIE
+	removeobject LOCALID_SLATEPORT_HARBOR_SUBMARINE
 	setvar VAR_SLATEPORT_HARBOR_STATE, 2
 	setflag FLAG_MET_TEAM_AQUA_HARBOR
 	setflag FLAG_HIDE_LILYCOVE_MOTEL_SCOTT
@@ -78,29 +72,29 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 	closemessage
 	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE
 	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE
-	copyobjectxytoperm LOCALID_CAPT_STERN
-	setobjectmovementtype LOCALID_CAPT_STERN, MOVEMENT_TYPE_FACE_RIGHT
+	copyobjectxytoperm LOCALID_SLATEPORT_HARBOR_CAPT_STERN
+	setobjectmovementtype LOCALID_SLATEPORT_HARBOR_CAPT_STERN, MOVEMENT_TYPE_FACE_RIGHT
 	releaseall
 	end
 
 SlateportCity_Harbor_EventScript_SternApproachPlayer0::
-	applymovement LOCALID_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer0
+	applymovement LOCALID_SLATEPORT_HARBOR_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer0
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 SlateportCity_Harbor_EventScript_SternApproachPlayer1::
-	applymovement LOCALID_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer1
+	applymovement LOCALID_SLATEPORT_HARBOR_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer1
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 SlateportCity_Harbor_EventScript_SternApproachPlayer::
-	applymovement LOCALID_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer
+	applymovement LOCALID_SLATEPORT_HARBOR_CAPT_STERN, SlateportCity_Harbor_Movement_SternApproachPlayer
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
@@ -234,8 +228,8 @@ SlateportCity_Harbor_EventScript_BoardFerry::
 	call_if_eq VAR_FACING, DIR_NORTH, SlateportCity_Harbor_EventScript_BoardFerryNorth
 	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_Harbor_EventScript_BoardFerryEast
 	delay 30
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	hideobjectat LOCALID_PLAYER, 0
+	setvar VAR_0x8004, LOCALID_SLATEPORT_HARBOR_SS_TIDAL
 	call Common_EventScript_FerryDepart
 	return
 
@@ -245,12 +239,12 @@ SlateportCity_Harbor_EventScript_CancelDestinationSelect::
 	end
 
 SlateportCity_Harbor_EventScript_BoardFerryEast::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryEast
+	applymovement LOCALID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryEast
 	waitmovement 0
 	return
 
 SlateportCity_Harbor_EventScript_BoardFerryNorth::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryNorth
+	applymovement LOCALID_PLAYER, SlateportCity_Harbor_Movement_BoardFerryNorth
 	waitmovement 0
 	return
 
@@ -394,16 +388,16 @@ SlateportCity_Harbor_Text_FerryServiceUnavailable:
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
 	.string "Hello, are you here for the ferry?\n"
-	.string "May I see your Ticket?$"
+	.string "May I see your TICKET?$"
 
 SlateportCity_Harbor_Text_YouMustHaveTicket:
-	.string "{PLAYER} doesn't have the Ticket…\p"
+	.string "{PLAYER} doesn't have the TICKET…\p"
 	.string "I'm terribly sorry.\p"
-	.string "You must have a Ticket to board\n"
+	.string "You must have a TICKET to board\n"
 	.string "the ferry.$"
 
 SlateportCity_Harbor_Text_FlashedTicketWhereTo:
-	.string "{PLAYER} flashed the Ticket.\p"
+	.string "{PLAYER} flashed the TICKET.\p"
 	.string "Perfect! That's all you need!\p"
 	.string "And where would you like to go?$"
 
@@ -411,10 +405,10 @@ SlateportCity_Harbor_Text_SailAnotherTime:
 	.string "Please sail with us another time!$"
 
 SlateportCity_Harbor_Text_LilycoveItIs:
-	.string "Lilycove City it is, then!$"
+	.string "LILYCOVE CITY it is, then!$"
 
 SlateportCity_Harbor_Text_BattleFrontierItIs:
-	.string "Battle Frontier it is, then!$"
+	.string "BATTLE FRONTIER it is, then!$"
 
 SlateportCity_Harbor_Text_PleaseBoardFerry:
 	.string "Please board the ferry and wait for\n"
@@ -433,114 +427,114 @@ SlateportCity_Harbor_Text_AbnormalWeather:
 	.string "For a ship to sail safely, we need to\n"
 	.string "know about the weather!\p"
 	.string "Speaking of weather, I heard something\n"
-	.string "from a guy at the Weather Institute.\p"
+	.string "from a guy at the WEATHER INSTITUTE.\p"
 	.string "He was saying abnormal weather has\n"
 	.string "been reported all over the place!\p"
-	.string "You should visit the Weather Institute\n"
+	.string "You should visit the WEATHER INSTITUTE\n"
 	.string "and ask around!$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
-	.string "I wanted to go with Capt. Stern on\n"
+	.string "I wanted to go with CAPT. STERN on\n"
 	.string "the ocean floor exploration.\p"
 	.string "But the sub's too small for me.\p"
 	.string "If I squeezed in, there wouldn't be\n"
-	.string "any room for the Captain…$"
+	.string "any room for the CAPTAIN…$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
-	.string "Capt. Stern: Those thugs…\p"
+	.string "CAPT. STERN: Those thugs…\p"
 	.string "They're the same lot who tried to rob\n"
-	.string "the Devon Goods at the Museum.$"
+	.string "the DEVON GOODS at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "Archie: Oh?\n"
+	.string "ARCHIE: Oh?\n"
 	.string "Not you again…\p"
 	.string "You are tenacious to track us here,\n"
 	.string "that much I will give you.\p"
 	.string "But now…\n"
 	.string "No one can stop us! No one!\p"
 	.string "Or, will you follow us back to our\n"
-	.string "Hideout in Lilycove City?\p"
+	.string "HIDEOUT in LILYCOVE CITY?\p"
 	.string "Fwahahahaha…$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "Capt. Stern: Why…\p"
-	.string "Why would Team Aqua steal my\n"
-	.string "Submarine Explorer 1?\p"
+	.string "CAPT. STERN: Why…\p"
+	.string "Why would TEAM AQUA steal my\n"
+	.string "SUBMARINE EXPLORER 1?\p"
 	.string "They can't be after the slumbering\n"
-	.string "Pokémon at the bottom of the sea…\p"
+	.string "POKéMON at the bottom of the sea…\p"
 	.string "But even if I were to chase them,\n"
 	.string "I don't stand a chance against them…$"
 
 SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
-	.string "Capt. Stern: Oh, {PLAYER}{KUN}…\p"
-	.string "Okay… So Team Aqua left before you\n"
+	.string "CAPT. STERN: Oh, {PLAYER}{KUN}…\p"
+	.string "Okay… So TEAM AQUA left before you\n"
 	.string "could stop them…\p"
 	.string "Oh, no, don't blame yourself.\n"
 	.string "You're not responsible for this.\p"
 	.string "Trying to catch a submarine…\n"
 	.string "It's impossible for most people.\p"
-	.string "You would need a Pokémon that knows\n"
-	.string "how to Dive…\p"
+	.string "You would need a POKéMON that knows\n"
+	.string "how to DIVE…\p"
 	.string "Perhaps if you went out to\n"
-	.string "Mossdeep City…\p"
+	.string "MOSSDEEP CITY…\p"
 	.string "A lot of divers live out there, so\n"
 	.string "someone might teach you…$"
 
 SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-	.string "Capt. Stern: Trying to catch a\n"
+	.string "CAPT. STERN: Trying to catch a\n"
 	.string "submarine… It's impossible.\p"
-	.string "You would need a Pokémon that knows\n"
-	.string "how to Dive…\p"
+	.string "You would need a POKéMON that knows\n"
+	.string "how to DIVE…\p"
 	.string "Perhaps if you went out to\n"
-	.string "Mossdeep City…\p"
+	.string "MOSSDEEP CITY…\p"
 	.string "A lot of divers live out there, so\n"
 	.string "someone might teach you…$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
-	.string "Capt. Stern: Oh, yes.\n"
-	.string "Mr. Briney came to our Shipyard.\p"
+	.string "CAPT. STERN: Oh, yes.\n"
+	.string "MR. BRINEY came to our SHIPYARD.\p"
 	.string "It won't be long now before we finish\n"
 	.string "making the ferry!$"
 
 SlateportCity_Harbor_Text_FinishedMakingFerry:
-	.string "Capt. Stern: {PLAYER}{KUN}!\p"
+	.string "CAPT. STERN: {PLAYER}{KUN}!\p"
 	.string "We finally finished making the ferry\n"
-	.string "S.S. Tidal!\p"
+	.string "S.S. TIDAL!\p"
 	.string "We couldn't have done it without\n"
-	.string "your friend Mr. Briney.\p"
+	.string "your friend MR. BRINEY.\p"
 	.string "Please go for a short cruise on it!$"
 
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
-	.string "Capt. Stern: Oh?\n"
+	.string "CAPT. STERN: Oh?\n"
 	.string "{PLAYER}{KUN}, that item you have…\p"
-	.string "That's a Scanner! That would sure\n"
+	.string "That's a SCANNER! That would sure\n"
 	.string "help us on our explorations.\p"
 	.string "{PLAYER}{KUN}, would you trade your\n"
-	.string "Scanner for something?\p"
-	.string "Like, say, a Deepseatooth or\n"
-	.string "a Deepseascale that I have?$"
+	.string "SCANNER for something?\p"
+	.string "Like, say, a DEEPSEATOOTH or\n"
+	.string "a DEEPSEASCALE that I have?$"
 
 SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
-	.string "Capt. Stern: Are you certain?\n"
+	.string "CAPT. STERN: Are you certain?\n"
 	.string "It's useless to you, {PLAYER}{KUN}…\p"
 	.string "Well, okay, then. If you want to trade\n"
-	.string "your Scanner, let me know.$"
+	.string "your SCANNER, let me know.$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
-	.string "Capt. Stern: So you'll trade it for\n"
-	.string "my Deepseatooth?$"
+	.string "CAPT. STERN: So you'll trade it for\n"
+	.string "my DEEPSEATOOTH?$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaScale:
-	.string "Capt. Stern: So you'll trade it for\n"
-	.string "my Deepseascale?$"
+	.string "CAPT. STERN: So you'll trade it for\n"
+	.string "my DEEPSEASCALE?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:
-	.string "Capt. Stern: Which one do you want?$"
+	.string "CAPT. STERN: Which one do you want?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
-	.string "{PLAYER} handed the Scanner to\n"
-	.string "Capt. Stern.$"
+	.string "{PLAYER} handed the SCANNER to\n"
+	.string "CAPT. STERN.$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
-	.string "Capt. Stern: Thanks, {PLAYER}{KUN}!\n"
+	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"

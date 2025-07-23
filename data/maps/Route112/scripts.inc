@@ -1,6 +1,3 @@
-.set LOCALID_GRUNT_1, 1
-.set LOCALID_GRUNT_2, 6
-
 Route112_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route112_OnTransition
 	.byte 0
@@ -13,36 +10,36 @@ Route112_OnTransition:
 Route112_EventScript_MagmaGrunts::
 	lockall
 	delay 40
-	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 40
-	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 40
-	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 40
-	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
@@ -115,31 +112,31 @@ Route112_Text_LeaderGoingToAwakenThing:
 
 Route112_Text_YeahWeNeedMeteorite:
 	.string "Sounds like it, yeah. But I heard\n"
-	.string "we need a Meteorite to do it.$"
+	.string "we need a METEORITE to do it.$"
 
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
 	.string "Oh, I get it now. That's why the rest\n"
-	.string "of the crew went out to Fallarbor.$"
+	.string "of the crew went out to FALLARBOR.$"
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
 	.string "You got it. And until they come back,\n"
 	.string "we're not to let anyone pass, right.$"
 
 Route112_Text_NotEasyToGetBackToLavaridge:
-	.string "Eh, I'd like to get to Mauville, but if\n"
+	.string "Eh, I'd like to get to MAUVILLE, but if\n"
 	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to Lavaridge.$"
+	.string "easy matter to get back to LAVARIDGE.$"
 
 Route112_Text_MtChimneyCableCarSign:
-	.string "Mt. Chimney Cable Car\n"
+	.string "MT. CHIMNEY CABLE CAR\n"
 	.string "“A short walk {UP_ARROW} way!”$"
 
 Route112_Text_MtChimneySign:
-	.string "Mt. Chimney\p"
-	.string "“For Lavaridge Town or the summit,\n"
-	.string "please take the Cable Car.”$"
+	.string "MT. CHIMNEY\p"
+	.string "“For LAVARIDGE TOWN or the summit,\n"
+	.string "please take the CABLE CAR.”$"
 
 Route112_Text_RouteSignLavaridge:
-	.string "Route 112\n"
-	.string "{LEFT_ARROW} Lavaridge Town$"
+	.string "ROUTE 112\n"
+	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
 

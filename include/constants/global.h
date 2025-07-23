@@ -8,6 +8,10 @@
 #include "config/caps.h"
 #include "config/pokemon.h"
 #include "config/overworld.h"
+#include "config/dexnav.h"
+#include "config/summary_screen.h"
+#include "config/ai.h"
+#include "config/follower_npc.h"
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.
 // In Gens 6 and 7, invalid versions instead show "a distant land" in the summary screen.
@@ -55,19 +59,15 @@
 #define DAYCARE_MON_COUNT 2
 #define POKEBLOCKS_COUNT 40
 #define OBJECT_EVENTS_COUNT 16
-#define BERRY_TREES_COUNT 128
 #define MAIL_COUNT (10 + PARTY_SIZE)
-#define SECRET_BASES_COUNT 4 // was 20. This frees up 2512 bytes of save space, which can go to bag space
+#define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 30
-#define BAG_ITEMS_COUNT 93
-#define BAG_MEDICINE_COUNT 44
-#define BAG_BATTLE_COUNT 180
-#define BAG_TMHM_COUNT 108
-#define BAG_BERRIES_COUNT 66
-#define BAG_POKEBALLS_COUNT 27
-#define BAG_KEYITEMS_COUNT 55
-#define BAG_MEGASTONES_COUNT 70
+#define PC_ITEMS_COUNT 50
+#define BAG_ITEMS_COUNT 30
+#define BAG_KEYITEMS_COUNT 30
+#define BAG_POKEBALLS_COUNT 16
+#define BAG_TMHM_COUNT 64
+#define BAG_BERRIES_COUNT 46
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
@@ -125,6 +125,7 @@
 #define TYPE_NAME_LENGTH 8
 #define ABILITY_NAME_LENGTH 16
 #define TRAINER_NAME_LENGTH 10
+#define CODE_NAME_LENGTH 11
 
 #define MAX_STAMP_CARD_STAMPS 7
 
@@ -162,16 +163,6 @@
 #define DIR_NORTHWEST   7
 #define DIR_NORTHEAST   8
 #define CARDINAL_DIRECTION_COUNT DIR_SOUTHWEST
-
-#define DIFFICULTY_NORMAL      0
-#define DIFFICULTY_HARD        1
-#define DIFFICULTY_CHALLENGE   2
-#define DIFFICULTY_INSANITY    3
-
-#define LEVEL_CAPS_OFF          0
-#define LEVEL_CAPS_DEFAULT      1
-#define LEVEL_CAPS_MORE         2
-#define LEVEL_CAPS_STRICT       3
 
 #define AXIS_X     0
 #define AXIS_Y     1
