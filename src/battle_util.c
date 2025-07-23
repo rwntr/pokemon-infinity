@@ -8786,6 +8786,12 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         if (IsBattleMovePhysical(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_WHITEOUT: // Boosts damage of Ice-type moves in hail
+        if ((moveType == TYPE_ICE) && (IsBattlerWeatherAffected(battlerAtk, B_WEATHER_HAIL)))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        else if ((moveType == TYPE_ICE) && (IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SNOW)))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
+        break;
     case ABILITY_STAKEOUT:
         if (gDisableStructs[battlerDef].isFirstTurn == 2) // just switched in
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
@@ -9302,6 +9308,7 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
         if (IsSoundMove(move))
             return UQ_4_12(0.5);
         break;
+    case ABILITY_PRISM_SCALES:   //it's just a clone of ice scales with different biological implications lol
     case ABILITY_ICE_SCALES:
         if (IsBattleMoveSpecial(move))
             return UQ_4_12(0.5);
@@ -11048,12 +11055,18 @@ bool32 AreBattlersOfSameGender(u32 battler1, u32 battler2)
 
 u32 CalcSecondaryEffectChance(u32 battler, u32 battlerAbility, const struct AdditionalEffect *additionalEffect)
 {
+    bool8 hasPyromancy = (battlerAbility == ABILITY_PYROMANCY);
     bool8 hasSereneGrace = (battlerAbility == ABILITY_SERENE_GRACE);
     bool8 hasRainbow = (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_RAINBOW) != 0;
     u16 secondaryEffectChance = additionalEffect->chance;
 
     if (hasRainbow && hasSereneGrace && additionalEffect->moveEffect == MOVE_EFFECT_FLINCH)
         return secondaryEffectChance * 2;
+
+    if (hasPyromancy && additionalEffect->moveEffect == MOVE_EFFECT_BURN) {
+        secondaryEffectChance *= 5;
+        return secondaryEffectChance;
+    }
 
     if (hasSereneGrace)
         secondaryEffectChance *= 2;

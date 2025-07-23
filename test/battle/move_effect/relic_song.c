@@ -197,3 +197,17 @@ SINGLE_BATTLE_TEST("Relic Song transforms Meloetta after Magician was activated"
         EXPECT_EQ(player->species, SPECIES_MELOETTA_PIROUETTE);
     }
 }
+
+SINGLE_BATTLE_TEST("Relic Song will become a Ground-type move when used by a Pokémon with the Ability Sand Song")
+{
+    GIVEN {
+        PLAYER(SPECIES_RAICHU);
+        OPPONENT(SPECIES_FLYGON) { Ability(ABILITY_SAND_SONG); }
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_RELIC_SONG); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, opponent);
+        HP_BAR(player);
+        MESSAGE("It's super effective!");
+    }
+}
