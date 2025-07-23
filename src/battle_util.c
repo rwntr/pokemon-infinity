@@ -113,9 +113,18 @@ struct BattleWeatherInfo
 
 static const struct BattleWeatherInfo sBattleWeatherInfo[BATTLE_WEATHER_COUNT] =
 {
-    [BATTLE_WEATHER_RAIN] =
+    [BATTLE_WEATHER_RAIN_TEMPORARY] =
     {
-        .flag = B_WEATHER_RAIN_NORMAL,
+        .flag = B_WEATHER_RAIN_TEMPORARY,
+        .rock = HOLD_EFFECT_DAMP_ROCK,
+        .endMessage = B_MSG_WEATHER_END_RAIN,
+        .continuesMessage = B_MSG_WEATHER_TURN_RAIN,
+        .animation = B_ANIM_RAIN_CONTINUES,
+    },
+
+    [BATTLE_WEATHER_RAIN_PERMA] =
+    {
+        .flag = B_WEATHER_RAIN_PERMA,
         .rock = HOLD_EFFECT_DAMP_ROCK,
         .endMessage = B_MSG_WEATHER_END_RAIN,
         .continuesMessage = B_MSG_WEATHER_TURN_RAIN,
@@ -133,16 +142,25 @@ static const struct BattleWeatherInfo sBattleWeatherInfo[BATTLE_WEATHER_COUNT] =
 
     [BATTLE_WEATHER_RAIN_DOWNPOUR] =
     {
-        .flag = B_WEATHER_RAIN_NORMAL,
+        .flag = B_WEATHER_RAIN_DOWNPOUR,
         .rock = HOLD_EFFECT_DAMP_ROCK,
         .endMessage = B_MSG_WEATHER_END_RAIN,
         .continuesMessage = B_MSG_WEATHER_TURN_DOWNPOUR,
         .animation = B_ANIM_RAIN_CONTINUES,
     },
 
-    [BATTLE_WEATHER_SUN] =
+    [BATTLE_WEATHER_SUN_TEMPORARY] =
     {
-        .flag = B_WEATHER_SUN_NORMAL,
+        .flag = B_WEATHER_SUN_TEMPORARY,
+        .rock = HOLD_EFFECT_HEAT_ROCK,
+        .endMessage = B_MSG_WEATHER_END_SUN,
+        .continuesMessage = B_MSG_WEATHER_TURN_SUN,
+        .animation = B_ANIM_SUN_CONTINUES,
+    },
+
+    [BATTLE_WEATHER_SUN_PERMA] =
+    {
+        .flag = B_WEATHER_SUN_PERMA,
         .rock = HOLD_EFFECT_HEAT_ROCK,
         .endMessage = B_MSG_WEATHER_END_SUN,
         .continuesMessage = B_MSG_WEATHER_TURN_SUN,
@@ -3400,7 +3418,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case WEATHER_DOWNPOUR:
                 if (!(gBattleWeather & B_WEATHER_RAIN))
                 {
-                    gBattleWeather = B_WEATHER_RAIN_NORMAL;
+                    gBattleWeather = B_WEATHER_RAIN_PERMA;
                     gBattleScripting.animArg1 = B_ANIM_RAIN_CONTINUES;
                     effect++;
                 }
@@ -3416,7 +3434,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case WEATHER_DROUGHT:
                 if (!(gBattleWeather & B_WEATHER_SUN))
                 {
-                    gBattleWeather = B_WEATHER_SUN_NORMAL;
+                    gBattleWeather = B_WEATHER_SUN_PERMA;
                     gBattleScripting.animArg1 = B_ANIM_SUN_CONTINUES;
                     effect++;
                 }
@@ -3746,7 +3764,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_DRIZZLE:
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, TRUE))
+            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN_PERMA, TRUE))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_DrizzleActivates);
                 effect++;
@@ -3772,7 +3790,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_DROUGHT:
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, TRUE))
+            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN_PERMA, TRUE))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_DroughtActivates);
                 effect++;
@@ -3983,7 +4001,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ORICHALCUM_PULSE:
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, TRUE))
+            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN_PERMA, TRUE))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_DroughtActivates);
                 effect++;
@@ -9177,13 +9195,25 @@ static uq4_12_t GetWeatherDamageModifier(struct DamageCalculationData *damageCal
     if (holdEffectDef == HOLD_EFFECT_UTILITY_UMBRELLA)
         return UQ_4_12(1.0);
 
-    if (weather & B_WEATHER_RAIN)
+    if (weather & B_WEATHER_RAIN_TEMPORARY)
     {
         if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
             return UQ_4_12(1.0);
         return (moveType == TYPE_FIRE) ? UQ_4_12(0.5) : UQ_4_12(1.5);
     }
-    if (weather & B_WEATHER_SUN)
+    if (weather & B_WEATHER_RAIN_PERMA)
+    {
+        if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
+            return UQ_4_12(1.0);
+        return (moveType == TYPE_FIRE) ? UQ_4_12(0.5) : UQ_4_12(1.5);
+    }
+    if (weather & B_WEATHER_SUN_TEMPORARY)
+    {
+        if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
+            return UQ_4_12(1.0);
+        return (moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.5);
+    }
+    if (weather & B_WEATHER_SUN_PERMA)
     {
         if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
             return UQ_4_12(1.0);

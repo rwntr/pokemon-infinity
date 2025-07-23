@@ -197,7 +197,8 @@ AI_SINGLE_BATTLE_TEST("AI prefers a weaker move over a one with a downside effec
     u16 hp, expectedMove, turns;
 
     // Both moves require the same number of turns but Flamethrower will be chosen over Overheat (powerful effect)
-    PARAMETRIZE { move1 = MOVE_OVERHEAT; move2 = MOVE_FLAMETHROWER; hp = 300; expectedMove = MOVE_FLAMETHROWER; turns = 2; }
+    // @RWNTR: Modified HP for first run to be 400 because both moves were killing in two turns lol
+    PARAMETRIZE { move1 = MOVE_OVERHEAT; move2 = MOVE_FLAMETHROWER; hp = 400; expectedMove = MOVE_FLAMETHROWER; turns = 2; }
     // Overheat kill in least amount of turns
     PARAMETRIZE { move1 = MOVE_OVERHEAT; move2 = MOVE_FLAMETHROWER; hp = 250; expectedMove = MOVE_OVERHEAT; turns = 1; }
 

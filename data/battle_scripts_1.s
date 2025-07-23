@@ -4249,7 +4249,7 @@ BattleScript_EffectRainDance::
 	attackstring
 	ppreduce
 	call BattleScript_CheckPrimalWeather
-	setfieldweather BATTLE_WEATHER_RAIN
+	setfieldweather BATTLE_WEATHER_RAIN_TEMPORARY
 BattleScript_MoveWeatherChange::
 	attackanimation
 	waitanimation
@@ -4267,7 +4267,7 @@ BattleScript_EffectSunnyDay::
 	attackstring
 	ppreduce
 	call BattleScript_CheckPrimalWeather
-	setfieldweather BATTLE_WEATHER_SUN
+	setfieldweather BATTLE_WEATHER_SUN_TEMPORARY
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_ExtremelyHarshSunlightWasNotLessened:

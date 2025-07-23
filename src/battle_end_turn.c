@@ -219,7 +219,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
     case BATTLE_WEATHER_FOG:
     case BATTLE_WEATHER_STRONG_WINDS:
         break;
-    case BATTLE_WEATHER_RAIN:
+    case BATTLE_WEATHER_RAIN_TEMPORARY:
+    case BATTLE_WEATHER_RAIN_PERMA:
     case BATTLE_WEATHER_RAIN_PRIMAL:
     case BATTLE_WEATHER_RAIN_DOWNPOUR:
         if (ability == ABILITY_DRY_SKIN || ability == ABILITY_RAIN_DISH)
@@ -228,7 +229,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
                 effect = TRUE;
         }
         break;
-    case BATTLE_WEATHER_SUN:
+    case BATTLE_WEATHER_SUN_TEMPORARY:
+    case BATTLE_WEATHER_SUN_PERMA:
     case BATTLE_WEATHER_SUN_PRIMAL:
         if (ability == ABILITY_DRY_SKIN || ability == ABILITY_SOLAR_POWER)
         {

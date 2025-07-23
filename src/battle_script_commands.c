@@ -4177,11 +4177,11 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 switch (gBattleScripting.moveEffect)
                 {
                     case MOVE_EFFECT_SUN:
-                        weather = BATTLE_WEATHER_SUN;
+                        weather = BATTLE_WEATHER_SUN_TEMPORARY;
                         msg = B_MSG_STARTED_SUNLIGHT;
                         break;
                     case MOVE_EFFECT_RAIN:
-                        weather = BATTLE_WEATHER_RAIN;
+                        weather = BATTLE_WEATHER_RAIN_TEMPORARY;
                         msg = B_MSG_STARTED_RAIN;
                         break;
                     case MOVE_EFFECT_SANDSTORM:
@@ -11914,10 +11914,12 @@ static void Cmd_setfieldweather(void)
 
     switch (battleWeatherId)
     {
-    case BATTLE_WEATHER_RAIN:
+    case BATTLE_WEATHER_RAIN_TEMPORARY:
+    case BATTLE_WEATHER_RAIN_PERMA:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_RAIN;
         break;
-    case BATTLE_WEATHER_SUN:
+    case BATTLE_WEATHER_SUN_TEMPORARY:
+    case BATTLE_WEATHER_SUN_PERMA:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SUNLIGHT;
         break;
     case BATTLE_WEATHER_SANDSTORM:
