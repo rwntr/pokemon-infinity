@@ -8434,6 +8434,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_IRON_FIST:
+    case ABILITY_POWER_FISTS:
         if (IsPunchingMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
@@ -8953,7 +8954,15 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
         spDef = gBattleMons[battlerDef].spDefense;
     }
 
-    if (moveEffect == EFFECT_PSYSHOCK || IsBattleMovePhysical(move)) // uses defense stat instead of sp.def
+    // Power Fists makes punching moves do special damage
+    if (atkAbility == ABILITY_POWER_FISTS && gMovesInfo[move].punchingMove)
+    {
+        defStat = spDef;
+        defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
+        usesDefStat = FALSE;
+    }
+
+    else if (moveEffect == EFFECT_PSYSHOCK || IsBattleMovePhysical(move)) // uses defense stat instead of sp.def
     {
         defStat = def;
         defStage = gBattleMons[battlerDef].statStages[STAT_DEF];
