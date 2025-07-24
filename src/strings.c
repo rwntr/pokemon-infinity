@@ -1300,3 +1300,241 @@ const u8 gText_PM[] = _("PM");
 const u8 gText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
 const u8 gText_Rename[] = _("RENAME");
 const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbecause it knows a HM move.{PAUSE_UNTIL_PRESS}");
+
+//Begin IE Strings
+
+// Nature changer
+const u8 gText_FlavourRed[] = _("Red:{CLEAR_TO 0x32}Attack");
+const u8 gText_FlavourYellow[] = _("Yellow:{CLEAR_TO 0x32}Defense");
+const u8 gText_FlavourPink[] = _("Pink:{CLEAR_TO 0x32}Speed");
+const u8 gText_FlavourBlue[] = _("Blue:{CLEAR_TO 0x32}Sp. Atk");
+const u8 gText_FlavourGreen[] = _("Green:{CLEAR_TO 0x32}Sp. Def");
+
+// EV/IV changers
+const u8 gText_View[] = _("View");
+const u8 gText_Modify[] = _("Add EVs");
+const u8 gText_ResetEVs[] = _("Reset EVs");
+const u8 gText_ExplainEVs[] = _("Explain EVs");
+
+const u8 gText_ChangeIVto0[] = _(" 0");
+const u8 gText_ChangeIVto1[] = _(" 1");
+const u8 gText_ChangeIVto14[] = _("14");
+const u8 gText_ChangeIVto15[] = _("15");
+const u8 gText_ChangeIVto30[] = _("30");
+const u8 gText_ChangeIVto31[] = _("31");
+
+const u8 gText_Add4toEV[] = _(" 4 EVs");
+const u8 gText_Add8toEV[] = _(" 8 EVs");
+const u8 gText_Add12toEV[] = _("12 EVs");
+const u8 gText_Add64toEV[] = _("64 EVs");
+const u8 gText_Add128toEV[] = _("128 EVs");
+const u8 gText_Add252toEV[] = _("252 EVs");
+
+const u8 gText_HiddenPower[] = _("Change Hidden Power");
+const u8 gText_ChangeIV[] = _("Change IVs");
+const u8 gText_ExplainIVs[] = _("Explain IVs");
+
+// Hidden Power Types
+const u8 gText_HPFighting[] = _("Fighting");
+const u8 gText_HPFlying[] = _("Flying");
+const u8 gText_HPPoison[] = _("Poison");
+const u8 gText_HPGround[] = _("Ground");
+const u8 gText_HPRock[] = _("Rock");
+const u8 gText_HPBug[] = _("Bug");
+const u8 gText_HPGhost[] = _("Ghost");
+const u8 gText_HPSteel[] = _("Steel");
+const u8 gText_HPFire[] = _("Fire");
+const u8 gText_HPWater[] = _("Water");
+const u8 gText_HPGrass[] = _("Grass");
+const u8 gText_HPElectric[] = _("Electric");
+const u8 gText_HPPsychic[] = _("Psychic");
+const u8 gText_HPIce[] = _("Ice");
+const u8 gText_HPDragon[] = _("Dragon");
+const u8 gText_HPDark[] = _("Dark");
+
+const u8 gText_HP_Placeholder[] =       _("HP{CLEAR_TO 0x36}{STR_VAR_1}");
+const u8 gText_Attack_Placeholder[] =   _("Attack{CLEAR_TO 0x36}{STR_VAR_2}");
+const u8 gText_Defense_Placeholder[] =  _("Defense{CLEAR_TO 0x36}{STR_VAR_3}");
+const u8 gText_Speed_Placeholder[] =    _("Speed{CLEAR_TO 0x36}{EXTRA_STR_VAR_1}");
+const u8 gText_SpAtk_Placeholder[] =    _("Sp. Atk{CLEAR_TO 0x36}{EXTRA_STR_VAR_2}");
+const u8 gText_SpDef_Placeholder[] =    _("Sp. Def{CLEAR_TO 0x36}{EXTRA_STR_VAR_3}");
+
+// Move Tutors
+// Unlocked after beating Roxanne
+const u8 gText_FuryCutter[] = _("Fury Cutter");
+const u8 gText_Rollout[] = _("Rollout");
+const u8 gText_SeismicToss[] = _("Seismic Toss");
+const u8 gText_Covet[] = _("Covet");
+const u8 gText_VacuumWave[] = _("Vacuum Wave");
+const u8 gText_ShockWave[] = _("Shock Wave");
+const u8 gText_BugBite[] = _("Bug Bite");
+const u8 gText_AirCutter[] = _("Air Cutter");
+const u8 gText_Swift[] = _("Swift");
+const u8 gText_Snatch[] = _("Snatch");
+const u8 gText_Mimic[] = _("Mimic");
+const u8 gText_MudSlap[] = _("Mud-Slap");
+const u8 gText_Metronome[] = _("Metronome");
+const u8 gText_OminousWind[] = _("Ominous Wind");
+const u8 gText_SuperFang[] = _("Super Fang");
+const u8 gText_HoneClaws[] = _("Hone Claws");
+const u8 gText_PsychUp[] = _("Psych Up");
+const u8 gText_FocusEnergy[] = _("Focus Energy");
+const u8 gText_Spikes[] = _("Spikes");
+const u8 gText_Infestation[] = _("Infestation");
+
+// Unlocked after beating Brawly
+const u8 gText_Counter[] = _("Counter");
+const u8 gText_Endeavor[] = _("Endeavor");
+const u8 gText_WorrySeed[] = _("Worry Seed");
+const u8 gText_DefenseCurl[] = _("Defense Curl");
+const u8 gText_Defog[] = _("Defog");
+const u8 gText_MagicCoat[] = _("Magic Coat");
+const u8 gText_Uproar[] = _("Uproar");
+const u8 gText_Hex[] = _("Hex");
+const u8 gText_GastroAcid[] = _("Gastro Acid");
+const u8 gText_Synthesis[] = _("Synthesis");
+const u8 gText_PainSplit[] = _("Pain Split");
+const u8 gText_LowKick[] = _("Low Kick");
+const u8 gText_IronDefense[] = _("Iron Defense");
+const u8 gText_MagnetRise[] = _("Magnet Rise");
+const u8 gText_Swagger[] = _("Swagger");
+const u8 gText_PinMissile[] = _("Pin Missile");
+const u8 gText_MudShot[] = _("Mud Shot");
+const u8 gText_Agility[] = _("Agility");
+
+// Unlocked after beating Wattson
+const u8 gText_SignalBeam[] = _("Signal Beam");
+const u8 gText_Gravity[] = _("Gravity");
+const u8 gText_SeedBomb[] = _("Seed Bomb");
+const u8 gText_PsychoCut[] = _("Psycho Cut");
+const u8 gText_IcyWind[] = _("Icy Wind");
+const u8 gText_Electroweb[] = _("Electroweb");
+const u8 gText_ThunderFang[] = _("Thunder Fang");
+const u8 gText_FireFang[] = _("Fire Fang");
+const u8 gText_IceFang[] = _("Ice Fang");
+const u8 gText_Brine[] = _("Brine");
+const u8 gText_RazorShell[] = _("Razor Shell");
+const u8 gText_Revenge[] = _("Revenge");
+const u8 gText_DrainingKiss[] = _("Draining Kiss");
+const u8 gText_LeafBlade[] = _("Leaf Blade");
+const u8 gText_RockBlast[] = _("Rock Blast");
+const u8 gText_SoftBoiled[] = _("Soft-Boiled");
+const u8 gText_AuroraBeam[] = _("Aurora Beam");
+const u8 gText_Teleport[] = _("Teleport");
+
+// Unlocked after beating Flannery
+const u8 gText_FirePunch[] = _("Fire Punch");
+const u8 gText_IcePunch[] = _("Ice Punch");
+const u8 gText_ThunderPunch[] = _("Thunder Punch");
+const u8 gText_Tailwind[] = _("Tailwind");
+const u8 gText_ZenHeadbutt[] = _("Zen Headbutt");
+const u8 gText_BodySlam[] = _("Body Slam");
+const u8 gText_IcicleSpear[] = _("Icicle Spear");
+const u8 gText_DualChop[] = _("Dual Chop");
+const u8 gText_Reversal[] = _("Reversal");
+const u8 gText_BugBuzz[] = _("Bug Buzz");
+const u8 gText_LastResort[] = _("Last Resort");
+const u8 gText_RolePlay[] = _("Role Play");
+const u8 gText_DrillRun[] = _("Drill Run");
+const u8 gText_BlazeKick[] = _("Blaze Kick");
+const u8 gText_CrossPoison[] = _("Cross Poison");
+const u8 gText_WeatherBall[] = _("Weather Ball");
+const u8 gText_AirSlash[] = _("Air Slash");
+const u8 gText_StompingTantrum[] = _("Stomping Tantrum");
+
+// Unlocked after beating Norman
+const u8 gText_IronHead[] = _("Iron Head");
+const u8 gText_AquaTail[] = _("Aqua Tail");
+const u8 gText_PowerGem[] = _("Power Gem");
+const u8 gText_Bounce[] = _("Bounce");
+const u8 gText_HealBell[] = _("Heal Bell");
+const u8 gText_Superpower[] = _("Superpower");
+const u8 gText_Crunch[] = _("Crunch");
+const u8 gText_MysticalFire[] = _("Mystical Fire");
+const u8 gText_GunkShot[] = _("Gunk Shot");
+const u8 gText_HyperVoice[] = _("Hyper Voice");
+const u8 gText_SkyAttack[] = _("Sky Attack");
+const u8 gText_HeatCrash[] = _("Heat Crash");
+const u8 gText_StoredPower[] = _("Stored Power");
+const u8 gText_Trick[] = _("Trick");
+const u8 gText_DynamicPunch[] = _("Dynamic Punch");
+const u8 gText_HelpingHand[] = _("Helping Hand");
+const u8 gText_ToxicSpikes[] = _("Toxic Spikes");
+const u8 gText_HighHorsepower[] = _("High Horsepower");
+
+// Unlocked after beating Winona
+const u8 gText_Megahorn[] = _("Megahorn");
+const u8 gText_AuraSphere[] = _("Aura Sphere");
+const u8 gText_ThroatChop[] = _("Throat Chop");
+const u8 gText_EarthPower[] = _("Earth Power");
+const u8 gText_HeatWave[] = _("Heat Wave");
+const u8 gText_Liquidation[] = _("Liquidation");
+const u8 gText_BatonPass[] = _("Baton Pass");
+const u8 gText_FoulPlay[] = _("Foul Play");
+const u8 gText_SolarBlade[] = _("Solar Blade");
+const u8 gText_PhantomForce[] = _("Phantom Force");
+const u8 gText_MeteorMash[] = _("Meteor Mash");
+const u8 gText_PsychicFangs[] = _("Psychic Fangs");
+const u8 gText_Encore[] = _("Encore");
+const u8 gText_GrassyTerrain[] = _("Grassy Terrain");
+const u8 gText_ElectricTerrain[] = _("Electric Terrain");
+const u8 gText_MistyTerrain[] = _("Misty Terrain");
+const u8 gText_PsychicTerrain[] = _("Psychic Terrain");
+const u8 gText_PowerUpPunch[] = _("Power-Up Punch");
+
+// Unlocked after beating Tate & Liza
+const u8 gText_DoubleEdge[] = _("Double-Edge");
+const u8 gText_PlayRough[] = _("Play Rough");
+const u8 gText_NastyPlot[] = _("Nasty Plot");
+const u8 gText_SelfDestruct[] = _("Self-destruct");
+const u8 gText_CloseCombat[] = _("Close Combat");
+const u8 gText_FlareBlitz[] = _("Flare Blitz");
+const u8 gText_BraveBird[] = _("Brave Bird");
+const u8 gText_LeafStorm[] = _("Leaf Storm");
+const u8 gText_PowerWhip[] = _("Power Whip");
+const u8 gText_Hurricane[] = _("Hurricane");
+const u8 gText_HydroPump[] = _("Hydro Pump");
+const u8 gText_DragonDance[] = _("Dragon Dance");
+const u8 gText_Outrage[] = _("Outrage");
+const u8 gText_KnockOff[] = _("Knock Off");
+const u8 gText_QuiverDance[] = _("Quiver Dance");
+
+// Multichoice strings when selecting a set of tutor moves to choose from
+const u8 gText_TutorMoveSet1[] = _("Stone Badge");
+const u8 gText_TutorMoveSet2[] = _("Knuckle Badge");
+const u8 gText_TutorMoveSet3[] = _("Dynamo Badge");
+const u8 gText_TutorMoveSet4[] = _("Heat Badge");
+const u8 gText_TutorMoveSet5[] = _("Balance Badge");
+const u8 gText_TutorMoveSet6[] = _("Feather Badge");
+const u8 gText_TutorMoveSet7[] = _("Mind Badge");
+const u8 gText_TutorMoveSet8[] = _("Rain Badge"); //TODO
+
+// Pokemon center move tutor/name rater menu
+const u8 gText_RememberAMove[] = _("Remember a move");
+const u8 gText_ForgetAMove[] = _("Forget a move");
+const u8 gText_LearnANewMove[] = _("Learn a new move");
+const u8 gText_RateANickname[] = _("Rate a nickname");
+const u8 gText_TrainEXP[] = _("Train Exp.");
+const u8 gText_ResetEvents[] = _("Reset Events");
+
+//Birch Speech Menu Options
+const u8 gText_BirchNormalMode[] = _("Normal");
+const u8 gText_BirchHardMode[] = _("Hard");
+const u8 gText_BirchChallengeMode[] = _("Challenge");
+const u8 gText_BirchDefaultCaps[] = _("Default Caps");
+const u8 gText_BirchMoreCaps[] = _("More Caps");
+const u8 gText_BirchStrictCaps[] = _("Strict Caps");
+
+//Extra Save Screen Items
+const u8 gText_SavingNormalMode[] = _("Normal Mode");
+const u8 gText_SavingHardMode[] = _("Hard Mode");
+const u8 gText_SavingChallengeMode[] = _("Challenge Mode");
+
+//Poke Vial
+const u8 gText_PokeVialEmpty[] = _("The Poké Vial is empty.\nRefill it at a Pokémon Center.{PAUSE_UNTIL_PRESS}");
+const u8 gText_UsedPokeVial[] = _("{PLAYER} used the Poké Vial.\nAll Pokémon were fully restored!{PAUSE_UNTIL_PRESS}");
+
+//New Pockets
+const u8 gText_Medicine[] = _("Medicine");
+const u8 gText_Mega_Stones[] = _("Mega Stones");
+const u8 gText_Battle_Items[] = _("BattleItems");
