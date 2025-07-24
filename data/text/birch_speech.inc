@@ -76,8 +76,8 @@ gText_Birch_AreYouReady::
 	.string "to choose a difficulty setting.\p"
 	.string "Currently you can choose between\n"
 	.string "Normal, Hard or Challenge Mode.\p"
-	.string "Please select a mode to learn more\n"
-	.string "about it.$"
+	.string "Please select a mode to\n"
+	.string "learn about it.$"
 
 gText_Pie_NormalMode::
 	.string "In Normal Mode, Trainers won't have\n"
@@ -131,7 +131,7 @@ gText_Pie_LevelCaps::
 	.string "until you earn the next badge.\p"
     .string "There are currently three different\n"
 	.string "settings for level caps.\p"
-    .string "Please choose a level cap setting to\n"
+    .string "Please choose a setting to\n"
     .string "learn more about it.$"
 
 gText_Pie_StandardCaps::
