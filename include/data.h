@@ -196,16 +196,9 @@ extern const struct FollowerMsgInfo gFollowerCuriousMessages[];
 extern const struct FollowerMsgInfo gFollowerMusicMessages[];
 extern const struct FollowerMsgInfo gFollowerPoisonedMessages[];
 
-static inline bool8 IsPartnerTrainerId(u16 trainerId)
-{
-    if (trainerId >= TRAINER_PARTNER(PARTNER_NONE) && trainerId < TRAINER_PARTNER(PARTNER_COUNT))
-        return TRUE;
-    return FALSE;
-}
-
 static inline u16 SanitizeTrainerId(u16 trainerId)
 {
-    if (trainerId >= TRAINERS_COUNT && !IsPartnerTrainerId(trainerId))
+    if (trainerId >= TRAINERS_COUNT)
         return TRAINER_NONE;
     return trainerId;
 }
@@ -215,9 +208,6 @@ static inline const struct Trainer *GetTrainerStructFromId(u16 trainerId)
     u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
     enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
 
-    if (IsPartnerTrainerId(trainerId))
-        return &gBattlePartners[difficulty][sanitizedTrainerId - TRAINER_PARTNER(PARTNER_NONE)];
-    else
         return &gTrainers[difficulty][sanitizedTrainerId];
 }
 
