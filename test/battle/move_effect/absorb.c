@@ -69,7 +69,7 @@ DOUBLE_BATTLE_TEST("Matcha Gatcha recovers 50% of the damage dealt from both tar
     }
 }
 
-SINGLE_BATTLE_TEST("Draining Kiss recovers 75% of the damage dealt")
+SINGLE_BATTLE_TEST("Draining Kiss recovers 50% of the damage dealt")
 {
     s16 damage;
     s16 healed;
@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Draining Kiss recovers 75% of the damage dealt")
         HP_BAR(opponent, captureDamage: &damage);
         HP_BAR(player, captureDamage: &healed);
     } THEN {
-        EXPECT_MUL_EQ(damage, Q_4_12(-0.75), healed);
+        EXPECT_MUL_EQ(damage, Q_4_12(-0.5), healed);
     }
 }
 
