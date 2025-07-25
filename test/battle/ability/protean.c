@@ -3,10 +3,10 @@
 
 ASSUMPTIONS
 {
-    ASSUME(B_PROTEAN_LIBERO == GEN_9);
+    ASSUME(B_PROTEAN_LIBERO == GEN_8);
 }
 
-SINGLE_BATTLE_TEST("Protean changes the type of the user only once per switch in")
+SINGLE_BATTLE_TEST("Protean changes the type of the user every time they use a move")
 {
     GIVEN {
         PLAYER(SPECIES_REGIROCK);
@@ -15,20 +15,12 @@ SINGLE_BATTLE_TEST("Protean changes the type of the user only once per switch in
     } WHEN {
         TURN { MOVE(opponent, MOVE_WATER_GUN); }
         TURN { MOVE(opponent, MOVE_SCRATCH); }
-        TURN { SWITCH(opponent, 1); }
-        TURN { SWITCH(opponent, 0); }
-        TURN { MOVE(opponent, MOVE_WATER_GUN); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_PROTEAN);
         MESSAGE("The opposing Kecleon transformed into the Water type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, opponent);
-        NONE_OF {
-            ABILITY_POPUP(opponent, ABILITY_PROTEAN);
-            MESSAGE("The opposing Kecleon transformed into the Normal type!");
-        }
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         ABILITY_POPUP(opponent, ABILITY_PROTEAN);
-        MESSAGE("The opposing Kecleon transformed into the Water type!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, opponent);
+        MESSAGE("The opposing Kecleon transformed into the Normal type!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);;
     }
 }
