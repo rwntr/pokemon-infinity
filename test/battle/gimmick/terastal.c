@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing boosts moves of the same type to 60 BP
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        ASSUME(GetMovePower(MOVE_ABSORB) == 20);
+        ASSUME(GetMovePower(MOVE_ABSORB) == 35);
         PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_GRASS); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -102,8 +102,8 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing boosts moves of the same type to 60 BP
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ABSORB, player);
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
-        // The jump from 20 BP to 90 BP (60 * 1.5x) is a 4.5x boost.
-        EXPECT_MUL_EQ(results[0].damage, Q_4_12(4.5), results[1].damage);
+        // The jump from 35 BP to 90 BP (60 * 1.5x) is a 2.57x boost.
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.57), results[1].damage);
     }
 }
 
@@ -113,18 +113,21 @@ SINGLE_BATTLE_TEST("(TERA) Terastallization's 60 BP floor occurs after Technicia
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        ASSUME(GetMovePower(MOVE_MEGA_DRAIN) == 40);
+        ASSUME(GetMovePower(MOVE_ABSORB) == 35);
         PLAYER(SPECIES_MR_MIME) { Ability(ABILITY_TECHNICIAN); TeraType(TYPE_GRASS); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_MEGA_DRAIN, gimmick: tera); }
+        TURN { MOVE(player, MOVE_ABSORB, gimmick: tera); }
     } SCENE {
-        MESSAGE("Mr. Mime used Mega Drain!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_MEGA_DRAIN, player);
+        MESSAGE("Mr. Mime used Absorb!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ABSORB, player);
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
-        // This should be the same as a normal Tera boost.
-        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
+        // Because 35 bp absorb with technician is 52.5 BP
+        // 60BP floor / 52.5 ~= 1.14 
+        // ~1.14 * 1.5x Tera boost = 1.7143
+        // Therefore, expect this factor instead of 1.5
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.71), results[1].damage);
     }
 }
 
@@ -603,29 +606,31 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing into the Stellar-type provides a one-t
 
 SINGLE_BATTLE_TEST("(TERA) Terastallizing into the Stellar type boosts all moves up to 60 BP once per type")
 {
+    //Replacing mega drain with another bp40 special move in this instead of doing annoying math and
+    //making the results dependent on a mul_eq
     s16 damage[4];
     GIVEN {
-        ASSUME(GetMovePower(MOVE_MEGA_DRAIN) == 40);
+        ASSUME(GetMovePower(MOVE_THUNDER_SHOCK) == 40);
         ASSUME(GetMovePower(MOVE_BUBBLE) == 40);
         PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_MEGA_DRAIN); }
-        TURN { MOVE(player, MOVE_MEGA_DRAIN, gimmick: GIMMICK_TERA); }
-        TURN { MOVE(player, MOVE_MEGA_DRAIN); }
+        TURN { MOVE(player, MOVE_THUNDER_SHOCK); }
+        TURN { MOVE(player, MOVE_THUNDER_SHOCK, gimmick: GIMMICK_TERA); }
+        TURN { MOVE(player, MOVE_THUNDER_SHOCK); }
         TURN { MOVE(player, MOVE_BUBBLE); }
     } SCENE {
         // turn 1
-        MESSAGE("Wobbuffet used Mega Drain!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_MEGA_DRAIN, player);
+        MESSAGE("Wobbuffet used Thunder Shock!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_SHOCK, player);
         HP_BAR(opponent, captureDamage: &damage[0]);
         // turn 2
-        MESSAGE("Wobbuffet used Mega Drain!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_MEGA_DRAIN, player);
+        MESSAGE("Wobbuffet used Thunder Shock!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_SHOCK, player);
         HP_BAR(opponent, captureDamage: &damage[1]);
         // turn 3
-        MESSAGE("Wobbuffet used Mega Drain!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_MEGA_DRAIN, player);
+        MESSAGE("Wobbuffet used Thunder Shock!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_SHOCK, player);
         HP_BAR(opponent, captureDamage: &damage[2]);
         // turn 4
         MESSAGE("Wobbuffet used Bubble!");
