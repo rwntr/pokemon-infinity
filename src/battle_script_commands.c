@@ -4880,6 +4880,22 @@ static bool32 BattleTypeAllowsExp(void)
         return TRUE;
 }
 
+//@RWNTR
+//Again not sure why this is here in my old branch.  just in case
+/*
+bool8 PartyIsMaxLevel(void)
+{
+    int i;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) != 100
+            && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+            return FALSE;
+    }
+    return TRUE;
+}
+*/
+
 static u32 GetMonHoldEffect(struct Pokemon *mon)
 {
     enum ItemHoldEffect holdEffect;
@@ -4919,6 +4935,7 @@ static void Cmd_getexp(void)
         }
         else
         {
+            
             gBattleScripting.getexpState++;
             gBattleStruct->givenExpMons |= (1u << gBattlerPartyIndexes[gBattlerFainted]);
         }
@@ -15980,10 +15997,6 @@ static void Cmd_handleballthrow(void)
                         ballAddition = 40;
                 }
                 break;
-            case BALL_DREAM:
-                if (B_DREAM_BALL_MODIFIER >= GEN_8 && (gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP || GetBattlerAbility(gBattlerTarget) == ABILITY_COMATOSE))
-                    ballMultiplier = 400;
-                break;
             case BALL_BEAST:
                 ballMultiplier = 10;
                 break;
@@ -16087,9 +16100,15 @@ static void Cmd_handleballthrow(void)
                     gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
                     SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
                 }
+                else if (ballId == BALL_DREAM)
+                {
+                    //@rwntr  this will be fine (eventually) because all mons in IE will (eventually) have 2 standard abilities and 1 HA
+                    u8 Ability = 2;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &Ability);
+                }
                 else if (ballId == BALL_FRIEND)
                 {
-                    u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
+                    u32 friendship = (200);
                     SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_FRIENDSHIP, &friendship);
                 }
             }

@@ -1705,8 +1705,9 @@ bool32 BattleArenaTurnEnd(void)
 // Ingrain, Leech Seed, Strength Sap and Aqua Ring
 s32 GetDrainedBigRootHp(u32 battler, s32 hp)
 {
+    //@RWNTR big root IE effect
     if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_BIG_ROOT)
-        hp = (hp * 1300) / 1000;
+        hp = (hp * 3) / 2;
     if (hp == 0)
         hp = 1;
 
