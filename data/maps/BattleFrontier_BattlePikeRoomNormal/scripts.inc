@@ -748,7 +748,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_Silence:
 BattleFrontier_BattlePikeRoomNormal_Text_BattleSomewhatToughTrainer:
 	.string "Welcome…\p"
 	.string "Here, we will have you battle\n"
-	.string "a somewhat-tough TRAINER…$"
+	.string "a somewhat-tough Trainer…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_RestoreToFullHealth:
 	.string "How wonderful…\p"
@@ -762,7 +762,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge2:
 BattleFrontier_BattlePikeRoomNormal_Text_ImThePikeQueen:
 	.string "I am Lucy…\n"
 	.string "I am the law here…\l"
-	.string "For I am the PIKE QUEEN…\p"
+	.string "For I am the Pike Queen…\p"
 	.string "You already know it, but to advance,\n"
 	.string "you must defeat me…\p"
 	.string "…I'm not one for idle chatter.\n"

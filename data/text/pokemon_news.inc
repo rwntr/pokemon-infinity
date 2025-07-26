@@ -10,7 +10,7 @@ gPokeNewsTextSlateport_Upcoming::
 	.string "he will stupendously go for, the\l"
 	.string "Energy Guru advised, “Save up your\l"
 	.string "money. That'll be good…”\p"
-	.string "It sounds like a trip to SLATEPORT\n"
+	.string "It sounds like a trip to Slateport\n"
 	.string "would be well worth your while that day.\p"
 	.string "That's the news on Pokémon News.$"
 
@@ -39,7 +39,7 @@ gPokeNewsTextSlateport_Ending::
 	.string "prices on Calcium and Protein!\p"
 	.string "According to the Energy Guru, he\n"
 	.string "still has ample merchandise left.\p"
-	.string "Why not visit SLATEPORT CITY for\n"
+	.string "Why not visit Slateport City for\n"
 	.string "a most enjoyable shopping trip?\p"
 	.string "That's the news on Pokémon News.$"
 
@@ -153,7 +153,7 @@ gPokeNewsTextBlendMaster_Ending::
 	.string "It's time for Pokémon News.\p"
 	.string "It's incredible!\n"
 	.string "Too incredible, even!\p"
-	.string "The BERRY BLENDER is spinning at\n"
+	.string "The Berry Blender is spinning at\n"
 	.string "a dizzying pace!\p"
 	.string "The Blend Master has lived up to\n"
 	.string "his reputation!\p"

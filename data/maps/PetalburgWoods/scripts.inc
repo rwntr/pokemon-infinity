@@ -336,13 +336,13 @@ PetalburgWoods_Text_HandOverThosePapers:
 
 PetalburgWoods_Text_YouHaveToHelpMe:
 	.string "Aiyeeeh!\p"
-	.string "You're a Pokémon TRAINER, aren't you?\n"
+	.string "You're a Pokémon Trainer, aren't you?\n"
 	.string "You've got to help me, please!$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM AQUA\n"
+	.string "No one who crosses Team Aqua\n"
 	.string "gets any mercy, not even a kid!\p"
 	.string "Come on and battle me!$"
 
@@ -351,12 +351,12 @@ PetalburgWoods_Text_YoureKiddingMe:
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve\n"
-	.string "meddling with TEAM AQUA!\l"
+	.string "meddling with Team Aqua!\l"
 	.string "Come on and battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
 	.string "Pokémon…\p"
-	.string "And, hey, we of TEAM AQUA are also\n"
-	.string "after something in RUSTBORO.\p"
+	.string "And, hey, we of Team Aqua are also\n"
+	.string "after something in Rustboro.\p"
 	.string "I'll let you go today!$"
 
 PetalburgWoods_Text_ThatWasAwfullyClose:
@@ -364,13 +364,13 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
+	.string "I know, I'll give you a Great Ball as\n"
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that TEAM AQUA thug say\n"
+	.string "Didn't that Team Aqua thug say\n"
 	.string "they were after something in\l"
-	.string "RUSTBORO, too?$"
+	.string "Rustboro, too?$"
 
 PetalburgWoods_Text_ICantBeWastingTime:
 	.string "Uh-oh! It's a crisis!\n"
@@ -378,7 +378,7 @@ PetalburgWoods_Text_ICantBeWastingTime:
 
 PetalburgWoods_Text_YoureLoadedWithItems:
 	.string "You're loaded with items.\n"
-	.string "I can't give you this GREAT BALL.$"
+	.string "I can't give you this Great Ball.$"
 
 PetalburgWoods_Text_GoBugPokemonTeam:
 	.string "I caught a whole bunch of Pokémon!\p"

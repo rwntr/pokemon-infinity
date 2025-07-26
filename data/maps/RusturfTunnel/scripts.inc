@@ -443,7 +443,7 @@ RusturfTunnel_Text_GruntTakePackage:
 	.string "The Boss told me this would be a\n"
 	.string "slick-and-easy job to pull.\p"
 	.string "All I had to do was steal some package\n"
-	.string "from DEVON.\p"
+	.string "from Devon.\p"
 	.string "Tch!\n"
 	.string "You want it back that badly, take it!$"
 

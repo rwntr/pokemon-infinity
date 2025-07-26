@@ -13,7 +13,7 @@ CableClub_Text_TradeUsingLinkCable::
 	.string "using a GBA Game Link cable.$"
 
 CableClub_Text_BattleUsingLinkCable::
-	.string "You may battle another TRAINER\n"
+	.string "You may battle another Trainer\n"
 	.string "using a GBA Game Link cable.$"
 
 CableClub_Text_RecordCornerUsingLinkCable::
@@ -25,7 +25,7 @@ CableClub_Text_CloseThisMenu:
 	.string "Close this menu.$"
 
 CableClub_Text_NeedTwoMonsForDoubleBattle:
-	.string "For a DOUBLE BATTLE, you must\n"
+	.string "For a Double Battle, you must\n"
 	.string "have at least two Pokémon.$"
 
 CableClub_Text_NeedTwoMonsToTrade:
@@ -34,7 +34,7 @@ CableClub_Text_NeedTwoMonsToTrade:
 
 CableClub_Text_CantTradeEnigmaBerry:
 	.string "A Pokémon holding the {STR_VAR_1}\n"
-	.string "BERRY can't be traded.$"
+	.string "Berry can't be traded.$"
 
 gText_PleaseWaitForLink::
 	.string "Please wait.\n"
@@ -86,11 +86,11 @@ CableClub_Text_IncorrectNumberOfParticipants:
 	.string "incorrect.$"
 
 CableClub_Text_CantSingleBattleWithXPlayers:
-	.string "The SINGLE BATTLE Mode can't be\n"
+	.string "The Single Battle Mode can't be\n"
 	.string "played by {STR_VAR_1} players.$"
 
 CableClub_Text_CantDoubleBattleWithXPlayers:
-	.string "The DOUBLE BATTLE Mode can't be\n"
+	.string "The Double Battle Mode can't be\n"
 	.string "played by {STR_VAR_1} players.$"
 
 CableClub_Text_NeedFourPlayers:
@@ -111,7 +111,7 @@ Text_TerminateLinkPleaseWait:
 	.string "the room. Please wait.$"
 
 CableClub_Text_TooBusyToNotice:
-	.string "This TRAINER is too busy to\n"
+	.string "This Trainer is too busy to\n"
 	.string "notice…$"
 
 CableClub_Text_GotToLookAtTrainerCard:
@@ -144,11 +144,11 @@ CableClub_Text_HopeToSeeYouAgain:
 CableClub_Text_NotSetUpForFarAwayRegion:
 	.string "I'm awfully sorry.\p"
 	.string "We're not set up to conduct trades\n"
-	.string "with TRAINERS far away in another\l"
+	.string "with Trainers far away in another\l"
 	.string "region yet…$"
 
 CableClub_Text_OtherTrainerNotReady:
-	.string "The other TRAINER is not ready.$"
+	.string "The other Trainer is not ready.$"
 
 CableClub_Text_YouHaveAMonThatCantBeTaken:
 	.string "You have at least one Pokémon\n"
@@ -187,7 +187,7 @@ CableClub_Text_PleaseWait:
 
 CableClub_Text_YouMayTradeHere::
 	.string "You may trade your Pokémon here\n"
-	.string "with another TRAINER.$"
+	.string "with another Trainer.$"
 
 CableClub_Text_YouMayBattleHere::
 	.string "You may battle with your friends\n"
@@ -356,17 +356,17 @@ CableClub_Text_UseBerryCrush:
 
 CableClub_Text_ExplainBattleModes:
 	.string "There are three Battle Modes.\p"
-	.string "SINGLE BATTLE is for two TRAINERS\n"
+	.string "Single Battle is for two Trainers\n"
 	.string "with one or more Pokémon each.\p"
-	.string "Each TRAINER can have one Pokémon\n"
+	.string "Each Trainer can have one Pokémon\n"
 	.string "in battle at a time.\p"
-	.string "DOUBLE BATTLE is for two TRAINERS\n"
+	.string "Double Battle is for two Trainers\n"
 	.string "with two or more Pokémon each.\p"
-	.string "Each TRAINER will send out two\n"
+	.string "Each Trainer will send out two\n"
 	.string "Pokémon in battle at a time.\p"
-	.string "MULTI BATTLE is for four TRAINERS\n"
+	.string "Multi Battle is for four Trainers\n"
 	.string "with one or more Pokémon each.\p"
-	.string "Each TRAINER can have one Pokémon\n"
+	.string "Each Trainer can have one Pokémon\n"
 	.string "in battle at a time.$"
 
 CableClub_Text_ChooseGroupLeaderOfTwo:
@@ -391,7 +391,7 @@ CableClub_Text_WelcomeUnionRoomEnter:
 	.string "Welcome to the Pokémon Wireless\n"
 	.string "Club Union Room.\p"
 	.string "You may interact directly with\n"
-	.string "other TRAINERS here, some of\l"
+	.string "other Trainers here, some of\l"
 	.string "whom you may not even know.\p"
 	.string "Would you like to enter the Room?$"
 

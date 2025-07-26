@@ -135,7 +135,7 @@ FortreeCity_Gym_EventScript_GymStatue::
 	end
 
 FortreeCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-\n"
+	.string "Yo, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "Fortree Gym Leader Winona is\n"
 	.string "a master of Flying-type Pokémon.\p"
@@ -158,7 +158,7 @@ FortreeCity_Gym_Text_JaredDefeat:
 	.string "You're strong…$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "A TRAINER has to be smart to keep\n"
+	.string "A Trainer has to be smart to keep\n"
 	.string "up with unexpected turns of events.\p"
 	.string "Do you have the smarts to get to\n"
 	.string "our Leader?$"
@@ -175,7 +175,7 @@ FortreeCity_Gym_Text_EdwardoDefeat:
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
 	.string "The world is huge, and there are\n"
-	.string "countless tough TRAINERS.\p"
+	.string "countless tough Trainers.\p"
 	.string "I'm going to keep training and make\n"
 	.string "myself even stronger.$"
 
@@ -243,7 +243,7 @@ FortreeCity_Gym_Text_WinonaIntro:
 	.string "of Bird Pokémon and I!$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "Never before have I seen a TRAINER\n"
+	.string "Never before have I seen a Trainer\n"
 	.string "command Pokémon with more grace\l"
 	.string "than I…\p"
 	.string "In recognition of your prowess,\n"
@@ -290,7 +290,7 @@ FortreeCity_Gym_Text_WinonaPreRematch:
 	.string "But by striving for excellence,\n"
 	.string "we have the power to soar!\p"
 	.string "You have scaled the pinnacle as\n"
-	.string "the reigning CHAMPION.\p"
+	.string "the reigning Champion.\p"
 	.string "Please, allow me to see your power\n"
 	.string "at full flight!$"
 
@@ -310,7 +310,7 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
 	.string "But by striving for excellence,\n"
 	.string "we have the power to soar!\p"
 	.string "You have scaled the pinnacle as\n"
-	.string "the reigning CHAMPION.\p"
+	.string "the reigning Champion.\p"
 	.string "Please, allow me to see your power\n"
 	.string "at full flight!\p"
 	.string "Oh, no… Do you have but one\n"

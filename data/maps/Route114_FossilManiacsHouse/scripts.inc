@@ -47,8 +47,8 @@ Route114_FossilManiacsHouse_Text_RocksFillDisplayCase:
 	.string "the display case…$"
 
 Route114_FossilManiacsHouse_Text_CrammedWithBooks:
-	.string "THE COMPOSITION OF STRATA…\n"
-	.string "HOW RAIN SHAPES THE LAND…\l"
-	.string "STONES, SOIL, AND ROCK…\p"
+	.string "The COMPOSITION OF STRATA…\n"
+	.string "How RAIN SHAPES THE LAND…\l"
+	.string "Stones, SOIL, AND ROCK…\p"
 	.string "It's crammed with books.$"
 

@@ -8,13 +8,13 @@ gText_AlreadySavedFile::
 
 gText_SavingDontTurnOff::
 	.string "Saving…\n"
-	.string "Don't turn off the power.$"
+	.string "Don'T Turn Off The Power.$"
 
 gText_PlayerSavedGame::
 	.string "{PLAYER} saved the game.$"
 
 gText_DifferentSaveFile::
-	.string "WARNING!\p"
+	.string "Warning!\p"
 	.string "There is a different game file that\n"
 	.string "is already saved.\p"
 	.string "If you save now, the other file's\n"
@@ -29,5 +29,5 @@ gText_SaveError::
 	.string "backup memory.$"
 
 gText_SavingDontTurnOffPower::
-	.string "Saving…\n"
+	.string "SAVING…\n"
 	.string "Don't turn off the power.$"

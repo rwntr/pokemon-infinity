@@ -26,7 +26,7 @@ gText_PkmnSentToPCAfterCatch::
 	.string "{STR_VAR_2} was sent to\n"
 	.string "{B_PC_CREATOR_NAME} PC.\p"
 	.string "It was placed in \n"
-	.string "BOX “{STR_VAR_1}”.$"
+	.string "Box “{STR_VAR_1}”.$"
 
 gText_NoMoreRoomForPokemon::
 	.string "There's no more room for Pokémon!\p"

@@ -289,7 +289,7 @@ TrainerHill_Entrance_Pokemart_Expanded:
 TrainerHill_Entrance_Text_StillGettingReady:
 	.string "This is the Trainer Hill where\n"
 	.string "you may enjoy tag battles with many\l"
-	.string "TRAINERS.\p"
+	.string "Trainers.\p"
 	.string "Unfortunately, we're still getting\n"
 	.string "things ready. Please come back later!$"
 
@@ -297,7 +297,7 @@ TrainerHill_Entrance_Text_WelcomeToTrainerHill:
 	.string "Welcome!\p"
 	.string "This is the Trainer Hill where\n"
 	.string "you may enjoy tag battles with many\l"
-	.string "TRAINERS!$"
+	.string "Trainers!$"
 
 TrainerHill_Entrance_Text_SaveGameBeforeEnter:
 	.string "Is this your first visit here?\p"
@@ -306,18 +306,18 @@ TrainerHill_Entrance_Text_SaveGameBeforeEnter:
 
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
 	.string "Let's see…\n"
-	.string "The TRAINERS here now are…\p"
+	.string "The Trainers here now are…\p"
 	.string "Up to floor no. {STR_VAR_1}.$"
 
 TrainerHill_Entrance_Text_TrainersInEveryRoom:
 	.string "Let's see…\n"
-	.string "The TRAINERS here now are…\p"
-	.string "There appear to be TRAINERS gathered\n"
+	.string "The Trainers here now are…\p"
+	.string "There appear to be Trainers gathered\n"
 	.string "in every room.$"
 
 TrainerHill_Entrance_Text_LikeToChallengeTrainers:
 	.string "Would you like to challenge the\n"
-	.string "waiting TRAINERS?$"
+	.string "waiting Trainers?$"
 
 TrainerHill_Entrance_Text_TimeProgessGetSetGo:
 	.string "I will time your progress.\n"
@@ -339,7 +339,7 @@ TrainerHill_Entrance_Text_HopeYouGiveItYourBest:
 	.string "I hope you give it your best.$"
 
 TrainerHill_Entrance_Text_MovedReceptionHereForSwitch:
-	.string "When the TRAINERS switch places,\n"
+	.string "When the Trainers switch places,\n"
 	.string "the movement can be hectic.\p"
 	.string "To avoid the stampede, we moved\n"
 	.string "the reception counter here.\p"
@@ -357,7 +357,7 @@ TrainerHill_Entrance_Text_ExplainTrainerHill:
 	.string "The fastest times are posted on\n"
 	.string "the Time Board--try competing with\l"
 	.string "your friends.\p"
-	.string "In TRAINER battles along the way,\n"
+	.string "In Trainer battles along the way,\n"
 	.string "neither Exp. Points nor money will\l"
 	.string "be awarded.$"
 
@@ -422,7 +422,7 @@ TrainerHill_Entrance_Text_ChallengeTime:
 	.string "{STR_VAR_1} min. {STR_VAR_2}.{STR_VAR_3} sec.$"
 
 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
-	.string "Who knows what sort of TRAINERS\n"
+	.string "Who knows what sort of Trainers\n"
 	.string "and Pokémon combos are ahead?\p"
 	.string "All I know is that I'll knock aside\n"
 	.string "anyone that stands in my way!$"

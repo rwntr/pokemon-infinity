@@ -70,7 +70,7 @@ VictoryRoad_B2F_Text_CarolinePostBattle:
 
 VictoryRoad_B2F_Text_JulieIntro:
 	.string "You shouldn't get complacent just\n"
-	.string "because you have a lot of GYM BADGES.\p"
+	.string "because you have a lot of Gym BADGES.\p"
 	.string "There's always going to be someone\n"
 	.string "who's better than you!$"
 
@@ -91,7 +91,7 @@ VictoryRoad_B2F_Text_FelixDefeat:
 
 VictoryRoad_B2F_Text_FelixPostBattle:
 	.string "I can't help getting all tense knowing\n"
-	.string "that I'm nearing the Pokémon LEAGUE.\p"
+	.string "that I'm nearing the Pokémon League.\p"
 	.string "It's all I can do to feign calm.$"
 
 VictoryRoad_B2F_Text_DianneIntro:

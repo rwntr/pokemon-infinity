@@ -326,7 +326,7 @@ RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife:
 
 RustboroCity_DevonCorp_2F_Text_OhIsThatSo:
 	.string "Oh, is that so?\p"
-	.string "DEVON's technological expertise\n"
+	.string "Devon's technological expertise\n"
 	.string "is outstanding, I tell you.$"
 
 RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne:

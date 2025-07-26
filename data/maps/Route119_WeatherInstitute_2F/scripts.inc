@@ -214,10 +214,10 @@ Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
 	.string "If the Pokémon they made here can\n"
 	.string "control the weather freely, then we of\l"
-	.string "TEAM AQUA definitely need it!$"
+	.string "Team AQUA definitely need it!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "We're TEAM AQUA!\n"
+	.string "We're Team AQUA!\n"
 	.string "We appear wherever anything rare is\l"
 	.string "found!$"
 
@@ -226,7 +226,7 @@ Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
 	.string "You don't have any idea what we of\n"
-	.string "TEAM AQUA are working towards!\l"
+	.string "Team AQUA are working towards!\l"
 	.string "You stay out of our way!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
@@ -246,7 +246,7 @@ Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
 	.string "Ahahahaha!\p"
-	.string "You're going to meddle in TEAM AQUA's\n"
+	.string "You're going to meddle in Team AQUA's\n"
 	.string "affairs?\p"
 	.string "You're either absolutely fearless,\n"
 	.string "simply ignorant, or both!\p"
@@ -258,7 +258,7 @@ Route119_WeatherInstitute_2F_Text_ShellyDefeat:
 	.string "You're disgustingly strong!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "It's bad enough to have TEAM MAGMA\n"
+	.string "It's bad enough to have Team MAGMA\n"
 	.string "blunder about, but now there's you!\p"
 	.string "What makes you want to sniff around\n"
 	.string "in our business, anyway?$"
@@ -275,7 +275,7 @@ Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
 	.string "We can't waste any more time here!\n"
 	.string "We have to hurry to Mt. Pyre, too!\p"
 	.string "Ahahahaha!\n"
-	.string "TEAM MAGMA, just you wait!$"
+	.string "Team MAGMA, just you wait!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
 	.string "Thanks!\n"
@@ -304,7 +304,7 @@ Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
 	.string "I track weather patterns over\n"
-	.string "the HOENN region.\p"
+	.string "the Hoenn region.\p"
 	.string "Presently, a drought has been recorded\n"
 	.string "in {STR_VAR_1}.\p"
 	.string "Could that mean, somewhere near\n"
@@ -312,7 +312,7 @@ Route119_WeatherInstitute_2F_Text_GroudonWeather:
 
 Route119_WeatherInstitute_2F_Text_KyogreWeather:
 	.string "I track weather patterns over\n"
-	.string "the HOENN region.\p"
+	.string "the Hoenn region.\p"
 	.string "Presently, heavy rainfall has been\n"
 	.string "recorded over {STR_VAR_1}.\p"
 	.string "Could that mean, somewhere near\n"

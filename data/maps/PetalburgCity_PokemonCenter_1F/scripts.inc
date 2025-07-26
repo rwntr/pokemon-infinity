@@ -86,7 +86,7 @@ PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
 	.string "Pokémon.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "For example, your MUDKIP\n"
+	.string "For example, your Mudkip\n"
 	.string "is a Water type.\p"
 	.string "It's strong against the Fire type.\p"
 	.string "But, it's weak against Grass-type\n"

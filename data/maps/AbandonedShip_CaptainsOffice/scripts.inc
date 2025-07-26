@@ -31,7 +31,7 @@ AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner:
 AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner:
 	.string "Oh! That's a Scanner!\p"
 	.string "Listen, can I get you to deliver that\n"
-	.string "to CAPT. STERN?\p"
+	.string "to Capt. Stern?\p"
 	.string "I want to investigate this ship a\n"
 	.string "little more.$"
 

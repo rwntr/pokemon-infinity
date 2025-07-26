@@ -225,28 +225,28 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "It's a Pokémon Navigator, or Pokénav\n"
 	.string "for short.\p"
 	.string "It's an indispensable tool for any\n"
-	.string "TRAINER on an adventure.\p"
-	.string "It has a map of the HOENN region.\p"
+	.string "Trainer on an adventure.\p"
+	.string "It has a map of the Hoenn region.\p"
 	.string "You can check the locations of\n"
 	.string "Dewford and Slateport easily!\p"
 	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
+	.string "criminals--Magma and AQUA, I believe--\l"
 	.string "have been making trouble far and wide.\p"
 	.string "I think it would be best if you rested\n"
 	.string "up before you go on your way.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
-	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
+	.string "Mr. STONE: Well, then, {PLAYER}{KUN},\n"
 	.string "go with caution and care!$"
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou:
-	.string "MR. STONE: I'm counting on you!$"
+	.string "Mr. STONE: I'm counting on you!$"
 
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 	.string "Mr. Stone: You delivered my Letter?\n"
 	.string "Thank you kindly!\p"
 	.string "This is my way of thanking you.\n"
-	.string "It should help you, a TRAINER.$"
+	.string "It should help you, a Trainer.$"
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "Mr. Stone: A Pokémon holding that\n"
@@ -258,12 +258,12 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "for raising weak Pokémon.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
-	.string "MR. STONE: Since my youth, I've immersed\n"
+	.string "Mr. STONE: Since my youth, I've immersed\n"
 	.string "myself in work.\p"
 	.string "Consequently, I'm not familiar with\n"
 	.string "trends and that sort of thing.\p"
 	.string "But do young people all want to be\n"
-	.string "TRAINERS in the Pokémon LEAGUE?$"
+	.string "Trainers in the Pokémon LEAGUE?$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
 	.string "This is the Devon Corporation's\n"

@@ -394,7 +394,7 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 	.string "But your old man hasn't given up yet!\p"
 	.string "Oh, yes, I have something for you.\n"
 	.string "This came to you from someone named\l"
-	.string "MR. BRINEY.$"
+	.string "Mr. Briney.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
 	.string "Dad: Hm, a Ticket for a ferry?\p"
@@ -418,8 +418,8 @@ PlayersHouse_1F_Text_IsThatABreakingStory:
 PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
 	.string "We bring you this emergency\n"
 	.string "news flash!\p"
-	.string "In various HOENN locales, there have\n"
-	.string "been reports of a BZZT…colored\l"
+	.string "In various Hoenn locales, there have\n"
+	.string "been reports of a Bzzt…colored\l"
 	.string "Pokémon in flight.\p"
 	.string "The identity of this Pokémon is\n"
 	.string "currently unknown.\p"

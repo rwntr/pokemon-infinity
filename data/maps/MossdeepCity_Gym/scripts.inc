@@ -370,7 +370,7 @@ MossdeepCity_Gym_EventScript_RedFloorSwitch::
 	end
 
 MossdeepCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going, CHAMPION-bound\n"
+	.string "Yo, how's it going, Champion-bound\n"
 	.string "{PLAYER}?\p"
 	.string "The Gym LeaderS here use\n"
 	.string "Psychic-type Pokémon.\p"
@@ -385,7 +385,7 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"
-	.string "You're one great TRAINER!$"
+	.string "You're one great Trainer!$"
 
 MossdeepCity_Gym_Text_PrestonIntro:
 	.string "Battles hinge on the strength of your\n"
@@ -407,7 +407,7 @@ MossdeepCity_Gym_Text_VirgilDefeat:
 
 MossdeepCity_Gym_Text_VirgilPostBattle:
 	.string "If there are prodigies in the world,\n"
-	.string "then our GYM LEADERS are them!\p"
+	.string "then our Gym Leaders are them!\p"
 	.string "However, you may be even more talented\n"
 	.string "than them…$"
 
@@ -456,7 +456,7 @@ MossdeepCity_Gym_Text_SamanthaDefeat:
 
 MossdeepCity_Gym_Text_SamanthaPostBattle:
 	.string "You will wage a terrifically intense\n"
-	.string "battle with our GYM LEADERS…\p"
+	.string "battle with our Gym Leaders…\p"
 	.string "The result…\n"
 	.string "You won't hear it from me!$"
 
@@ -595,7 +595,7 @@ MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 	.string "in the Pokénav.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
-	.string "TATE: Looks like the bond between you\n"
+	.string "Tate: Looks like the bond between you\n"
 	.string "and your Pokémon is far stronger than\l"
 	.string "the bond that we share as twins.\p"
 	.string "Liza: You will become even stronger!\n"
@@ -635,7 +635,7 @@ MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
 	.string "Liza: It's as if you were siblings!$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-	.string "TATE: You can knock us down,\n"
+	.string "Tate: You can knock us down,\n"
 	.string "but we'll never stay down!\p"
 	.string "Liza: Because the two of us,\n"
 	.string "we always support each other!$"

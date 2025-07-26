@@ -237,7 +237,7 @@ BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
 	.string "Our chief has already conquered\n"
 	.string "the Pyramid ahead of you.\p"
 	.string "However, my young explorer…\n"
-	.string "You are a TRAINER!\p"
+	.string "You are a Trainer!\p"
 	.string "Assert your power and take the glory\n"
 	.string "of the pinnacle from our chief!\p"
 	.string "Now, please! When you are ready,\n"

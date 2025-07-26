@@ -1,5 +1,5 @@
 gBirchDexRatingText_AreYouCurious::
-	.string "PROF. BIRCH: Ah, {PLAYER}{KUN}!\p"
+	.string "Prof. Birch: Ah, {PLAYER}{KUN}!\p"
 	.string "Are you curious about how your\n"
 	.string "Pokédex is coming along?$"
 
@@ -35,7 +35,7 @@ gBirchDexRatingText_LessThan50::
 	.string "Keep up the effort.$"
 
 gBirchDexRatingText_LessThan60::
-	.string "Are you using any RODS?\n"
+	.string "Are you using any Rods?\n"
 	.string "There are many Pokémon in the sea.$"
 
 gBirchDexRatingText_LessThan70::
@@ -72,7 +72,7 @@ gBirchDexRatingText_LessThan130::
 gBirchDexRatingText_LessThan140::
 	.string "I've heard of Pokémon that evolve\n"
 	.string "when they come to fully love their\l"
-	.string "TRAINERS.$"
+	.string "Trainers.$"
 
 gBirchDexRatingText_LessThan150::
 	.string "I had no idea that there were so\n"
@@ -87,7 +87,7 @@ gBirchDexRatingText_LessThan160::
 
 gBirchDexRatingText_LessThan170::
 	.string "One can get a very good idea about\n"
-	.string "the Pokémon of the HOENN region\l"
+	.string "the Pokémon of the Hoenn region\l"
 	.string "by looking through your Pokédex.$"
 
 gBirchDexRatingText_LessThan180::

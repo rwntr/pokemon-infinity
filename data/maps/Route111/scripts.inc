@@ -584,11 +584,11 @@ Route111_Text_VictorDefeat:
 
 Route111_Text_VictorPostBattle:
 	.string "Hey, all!\n"
-	.string "I've found a pretty strong TRAINER!$"
+	.string "I've found a pretty strong Trainer!$"
 
 Route111_Text_VictoriaIntro:
 	.string "Oh, my goodness! Aren't you young?\p"
-	.string "You must be quite the TRAINER to beat\n"
+	.string "You must be quite the Trainer to beat\n"
 	.string "my husband, though.\p"
 	.string "It's my turn to battle now!$"
 
@@ -597,7 +597,7 @@ Route111_Text_VictoriaDefeat:
 	.string "I can't get over how strong you are!$"
 
 Route111_Text_VictoriaPostBattle:
-	.string "There's a strong TRAINER here!\n"
+	.string "There's a strong Trainer here!\n"
 	.string "This one's really strong!$"
 
 Route111_Text_ViviIntro:
@@ -635,28 +635,28 @@ Route111_Text_ToughToKeepWinningUpTheRanks:
 	.string "any Gym Leader.$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
-	.string "I challenged the WINSTRATE family,\n"
+	.string "I challenged the Winstrate family,\n"
 	.string "but four matches in a row is tough\l"
 	.string "going… They destroyed me.$"
 
 Route111_Text_RouteSignMauville:
-	.string "ROUTE 111\n"
-	.string "{DOWN_ARROW} MAUVILLE CITY$"
+	.string "Route 111\n"
+	.string "{DOWN_ARROW} Mauville CITY$"
 
 Route111_Text_WinstrateHouseSign:
 	.string "“Our family's hearts beat as one!”\n"
-	.string "THE WINSTRATE'S HOUSE$"
+	.string "The WINSTRATE'S HOUSE$"
 
 Route111_Text_RouteSign112:
-	.string "ROUTE 111\n"
-	.string "{LEFT_ARROW} ROUTE 112$"
+	.string "Route 111\n"
+	.string "{LEFT_ARROW} Route 112$"
 
 Route111_Text_RouteSign113:
-	.string "ROUTE 111\n"
-	.string "{LEFT_ARROW} ROUTE 113$"
+	.string "Route 111\n"
+	.string "{LEFT_ARROW} Route 113$"
 
 Route111_Text_OldLadysRestStopSign:
-	.string "OLD LADY'S REST STOP\n"
+	.string "Old Lady's Rest Stop\n"
 	.string "“Come in and rest your tired bones.”$"
 
 Route111_Text_TrainerTipsSpAtkSpDef:
@@ -712,10 +712,10 @@ Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Rock Smash with me if I was going to\l"
 	.string "Route 111!\p"
 	.string "My uncle? He lives across from\n"
-	.string "the bike shop in MAUVILLE.$"
+	.string "the bike shop in Mauville.$"
 
 Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} Trainer Hill Entrance\p"
 	.string "“Scale the heights, you hot-blooded\n"
-	.string "TRAINERS!”$"
+	.string "Trainers!”$"
 

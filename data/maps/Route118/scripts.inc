@@ -255,7 +255,7 @@ Route118_Text_StevenQuestions:
 	.string "favorites, that's fine.\p"
 	.string "Perhaps you find it more fun to raise\n"
 	.string "all sorts of Pokémon.\p"
-	.string "As a TRAINER of Pokémon,\n"
+	.string "As a Trainer of Pokémon,\n"
 	.string "what do you think?\p"
 	.string "Of course, it's not any of my business.\p"
 	.string "It would be nice if we were to meet\n"
@@ -291,10 +291,10 @@ Route118_Text_CanCrossRiversWithSurf:
 	.string "much!$"
 
 Route118_Text_RouteSignMauville:
-	.string "ROUTE 118\n"
-	.string "{LEFT_ARROW} MAUVILLE CITY$"
+	.string "Route 118\n"
+	.string "{LEFT_ARROW} Mauville CITY$"
 
 Route118_Text_RouteSign119:
-	.string "ROUTE 118\n"
-	.string "{UP_ARROW} ROUTE 119$"
+	.string "Route 118\n"
+	.string "{UP_ARROW} Route 119$"
 

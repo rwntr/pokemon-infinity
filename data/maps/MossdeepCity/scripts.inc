@@ -304,7 +304,7 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "I got this from STEVEN, but I don't\n"
+	.string "I got this from Steven, but I don't\n"
 	.string "know what it's good for.\p"
 	.string "I think it's called King's Rock.\n"
 	.string "Do you want it?$"
@@ -313,10 +313,10 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
 	.string "You're weird.\p"
 	.string "You can keep it, but keep it a secret\n"
-	.string "from STEVEN.$"
+	.string "from Steven.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "STEVEN's house is right over there!$"
+	.string "Steven's house is right over there!$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "Yeah, you think so, too! What are you\n"
@@ -327,7 +327,7 @@ MossdeepCity_Text_WailmerWatching:
 	.string "Wailmer.\p"
 	.string "It's called, uh…\n"
 	.string "What was it now…\p"
-	.string "WAI, WAI, WAI…\p"
+	.string "Wai, WAI, WAI…\p"
 	.string "Wailmer watching!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:

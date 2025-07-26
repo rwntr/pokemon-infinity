@@ -68,7 +68,7 @@ AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons:
 AbandonedShip_Rooms2_1F_Text_KiraIntro:
 	.string "Kira: Oh?\n"
 	.string "We were searching for treasures.\l"
-	.string "But we discovered a TRAINER instead!$"
+	.string "But we discovered a Trainer instead!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraDefeat:
 	.string "Kira: Ooh, so strong!$"
@@ -138,7 +138,7 @@ AbandonedShip_Rooms2_1F_Text_JaniPostBattle:
 
 AbandonedShip_Rooms2_1F_Text_GarrisonIntro:
 	.string "Strength and compassion…\n"
-	.string "Those are a TRAINER's treasures!$"
+	.string "Those are a Trainer's treasures!$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat:
 	.string "Ah, there is something about you\n"

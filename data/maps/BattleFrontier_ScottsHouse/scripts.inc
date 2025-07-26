@@ -213,7 +213,7 @@ BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
 	.string "Scott: Well, hello and welcome!\n"
 	.string "Heheh… Sorry about the cramped space.\p"
 	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
-	.string "welcome you to the BATTLE FRONTIER.\p"
+	.string "welcome you to the Battle Frontier.\p"
 	.string "This is my dream come true.\n"
 	.string "It took me years and years, but I've\l"
 	.string "finally given shape to my dream.$"
@@ -222,7 +222,7 @@ BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal:
 	.string "On reflection, it was a terribly long\n"
 	.string "journey…\p"
 	.string "I left home alone on a quest to find\n"
-	.string "strong TRAINERS.\p"
+	.string "strong Trainers.\p"
 	.string "No one can imagine how much effort\n"
 	.string "or time it took to make this real.$"
 
@@ -243,7 +243,7 @@ BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
 	.string "Scott: You can check your Battle\n"
 	.string "Points on your Frontier Pass.\p"
 	.string "The more success you have here at\n"
-	.string "the BATTLE FRONTIER, the more Battle\l"
+	.string "the Battle Frontier, the more Battle\l"
 	.string "Points you will collect.\p"
 	.string "Use your Battle Points the way you\n"
 	.string "see fit, like trading them for items.$"
@@ -260,15 +260,15 @@ BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
 	.string "I love the purity of battle,\n"
 	.string "where everyone is equal.\p"
 	.string "That's why I go everywhere seeking\n"
-	.string "TRAINERS who are serious about\l"
+	.string "Trainers who are serious about\l"
 	.string "battling, and invite them here.$"
 
 BattleFrontier_ScottsHouse_Text_HaveYouMetFrontierBrain:
 	.string "Scott: Have you met any of\n"
-	.string "the Frontier BRAINS?\p"
+	.string "the Frontier Brains?\p"
 	.string "Better yet, have you obtained any\n"
 	.string "symbols from them?\p"
-	.string "I handpicked the Frontier BRAINS\n"
+	.string "I handpicked the Frontier Brains\n"
 	.string "as the toughest Trainers anywhere.\p"
 	.string "But I'm sure that seeing how tough\n"
 	.string "you are will startle even them!$"
@@ -280,7 +280,7 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "a Pokédex as well.\p"
 	.string "Well, guess what?\p"
 	.string "You may run into wild Pokémon in\n"
-	.string "the BATTLE FRONTIER somewhere…\l"
+	.string "the Battle Frontier somewhere…\l"
 	.string "Fufufu!$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
@@ -315,7 +315,7 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 
 BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
 	.string "I must say I have the gift of knowing\n"
-	.string "a good TRAINER when I see one.\p"
+	.string "a good Trainer when I see one.\p"
 	.string "I'm so glad I had the foresight to\n"
 	.string "bring you here!$"
 

@@ -176,7 +176,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	end
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
-	.string "Yo! How's it going, CHAMPION-\n"
+	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "Sootopolis's Gym Leader Juan is\n"
 	.string "a master of Water-type Pokémon.\p"
@@ -258,10 +258,10 @@ SootopolisCity_Gym_1F_Text_RegisteredJuan:
 	.string "in the Pokénav.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
-	.string "The TRAINERS who have gathered all\n"
-	.string "the GYM BADGES of HOENN should make\l"
+	.string "The Trainers who have gathered all\n"
+	.string "the Gym BADGES of HOENN should make\l"
 	.string "way to the ultimate destination.\p"
-	.string "The Pokémon LEAGUE.\p"
+	.string "The Pokémon League.\p"
 	.string "Travel to the easternmost reaches\n"
 	.string "of Hoenn, to the island Ever Grande.\p"
 	.string "There, you shall find the Pokémon\n"
@@ -276,7 +276,7 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 
 SootopolisCity_Gym_1F_Text_GymStatue:
 	.string "Sootopolis City Pokémon$"
-	.string "SOOTOPOLIS CITY Pokémon GYM$"
+	.string "Sootopolis CITY Pokémon GYM$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "Sootopolis City Pokémon\p"

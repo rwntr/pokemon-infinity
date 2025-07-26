@@ -178,7 +178,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime:
 
 LilycoveCity_LilycoveMuseum_1F_Text_HaveYouAnInterestInPaintings:
 	.string "Oh? I do believe that you seem to\n"
-	.string "be a Pokémon TRAINER.\p"
+	.string "be a Pokémon Trainer.\p"
 	.string "Have you an interest in paintings,\n"
 	.string "too?$"
 
@@ -218,7 +218,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfGrassPokemon:
 
 LilycoveCity_LilycoveMuseum_1F_Text_PaintingOfBerries:
 	.string "It's a delicious-looking painting\n"
-	.string "of BERRIES.\p"
+	.string "of Berries.\p"
 	.string "This painting could make you hungry!$"
 
 LilycoveCity_LilycoveMuseum_Text_BirdPokemonSculptureReplica:

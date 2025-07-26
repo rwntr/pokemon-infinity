@@ -99,6 +99,6 @@ Route114_LanettesHouse_Text_EmailFromBill:
 	.string "a part in its development.\p"
 	.string "“Here's hoping that you'll continue\n"
 	.string "research in Storage Systems.\p"
-	.string "“From BILL\n"
+	.string "“From Bill\n"
 	.string "… … … … … … … …”$"
 

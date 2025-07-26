@@ -119,13 +119,13 @@ Route104_MrBrineysHouse_Text_SetSailForDewford:
 	.string "Peeko, we're setting sail, my darling!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
-	.string "MR. BRINEY: Is that so?\n"
+	.string "Mr. BRINEY: Is that so?\n"
 	.string "Your deliveries can wait?\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "Mr. BRINEY: Ahoy!\n"
 	.string "I know exactly what you want to say!\p"
 	.string "You're to deliver a Letter to Dewford\n"
 	.string "and a package to Slateport.\p"
@@ -134,16 +134,16 @@ Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
 	.string "First, we'll set sail for Dewford.$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "Mr. BRINEY: Ahoy!\n"
 	.string "I know exactly what you want to say!\p"
 	.string "You're to deliver a package to\n"
-	.string "CAPT. STERN in SLATEPORT.\p"
+	.string "Capt. STERN in SLATEPORT.\p"
 	.string "What you need me to do is no problem\n"
 	.string "at all--I'm the man for the job!\p"
 	.string "First, we'll set sail for Dewford.$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "Mr. BRINEY: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 

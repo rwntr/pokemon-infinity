@@ -106,8 +106,8 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going?\p"
 	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
+	.string "Would you like to become the Champion?\p"
+	.string "I'm no Trainer, not me, but I can\n"
 	.string "sure give you winning advice.\p"
 	.string "That's settled, then! We'll aim for the\n"
 	.string "Pokémon Championship together!\p"
@@ -122,7 +122,7 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "it can't stand Water-type and\l"
 	.string "Grass-type moves.\p"
 	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
+	.string "the Gym Leader.\p"
 	.string "Well, go for it!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
@@ -138,7 +138,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
+	.string "Don't take us Gym Trainers lightly!\n"
 	.string "I'll show you why we're better!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
@@ -224,7 +224,7 @@ RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "learn many things.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY Pokémon GYM$"
+	.string "Rustboro City Pokémon Gym$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "Rustboro City Pokémon\p"
@@ -238,10 +238,10 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "This is Roxanne of Rustboro City.\p"
 	.string "I heard from Brawly that you're\n"
 	.string "moving up through the ranks of\l"
-	.string "TRAINERS at an incredible clip.\p"
+	.string "Trainers at an incredible clip.\p"
 	.string "Well, I'd rather not think that\n"
 	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my GYM\n"
+	.string "I promise, I will shape up my Gym\n"
 	.string "so that you may challenge us again.\p"
 	.string "I hope you'll be looking forward to\n"
 	.string "that occasion as much as me!\p"

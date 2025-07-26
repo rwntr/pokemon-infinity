@@ -301,7 +301,7 @@ Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards:
 
 Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou:
 	.string "Oh, hey! That…\n"
-	.string "That's a SHARD! I'm looking for those!\p"
+	.string "That's a Shard! I'm looking for those!\p"
 	.string "Oh, man, you've got to trade that\n"
 	.string "with me! I'll give you something good!$"
 
@@ -320,7 +320,7 @@ Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse:
 	.string "Do you want to trade something else?$"
 
 Route124_DivingTreasureHuntersHouse_Text_BagFull:
-	.string "Whoops, your BAG's full.\n"
+	.string "Whoops, your Bag's full.\n"
 	.string "Get rid of some items, friend!$"
 
 Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind:

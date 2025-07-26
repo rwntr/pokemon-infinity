@@ -278,7 +278,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_Partner8::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner:
 	.string "Please find a partner from out of\n"
-	.string "the TRAINERS gathered here.$"
+	.string "the Trainers gathered here.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_QuitLookingForPartner:
 	.string "{PLAYER}, you have not found a partner\n"
@@ -288,12 +288,12 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_QuitLookingForPartner:
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner2:
 	.string "Then, please find a partner from\n"
-	.string "the TRAINERS gathered here.$"
+	.string "the Trainers gathered here.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ThankYouForChoosingPartner::
 	.string "Thank you for choosing a partner.\p"
 	.string "I will now show you to your\n"
-	.string "MULTI BATTLE ROOM.$"
+	.string "Multi Battle Room.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice1Intro::
 	.string "I'm {STR_VAR_1}'s no. {STR_VAR_2} apprentice.\n"
@@ -587,7 +587,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Reject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Intro::
 	.string "Hey! There's big trouble! This is\n"
-	.string "the BATTLE TOWER's last day!\p"
+	.string "the Battle Tower's last day!\p"
 	.string "… … … … … …\n"
 	.string "I'm only joking!\p"
 	.string "People call me {STR_VAR_3} and I do, too!\n"
@@ -613,7 +613,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Accept::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Reject::
 	.string "Oh, that's so cold! I'll have to wreck\n"
-	.string "the BATTLE TOWER for that!\p"
+	.string "the Battle Tower for that!\p"
 	.string "Of course I won't!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Intro::
@@ -814,7 +814,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerReject::
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyIntro::
 	.string "Hello!\n"
-	.string "I'm {STR_VAR_1}, and I'm a BEAUTY!$"
+	.string "I'm {STR_VAR_1}, and I'm a Beauty!$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon1::
 	.string "Do you know what I've been raising?\n"
@@ -1529,7 +1529,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon2Ask::
 	.string "How about we become tag partners?$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFAccept::
-	.string "Sounds A-OK!\n"
+	.string "Sounds A-Ok!\n"
 	.string "I'd better do the registration.$"
 
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFReject::

@@ -571,7 +571,7 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
 	.string "in the handling of the Steel type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
-	.string "The TRAINER appears to have no clear\n"
+	.string "The Trainer appears to have no clear\n"
 	.string "favorites when it comes to type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady:
@@ -641,14 +641,14 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow:
 	.string "Oh, my…\n"
 	.string "Sorry to keep you waiting!\p"
 	.string "I have a message from this facility's\n"
-	.string "boss, the FACTORY HEAD.\p"
+	.string "boss, the Factory Head.\p"
 	.string "He says, “We're going to do it!\n"
 	.string "Come here right now!”$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead:
-	.string "The FACTORY HEAD is demanding you.\n"
+	.string "The Factory Head is demanding you.\n"
 	.string "Are you prepared to face him?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead:
 	.string "I'm terribly sorry, but I can't tell you\n"
-	.string "anything about the FACTORY HEAD.$"
+	.string "anything about the Factory Head.$"

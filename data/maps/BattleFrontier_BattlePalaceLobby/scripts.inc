@@ -375,7 +375,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForSingleBattle:
-	.string "Where the hearts of TRAINERS\n"
+	.string "Where the hearts of Trainers\n"
 	.string "are put to the test.\p"
 	.string "I welcome you to the Battle Palace.\p"
 	.string "I accept challenges to the Single\n"
@@ -392,16 +392,16 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
 	.string "The Single Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
+	.string "Trainers are permitted only to switch\n"
 	.string "their Pokémon in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
+	.string "Trainers are otherwise forbidden to\n"
 	.string "command their Pokémon.\p"
 	.string "The Pokémon are to behave according\n"
 	.string "to their nature and battle on their own.\p"
 	.string "You must put your trust in your\n"
 	.string "Pokémon and watch over them.\p"
 	.string "If you achieve the honor of beating\n"
-	.string "seven TRAINERS in succession,\l"
+	.string "seven Trainers in succession,\l"
 	.string "we will present you with Battle Points.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, you must save the game.\p"
@@ -413,7 +413,7 @@ BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified:
 	.string "and Pokémon, you must return.$"
 
 BattleFrontier_BattlePalaceLobby_Text_WhichChallenge:
-	.string "There are two BATTLE HALLS,\n"
+	.string "There are two Battle Halls,\n"
 	.string "Level 50 and Open Level.\l"
 	.string "Which is your choice of a challenge?$"
 
@@ -449,7 +449,7 @@ BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons:
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge2:
 	.string "I must save before I show you to\n"
-	.string "the BATTLE HALL. Is that okay?$"
+	.string "the Battle Hall. Is that okay?$"
 
 BattleFrontier_BattlePalaceLobby_Text_FollowMe:
 	.string "Good.\n"
@@ -479,14 +479,14 @@ BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize:
 	.string "You seem to have no space for\n"
 	.string "our prize.\p"
 	.string "You should return when you have\n"
-	.string "organized your BAG.$"
+	.string "organized your Bag.$"
 
 BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting:
 	.string "We have been waiting for you…$"
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge:
 	.string "I must save before I show you to\n"
-	.string "the BATTLE HALL. Is that okay?$"
+	.string "the Battle Hall. Is that okay?$"
 
 BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge:
 	.string "Sigh…\p"
@@ -531,7 +531,7 @@ BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere:
 
 BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms:
 	.string "My Pokémon is usually very docile.\p"
-	.string "But when it's in a BATTLE HALL,\n"
+	.string "But when it's in a Battle Hall,\n"
 	.string "it sometimes seems to become\l"
 	.string "transformed into something wicked!\p"
 	.string "It becomes totally intimidating.\n"
@@ -545,7 +545,7 @@ BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway:
 	.string "But, nah, that can't be right.$"
 
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle:
-	.string "Where the hearts of TRAINERS\n"
+	.string "Where the hearts of Trainers\n"
 	.string "are put to the test.\p"
 	.string "I welcome you to the Battle Palace.\p"
 	.string "I accept challenges to the Double\n"
@@ -562,16 +562,16 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
 	.string "The Double Battles are conducted in\n"
 	.string "the usual way, except with one crucial\l"
 	.string "rule that must be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
+	.string "Trainers are permitted only to switch\n"
 	.string "their Pokémon in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
+	.string "Trainers are otherwise forbidden to\n"
 	.string "command their Pokémon.\p"
 	.string "The Pokémon are to behave according\n"
 	.string "to their nature and battle on their own.\p"
 	.string "You must put your trust in your\n"
 	.string "Pokémon and watch over them.\p"
 	.string "If you achieve the honor of beating\n"
-	.string "seven TRAINERS in succession,\l"
+	.string "seven Trainers in succession,\l"
 	.string "we will present you with Battle Points.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, please save the game.\p"
@@ -593,7 +593,7 @@ BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch:
 	.string "Frontier Pass?$"
 
 BattleFrontier_BattlePalaceLobby_Text_RulesAreListed:
-	.string "The BATTLE HALL rules are listed.$"
+	.string "The Battle Hall rules are listed.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ReadWhichHeading:
 	.string "Which heading do you want to read?$"
@@ -623,7 +623,7 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
 	.string "direct damage on the foe.\p"
 	.string "There are defensive moves that are\n"
 	.string "used to prepare for enemy attacks or\l"
-	.string "used to heal HP and so on.\p"
+	.string "used to heal Hp and so on.\p"
 	.string "There are also other somewhat-odd\n"
 	.string "moves that may enfeeble the foes with\l"
 	.string "stat problems including poison and \l"
@@ -632,7 +632,7 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
 	.string "these three categories.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered:
-	.string "When not under command by its TRAINER,\n"
+	.string "When not under command by its Trainer,\n"
 	.string "a Pokémon may be unable to effectively\l"
 	.string "use certain moves.\p"
 	.string "A Pokémon is not good at using any\n"

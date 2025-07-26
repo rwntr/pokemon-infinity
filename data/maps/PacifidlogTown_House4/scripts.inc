@@ -29,7 +29,7 @@ PacifidlogTown_House4_EventScript_No::
 
 PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon:
 	.string "People were saying they saw a Pokémon\n"
-	.string "flying high above HOENN.\p"
+	.string "flying high above Hoenn.\p"
 	.string "Is it flying around all the time?\n"
 	.string "Doesn't it need to rest somewhere?$"
 

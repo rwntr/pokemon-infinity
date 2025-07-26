@@ -930,13 +930,13 @@ SlateportCity_Text_OhYourPokemon:
 SlateportCity_Text_PleaseGiveItThisEffortRibbon:
 	.string "Went for it stupendously!\p"
 	.string "As its reward, please give it this\n"
-	.string "EFFORT RIBBON.$"
+	.string "Effort Ribbon.$"
 
 SlateportCity_Text_ReceivedEffortRibbon:
-	.string "{PLAYER} received the EFFORT RIBBON.$"
+	.string "{PLAYER} received the Effort Ribbon.$"
 
 SlateportCity_Text_PutEffortRibbonOnMon:
-	.string "{PLAYER} put the EFFORT RIBBON\n"
+	.string "{PLAYER} put the Effort Ribbon\n"
 	.string "on {STR_VAR_1}.$"
 
 SlateportCity_Text_GoForItLittleHarder:
@@ -945,8 +945,8 @@ SlateportCity_Text_GoForItLittleHarder:
 	.string "something nice.$"
 
 SlateportCity_Text_EffortRibbonLooksGoodOnIt:
-	.string "Oh! Your {STR_VAR_1}, that EFFORT\n"
-	.string "RIBBON looks good on it!$"
+	.string "Oh! Your {STR_VAR_1}, that Effort\n"
+	.string "Ribbon looks good on it!$"
 
 SlateportCity_Text_WonderIfLighthouseStartlesPokemon:
 	.string "The light of the lighthouse reaches\n"
@@ -971,24 +971,24 @@ SlateportCity_Text_HowTownIsBornAndGrows:
 SlateportCity_Text_SlateportWonderfulPlace:
 	.string "Shopping where you can breathe the\n"
 	.string "scent of the ocean…\p"
-	.string "SLATEPORT is such a wonderful place!$"
+	.string "Slateport is such a wonderful place!$"
 
 SlateportCity_Text_BuyBricksSoDecorWontGetDirty:
-	.string "If you put DOLLS or CUSHIONS on\n"
+	.string "If you put Dolls or Cushions on\n"
 	.string "the floor, they'll get dirty.\p"
-	.string "I'm going to buy some BRICKS so my\n"
-	.string "DOLLS and CUSHIONS won't get dirty\l"
+	.string "I'm going to buy some Bricks so my\n"
+	.string "Dolls and Cushions won't get dirty\l"
 	.string "when I leave them out.$"
 
 SlateportCity_Text_GoingToCompeteInBattleTent:
 	.string "Wroooar! I'm going to compete in\n"
-	.string "the BATTLE TENT, too!\p"
+	.string "the Battle Tent, too!\p"
 	.string "But before that, I need to catch\n"
 	.string "some Pokémon!$"
 
 SlateportCity_Text_BushedHikingFromMauville:
 	.string "Whew… I'm just bushed…\p"
-	.string "I hiked over from MAUVILLE CITY.\n"
+	.string "I hiked over from Mauville City.\n"
 	.string "But, boy, this city's huge.\p"
 	.string "If I'd known this, I would've ridden\n"
 	.string "my Bike here.$"
@@ -997,7 +997,7 @@ SlateportCity_Text_EveryoneCallsHimCaptStern:
 	.string "Stern, the fellow who built the\n"
 	.string "Museum, also happens to be the leader\l"
 	.string "of an undersea exploration team.\p"
-	.string "So, everyone calls him CAPT. STERN.$"
+	.string "So, everyone calls him Capt. Stern.$"
 
 SlateportCity_Text_WhatsLongLineOverThere:
 	.string "What is that over there?\n"
@@ -1014,7 +1014,7 @@ SlateportCity_Text_QuitPushing:
 	.string "This is the line, can't you see?$"
 
 SlateportCity_Text_AquaHasPolicy:
-	.string "TEAM AQUA has a policy of\n"
+	.string "Team Aqua has a policy of\n"
 	.string "assembling and dispersing at\l"
 	.string "the operation site.$"
 
@@ -1095,7 +1095,7 @@ SlateportCity_Text_GetNameRaterToHelpYou:
 SlateportCity_Text_CantChangeTradeMonName:
 	.string "Any Pokémon you get in a trade,\n"
 	.string "you can't change its nickname.\p"
-	.string "The original TRAINER's love for that\n"
+	.string "The original Trainer's love for that\n"
 	.string "Pokémon is in the nickname.$"
 
 SlateportCity_Text_BattleTentBuiltRecently:
@@ -1104,13 +1104,13 @@ SlateportCity_Text_BattleTentBuiltRecently:
 	.string "Gyms are fun, but the Battle Tent's\n"
 	.string "awesome in its own way.\p"
 	.string "You should go find tough Pokémon\n"
-	.string "for the BATTLE TENT!$"
+	.string "for the Battle Tent!$"
 
 SlateportCity_Text_CaptSternBeingInterviewed:
 	.string "I was hoping that it was a famous star\n"
 	.string "so I could get an autograph.\p"
 	.string "But who's that being interviewed?\n"
-	.string "Isn't that CAPT. STERN?$"
+	.string "Isn't that Capt. Stern?$"
 
 SlateportCity_Text_InterviewerSoCool:
 	.string "That lady interviewer is so cool\n"
@@ -1119,14 +1119,14 @@ SlateportCity_Text_InterviewerSoCool:
 	.string "an international journalist!$"
 
 SlateportCity_Text_SternSaysDiscoveredSomething:
-	.string "CAPT. STERN says they discovered\n"
+	.string "Capt. Stern says they discovered\n"
 	.string "something at the bottom of the sea.\p"
 	.string "I wonder what it is?\n"
 	.string "What could it be?$"
 
 SlateportCity_Text_CaptainComeBackWithBigFish:
 	.string "What's going on here?\p"
-	.string "Did the good CAPTAIN come back with\n"
+	.string "Did the good Captain come back with\n"
 	.string "a big fish from the ocean floor?$"
 
 SlateportCity_Text_AmIOnTV:
@@ -1135,10 +1135,10 @@ SlateportCity_Text_AmIOnTV:
 
 SlateportCity_Text_CaptainsACelebrity:
 	.string "A TV interview! Here!\n"
-	.string "The CAPTAIN's a celebrity!$"
+	.string "The Captain's a celebrity!$"
 
 SlateportCity_Text_BigSmileForCamera:
-	.string "TY: Okay, CAPT. STERN, a big smile\n"
+	.string "Ty: Okay, Capt. Stern, a big smile\n"
 	.string "for the camera!$"
 
 SlateportCity_Text_MostInvaluableExperience:
@@ -1146,7 +1146,7 @@ SlateportCity_Text_MostInvaluableExperience:
 	.string "invaluable experience…$"
 
 SlateportCity_Text_SternMoveAheadWithExploration:
-	.string "CAPT. STERN: Yes, indeed. We intend to\n"
+	.string "Capt. Stern: Yes, indeed. We intend to\n"
 	.string "move ahead with our exploration.$"
 
 SlateportCity_Text_GabbyWonderfulThanksForInterview:
@@ -1157,7 +1157,7 @@ SlateportCity_Text_GabbyWonderfulThanksForInterview:
 	.string "with news of more discoveries!$"
 
 SlateportCity_Text_SternWhewFirstInterview:
-	.string "CAPT. STERN: Whew…\p"
+	.string "Capt. Stern: Whew…\p"
 	.string "That was my first time to be filmed for\n"
 	.string "TV. That was nerve-wracking.$"
 
@@ -1167,23 +1167,23 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "We made a huge discovery on our last\n"
 	.string "seafloor exploration.\p"
 	.string "We found an underwater cavern on\n"
-	.string "ROUTE 128.\p"
+	.string "Route 128.\p"
 	.string "We think it's the habitat of a Pokémon\n"
 	.string "that's said to have been long extinct.$"
 
 SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
 	.string "Fufufu…\n"
-	.string "CAPT. STERN, I presume.\p"
-	.string "We of TEAM AQUA will assume\n"
+	.string "Capt. Stern, I presume.\p"
+	.string "We of Team Aqua will assume\n"
 	.string "control of your submarine!\p"
 	.string "Your objections are meaningless!\n"
 	.string "We expect your total cooperation!\p"
 	.string "Fufufu…\n"
-	.string "Just watch and learn what TEAM\l"
-	.string "AQUA has planned!$"
+	.string "Just watch and learn what Team\l"
+	.string "Aqua has planned!$"
 
 SlateportCity_Text_SternWhatWasAllThat:
-	.string "CAPT. STERN: What was that all about?\p"
+	.string "Capt. Stern: What was that all about?\p"
 	.string "It sounded like someone using\n"
 	.string "a megaphone…\p"
 	.string "Where did it come from?$"
@@ -1198,11 +1198,11 @@ SlateportCity_Text_PleaseComeWithMe:
 	.string "Please, come with me!$"
 
 SlateportCity_Text_BattleTentSign:
-	.string "BATTLE TENT SLATEPORT SITE\n"
+	.string "Battle Tent Slateport Site\n"
 	.string "“Find it! The ultimate Pokémon!”$"
 
 SlateportCity_Text_SternsShipyardWantedSign:
-	.string "STERN'S SHIPYARD\p"
+	.string "Stern's Shipyard\p"
 	.string "“Wanted: A sailor capable of sailing\n"
 	.string "in all currents.”$"
 
@@ -1225,10 +1225,10 @@ SlateportCity_Text_PokemonFanClubSign:
 SlateportCity_Text_OceanicMuseumSign:
 	.string "“The endless sea sustains\n"
 	.string "all life.”\p"
-	.string "OCEANIC MUSEUM$"
+	.string "Oceanic Museum$"
 
 SlateportCity_Text_CitySign:
-	.string "SLATEPORT CITY\p"
+	.string "Slateport City\p"
 	.string "“The port where people and Pokémon\n"
 	.string "cross paths.”$"
 
@@ -1254,16 +1254,16 @@ SlateportCity_Text_NameRatersHouseSign:
 
 SlateportCity_Text_ExplainBerries:
 	.string "If a wild Pokémon gets hurt, it heals\n"
-	.string "itself by chewing on BERRIES.\p"
+	.string "itself by chewing on Berries.\p"
 	.string "Did you know that?\p"
 	.string "Somebody saw that and got the idea\n"
-	.string "of making medicine from BERRIES.\p"
+	.string "of making medicine from Berries.\p"
 	.string "Did you know that?\p"
-	.string "To turn BERRIES into medicine,\n"
+	.string "To turn Berries into medicine,\n"
 	.string "they must be crushed into powder.\p"
 	.string "Did you know that?\p"
 	.string "You seem to have an interest\n"
-	.string "in BERRIES!\p"
+	.string "in Berries!\p"
 	.string "I've got something good for someone\n"
 	.string "like you.$"
 
@@ -1346,9 +1346,9 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "Scott: Oh, hey!\n"
 	.string "If it isn't {PLAYER}{KUN}!\p"
 	.string "{PLAYER}{KUN}, let me guess--you're going\n"
-	.string "to take the BATTLE TENT challenge?\p"
+	.string "to take the Battle Tent challenge?\p"
 	.string "Yeah! That's a good idea!\n"
 	.string "That's a really great idea!\p"
-	.string "After all, a tough TRAINER is\n"
-	.string "the perfect fit for the BATTLE TENT!\p"
+	.string "After all, a tough Trainer is\n"
+	.string "the perfect fit for the Battle Tent!\p"
 	.string "Give it your best effort!$"

@@ -354,21 +354,21 @@ BattleFrontier_BattleArenaLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena:
-	.string "Where the battling spirit of TRAINERS\n"
+	.string "Where the battling spirit of Trainers\n"
 	.string "is put to the test!\p"
-	.string "I welcome you to the BATTLE ARENA!\p"
+	.string "I welcome you to the Battle Arena!\p"
 	.string "I am your guide to the Set KO Tourney!$"
 
 BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge:
 	.string "Now, do you wish to take\n"
-	.string "the BATTLE ARENA challenge?$"
+	.string "the Battle Arena challenge?$"
 
 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge:
 	.string "We await your challenge on\n"
 	.string "another occasion!$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
-	.string "In the BATTLE ARENA, we undertake\n"
+	.string "In the Battle Arena, we undertake\n"
 	.string "the Set KO Tourney.\p"
 	.string "All participants enter with a team of\n"
 	.string "three Pokémon.\p"
@@ -385,7 +385,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
 	.string "If you don't save, you will not be able\n"
 	.string "to continue with your challenge.\p"
 	.string "If you pull off the feat of beating\n"
-	.string "seven TRAINERS in succession,\l"
+	.string "seven Trainers in succession,\l"
 	.string "we will present you with Battle Points.$"
 
 BattleFrontier_BattleArenaLobby_Text_OkayToSave:
@@ -393,7 +393,7 @@ BattleFrontier_BattleArenaLobby_Text_OkayToSave:
 	.string "Arena, you must save. Is that okay?$"
 
 BattleFrontier_BattleArenaLobby_Text_WhichLevelMode:
-	.string "The BATTLE ARENA offers two levels\n"
+	.string "The Battle Arena offers two levels\n"
 	.string "of challenge, Level 50 and Open Level.\l"
 	.string "Which is your choice?$"
 
@@ -429,7 +429,7 @@ BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50:
 
 BattleFrontier_BattleArenaLobby_Text_GuideYouToArena:
 	.string "I shall now guide you to\n"
-	.string "the BATTLE ARENA.$"
+	.string "the Battle Arena.$"
 
 BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown:
 	.string "My dear challenger!\p"
@@ -443,7 +443,7 @@ BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown:
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins:
 	.string "We congratulate you for your splendid\n"
-	.string "string of wins over seven TRAINERS!$"
+	.string "string of wins over seven Trainers!$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordAchievement:
 	.string "Your achievement will be recorded.\n"
@@ -462,7 +462,7 @@ BattleFrontier_BattleArenaLobby_Text_ReceivedPrize:
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize:
 	.string "Oh?\n"
-	.string "Your BAG seems to be full.\p"
+	.string "Your Bag seems to be full.\p"
 	.string "I urge you to clear space and\n"
 	.string "return for your prize.$"
 
@@ -502,7 +502,7 @@ BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw:
 	.string "the same amount of HP left.$"
 
 BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant:
-	.string "In the BATTLE ARENA, the order of\n"
+	.string "In the Battle Arena, the order of\n"
 	.string "Pokémon is totally important.\p"
 	.string "For example, if your first Pokémon\n"
 	.string "has certain type disadvantages,\l"
@@ -535,7 +535,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainMindRules:
 	.string "This factor evaluates how aggressive\l"
 	.string "the battlers were.\p"
 	.string "The judging is based on how often\n"
-	.string "the TRAINERS ordered the use of\l"
+	.string "the Trainers ordered the use of\l"
 	.string "offensive moves.$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:

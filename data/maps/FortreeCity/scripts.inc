@@ -91,16 +91,16 @@ FortreeCity_Text_SawGiganticPokemonInSky:
 	.string "No one believes me, but I saw this\n"
 	.string "gigantic Pokémon in the sky.\p"
 	.string "It seemed to squirm as it flew toward\n"
-	.string "ROUTE 131.\p"
+	.string "Route 131.\p"
 	.string "By the way… Sniff…\n"
 	.string "Um… You, uh…smell singed.\p"
 	.string "Were you at a volcano or something?$"
 
 FortreeCity_Text_SomethingBlockingGym:
-	.string "I want to go to the Pokémon GYM,\n"
+	.string "I want to go to the Pokémon Gym,\n"
 	.string "but something's blocking the way.\p"
 	.string "After all the bother I went through\n"
-	.string "training on ROUTE 120…$"
+	.string "training on Route 120…$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
 	.string "I've got my pride-and-joy Pokémon\n"
@@ -113,7 +113,7 @@ FortreeCity_Text_TreesGrowByDrinkingRainwater:
 	.string "there's both water and soil.$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
-	.string "The CITY consists of homes built on\n"
+	.string "The City consists of homes built on\n"
 	.string "trees.\p"
 	.string "Perhaps because of that lifestyle,\n"
 	.string "everyone is healthy and lively.\p"

@@ -476,7 +476,7 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "MAY: {PLAYER}{KUN}!\n"
+	.string "May: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
@@ -490,7 +490,7 @@ Route119_Text_MayDefeat:
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou:
-	.string "MAY: But I had absolutely nothing to\n"
+	.string "May: But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
 
@@ -508,7 +508,7 @@ Route119_Text_MayExplainFly:
 	.string "Well, let's meet again somewhere!$"
 
 Route119_Text_BrendanIntro:
-	.string "BRENDAN: {PLAYER}! So this is where\n"
+	.string "Brendan: {PLAYER}! So this is where\n"
 	.string "you've been looking for Pokémon?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
@@ -520,7 +520,7 @@ Route119_Text_BrendanDefeat:
 	.string "You've gotten pretty darn decent.$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "BRENDAN: I'd say you're good enough\n"
+	.string "Brendan: I'd say you're good enough\n"
 	.string "to search for Pokémon anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
@@ -555,7 +555,7 @@ Route119_Text_ScottYouWonAtFortreeGym:
 	.string "Just as I thought, you won at\n"
 	.string "the Fortree.\p"
 	.string "Your strength…\n"
-	.string "Perhaps you really are the TRAINER\l"
+	.string "Perhaps you really are the Trainer\l"
 	.string "that I've been searching for.\p"
 	.string "Remember, you have a fan in me.\n"
 	.string "I'll be cheering from the sidelines.\l"
@@ -598,7 +598,7 @@ Route119_Text_RouteSignFortree:
 	.string "{RIGHT_ARROW} Fortree City$"
 
 Route119_Text_WeatherInstitute:
-	.string "WEATHER INSTITUTE$"
+	.string "Weather INSTITUTE$"
 
 Route119_Text_TrainerTipsDecoration:
 	.string "Trainer Tips\p"

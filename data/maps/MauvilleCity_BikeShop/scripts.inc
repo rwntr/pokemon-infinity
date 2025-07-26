@@ -285,7 +285,7 @@ MauvilleCity_BikeShop_Text_HowToTurnMachBike:
 
 MauvilleCity_BikeShop_Text_SandySlopes:
 	.string "There are small sandy slopes\n"
-	.string "throughout the HOENN region.\p"
+	.string "throughout the Hoenn region.\p"
 	.string "The loose, crumbly sand makes it\n"
 	.string "impossible to climb normally.\p"
 	.string "But if you have a Mach Bike, you can\n"

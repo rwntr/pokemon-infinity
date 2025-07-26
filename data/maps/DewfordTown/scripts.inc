@@ -673,7 +673,7 @@ DewfordTown_Text_BrineyLandedInDewford:
 	.string "you want to set sail again!$"
 
 DewfordTown_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "Mr. Briney: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
@@ -683,12 +683,12 @@ DewfordTown_Text_PetalburgWereSettingSail:
 	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_SlateportWereSettingSail:
-	.string "MR. BRINEY: SLATEPORT, is it?\p"
+	.string "Mr. Briney: SLATEPORT, is it?\p"
 	.string "Anchors aweigh!\n"
 	.string "Peeko, we're setting sail, my darling!$"
 
 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
+	.string "Mr. Briney: You just tell me whenever\n"
 	.string "you need to set sail again!$"
 
 DewfordTown_Text_GettingItchToFish:
@@ -698,7 +698,7 @@ DewfordTown_Text_GettingItchToFish:
 DewfordTown_Text_GiveYouOneOfMyRods:
 	.string "I hear you, and I like what\n"
 	.string "you're saying!\p"
-	.string "I'll give you one of my fishing RODS.$"
+	.string "I'll give you one of my fishing Rods.$"
 
 DewfordTown_Text_ThrowInFishingAdvice:
 	.string "And, as an added bonus, I'll even throw\n"

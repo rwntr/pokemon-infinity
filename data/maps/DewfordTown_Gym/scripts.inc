@@ -283,7 +283,7 @@ DewfordTown_Gym_EventScript_GymStatue::
 	end
 
 DewfordTown_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
+	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "Dewford's Gym Leader Brawly commands\n"
 	.string "Fighting-type Pokémon.\p"
@@ -292,10 +292,10 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Fighting Pokémon will lay a serious\n"
 	.string "smack down on Normal Pokémon,\l"
 	.string "so be careful!\p"
-	.string "What's worse, the GYM is as dark as\n"
+	.string "What's worse, the Gym is as dark as\n"
 	.string "the ocean floor.\p"
 	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
+	.string "the Trainers in your way.\p"
 	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
@@ -325,9 +325,9 @@ DewfordTown_Gym_Text_JocelynDefeat:
 DewfordTown_Gym_Text_JocelynPostBattle:
 	.string "I'm not going to waste this loss.\n"
 	.string "I'll use it to motivate me to train!\p"
-	.string "One day I'll become a GYM LEADER…\p"
-	.string "No, I'll become the Pokémon LEAGUE\n"
-	.string "CHAMPION!$"
+	.string "One day I'll become a Gym Leader…\p"
+	.string "No, I'll become the Pokémon League\n"
+	.string "Champion!$"
 
 DewfordTown_Gym_Text_LauraIntro:
 	.string "Don't you dare brush me off!\n"
@@ -365,7 +365,7 @@ DewfordTown_Gym_Text_BrendenDefeat:
 
 DewfordTown_Gym_Text_BrendenPostBattle:
 	.string "Oh, aye! You're worthy of seeing\n"
-	.string "our GYM LEADER.$"
+	.string "our Gym Leader.$"
 
 DewfordTown_Gym_Text_CristianIntro:
 	.string "If you mean to pass, it has to be\n"
@@ -403,13 +403,13 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "The Knuckle Badge makes all Pokémon\n"
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
-	.string "And, you'll be able to use the HM move\n"
+	.string "And, you'll be able to use the Hm move\n"
 	.string "Flash outside of battle.\p"
 	.string "If you'd like, use this Technical\n"
 	.string "Machine, too.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "That TM08 contains Bulk Up.\p"
+	.string "That Tm08 contains Bulk Up.\p"
 	.string "It's a move that raises both Attack\n"
 	.string "and Defense stats.\p"
 	.string "… … … … … …$"
@@ -421,7 +421,7 @@ DewfordTown_Gym_Text_RegisteredBrawly:
 DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "among Trainers one day!$"
 
 DewfordTown_Gym_Text_GymStatue:
 	.string "Dewford Town Pokémon$"
@@ -446,7 +446,7 @@ DewfordTown_Gym_Text_BrawlyRematchDefeat:
 DewfordTown_Gym_Text_BrawlyPostRematch:
 	.string "Brawly: Battling is vast and it's deep.\n"
 	.string "You can't see the bottom.\l"
-	.string "It's just like the sea of HOENN!$"
+	.string "It's just like the sea of Hoenn!$"
 
 DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "Brawly: A wave may draw back, but it\n"

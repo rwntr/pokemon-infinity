@@ -243,7 +243,7 @@ SlateportCity_ContestHall_Text_MoreFreakedOutThanMon:
 
 @ Unused
 SlateportCity_ContestHall_Text_BattleAndContestAlike:
-	.string "A battle and a CONTEST aren't the\n"
+	.string "A battle and a Contest aren't the\n"
 	.string "same, but they are alike, too.\p"
 	.string "You need to work hard and believe\n"
 	.string "in the Pokémon you've raised.$"

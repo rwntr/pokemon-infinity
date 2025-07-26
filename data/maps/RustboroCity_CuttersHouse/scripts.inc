@@ -25,11 +25,11 @@ RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:
 	.string "That determined expression…\n"
 	.string "That limber way you move…\l"
 	.string "And your well-trained Pokémon…\p"
-	.string "You're obviously a skilled TRAINER!\p"
+	.string "You're obviously a skilled Trainer!\p"
 	.string "No, wait, don't say a word.\n"
 	.string "I can tell just by looking at you.\p"
 	.string "I'm sure that you can put this\n"
-	.string "HIDDEN MACHINE to good use.\p"
+	.string "Hidden Machine to good use.\p"
 	.string "No need to be modest or shy.\n"
 	.string "Go on, take it!$"
 

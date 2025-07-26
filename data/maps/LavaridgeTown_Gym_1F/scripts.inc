@@ -181,7 +181,7 @@ LavaridgeTown_Gym_1F_EventScript_GymStatue::
 	end
 
 LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
+	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "Lavaridge's Gym Leader Flannery\n"
 	.string "uses Fire-type Pokémon.\p"
@@ -225,7 +225,7 @@ LavaridgeTown_Gym_B1F_Text_KeeganIntro:
 	.string "wouldn't you?\p"
 	.string "But you should know that maintaining\n"
 	.string "your willpower is an important ability\l"
-	.string "for all TRAINERS.$"
+	.string "for all Trainers.$"
 
 LavaridgeTown_Gym_B1F_Text_KeeganDefeat:
 	.string "Play with fire, and be burned…$"
@@ -300,7 +300,7 @@ LavaridgeTown_Gym_B1F_Text_EliPostBattle:
 
 LavaridgeTown_Gym_1F_Text_FlanneryIntro:
 	.string "Welcome… No, wait.\p"
-	.string "Puny TRAINER, how good to see you've\n"
+	.string "Puny Trainer, how good to see you've\n"
 	.string "made it here!\p"
 	.string "I have been entrusted with the…\n"
 	.string "No, wait.\p"
@@ -317,7 +317,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
 	.string "Oh…\n"
 	.string "I guess I was trying too hard…\p"
 	.string "I… I've only recently become\n"
-	.string "a GYM LEADER.\p"
+	.string "a Gym Leader.\p"
 	.string "I tried too hard to be someone\n"
 	.string "I'm not.\p"
 	.string "I have to do things my natural way. If\n"
@@ -357,7 +357,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "the Gym Leader of Petalburg.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
-	.string "LAVARIDGE TOWN Pokémon GYM$"
+	.string "Lavaridge Town Pokémon Gym$"
 
 LavaridgeTown_Gym_1F_Text_GymStatueCertified:
 	.string "Lavaridge Town Pokémon\p"
@@ -369,7 +369,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryPreRematch:
 	.string "to deflate me.\p"
 	.string "I love Pokémon.\n"
 	.string "I love to battle.\l"
-	.string "And… I love this GYM!\p"
+	.string "And… I love this Gym!\p"
 	.string "Let's exchange superhot moves\n"
 	.string "in another battle!$"
 
@@ -390,7 +390,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 	.string "to deflate me.\p"
 	.string "I love Pokémon.\n"
 	.string "I love to battle.\l"
-	.string "And… I love this GYM!\p"
+	.string "And… I love this Gym!\p"
 	.string "Let's exchange superhot moves\n"
 	.string "in another battle!\p"
 	.string "Oh, wait. Do you only have one Pokémon\n"

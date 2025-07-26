@@ -87,7 +87,7 @@ Route102_Text_WallyIDidIt:
 
 Route102_Text_LetsGoBack:
 	.string "{PLAYER}, thank you!\n"
-	.string "Let's go back to the GYM!$"
+	.string "Let's go back to the Gym!$"
 
 Route102_Text_ImNotVeryTall:
 	.string "I'm…not very tall, so I sink right\n"
@@ -101,8 +101,8 @@ Route102_Text_CatchWholeBunchOfPokemon:
 	.string "Pokémon!$"
 
 Route102_Text_RouteSignOldale:
-	.string "ROUTE 102\n"
-	.string "{RIGHT_ARROW} OLDALE TOWN$"
+	.string "Route 102\n"
+	.string "{RIGHT_ARROW} Oldale TOWN$"
 
 Route102_Text_RouteSignPetalburg:
 	.string "Route 102\n"

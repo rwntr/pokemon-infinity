@@ -526,9 +526,9 @@ BattleFrontier_BattlePyramidLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid:
-	.string "Where the courage of TRAINERS\n"
+	.string "Where the courage of Trainers\n"
 	.string "is put to the test!\p"
-	.string "Welcome to the BATTLE PYRAMID!\p"
+	.string "Welcome to the Battle Pyramid!\p"
 	.string "I am your guide to\n"
 	.string "the Battle Quest.$"
 
@@ -545,13 +545,13 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid:
 	.string "the Pyramid and try to reach the top.\p"
 	.string "In the Pyramid are seven floors of\n"
 	.string "mazes, all of them filled with not only\l"
-	.string "skilled TRAINERS but also wild Pokémon.\p"
+	.string "skilled Trainers but also wild Pokémon.\p"
 	.string "You must enter with three Pokémon,\n"
 	.string "none of them holding an item.\p"
 	.string "On your ascent, you will be provided\n"
-	.string "with a BATTLE BAG for items.\p"
+	.string "with a Battle Bag for items.\p"
 	.string "If you fail in your challenge, any item\n"
-	.string "placed in the BATTLE BAG disappears.\p"
+	.string "placed in the Battle Bag disappears.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, you must select “Rest”\l"
 	.string "and save the game.\p"
@@ -590,28 +590,28 @@ BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLv50:
 	.string "a word with me.$"
 
 BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge:
-	.string "Before you enter the BATTLE PYRAMID,\n"
+	.string "Before you enter the Battle Pyramid,\n"
 	.string "the game must be saved. Is that okay?$"
 
 BattleFrontier_BattlePyramidLobby_Text_ShowYouIntoPyramid:
 	.string "Very good. I will now show you into\n"
-	.string "the BATTLE PYRAMID.$"
+	.string "the Battle Pyramid.$"
 
 BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping:
-	.string "We will hold your BAG for safekeeping,\n"
+	.string "We will hold your Bag for safekeeping,\n"
 	.string "{PLAYER}, while you are exploring.$"
 
 BattleFrontier_BattlePyramidLobby_Text_PleaseTakePreviousBattleBag:
-	.string "In exchange, please take this BATTLE\n"
-	.string "BAG, the one you used previously.$"
+	.string "In exchange, please take this Battle\n"
+	.string "Bag, the one you used previously.$"
 
 BattleFrontier_BattlePyramidLobby_Text_PleaseTakeThisBattleBag:
 	.string "In exchange, please take this\n"
-	.string "BATTLE BAG.$"
+	.string "Battle Bag.$"
 
 BattleFrontier_BattlePyramidLobby_Text_ExchangedBagForBattleBag:
-	.string "{PLAYER} exchanged the BAG for\n"
-	.string "the BATTLE BAG.$"
+	.string "{PLAYER} exchanged the Bag for\n"
+	.string "the Battle Bag.$"
 
 BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel:
 	.string "When you step on this floor panel,\n"
@@ -626,9 +626,9 @@ BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag:
 	.string "your challenge the last time.\p"
 	.string "Consequently, your challenge has\n"
 	.string "been disqualified, I'm sorry to say.\p"
-	.string "Here is the BAG we've been holding\n"
+	.string "Here is the Bag we've been holding\n"
 	.string "for you.\p"
-	.string "{PLAYER} got the BAG back.$"
+	.string "{PLAYER} got the Bag back.$"
 
 BattleFrontier_BattlePyramidLobby_Text_YouveConqueredPyramid:
 	.string "Excellent to see you back!\p"
@@ -644,13 +644,13 @@ BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake:
 
 BattleFrontier_BattlePyramidLobby_Text_HeldItemsMovedToBag:
 	.string "All items held by your Pokémon will be\n"
-	.string "moved to your BATTLE BAG, {PLAYER}.$"
+	.string "moved to your Battle Bag, {PLAYER}.$"
 
 BattleFrontier_BattlePyramidLobby_Text_BagCannotHoldPickItemsToKeep:
-	.string "The BATTLE BAG cannot hold all your\n"
+	.string "The Battle Bag cannot hold all your\n"
 	.string "items, I'm sorry to say.\p"
 	.string "Please pick the items you'll keep in the\n"
-	.string "BATTLE BAG, and with your Pokémon.$"
+	.string "Battle Bag, and with your Pokémon.$"
 
 BattleFrontier_BattlePyramidLobby_Text_LeastOneMonHoldingItem:
 	.string "At least one Pokémon is still\n"
@@ -658,7 +658,7 @@ BattleFrontier_BattlePyramidLobby_Text_LeastOneMonHoldingItem:
 
 BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep:
 	.string "Please pick the items you'll keep in the\n"
-	.string "BATTLE BAG, and with your Pokémon.$"
+	.string "Battle Bag, and with your Pokémon.$"
 
 @ Unused
 BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld:
@@ -666,10 +666,10 @@ BattleFrontier_BattlePyramidLobby_Text_ReturnedEverythingMonsHeld:
 	.string "the Pokémon held.$"
 
 BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept:
-	.string "The BATTLE BAG you used will be kept\n"
+	.string "The Battle Bag you used will be kept\n"
 	.string "in readiness for your next challenge.\p"
-	.string "{PLAYER} turned the BATTLE BAG over\n"
-	.string "for the BAG's return.$"
+	.string "{PLAYER} turned the Battle Bag over\n"
+	.string "for the Bag's return.$"
 
 BattleFrontier_BattlePyramidLobby_Text_RecordResultsWait:
 	.string "I must record your results.\n"
@@ -678,7 +678,7 @@ BattleFrontier_BattlePyramidLobby_Text_RecordResultsWait:
 @ Unused
 BattleFrontier_BattlePyramidLobby_Text_ForConqueringPyramidTakeThis:
 	.string "As a memento for conquering\n"
-	.string "the BATTLE PYRAMID, please take this.$"
+	.string "the Battle Pyramid, please take this.$"
 
 @ Unused
 BattleFrontier_BattlePyramidLobby_Text_ReceivedPrizeItem:
@@ -688,15 +688,15 @@ BattleFrontier_BattlePyramidLobby_Text_ReceivedPrizeItem:
 @ Unused
 BattleFrontier_BattlePyramidLobby_Text_BagIsFull:
 	.string "…Ah…\n"
-	.string "Your BAG appears to be filled.\p"
+	.string "Your Bag appears to be filled.\p"
 	.string "Please return after you've organized\n"
-	.string "your BAG's contents.$"
+	.string "your Bag's contents.$"
 
 BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag:
 	.string "How disappointing for you…\p"
-	.string "Here is the BAG we've been holding\n"
+	.string "Here is the Bag we've been holding\n"
 	.string "for you.\p"
-	.string "{PLAYER} got the BAG back.$"
+	.string "{PLAYER} got the Bag back.$"
 
 BattleFrontier_BattlePyramidLobby_Text_LookForwardToNextChallenge:
 	.string "We look forward to your\n"
@@ -839,9 +839,9 @@ BattleFrontier_BattlePyramidLobby_Text_BelieveMyFortunesOrNot:
 
 BattleFrontier_BattlePyramidLobby_Text_TrainersNoticeRunning:
 	.string "Did you know?\p"
-	.string "If you run fast, TRAINERS may notice\n"
+	.string "If you run fast, Trainers may notice\n"
 	.string "and come after you for a battle.\p"
-	.string "So, if you want to avoid TRAINERS,\n"
+	.string "So, if you want to avoid Trainers,\n"
 	.string "don't catch their eyes, but sneak\l"
 	.string "cautiously and quietly past them.$"
 
@@ -879,8 +879,8 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainTrainerRules:
 	.string "Trainers are lying in wait for you\n"
 	.string "inside the Pyramid.\p"
 	.string "On each floor, there are up to\n"
-	.string "eight TRAINERS.\p"
-	.string "When you defeat a TRAINER, you will\n"
+	.string "eight Trainers.\p"
+	.string "When you defeat a Trainer, you will\n"
 	.string "get a helpful hint for your adventure.$"
 
 BattleFrontier_BattlePyramidLobby_Text_ExplainMazeRules:
@@ -889,7 +889,7 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainMazeRules:
 	.string "The mazes are poorly lit.\n"
 	.string "You must advance with caution.\p"
 	.string "The light grows brighter whenever you\n"
-	.string "defeat a wild Pokémon or a TRAINER.$"
+	.string "defeat a wild Pokémon or a Trainer.$"
 
 BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules:
 	.string "The Battle Bag serves as your Bag\n"
@@ -899,6 +899,6 @@ BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules:
 	.string "Open Level adventures.\p"
 	.string "They each can hold up to 99 pieces\n"
 	.string "of ten kinds of items.\p"
-	.string "The contents of the BATTLE BAG are\n"
+	.string "The contents of the Battle Bag are\n"
 	.string "lost if you fail in your quest.$"
 

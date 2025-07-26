@@ -62,11 +62,11 @@ AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
 	.string "What? What?\n"
-	.string "Are you a TEAM MAGMA grunt?\p"
-	.string "I hear that TEAM MAGMA is trying to\n"
+	.string "Are you a Team Magma grunt?\p"
+	.string "I hear that Team Magma is trying to\n"
 	.string "awaken an awesome Pokémon at their\l"
-	.string "HIDEOUT.\p"
-	.string "But where might their HIDEOUT be?$"
+	.string "Hideout.\p"
+	.string "But where might their Hideout be?$"
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
 	.string "What? What? What do you want with \n"
@@ -90,9 +90,9 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
 	.string "What? What?\n"
-	.string "Are you a TEAM MAGMA grunt?\p"
-	.string "I hear that TEAM MAGMA is after\n"
-	.string "an awesome Pokémon at MT. CHIMNEY.\p"
+	.string "Are you a Team Magma grunt?\p"
+	.string "I hear that Team Magma is after\n"
+	.string "an awesome Pokémon at Mt. Chimney.\p"
 	.string "But what is that Pokémon like?$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
@@ -114,6 +114,6 @@ AquaHideout_1F_Text_Grunt1Defeat:
 	.string "I lost it!$"
 
 AquaHideout_1F_Text_Grunt1PostBattle:
-	.string "I took the loss for the TEAM,\n"
+	.string "I took the loss for the Team,\n"
 	.string "but I did my job…$"
 

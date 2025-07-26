@@ -475,7 +475,7 @@ MauvilleCity_Text_UncleYourePushingIt:
 	.string "Since you started living with Pokémon,\n"
 	.string "you have grown quite a lot stronger.\p"
 	.string "But don't you think you're pushing it\n"
-	.string "to suddenly challenge a GYM?$"
+	.string "to suddenly challenge a Gym?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
 	.string "Wally: I'm not pushing it.\p"
@@ -522,10 +522,10 @@ MauvilleCity_Text_WallyIllGoBackToVerdanturf:
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "{PLAYER}, thank you.\n"
-	.string "Being a TRAINER is tough, isn't it?\p"
+	.string "Being a Trainer is tough, isn't it?\p"
 	.string "It's not enough just to have Pokémon\n"
 	.string "and make them battle. That isn't what\l"
-	.string "being a real TRAINER is about.$"
+	.string "being a real Trainer is about.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
 	.string "Uncle: Wally, there's no need to be so\n"
@@ -569,7 +569,7 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "and beat him impressively.\p"
 	.string "Yeah! That's what a real Pokémon\n"
 	.string "battle is all about!\p"
-	.string "I idolize TRAINERS like that!\p"
+	.string "I idolize Trainers like that!\p"
 	.string "… … … … … …\n"
 	.string "I'll be cheering for you!$"
 
@@ -579,8 +579,8 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "That's a good thing, wahahahaha!\p"
 	.string "Fine! I've decided!\n"
 	.string "I need a favor, {PLAYER}{KUN}!\p"
-	.string "MAUVILLE CITY has an underground\n"
-	.string "sector called NEW MAUVILLE.\p"
+	.string "Mauville City has an underground\n"
+	.string "sector called New Mauville.\p"
 	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
 	.string "switch off the generator.\p"
 	.string "The generator has been running a bit\n"
@@ -600,7 +600,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "Wattson: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
-	.string "This is my thanks--a TM containing\n"
+	.string "This is my thanks--a Tm containing\n"
 	.string "Thunderbolt!\p"
 	.string "Go on, you've earned it!$"
 
@@ -631,7 +631,7 @@ MauvilleCity_Text_PokemonCanJumpYouOnBike:
 	.string "wild Pokémon could jump you.$"
 
 MauvilleCity_Text_CitySign:
-	.string "MAUVILLE CITY\n"
+	.string "Mauville City\n"
 	.string "“The bright and shiny city of fun!”$"
 
 MauvilleCity_Text_GymSign:
@@ -642,11 +642,11 @@ MauvilleCity_Text_GymSign:
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"
 	.string "soul!”\l"
-	.string "RYDEL'S CYCLES$"
+	.string "Rydel's Cycles$"
 
 MauvilleCity_Text_GameCornerSign:
 	.string "“The play spot for all!”\n"
-	.string "MAUVILLE GAME CORNER$"
+	.string "Mauville Game Corner$"
 
 MauvilleCity_Text_ExplainTV:
 	.string "Hi, do you check out TV at all?\p"

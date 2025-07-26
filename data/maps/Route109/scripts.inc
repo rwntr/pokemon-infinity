@@ -498,22 +498,22 @@ Route109_Text_BrineyDeliverDevonGoods:
 	.string "the Devon Goods. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInSlateport:
-	.string "MR. BRINEY: Ahoy! We've made land in\n"
-	.string "SLATEPORT!\p"
+	.string "Mr. BRINEY: Ahoy! We've made land in\n"
+	.string "Slateport!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
 
 Route109_Text_BrineyWhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "Mr. BRINEY: Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
 Route109_Text_BrineyTellMeWhenYouNeedToSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
+	.string "Mr. BRINEY: You just tell me whenever\n"
 	.string "you need to set sail again!$"
 
 Route109_Text_ChillAtMyPapasSpot:
-	.string "Yo, TRAINERS!\n"
+	.string "Yo, Trainers!\n"
 	.string "Whether you're hot to trot,\l"
 	.string "or cool cat not,\l"
 	.string "chill at my papa's spot!$"
@@ -552,13 +552,13 @@ Route109_Text_ZigzagoonCry:
 	.string "Zigzagoon: Guguu?$"
 
 Route109_Text_SeashoreHouseSign:
-	.string "SEASHORE HOUSE\p"
+	.string "Seashore HOUSE\p"
 	.string "“May hot battles rage on hot sands!\n"
-	.string "The place for hot TRAINERS!”$"
+	.string "The place for hot Trainers!”$"
 
 Route109_Text_TrainerTipsSign:
 	.string "Trainer Tips\p"
 	.string "Pokémon at the same level may not\n"
 	.string "always have identical stats.\p"
-	.string "Pokémon raised by TRAINERS are said\n"
+	.string "Pokémon raised by Trainers are said\n"
 	.string "to grow stronger than wild Pokémon.$"

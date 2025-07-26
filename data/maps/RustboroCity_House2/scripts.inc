@@ -12,7 +12,7 @@ RustboroCity_House2_EventScript_LittleGirl::
 RustboroCity_House2_Text_TrainerSchoolExcellent:
 	.string "The Trainer's School is excellent.\p"
 	.string "If you study there, you could even\n"
-	.string "become a GYM LEADER.$"
+	.string "become a Gym Leader.$"
 
 RustboroCity_House2_Text_RoxanneKnowsALot:
 	.string "Roxanne, the Gym Leader, really knows\n"
