@@ -1637,8 +1637,15 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GMAX         SPECIES_URSHIFU_RAPID_STRIKE_GMAX
 #define SPECIES_MIMIKYU_BUSTED_TOTEM                    1523
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    SPECIES_MIMIKYU_BUSTED_TOTEM
+#define SPECIES_BUTTERFREE_MEGA                         1524
+#define SPECIES_FLYGON_MEGA                             1525
+#define SPECIES_KINGDRA_MEGA                            1526
+#define SPECIES_KINGLER_MEGA                            1527
+#define SPECIES_LAPRAS_MEGA                             1528
+#define SPECIES_MACHAMP_MEGA                            1529
+#define SPECIES_MILOTIC_MEGA                            1530
 
-#define SPECIES_EGG                                     (SPECIES_MIMIKYU_BUSTED_TOTEM + 1)
+#define SPECIES_EGG                                     (SPECIES_MILOTIC_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

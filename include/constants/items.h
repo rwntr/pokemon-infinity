@@ -994,10 +994,21 @@
 
 #define ITEM_STRANGE_BALL 828
 
+//@RWNTR Custom Items
+#define ITEM_BUTTERFRENITE 829
+#define ITEM_FLYGONITE 830
+#define ITEM_KINGDRANITE 831
+#define ITEM_KINGLERITE 832
+#define ITEM_LAPRASITE 833
+#define ITEM_MACHAMPITE 834
+#define ITEM_MILOTICITE 835
+#define ITEM_POKE_VIAL 836
+#define ITEM_TRAINING_BAND 837
+
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 829
+#define ITEMS_COUNT 838
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

@@ -983,6 +983,21 @@ extern const u32 gItemIcon_Audinite[];
 extern const u16 gItemIconPalette_Audinite[];
 extern const u32 gItemIcon_Diancite[];
 extern const u16 gItemIconPalette_Diancite[];
+//@RWNTR
+extern const u32 gItemIcon_Miloticite[];
+extern const u16 gItemIconPalette_Miloticite[];
+extern const u32 gItemIcon_Butterfrenite[];
+extern const u16 gItemIconPalette_Butterfrenite[];
+extern const u32 gItemIcon_Machampite[];
+extern const u16 gItemIconPalette_Machampite[];
+extern const u32 gItemIcon_Kingdranite[];
+extern const u16 gItemIconPalette_Kingdranite[];
+extern const u32 gItemIcon_Laprasite[];
+extern const u16 gItemIconPalette_Laprasite[];
+extern const u32 gItemIcon_Kinglerite[];
+extern const u16 gItemIconPalette_Kinglerite[];
+extern const u32 gItemIcon_Flygonite[];
+extern const u16 gItemIconPalette_Flygonite[];
 // Gems
 extern const u32 gItemIcon_NormalGem[];
 extern const u16 gItemIconPalette_NormalGem[];
@@ -1237,6 +1252,12 @@ extern const u32 gItemIcon_InBattleHerb[];
 extern const u16 gItemIconPalette_WhiteHerb[];
 extern const u32 gItemIcon_ExpShare[];
 extern const u16 gItemIconPalette_ExpShare[];
+//@RWNTR
+extern const u32 gItemIcon_TrainingBand[];
+extern const u16 gItemIconPalette_TrainingBand[];
+extern const u32 gItemIcon_PokeVial[];
+extern const u16 gItemIconPalette_PokeVial[];
+
 extern const u32 gItemIcon_QuickClaw[];
 extern const u16 gItemIconPalette_QuickClaw[];
 extern const u32 gItemIcon_SootheBell[];
