@@ -1,6 +1,6 @@
 //REMOVE THESE BEFORE FINAL PUSH - FOR DISPLAY ONLY
-#include "constants/moves.h"
-#include "constants/pokemon.h"
+//#include "constants/moves.h"
+//#include "constants/pokemon.h"
 //@RWNTR
 #define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}
 #define LEVEL_UP_END {.move = LEVEL_UP_MOVE_END, .level = 0}
