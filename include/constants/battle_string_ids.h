@@ -738,6 +738,7 @@ enum StringID
     STRINGID_TOXICSPIKESBADLYPOISONED,
     STRINGID_POWERCONSTRUCTPRESENCEOFMANY,
     STRINGID_POWERCONSTRUCTTRANSFORM,
+    STRINGID_PKMNILLUSIONMISS,
     STRINGID_COUNT
 };
 
@@ -775,6 +776,7 @@ enum MissStringID
     // Ability-related messages need to below this comment
     B_MSG_AVOIDED_DMG,
     B_MSG_GROUND_MISS,
+    B_MSG_ILLUSION_MISS,
 };
 
 // gAbsorbDrainStringIds

@@ -528,6 +528,8 @@ enum IllusionState {
 struct Illusion
 {
     enum IllusionState state;
+    u8 partyId;
+    u8 missBreakFlag;
     struct Pokemon *mon;
 };
 

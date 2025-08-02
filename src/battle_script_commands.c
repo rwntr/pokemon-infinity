@@ -1568,6 +1568,26 @@ static bool32 AccuracyCalcHelper(u32 move, u32 battler)
     return effect;
 }
 
+
+//Give illusion evasiveness boost if the disguise species is larger than the mon with illusion's species
+
+
+bool8 GiveIllusionEvasivenessBoost(u32 battler)
+{
+    struct Pokemon *illusionMon;
+    illusionMon = GetIllusionMonPtr(battler);
+    u16 illusionMonSpecies;
+    u32 illusionMonHeight;
+    if (illusionMon != NULL)
+        illusionMonSpecies = GetMonData(illusionMon, MON_DATA_SPECIES);
+    else
+        return FALSE;
+    illusionMonHeight = GetSpeciesHeight(illusionMonSpecies);
+    if (illusionMonHeight > GetBattlerHeight(battler))
+        return TRUE;
+    return FALSE;
+}
+
 u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u32 defAbility, u32 atkHoldEffect, u32 defHoldEffect)
 {
     u32 calc, moveAcc;
@@ -1638,6 +1658,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     case ABILITY_TANGLED_FEET:
         if (gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
             calc = (calc * 50) / 100; // 1.5 tangled feet loss
+        break;
+    case ABILITY_ILLUSION:
+        if (GiveIllusionEvasivenessBoost(battlerDef))
+            calc = (calc * 75) / 100;
         break;
     }
 
@@ -1779,6 +1803,17 @@ static void AccuracyCheck(bool32 recalcDragonDarts, const u8 *nextInstr, const u
                     AccuracyCheck(TRUE, nextInstr, failInstr, move);
                     return;
                 }
+                // If mon benefitted from Illusion evasiveness boost, say so & break illusion
+                if (GiveIllusionEvasivenessBoost(gBattlerTarget))
+                {
+                    gBattleCommunication[MISS_TYPE] = B_MSG_ILLUSION_MISS;
+                    gBattleStruct->illusion[gBattlerTarget].missBreakFlag = 1;
+                }
+                else if (IsDoubleBattle() &&
+                    (moveTarget == MOVE_TARGET_BOTH || moveTarget == MOVE_TARGET_FOES_AND_ALLY))
+                    gBattleCommunication[MISS_TYPE] = B_MSG_AVOIDED_ATK;
+                else
+                    gBattleCommunication[MISS_TYPE] = B_MSG_MISSED;
 
                 if (GetMovePower(move) != 0)
                     CalcTypeEffectivenessMultiplier(move, moveType, gBattlerAttacker, battlerDef, GetBattlerAbility(battlerDef), TRUE);

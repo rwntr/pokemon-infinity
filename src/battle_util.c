@@ -4768,7 +4768,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ILLUSION:
-            if (gBattleStruct->illusion[gBattlerTarget].state == ILLUSION_ON && IsBattlerTurnDamaged(gBattlerTarget))
+            if (gBattleStruct->illusion[gBattlerTarget].state == ILLUSION_ON && (IsBattlerTurnDamaged(gBattlerTarget) || gBattleStruct->illusion[gBattlerTarget].missBreakFlag))
             {
                 gBattleScripting.battler = gBattlerTarget;
                 BattleScriptPushCursor();
@@ -7921,6 +7921,12 @@ u32 GetBattlerWeight(u32 battler)
     return weight;
 }
 
+u32 GetBattlerHeight(u32 battler)
+{
+    u32 size = GetSpeciesHeight(gBattleMons[battler].species);
+    return size;
+}
+
 u32 CountBattlerStatIncreases(u32 battler, bool32 countEvasionAcc)
 {
     u32 i;
@@ -8448,6 +8454,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (gBattleMons[battlerAtk].status1 & STATUS1_PSN_ANY && IsBattleMovePhysical(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    //Boost Illusion mons' atk/spatk power by 20% if they are no longer maintaining their illusion
+    case ABILITY_ILLUSION:
+        if (gBattleStruct->illusion[battlerAtk].state == ILLUSION_OFF)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
     case ABILITY_RECKLESS:
         if (moveEffect == EFFECT_RECOIL || moveEffect == EFFECT_RECOIL_IF_MISS)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
