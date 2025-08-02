@@ -28,6 +28,7 @@ void ItemUseOutOfBattle_Lure(u8 taskId);
 void ItemUseOutOfBattle_EscapeRope(u8 taskId);
 void ItemUseOutOfBattle_BlackWhiteFlute(u8 taskId);
 void ItemUseOutOfBattle_EvolutionStone(u8 taskId);
+void ItemUseOutOfBattle_PokeVial(u8 taskId);
 void ItemUseOutOfBattle_Berry(u8 taskId);
 void ItemUseOutOfBattle_EnigmaBerry(u8 taskId);
 void ItemUseOutOfBattle_FormChange(u8 taskId);

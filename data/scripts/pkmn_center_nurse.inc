@@ -1,6 +1,18 @@
 Common_EventScript_PkmnCenterNurse::
 	lock
 	faceplayer
+    checkitem ITEM_POKE_VIAL, 1
+    goto_if_eq VAR_RESULT, 1, EventScript_PkmnCenterNurseHasVial
+    msgbox gText_AreYouARookieTrainer, MSGBOX_DEFAULT
+    giveitem ITEM_POKE_VIAL, 1
+    setvar VAR_POKE_VIAL_MAX_CHARGES, 1
+    setvar VAR_POKE_VIAL_CHARGES, 1
+    msgbox gText_ExplainPokeVial, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmn
+    goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
+    end
+
+EventScript_PkmnCenterNurseHasVial::
 	setvar VAR_0x8004, 0
 	specialvar VAR_RESULT, CountPlayerTrainerStars
 	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard
@@ -15,6 +27,7 @@ EventScript_PkmnCenterNurse_Goodbye::
 
 @ VAR_0x8004 is 1 when player has Gold Card; jumps are identical
 EventScript_PkmnCenterNurse_HealPkmn::
+	copyvar VAR_POKE_VIAL_CHARGES, VAR_POKE_VIAL_MAX_CHARGES @ refill Poke Vial
 	incrementgamestat GAME_STAT_USED_POKECENTER
 	call_if_eq VAR_0x8004, 0, EventScript_PkmnCenterNurse_IllTakeYourPkmn
 	call_if_eq VAR_0x8004, 1, EventScript_PkmnCenterNurse_IllTakeYourPkmn2

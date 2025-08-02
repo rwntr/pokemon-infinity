@@ -34,6 +34,7 @@
 #include "pokeblock.h"
 #include "pokemon.h"
 #include "script.h"
+#include "script_pokemon_util.h"
 #include "sound.h"
 #include "strings.h"
 #include "string_util.h"
@@ -63,6 +64,7 @@ static void Task_AccessPokemonBoxLink(u8);
 static void ItemUseOnFieldCB_Bike(u8);
 static void ItemUseOnFieldCB_Rod(u8);
 static void ItemUseOnFieldCB_Itemfinder(u8);
+static void ItemUseOnFieldCB_PokeVial(u8 taskId);
 static void ItemUseOnFieldCB_Berry(u8);
 static void ItemUseOnFieldCB_WailmerPailBerry(u8);
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
@@ -731,6 +733,35 @@ void ItemUseOutOfBattle_CoinCase(u8 taskId)
     {
         DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
     }
+}
+
+
+
+
+void ItemUseOutOfBattle_PokeVial(u8 taskId)
+{
+    if (VarGet(VAR_POKE_VIAL_CHARGES) == 0)
+    {
+        if (!gTasks[taskId].tUsingRegisteredKeyItem)
+            DisplayItemMessage(taskId, 1, gText_PokeVialEmpty, CloseItemMessage);
+        else
+            DisplayItemMessageOnField(taskId, gText_PokeVialEmpty, Task_CloseCantUseKeyItemMessage);
+    }
+    else
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_PokeVial;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+}
+
+static void ItemUseOnFieldCB_PokeVial(u8 taskId)
+
+
+{
+    PlaySE(SE_USE_ITEM);
+    HealPlayerParty();
+    VarSet(VAR_POKE_VIAL_CHARGES, VarGet(VAR_POKE_VIAL_CHARGES) - 1);
+    DisplayItemMessageOnField(taskId, gText_UsedPokeVial, Task_CloseCantUseKeyItemMessage);
 }
 
 void ItemUseOutOfBattle_PowderJar(u8 taskId)
