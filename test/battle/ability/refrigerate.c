@@ -47,8 +47,8 @@ SINGLE_BATTLE_TEST("Refrigerate boosts power of affected moves by 20% (Gen7+) or
 SINGLE_BATTLE_TEST("Refrigerate doesn't affect Weather Ball's type", s16 damage)
 {
     u16 move, ability;
-    PARAMETRIZE { move = MOVE_CELEBRATE; ability = ABILITY_SNOW_WARNING; }
-    PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_SNOW_WARNING; }
+    PARAMETRIZE { move = MOVE_SNOWSCAPE; ability = ABILITY_NONE; }
+    PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_NONE; }
     PARAMETRIZE { move = MOVE_CELEBRATE; ability = ABILITY_REFRIGERATE; }
     PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_REFRIGERATE; }
     GIVEN {
