@@ -127,7 +127,7 @@ SINGLE_BATTLE_TEST("(TERA) Terastallization's 60 BP floor occurs after Technicia
         // 60BP floor / 52.5 ~= 1.14 
         // ~1.14 * 1.5x Tera boost = 1.7143
         // Therefore, expect this factor instead of 1.5
-        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.71), results[1].damage);
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.7143), results[1].damage);
     }
 }
 
