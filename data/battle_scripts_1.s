@@ -2603,6 +2603,8 @@ BattleScript_EffectMagnetRise::
 	attackcanceler
 	attackstring
 	ppreduce
+	jumpifstatus3 BS_ATTACKER, STATUS3_ROOTED, BattleScript_ButItFailed
+	jumpifstatus3 BS_ATTACKER, STATUS3_SMACKED_DOWN, BattleScript_ButItFailed
 	setuserstatus3 STATUS3_MAGNET_RISE, BattleScript_ButItFailed
 	attackanimation
 	waitanimation
@@ -3531,6 +3533,7 @@ BattleScript_PowerHerbActivation:
 BattleScript_EffectTwoTurnsAttack::
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
+	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_ATTACKSTRING_PRINTED, BattleScript_EffectHit @ if it's not the first hit
 	tryfiretwoturnmovewithoutcharging BS_ATTACKER, BattleScript_EffectHit @ e.g. Solar Beam
 	call BattleScript_FirstChargingTurn
 	tryfiretwoturnmoveaftercharging BS_ATTACKER, BattleScript_TwoTurnMovesSecondTurn @ e.g. Electro Shot
@@ -5775,6 +5778,7 @@ BattleScript_LeechSeedTurnDrainHealBlock::
 BattleScript_LeechSeedTurnDrainRecovery::
 	call BattleScript_LeechSeedTurnDrain
 BattleScript_LeechSeedTurnDrainGainHp:
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
 	healthbarupdate BS_TARGET
 	datahpupdate BS_TARGET
 	printfromtable gLeechSeedStringIds
@@ -8191,6 +8195,8 @@ BattleScript_MummyActivates::
 	return
 
 BattleScript_WanderingSpiritActivates::
+	saveattacker
+	savetarget
 .if B_ABILITY_POP_UP == TRUE
 	copybyte gBattlerAbility, gBattlerTarget
 	sethword sABILITY_OVERWRITE, ABILITY_WANDERING_SPIRIT
@@ -8207,6 +8213,8 @@ BattleScript_WanderingSpiritActivates::
 	jumpiffainted BS_TARGET, TRUE, BattleScript_WanderingSpiritActivatesRet
 	switchinabilities BS_TARGET
 BattleScript_WanderingSpiritActivatesRet:
+	restoreattacker
+	restoretarget
 	return
 
 BattleScript_TargetsStatWasMaxedOut::
