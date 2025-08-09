@@ -208,7 +208,7 @@ static inline const struct Trainer *GetTrainerStructFromId(u16 trainerId)
     u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
     enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
 
-        return &gTrainers[difficulty][sanitizedTrainerId];
+    return &gTrainers[difficulty][sanitizedTrainerId];
 }
 
 static inline const u8 GetTrainerClassFromId(u16 trainerId)

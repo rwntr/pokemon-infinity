@@ -3,6 +3,8 @@ static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
 {
     {COMPOUND_STRING("PETALBURG")},
     {COMPOUND_STRING("SLATEPORT")},
+    {COMPOUND_STRING("PETALBURG")},
+    {COMPOUND_STRING("SLATEPORT")},
     {gText_Exit},
 };
 
@@ -513,6 +515,8 @@ static const struct MenuAction MultichoiceList_WirelessMinigame[] =
 
 static const struct MenuAction MultichoiceList_LinkLeader[] =
 {
+    {COMPOUND_STRING("JOIN GROUP")},
+    {COMPOUND_STRING("BECOME LEADER")},
     {COMPOUND_STRING("JOIN GROUP")},
     {COMPOUND_STRING("BECOME LEADER")},
     {gText_Exit},

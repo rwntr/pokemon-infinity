@@ -19,6 +19,7 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye prevent accuracy stag
 
     PASSES_RANDOMLY(100, 100, RNG_ACCURACY);
     GIVEN {
+        WITH_CONFIG(GEN_ILLUMINATE_EFFECT, GEN_9);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
@@ -80,6 +81,7 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye are ignored by Mold B
 
     PASSES_RANDOMLY(GetMoveAccuracy(MOVE_SCRATCH) * 3 / 4, 100, RNG_ACCURACY);
     GIVEN {
+        WITH_CONFIG(GEN_ILLUMINATE_EFFECT, GEN_9);
         PLAYER(speciesPlayer) { Ability(abilityPlayer); }
         OPPONENT(speciesOpponent) { Ability(abilityOpponent); }
     } WHEN {
