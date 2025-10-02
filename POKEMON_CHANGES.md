@@ -2449,136 +2449,481 @@ Moves learned at level 1 are moves that Pokemon may have when encountered in the
  - 56, THRASH
  - 61, BRAVE BIRD
 
-### 0086  Seel
+### #0086  Seel
+ - Ability (1): Thick Fat -> Fur Coat
+#
+ - 1, HEADBUTT
+ - 3, GROWL
+ - 7, WATER SPORT
+ - 11, ICY WIND
+ - 13, ENCORE
+ - 17, ICE SHARD
+ - 21, REST
+ - 23, AQUA RING
+ - 25, CHILLING WATER
+ - 27, AURORA BEAM
+ - 29, FLIP TURN
+ - 31, AQUA JET
+ - 33, BRINE
+ - 35, ICE SPINNER
+ - 37, TAKE DOWN
+ - 41, DIVE
+ - 43, AQUA TAIL
+ - 47, ICE BEAM
+ - 51, SAFEGUARD
+ - 53, HAIL
+ - 53, SNOWSCAPE
 
-- Lv. 25, Chilling Water
-- Lv. 29, Flip Turn
-- Lv. 35, Ice Spinner
-- Gets both Snowscape and Hail at 53
+### #0087  Dewgong
+ - Ability (1): Thick Fat -> Fur Coat
+#
+ - 0, SHEER COLD
+ - 0, SIGNAL BEAM
+ - 1, ICICLE CRASH
+ - 1, HEADBUTT
+ - 1, GROWL
+ - 1, SIGNAL BEAM
+ - 1, ICY WIND
+ - 13, ENCORE
+ - 17, ICE SHARD
+ - 21, REST
+ - 23, AQUA RING
+ - 25, CHILLING WATER
+ - 27, AURORA BEAM
+ - 29, FLIP TURN
+ - 31, AQUA JET
+ - 33, BRINE
+ - 37, ICE SPINNER
+ - 39, TAKE DOWN
+ - 45, DIVE
+ - 49, AQUA TAIL
+ - 55, ICE BEAM
+ - 59, ALLURING VOICE
+ - 61, SAFEGUARD
+ - 65, HAIL
+ - 65, SNOWSCAPE
 
-### 0087  Dewgong
+### #0088  Grimer (Kanto)
+ - 1, POUND
+ - 1, POISON GAS
+ - 4, HARDEN
+ - 7, MUD SLAP
+ - 12, DISABLE
+ - 15, SLUDGE
+ - 18, MUD BOMB
+ - 21, MINIMIZE
+ - 26, FLING
+ - 26, TOXIC
+ - 29, POISON JAB
+ - 32, SLUDGE WAVE
+ - 37, SCREECH
+ - 40, GUNK SHOT
+ - 43, ACID ARMOR
+ - 46, BELCH
+ - 48, MEMENTO
 
-- Lv. 25, Chilling Water
-- Lv. 29, Flip Turn
-- Lv. 37, Ice Spinner
-- Lv. 59, Alluring Voice
-- Gets both Snowscape and Hail at 65
+### #0088  Grimer (Alola)
+ - 1, POUND
+ - 1, POISON GAS
+ - 4, HARDEN
+ - 7, BITE
+ - 12, DISABLE
+ - 15, ACID SPRAY
+ - 18, POISON FANG
+ - 21, MINIMIZE
+ - 26, FLING
+ - 26, TOXIC
+ - 29, KNOCK OFF
+ - 32, CRUNCH
+ - 37, SCREECH
+ - 40, GUNK SHOT
+ - 43, ACID ARMOR
+ - 46, BELCH
+ - 48, MEMENTO
 
-### 0088  Grimer - Kanto
+### #0089  Muk (Kanto)
+ - Ability (1): Stench -> Gooey
+#
+ - Atk: 105 -> 125
+#
+ - 0, VENOM DRENCH
+ - 1, POUND
+ - 1, POISON GAS
+ - 1, HARDEN
+ - 1, MUD SLAP
+ - 12, DISABLE
+ - 15, SLUDGE
+ - 18, MUD BOMB
+ - 21, MINIMIZE
+ - 26, FLING
+ - 26, TOXIC
+ - 29, POISON JAB
+ - 32, SLUDGE WAVE
+ - 37, SCREECH
+ - 40, GUNK SHOT
+ - 46, ACID ARMOR
+ - 52, BELCH
+ - 57, MEMENTO
 
-- No change
+### #0089  Muk (Alola)
+ - Atk: 105 -> 115
+ - Def: 75 -> 85
+#
+ - 0, VENOM DRENCH
+ - 1, POUND
+ - 1, POISON GAS
+ - 1, HARDEN
+ - 1, BITE
+ - 4, HARDEN
+ - 7, BITE
+ - 12, DISABLE
+ - 15, ACID SPRAY
+ - 18, POISON FANG
+ - 21, MINIMIZE
+ - 26, FLING
+ - 26, TOXIC
+ - 29, KNOCK OFF
+ - 32, CRUNCH
+ - 37, SCREECH
+ - 40, GUNK SHOT
+ - 46, ACID ARMOR
+ - 52, BELCH
+ - 57, MEMENTO
 
-### 0088  Grimer - Alola
+### #0090 Shellder
+ - 1, TACKLE
+ - 1, WATER GUN
+ - 4, WITHDRAW
+ - 8, ICE SHARD
+ - 12, LEER
+ - 16, WHIRLPOOL
+ - 20, SUPERSONIC
+ - 23, CHILLING WATER
+ - 24, AURORA BEAM
+ - 25, CLAMP
+ - 28, PROTECT
+ - 32, RAZOR SHELL
+ - 36, IRON DEFENSE
+ - 38, ICE SPINNER
+ - 40, ICE BEAM
+ - 44, BRINE
+ - 44, SHELL SMASH
+ - 48, HYDRO PUMP
+        
+### #0091 Cloyster
+ - 0, ICICLE SPEAR
+ - 1, ICICLE CRASH
+ - 1, TOXIC SPIKES
+ - 1, AURORA BEAM
+ - 1, LEER
+ - 1, WHIRLPOOL
+ - 1, SUPERSONIC
+ - 1, CLAMP
+ - 1, PROTECT
+ - 1, TACKLE
+ - 1, WATER GUN
+ - 1, WITHDRAW
+ - 1, ICE SHARD
+ - 1, CHILLING WATER
+ - 28, SPIKES
+ - 36, RAZOR SHELL
+ - 40, IRON DEFENSE
+ - 42, ICE SPINNER
+ - 44, ICE BEAM
+ - 48, BRINE
+ - 48, SHELL SMASH
+ - 54, HYDRO PUMP
+ - 64, SPIKE CANNON
 
-- No change
+### #0092  Gastly
+ - Ability (2)(H): N/A -> Cursed Body
+#
+ - 1, CONFUSE RAY
+ - 1, LICK
+ - 4, HYPNOSIS
+ - 8, MEAN LOOK
+ - 12, PAYBACK
+ - 16, SPITE
+ - 20, CURSE
+ - 24, HEX
+ - 28, NIGHT SHADE
+ - 32, SUCKER PUNCH
+ - 33, CORROSIVE GAS
+ - 36, DARK PULSE
+ - 40, SHADOW BALL
+ - 44, DESTINY BOND
+ - 47, NIGHTMARE
+ - 48, DREAM EATER
+ 
+### #0093  Haunter
+ - Ability (2)(H): N/A -> Cursed Body
+#
+ - 0, SHADOW PUNCH
+ - 1, CONFUSE RAY
+ - 1, HYPNOSIS
+ - 1, LICK
+ - 1, MEAN LOOK
+ - 12, PAYBACK
+ - 16, SPITE
+ - 20, CURSE
+ - 24, HEX
+ - 30, NIGHT SHADE
+ - 36, SUCKER PUNCH
+ - 39, CORROSIVE GAS
+ - 42, DARK PULSE
+ - 48, SHADOW BALL
+ - 54, DESTINY BOND
+ - 60, DREAM EATER
+ - 61, NIGHTMARE
 
-### 0089  Muk - Kanto
+### #0094  Gengar
+ - Ability (1): Cursed Body -> Levitate
+ - Ability (2)(H): N/A -> Cursed Body
+#
+ - 1, PERISH SONG
+ - 1, REFLECT TYPE
+ - 1, SHADOW PUNCH
+ - 1, CONFUSE RAY
+ - 1, HYPNOSIS
+ - 1, LICK
+ - 1, MEAN LOOK
+ - 12, PAYBACK
+ - 16, SPITE
+ - 20, CURSE
+ - 24, HEX
+ - 30, NIGHT SHADE
+ - 36, SUCKER PUNCH
+ - 40, CORROSIVE GAS
+ - 42, DARK PULSE
+ - 48, SHADOW BALL
+ - 54, DESTINY BOND
+ - 60, DREAM EATER
+ - 61, NIGHTMARE
 
-- No change
+### #0095  Onix
+ - 1, BIND
+ - 1, HARDEN
+ - 1, MUD SPORT
+ - 1, ROCK THROW
+ - 1, TACKLE
+ - 4, SMACK DOWN
+ - 8, ROCK POLISH
+ - 10, ROCK TOMB
+ - 12, DRAGON BREATH
+ - 13, RAGE
+ - 16, CURSE
+ - 20, GYRO BALL
+ - 20, ROCK SLIDE
+ - 24, SCREECH
+ - 28, SAND TOMB
+ - 32, STEALTH ROCK
+ - 36, SLAM
+ - 40, SANDSTORM
+ - 44, DIG
+ - 48, IRON TAIL
+ - 52, STONE EDGE
+ - 56, DOUBLE EDGE
 
-### 0089  Muk - Alola
+### #0096  Drowzee
+ - 1, POUND
+ - 1, HYPNOSIS
+ - 5, DISABLE
+ - 9, CONFUSION
+ - 13, HEADBUTT
+ - 17, POISON GAS
+ - 21, MEDITATE
+ - 25, PSYBEAM
+ - 27, TRAILBLAZE
+ - 29, WAKE UP SLAP
+ - 33, PSYCH UP
+ - 37, SYNCHRONOISE
+ - 41, ZEN HEADBUTT
+ - 45, SWAGGER
+ - 49, PSYCHIC
+ - 53, NASTY PLOT
+ - 57, PSYSHOCK
+ - 61, FUTURE SIGHT
 
-- No change
+### #0097  Hypno
+ - HP: 85 -> 95
+ - SpA: 73 -> 115
+#
+ - 0, NASTY PLOT
+ - 1, FUTURE SIGHT
+ - 1, NIGHTMARE
+ - 1, SWITCHEROO
+ - 1, POUND
+ - 1, HYPNOSIS
+ - 1, DISABLE
+ - 1, CONFUSION
+ - 13, HEADBUTT
+ - 17, POISON GAS
+ - 21, MEDITATE
+ - 25, PSYBEAM
+ - 27, TRAILBLAZE
+ - 29, WAKE UP SLAP
+ - 33, PSYCH UP
+ - 37, SYNCHRONOISE
+ - 41, ZEN HEADBUTT
+ - 45, SWAGGER
+ - 49, PSYCHIC
+ - 53, NASTY PLOT
+ - 57, PSYSHOCK
+ - 61, FUTURE SIGHT
 
-### 0090  Shellder
+### #0098  Krabby
+ - 1, BUBBLE
+ - 1, LEER
+ - 1, MUD SPORT
+ - 1, WATER GUN
+ - 4, HARDEN
+ - 5, VISE GRIP
+ - 8, METAL CLAW
+ - 12, MUD SHOT
+ - 16, PROTECT
+ - 17, BUBBLE BEAM
+ - 20, RAZOR SHELL
+ - 20, VISE GRIP
+ - 24, STOMP
+ - 29, FLAIL
+ - 33, AQUA CUTTER
+ - 36, SLAM
+ - 39, BRINE
+ - 40, SWORDS DANCE
+ - 44, CRABHAMMER
+ - 48, GUILLOTINE
 
-- Lv. 23, Chilling Water
-- Lv. 38, Ice Spinner
+### #0099  Kingler
+ - HP: 55 -> 80
+#
+ - 0, CRABHAMMER
+ - 1, HAMMER ARM
+ - 1, BUBBLE
+ - 1, HARDEN
+ - 1, LEER
+ - 1, METAL CLAW
+ - 1, MUD SPORT
+ - 1, WATER GUN
+ - 1, WIDE GUARD
+ - 1, VISE GRIP
+ - 12, MUD SHOT
+ - 16, PROTECT
+ - 19, BUBBLE BEAM
+ - 20, RAZOR SHELL
+ - 24, STOMP
+ - 31, FLAIL
+ - 35, AQUA CUTTER
+ - 42, SLAM
+ - 48, SWORDS DANCE
+ - 51, BRINE
+ - 60, GUILLOTINE
 
-### 0091  Cloyster
+#### Mega Kingler
+ - Ability (1)(2)(H): Tough Claws
+# 
+ - HP: 80
+ - Atk: 170
+ - Def: 135
+ - SpA: 50
+ - SpD: 80
+ - Spe: 85
 
-- Lv. 1, Chilling Water
-- Lv. 42, Ice Spinner
+### #0100  Voltorb (Kanto)
+ - 1, CHARGE
+ - 1, TACKLE
+ - 4, SONIC BOOM
+ - 6, EERIE IMPULSE
+ - 9, SPARK
+ - 11, ROLLOUT
+ - 13, SCREECH
+ - 16, CHARGE BEAM
+ - 18, RAPID SPIN
+ - 20, SWIFT
+ - 22, ELECTRO BALL
+ - 26, SELF DESTRUCT
+ - 29, LIGHT SCREEN
+ - 34, MAGNET RISE
+ - 37, DISCHARGE
+ - 41, EXPLOSION
+ - 46, GYRO BALL
+ - 48, MIRROR COAT
+ - 54, COURT CHANGE
 
-### 0092  Gastly
+### #0100  Voltorb (Hisui)
+ - 1, THUNDER SHOCK
+ - 1, TACKLE
+ - 1, ABSORB
+ - 1, CHARGE
+ - 4, SONIC BOOM
+ - 6, EERIE IMPULSE
+ - 9, SHOCK WAVE
+ - 11, MAGICAL LEAF
+ - 13, SCREECH
+ - 16, CHARGE BEAM
+ - 19, SWIFT
+ - 22, ELECTRO BALL
+ - 24, SELF DESTRUCT
+ - 27, MEGA DRAIN
+ - 29, LIGHT SCREEN
+ - 33, MAGNET RISE
+ - 36, DISCHARGE
+ - 38, GIGA DRAIN
+ - 41, EXPLOSION
+ - 44, ENERGY BALL
+ - 48, MIRROR COAT
+ - 50, GYRO BALL
+ - 54, COURT CHANGE
 
-- Lv. 33, Corrosive Gas
+### #0101  Electrode (Kanto)
+ - Ability (H): Aftermath -> Electric Surge
+#
+ - 0, MAGNETIC FLUX
+ - 1, CHARGE
+ - 1, TACKLE
+ - 1, SONIC BOOM
+ - 1, EERIE IMPULSE
+ - 9, SPARK
+ - 11, ROLLOUT
+ - 13, SCREECH
+ - 16, CHARGE BEAM
+ - 18, RAPID SPIN
+ - 20, SWIFT
+ - 22, ELECTRO BALL
+ - 26, SELF DESTRUCT
+ - 29, LIGHT SCREEN
+ - 36, MAGNET RISE
+ - 41, DISCHARGE
+ - 47, EXPLOSION
+ - 54, GYRO BALL
+ - 58, MIRROR COAT
+ - 60, COURT CHANGE
+ - 65, ZAP CANNON
 
-### 0093  Haunter
-
-- Lv. 39, Corrosive Gas
-
-### 0094  Gengar
-
-ABILITY:  Cursed Body reverted to Levitate.
-
-- Lv. 40, Corrosive Gas
-
-### 0095  Onix
-
-- No change
-
-### 0096  Drowzee
-
-- Lv. 21, Trailblaze
-
-### 0097  Hypno
-
-- Lv. 27, Trailblaze
-- Gets Future Sight again at 61
-
-### 0098  Krabby
-
-- Lv. 17, Bubble Beam
-- Lv. 33, Aqua Cutter
-
-### 0099  Kingler
-
-- Lv. 19, Bubble Beam
-- Lv. 35, Aqua Cutter
-
-### 0100  Voltorb - Kanto
-
-- Lv. 18, Rapid Spin
-- Lv. 54, Court Change
-
-### 0100  Voltorb - Hisui
-
-- Lv. 1, ThunderShock (was 4)
-- Lv. 1, Absorb
-- Lv. 4, Sonic Boom
-- Lv. 6, Eerie Impulse
-- Lv. 9, Shock Wave
-- Lv. 11, Magical Leaf
-- Lv. 19, Swift (was 20)
-- Lv. 24, Self-Destruct (was 26)
-- Lv. 27, Mega Drain
-- Lv. 29, Light Screen
-- Lv. 33, Magnet Rise
-- Lv. 36, Discharge (was 34)
-- Lv. 38, Giga Drain
-- Lv. 44, Energy Ball (was 29)
-- Lv. 48, Mirror Coat
-- Lv. 54, Court Change
-
-### 0101  Electrode - Kanto
-
-- Lv. 0, Magnetic Flux (was 1)
-- Lv. 18, Rapid Spin
-- Lv. 60, Court Change
-- Lv. 65, Zap Cannon
-
-### 0101  Electrode - Hisui
-
-- Lv. 1, ThunderShock (was 4)
-- Lv. 1, Absorb
-- Lv. 4, Sonic Boom
-- Lv. 6, Eerie Impulse
-- Lv. 9, Shock Wave
-- Lv. 11, Magical Leaf
-- Lv. 19, Swift (was 20)
-- Lv. 24, Self-Destruct (was 26)
-- Lv. 27, Mega Drain
-- Lv. 29, Light Screen
-- Lv. 33, Magnet Rise
-- Lv. 38, Discharge (was 34)
-- Lv. 41, Giga Drain
-- Lv. 44, Explosion )was 41
-- Lv. 47, Energy Ball (was 29)
-- Lv. 50, Mirror Coat
-- Lv. 53, Gyro Ball (was 46)
-- Lv. 56, Chloroblast
-- Lv. 62, Court Change
+### #0101  Electrode (Hisui)
+ - 1, THUNDER SHOCK
+ - 1, TACKLE
+ - 1, ABSORB
+ - 1, CHARGE
+ - 4, SONIC BOOM
+ - 6, EERIE IMPULSE
+ - 9, SHOCK WAVE
+ - 11, MAGICAL LEAF
+ - 13, SCREECH
+ - 16, CHARGE BEAM
+ - 19, SWIFT
+ - 22, ELECTRO BALL
+ - 24, SELF DESTRUCT
+ - 27, MEGA DRAIN
+ - 29, LIGHT SCREEN
+ - 33, MAGNET RISE
+ - 38, DISCHARGE
+ - 41, GIGA DRAIN
+ - 44, EXPLOSION
+ - 47, ENERGY BALL
+ - 50, MIRROR COAT
+ - 53, MIRROR COAT
+ - 56, CHLOROBLAST
+ - 62, COURT CHANGE
 
 ## Gen 2
 
