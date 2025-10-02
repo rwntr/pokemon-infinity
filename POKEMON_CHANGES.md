@@ -1,12 +1,6 @@
 # Pokemon Infinity Mon Changes
 
-These mon changes include only changes that were made that do *not* align with either Gen IX standards or changes that were made to mons in Inclement Emerald.  Unless otherwise noted, stat totals are equal to their INCLEMENT EMERALD counterparts, except for Gen VIII and IX Pokemon.
-
-Abilities are equal to their INCLEMENT EMERALD counterparts, unless otherwise stated.  
-
-Movesets contain all moves available by level-up in both Inclement Emerald AND Gen IX.  Moves in both learnsets will be learned at their Inclement Emerald levels unless otherwise noted.  (I.e. if Eevee gets tackle at Lv. 10 in IE and Lv. 15 in Gen 9, it will get it at Lv. 10 in Pokemon Infinity for now.)
-
-
+BST adjustments are listed in contrast to their vanilla Gen 9 values.
 
 Moves learned at level 0 mean they are automatically learned upon evolution, and may be relearned by a move rememberer.
 
@@ -16,725 +10,2444 @@ Moves learned at level 1 are moves that Pokemon may have when encountered in the
 
 ## Gen 1
 
-### 0001  Bulbasaur
+### #0001 Bulbasaur
+ - Ability (2): N/A -> Effect Spore
+#
+ - 1, GROWL
+ - 1, TACKLE
+ - 3, VINE WHIP
+ - 6, GROWTH
+ - 9, LEECH SEED
+ - 12, RAZOR LEAF
+ - 14, TRAILBLAZE
+ - 15, POISON POWDER
+ - 15, SLEEP POWDER
+ - 16, GRASSY GLIDE
+ - 18, SEED BOMB
+ - 21, TAKE DOWN
+ - 24, SWEET SCENT
+ - 26, SNAP TRAP
+ - 27, SYNTHESIS
+ - 30, WORRY SEED
+ - 33, POWER WHIP
+ - 36, SOLAR BEAM
 
-- Lv. 14, Trailblaze (was TM)
-- Lv. 16, Grassy Glide (new)
-- Lv. 26, Snap Trap (new)
-- Lv. 33, Double Edge becomes Power Whip (new).
+### #0002  Ivysaur
+ - Ability (2): N/A -> Effect Spore
+#
+ - 0, SLUDGE
+ - 0, GRASSY GLIDE
+ - 1, GROWL
+ - 1, GROWTH
+ - 1, TACKLE
+ - 1, VINE WHIP
+ - 9, LEECH SEED
+ - 12, RAZOR LEAF
+ - 14, TRAILBLAZE
+ - 15, POISON POWDER
+ - 15, SLEEP POWDER
+ - 20, SEED BOMB
+ - 25, TAKE DOWN
+ - 30, SWEET SCENT
+ - 35, SYNTHESIS
+ - 40, WORRY SEED
+ - 42, SNAP TRAP
+ - 45, POWER WHIP
+ - 50, SOLAR BEAM
 
-### 0002  Ivysaur
+### #0003  Venusaur
+ - Ability (2): N/A -> Thick Fat
+#
+ - 0, PETAL BLIZZARD
+ - 1, PETAL DANCE
+ - 1, GRASSY GLIDE
+ - 1, GROWL
+ - 1, GROWTH
+ - 1, TACKLE
+ - 1, VINE WHIP
+ - 9, LEECH SEED,
+ - 12, RAZOR LEAF
+ - 14, TRAILBLAZE
+ - 15, POISON POWDER
+ - 15, SLEEP POWDER
+ - 20, SEED BOMB
+ - 25, TAKE DOWN
+ - 30, SWEET SCENT
+ - 37, SYNTHESIS
+ - 44, WORRY SEED
+ - 47, SNAP TRAP
+ - 51, POWER WHIP
+ - 58, SOLAR BEAM
 
-- Lv. 0, Grassy Glide (new)
-- Lv. 14, Trailblaze (was TM)
-- Lv. 42, Snap Trap (new)
-- Lv. 45, Double Edge becomes Power Whip (new).
+### #0004 Charmander
+ - Ability (2): N/A -> Flame Body
+#
+ - 1, GROWL
+ - 1, SCRATCH
+ - 4, EMBER
+ - 8, SMOKESCREEN
+ - 12, DRAGON BREATH
+ - 13, METAL CLAW
+ - 15, LEER
+ - 16, DRAGON RAGE
+ - 17, FIRE FANG
+ - 20, SLASH
+ - 24, FLAME BURST
+ - 28, FIRE SPIN
+ - 30, SCARY FACE
+ - 32, FLAMETHROWER
+ - 36, INFERNO
+ - 39, BREAKING SWIPE
+ - 42, FLARE BLITZ
+       
+### #0005 Charmeleon
+ - Ability (2): N/A -> Flame Body
+#
+ - 1, EMBER
+ - 1, GROWL
+ - 1, SCRATCH
+ - 1, SMOKESCREEN
+ - 12, DRAGON BREATH
+ - 13, METAL CLAW
+ - 15, LEER
+ - 17, DRAGON RAGE
+ - 19, FIRE FANG
+ - 24, SLASH
+ - 28, FLAME BURST
+ - 33, FIRE SPIN
+ - 36, SCARY FACE
+ - 42, FLAMETHROWER
+ - 48, INFERNO
+ - 51, BREAKING SWIPE
+ - 54, FLARE BLITZ
+        
+### #0006 Charizard
+ - Ability (2): N/A -> Tough Claws
+#
+ - 0, AIR SLASH
+ - 1, DRAGON CLAW
+ - 1, HEAT WAVE
+ - 1, WING ATTACK
+ - 1, EMBER
+ - 1, GROWL
+ - 1, LEER
+ - 1, SCRATCH
+ - 1, SMOKESCREEN
+ - 1, METAL CLAW
+ - 12, DRAGON BREATH
+ - 17, DRAGON RAGE
+ - 19, FIRE FANG
+ - 24, SLASH
+ - 28, FLAME BURST
+ - 33, FIRE SPIN
+ - 39, SCARY FACE
+ - 46, FLAMETHROWER
+ - 54, INFERNO
+ - 58, BREAKING SWIPE
+ - 62, FLARE BLITZ
+ - 68, RAGING FURY
 
-### 0003  Venusaur
+### #0007 Squirtle
+ - Ability (2): N/A -> Overcoat
+#
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 3, BUBBLE
+ - 6, WITHDRAW
+ - 9, RAPID SPIN
+ - 12, BITE
+ - 13, AQUA JET
+ - 15, BUBBLE BEAM
+ - 16, FLIP TURN
+ - 18, PROTECT
+ - 20, CHILLING WATER
+ - 22, RAIN DANCE
+ - 24, AQUA TAIL
+ - 27, SKULL BASH
+ - 30, IRON DEFENSE
+ - 33, HYDRO PUMP
+ - 36, WAVE CRASH
+ - 39, ICE SPINNER
+ - 45, SHELL SMASH
+        
+### #0008 Wartortle
+ - Ability (2): N/A -> Overcoat
+#
+ - 0, FLIP TURN
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 1, BUBBLE
+ - 1, WITHDRAW
+ - 9, RAPID SPIN
+ - 12, BITE
+ - 13, AQUA JET
+ - 15, BUBBLE BEAM
+ - 20, PROTECT
+ - 22, CHILLING WATER
+ - 25, RAIN DANCE
+ - 30, AQUA TAIL
+ - 35, SKULL BASH
+ - 40, IRON DEFENSE
+ - 45, HYDRO PUMP
+ - 47, ICE SPINNER
+ - 50, WAVE CRASH
+ - 52, SHELL SMASH
+        
+### #0009 Blastoise
+ - Ability (2): N/A -> Mega Launcher
+#
+ - 0, FLASH CANNON
+ - 0, WATER PULSE
+ - 1, FLIP TURN
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 1, BUBBLE
+ - 1, WITHDRAW
+ - 9, RAPID SPIN
+ - 12, BITE
+ - 13, AQUA JET
+ - 20, PROTECT
+ - 23, CHILLING WATER
+ - 25, RAIN DANCE
+ - 30, AQUA TAIL
+ - 35, SKULL BASH
+ - 38, BODY PRESS
+ - 42, IRON DEFENSE
+ - 49, HYDRO PUMP
+ - 53, ICE SPINNER
+ - 56, WAVE CRASH
+ - 60, SHELL SMASH
 
-- Lv. 1, Grassy Glide (new)
-- Lv. 14, Trailblaze (was TM)
-- Lv. 47, Snap Trap (new)
-- Lv. 51, Double Edge becomes Power Whip (new).
-
-### 0004  Charmander
-
-- Lv. 33, Breaking Swipe (new)
-- Lv. 34, Temper Flare (new)
-- Lv. 41, Flare Blitz (From 40)
-
-### 0005  Charmeleon
-
-- Lv. 34, Scary Face (From 37)
-- Lv. 37, Breaking Swipe (new)
-- Lv. 40, Temper Flare (new)
-
-### 0006  Charizard
-
-- Lv. 0, Breaking Swipe (new)
-- Lv. 48, Temper Flare (new)
-- Lv. 68, Raging Fury (new)
-
-### 0007  Squirtle
-
-- Lv. 16, Flip Turn (was TM)
-- Lv. 20, Chilling Water (new)
-- Lv. 22, Rain Dance (was 21 in IE and Vanilla)
-- Lv. 39, Ice Spinner (new)
-
-### 0008  Wartortle
-
-- Lv. 0, Flip Turn (was TM)
-- Lv. 15 Water Pulse from Vanilla has been removed.
-  - With IE's Water Pulse buff, this would be a little broken.
-- Lv. 22, Chilling Water (new)
-- Lv. 47, Ice Spinner (new)
-- Lv. 52, Shell Smash (was 35 in vanilla, was 50 in IE)
-
-### 0009  Blastoise
-
-- Lv. 0, Water Pulse (was 15 in IE and Vanilla)
-- Lv. 1, Flip Turn (was TM)
-- Lv. 23, Chilling Water (new)
-- Lv. 38, Body Press (new)
-- Lv. 53, Ice Spinner (new)
-- Lv. 60, Shell Smash (was 35 in vanilla, was 56 in IE)
-  - Makes room for Wave Crash at 56
-
-### 0010  Caterpie
-
-- No change
-
-### 0011  Metapod
-
-- No change
+### #0010 Caterpie
+ - 1, TACKLE
+ - 1, STRING SHOT
+ - 6, BUG BITE
+        
+### #0011 Metapod
+ - 0, HARDEN
+ - 1, HARDEN
 
 ### 0012  Butterfree
-
-- Lv. 35, Psychic Noise (new)
-
-### 0013  Weedle
-
-- No change
-
-### 0014  Kakuna
-
-- No change
-
-### 0015  Beedrill
-
-Pin missile takes its IE level up value of 23
-
-- Lv. 0 & 1, Fury Attack (was 1 & 11)
-- Lv. 13, Laser Focus (was 14 in vanilla)
-  - Makes room for Lv. 14, Rage
-- Lv. 25, Venoshock (was 23 in vanilla)
-
-### 0016  Pidgey
-
-- Lv. 39, Dual Wingbeat (new)
-
-### 0017  Pidgeotto
-
-- Lv. 45, Dual Wingbeat (new)
-
-### 0018  Pidgeot
-
-- Lv. 47, Dual Wingbeat (new)
-
-### 0019  Rattata - Kanto
-
-- Lv. 9, Laser Focus (was 13 in vanilla)
-- Lv. 11, Bite (was 10 in vanilla and IE)
-- Lv. 18, Take Down (was 16 in vanilla)
-  - In IE this was removed for Lv. 16 Hyper Fang, but I kept both
-- Lv. 20, Assurance (was 19 in IE and vanilla)
-  - Makes evenly spaced room for Take Down & Hyper Fang
-- Lv. 24, Agility (new)
-
-### 0019  Rattata - Alola
-
-- Lv. 1, Tail Whip (was 3 in IE)
-- Lv. 4, Quick Attack (was 6 in IE)
-- Lv. 7, Focus Energy (was 9 in IE)
-- Lv. 9, Bite (was 12 in IE, 10 in Vanilla)
-- Lv. 10, Hone Claws (new)
-- Lv. 12, Pursuit (was 13 in vanilla)
-- Lv. 18, Assurance (was 19 in vanilla)
-- Lv. 20, Crunch (was 18 in IE, 22 in vanilla)
-- Lv. 28, Psychic Fangs (new)
-- Lv. 29, Double Edge (was 27 in IE, 31 in Vanilla)
-- Lv. 33, Swords Dance (new)
-- Lv. 37, Endeavor (was 34 in vanilla)
-- Lv. 39, Knock Off (new)
-
-### 0020  Raticate - Kanto
-
-- Lv. 1, Ice Fang
-- Lv. 1, Fire Fang
-- Lv. 1, Thunder Fang
-- Lv. 9, Laser Focus (was 13 in vanilla)
-- Lv. 11, Bite (was 10 in IE and vanilla)
-- Lv. 18, Take Down (was 16 in vanilla)
-  - In IE this was removed for Lv. 16 Hyper Fang, but I kept both
-- Lv. 21, Assurance (was 19 in IE and vanilla)
-  - Makes evenly spaced room for Take Down & Hyper Fang
-- Lv. 24, Crunch (was 26 in IE)
-- Lv. 27, Agility (new)
-- Lv. 47, Jaw Lock (new)
-- Lv. 55, Giga Impact (new)
-
-### 0020  Raticate - Alola
-
-- Lv. 0, Swords Dance (was 1)
-- Lv. 1, Poison Fang (new)
-- Lv. 9, Laser Focus (was 13 in vanilla)
-- Lv. 11, Bite (was 10 in IE and vanilla)
-- Lv. 18, Take Down (was 16 in vanilla)
-- Lv. 22, Assurance (was 19 in vanilla)
-- Lv. 38, Psychic Fangs (new)
-- Lv. 44, Endeavor (from vanilla)
-- Lv. 47, Jaw Lock (new)
-- Lv. 50, Knock Off (new)
-
-### 0021  Spearow
-
-- Lv. 34, Dual Wingbeat (new)
-
-### 0022  Fearow
-
-- Lv. 38, Dual Wingbeat (new)
-- Lv. 45, Drill Run (from vanilla, IE has it at 0 and we keep it there too.)
-- Lv. 70, Horn Drill (new, tentative)
-
-### 0023  Ekans
-
-- Lv. 18, Acid (was 20 in vanilla)
-- Lv. 27, Trailblaze
-- Lv. 30, Pounce
-- Lv. 32, Mud Bomb (was 33 in IE)
-- Lv. 34, Lash Out (new)
-- Lv. 47, Shed Tail (new, tentative, possibly broken)
-
-### 0024  Ekans
-
-- Lv. 18, Acid (was 20 in vanilla)
-- Lv. 30, Trailblaze
-- Lv. 33, Pounce
-- Lv. 38, Mud Bomb (was 39 in IE)
-- Lv. 40, Lash Out (new)
-- Lv. 46, Psychic Fangs (new)
-- Lv. 59, Shed Tail (new, tentative, possibly broken)
-
-### 0025  Pikachu
-
-- Lv. 27, Trailblaze
-
-### 0026  Raichu - Kanto
-
-- Lv. 35, Trailblaze
-- Lv. 50, Zap Cannon
-
-### 0026  Raichu - Alola
-
-- Lv. 35, Trailblaze
-- Lv. 36, Psyshock
-- Lv. 78, Psystrike
-
-### 0027  Sandshrew - Kanto
-
-- Lv. 16, Bulldoze (was 18 in vanilla)
-- Lv. 28, Agility (was 27 in vanilla)
-- Lv. 36, Night Slash
-
-### 0027  Sandshrew - Alola
-
-- Lv. 36, Ice Spinner
-- Lv. 42 gets both Hail and Snowscape.
-- Lv. 49, Steel Beam
-
-### 0028  Sandslash - Kanto
-
-- Lv. 0, Hone Claws (new)
-- Lv. 16, Bulldoze (was 18 in vanilla)
-- Lv. 31, Agility (only Sandshrew gets this in vanilla???)
-- Lv. 40, Night Slash
-
-### 0028  Sandslash - Alola
-
-- Lv. 16, Bulldoze (was 18 in vanilla)
-- Lv. 40, Ice Spinner
-- Lv. 46 gets both Hail and Snowscape.
-- Lv. 55, Steel Beam
-
-### 0029  Nidoran F
-
-- Lv. 27, Acid Spray (replaces Poison Fang)
-- Lv. 40, Toxic (from vanilla)
-- Lv. 48, Earth Power (was 55 in vanilla)
-
-### 0030  Nidorina
-
-- Lv. 0, 31, Sludge
-- Lv. 47, Toxic (from vanilla)
-- Lv. 50, Earth Power (was 71 in vanilla)
-
-### 0031  Nidoqueen
-
-​	Atk: 92 -> 65
-
-​	Def: 87 -> 92
-
-​	SpA: 75 -> 90
-
-​	SpD: 85 -> 92
-
-- Gets all its missing Lv. 1 moves back from Vanilla.
-- Lv. 1, Sludge
-- Lv. 0, Focus Blast (replaces Superpower)
-- Lv. 0, Venoshock (new)
-- Lv. 40, Sludge Wave (was 1 in vanilla)
-- Lv. 50, Earth Power (was 1 in vanilla)
-- Lv. 60, Hyper Beam
-
-### 0032  Nidoran M
-
-- Lv. 27, Poison Fang (was 45 in Vanilla)
-- Lv. 40, Toxic (from vanilla)
-- Lv. 48, Earthquake
-  - replaces Lv. 55, Earth Power from vanilla
-
-### 0033  Nidorino
-
-- Lv. 0, 31, Poison Tail
-- Lv. 47, Toxic (from vanilla)
-- Lv. 49, Earthquake
-  - replaces Lv. 71, Earth Power from vanilla
-
-### 0034  Nidoking
-
-​	HP: 81 -> 75
-
-​	Atk: 102 -> 110
-
-​	Def: 77 -> 75
-
-- Gets all its missing Lv. 0 & 1 moves back from Vanilla.
-- Lv. 1, Poison Tail
-- Lv. 0, 1, Drill Run
-- Lv. 0, 1, Megahorn (was 58 in IE)
-- Lv. 40, Cross Chop
-- Lv. 50, Earthquake
-  - replaces Lv. 1, Earth Power from vanilla
-- Lv. 60, Head Smash
-
-### 0035  Clefairy
-
-- Lv. 17, Life Dew (was 16 in vanilla)
-- Lv. 52, Misty Explosion
-
-### 0036  Clefable
-
-- Lv. 1, Life Dew
-- Lv. 50, Dual Wingbeat
-- Lv. 55, Misty Explosion
-
-### 0037  Vulpix - Kanto
-
-- Lv. 37, Burning Jealousy
-
-### 0037  Vulpix - Alola
-
-- Lv. 30, Chilling Water
-- Lv. 60, Frost Breath
-
-### 0038  Ninetales - Kanto
-
-- Lv. 42, Burning Jealousy
-- Lv. 63, Psychic Noise
-- Lv. 68, Eerie Spell
-
-### 0038  Ninetales - Alola
-
-- Lv. 1, Chilling Water
-- Lv. 58, Blizzard (was 60 in IE, 1 in vanilla)
-- Lv. 64, Frost Breath
-- Lv. 68, Eerie Spell
-
-### 0039  Jigglypuff
-
-- Lv. 29, Trailblaze
-- Lv. 48, Boomburst
-- Lv. 51, Moonblast
-- Lv. 54, Misty Explosion
-
-### 0040  Wigglytuff
-
-- Lv. 29, Trailblaze
-- Lv. 52, Boomburst
-- Lv. 56, Moonblast
-- Lv. 60, Misty Explosion
-
-### 0041  Zubat
-
-- Lv. 46, Dual Wingbeat
-
-### 0042  Golbat
-
-- Lv. 53, Dual Wingbeat
-
-### 0043  Oddish
-
-- Lv. 21, Trailblaze
-
-### 0044  Gloom
-
-- Lv. 21, Trailblaze
-- Lv. 35, Corrosive Gas
-
-### 0045  Vileplume
-
-- Lv. 0, Grassy Glide
-- Lv. 1, Trailblaze
-- Lv. 41, Corrosive Gas
-
-### 0046  Paras
-
-- No change
-
-### 0047  Parasect
-
-- No change
-
-### 0048  Venonat
-
-- Lv. 33, Psychic Noise
-- Lv. 39, Pounce
-
-### 0049  Venomoth
-
-- Lv. 34, Psychic Noise
-- Lv. 40, Pounce
-
-### 0050  Diglett - Kanto
-
-- Lv. 37, Scorching Sands
-
-### 0050  Diglett - Alola
-
-- Lv. 42, Steel Beam
-
-### 0051  Dugtrio - Kanto
-
-- Lv. 0, Scorching Sands
-
-### 0051  Dugtrio - Alola
-
-- Lv. 52, Steel Beam
-
-### 0050  Diglett - Kanto
-
-- Lv. 37, Scorching Sands
-
-### 0052  Meowth - Kanto
-
-- Lv. 31, Trailblaze
-- Lv. 85, Make It Rain (lol)
-
-### 0052  Meowth - Alola
-
-- Lv. 1, Scratch
-  - Replaces pound.  Dude seriously
-- Lv. 9, Fake Out (was 8 in IE)
-- Lv. 14, Fury Swipes (was 11 in IE)
-- Lv. 17, Screech (was 14 in IE)
-- Lv. 19, Assurance (was 34 in IE, 24 in vanilla)
-- Lv. 22, Feint Attack (was 16 in IE)
-- Lv. 25, Taunt (was 19 in IE)
-- Lv. 28, Pay Day (was 23 in IE)
-- Lv. 31, Trailblaze
-- Lv. 33, Slash (was 41 in IE)
-- Lv. 33, Night Slash (was 25 in IE)
-- Lv. 35, Play Rough (was 44 in Vanilla)
-- Lv. 38, Nasty Plot (was 29 in IE)
-- Lv. 40, Captivate (was 39 in IE)
-- Lv. 50, Dark Pulse
-- Lv. 85, Make It Rain (lol)
-
-### 0052  Meowth - Galar
-
-- Lv. 26, Trailblaze
-- Lv. 48, Close Combat
-- Lv. 52, Steel Beam
-- Lv. 85, Make It Rain
-
-### 0053  Persian - Kanto
-
-- Lv. 34, Trailblaze
-- Lv. 44, Play Rough (was 54 in vanilla and IE)
-- Lv. 47, Feint (was 51 in IE)
-
-### 0053  Persian - Alola
-
-- Lv. 14, Fury Swipes (was 11 in IE)
-- Lv. 17, Screech (was 14 in IE)
-- Lv. 19, Assurance (was 34 in IE, 24 in vanilla)
-- Lv. 22, Feint Attack (was 16 in IE)
-- Lv. 25, Taunt (was 19 in IE)
-- Lv. 28, Pay Day (was 23 in IE)
-- Lv. 30, Power Gem (was 29 in IE)
-- Lv. 34, Trailblaze
-- Lv. 37, Play Rough (was 54 in Vanilla and IE)
-- Lv. 42, Slash (was 46 in IE)
-- Lv. 42, Night Slash (was 23 in IE)
-- Lv. 47, Feint (was 51 in IE)
-- Lv. 51, Dark Pulse
-
-### 0054  Psyduck
-
-- No change
-
-### 0055  Golduck
-
-- Lv. 55, Jet Punch
-
-### 0056  Mankey
-
-- No change
-
-### 0057  Primeape
-
-- No change
-
-### 0058  Growlithe - Kanto
-
-- Lv. 49, Reversal (was 52 in vanilla)
-- Lv. 52, Raging Fury
-
-### 0058  Growlithe - Hisui
-
-- Lv. 1, Howl (was 4)
-- Lv. 1, Rock Throw
-- Lv. 5, Ember (was 1)
-- Lv. 9, Bite (was 8)
-- Lv. 11, Odor Sleuth
-- Lv. 13, Helping Hand (was 16)
-- Lv. 15, Flame Wheel (was 12)
-- Lv. 19, Roar (was 44)
-- Lv. 21, Fire Fang (was 24)
-- Lv 24, Take Down (was 36)
-- Lv. 27, Crunch (was 32)
-- Lv. 30, Rock Slide (was 48)
-- Lv. 32, Agility
-- Lv. 37, Double-Edge
-- Lv. 41, Heat Wave
-- Lv. 45, Outrage
-- Lv. 49, Flare Blitz (was 56)
-- Lv. 55, Head Smash
-
-### 0059  Arcanine - Kanto
-
-- Lv. 64, Raging Fury
-
-### 0059  Arcanine - Hisui
-
-- Lv. 0, Accelerock
-- Lv. 1, Rock Throw
-- Lv. 1, Odor Sleuth
-- Lv. 1, Rock Slide
-- Lv. 1, Take Down
-- Lv. 1, Thunder Fang
-- Lv. 37, Double Edge
-- Lv. 50, Flare Blitz (was 1)
-- Lv. 55, Headlong Rush
-- Lv. 58, Head Smash
-- Lv. 62, ExtremeSpeed (was 0)
-- Lv. 68, Raging Fury
-
-### 0060  Poliwag
-
-- Lv. 27, Chilling Water
-- Lv. 41, Earth Power
-  - replaces Mud Bomb
-
-### 0061  Poliwhirl
-
-- Lv. 29, Chilling Water
-- Lv. 53, Earth Power
-  - replaces Mud Bomb
-
-### 0062  Poliwrath
-
-- Lv. 1, Earth Power
-  - replaces Mud Bomb
-- Lv. 59, Jet Punch
-- Lv. 65, Rage Fist
-
-### 0063  Abra
-
-- No change
-
-### 0064  Kadabra
-
-- Lv. 49, Calm Mind
-- Lv. 52, Focus Blast
-
-### 0065  Alakazam
-
-- Lv. 49, Calm Mind
-- Lv. 52, Focus Blast
-- Lv. 58, Expanding Force
-
-### 0066  Machop
-
-- No change
-
-### 0067  Machoke
-
-- Lv. 60, Double Edge (was 66 in vanilla)
-- Lv. 63, Meteor Assault
-
-### 0068  Machamp
-
-- Lv. 60, Double Edge (was 66 in vanilla)
-- Lv. 63, Meteor Assault
-
-### 0069  Bellsprout
-
-- Lv. 19, Trailblaze
-- Lv. 25, Grassy Glide
-- Lv. 45, Power Whip (was 52 in vanilla)
-
-### 0070  Weepinbell
-
-- Lv. 19, Trailblaze
-- Lv. 26, Grassy Glide
-- Lv. 50, Power Whip (was 58 in vanilla)
-
-### 0071  Victreebel
-
-- Lv. 1, Trailblaze
-- Lv. 1, Grassy Glide
-- Lv. 55, Power Whip (was 58 in vanilla)
-
-### 0072  Tentacool
-
-- Lv. 23, Chilling Water
-- Lv. 36, Flip Turn
-- Lv. 38, Corrosive Gas
-
-### 0073  Tentacruel
-
-- Lv. 23, Chilling Water
-- Lv. 38, Flip Turn
-- Lv. 42, Corrosive Gas
-- Lv. 47, Skitter Smack
-
-### 0074  Geodude - Kanto
-
-- No change
-
-### 0074  Geodude - Alola
-
-- No change
-
-### 0075  Graveler - Kanto
-
-- Lv. 37, Body Press
-
-### 0075  Graveler - Alola
-
-- No change
-
-### 0076  Golem - Kanto
-
-- Lv. 37, Body Press
-
-### 0076  Golem - Alola
-
-- Lv. 68, Supercell Slam
-
-### 0077  Ponyta - Kanto
-
-- No change
-
-### 0077  Ponyta - Galar
-
-ABILITY:  Run Away -> Pixilate
-
-- Lv. 3, Tail Whip (was 5)
-- Lv. 4, Fairy Wind (was 15)
-- Lv. 9, Confusion (was 10)
-- Lv. 13, Eerie Impulse
-- Lv. 16, Swift
-- Lv. 18, Will O Wisp
-- Lv. 30, Calm Mind
-- Lv. 32, Healing Wish (was 55)
-- Lv. 34, Psychic Terrain
-- Lv. 38, Dazzling Gleam
-- Lv. 40, Eerie Spell
-- Lv. 43, Mystical Fire
-- Lv. 46, Psychic (was 50)
-- Lv. 48, Hyper Voice
-- Lv. 49, Moonblast
-- Lv. 52, Expanding Force
-- Lv. 56, Hyper Beam
-- Lv. 60, Magic Powder
-
-### 0078  Rapidash - Kanto
-
-- No change
-
-### 0078  Rapidash - Galar
-
-ABILITY:  Run Away -> Pixilate
-
-- Lv. 0, 42, Dazzling Gleam
-  - Replaces Psycho Cut
-- Lv. 1, Healing Wish
-- Lv. 1, Fairy Wind (was 15)
-- Lv. 1, Psychic Terrain
-- Lv. 14, Eerie Impulse
-- Lv. 17, Swift
-- Lv. 23, Will O Wisp
-- Lv. 26, Agility (was 20)
-- Lv. 28, Psybeam (was 25)
-- Lv. 38, Calm Mind
-- Lv. 40, Eerie Spell
-- Lv. 46, Mystical Fire
-- Lv. 49, Psychic (was 56)
-- Lv. 52, Hyper Voice
-- Lv. 55, Moonblast
-- Lv. 59, Expanding Force
-- Lv. 62, Hyper Beam
-- Lv. 70, Magic Powder
-
-### 0079  Slowpoke - Kanto
-
-- Lv. 17, Chilling Water
-
-### 0079  Slowpoke - Galar
-
-- Lv. 18, Chilling Water
-- Lv. 25, Water Pulse (was 18)
-
-### 0080  Slowbro - Kanto
-
-- Lv. 17, Chilling Water
-- Lv. 34, Body Press
-
-### 0080  Slowbro - Galar
-
-- Lv. 18, Chilling Water
-- Lv. 25, Water Pulse (was 18)
-- Lv. 32, Body Press
-
-### 0081  Magnemite
-
-- Lv. 51, Steel Beam
-
-### 0082  Magneton
-
-- Lv. 0, Twin Beam
-- Lv. 66, Steel Beam
-
-### 0083  Farfetch'd - Kanto
-
-- No change
-
-### 0083  Farfetch'd - Galar
-
-- No change
-
-### 0084  Doduo
-
-- Lv. 24, Trailblaze
-- Lv. 45, Twin Beam
-
-### 0085  Dodrio
-
-- Lv. 0, Twin Beam
-- Lv. 24, Trailblaze
+ - SpA: 90 -> 100
+ - Spe: 70 -> 90
+#
+ - 0, GUST
+ - 1, BUG BITE
+ - 1, HARDEN
+ - 1, STRING SHOT
+ - 1, TACKLE
+ - 4, SUPERSONIC
+ - 8, CONFUSION
+ - 12, POISON POWDER
+ - 12, SLEEP POWDER
+ - 12, STUN SPORE
+ - 16, PSYBEAM
+ - 19, SILVER WIND
+ - 20, WHIRLWIND
+ - 24, AIR SLASH
+ - 28, SAFEGUARD
+ - 32, BUG BUZZ
+ - 35, PSYCHIC NOISE
+ - 36, TAILWIND
+ - 37, CAPTIVATE
+ - 40, RAGE POWDER
+ - 44, QUIVER DANCE
+ - 50, HURRICANE
+ 
+#### Mega Butterfree
+ - Ability (1)(2)(H): Compound Eyes
+#
+ - HP: 60
+ - Atk: 15
+ - Def: 60
+ - SpA: 160
+ - SpD: 120
+ - Spe: 110
+
+### #0013 Weedle
+ - 1, POISON STING
+ - 1, STRING SHOT
+ - 6, BUG BITE
+        
+### #0014 Kakuna
+ - 0, HARDEN
+ - 1, HARDEN
+
+### #0015  Beedrill
+ - Ability (2): N/A -> Merciless
+#
+ - Atl: 90 -> 100
+ - Spe: 70 -> 90
+#
+ - 0, TWINEEDLE
+ - 0, FURY ATTACK
+ - 1, POISON STING
+ - 1, STRING SHOT
+ - 1, HARDEN
+ - 1, BUG BITE
+ - 11, FURY CUTTER
+ - 13, LASER FOCUS
+ - 14, RAGE
+ - 17, PURSUIT
+ - 20, FOCUS ENERGY
+ - 23, PIN MISSILE
+ - 25, VENOSHOCK
+ - 26, ASSURANCE
+ - 29, TOXIC SPIKES
+ - 32, DRILL PECK
+ - 35, POISON JAB
+ - 38, AGILITY
+ - 41, ENDEAVOR
+ - 44, FELL STINGER
+ - 50, MEGAHORN
+ 
+#### Mega Beedrill
+ - Ability (1)(2)(H): Adaptability
+# 
+ - HP: 65
+ - Atk: 160
+ - Def: 60
+ - SpA: 15
+ - SpD: 90
+ - Spe: 145
+
+### #0016 Pidgey
+ - Ability (1): N/A -> No Guard
+#
+ - Atk: 45 -> 36
+ - SpA: 36 -> 45
+#
+ - 1, TACKLE
+ - 5, SAND ATTACK
+ - 9, GUST
+ - 13, QUICK ATTACK
+ - 17, WHIRLWIND
+ - 21, TWISTER
+ - 25, FEATHER DANCE
+ - 29, AGILITY
+ - 33, AIR SLASH
+ - 37, ROOST
+ - 39, DUAL WINGBEAT
+ - 41, TAILWIND
+ - 45, MIRROR MOVE
+ - 49, WING ATTACK
+ - 53, HURRICANE
+        
+### #0017 Pidgeotto
+ - Ability (1): N/A -> No Guard
+#
+ - Atk: 60-> 50
+ - SpA: 50 -> 60
+#
+ - 0, AIR CUTTER
+ - 1, TACKLE
+ - 1, SAND ATTACK
+ - 1, GUST
+ - 17, WHIRLWIND
+ - 22, TWISTER
+ - 27, FEATHER DANCE
+ - 32, AGILITY
+ - 37, AIR SLASH
+ - 42, ROOST
+ - 45, DUAL WINGBEAT
+ - 47, TAILWIND
+ - 52, MIRROR MOVE
+ - 57, WING ATTACK
+ - 62, HURRICANE
+        
+### #0018 Pidgeot
+ - Ability (1): N/A -> No Guard
+#
+ - Atk: 80-> 70
+ - SpA: 70 -> 95
+#
+ - 0, AIR SLASH
+ - 1, TACKLE
+ - 1, SAND ATTACK
+ - 1, GUST
+ - 1, QUICK ATTACK
+ - 17, WHIRLWIND
+ - 22, TWISTER
+ - 27, FEATHER DANCE
+ - 32, AGILITY
+ - 38, WING ATTACK
+ - 44, ROOST
+ - 47, DUAL WINGBEAT
+ - 50, TAILWIND
+ - 56, MIRROR MOVE
+ - 68, HURRICANE
+ 
+#### Mega Pidgeot
+ - Ability (1)(2)(H): No Guard
+# 
+ - HP: 83
+ - Atk: 80
+ - Def: 95
+ - SpA: 135
+ - SpD: 80
+ - Spe: 121 
+
+### #0019 Rattata (Kanto)
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 4, QUICK ATTACK
+ - 7, FOCUS ENERGY
+ - 9, LASER FOCUS
+ - 11, BITE
+ - 13, PURSUIT
+ - 16, HYPER FANG
+ - 18, TAKE DOWN
+ - 20, ASSURANCE
+ - 22, CRUNCH
+ - 24, AGILITY
+ - 25, SUCKER PUNCH
+ - 28, SUPER FANG
+ - 31, DOUBLE EDGE
+ - 34, ENDEAVOR
+         
+### #0019 Rattata (Alola)
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 4, QUICK ATTACK
+ - 7, FOCUS ENERGY
+ - 9, BITE
+ - 10, HONE CLAWS
+ - 12, PURSUIT
+ - 14, SUPER FANG
+ - 18, ASSURANCE
+ - 20, CRUNCH
+ - 21, HYPER FANG
+ - 24, SUCKER PUNCH
+ - 28, PSYCHIC FANGS
+ - 29, DOUBLE EDGE
+ - 33, SWORDS DANCE
+ - 37, ENDEAVOR
+ - 39, KNOCK OFF
+        
+### #0020 Raticate (Kanto)
+ - Ability (1): Run Away -> Strong Jaw
+#
+ - Atk: 81 -> 101
+ - Spe: 97 -> 102
+#
+ - 0, SCARY FACE
+ - 1, ICE FANG
+ - 1, FIRE FANG
+ - 1, THUNDER FANG
+ - 1, SWORDS DANCE
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 1, QUICK ATTACK
+ - 1, FOCUS ENERGY
+ - 11, BITE
+ - 13, PURSUIT
+ - 16, HYPER FANG
+ - 18, TAKE DOWN
+ - 21, ASSURANCE
+ - 24, CRUNCH
+ - 27, AGILITY
+ - 29, SUCKER PUNCH
+ - 34, SUPER FANG
+ - 39, DOUBLE EDGE
+ - 44, ENDEAVOR
+ - 47, JAW LOCK
+ - 55, GIGA IMPACT
+        
+### #0020 Raticate (Alola)
+ - Ability (2): Hustle -> Strong Jaw
+ - Ability (H): Thick Fat -> Hustle
+#
+ - Atk: 71 -> 86
+ - Def: 70 -> 80
+#
+ - 0, SWORDS DANCE
+ - 1, ICE FANG
+ - 1, FIRE FANG
+ - 1, THUNDER FANG
+ - 1, COUNTER
+ - 1, FURY SWIPES
+ - 1, TACKLE
+ - 1, TAIL WHIP
+ - 1, QUICK ATTACK
+ - 1, FOCUS ENERGY
+ - 12, BITE
+ - 15, SUPER FANG
+ - 18, CRUNCH
+ - 22, ASSURANCE
+ - 26, HYPER FANG
+ - 34, SUCKER PUNCH
+ - 38, PSYCHIC FANGS
+ - 42, DOUBLE EDGE
+ - 44, ENDEAVOR
+ - 47, JAW LOCK
+ - 50, KNOCK OFF
+
+### #0021 Spearow
+ - 1, PECK
+ - 1, GROWL
+ - 4, LEER
+ - 8, PURSUIT
+ - 11, FURY ATTACK
+ - 15, AERIAL ACE
+ - 18, MIRROR MOVE
+ - 22, ASSURANCE
+ - 25, AGILITY
+ - 29, FOCUS ENERGY
+ - 32, ROOST
+ - 34, DUAL WINGBEAT
+ - 36, DRILL PECK
+ 
+### #0022 Fearow
+ - Ability (1): Keen Eye -> Intimidate
+ - Ability (2): N/A -> Keen Eye
+#
+ - Atk: 90 -> 110
+ - Def: 65 -> 75
+ - SpD: 61 -> 71
+#
+ - 0, DRILL RUN
+ - 1, PLUCK
+ - 1, PECK
+ - 1, GROWL
+ - 1, LEER
+ - 1, PURSUIT
+ - 11, FURY ATTACK
+ - 15, AERIAL ACE
+ - 18, MIRROR MOVE
+ - 23, ASSURANCE
+ - 27, AGILITY
+ - 32, FOCUS ENERGY
+ - 36, ROOST
+ - 38, DUAL WINGBEAT
+ - 41, DRILL PECK
+ - 45, DRILL RUN
+ - 70, HORN DRILL (TENTATIVE)
+
+### #0023  Ekans
+ - 1, WRAP
+ - 1, LEER
+ - 4, POISON STING
+ - 9, BITE
+ - 12, GLARE
+ - 17, SCREECH
+ - 18, ACID
+ - 20, POISON FANG
+ - 23, INFESTATION
+ - 25, STOCKPILE
+ - 25, SWALLOW
+ - 25, SPIT UP
+ - 27, TRAILBLAZE
+ - 28, ACID SPRAY
+ - 30, POUNCE
+ - 32, MUD BOMB
+ - 34, LASH OUT
+ - 36, GASTRO ACID
+ - 38, BELCH
+ - 41, HAZE
+ - 44, COIL
+ - 47, SHED TAIL
+ - 49, GUNK SHOT
+
+### #0024  Arbok
+#### ~~Poison~~ -> **Poison/Dark**
+#
+ - HP: 60 -> 80
+ - Atk: 95 -> 105
+ - Def: 69 -> 79
+# 
+ - 0, CRUNCH
+ - 1, ICE FANG
+ - 1, THUNDER FANG
+ - 1, FIRE FANG
+ - 1, WRAP
+ - 1, LEER
+ - 1, POISON STING
+ - 1, BITE
+ - 12, GLARE
+ - 17, SCREECH
+ - 18, ACID
+ - 20, POISON FANG
+ - 23, INFESTATION
+ - 27, STOCKPILE
+ - 27, SWALLOW
+ - 27, SPIT UP
+ - 30, TRAILBLAZE
+ - 32, ACID SPRAY
+ - 33, POUNCE
+ - 35, POISON JAB
+ - 38, MUD BOMB
+ - 40, LASH OUT
+ - 44, GASTRO ACID
+ - 46, PSYCHIC FANGS
+ - 48, BELCH
+ - 51, HAZE
+ - 56, COIL
+ - 59, SHED TAIL (TENTATIVE)
+ - 63, GUNK SHOT
+
+### #0025 Pikachu
+ - 0, ELECTRO BALL
+ - 1, CHARM
+ - 1, GROWL
+ - 1, NASTY PLOT
+ - 1, NUZZLE
+ - 1, PLAY NICE
+ - 1, QUICK ATTACK
+ - 1, SWEET KISS
+ - 1, TAIL WHIP
+ - 1, THUNDER SHOCK
+ - 4, THUNDER WAVE
+ - 8, DOUBLE TEAM
+ - 12, FEINT
+ - 16, SPARK
+ - 20, AGILITY
+ - 24, SWIFT
+ - 26, SLAM
+ - 27, TRAILBLAZE
+ - 28, DISCHARGE
+ - 32, THUNDERBOLT
+ - 36, LIGHT SCREEN
+ - 40, THUNDER
+ - 44, WILD CHARGE
+ - 48, EXTREME SPEED
+
+### #0026  Raichu (Kanto)
+ - Spe: 110 -> 115
+#
+ - 0, THUNDER PUNCH
+ - 1, AGILITY
+ - 1, CHARM
+ - 1, DISCHARGE
+ - 1, DOUBLE TEAM
+ - 1, ELECTRO BALL
+ - 1, FEINT
+ - 1, GROWL
+ - 1, LIGHT SCREEN
+ - 1, NASTY PLOT
+ - 1, NUZZLE
+ - 1, PLAY NICE
+ - 1, QUICK ATTACK
+ - 1, SLAM
+ - 1, SPARK
+ - 1, SWEET KISS
+ - 1, TAIL WHIP
+ - 1, THUNDER SHOCK
+ - 1, THUNDER WAVE
+ - 35, TRAILBLAZE
+ - 38, THUNDERBOLT
+ - 46, THUNDER
+ - 50, ZAP CANNON
+ - 54, EXTREME SPEED
+
+### #0026  Raichu (Alola)
+ - Spe: 110 -> 115
+#
+ - 0, PSYBEAM
+ - 1, SPEED SWAP
+ - 1, AGILITY
+ - 1, CHARM
+ - 1, DISCHARGE
+ - 1, DOUBLE TEAM
+ - 1, ELECTRO BALL
+ - 1, FEINT
+ - 1, GROWL
+ - 1, LIGHT SCREEN
+ - 1, NASTY PLOT
+ - 1, NUZZLE
+ - 1, PLAY NICE
+ - 1, QUICK ATTACK
+ - 1, SLAM
+ - 1, SPARK
+ - 1, SWEET KISS
+ - 1, TAIL WHIP
+ - 1, THUNDER SHOCK
+ - 1, THUNDER WAVE
+ - 30, PSYCHIC
+ - 35, TRAILBLAZE
+ - 36, PSYSHOCK
+ - 38, THUNDERBOLT
+ - 46, THUNDER
+ - 54, EXTREME SPEED
+ - 78, PSYSTRIKE
+
+### #0027  Sandshrew (Kanto)
+ - 1, SCRATCH
+ - 1, DEFENSE CURL
+ - 3, SAND ATTACK
+ - 5, POISON STING
+ - 7, ROLLOUT
+ - 9, RAPID SPIN
+ - 11, FURY CUTTER
+ - 14, MAGNITUDE
+ - 16, BULLDOZE
+ - 17, SWIFT
+ - 20, FURY SWIPES
+ - 23, SAND TOMB
+ - 26, SLASH
+ - 28, AGILITY
+ - 30, DIG
+ - 34, GYRO BALL
+ - 36, NIGHT SLASH
+ - 38, SWORDS DANCE
+ - 42, SANDSTORM
+ - 46, EARTHQUAKE
+
+### #0027  Sandshrew (Alola)
+ - 1, DEFENSE CURL
+ - 1, SCRATCH
+ - 1, ICE SHARD
+ - 3, BIDE
+ - 5, POWDER SNOW
+ - 7, ICE BALL
+ - 9, RAPID SPIN
+ - 11, FURY CUTTER
+ - 14, METAL CLAW
+ - 17, SWIFT
+ - 20, FURY SWIPES
+ - 23, IRON DEFENSE
+ - 26, SLASH
+ - 30, IRON HEAD
+ - 34, GYRO BALL
+ - 36, ICE SPINNER
+ - 38, SWORDS DANCE
+ - 42, HAIL
+ - 42, SNOWSCAPE
+ - 46, BLIZZARD
+ - 49, STEEL BEAM
+
+### #0028  Sandslash (Kanto)
+ - HP: 75 -> 95
+ - Atk: 100 -> 110
+#
+ - 0, CRUSH CLAW
+ - 0, HONE CLAWS
+ - 1, SCRATCH
+ - 1, DEFENSE CURL
+ - 1, SAND ATTACK
+ - 1, POISON STING
+ - 7, ROLLOUT
+ - 9, RAPID SPIN
+ - 11, FURY CUTTER
+ - 14, MAGNITUDE
+ - 16, BULLDOZE
+ - 17, SWIFT
+ - 20, FURY SWIPES
+ - 24, SAND TOMB
+ - 28, SLASH
+ - 31, AGILITY
+ - 33, DIG
+ - 36, SPIKY SHIELD
+ - 38, GYRO BALL
+ - 40, NIGHT SLASH
+ - 43, SWORDS DANCE
+ - 48, SANDSTORM
+ - 53, EARTHQUAKE
+
+### #0028  Sandslash (Alola)
+ - HP: 75 -> 95
+ - Atk: 100 -> 110
+#
+ - 0, ICICLE SPEAR
+ - 1, ICICLE CRASH
+ - 1, METAL BURST
+ - 1, ICE BALL
+ - 1, RAPID SPIN
+ - 1, FURY CUTTER
+ - 1, METAL CLAW
+ - 1, SWIFT
+ - 1, FURY SWIPES
+ - 1, IRON DEFENSE
+ - 1, SLASH
+ - 1, COUNTER
+ - 1, SCRATCH
+ - 1, ICE SHARD
+ - 1, DEFENSE CURL
+ - 1, SCRATCH
+ - 1, BIDE
+ - 1, POWDER SNOW
+ - 34, IRON HEAD
+ - 36, SPIKY SHIELD
+ - 38, GYRO BALL
+ - 40, ICE SPINNER
+ - 42, SWORDS DANCE
+ - 46, HAIL
+ - 46, SNOWSCAPE
+ - 50, BLIZZARD
+ - 55, STEEL BEAM
+
+### #0029 Nidoran (Female)
+ - 1, GROWL
+ - 1, SCRATCH
+ - 7, TAIL WHIP
+ - 9, DOUBLE KICK
+ - 13, POISON STING
+ - 19, FURY SWIPES
+ - 21, BITE
+ - 25, HELPING HAND
+ - 27, POISON FANG
+ - 31, TOXIC SPIKES
+ - 33, FLATTER
+ - 37, CRUNCH
+ - 40, TOXIC
+ - 43, CAPTIVATE
+ - 48, EARTH POWER
+        
+### #0030 Nidorina
+ - 0, SLUDGE
+ - 1, GROWL
+ - 1, SCRATCH
+ - 7, TAIL WHIP
+ - 9, DOUBLE KICK
+ - 13, POISON STING
+ - 20, FURY SWIPES
+ - 23, BITE
+ - 28, HELPING HAND
+ - 31, SLUDGE
+ - 35, TOXIC SPIKES
+ - 38, FLATTER
+ - 43, CRUNCH
+ - 47, TOXIC
+ - 50, CAPTIVATE
+ - 55, EARTH POWER
+
+### #0031  Nidoqueen
+ - Atk: 92 -> 65
+ - Def: 87 -> 92
+ - SpA: 75 -> 90
+ - SpD: 85 -> 92
+#
+ - 0, FOCUS BLAST
+ - 1, SCRATCH
+ - 1, TAIL WHIP
+ - 1, DOUBLE KICK
+ - 1, BITE
+ - 1, HELPING HAND
+ - 1, FURY SWIPES
+ - 1, POISON STING
+ - 1, SLUDGE
+ - 1, TOXIC SPIKES
+ - 1, TOXIC
+ - 1, FLATTER
+ - 1, CRUNCH
+ - 1, GROWL
+ - 23, CHIP AWAY
+ - 35, BODY SLAM
+ - 40, SLUDGE WAVE
+ - 50, EARTH POWER
+ - 60, HYPER BEAM
+
+### #0032  Nidoran (Male)
+ - 1, LEER
+ - 1, PECK
+ - 7, FOCUS ENERGY
+ - 9, DOUBLE KICK
+ - 13, POISON STING
+ - 19, FURY ATTACK
+ - 21, HORN ATTACK
+ - 25, HELPING HAND
+ - 27, POISON FANG
+ - 31, TOXIC SPIKES
+ - 33, FLATTER
+ - 37, POISON JAB
+ - 43, CAPTIVATE
+ - 45, HORN DRILL
+ - 48, EARTHQUAKE
+        
+### #0033 Nidorino
+ - 0, POISON TAIL
+ - 1, LEER
+ - 1, PECK
+ - 7, FOCUS ENERGY
+ - 9, DOUBLE KICK
+ - 13, POISON STING
+ - 20, FURY ATTACK
+ - 23, HORN ATTACK
+ - 28, HELPING HAND
+ - 31, POISON TAIL
+ - 35, TOXIC SPIKES
+ - 38, FLATTER
+ - 43, POISON JAB
+ - 47, TOXIC
+ - 49, EARTHQUAKE
+ - 50, CAPTIVATE
+ - 58, HORN DRILL
+
+### #0034  Nidoking
+ - HP: 81 -> 75
+ - Atk: 102 -> 110
+ - Def: 77 -> 75
+#
+ - 0, MEGAHORN
+ - 0, DRILL RUN
+ - 1, POISON TAIL
+ - 1, MEGAHORN
+ - 1, DRILL RUN
+ - 1, FURY ATTACK
+ - 1, TOXIC SPIKES
+ - 1, PECK
+ - 1, HORN ATTACK
+ - 1, HELPING HAND
+ - 1, TOXIC
+ - 1, FOCUS ENERGY
+ - 1, DOUBLE KICK
+ - 1, POISON STING
+ - 1, FLATTER
+ - 1, POISON JAB
+ - 23, CHIP AWAY
+ - 35, THRASH
+ - 40, CROSS CHOP
+ - 50, EARTHQUAKE
+ - 60, HEAD SMASH
+
+### #0035 Clefairy
+ - 1, SPOTLIGHT
+ - 1, DISARMING VOICE
+ - 1, POUND
+ - 1, GROWL
+ - 1, ENCORE
+ - 7, SING
+ - 10, DOUBLE SLAP
+ - 13, DEFENSE CURL
+ - 16, FOLLOW ME
+ - 17, LIFE DEW
+ - 19, BESTOW
+ - 22, WAKE UP SLAP
+ - 25, MINIMIZE
+ - 28, STORED POWER
+ - 31, METRONOME
+ - 34, COSMIC POWER
+ - 37, LUCKY CHANT
+ - 40, BODY SLAM
+ - 43, MOONLIGHT
+ - 46, MOONBLAST
+ - 49, GRAVITY
+ - 50, METEOR MASH
+ - 52, MISTY EXPLOSION
+ - 55, HEALING WISH
+ - 58, AFTER YOU
+        
+### #0036 Clefable
+ - 1, AFTER YOU
+ - 1, SPOTLIGHT
+ - 1, STORED POWER
+ - 1, CHARM
+ - 1, COPYCAT
+ - 1, COSMIC POWER
+ - 1, DEFENSE CURL
+ - 1, DISARMING VOICE
+ - 1, DOUBLE SLAP
+ - 1, ENCORE
+ - 1, FOLLOW ME
+ - 1, GRAVITY
+ - 1, GROWL
+ - 1, HEALING WISH
+ - 1, METEOR MASH
+ - 1, METRONOME
+ - 1, MINIMIZE
+ - 1, MOONLIGHT
+ - 1, POUND
+ - 1, SING
+ - 1, SPLASH
+ - 1, SWEET KISS
+ - 1, LIFE DEW
+ - 50, DUAL WINGBEAT
+ - 52, MOONBLAST
+ - 55, MISTY EXPLOSION
+        
+### #0037 Vulpix
+ - 1, EMBER
+ - 1, TAIL WHIP
+ - 4, DISABLE
+ - 7, ROAR
+ - 8, QUICK ATTACK
+ - 9, BABY DOLL EYES
+ - 12, SPITE
+ - 16, INCINERATE
+ - 18, PAYBACK
+ - 20, CONFUSE RAY
+ - 23, FEINT ATTACK
+ - 24, WILL O WISP
+ - 26, HEX
+ - 28, EXTRASENSORY
+ - 28, FLAME BURST
+ - 32, FLAMETHROWER
+ - 36, IMPRISON
+ - 37, BURNING JEALOUSY
+ - 40, FIRE SPIN
+ - 44, SAFEGUARD
+ - 47, CAPTIVATE
+ - 48, INFERNO
+ - 52, GRUDGE
+ - 56, FIRE BLAST
+
+### #0037  Vulpix (Alola)
+- 1, POWDER SNOW
+ - 1, TAIL WHIP
+ - 4, DISABLE
+ - 7, ROAR
+ - 8, ICE SHARD
+ - 9, BABY DOLL EYES
+ - 12, SPITE
+ - 16, ICY WIND
+ - 18, PAYBACK
+ - 20, CONFUSE RAY
+ - 23, FEINT ATTACK
+ - 24, AURORA BEAM
+ - 26, HEX
+ - 28, EXTRASENSORY
+ - 30, CHILLING WATER
+ - 32, ICE BEAM
+ - 34, SAFEGUARD
+ - 36, IMPRISON
+ - 40, MIST
+ - 44, AURORA VEIL
+ - 47, CAPTIVATE
+ - 48, SHEER COLD
+ - 52, GRUDGE
+ - 56, BLIZZARD
+ - 60, FROST BREATH
+
+### #0038  Ninetales (Kanto)
+#### ~~Fire~~ -> **Fire/Fairy**
+#
+ - SpA: 81 -> 91
+#
+ - Ability (2): N/A -> Pyromancy
+#
+ - 0, MOONBLAST
+ - 1, NASTY PLOT
+ - 1, EMBER
+ - 1, TAIL WHIP
+ - 1, DISABLE
+ - 1, ROAR
+ - 1, QUICK ATTACK
+ - 1, BABY DOLL EYES
+ - 1, SPITE
+ - 1, INCINERATE
+ - 1, PAYBACK
+ - 1, CONFUSE RAY
+ - 1, FEINT ATTACK
+ - 1, WILL O WISP
+ - 1, HEX
+ - 1, EXTRASENSORY
+ - 1, FLAME BURST
+ - 36, FLAMETHROWER
+ - 40, IMPRISON
+ - 42, BURNING JEALOUSY
+ - 44, FIRE SPIN
+ - 47, SAFEGUARD
+ - 48, CAPTIVATE
+ - 52, INFERNO
+ - 56, GRUDGE
+ - 60, FIRE BLAST
+ - 63, PSYCHIC NOISE
+ - 68, EERIE SPELL
+
+### #0038  Ninetales (Alola)
+ - SpA: 81 -> 91
+#
+ - 0, DAZZLING GLEAM
+ - 1, NASTY PLOT
+ - 1, ICE SHARD
+ - 1, BABY DOLL EYES
+ - 1, SPITE
+ - 1, ICY WIND
+ - 1, PAYBACK
+ - 1, CONFUSE RAY
+ - 1, FEINT ATTACK
+ - 1, AURORA BEAM
+ - 1, HEX
+ - 1, EXTRASENSORY
+ - 1, POWDER SNOW
+ - 1, TAIL WHIP
+ - 1, DISABLE
+ - 1, ROAR
+ - 1, CHILLING WATER
+ - 34, ICE BEAM
+ - 36, SAFEGUARD
+ - 40, IMPRISON
+ - 44, MIST
+ - 47, AURORA VEIL
+ - 48, CAPTIVATE
+ - 52, SHEER COLD
+ - 56, GRUDGE
+ - 58, BLIZZARD
+ - 60, MOONBLAST
+ - 64, FROST BREATH
+ - 68, EERIE SPELL
+
+### 0039  #Jigglypuff
+ - Ability (1): Cute Charm -> Fur Coat
+#
+ - HP: 115 -> 105
+ - SpA: 45 -> 65
+ - SpD: 25 -> 35
+#
+ - 1, SING
+ - 3, DEFENSE CURL
+ - 5, POUND
+ - 9, PLAY NICE
+ - 11, DISARMING VOICE
+ - 14, DISABLE
+ - 17, DOUBLE SLAP
+ - 20, ROLLOUT
+ - 22, ROUND
+ - 25, STOCKPILE
+ - 25, SWALLOW
+ - 25, SPIT UP
+ - 27, WAKE UP SLAP
+ - 29, TRAILBLAZE
+ - 30, REST
+ - 32, BODY SLAM
+ - 35, GYRO BALL
+ - 38, MIMIC
+ - 41, HYPER VOICE
+ - 45, DOUBLE EDGE
+ - 48, BOOMBURST
+ - 51, MOONBLAST
+ - 54, MISTY EXPLOSION
+
+### #0040  Wigglytuff
+ - Ability (1): Cute Charm -> Fur Coat
+#
+ - HP: 140 -> 120
+ - SpA: 85 -> 105
+ - SpD: 50 -> 60
+#
+ - 1, PLAY ROUGH
+ - 1, POUND
+ - 1, PLAY NICE
+ - 1, DISARMING VOICE
+ - 1, ROLLOUT
+ - 1, ROUND
+ - 1, STOCKPILE
+ - 1, SWALLOW
+ - 1, SPIT UP
+ - 1, WAKE UP SLAP
+ - 1, REST
+ - 1, SING
+ - 1, DEFENSE CURL
+ - 1, DISABLE
+ - 1, DOUBLE SLAP
+ - 29, TRAILBLAZE
+ - 34, BODY SLAM
+ - 37, GYRO BALL
+ - 41, MIMIC
+ - 45, HYPER VOICE
+ - 48, DOUBLE EDGE
+ - 52, BOOMBURST
+ - 56, MOONBLAST
+ - 60, MISTY EXPLOSION
+
+### #0041 Zubat
+ - 1, ABSORB
+ - 5, SUPERSONIC
+ - 7, ASTONISH
+ - 11, BITE
+ - 13, AERIAL ACE
+ - 17, CONFUSE RAY
+ - 19, AIR CUTTER
+ - 23, SWIFT
+ - 25, POISON FANG
+ - 29, MEAN LOOK
+ - 31, LEECH LIFE
+ - 33, WING ATTACK
+ - 35, HAZE
+ - 37, VENOSHOCK
+ - 41, AIR SLASH
+ - 43, QUICK GUARD
+ - 46, DUAL WINGBEAT
+        
+### #0042 Golbat
+ - 0, SCREECH
+ - 1, ABSORB
+ - 1, SUPERSONIC
+ - 1, ASTONISH
+ - 1, BITE
+ - 13, AERIAL ACE
+ - 17, CONFUSE RAY
+ - 19, AIR CUTTER
+ - 24, SWIFT
+ - 27, POISON FANG
+ - 32, MEAN LOOK
+ - 35, LEECH LIFE
+ - 37, WING ATTACK
+ - 40, HAZE
+ - 43, VENOSHOCK
+ - 48, AIR SLASH
+ - 51, QUICK GUARD
+ - 53, DUAL WINGBEAT
+
+### #0043 Oddish
+ - 1, ABSORB
+ - 1, GROWTH
+ - 4, ACID
+ - 8, SWEET SCENT
+ - 12, MEGA DRAIN
+ - 14, POISON POWDER
+ - 16, STUN SPORE
+ - 18, SLEEP POWDER
+ - 20, GIGA DRAIN
+ - 21, TRAILBLAZE
+ - 23, LUCKY CHANT
+ - 24, TOXIC
+ - 28, MOONBLAST
+ - 32, GRASSY TERRAIN
+ - 36, MOONLIGHT
+ - 39, NATURAL GIFT
+ - 40, PETAL DANCE
+ - 46, SOLAR BEAM
+        
+### #0044 Gloom
+ - 1, ABSORB
+ - 1, ACID
+ - 1, GROWTH
+ - 1, SWEET SCENT
+ - 12, MEGA DRAIN
+ - 14, POISON POWDER
+ - 16, STUN SPORE
+ - 18, SLEEP POWDER
+ - 20, GIGA DRAIN
+ - 21, TRAILBLAZE
+ - 24, LUCKY CHANT
+ - 26, TOXIC
+ - 32, MOONBLAST
+ - 35, CORROSIVE GAS
+ - 38, GRASSY TERRAIN
+ - 44, MOONLIGHT
+ - 44, NATURAL GIFT
+ - 49, PETAL BLIZZARD
+ - 50, PETAL DANCE
+ - 52, SOLAR BEAM
+
+### #0045  Vileplume
+ - HP: 75 -> 85
+ - Atk: 80 -> 60
+ - Def: 85 -> 95
+ - SpA: 110 -> 120
+ - SpD: 90 -> 100
+#
+ - 0, PETAL BLIZZARD
+ - 0, GRASSY GLIDE
+ - 1, PETAL DANCE
+ - 1, MEGA DRAIN
+ - 1, POISON POWDER
+ - 1, STUN SPORE
+ - 1, SLEEP POWDER
+ - 1, GIGA DRAIN
+ - 1, LUCKY CHANT
+ - 1, TOXIC
+ - 1, ABSORB
+ - 1, ACID
+ - 1, GROWTH
+ - 1, SWEET SCENT
+ - 1, TRAILBLAZE
+ - 38, MOONBLAST
+ - 41, CORROSIVE GAS
+ - 44, GRASSY TERRAIN
+ - 49, MOONLIGHT
+ - 49, NATURAL GIFT
+ - 52, SOLAR BEAM
+ - 57, EARTH POWER
+
+### #0046 Paras
+ - 1, SCRATCH
+ - 6, STUN SPORE
+ - 6, POISON POWDER
+ - 11, ABSORB
+ - 13, FURY CUTTER
+ - 17, SPORE
+ - 20, SLASH
+ - 23, X SCISSOR
+ - 26, GROWTH
+ - 30, GIGA DRAIN
+ - 34, LEECH LIFE
+ - 38, AROMATHERAPY
+ - 41, RAGE POWDER
+        
+### #0047 Parasect
+ - HP: 60 -> 80
+ - Atk: 95 -> 115
+ - Def: 80 -> 95
+ - SpD: 80 -> 95
+#
+ - 0, CROSS POISON
+ - 1, SCRATCH
+ - 1, STUN SPORE
+ - 1, POISON POWDER
+ - 1, ABSORB
+ - 13, FURY CUTTER
+ - 17, SPORE
+ - 20, SLASH
+ - 23, X SCISSOR
+ - 27, GROWTH
+ - 32, GIGA DRAIN
+ - 36, LEECH LIFE
+ - 40, CRABHAMMER
+ - 44, AROMATHERAPY
+ - 47, RAGE POWDER
+        
+### #0048 Venonat
+ - 1, TACKLE
+ - 1, DISABLE
+ - 1, FORESIGHT
+ - 5, SUPERSONIC
+ - 11, CONFUSION
+ - 13, POISON POWDER
+ - 17, PSYBEAM
+ - 23, STUN SPORE
+ - 25, SIGNAL BEAM
+ - 29, SLEEP POWDER
+ - 33, PSYCHIC NOISE
+ - 35, LEECH LIFE
+ - 37, ZEN HEADBUTT
+ - 39, POUNCE
+ - 41, POISON FANG
+ - 47, PSYCHIC
+        
+### #0049 Venomoth
+ - SpA: 90 -> 100
+ - Spe: 90 -> 100
+#
+ - 0, GUST
+ - 0, SILVER WIND
+ - 1, TACKLE
+ - 1, DISABLE
+ - 1, FORESIGHT
+ - 1, SUPERSONIC
+ - 11, CONFUSION
+ - 13, POISON POWDER
+ - 17, PSYBEAM
+ - 23, STUN SPORE
+ - 25, SIGNAL BEAM
+ - 29, SLEEP POWDER
+ - 34, PSYCHIC NOISE
+ - 37, LEECH LIFE
+ - 40, POUNCE
+ - 41, ZEN HEADBUTT
+ - 47, POISON FANG
+ - 55, PSYCHIC
+ - 59, BUG BUZZ
+ - 63, QUIVER DANCE
+
+### #0050 Diglett (Kanto)
+ - 1, SAND ATTACK
+ - 1, SCRATCH
+ - 4, GROWL
+ - 7, ASTONISH
+ - 10, MUD SLAP
+ - 14, MAGNITUDE
+ - 18, BULLDOZE
+ - 22, SUCKER PUNCH
+ - 25, MUD BOMB
+ - 28, EARTH POWER
+ - 31, DIG
+ - 35, SLASH
+ - 37, SCORCHING SANDS
+ - 39, EARTHQUAKE
+ - 43, FISSURE
+ 
+### #0050 Diglett (Alola)
+ - 1, METAL CLAW
+ - 1, SAND ATTACK
+ - 4, GROWL
+ - 8, ASTONISH
+ - 12, MUD SLAP
+ - 14, MAGNITUDE
+ - 16, BULLDOZE
+ - 20, SUCKER PUNCH
+ - 24, IRON HEAD
+ - 25, MUD BOMB
+ - 28, SANDSTORM
+ - 32, DIG
+ - 36, EARTH POWER
+ - 40, EARTHQUAKE
+ - 42, STEEL BEAM
+ - 44, FISSURE
+        
+### #0051 Dugtrio (Kanto)
+ - 0, SAND TOMB
+ - 0, SCORCHING SANDS
+ - 1, ROTOTILLER
+ - 1, NIGHT SLASH
+ - 1, TRI ATTACK
+ - 1, SCRATCH
+ - 1, SAND ATTACK
+ - 1, GROWL
+ - 7, ASTONISH
+ - 10, MUD SLAP
+ - 14, MAGNITUDE
+ - 18, BULLDOZE
+ - 22, SUCKER PUNCH
+ - 25, MUD BOMB
+ - 30, EARTH POWER
+ - 35, DIG
+ - 41, SLASH
+ - 47, EARTHQUAKE
+ - 53, FISSURE
+        
+### #0051 Dugtrio (Alola)
+ - 0, SAND TOMB
+ - 1, TRI ATTACK
+ - 1, NIGHT SLASH
+ - 1, ROTOTILLER
+ - 1, SAND ATTACK
+ - 1, SCRATCH
+ - 1, ASTONISH
+ - 1, GROWL
+ - 12, MUD SLAP
+ - 14, MAGNITUDE
+ - 16, BULLDOZE
+ - 20, SUCKER PUNCH
+ - 21, FURY SWIPES
+ - 24, SLASH
+ - 25, MUD BOMB
+ - 30, SANDSTORM
+ - 36, DIG
+ - 42, EARTH POWER
+ - 48, EARTHQUAKE
+ - 52, STEEL BEAM
+ - 54, FISSURE
+      
+### #0052 Meowth (Kanto)
+ - 1, SCRATCH
+ - 1, GROWL
+ - 5, BITE
+ - 8, FAKE OUT
+ - 11, FURY SWIPES
+ - 14, SCREECH
+ - 16, FEINT ATTACK
+ - 19, TAUNT
+ - 23, PAY DAY
+ - 25, SLASH
+ - 29, NASTY PLOT
+ - 31, TRAILBLAZE
+ - 34, ASSURANCE
+ - 39, CAPTIVATE
+ - 41, NIGHT SLASH
+ - 43, FEINT
+ - 85, MAKE IT RAIN (TENTATIVE)
+
+### 0052  Meowth (Alola)
+ - 1, SCRATCH
+ - 1, GROWL
+ - 6, BITE
+ - 9, FAKE OUT
+ - 14, FURY SWIPES
+ - 17, SCREECH
+ - 19, ASSURANCE
+ - 22, FEINT ATTACK
+ - 25, TAUNT
+ - 28, PAY DAY
+ - 31, TRAILBLAZE
+ - 33, SLASH
+ - 33, NIGHT SLASH
+ - 35, PLAY ROUGH
+ - 38, NASTY PLOT
+ - 40, CAPTIVATE
+ - 43, FEINT
+ - 50, DARK PULSE
+ - 85, MAKE IT RAIN (TENTATIVE)
+
+### #0052  Meowth (Galar)
+ - 1, FAKE OUT
+ - 1, GROWL
+ - 4, HONE CLAWS
+ - 8, SCRATCH
+ - 12, PAY DAY
+ - 16, METAL CLAW
+ - 20, TAUNT
+ - 24, SWAGGER
+ - 26, TRAILBLAZE
+ - 29, FURY SWIPES
+ - 32, SCREECH
+ - 36, SLASH
+ - 40, METAL SOUND
+ - 44, THRASH
+ - 48, CLOSE COMBAT
+ - 52, STEEL BEAM
+ - 85, MAKE IT RAIN (TENTATIVE)
+
+### #0053  Persian (Kanto)
+ - Ability (1): Limber -> Super Luck
+ - Ability (H): Unnerve -> Sniper
+#
+ - SpA: 65 -> 105
+#
+ - 0, SWIFT
+ - 1, FOCUS ENERGY
+ - 1, SWITCHEROO
+ - 1, SCRATCH
+ - 1, GROWL
+ - 1, BITE
+ - 1, FAKE OUT
+ - 11, FURY SWIPES
+ - 14, SCREECH
+ - 16, FEINT ATTACK
+ - 19, TAUNT
+ - 23, SLASH
+ - 29, POWER GEM
+ - 32, NASTY PLOT
+ - 34, TRAILBLAZE
+ - 37, ASSURANCE
+ - 42, CAPTIVATE
+ - 44, PLAY ROUGH
+ - 46, NIGHT SLASH
+ - 47, FEINT
+
+### #0053  Persian (Alola)
+ - Def: 60 -> 70
+ - SpA: 75 -> 105
+#
+ - 0, SWIFT
+ - 1, FOCUS ENERGY
+ - 1, SWITCHEROO
+ - 1, AMNESIA
+ - 1, HYPNOSIS
+ - 1, SCRATCH
+ - 1, GROWL
+ - 1, BITE
+ - 1, FAKE OUT
+ - 14, FURY SWIPES
+ - 17, SCREECH
+ - 19, ASSURANCE
+ - 22, FEINT ATTACK
+ - 25, TAUNT
+ - 28, PAY DAY
+ - 30, POWER GEM
+ - 32, NASTY PLOT
+ - 34, TRAILBLAZE
+ - 37, PLAY ROUGH
+ - 39, CAPTIVATE
+ - 42, SLASH
+ - 42, NIGHT SLASH
+ - 47, FEINT
+ - 51, DARK PULSE
+
+### #0054  Psyduck
+ - 1, WATER SPORT
+ - 1, SCRATCH
+ - 4, TAIL WHIP
+ - 7, WATER GUN
+ - 10, CONFUSION
+ - 13, FURY SWIPES
+ - 16, BUBBLE BEAM
+ - 19, DISABLE
+ - 22, SCREECH
+ - 23, TRAILBLAZE
+ - 25, ZEN HEADBUTT
+ - 28, AQUA TAIL
+ - 31, SOAK
+ - 34, PSYCH UP
+ - 37, AMNESIA
+ - 40, HYDRO PUMP
+ - 43, WONDER ROOM
+
+### #0055  Golduck
+#### Typing: ~~Water~~ -> **Water/Psychic**
+ - Ability(1): Damp -> Tough Claws
+#
+ - Atk: 82 -> 105
+ - SpA: 95 -> 105
+ - 0, PSYSHOCK
+ - 1, ME FIRST
+ - 1, AQUA JET
+ - 1, WATER SPORT
+ - 1, SCRATCH
+ - 1, TAIL WHIP
+ - 1, WATER GUN
+ - 10, CONFUSION
+ - 13, FURY SWIPES
+ - 16, BUBBLE BEAM
+ - 19, DISABLE
+ - 22, SCREECH
+ - 23, TRAILBLAZE
+ - 25, ZEN HEADBUTT
+ - 28, AQUA TAIL
+ - 31, SOAK
+ - 36, PSYCH UP
+ - 41, AMNESIA
+ - 46, HYDRO PUMP
+ - 51, WONDER ROOM
+ - 55, JET PUNCH
+
+### #0056 Mankey
+ - 1, COVET
+ - 1, SCRATCH
+ - 1, LOW KICK
+ - 1, LEER
+ - 1, FOCUS ENERGY
+ - 5, FURY SWIPES
+ - 8, KARATE CHOP
+ - 12, PURSUIT
+ - 15, SEISMIC TOSS
+ - 19, SWAGGER
+ - 22, CROSS CHOP
+ - 26, ASSURANCE
+ - 29, PUNISHMENT
+ - 33, THRASH
+ - 36, CLOSE COMBAT
+ - 40, SCREECH
+ - 43, STOMPING TANTRUM
+ - 47, OUTRAGE
+ - 50, FINAL GAMBIT
+        
+### #0057 Primeape (TENTATIVE)
+ - Atk: 105 -> 115
+ - Spe: 95 -> 115
+ - These stats may need rebalancing due to Annihilape's existence.
+ - Eviolite Primeape looking kinda busted rn
+#
+ - 0, RAGE
+ - 1, FLING
+ - 1, SCRATCH
+ - 1, LOW KICK
+ - 1, LEER
+ - 1, FOCUS ENERGY
+ - 5, FURY SWIPES
+ - 8, KARATE CHOP
+ - 12, PURSUIT
+ - 15, SEISMIC TOSS
+ - 19, SWAGGER
+ - 22, CROSS CHOP
+ - 26, ASSURANCE
+ - 30, PUNISHMENT
+ - 35, THRASH
+ - 39, CLOSE COMBAT
+ - 44, SCREECH
+ - 48, STOMPING TANTRUM
+ - 53, OUTRAGE
+ - 57, FINAL GAMBIT
+
+### #0058 Growlithe (Kanto)
+ - 1, BITE
+ - 1, ROAR
+ - 6, EMBER
+ - 8, LEER
+ - 10, ODOR SLEUTH
+ - 12, HELPING HAND
+ - 17, FLAME WHEEL
+ - 19, REVERSAL
+ - 21, FIRE FANG
+ - 23, TAKE DOWN
+ - 28, FLAME BURST
+ - 30, AGILITY
+ - 32, RETALIATE
+ - 34, FLAMETHROWER
+ - 39, CRUNCH
+ - 41, HEAT WAVE
+ - 43, OUTRAGE
+ - 45, FLARE BLITZ
+ - 52, RAGING FURY
+
+### #0058 Growlithe (Hisui)
+ - 1, HOWL
+ - 1, ROCK THROW
+ - 1, LEER
+ - 5, EMBER
+ - 9, BITE
+ - 11, ODOR SLEUTH
+ - 13, HELPING HAND
+ - 15, FLAME WHEEL
+ - 19, ROAR
+ - 21, FIRE FANG
+ - 24, TAKE DOWN
+ - 27, CRUNCH
+ - 30, ROCK SLIDE
+ - 32, AGILITY
+ - 37, DOUBLE EDGE
+ - 41, HEAT WAVE
+ - 45, OUTRAGE
+ - 49, FLARE BLITZ
+ - 55, HEAD SMASH
+
+### #0059  Arcanine - Kanto
+ - 0, EXTREME SPEED
+ - 1, THUNDER FANG
+ - 1, ODOR SLEUTH
+ - 1, HELPING HAND
+ - 1, FLAME WHEEL
+ - 1, REVERSAL
+ - 1, FIRE FANG
+ - 1, TAKE DOWN
+ - 1, FLAME BURST
+ - 1, BITE
+ - 1, ROAR
+ - 1, EMBER
+ - 1, LEER
+ - 30, AGILITY
+ - 32, RETALIATE
+ - 39, FLAMETHROWER
+ - 41, CRUNCH
+ - 43, HEAT WAVE
+ - 45, OUTRAGE
+ - 50, FLARE BLITZ
+ - 64, RAGING FURY
+
+### #0059  Arcanine - Hisui
+ - 0, ACCELEROCK
+ - 1, ROCK THROW
+ - 1, EMBER
+ - 1, BITE
+ - 1, ODOR SLEUTH
+ - 1, HELPING HAND
+ - 1, FIRE FANG
+ - 1, ROCK SLIDE
+ - 1, TAKE DOWN
+ - 1, CRUNCH
+ - 1, AGILITY
+ - 1, THUNDER FANG
+ - 37, DOUBLE EDGE
+ - 50, FLARE BLITZ
+ - 55, HEADLONG RUSH
+ - 58, HEAD SMASH
+ - 62, EXTREME SPEED
+ - 68, RAGING FURY
+
+### #0060 Poliwag
+ - 1, WATER SPORT
+ - 5, BUBBLE
+ - 8, HYPNOSIS
+ - 11, BUBBLE BEAM
+ - 15, DOUBLE SLAP
+ - 18, RAIN DANCE
+ - 21, BODY SLAM
+ - 25, WATER PULSE
+ - 27, CHILLING WATER
+ - 28, MUD SHOT
+ - 31, BELLY DRUM
+ - 33, FLIP TURN
+ - 35, WAKE UP SLAP
+ - 38, HYDRO PUMP
+ - 41, EARTH POWER
+        
+### #0061 Poliwhirl
+ - 1, WATER SPORT
+ - 1, BUBBLE
+ - 1, HYPNOSIS
+ - 11, BUBBLE BEAM
+ - 15, DOUBLE SLAP
+ - 18, RAIN DANCE
+ - 21, BODY SLAM
+ - 27, WATER PULSE
+ - 29, CHILLING WATER
+ - 32, MUD SHOT
+ - 37, BELLY DRUM
+ - 43, WAKE UP SLAP
+ - 48, HYDRO PUMP
+ - 53, EARTH POWER
+        
+### #0062 Poliwrath
+ - Atk: 95 -> 115
+#
+ - 0, SUBMISSION
+ - 1, CIRCLE THROW
+ - 1, BODY SLAM
+ - 1, DOUBLE SLAP
+ - 1, RAIN DANCE
+ - 1, WATER SPORT
+ - 1, BUBBLE
+ - 1, HYPNOSIS
+ - 1, EARTH POWER
+ - 1, BUBBLE BEAM
+ - 28, DYNAMIC PUNCH
+ - 32, WATER PULSE
+ - 34, MIND READER
+ - 37, MUD SHOT
+ - 40, CIRCLE THROW
+ - 43, BELLY DRUM
+ - 45, CLOSE COMBAT
+ - 48, WAKE UP SLAP
+ - 53, HYDRO PUMP
+ - 56, WATERFALL
+ - 59, JET PUNCH
+ - 65, RAGE FIST
+
+### #0063 Abra
+ - 1, TELEPORT
+        
+### #0064 Kadabra
+ - 0, KINESIS
+ - 0, CONFUSION
+ - 1, TELEPORT
+ - 18, DISABLE
+ - 21, PSYBEAM
+ - 23, MIRACLE EYE
+ - 26, REFLECT
+ - 28, PSYCHO CUT
+ - 31, RECOVER
+ - 33, TELEKINESIS
+ - 36, ALLY SWITCH
+ - 38, PSYCHIC
+ - 41, ROLE PLAY
+ - 43, FUTURE SIGHT
+ - 46, TRICK
+ - 49, CALM MIND
+ - 52, FOCUS BLAST
+        
+### #0065 Alakazam
+ - 0, KINESIS
+ - 1, TELEPORT
+ - 1, CONFUSION
+ - 18, DISABLE
+ - 21, PSYBEAM
+ - 23, MIRACLE EYE
+ - 26, REFLECT
+ - 28, PSYCHO CUT
+ - 31, RECOVER
+ - 33, TELEKINESIS
+ - 36, ALLY SWITCH
+ - 38, PSYCHIC
+ - 43, FUTURE SIGHT
+ - 46, TRICK
+ - 49, CALM MIND
+ - 52, FOCUS BLAST
+ - 58, EXPANDING FORCE
+        
+### #0066 Machop
+ - 1, LOW KICK
+ - 1, LEER
+ - 3, FOCUS ENERGY
+ - 7, KARATE CHOP
+ - 9, FORESIGHT
+ - 13, LOW SWEEP
+ - 15, SEISMIC TOSS
+ - 19, REVENGE
+ - 21, KNOCK OFF
+ - 25, VITAL THROW
+ - 27, WAKE UP SLAP
+ - 31, DUAL CHOP
+ - 33, SUBMISSION
+ - 37, BULK UP
+ - 39, CROSS CHOP
+ - 43, SCARY FACE
+ - 45, DYNAMIC PUNCH
+ - 52, DOUBLE EDGE
+        
+### #0067 Machoke
+ - 1, LOW KICK
+ - 1, LEER
+ - 1, FOCUS ENERGY
+ - 1, KARATE CHOP
+ - 9, FORESIGHT
+ - 13, LOW SWEEP
+ - 15, SEISMIC TOSS
+ - 19, REVENGE
+ - 21, KNOCK OFF
+ - 25, VITAL THROW
+ - 27, WAKE UP SLAP
+ - 33, DUAL CHOP
+ - 37, SUBMISSION
+ - 43, BULK UP
+ - 47, CROSS CHOP
+ - 53, SCARY FACE
+ - 57, DYNAMIC PUNCH
+ - 60, DOUBLE EDGE
+ - 63, METEOR ASSAULT
+        
+### #0068 Machamp
+ - 0, STRENGTH
+ - 1, WIDE GUARD
+ - 1, LOW KICK
+ - 1, LEER
+ - 1, FOCUS ENERGY
+ - 1, KARATE CHOP
+ - 9, FORESIGHT
+ - 13, LOW SWEEP
+ - 15, SEISMIC TOSS
+ - 19, REVENGE
+ - 21, KNOCK OFF
+ - 25, VITAL THROW
+ - 27, WAKE UP SLAP
+ - 33, DUAL CHOP
+ - 37, SUBMISSION
+ - 43, BULK UP
+ - 47, CROSS CHOP
+ - 53, SCARY FACE
+ - 57, DYNAMIC PUNCH
+ - 60, DOUBLE EDGE
+ - 63, METEOR ASSAULT
+ 
+#### Mega Mchamp
+ - Ability (1)(2)(H): Power Fists
+# 
+ - HP: 90
+ - Atk: 170
+ - Def: 100
+ - SpA: 65
+ - SpD: 105
+ - Spe: 75
+
+### #0069 Bellsprout
+ - 1, VINE WHIP
+ - 3, GROWTH
+ - 7, WRAP
+ - 9, SLEEP POWDER
+ - 12, POISON POWDER
+ - 15, STUN SPORE
+ - 17, ACID
+ - 19, KNOCK OFF
+ - 19, TRAILBLAZE
+ - 21, SWEET SCENT
+ - 24, RAZOR LEAF
+ - 25, GRASSY GLIDE
+ - 27, GASTRO ACID
+ - 31, POISON JAB
+ - 34, SLAM
+ - 37, WRING OUT
+ - 45, POWER WHIP
+        
+### #0070 Weepinbell
+ - 0, RAZOR LEAF
+ - 1, VINE WHIP
+ - 1, GROWTH
+ - 1, WRAP
+ - 9, SLEEP POWDER
+ - 12, POISON POWDER
+ - 15, STUN SPORE
+ - 17, ACID
+ - 19, KNOCK OFF
+ - 19, TRAILBLAZE
+ - 21, SWEET SCENT
+ - 26, GRASSY GLIDE
+ - 29, GASTRO ACID
+ - 33, POISON JAB
+ - 38, SLAM
+ - 41, WRING OUT
+ - 50, POWER WHIP
+        
+### #0071 Victreebel
+ - 0, LEAF TORNADO
+ - 1, GROWTH
+ - 1, POISON POWDER
+ - 1, STUN SPORE
+ - 1, STOCKPILE
+ - 1, SWALLOW
+ - 1, SPIT UP
+ - 1, KNOCK OFF
+ - 1, SWEET SCENT
+ - 1, GASTRO ACID
+ - 1, VINE WHIP
+ - 1, SLEEP POWDER
+ - 1, SWEET SCENT
+ - 1, RAZOR LEAF
+ - 1, TRAILBLAZE
+ - 1, GRASSY GLIDE
+ - 32, LEAF STORM
+ - 35, POISON JAB
+ - 44, LEAF BLADE
+ - 55, POWER WHIP
+        
+### #0072 Tentacool
+ - 1, POISON STING
+ - 1, BUBBLE
+ - 1, CONSTRICT
+ - 4, ACID
+ - 8, WRAP
+ - 10, SUPERSONIC
+ - 13, TOXIC SPIKES
+ - 16, BUBBLE BEAM
+ - 20, SCREECH
+ - 22, ACID SPRAY
+ - 23, CHILLING WATER
+ - 25, WATER PULSE
+ - 28, BARRIER
+ - 31, POISON JAB
+ - 34, BRINE
+ - 36, FLIP TURN
+ - 38, CORROSIVE GAS
+ - 40, SURF
+ - 43, SLUDGE WAVE
+ - 46, HYDRO PUMP
+ - 49, WRING OUT
+        
+### #0073 Tentacruel
+ - 0, AURORA BEAM
+ - 1, REFLECT TYPE
+ - 1, POISON STING
+ - 1, SUPERSONIC
+ - 1, BUBBLE
+ - 1, CONSTRICT
+ - 1, ACID
+ - 13, TOXIC SPIKES
+ - 16, BUBBLE BEAM
+ - 20, SCREECH
+ - 22, ACID SPRAY
+ - 23, CHILLING WATER
+ - 25, WATER PULSE
+ - 28, BARRIER
+ - 32, POISON JAB
+ - 36, BRINE
+ - 38, FLIP TURN
+ - 40, SCREECH
+ - 42, CORROSIVE GAS
+ - 44, SURF
+ - 47, SKITTER SMACK
+ - 48, SLUDGE WAVE
+ - 52, HYDRO PUMP
+ - 56, WRING OUT
+
+### #0074  Geodude (Kanto)
+ - 1, TACKLE
+ - 1, DEFENSE CURL
+ - 4, MUD SPORT
+ - 6, ROCK POLISH
+ - 10, ROLLOUT
+ - 12, MAGNITUDE
+ - 16, ROCK THROW
+ - 18, SMACK DOWN
+ - 22, BULLDOZE
+ - 24, SELF DESTRUCT
+ - 28, STEALTH ROCK
+ - 30, ROCK BLAST
+ - 34, EARTHQUAKE
+ - 36, EXPLOSION
+ - 40, DOUBLE EDGE
+ - 42, STONE EDGE
+
+### #0074  Geodude (Alola)
+ - 1, TACKLE
+ - 1, DEFENSE CURL
+ - 4, CHARGE
+ - 6, ROCK POLISH
+ - 10, ROLLOUT
+ - 12, SPARK
+ - 16, ROCK THROW
+ - 18, SMACK DOWN
+ - 22, THUNDER PUNCH
+ - 24, SELF DESTRUCT
+ - 28, STEALTH ROCK
+ - 30, ROCK BLAST
+ - 34, DISCHARGE
+ - 36, EXPLOSION
+ - 40, DOUBLE EDGE
+ - 42, STONE EDGE
+
+### #0075  Graveler (Kanto)
+ - 1, TACKLE
+ - 1, DEFENSE CURL
+ - 1, MUD SPORT
+ - 1, ROCK POLISH
+ - 10, ROLLOUT
+ - 12, MAGNITUDE
+ - 16, ROCK THROW
+ - 18, SMACK DOWN
+ - 22, BULLDOZE
+ - 24, SELF DESTRUCT
+ - 30, STEALTH ROCK
+ - 34, ROCK BLAST
+ - 37, BODY PRESS
+ - 40, EARTHQUAKE
+ - 44, EXPLOSION
+ - 50, DOUBLE EDGE
+ - 54, STONE EDGE
+
+### #0075  Graveler (Alola)
+ - 1, TACKLE
+ - 1, DEFENSE CURL
+ - 1, CHARGE
+ - 1, ROCK POLISH
+ - 4, CHARGE
+ - 6, ROCK POLISH
+ - 10, ROLLOUT
+ - 12, SPARK
+ - 16, ROCK THROW
+ - 18, SMACK DOWN
+ - 22, THUNDER PUNCH
+ - 24, SELF DESTRUCT
+ - 30, STEALTH ROCK
+ - 34, ROCK BLAST
+ - 40, DISCHARGE
+ - 44, EXPLOSION
+ - 50, DOUBLE EDGE
+ - 54, STONE EDGE
+
+### #0076  Golem (Kanto)
+ - HP: 80 -> 90
+ - Atk: 120 -> 135
+#
+ - 0, STEAMROLLER
+ - 1, TACKLE
+ - 1, DEFENSE CURL
+ - 1, MUD SPORT
+ - 1, ROCK POLISH
+ - 12, MAGNITUDE
+ - 16, ROCK THROW
+ - 18, SMACK DOWN
+ - 22, BULLDOZE
+ - 24, SELF DESTRUCT
+ - 30, STEALTH ROCK
+ - 34, ROCK BLAST
+ - 37, BODY PRESS
+ - 40, EARTHQUAKE
+ - 44, EXPLOSION
+ - 50, DOUBLE EDGE
+ - 54, STONE EDGE
+ - 60, HEAVY SLAM
+ - 64, HEAD SMASH
+
+### #0076  Golem (Alola)
+ - HP: 80 -> 90
+ - Atk: 120 -> 135
+#
+ - 1, HEAVY SLAM
+ - 1, TACKLE
+ - 1, DEFENSE CURL
+ - 1, CHARGE
+ - 1, ROCK POLISH
+ - 4, CHARGE
+ - 6, ROCK POLISH
+ - 10, STEAMROLLER
+ - 12, SPARK
+ - 16, ROCK THROW
+ - 18, SMACK DOWN
+ - 22, THUNDER PUNCH
+ - 24, SELF DESTRUCT
+ - 30, STEALTH ROCK
+ - 34, ROCK BLAST
+ - 40, DISCHARGE
+ - 44, EXPLOSION
+ - 50, DOUBLE EDGE
+ - 54, STONE EDGE
+ - 60, HEAVY SLAM
+ - 64, HEAD SMASH
+ - 68, SUPERCELL SLAM
+
+### #0077  Ponyta (Kanto)
+ - Ability (1): Run Away -> Reckless
+#
+ - 1, GROWL
+ - 1, TACKLE
+ - 4, TAIL WHIP
+ - 9, EMBER
+ - 13, FLAME WHEEL
+ - 17, STOMP
+ - 21, FLAME CHARGE
+ - 25, FIRE SPIN
+ - 27, BLAZE KICK
+ - 29, TAKE DOWN
+ - 33, INFERNO
+ - 35, JUMP KICK
+ - 37, AGILITY
+ - 41, FIRE BLAST
+ - 45, BOUNCE
+ - 49, FLARE BLITZ
+
+### #0077  Ponyta (Galar)
+ - Ability (1):  Run Away -> Anticipation
+ - Ability (H): Anticipation -> Pixilate
+#
+ - Atk: 85 -> 65
+ - SpA: 65 -> 85
+#
+ - 1, TACKLE
+ - 1, GROWL
+ - 3, TAIL WHIP
+ - 4, FAIRY WIND
+ - 9, CONFUSION
+ - 13, EERIE IMPULSE
+ - 16, SWIFT
+ - 18, WILL O WISP
+ - 20, AGILITY
+ - 25, PSYBEAM
+ - 30, CALM MIND
+ - 32, HEALING WISH
+ - 34, PSYCHIC TERRAIN
+ - 38, DAZZLING GLEAM
+ - 40, EERIE SPELL
+ - 43, MYSTICAL FIRE
+ - 46, PSYCHIC
+ - 48, HYPER VOICE
+ - 49, MOONBLAST
+ - 52, EXPANDING FORCE
+ - 56, HYPER BEAM
+ - 60, MAGIC POWDER
+
+### #0078  Rapidash (Kanto)
+ - Ability (1): Run Away -> Reckless
+#
+ - HP: 65 -> 85
+ - Atk: 100 -> 110
+#
+ - 0, FURY ATTACK
+ - 1, POISON JAB
+ - 1, MEGAHORN
+ - 1, GROWL
+ - 1, QUICK ATTACK
+ - 1, TAIL WHIP
+ - 1, EMBER
+ - 4, TAIL WHIP
+ - 9, EMBER
+ - 13, FLAME WHEEL
+ - 17, STOMP
+ - 21, FLAME CHARGE
+ - 25, FIRE SPIN
+ - 27, BLAZE KICK
+ - 29, TAKE DOWN
+ - 33, INFERNO
+ - 35, JUMP KICK
+ - 37, AGILITY
+ - 43, FIRE BLAST
+ - 49, BOUNCE
+ - 55, FLARE BLITZ
+
+### #0078  Rapidash (Galar)
+ - Ability (1):  Run Away -> Anticipation
+ - Ability (H): Anticipation -> Pixilate
+#
+ - HP: 65 -> 85
+ - Atk: 100 -> 80
+ - SpA: 80 -> 110
+#
+ - 0, DAZZLING GLEAM
+ - 1, TAIL WHIP
+ - 1, HEALING WISH
+ - 1, PSYCHIC TERRAIN
+ - 1, TACKLE
+ - 1, QUICK ATTACK
+ - 1, GROWL
+ - 1, FAIRY WIND
+ - 1, CONFUSION
+ - 14, EERIE IMPULSE
+ - 17, SWIFT
+ - 23, WILL O WISP
+ - 26, AGILITY
+ - 28, PSYBEAM
+ - 38, CALM MIND
+ - 40, EERIE SPELL
+ - 42, DAZZLING GLEAM
+ - 46, MYSTICAL FIRE
+ - 49, PSYCHIC
+ - 52, HYPER VOICE
+ - 55, MOONBLAST
+ - 59, EXPANDING FORCE
+ - 62, HYPER BEAM
+ - 70, MAGIC POWDER
+
+### #0079  Slowpoke (Kanto)
+ - 1, CURSE
+ - 1, YAWN
+ - 1, TACKLE
+ - 5, GROWL
+ - 9, WATER GUN
+ - 14, CONFUSION
+ - 17, CHILLING WATER
+ - 19, DISABLE
+ - 23, HEADBUTT
+ - 28, BUBBLE BEAM
+ - 32, ZEN HEADBUTT
+ - 36, SLACK OFF
+ - 41, AMNESIA
+ - 45, PSYCHIC
+ - 49, RAIN DANCE
+ - 54, PSYCH UP
+ - 58, HEAL PULSE
+
+### #0079  Slowpoke (Galar)
+ - 1, TACKLE
+ - 1, CURSE
+ - 3, GROWL
+ - 6, ACID
+ - 9, YAWN
+ - 12, CONFUSION
+ - 15, DISABLE
+ - 18, CHILLING WATER
+ - 21, HEADBUTT
+ - 24, ZEN HEADBUTT
+ - 25, WATER PULSE
+ - 27, AMNESIA
+ - 30, SURF
+ - 33, SLACK OFF
+ - 36, PSYCHIC
+ - 39, PSYCH UP
+ - 42, RAIN DANCE
+ - 45, HEAL PULSE
+
+### #0080  Slowbro (Kanto)
+ - 0, WITHDRAW
+ - 1, HEAL PULSE
+ - 1, CURSE
+ - 1, YAWN
+ - 1, TACKLE
+ - 1, GROWL
+ - 9, WATER GUN
+ - 14, CONFUSION
+ - 17, CHILLING WATER
+ - 19, DISABLE
+ - 23, HEADBUTT
+ - 28, BUBBLE BEAM
+ - 32, ZEN HEADBUTT
+ - 34, BODY PRESS
+ - 36, SLACK OFF
+ - 43, AMNESIA
+ - 49, PSYCHIC
+ - 55, RAIN DANCE
+ - 62, PSYCH UP
+ - 68, HEAL PULSE
+
+### #0080  Slowbro (Galar)
+ - 0, SHELL SIDE ARM
+ - 1, WITHDRAW
+ - 1, TACKLE
+ - 1, CURSE
+ - 1, GROWL
+ - 1, ACID
+ - 9, YAWN
+ - 12, CONFUSION
+ - 15, DISABLE
+ - 18, CHILLING WATER
+ - 21, HEADBUTT
+ - 24, ZEN HEADBUTT
+ - 25, WATER PULSE
+ - 27, AMNESIA
+ - 30, SURF
+ - 32, BODY PRESS
+ - 33, SLACK OFF
+ - 36, PSYCHIC
+ - 39, PSYCH UP
+ - 42, RAIN DANCE
+ - 45, HEAL PULSE
+
+### #0081  Magnemite
+ - 1, TACKLE
+ - 1, SUPERSONIC
+ - 5, THUNDER SHOCK
+ - 7, THUNDER WAVE
+ - 11, MAGNET BOMB
+ - 13, LIGHT SCREEN
+ - 17, SONIC BOOM
+ - 19, SPARK
+ - 23, MIRROR SHOT
+ - 25, METAL SOUND
+ - 29, ELECTRO BALL
+ - 31, FLASH CANNON
+ - 35, SCREECH
+ - 37, DISCHARGE
+ - 41, LOCK ON
+ - 43, MAGNET RISE
+ - 47, GYRO BALL
+ - 49, ZAP CANNON
+ - 51, STEEL BEAM
+
+### #0082  Magneton
+ - 0, TRI ATTACK
+ - 0, TWIN BEAM
+ - 1, ELECTRIC TERRAIN
+ - 1, TACKLE
+ - 1, SUPERSONIC
+ - 1, THUNDER SHOCK
+ - 1, THUNDER WAVE
+ - 11, MAGNET BOMB
+ - 13, LIGHT SCREEN
+ - 17, SONIC BOOM
+ - 19, SPARK
+ - 23, MIRROR SHOT
+ - 25, METAL SOUND
+ - 29, ELECTRO BALL
+ - 33, FLASH CANNON
+ - 39, SCREECH
+ - 43, DISCHARGE
+ - 49, LOCK ON
+ - 53, MAGNET RISE
+ - 59, GYRO BALL
+ - 63, ZAP CANNON
+ - 66, STEEL BEAM
+
+### #0083  Farfetch'd (Kanto) (TENTATIVE)
+ - Typing is iffy because of G-farf
+ - May need a complete rework
+#
+#### Typing: ~~Flying~~ -> **Flying/Fighting**
+ - Ability (1): Keen Eye -> Super Luck
+#
+ - Spe: 60 -> 100
+#
+ - 1, POISON JAB
+ - 1, AQUA JET
+ - 1, PECK
+ - 1, SAND ATTACK
+ - 1, LEER
+ - 1, FURY CUTTER
+ - 7, FURY ATTACK
+ - 9, AERIAL ACE
+ - 13, KNOCK OFF
+ - 15, SLASH
+ - 17, KARATE CHOP
+ - 21, AIR CUTTER
+ - 25, SWORDS DANCE
+ - 31, AGILITY
+ - 33, NIGHT SLASH
+ - 37, ACROBATICS
+ - 40, SACRED SWORD
+ - 43, FEINT
+ - 45, FALSE SWIPE
+ - 49, WING ATTACK
+ - 55, BRAVE BIRD
+ - 58, CLOSE COMBAT
+
+### #0083  Farfetch'd (Galar)
+ - 1, PECK
+ - 1, SAND ATTACK
+ - 5, LEER
+ - 10, FURY CUTTER
+ - 15, ROCK SMASH
+ - 20, BRUTAL SWING
+ - 25, DETECT
+ - 30, KNOCK OFF
+ - 35, DEFOG
+ - 40, BRICK BREAK
+ - 45, SWORDS DANCE
+ - 50, SLAM
+ - 55, LEAF BLADE
+ - 60, FINAL GAMBIT
+ - 65, BRAVE BIRD
+
+### #0084  Doduo
+ - 1, PECK
+ - 1, GROWL
+ - 5, QUICK ATTACK
+ - 8, RAGE
+ - 12, FURY ATTACK
+ - 15, PURSUIT
+ - 19, PLUCK
+ - 22, DOUBLE HIT
+ - 24, TRAILBLAZE
+ - 26, AGILITY
+ - 29, UPROAR
+ - 33, ACUPRESSURE
+ - 36, SWORDS DANCE
+ - 40, JUMP KICK
+ - 43, DRILL PECK
+ - 45, TWIN BEAM
+ - 47, ENDEAVOR
+ - 50, THRASH
+ - 54, BRAVE BIRD
+
+### #0085  Dodrio
+ - Ability (1): Run Away -> Moxie
+#
+ - HP: 60 -> 80
+#
+ - 0, TRI ATTACK
+ - 0, TWIN BEAM
+ - 1, PECK
+ - 1, GROWL
+ - 1, QUICK ATTACK
+ - 1, RAGE
+ - 12, FURY ATTACK
+ - 15, PURSUIT
+ - 19, PLUCK
+ - 22, DOUBLE HIT
+ - 24, TRAILBLAZE
+ - 26, AGILITY
+ - 29, UPROAR
+ - 34, ACUPRESSURE
+ - 38, SWORDS DANCE
+ - 43, JUMP KICK
+ - 47, DRILL PECK
+ - 52, ENDEAVOR
+ - 56, THRASH
+ - 61, BRAVE BIRD
 
 ### 0086  Seel
 
